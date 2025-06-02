@@ -1,0 +1,352 @@
+{
+    "class android::IAudioFlinger::CreateRecordOutput": {
+        "variable": [
+            {
+                "count": 1,
+                "structSize": 4,
+                "self_constraint": [],
+                "name": "flags",
+                "under_constraint": [],
+                "type_alias": 1,
+                "dependency": [],
+                "relation": [],
+                "signature": "audio_input_flags_t",
+                "serialization_type": 2,
+                "usedBy": [],
+                "type": "enum audio_input_flags_t",
+                "loop": [],
+                "size": 1
+            },
+            {
+                "count": 1,
+                "self_constraint": [],
+                "name": "implicit_1",
+                "under_constraint": [],
+                "value": 4,
+                "dependency": [],
+                "relation": [],
+                "serialization_type": 0,
+                "sizeof": "audio_input_flags_t",
+                "type": "IntegerLiteral",
+                "usedBy": [],
+                "loop": []
+            },
+            {
+                "count": 1,
+                "self_constraint": [],
+                "name": "frameCount",
+                "under_constraint": [],
+                "dependency": [],
+                "relation": [],
+                "signature": "size_t",
+                "serialization_type": 2,
+                "usedBy": [],
+                "type": "long long",
+                "loop": []
+            },
+            {
+                "count": 1,
+                "self_constraint": [],
+                "name": "notificationFrameCount",
+                "under_constraint": [],
+                "dependency": [],
+                "relation": [],
+                "signature": "size_t",
+                "serialization_type": 2,
+                "usedBy": [],
+                "type": "long long",
+                "loop": []
+            },
+            {
+                "count": 1,
+                "structSize": 4,
+                "self_constraint": [],
+                "name": "selectedDeviceId",
+                "under_constraint": [],
+                "dependency": [],
+                "relation": [],
+                "signature": "audio_port_handle_t",
+                "serialization_type": 2,
+                "usedBy": [],
+                "type": "audio_port_handle_t",
+                "loop": [],
+                "size": 1
+            },
+            {
+                "count": 1,
+                "self_constraint": [],
+                "name": "implicit_5",
+                "under_constraint": [],
+                "value": 4,
+                "dependency": [],
+                "relation": [],
+                "serialization_type": 0,
+                "sizeof": "audio_port_handle_t",
+                "type": "IntegerLiteral",
+                "usedBy": [],
+                "loop": []
+            },
+            {
+                "count": 1,
+                "structSize": 4,
+                "self_constraint": [],
+                "name": "sessionId",
+                "under_constraint": [],
+                "type_alias": 1,
+                "dependency": [],
+                "relation": [],
+                "signature": "audio_session_t",
+                "serialization_type": 2,
+                "usedBy": [],
+                "type": "enum audio_session_t",
+                "loop": [],
+                "size": 1
+            },
+            {
+                "count": 1,
+                "self_constraint": [],
+                "name": "implicit_7",
+                "under_constraint": [],
+                "value": 4,
+                "dependency": [],
+                "relation": [],
+                "serialization_type": 0,
+                "sizeof": "audio_session_t",
+                "type": "IntegerLiteral",
+                "usedBy": [],
+                "loop": []
+            },
+            {
+                "count": 1,
+                "self_constraint": [],
+                "name": "sampleRate",
+                "under_constraint": [],
+                "dependency": [],
+                "relation": [],
+                "signature": "uint32_t",
+                "serialization_type": 2,
+                "usedBy": [],
+                "type": "unsigned int",
+                "loop": []
+            },
+            {
+                "count": 1,
+                "structSize": 4,
+                "self_constraint": [],
+                "name": "inputId",
+                "under_constraint": [],
+                "dependency": [],
+                "relation": [],
+                "signature": "audio_io_handle_t",
+                "serialization_type": 2,
+                "usedBy": [],
+                "type": "audio_io_handle_t",
+                "loop": [],
+                "size": 1
+            },
+            {
+                "count": 1,
+                "self_constraint": [],
+                "name": "implicit_10",
+                "under_constraint": [],
+                "value": 4,
+                "dependency": [],
+                "relation": [],
+                "serialization_type": 0,
+                "sizeof": "audio_io_handle_t",
+                "type": "IntegerLiteral",
+                "usedBy": [],
+                "loop": []
+            },
+            {
+                "count": 1,
+                "self_constraint": [],
+                "name": "implicit_13",
+                "under_constraint": [
+                    {
+                        "status": true,
+                        "name": "constraint0"
+                    }
+                ],
+                "value": 1,
+                "dependency": [],
+                "relation": [],
+                "serialization_type": 2,
+                "usedBy": [],
+                "type": "IntegerLiteral",
+                "loop": []
+            },
+            {
+                "count": 1,
+                "self_constraint": [],
+                "name": "cblk",
+                "under_constraint": [
+                    {
+                        "status": true,
+                        "name": "constraint0"
+                    }
+                ],
+                "dependency": [],
+                "relation": [],
+                "signature": "sp<class android::IMemory>",
+                "serialization_type": 2,
+                "usedBy": [],
+                "type": "class android::sp<class android::IMemory>",
+                "loop": [],
+                "interfaceName": "IMemory"
+            },
+            {
+                "count": 1,
+                "self_constraint": [],
+                "name": "implicit_16",
+                "under_constraint": [
+                    {
+                        "status": false,
+                        "name": "constraint0"
+                    }
+                ],
+                "value": 0,
+                "dependency": [],
+                "relation": [],
+                "serialization_type": 2,
+                "usedBy": [],
+                "type": "IntegerLiteral",
+                "loop": []
+            },
+            {
+                "count": 1,
+                "self_constraint": [],
+                "name": "implicit_19",
+                "under_constraint": [
+                    {
+                        "status": true,
+                        "name": "constraint1"
+                    }
+                ],
+                "value": 1,
+                "dependency": [],
+                "relation": [],
+                "serialization_type": 2,
+                "usedBy": [],
+                "type": "IntegerLiteral",
+                "loop": []
+            },
+            {
+                "count": 1,
+                "self_constraint": [],
+                "name": "buffers",
+                "under_constraint": [
+                    {
+                        "status": true,
+                        "name": "constraint1"
+                    }
+                ],
+                "dependency": [],
+                "relation": [],
+                "signature": "sp<class android::IMemory>",
+                "serialization_type": 2,
+                "usedBy": [],
+                "type": "class android::sp<class android::IMemory>",
+                "loop": [],
+                "interfaceName": "IMemory"
+            },
+            {
+                "count": 1,
+                "self_constraint": [],
+                "name": "implicit_22",
+                "under_constraint": [
+                    {
+                        "status": false,
+                        "name": "constraint1"
+                    }
+                ],
+                "value": 0,
+                "dependency": [],
+                "relation": [],
+                "serialization_type": 2,
+                "usedBy": [],
+                "type": "IntegerLiteral",
+                "loop": []
+            },
+            {
+                "count": 1,
+                "self_constraint": [],
+                "name": "android::NO_ERROR",
+                "under_constraint": [],
+                "value": 0,
+                "dependency": [],
+                "relation": [],
+                "serialization_type": 0,
+                "usedBy": [],
+                "type": "android::status_t",
+                "loop": []
+            }
+        ],
+        "dependency": [
+            {
+                "filename": "BnAudioFlinger.json",
+                "type": "Transaction",
+                "name": "IAudioFlinger::2-2",
+                "possIdx": 3,
+                "varIdx": 2,
+                "varName": "output",
+                "varType": "class android::IAudioFlinger::CreateRecordOutput"
+            }
+        ],
+        "loop": [],
+        "possibility": [
+            {
+                "return": "android::NO_ERROR",
+                "reply": [
+                    "flags",
+                    "frameCount",
+                    "notificationFrameCount",
+                    "selectedDeviceId",
+                    "sessionId",
+                    "sampleRate",
+                    "inputId",
+                    "implicit_13",
+                    "cblk",
+                    "implicit_16",
+                    "implicit_19",
+                    "buffers",
+                    "implicit_22"
+                ],
+                "data": [],
+                "id": 0
+            }
+        ],
+        "constraint": [
+            {
+                "lhs": {
+                    "type": "class android::sp<class android::IMemory>",
+                    "name": "cblk",
+                    "signature": "sp<class android::IMemory>"
+                },
+                "rhs": {
+                    "type": "IntegerLiteral",
+                    "name": "implicit_12",
+                    "value": 0
+                },
+                "opcode": "operator!=",
+                "name": "constraint0",
+                "probability": 0.5
+            },
+            {
+                "lhs": {
+                    "type": "class android::sp<class android::IMemory>",
+                    "name": "buffers",
+                    "signature": "sp<class android::IMemory>"
+                },
+                "rhs": {
+                    "type": "IntegerLiteral",
+                    "name": "implicit_18",
+                    "value": 0
+                },
+                "opcode": "operator!=",
+                "name": "constraint1",
+                "probability": 0.5
+            }
+        ]
+    }
+}

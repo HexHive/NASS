@@ -1,0 +1,149 @@
+diff --git a/fans.template.cfg b/fans.template.cfg
+index 6af501f..41d3261 100644
+--- a/fans.template.cfg
++++ b/fans.template.cfg
+@@ -1,21 +1,21 @@
+ {
+-    "fans_dir":"/path/to/fans",
+-    "aosp_dir":"/path/to/aosp",
+-    "aosp_sanitizer_dir":"/path/to/aosp_asan",
+-    "aosp_compilation_cmd_file":"/path/to/aosp/cmd.txt",
++    "fans_dir":"/root/binderfuzz/fans/fans",
++    "aosp_dir":"/root/binderfuzz/fans/aosp",
++    "aosp_sanitizer_dir":"TODOPLS",
++    "aosp_compilation_cmd_file":"/root/binderfuzz/fans/aosp/cmd.txt",
+     "lunch_command":"lunch 50",
+-    "aosp_clang_location":"/path/to/aosp/clang",
+-    "manually_build_clang_location":"/path/to/llvm-android/build/bin/clang-6.0", 
+-    "clang_plugin_option":"-load /path/to/llvm-android/build/lib/BinderIface.so -plugin -extract-binder-iface",
++    "aosp_clang_location":"prebuilts/clang/host/linux-x86/clang-4691093/bin/clang++.real",
++    "manually_build_clang_location":"/root/binderfuzz/fans/llvm-android/build/bin/clang-6.0", 
++    "clang_plugin_option":"-load /root/binderfuzz/fans/llvm-android/build/lib/BinderIface.so -plugin -extract-binder-iface",
+     "service_related_file_collector_workdir":"workdir/service-related-file",
+     "service_related_filepath_storage_location":"workdir/service-related-file/service_related_file.txt",
+     "misc_parcel_related_function_storage_location":"workdir/service-related-file/misc_parcel_related_function.txt",
+     "special_parcelable_function_storage_location":"workdir/service-related-file/special_parcelable_function.txt",
+     "aosp_compilation_cc1_cmd_file":"workdir/interface-model-extractor/cc1_cmd.json",
+     "already_preprocessed_files_storage_location":"workdir/interface-model-extractor/already_preprocessed_files.txt",
+-    "rough_interface_related_data_dir":"/path/to/aosp/data",
++    "rough_interface_related_data_dir":"/root/binderfuzz/fans/aosp/data",
+     "already_parsed_interfaces_storage_location":"workdir/interface-model-extractor/already_parsed_interfaces.txt",
+     "interface_model_extractor_tmp_dir":"workdir/interface-model-extractor/tmp",
+     "interface_model_extractor_dir":"workdir/interface-model-extractor",
+     "interface_dependency_dir":"workdir/interface-dependency"
+-}
+\ No newline at end of file
++}
+diff --git a/interface-model-extractor/post-process/ast_visitor.py b/interface-model-extractor/post-process/ast_visitor.py
+index fe975b5..4e1bff1 100644
+--- a/interface-model-extractor/post-process/ast_visitor.py
++++ b/interface-model-extractor/post-process/ast_visitor.py
+@@ -1399,7 +1399,19 @@ class ASTVisitor:
+                 # samilar as above
+                 self.parcel_manager.update_variable_attr(
+                     argv[0]["name"], "type", "vector<class android::sp<class android::net::wifi::IApInterface>>")
++            elif "android::Fence::dup" == func["name"]:
++                print("special handling for android::Fence::dup")
++                return_var["type"] ="int"
++                return_var["name"] =  self.walk_memberexpr(
++                    call["MemberExpr"])["name"].split(".")[0]
++                return_var["serialization_type"] = SerializationType.COMMON
++                print("Fence::dup", return_var)
+             elif non_qualified_function_name == "dup":
++                #print(func)
++                #print(argv)
++                #print(call)
++                #print("var name", self.walk_memberexpr(
++                #    call["MemberExpr"])["name"].split(".")[0])
+                 return_var = argv[0]
+             elif "android::base::unique_fd_impl<android::base::DefaultCloser>::operator int" in func[
+                     "name"]:
+@@ -2781,4 +2793,4 @@ class ASTVisitor:
+         self.walk_cxxrecorddecl(CXXRecordDecl)
+         parcel = self.parcel_manager.dump()
+         self.store_related_info()
+-        return parcel, self.raw_structure_set
+\ No newline at end of file
++        return parcel, self.raw_structure_set
+diff --git a/interface-model-extractor/post-process/parse.sh b/interface-model-extractor/post-process/parse.sh
+index ab24fa7..98a621b 100644
+--- a/interface-model-extractor/post-process/parse.sh
++++ b/interface-model-extractor/post-process/parse.sh
+@@ -1,6 +1,12 @@
++echo "python parse_interface.py"
+ python parse_interface.py
++echo "python parse_structure.py"
+ python parse_structure.py
++echo "python parse_parcel_function.py"
+ python parse_parcel_function.py
++echo "python parse_raw_structure.py"
+ python parse_raw_structure.py
++echo "python adjust_structure.py"
+ python adjust_structure.py
++echo "python save_type_map.py"
+ python save_type_map.py
+diff --git a/interface-model-extractor/post-process/parse_interface.py b/interface-model-extractor/post-process/parse_interface.py
+index c0ca776..e10be97 100644
+--- a/interface-model-extractor/post-process/parse_interface.py
++++ b/interface-model-extractor/post-process/parse_interface.py
+@@ -87,9 +87,16 @@ def parse_one_interface(filename):
+     transactions = data['onTransact'][last_switch]
+     del transactions["DeclRef"]
+ 
+-    serviceName = func2svc[funcname]["serviceName"]
+-    interfaceToken = func2svc[funcname]["interfaceToken"]
+-    interfaceName =func2svc[funcname]["interfaceName"]
++    print(funcname, func2svc[funcname])
++
++    try:
++        serviceName = func2svc[funcname]["serviceName"]
++        interfaceToken = func2svc[funcname]["interfaceToken"]
++        interfaceName =func2svc[funcname]["interfaceName"]
++    except Exception as e:
++        print("failed in parse_one_interface", str(e))
++        print("returning")
++        return
+ 
+     all_txs = parse_transactions(transactions, interfaceName)
+ 
+diff --git a/interface-model-extractor/post-process/postprocess.sh b/interface-model-extractor/post-process/postprocess.sh
+index 038def7..aebac8d 100644
+--- a/interface-model-extractor/post-process/postprocess.sh
++++ b/interface-model-extractor/post-process/postprocess.sh
+@@ -1,3 +1,6 @@
+ sh init.sh
++echo "finished init"
+ sh parse.sh
+-sh copy.sh
+\ No newline at end of file
++echo "finished parse"
++sh copy.sh
++echo "finished copy"
+diff --git a/interface-model-extractor/pre-process/extract_from_ast.py b/interface-model-extractor/pre-process/extract_from_ast.py
+index 86c4e64..37a137d 100644
+--- a/interface-model-extractor/pre-process/extract_from_ast.py
++++ b/interface-model-extractor/pre-process/extract_from_ast.py
+@@ -81,12 +81,15 @@ def execute_one(cmd):
+                ]
+     cmd = '\n'.join(cmdlist)
+     try:
++        print("executing: ", cmd)
++        open("cmds.log", "a+").write(cmd + "\n")
+         out_bytes = subprocess.check_output(
+             cmd, stderr=subprocess.STDOUT, shell=True,executable="/bin/bash").decode("utf-8")
+         # print(cmdlist[-1])
+         # print(out_bytes)
+         if "is not completed!" in out_bytes:
+             print(out_bytes)
++            print("not completed!")
+             exit(0)
+     except subprocess.CalledProcessError as e:
+         out_bytes = e.output  # Output generated before error
+@@ -218,4 +221,5 @@ if __name__ == "__main__":
+             execute_one(cmd)
+             if filepath not in already_preprocessed_files:    
+                 open(already_preprocessed_files_storage_location,
+-                    "a").write(filepath + "\n")
+\ No newline at end of file
++                    "a").write(filepath + "\n")
++        print("FINISHED!")

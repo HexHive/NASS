@@ -1,0 +1,215 @@
+{
+    "1": [],
+    "10": [],
+    "1000": [],
+    "1002": [
+        "INT32"
+    ],
+    "1004": [],
+    "1005": [],
+    "1006": [],
+    "1008": [
+        "INT32"
+    ],
+    "1009": [
+        "INT32"
+    ],
+    "1010": [],
+    "1011": [],
+    "1013": [],
+    "1014": [
+        "INT32"
+    ],
+    "1015": [
+        "INT32",
+        "INT32",
+        "INT32",
+        "INT32",
+        "INT32",
+        "INT32",
+        "INT32",
+        "INT32",
+        "INT32",
+        "INT32",
+        "INT32",
+        "INT32",
+        "INT32",
+        "INT32",
+        "INT32",
+        "INT32",
+        "INT32"
+    ],
+    "1016": [
+        "INT32"
+    ],
+    "1017": [
+        "INT32"
+    ],
+    "1018": [
+        "INT32"
+    ],
+    "1019": [
+        "INT32"
+    ],
+    "1020": [
+        "INT32"
+    ],
+    "1021": [
+        "INT32"
+    ],
+    "1022": [
+        "INT32"
+    ],
+    "1023": [
+        "INT32"
+    ],
+    "1024": [],
+    "1025": [
+        "INT32"
+    ],
+    "1026": [],
+    "1027": [
+        "INT32"
+    ],
+    "11": [],
+    "12": [],
+    "13": [
+        "INT32"
+    ],
+    "15": [
+        "INT32",
+        "INT32",
+        "INT32",
+        "INT32",
+        "INT32",
+        "INT32",
+        "INT32"
+    ],
+    "1598311760": [
+        "FILEDESCRIPTOR",
+        "INT32",
+        "STRING16",
+        "STRING16",
+        "STRING16",
+        "STRING16",
+        "STRING16",
+        "STRING16",
+        "STRING16",
+        "STRING16",
+        "STRING16",
+        "STRING16",
+        "STRING16",
+        "STRING16",
+        "STRING16",
+        "STRING16",
+        "STRING16",
+        "STRING16",
+        "STRING16",
+        "STRING16",
+        "STRING16",
+        "STRING16",
+        "STRING16",
+        "STRING16",
+        "STRING16",
+        "STRING16",
+        "STRING16",
+        "STRING16",
+        "STRING16",
+        "STRING16",
+        "STRING16",
+        "STRING16",
+        "STRING16",
+        "STRING16",
+        "STRING16",
+        "STRING16",
+        "STRING16",
+        "STRING16",
+        "STRING16",
+        "STRING16",
+        "STRING16",
+        "STRING16",
+        "STRING16",
+        "STRING16",
+        "STRING16",
+        "STRING16",
+        "STRING16",
+        "STRING16",
+        "STRING16",
+        "STRING16",
+        "STRING16",
+        "STRING16",
+        "STRING16",
+        "STRING16",
+        "STRING16",
+        "STRING16",
+        "STRING16",
+        "STRING16",
+        "STRING16",
+        "STRING16",
+        "STRING16",
+        "STRING16",
+        "STRING16",
+        "STRING16",
+        "STRING16",
+        "STRING16",
+        "STRING16",
+        "STRING16",
+        "STRING16",
+        "STRING16",
+        "STRING16",
+        "STRING16",
+        "STRING16",
+        "STRING16",
+        "STRING16",
+        "STRING16",
+        "STRING16",
+        "STRING16",
+        "STRING16",
+        "STRING16",
+        "STRING16",
+        "STRING16",
+        "STRING16",
+        "STRING16",
+        "STRING16",
+        "STRING16",
+        "STRING16",
+        "STRING16",
+        "STRING16",
+        "STRING16",
+        "STRING16",
+        "STRING16",
+        "STRING16",
+        "STRING16",
+        "STRING16",
+        "STRING16",
+        "STRING16",
+        "STRING16",
+        "STRING16",
+        "STRING16"
+    ],
+    "17": [],
+    "18": [],
+    "19": [
+        "INT32"
+    ],
+    "2": [],
+    "20": [],
+    "27": [],
+    "28": [],
+    "4": [
+        "INT32"
+    ],
+    "5": [
+        "INT32"
+    ],
+    "6": [],
+    "7": [
+        "INT32"
+    ],
+    "8": [
+        "INT32",
+        "INT32",
+        "INT32"
+    ],
+    "9": []
+}

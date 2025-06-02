@@ -1,0 +1,30 @@
+{
+    "class android::os::ParcelFileDescriptor": {
+        "variable": [
+            {
+                "count": 1,
+                "self_constraint": [],
+                "name": "android::OK",
+                "under_constraint": [],
+                "value": 0,
+                "dependency": [],
+                "relation": [],
+                "serialization_type": 0,
+                "usedBy": [],
+                "type": "android::status_t",
+                "loop": []
+            }
+        ],
+        "dependency": [],
+        "loop": [],
+        "possibility": [
+            {
+                "return": "android::OK",
+                "reply": [],
+                "data": [],
+                "id": 0
+            }
+        ],
+        "constraint": []
+    }
+}

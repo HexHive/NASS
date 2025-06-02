@@ -1,0 +1,5 @@
+colorist
+frida==16.5.6
+frida-tools==13.6.0
+pyelftools
+matplotlib

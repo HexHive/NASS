@@ -1,0 +1,143 @@
+{
+    "class aaudio::SharedMemoryParcelable": {
+        "variable": [
+            {
+                "count": 1,
+                "self_constraint": [
+                    "constraint2"
+                ],
+                "name": "mSizeInBytes",
+                "under_constraint": [],
+                "dependency": [],
+                "relation": [],
+                "signature": "int32_t",
+                "serialization_type": 2,
+                "usedBy": [],
+                "type": "int",
+                "loop": []
+            },
+            {
+                "count": 1,
+                "self_constraint": [
+                    "constraint1"
+                ],
+                "name": "status",
+                "under_constraint": [],
+                "dependency": [],
+                "relation": [],
+                "serialization_type": 0,
+                "usedBy": [],
+                "type": "android::status_t",
+                "loop": []
+            },
+            {
+                "count": 1,
+                "self_constraint": [],
+                "name": "aaudio::SharedMemoryParcelable::mFd",
+                "under_constraint": [
+                    {
+                        "status": true,
+                        "name": "constraint2"
+                    },
+                    {
+                        "status": true,
+                        "name": "constraint3"
+                    }
+                ],
+                "dependency": [],
+                "relation": [],
+                "serialization_type": 0,
+                "usedBy": [],
+                "type": "int",
+                "loop": []
+            },
+            {
+                "count": 1,
+                "self_constraint": [],
+                "name": "mFd",
+                "under_constraint": [
+                    {
+                        "status": true,
+                        "name": "constraint2"
+                    }
+                ],
+                "signature": "android::base::unique_fd",
+                "dependency": [],
+                "relation": [],
+                "takeOwnership": true,
+                "serialization_type": 2,
+                "usedBy": [],
+                "type": "FileDescriptor",
+                "loop": []
+            }
+        ],
+        "dependency": [],
+        "loop": [],
+        "possibility": [
+            {
+                "return": "status",
+                "reply": [
+                    "mSizeInBytes",
+                    "mFd"
+                ],
+                "data": [],
+                "id": 0
+            }
+        ],
+        "constraint": [
+            {
+                "lhs": {
+                    "type": "android::status_t",
+                    "name": "status"
+                },
+                "rhs": {
+                    "type": "enum android::(anonymous at system.core.libutils.include.utils.Errors.h:45:1)",
+                    "name": "android::NO_ERROR",
+                    "value": 0
+                },
+                "opcode": "!=",
+                "name": "constraint0",
+                "probability": 0.5
+            },
+            {
+                "lhs": {
+                    "type": "android::status_t",
+                    "name": "status"
+                },
+                "rhs": {
+                    "type": "enum android::(anonymous at system.core.libutils.include.utils.Errors.h:45:1)",
+                    "name": "android::NO_ERROR",
+                    "value": 0
+                },
+                "opcode": "!=",
+                "name": "constraint1",
+                "probability": 0.5
+            },
+            {
+                "lhs": {
+                    "type": "int",
+                    "name": "mSizeInBytes",
+                    "signature": "int32_t"
+                },
+                "rhs": {
+                    "type": "IntegerLiteral",
+                    "name": "implicit_2",
+                    "value": 0
+                },
+                "opcode": ">",
+                "name": "constraint2",
+                "probability": 0.5
+            },
+            {
+                "lhs": {
+                    "type": "IntegerLiteral",
+                    "name": "implicit_3",
+                    "value": 0
+                },
+                "opcode": "",
+                "name": "constraint3",
+                "probability": 0.5
+            }
+        ]
+    }
+}

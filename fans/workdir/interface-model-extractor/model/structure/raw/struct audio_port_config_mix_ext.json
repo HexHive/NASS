@@ -1,0 +1,57 @@
+{
+    "struct audio_port_config_mix_ext":{
+        "dependency":[],
+        "possibility":[
+            {
+                "id":0,
+                "data":[
+                    "audio_port_config_mix_ext::hw_module",
+                    "audio_port_config_mix_ext::handle",
+                    "audio_port_config_mix_ext::usecase"
+                ],
+                "reply":[],
+                "return":""
+            }
+        ],
+        "variable":[
+            {
+                "name":"audio_port_config_mix_ext::hw_module",
+                "type":"audio_module_handle_t",
+                "serialization_type":1,
+                "self_constraint":[],
+                "under_constraint":[],
+                "relation":[],
+                "loop":[],
+                "usedBy":[],
+                "dependency":[],
+                "count":1
+            },
+            {
+                "name":"audio_port_config_mix_ext::handle",
+                "type":"audio_io_handle_t",
+                "serialization_type":1,
+                "self_constraint":[],
+                "under_constraint":[],
+                "relation":[],
+                "loop":[],
+                "usedBy":[],
+                "dependency":[],
+                "count":1
+            },
+            {
+                "name":"audio_port_config_mix_ext::usecase",
+                "type":"union audio_port_config_mix_ext::(anonymous at system.media.audio.include.system.audio.h:403:5)",
+                "serialization_type":1,
+                "self_constraint":[],
+                "under_constraint":[],
+                "relation":[],
+                "loop":[],
+                "usedBy":[],
+                "dependency":[],
+                "count":1
+            }
+        ],
+        "constraint":[],
+        "loop":[]
+    }
+}

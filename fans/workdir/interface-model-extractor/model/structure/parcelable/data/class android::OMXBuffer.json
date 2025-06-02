@@ -1,0 +1,690 @@
+{
+    "class android::OMXBuffer": {
+        "variable": [
+            {
+                "count": 1,
+                "self_constraint": [
+                    "constraint0",
+                    "constraint3",
+                    "constraint4",
+                    "constraint8"
+                ],
+                "name": "bufferType",
+                "under_constraint": [],
+                "dependency": [],
+                "relation": [],
+                "serialization_type": 1,
+                "usedBy": [],
+                "type": "enum android::OMXBuffer::BufferType",
+                "loop": []
+            },
+            {
+                "count": 1,
+                "self_constraint": [],
+                "name": "mRangeOffset",
+                "under_constraint": [
+                    {
+                        "status": true,
+                        "name": "constraint0"
+                    }
+                ],
+                "dependency": [],
+                "relation": [],
+                "signature": "OMX_U32",
+                "serialization_type": 1,
+                "usedBy": [],
+                "type": "OMX_U32",
+                "loop": []
+            },
+            {
+                "count": 1,
+                "self_constraint": [
+                    "constraint1",
+                    "constraint2",
+                    "constraint5",
+                    "constraint7"
+                ],
+                "name": "err",
+                "under_constraint": [
+                    {
+                        "status": true,
+                        "name": "constraint0"
+                    }
+                ],
+                "dependency": [],
+                "relation": [],
+                "serialization_type": 0,
+                "usedBy": [],
+                "type": "android::status_t",
+                "loop": []
+            },
+            {
+                "count": 1,
+                "self_constraint": [],
+                "name": "mRangeLength",
+                "under_constraint": [
+                    {
+                        "status": true,
+                        "name": "constraint0"
+                    },
+                    {
+                        "status": false,
+                        "name": "constraint1"
+                    }
+                ],
+                "dependency": [],
+                "relation": [],
+                "signature": "OMX_U32",
+                "serialization_type": 1,
+                "usedBy": [],
+                "type": "OMX_U32",
+                "loop": []
+            },
+            {
+                "count": 1,
+                "self_constraint": [],
+                "name": "mMem",
+                "under_constraint": [
+                    {
+                        "status": true,
+                        "name": "constraint0"
+                    },
+                    {
+                        "status": false,
+                        "name": "constraint1"
+                    },
+                    {
+                        "status": true,
+                        "name": "constraint3"
+                    }
+                ],
+                "dependency": [
+                    {
+                        "filename": "BnEffect.json",
+                        "type": "Transaction",
+                        "name": "IEffect::5-5",
+                        "possIdx": 1,
+                        "varIdx": 0,
+                        "varName": "Cblk",
+                        "varType": "class android::sp<class android::IMemory>"
+                    },
+                    {
+                        "filename": "BnMediaSource.json",
+                        "type": "Transaction",
+                        "name": "IMediaSource::5-5",
+                        "possIdx": 1,
+                        "varIdx": 2,
+                        "varName": "transferBuf.mMemory",
+                        "varType": "class android::sp<class android::IMemory>"
+                    },
+                    {
+                        "filename": "BnMediaMetadataRetriever.json",
+                        "type": "Transaction",
+                        "name": "IMediaMetadataRetriever::5-5",
+                        "possIdx": 1,
+                        "varIdx": 1,
+                        "varName": "bitmap",
+                        "varType": "class android::sp<class android::IMemory>"
+                    },
+                    {
+                        "filename": "BnMediaMetadataRetriever.json",
+                        "type": "Transaction",
+                        "name": "IMediaMetadataRetriever::6-6",
+                        "possIdx": 1,
+                        "varIdx": 1,
+                        "varName": "bitmap",
+                        "varType": "class android::sp<class android::IMemory>"
+                    },
+                    {
+                        "filename": "BnMediaMetadataRetriever.json",
+                        "type": "Transaction",
+                        "name": "IMediaMetadataRetriever::7-7",
+                        "possIdx": 1,
+                        "varIdx": 1,
+                        "varName": "bitmap",
+                        "varType": "class android::sp<class android::IMemory>"
+                    },
+                    {
+                        "filename": "BnMediaMetadataRetriever.json",
+                        "type": "Transaction",
+                        "name": "IMediaMetadataRetriever::8-8",
+                        "possIdx": 1,
+                        "varIdx": 2,
+                        "varName": "frames[i]",
+                        "varType": "class android::sp<class android::IMemory>"
+                    },
+                    {
+                        "filename": "BnMediaMetadataRetriever.json",
+                        "type": "Transaction",
+                        "name": "IMediaMetadataRetriever::9-9",
+                        "possIdx": 1,
+                        "varIdx": 1,
+                        "varName": "albumArt",
+                        "varType": "class android::sp<class android::IMemory>"
+                    },
+                    {
+                        "filename": "BnAudioTrack.json",
+                        "type": "Transaction",
+                        "name": "IAudioTrack::1-1",
+                        "possIdx": 1,
+                        "varIdx": 0,
+                        "varName": "Cblk",
+                        "varType": "class android::sp<class android::IMemory>"
+                    },
+                    {
+                        "filename": "BnDataSource.json",
+                        "type": "Transaction",
+                        "name": "IDataSource::1-1",
+                        "possIdx": 1,
+                        "varIdx": 0,
+                        "varName": "IMemory",
+                        "varType": "class android::sp<class android::IMemory>"
+                    },
+                    {
+                        "filename": "class android::IAudioFlinger::CreateRecordOutput.json",
+                        "type": "Structure",
+                        "name": "class android::IAudioFlinger::CreateRecordOutput",
+                        "possIdx": 0,
+                        "varIdx": 8,
+                        "varName": "cblk",
+                        "varType": "class android::sp<class android::IMemory>"
+                    },
+                    {
+                        "filename": "class android::IAudioFlinger::CreateRecordOutput.json",
+                        "type": "Structure",
+                        "name": "class android::IAudioFlinger::CreateRecordOutput",
+                        "possIdx": 0,
+                        "varIdx": 11,
+                        "varName": "buffers",
+                        "varType": "class android::sp<class android::IMemory>"
+                    }
+                ],
+                "relation": [],
+                "serialization_type": 1,
+                "usedBy": [],
+                "type": "class android::sp<class android::IMemory>",
+                "loop": [],
+                "interfaceName": "IMemory"
+            },
+            {
+                "count": 1,
+                "self_constraint": [
+                    "constraint6"
+                ],
+                "name": "notNull",
+                "under_constraint": [
+                    {
+                        "status": true,
+                        "name": "constraint0"
+                    },
+                    {
+                        "status": false,
+                        "name": "constraint1"
+                    },
+                    {
+                        "status": true,
+                        "name": "constraint4"
+                    }
+                ],
+                "dependency": [],
+                "relation": [],
+                "serialization_type": 1,
+                "usedBy": [],
+                "type": "_Bool",
+                "loop": []
+            },
+            {
+                "count": 1,
+                "self_constraint": [],
+                "name": "buffer",
+                "under_constraint": [
+                    {
+                        "status": true,
+                        "name": "constraint0"
+                    },
+                    {
+                        "status": false,
+                        "name": "constraint1"
+                    },
+                    {
+                        "status": true,
+                        "name": "constraint4"
+                    },
+                    {
+                        "status": false,
+                        "name": "constraint5"
+                    },
+                    {
+                        "status": true,
+                        "name": "constraint6"
+                    }
+                ],
+                "dependency": [
+                    {
+                        "filename": "BnSurfaceComposer.json",
+                        "type": "Transaction",
+                        "name": "ISurfaceComposer::15-15",
+                        "possIdx": 1,
+                        "varIdx": 1,
+                        "varName": "outBuffer",
+                        "varType": "class android::GraphicBuffer"
+                    },
+                    {
+                        "filename": "BnSurfaceComposer.json",
+                        "type": "Transaction",
+                        "name": "ISurfaceComposer::16-16",
+                        "possIdx": 1,
+                        "varIdx": 1,
+                        "varName": "outBuffer",
+                        "varType": "class android::GraphicBuffer"
+                    },
+                    {
+                        "filename": "BnGraphicBufferProducer.json",
+                        "type": "Transaction",
+                        "name": "IGraphicBufferProducer::1-1",
+                        "possIdx": 1,
+                        "varIdx": 2,
+                        "varName": "buffer",
+                        "varType": "class android::GraphicBuffer"
+                    },
+                    {
+                        "filename": "BnGraphicBufferProducer.json",
+                        "type": "Transaction",
+                        "name": "IGraphicBufferProducer::4-4",
+                        "possIdx": 1,
+                        "varIdx": 3,
+                        "varName": "buffer",
+                        "varType": "class android::GraphicBuffer"
+                    },
+                    {
+                        "filename": "BnGraphicBufferProducer.json",
+                        "type": "Transaction",
+                        "name": "IGraphicBufferProducer::21-21",
+                        "possIdx": 2,
+                        "varIdx": 3,
+                        "varName": "buffer",
+                        "varType": "class android::GraphicBuffer"
+                    },
+                    {
+                        "filename": "BnGraphicBufferProducer.json",
+                        "type": "Transaction",
+                        "name": "IGraphicBufferProducer::21-21",
+                        "possIdx": 3,
+                        "varIdx": 3,
+                        "varName": "buffer",
+                        "varType": "class android::GraphicBuffer"
+                    },
+                    {
+                        "filename": "BnGraphicBufferProducer.json",
+                        "type": "Transaction",
+                        "name": "IGraphicBufferProducer::21-21",
+                        "possIdx": 4,
+                        "varIdx": 3,
+                        "varName": "buffer",
+                        "varType": "class android::GraphicBuffer"
+                    }
+                ],
+                "relation": [],
+                "serialization_type": 1,
+                "usedBy": [],
+                "type": "class android::GraphicBuffer",
+                "loop": []
+            },
+            {
+                "count": 1,
+                "self_constraint": [],
+                "name": "mNativeHandle->handle",
+                "under_constraint": [
+                    {
+                        "status": true,
+                        "name": "constraint0"
+                    },
+                    {
+                        "status": false,
+                        "name": "constraint1"
+                    },
+                    {
+                        "status": true,
+                        "name": "constraint4"
+                    },
+                    {
+                        "status": false,
+                        "name": "constraint5"
+                    },
+                    {
+                        "status": true,
+                        "name": "constraint8"
+                    }
+                ],
+                "dependency": [],
+                "relation": [],
+                "serialization_type": 1,
+                "usedBy": [],
+                "type": "struct native_handle",
+                "loop": []
+            },
+            {
+                "count": 1,
+                "self_constraint": [],
+                "name": "implicit_13",
+                "under_constraint": [
+                    {
+                        "status": true,
+                        "name": "constraint0"
+                    },
+                    {
+                        "status": false,
+                        "name": "constraint1"
+                    },
+                    {
+                        "status": true,
+                        "name": "constraint4"
+                    },
+                    {
+                        "status": false,
+                        "name": "constraint5"
+                    },
+                    {
+                        "status": true,
+                        "name": "constraint8"
+                    }
+                ],
+                "dependency": [],
+                "relation": [],
+                "serialization_type": 0,
+                "usedBy": [],
+                "type": "class android::NativeHandle",
+                "loop": []
+            },
+            {
+                "count": 1,
+                "self_constraint": [],
+                "name": "implicit_14",
+                "under_constraint": [
+                    {
+                        "status": true,
+                        "name": "constraint0"
+                    },
+                    {
+                        "status": false,
+                        "name": "constraint1"
+                    },
+                    {
+                        "status": true,
+                        "name": "constraint4"
+                    },
+                    {
+                        "status": false,
+                        "name": "constraint5"
+                    },
+                    {
+                        "status": true,
+                        "name": "constraint8"
+                    }
+                ],
+                "func_name": "android::sp<android::NativeHandle>::sp",
+                "argv": [
+                    {
+                        "type": "class android::sp<class android::NativeHandle>",
+                        "name": "implicit_13"
+                    }
+                ],
+                "dependency": [],
+                "relation": [],
+                "signature": "void (sp<class android::NativeHandle> &&)",
+                "serialization_type": 0,
+                "usedBy": [],
+                "type": "Function",
+                "loop": []
+            },
+            {
+                "count": 1,
+                "self_constraint": [],
+                "name": "handle",
+                "under_constraint": [
+                    {
+                        "status": true,
+                        "name": "constraint0"
+                    },
+                    {
+                        "status": false,
+                        "name": "constraint1"
+                    },
+                    {
+                        "status": true,
+                        "name": "constraint4"
+                    },
+                    {
+                        "status": false,
+                        "name": "constraint5"
+                    },
+                    {
+                        "status": true,
+                        "name": "constraint8"
+                    }
+                ],
+                "dependency": [],
+                "relation": [],
+                "serialization_type": 0,
+                "usedBy": [],
+                "type": "class android::NativeHandle",
+                "loop": []
+            },
+            {
+                "count": 1,
+                "self_constraint": [],
+                "name": "android::OK",
+                "under_constraint": [
+                    {
+                        "status": true,
+                        "name": "constraint0"
+                    },
+                    {
+                        "status": false,
+                        "name": "constraint1"
+                    },
+                    {
+                        "status": true,
+                        "name": "constraint4"
+                    },
+                    {
+                        "status": false,
+                        "name": "constraint5"
+                    }
+                ],
+                "value": 0,
+                "dependency": [],
+                "relation": [],
+                "serialization_type": 0,
+                "usedBy": [],
+                "type": "android::status_t",
+                "loop": []
+            }
+        ],
+        "dependency": [],
+        "loop": [],
+        "possibility": [
+            {
+                "return": "err",
+                "reply": [],
+                "data": [
+                    "bufferType",
+                    "mRangeOffset"
+                ],
+                "id": 0
+            },
+            {
+                "return": "err",
+                "reply": [],
+                "data": [
+                    "bufferType",
+                    "mRangeOffset",
+                    "mRangeLength"
+                ],
+                "id": 1
+            },
+            {
+                "return": "err",
+                "reply": [],
+                "data": [
+                    "bufferType",
+                    "mRangeOffset",
+                    "mRangeLength",
+                    "mMem",
+                    "notNull"
+                ],
+                "id": 2
+            },
+            {
+                "return": "err",
+                "reply": [],
+                "data": [
+                    "bufferType",
+                    "mRangeOffset",
+                    "mRangeLength",
+                    "mMem",
+                    "notNull",
+                    "buffer"
+                ],
+                "id": 3
+            },
+            {
+                "return": "android::OK",
+                "reply": [],
+                "data": [
+                    "bufferType",
+                    "mRangeOffset",
+                    "mRangeLength",
+                    "mMem",
+                    "notNull",
+                    "buffer",
+                    "mNativeHandle->handle"
+                ],
+                "id": 4
+            }
+        ],
+        "constraint": [
+            {
+                "lhs": {
+                    "type": "enum android::OMXBuffer::BufferType",
+                    "name": "bufferType"
+                },
+                "rhs": {
+                    "type": "IntegerLiteral",
+                    "name": "implicit_2",
+                    "value": 1
+                },
+                "opcode": "==",
+                "name": "constraint0",
+                "probability": 0.9
+            },
+            {
+                "lhs": {
+                    "type": "android::status_t",
+                    "name": "err"
+                },
+                "rhs": {
+                    "type": "android::status_t",
+                    "name": "android::OK",
+                    "value": 0
+                },
+                "opcode": "!=",
+                "name": "constraint1",
+                "probability": 0.1
+            },
+            {
+                "lhs": {
+                    "type": "android::status_t",
+                    "name": "err"
+                },
+                "rhs": {
+                    "type": "android::status_t",
+                    "name": "android::OK",
+                    "value": 0
+                },
+                "opcode": "!=",
+                "name": "constraint2",
+                "probability": 0.1
+            },
+            {
+                "lhs": {
+                    "type": "enum android::OMXBuffer::BufferType",
+                    "name": "bufferType"
+                },
+                "rhs": {
+                    "type": "IntegerLiteral",
+                    "name": "implicit_5",
+                    "value": 2
+                },
+                "opcode": "==",
+                "name": "constraint3",
+                "probability": 0.9
+            },
+            {
+                "lhs": {
+                    "type": "enum android::OMXBuffer::BufferType",
+                    "name": "bufferType"
+                },
+                "rhs": {
+                    "type": "IntegerLiteral",
+                    "name": "implicit_7",
+                    "value": 3
+                },
+                "opcode": "==",
+                "name": "constraint4",
+                "probability": 0.9
+            },
+            {
+                "lhs": {
+                    "type": "android::status_t",
+                    "name": "err"
+                },
+                "rhs": {
+                    "type": "android::status_t",
+                    "name": "android::OK",
+                    "value": 0
+                },
+                "opcode": "!=",
+                "name": "constraint5",
+                "probability": 0.1
+            },
+            {
+                "lhs": {
+                    "type": "_Bool",
+                    "name": "notNull"
+                },
+                "opcode": "",
+                "name": "constraint6",
+                "probability": 0.5
+            },
+            {
+                "lhs": {
+                    "type": "android::status_t",
+                    "name": "err"
+                },
+                "rhs": {
+                    "type": "android::status_t",
+                    "name": "android::OK",
+                    "value": 0
+                },
+                "opcode": "!=",
+                "name": "constraint7",
+                "probability": 0.1
+            },
+            {
+                "lhs": {
+                    "type": "enum android::OMXBuffer::BufferType",
+                    "name": "bufferType"
+                },
+                "rhs": {
+                    "type": "IntegerLiteral",
+                    "name": "implicit_10",
+                    "value": 4
+                },
+                "opcode": "==",
+                "name": "constraint8",
+                "probability": 0.9
+            }
+        ]
+    }
+}

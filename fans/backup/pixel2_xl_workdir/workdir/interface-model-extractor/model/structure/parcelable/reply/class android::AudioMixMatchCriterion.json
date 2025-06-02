@@ -1,0 +1,60 @@
+{
+    "class android::AudioMixMatchCriterion": {
+        "variable": [
+            {
+                "count": 1,
+                "self_constraint": [],
+                "name": "mRule",
+                "under_constraint": [],
+                "dependency": [],
+                "relation": [],
+                "signature": "uint32_t",
+                "serialization_type": 2,
+                "usedBy": [],
+                "type": "int",
+                "loop": []
+            },
+            {
+                "count": 1,
+                "self_constraint": [],
+                "name": "mValue.mUsage",
+                "under_constraint": [],
+                "type_alias": 1,
+                "dependency": [],
+                "relation": [],
+                "signature": "audio_usage_t",
+                "serialization_type": 2,
+                "usedBy": [],
+                "type": "enum audio_usage_t",
+                "loop": []
+            },
+            {
+                "count": 1,
+                "self_constraint": [],
+                "name": "android::NO_ERROR",
+                "under_constraint": [],
+                "value": 0,
+                "dependency": [],
+                "relation": [],
+                "serialization_type": 0,
+                "usedBy": [],
+                "type": "android::status_t",
+                "loop": []
+            }
+        ],
+        "dependency": [],
+        "loop": [],
+        "possibility": [
+            {
+                "return": "android::NO_ERROR",
+                "reply": [
+                    "mRule",
+                    "mValue.mUsage"
+                ],
+                "data": [],
+                "id": 0
+            }
+        ],
+        "constraint": []
+    }
+}

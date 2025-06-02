@@ -1,0 +1,37 @@
+{
+    "ISchedulingPolicyService::1-2": {
+        "code": [
+            1,
+            2
+        ],
+        "dependency": [],
+        "possibility": [
+            {
+                "id": 0,
+                "data": [],
+                "reply": [],
+                "return": "android::NO_ERROR"
+            }
+        ],
+        "variable": [
+            {
+                "name": "android::NO_ERROR",
+                "type": "android::status_t",
+                "value": 0,
+                "serialization_type": 0,
+                "self_constraint": [],
+                "under_constraint": [],
+                "relation": [],
+                "loop": [],
+                "usedBy": [],
+                "dependency": [],
+                "count": 1
+            }
+        ],
+        "constraint": [],
+        "loop": [],
+        "serviceName": "scheduling_policy",
+        "interfaceName": "ISchedulingPolicyService",
+        "interfaceToken": "android.os.ISchedulingPolicyService"
+    }
+}

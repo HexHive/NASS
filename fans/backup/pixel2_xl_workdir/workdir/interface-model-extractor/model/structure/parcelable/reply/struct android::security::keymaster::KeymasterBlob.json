@@ -1,0 +1,68 @@
+{
+    "struct android::security::keymaster::KeymasterBlob": {
+        "variable": [
+            {
+                "count": 1,
+                "self_constraint": [],
+                "name": "data_",
+                "under_constraint": [],
+                "dependency": [],
+                "relation": [],
+                "signature": "hardware::hidl_vec<uint8_t>",
+                "serialization_type": 0,
+                "usedBy": [],
+                "type": "struct android::hardware::hidl_vec<unsigned char>",
+                "loop": []
+            },
+            {
+                "count": 1,
+                "self_constraint": [],
+                "name": "implicit_1",
+                "under_constraint": [],
+                "func_name": "keystore::writeKeymasterBlob",
+                "argv": [
+                    {
+                        "type": "struct android::hardware::hidl_vec<unsigned char>",
+                        "name": "data_"
+                    },
+                    {
+                        "type": "class android::Parcel *",
+                        "name": "out"
+                    }
+                ],
+                "dependency": [],
+                "relation": [],
+                "signature": "android::status_t (const hidl_vec<uint8_t> &, android::Parcel *)",
+                "serialization_type": 2,
+                "usedBy": [],
+                "type": "Function",
+                "loop": []
+            },
+            {
+                "count": 1,
+                "self_constraint": [],
+                "name": "implicit_2",
+                "under_constraint": [],
+                "dependency": [],
+                "relation": [],
+                "serialization_type": 0,
+                "usedBy": [],
+                "type": "android::status_t",
+                "loop": []
+            }
+        ],
+        "dependency": [],
+        "loop": [],
+        "possibility": [
+            {
+                "return": "implicit_2",
+                "reply": [
+                    "implicit_1"
+                ],
+                "data": [],
+                "id": 0
+            }
+        ],
+        "constraint": []
+    }
+}

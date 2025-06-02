@@ -1,0 +1,838 @@
+{
+    "ISurfaceComposerClient::1-1": {
+        "code": [
+            1
+        ],
+        "dependency": [
+            {
+                "filename": "BnSurfaceComposer.json",
+                "type": "Transaction",
+                "name": "ISurfaceComposer::2-2",
+                "possIdx": 1,
+                "varIdx": 0,
+                "varName": "b",
+                "varType": "class android::sp<class android::ISurfaceComposerClient>"
+            },
+            {
+                "filename": "BnSurfaceComposer.json",
+                "type": "Transaction",
+                "name": "ISurfaceComposer::28-28",
+                "possIdx": 1,
+                "varIdx": 0,
+                "varName": "b",
+                "varType": "class android::sp<class android::ISurfaceComposerClient>"
+            }
+        ],
+        "possibility": [
+            {
+                "id": 0,
+                "data": [
+                    "ServiceInterfaceDescriptor"
+                ],
+                "reply": [],
+                "return": ""
+            },
+            {
+                "id": 1,
+                "data": [
+                    "ServiceInterfaceDescriptor",
+                    "name",
+                    "w",
+                    "h",
+                    "format",
+                    "flags",
+                    "parent",
+                    "windowType",
+                    "ownerUid"
+                ],
+                "reply": [
+                    "handle",
+                    "gbp"
+                ],
+                "return": "implicit_2"
+            }
+        ],
+        "variable": [
+            {
+                "name": "ServiceInterfaceDescriptor",
+                "type": "android::String16",
+                "serialization_type": 1,
+                "self_constraint": [
+                    "constraint0"
+                ],
+                "under_constraint": [],
+                "relation": [],
+                "loop": [],
+                "usedBy": [],
+                "dependency": [],
+                "count": 1
+            },
+            {
+                "name": "name",
+                "type": "class android::String8",
+                "callLocal": 1,
+                "serialization_type": 1,
+                "self_constraint": [],
+                "under_constraint": [
+                    {
+                        "name": "constraint0",
+                        "status": false
+                    }
+                ],
+                "relation": [],
+                "loop": [],
+                "usedBy": [],
+                "dependency": [],
+                "count": 1
+            },
+            {
+                "name": "w",
+                "type": "unsigned int",
+                "callLocal": 1,
+                "serialization_type": 1,
+                "self_constraint": [],
+                "under_constraint": [
+                    {
+                        "name": "constraint0",
+                        "status": false
+                    }
+                ],
+                "relation": [],
+                "loop": [],
+                "usedBy": [],
+                "dependency": [],
+                "count": 1
+            },
+            {
+                "name": "h",
+                "type": "unsigned int",
+                "callLocal": 1,
+                "serialization_type": 1,
+                "self_constraint": [],
+                "under_constraint": [
+                    {
+                        "name": "constraint0",
+                        "status": false
+                    }
+                ],
+                "relation": [],
+                "loop": [],
+                "usedBy": [],
+                "dependency": [],
+                "count": 1
+            },
+            {
+                "name": "format",
+                "type": "android::PixelFormat",
+                "callLocal": 1,
+                "serialization_type": 1,
+                "self_constraint": [],
+                "under_constraint": [
+                    {
+                        "name": "constraint0",
+                        "status": false
+                    }
+                ],
+                "relation": [],
+                "loop": [],
+                "usedBy": [],
+                "dependency": [
+                    {
+                        "filename": "class android::LayerDebugInfo.json",
+                        "type": "Structure",
+                        "name": "class android::LayerDebugInfo",
+                        "possIdx": 0,
+                        "varIdx": 19,
+                        "varName": "mPixelFormat",
+                        "varType": "android::PixelFormat"
+                    },
+                    {
+                        "filename": "class android::LayerDebugInfo.json",
+                        "type": "Structure",
+                        "name": "class android::LayerDebugInfo",
+                        "possIdx": 0,
+                        "varIdx": 25,
+                        "varName": "mActiveBufferFormat",
+                        "varType": "android::PixelFormat"
+                    }
+                ],
+                "count": 1
+            },
+            {
+                "name": "flags",
+                "type": "unsigned int",
+                "callLocal": 1,
+                "serialization_type": 1,
+                "self_constraint": [],
+                "under_constraint": [
+                    {
+                        "name": "constraint0",
+                        "status": false
+                    }
+                ],
+                "relation": [],
+                "loop": [],
+                "usedBy": [],
+                "dependency": [],
+                "count": 1
+            },
+            {
+                "name": "parent",
+                "type": "class android::sp<class android::IBinder>",
+                "callLocal": 1,
+                "serialization_type": 1,
+                "self_constraint": [],
+                "under_constraint": [
+                    {
+                        "name": "constraint0",
+                        "status": false
+                    }
+                ],
+                "relation": [],
+                "loop": [],
+                "usedBy": [],
+                "dependency": [
+                    {
+                        "filename": "BnSurfaceComposer.json",
+                        "type": "Transaction",
+                        "name": "ISurfaceComposer::5-5",
+                        "possIdx": 1,
+                        "varIdx": 0,
+                        "varName": "display",
+                        "varType": "class android::sp<class android::IBinder>"
+                    },
+                    {
+                        "filename": "BnSurfaceComposer.json",
+                        "type": "Transaction",
+                        "name": "ISurfaceComposer::7-7",
+                        "possIdx": 1,
+                        "varIdx": 0,
+                        "varName": "display",
+                        "varType": "class android::sp<class android::IBinder>"
+                    },
+                    {
+                        "filename": "BnAppOpsService.json",
+                        "type": "Transaction",
+                        "name": "IAppOpsService::7-7",
+                        "possIdx": 1,
+                        "varIdx": 1,
+                        "varName": "token",
+                        "varType": "class android::sp<class android::IBinder>"
+                    },
+                    {
+                        "filename": "struct android::security::keymaster::OperationResult.json",
+                        "type": "Structure",
+                        "name": "struct android::security::keymaster::OperationResult",
+                        "possIdx": 0,
+                        "varIdx": 1,
+                        "varName": "token",
+                        "varType": "class android::sp<class android::IBinder>"
+                    }
+                ],
+                "count": 1,
+                "interfaceName": "IBinder"
+            },
+            {
+                "name": "windowType",
+                "type": "int",
+                "callLocal": 1,
+                "serialization_type": 1,
+                "self_constraint": [],
+                "under_constraint": [
+                    {
+                        "name": "constraint0",
+                        "status": false
+                    }
+                ],
+                "relation": [],
+                "loop": [],
+                "usedBy": [],
+                "dependency": [],
+                "count": 1
+            },
+            {
+                "name": "ownerUid",
+                "type": "int",
+                "callLocal": 1,
+                "serialization_type": 1,
+                "self_constraint": [],
+                "under_constraint": [
+                    {
+                        "name": "constraint0",
+                        "status": false
+                    }
+                ],
+                "relation": [],
+                "loop": [],
+                "usedBy": [],
+                "dependency": [],
+                "count": 1
+            },
+            {
+                "name": "handle",
+                "type": "class android::sp<class android::IBinder>",
+                "callLocal": 1,
+                "serialization_type": 2,
+                "self_constraint": [],
+                "under_constraint": [
+                    {
+                        "name": "constraint0",
+                        "status": false
+                    }
+                ],
+                "relation": [],
+                "loop": [],
+                "usedBy": [],
+                "dependency": [],
+                "count": 1,
+                "interfaceName": "IBinder"
+            },
+            {
+                "name": "gbp",
+                "type": "class android::sp<class android::IGraphicBufferProducer>",
+                "callLocal": 1,
+                "serialization_type": 2,
+                "self_constraint": [],
+                "under_constraint": [
+                    {
+                        "name": "constraint0",
+                        "status": false
+                    }
+                ],
+                "relation": [],
+                "loop": [],
+                "usedBy": [],
+                "dependency": [],
+                "count": 1,
+                "interfaceName": "IGraphicBufferProducer"
+            },
+            {
+                "type": "android::status_t",
+                "name": "implicit_2",
+                "serialization_type": 0,
+                "self_constraint": [],
+                "under_constraint": [
+                    {
+                        "name": "constraint0",
+                        "status": false
+                    }
+                ],
+                "relation": [],
+                "loop": [],
+                "usedBy": [],
+                "dependency": [],
+                "count": 1
+            }
+        ],
+        "constraint": [
+            {
+                "name": "constraint0",
+                "opcode": "!",
+                "lhs": {
+                    "name": "ServiceInterfaceDescriptor",
+                    "type": "android::String16",
+                    "serialization_type": 1
+                },
+                "probability": 0.1
+            }
+        ],
+        "loop": [],
+        "serviceName": "None",
+        "interfaceName": "ISurfaceComposerClient",
+        "interfaceToken": "android.ui.ISurfaceComposerClient"
+    },
+    "ISurfaceComposerClient::2-2": {
+        "code": [
+            2
+        ],
+        "dependency": [
+            {
+                "filename": "BnSurfaceComposer.json",
+                "type": "Transaction",
+                "name": "ISurfaceComposer::2-2",
+                "possIdx": 1,
+                "varIdx": 0,
+                "varName": "b",
+                "varType": "class android::sp<class android::ISurfaceComposerClient>"
+            },
+            {
+                "filename": "BnSurfaceComposer.json",
+                "type": "Transaction",
+                "name": "ISurfaceComposer::28-28",
+                "possIdx": 1,
+                "varIdx": 0,
+                "varName": "b",
+                "varType": "class android::sp<class android::ISurfaceComposerClient>"
+            }
+        ],
+        "possibility": [
+            {
+                "id": 0,
+                "data": [
+                    "ServiceInterfaceDescriptor"
+                ],
+                "reply": [],
+                "return": ""
+            },
+            {
+                "id": 1,
+                "data": [
+                    "ServiceInterfaceDescriptor",
+                    "handle"
+                ],
+                "reply": [],
+                "return": "implicit_2"
+            }
+        ],
+        "variable": [
+            {
+                "name": "ServiceInterfaceDescriptor",
+                "type": "android::String16",
+                "serialization_type": 1,
+                "self_constraint": [
+                    "constraint0"
+                ],
+                "under_constraint": [],
+                "relation": [],
+                "loop": [],
+                "usedBy": [],
+                "dependency": [],
+                "count": 1
+            },
+            {
+                "name": "handle",
+                "type": "class android::sp<class android::IBinder>",
+                "callLocal": 1,
+                "serialization_type": 1,
+                "self_constraint": [],
+                "under_constraint": [
+                    {
+                        "name": "constraint0",
+                        "status": false
+                    }
+                ],
+                "relation": [],
+                "loop": [],
+                "usedBy": [],
+                "dependency": [
+                    {
+                        "filename": "BnSurfaceComposer.json",
+                        "type": "Transaction",
+                        "name": "ISurfaceComposer::5-5",
+                        "possIdx": 1,
+                        "varIdx": 0,
+                        "varName": "display",
+                        "varType": "class android::sp<class android::IBinder>"
+                    },
+                    {
+                        "filename": "BnSurfaceComposer.json",
+                        "type": "Transaction",
+                        "name": "ISurfaceComposer::7-7",
+                        "possIdx": 1,
+                        "varIdx": 0,
+                        "varName": "display",
+                        "varType": "class android::sp<class android::IBinder>"
+                    },
+                    {
+                        "filename": "BnSurfaceComposerClient.json",
+                        "type": "Transaction",
+                        "name": "ISurfaceComposerClient::1-1",
+                        "possIdx": 1,
+                        "varIdx": 0,
+                        "varName": "handle",
+                        "varType": "class android::sp<class android::IBinder>"
+                    },
+                    {
+                        "filename": "BnAppOpsService.json",
+                        "type": "Transaction",
+                        "name": "IAppOpsService::7-7",
+                        "possIdx": 1,
+                        "varIdx": 1,
+                        "varName": "token",
+                        "varType": "class android::sp<class android::IBinder>"
+                    },
+                    {
+                        "filename": "struct android::security::keymaster::OperationResult.json",
+                        "type": "Structure",
+                        "name": "struct android::security::keymaster::OperationResult",
+                        "possIdx": 0,
+                        "varIdx": 1,
+                        "varName": "token",
+                        "varType": "class android::sp<class android::IBinder>"
+                    }
+                ],
+                "count": 1,
+                "interfaceName": "IBinder"
+            },
+            {
+                "type": "android::status_t",
+                "name": "implicit_2",
+                "serialization_type": 0,
+                "self_constraint": [],
+                "under_constraint": [
+                    {
+                        "name": "constraint0",
+                        "status": false
+                    }
+                ],
+                "relation": [],
+                "loop": [],
+                "usedBy": [],
+                "dependency": [],
+                "count": 1
+            }
+        ],
+        "constraint": [
+            {
+                "name": "constraint0",
+                "opcode": "!",
+                "lhs": {
+                    "name": "ServiceInterfaceDescriptor",
+                    "type": "android::String16",
+                    "serialization_type": 1
+                },
+                "probability": 0.1
+            }
+        ],
+        "loop": [],
+        "serviceName": "None",
+        "interfaceName": "ISurfaceComposerClient",
+        "interfaceToken": "android.ui.ISurfaceComposerClient"
+    },
+    "ISurfaceComposerClient::3-3": {
+        "code": [
+            3
+        ],
+        "dependency": [
+            {
+                "filename": "BnSurfaceComposer.json",
+                "type": "Transaction",
+                "name": "ISurfaceComposer::2-2",
+                "possIdx": 1,
+                "varIdx": 0,
+                "varName": "b",
+                "varType": "class android::sp<class android::ISurfaceComposerClient>"
+            },
+            {
+                "filename": "BnSurfaceComposer.json",
+                "type": "Transaction",
+                "name": "ISurfaceComposer::28-28",
+                "possIdx": 1,
+                "varIdx": 0,
+                "varName": "b",
+                "varType": "class android::sp<class android::ISurfaceComposerClient>"
+            }
+        ],
+        "possibility": [
+            {
+                "id": 0,
+                "data": [
+                    "ServiceInterfaceDescriptor"
+                ],
+                "reply": [],
+                "return": ""
+            },
+            {
+                "id": 1,
+                "data": [
+                    "ServiceInterfaceDescriptor",
+                    "handle"
+                ],
+                "reply": [],
+                "return": "implicit_2"
+            }
+        ],
+        "variable": [
+            {
+                "name": "ServiceInterfaceDescriptor",
+                "type": "android::String16",
+                "serialization_type": 1,
+                "self_constraint": [
+                    "constraint0"
+                ],
+                "under_constraint": [],
+                "relation": [],
+                "loop": [],
+                "usedBy": [],
+                "dependency": [],
+                "count": 1
+            },
+            {
+                "name": "handle",
+                "type": "class android::sp<class android::IBinder>",
+                "callLocal": 1,
+                "serialization_type": 1,
+                "self_constraint": [],
+                "under_constraint": [
+                    {
+                        "name": "constraint0",
+                        "status": false
+                    }
+                ],
+                "relation": [],
+                "loop": [],
+                "usedBy": [],
+                "dependency": [
+                    {
+                        "filename": "BnSurfaceComposer.json",
+                        "type": "Transaction",
+                        "name": "ISurfaceComposer::5-5",
+                        "possIdx": 1,
+                        "varIdx": 0,
+                        "varName": "display",
+                        "varType": "class android::sp<class android::IBinder>"
+                    },
+                    {
+                        "filename": "BnSurfaceComposer.json",
+                        "type": "Transaction",
+                        "name": "ISurfaceComposer::7-7",
+                        "possIdx": 1,
+                        "varIdx": 0,
+                        "varName": "display",
+                        "varType": "class android::sp<class android::IBinder>"
+                    },
+                    {
+                        "filename": "BnSurfaceComposerClient.json",
+                        "type": "Transaction",
+                        "name": "ISurfaceComposerClient::1-1",
+                        "possIdx": 1,
+                        "varIdx": 0,
+                        "varName": "handle",
+                        "varType": "class android::sp<class android::IBinder>"
+                    },
+                    {
+                        "filename": "BnAppOpsService.json",
+                        "type": "Transaction",
+                        "name": "IAppOpsService::7-7",
+                        "possIdx": 1,
+                        "varIdx": 1,
+                        "varName": "token",
+                        "varType": "class android::sp<class android::IBinder>"
+                    },
+                    {
+                        "filename": "struct android::security::keymaster::OperationResult.json",
+                        "type": "Structure",
+                        "name": "struct android::security::keymaster::OperationResult",
+                        "possIdx": 0,
+                        "varIdx": 1,
+                        "varName": "token",
+                        "varType": "class android::sp<class android::IBinder>"
+                    }
+                ],
+                "count": 1,
+                "interfaceName": "IBinder"
+            },
+            {
+                "type": "android::status_t",
+                "name": "implicit_2",
+                "serialization_type": 0,
+                "self_constraint": [],
+                "under_constraint": [
+                    {
+                        "name": "constraint0",
+                        "status": false
+                    }
+                ],
+                "relation": [],
+                "loop": [],
+                "usedBy": [],
+                "dependency": [],
+                "count": 1
+            }
+        ],
+        "constraint": [
+            {
+                "name": "constraint0",
+                "opcode": "!",
+                "lhs": {
+                    "name": "ServiceInterfaceDescriptor",
+                    "type": "android::String16",
+                    "serialization_type": 1
+                },
+                "probability": 0.1
+            }
+        ],
+        "loop": [],
+        "serviceName": "None",
+        "interfaceName": "ISurfaceComposerClient",
+        "interfaceToken": "android.ui.ISurfaceComposerClient"
+    },
+    "ISurfaceComposerClient::4-4": {
+        "code": [
+            4
+        ],
+        "dependency": [
+            {
+                "filename": "BnSurfaceComposer.json",
+                "type": "Transaction",
+                "name": "ISurfaceComposer::2-2",
+                "possIdx": 1,
+                "varIdx": 0,
+                "varName": "b",
+                "varType": "class android::sp<class android::ISurfaceComposerClient>"
+            },
+            {
+                "filename": "BnSurfaceComposer.json",
+                "type": "Transaction",
+                "name": "ISurfaceComposer::28-28",
+                "possIdx": 1,
+                "varIdx": 0,
+                "varName": "b",
+                "varType": "class android::sp<class android::ISurfaceComposerClient>"
+            }
+        ],
+        "possibility": [
+            {
+                "id": 0,
+                "data": [
+                    "ServiceInterfaceDescriptor"
+                ],
+                "reply": [],
+                "return": ""
+            },
+            {
+                "id": 1,
+                "data": [
+                    "ServiceInterfaceDescriptor",
+                    "handle"
+                ],
+                "reply": [
+                    "outStats"
+                ],
+                "return": "implicit_2"
+            }
+        ],
+        "variable": [
+            {
+                "name": "ServiceInterfaceDescriptor",
+                "type": "android::String16",
+                "serialization_type": 1,
+                "self_constraint": [
+                    "constraint0"
+                ],
+                "under_constraint": [],
+                "relation": [],
+                "loop": [],
+                "usedBy": [],
+                "dependency": [],
+                "count": 1
+            },
+            {
+                "name": "handle",
+                "type": "class android::sp<class android::IBinder>",
+                "callLocal": 1,
+                "serialization_type": 1,
+                "self_constraint": [],
+                "under_constraint": [
+                    {
+                        "name": "constraint0",
+                        "status": false
+                    }
+                ],
+                "relation": [],
+                "loop": [],
+                "usedBy": [],
+                "dependency": [
+                    {
+                        "filename": "BnSurfaceComposer.json",
+                        "type": "Transaction",
+                        "name": "ISurfaceComposer::5-5",
+                        "possIdx": 1,
+                        "varIdx": 0,
+                        "varName": "display",
+                        "varType": "class android::sp<class android::IBinder>"
+                    },
+                    {
+                        "filename": "BnSurfaceComposer.json",
+                        "type": "Transaction",
+                        "name": "ISurfaceComposer::7-7",
+                        "possIdx": 1,
+                        "varIdx": 0,
+                        "varName": "display",
+                        "varType": "class android::sp<class android::IBinder>"
+                    },
+                    {
+                        "filename": "BnSurfaceComposerClient.json",
+                        "type": "Transaction",
+                        "name": "ISurfaceComposerClient::1-1",
+                        "possIdx": 1,
+                        "varIdx": 0,
+                        "varName": "handle",
+                        "varType": "class android::sp<class android::IBinder>"
+                    },
+                    {
+                        "filename": "BnAppOpsService.json",
+                        "type": "Transaction",
+                        "name": "IAppOpsService::7-7",
+                        "possIdx": 1,
+                        "varIdx": 1,
+                        "varName": "token",
+                        "varType": "class android::sp<class android::IBinder>"
+                    },
+                    {
+                        "filename": "struct android::security::keymaster::OperationResult.json",
+                        "type": "Structure",
+                        "name": "struct android::security::keymaster::OperationResult",
+                        "possIdx": 0,
+                        "varIdx": 1,
+                        "varName": "token",
+                        "varType": "class android::sp<class android::IBinder>"
+                    }
+                ],
+                "count": 1,
+                "interfaceName": "IBinder"
+            },
+            {
+                "name": "outStats",
+                "type": "class android::FrameStats",
+                "callLocal": 1,
+                "serialization_type": 2,
+                "self_constraint": [],
+                "under_constraint": [
+                    {
+                        "name": "constraint0",
+                        "status": false
+                    }
+                ],
+                "relation": [],
+                "loop": [],
+                "usedBy": [],
+                "dependency": [],
+                "count": 1
+            },
+            {
+                "type": "android::status_t",
+                "name": "implicit_2",
+                "serialization_type": 0,
+                "self_constraint": [],
+                "under_constraint": [
+                    {
+                        "name": "constraint0",
+                        "status": false
+                    }
+                ],
+                "relation": [],
+                "loop": [],
+                "usedBy": [],
+                "dependency": [],
+                "count": 1
+            }
+        ],
+        "constraint": [
+            {
+                "name": "constraint0",
+                "opcode": "!",
+                "lhs": {
+                    "name": "ServiceInterfaceDescriptor",
+                    "type": "android::String16",
+                    "serialization_type": 1
+                },
+                "probability": 0.1
+            }
+        ],
+        "loop": [],
+        "serviceName": "None",
+        "interfaceName": "ISurfaceComposerClient",
+        "interfaceToken": "android.ui.ISurfaceComposerClient"
+    }
+}

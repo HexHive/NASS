@@ -1,0 +1,139 @@
+from typing import List
+import ghidra.app.plugin.core.debug.service.modules
+import ghidra.app.services
+import ghidra.program.model.address
+import ghidra.program.model.listing
+import ghidra.program.model.mem
+import ghidra.program.util
+import ghidra.trace.model
+import java.lang
+import java.net
+import java.util
+
+
+class DebuggerStaticMappingUtils(java.lang.Enum):
+
+
+
+
+
+    class Extrema(object):
+
+
+
+
+        def __init__(self): ...
+
+
+
+        def consider(self, __a0: ghidra.program.model.address.AddressRange) -> None: ...
+
+        def equals(self, __a0: object) -> bool: ...
+
+        def getClass(self) -> java.lang.Class: ...
+
+        def getLength(self) -> long: ...
+
+        def getMax(self) -> ghidra.program.model.address.Address: ...
+
+        def getMin(self) -> ghidra.program.model.address.Address: ...
+
+        def hashCode(self) -> int: ...
+
+        def notify(self) -> None: ...
+
+        def notifyAll(self) -> None: ...
+
+        def toString(self) -> unicode: ...
+
+        @overload
+        def wait(self) -> None: ...
+
+        @overload
+        def wait(self, __a0: long) -> None: ...
+
+        @overload
+        def wait(self, __a0: long, __a1: int) -> None: ...
+
+        @property
+        def length(self) -> long: ...
+
+        @property
+        def max(self) -> ghidra.program.model.address.Address: ...
+
+        @property
+        def min(self) -> ghidra.program.model.address.Address: ...
+
+
+
+
+
+    @staticmethod
+    def addIdentityMapping(__a0: ghidra.trace.model.Trace, __a1: ghidra.program.model.listing.Program, __a2: ghidra.trace.model.Lifespan, __a3: bool) -> None: ...
+
+    @overload
+    @staticmethod
+    def addMapping(__a0: ghidra.app.services.MapEntry, __a1: bool) -> None: ...
+
+    @overload
+    @staticmethod
+    def addMapping(__a0: ghidra.trace.model.TraceLocation, __a1: ghidra.program.util.ProgramLocation, __a2: long, __a3: bool) -> None: ...
+
+    @staticmethod
+    def collectLibraries(__a0: java.util.Collection) -> java.util.Set: ...
+
+    @overload
+    def compareTo(self, __a0: java.lang.Enum) -> int: ...
+
+    @overload
+    def compareTo(self, __a0: object) -> int: ...
+
+    @staticmethod
+    def computeMappedFiles(__a0: ghidra.trace.model.Trace, __a1: long, __a2: ghidra.program.model.address.AddressRange) -> unicode: ...
+
+    def describeConstable(self) -> java.util.Optional: ...
+
+    def equals(self, __a0: object) -> bool: ...
+
+    def getClass(self) -> java.lang.Class: ...
+
+    def getDeclaringClass(self) -> java.lang.Class: ...
+
+    @staticmethod
+    def getImageName(__a0: java.net.URL) -> unicode: ...
+
+    def hashCode(self) -> int: ...
+
+    @staticmethod
+    def isReal(__a0: ghidra.program.model.mem.MemoryBlock) -> bool: ...
+
+    def name(self) -> unicode: ...
+
+    def notify(self) -> None: ...
+
+    def notifyAll(self) -> None: ...
+
+    def ordinal(self) -> int: ...
+
+    def toString(self) -> unicode: ...
+
+    @overload
+    @staticmethod
+    def valueOf(__a0: unicode) -> ghidra.app.plugin.core.debug.service.modules.DebuggerStaticMappingUtils: ...
+
+    @overload
+    @staticmethod
+    def valueOf(__a0: java.lang.Class, __a1: unicode) -> java.lang.Enum: ...
+
+    @staticmethod
+    def values() -> List[ghidra.app.plugin.core.debug.service.modules.DebuggerStaticMappingUtils]: ...
+
+    @overload
+    def wait(self) -> None: ...
+
+    @overload
+    def wait(self, __a0: long) -> None: ...
+
+    @overload
+    def wait(self, __a0: long, __a1: int) -> None: ...
+

@@ -1,0 +1,585 @@
+{
+    "struct android::CaptureResult": {
+        "variable": [
+            {
+                "count": 1,
+                "self_constraint": [],
+                "name": "android::BAD_VALUE",
+                "under_constraint": [
+                    {
+                        "status": true,
+                        "name": "constraint1"
+                    }
+                ],
+                "value": -22,
+                "dependency": [],
+                "relation": [],
+                "serialization_type": 0,
+                "usedBy": [],
+                "type": "android::status_t",
+                "loop": []
+            },
+            {
+                "count": 1,
+                "self_constraint": [],
+                "name": "mMetadata",
+                "under_constraint": [
+                    {
+                        "status": false,
+                        "name": "constraint1"
+                    }
+                ],
+                "dependency": [
+                    {
+                        "filename": "BnCameraService.json",
+                        "type": "Transaction",
+                        "name": "ICameraService::8-8",
+                        "possIdx": 0,
+                        "varIdx": 1,
+                        "varName": "_aidl_return",
+                        "varType": "class android::CameraMetadata"
+                    },
+                    {
+                        "filename": "BnCameraDeviceUser.json",
+                        "type": "Transaction",
+                        "name": "ICameraDeviceUser::11-11",
+                        "possIdx": 0,
+                        "varIdx": 1,
+                        "varName": "_aidl_return",
+                        "varType": "class android::CameraMetadata"
+                    },
+                    {
+                        "filename": "BnCameraDeviceUser.json",
+                        "type": "Transaction",
+                        "name": "ICameraDeviceUser::12-12",
+                        "possIdx": 0,
+                        "varIdx": 1,
+                        "varName": "_aidl_return",
+                        "varType": "class android::CameraMetadata"
+                    }
+                ],
+                "relation": [],
+                "signature": "class android::CameraMetadata",
+                "serialization_type": 1,
+                "usedBy": [],
+                "type": "class android::CameraMetadata",
+                "loop": []
+            },
+            {
+                "count": 1,
+                "self_constraint": [
+                    "constraint2",
+                    "constraint4",
+                    "constraint7",
+                    "constraint8",
+                    "constraint10"
+                ],
+                "name": "res",
+                "under_constraint": [
+                    {
+                        "status": false,
+                        "name": "constraint1"
+                    }
+                ],
+                "dependency": [],
+                "relation": [],
+                "serialization_type": 0,
+                "usedBy": [],
+                "type": "android::status_t",
+                "loop": []
+            },
+            {
+                "count": 1,
+                "self_constraint": [
+                    "constraint5",
+                    "constraint6"
+                ],
+                "name": "physicalMetadataCount",
+                "under_constraint": [
+                    {
+                        "status": false,
+                        "name": "constraint1"
+                    },
+                    {
+                        "status": false,
+                        "name": "constraint2"
+                    }
+                ],
+                "dependency": [],
+                "relation": [],
+                "serialization_type": 1,
+                "usedBy": [],
+                "type": "int",
+                "loop": []
+            },
+            {
+                "count": 1,
+                "self_constraint": [
+                    "constraint6"
+                ],
+                "name": "i",
+                "under_constraint": [
+                    {
+                        "status": false,
+                        "name": "constraint1"
+                    },
+                    {
+                        "status": false,
+                        "name": "constraint2"
+                    },
+                    {
+                        "status": false,
+                        "name": "constraint4"
+                    },
+                    {
+                        "status": false,
+                        "name": "constraint5"
+                    }
+                ],
+                "value": 0,
+                "dependency": [],
+                "relation": [],
+                "serialization_type": 0,
+                "usedBy": [],
+                "type": "int",
+                "loop": []
+            },
+            {
+                "count": 1,
+                "self_constraint": [],
+                "name": "cameraId",
+                "under_constraint": [
+                    {
+                        "status": false,
+                        "name": "constraint1"
+                    },
+                    {
+                        "status": false,
+                        "name": "constraint2"
+                    },
+                    {
+                        "status": false,
+                        "name": "constraint4"
+                    },
+                    {
+                        "status": false,
+                        "name": "constraint5"
+                    }
+                ],
+                "dependency": [
+                    {
+                        "filename": "struct android::hardware::CameraStatus.json",
+                        "type": "Structure",
+                        "name": "struct android::hardware::CameraStatus",
+                        "possIdx": 0,
+                        "varIdx": 0,
+                        "varName": "cameraId",
+                        "varType": "class android::String16"
+                    }
+                ],
+                "relation": [],
+                "serialization_type": 1,
+                "usedBy": [],
+                "type": "class android::String16",
+                "loop": [
+                    "loop0"
+                ]
+            },
+            {
+                "count": 1,
+                "self_constraint": [],
+                "name": "physicalMetadata",
+                "under_constraint": [
+                    {
+                        "status": false,
+                        "name": "constraint1"
+                    },
+                    {
+                        "status": false,
+                        "name": "constraint2"
+                    },
+                    {
+                        "status": false,
+                        "name": "constraint4"
+                    },
+                    {
+                        "status": false,
+                        "name": "constraint5"
+                    },
+                    {
+                        "status": false,
+                        "name": "constraint7"
+                    }
+                ],
+                "dependency": [
+                    {
+                        "filename": "BnCameraService.json",
+                        "type": "Transaction",
+                        "name": "ICameraService::8-8",
+                        "possIdx": 0,
+                        "varIdx": 1,
+                        "varName": "_aidl_return",
+                        "varType": "class android::CameraMetadata"
+                    },
+                    {
+                        "filename": "BnCameraDeviceUser.json",
+                        "type": "Transaction",
+                        "name": "ICameraDeviceUser::11-11",
+                        "possIdx": 0,
+                        "varIdx": 1,
+                        "varName": "_aidl_return",
+                        "varType": "class android::CameraMetadata"
+                    },
+                    {
+                        "filename": "BnCameraDeviceUser.json",
+                        "type": "Transaction",
+                        "name": "ICameraDeviceUser::12-12",
+                        "possIdx": 0,
+                        "varIdx": 1,
+                        "varName": "_aidl_return",
+                        "varType": "class android::CameraMetadata"
+                    }
+                ],
+                "relation": [],
+                "serialization_type": 1,
+                "usedBy": [],
+                "type": "class android::CameraMetadata",
+                "loop": [
+                    "loop0"
+                ]
+            },
+            {
+                "count": 1,
+                "self_constraint": [],
+                "name": "mResultExtras",
+                "under_constraint": [
+                    {
+                        "status": false,
+                        "name": "constraint1"
+                    },
+                    {
+                        "status": false,
+                        "name": "constraint2"
+                    },
+                    {
+                        "status": false,
+                        "name": "constraint4"
+                    },
+                    {
+                        "status": false,
+                        "name": "constraint5"
+                    },
+                    {
+                        "status": false,
+                        "name": "constraint7"
+                    },
+                    {
+                        "status": false,
+                        "name": "constraint8"
+                    }
+                ],
+                "dependency": [],
+                "relation": [],
+                "signature": "struct android::hardware::camera2::impl::CaptureResultExtras",
+                "serialization_type": 1,
+                "usedBy": [],
+                "type": "struct android::hardware::camera2::impl::CaptureResultExtras",
+                "loop": []
+            },
+            {
+                "count": 1,
+                "self_constraint": [],
+                "name": "android::OK",
+                "under_constraint": [
+                    {
+                        "status": false,
+                        "name": "constraint1"
+                    },
+                    {
+                        "status": false,
+                        "name": "constraint2"
+                    },
+                    {
+                        "status": false,
+                        "name": "constraint4"
+                    },
+                    {
+                        "status": false,
+                        "name": "constraint5"
+                    },
+                    {
+                        "status": false,
+                        "name": "constraint7"
+                    },
+                    {
+                        "status": false,
+                        "name": "constraint8"
+                    },
+                    {
+                        "status": false,
+                        "name": "constraint10"
+                    }
+                ],
+                "value": 0,
+                "dependency": [],
+                "relation": [],
+                "serialization_type": 0,
+                "usedBy": [],
+                "type": "android::status_t",
+                "loop": []
+            }
+        ],
+        "dependency": [],
+        "loop": [
+            {
+                "counter": {
+                    "type": "int",
+                    "name": "i",
+                    "value": 0
+                },
+                "inc": {
+                    "type": "int",
+                    "opcode": "++",
+                    "name": "i"
+                },
+                "name": "loop0",
+                "constraint": "constraint6"
+            }
+        ],
+        "possibility": [
+            {
+                "return": "android::BAD_VALUE",
+                "reply": [],
+                "data": [],
+                "id": 0
+            },
+            {
+                "return": "res",
+                "reply": [],
+                "data": [
+                    "mMetadata"
+                ],
+                "id": 1
+            },
+            {
+                "return": "res",
+                "reply": [],
+                "data": [
+                    "mMetadata",
+                    "physicalMetadataCount"
+                ],
+                "id": 2
+            },
+            {
+                "return": "android::BAD_VALUE",
+                "reply": [],
+                "data": [
+                    "mMetadata",
+                    "physicalMetadataCount"
+                ],
+                "id": 3
+            },
+            {
+                "return": "res",
+                "reply": [],
+                "data": [
+                    "mMetadata",
+                    "physicalMetadataCount",
+                    "cameraId"
+                ],
+                "id": 4
+            },
+            {
+                "return": "res",
+                "reply": [],
+                "data": [
+                    "mMetadata",
+                    "physicalMetadataCount",
+                    "cameraId",
+                    "physicalMetadata"
+                ],
+                "id": 5
+            },
+            {
+                "return": "res",
+                "reply": [],
+                "data": [
+                    "mMetadata",
+                    "physicalMetadataCount",
+                    "cameraId",
+                    "physicalMetadata",
+                    "mResultExtras"
+                ],
+                "id": 6
+            },
+            {
+                "return": "android::OK",
+                "reply": [],
+                "data": [
+                    "mMetadata",
+                    "physicalMetadataCount",
+                    "cameraId",
+                    "physicalMetadata",
+                    "mResultExtras"
+                ],
+                "id": 7
+            }
+        ],
+        "constraint": [
+            {
+                "lhs": {
+                    "type": "IntegerLiteral",
+                    "name": "implicit_1",
+                    "value": 0
+                },
+                "opcode": "",
+                "name": "constraint0",
+                "probability": 0.5
+            },
+            {
+                "lhs": {
+                    "type": "class android::Parcel *",
+                    "name": "parcel"
+                },
+                "rhs": {
+                    "type": "class android::Parcel *",
+                    "name": "implicit_6",
+                    "value": "NULL"
+                },
+                "opcode": "==",
+                "name": "constraint1",
+                "probability": 0.1
+            },
+            {
+                "lhs": {
+                    "type": "android::status_t",
+                    "name": "res"
+                },
+                "rhs": {
+                    "type": "android::status_t",
+                    "name": "android::OK",
+                    "value": 0
+                },
+                "opcode": "!=",
+                "name": "constraint2",
+                "probability": 0.1
+            },
+            {
+                "lhs": {
+                    "type": "IntegerLiteral",
+                    "name": "implicit_16",
+                    "value": 0
+                },
+                "opcode": "",
+                "name": "constraint3",
+                "probability": 0.5
+            },
+            {
+                "lhs": {
+                    "serialization_type": 0,
+                    "type": "android::status_t",
+                    "name": "res"
+                },
+                "rhs": {
+                    "type": "android::status_t",
+                    "name": "android::OK",
+                    "value": 0
+                },
+                "opcode": "!=",
+                "name": "constraint4",
+                "probability": 0.1
+            },
+            {
+                "lhs": {
+                    "type": "int",
+                    "name": "physicalMetadataCount"
+                },
+                "rhs": {
+                    "type": "IntegerLiteral",
+                    "name": "implicit_26",
+                    "value": 0
+                },
+                "opcode": "<",
+                "name": "constraint5",
+                "probability": 0.1
+            },
+            {
+                "lhs": {
+                    "type": "int",
+                    "name": "i"
+                },
+                "rhs": {
+                    "type": "int",
+                    "name": "physicalMetadataCount"
+                },
+                "opcode": "<",
+                "name": "constraint6",
+                "probability": 0.5
+            },
+            {
+                "lhs": {
+                    "serialization_type": 0,
+                    "type": "android::status_t",
+                    "name": "res"
+                },
+                "rhs": {
+                    "type": "android::status_t",
+                    "name": "android::OK",
+                    "value": 0
+                },
+                "opcode": "!=",
+                "name": "constraint7",
+                "probability": 0.1
+            },
+            {
+                "lhs": {
+                    "serialization_type": 0,
+                    "type": "android::status_t",
+                    "name": "res"
+                },
+                "rhs": {
+                    "type": "android::status_t",
+                    "name": "android::OK",
+                    "value": 0
+                },
+                "opcode": "!=",
+                "name": "constraint8",
+                "probability": 0.1
+            },
+            {
+                "lhs": {
+                    "type": "IntegerLiteral",
+                    "name": "implicit_42",
+                    "value": 0
+                },
+                "opcode": "",
+                "name": "constraint9",
+                "probability": 0.5
+            },
+            {
+                "lhs": {
+                    "type": "android::status_t",
+                    "name": "res"
+                },
+                "rhs": {
+                    "type": "android::status_t",
+                    "name": "android::OK",
+                    "value": 0
+                },
+                "opcode": "!=",
+                "name": "constraint10",
+                "probability": 0.1
+            },
+            {
+                "lhs": {
+                    "type": "IntegerLiteral",
+                    "name": "implicit_52",
+                    "value": 0
+                },
+                "opcode": "",
+                "name": "constraint11",
+                "probability": 0.5
+            }
+        ]
+    }
+}

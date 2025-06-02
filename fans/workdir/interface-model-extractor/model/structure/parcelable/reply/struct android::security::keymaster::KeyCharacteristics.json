@@ -1,0 +1,95 @@
+{
+    "struct android::security::keymaster::KeyCharacteristics": {
+        "variable": [
+            {
+                "count": 1,
+                "self_constraint": [],
+                "name": "softwareEnforced",
+                "under_constraint": [],
+                "dependency": [],
+                "relation": [],
+                "signature": "struct android::security::keymaster::KeymasterArguments",
+                "serialization_type": 2,
+                "usedBy": [],
+                "type": "struct android::security::keymaster::KeymasterArguments",
+                "loop": []
+            },
+            {
+                "count": 1,
+                "self_constraint": [],
+                "name": "hardwareEnforced",
+                "under_constraint": [],
+                "dependency": [],
+                "relation": [],
+                "signature": "struct android::security::keymaster::KeymasterArguments",
+                "serialization_type": 2,
+                "usedBy": [],
+                "type": "struct android::security::keymaster::KeymasterArguments",
+                "loop": []
+            },
+            {
+                "count": 1,
+                "self_constraint": [],
+                "name": "implicit_2",
+                "under_constraint": [],
+                "dependency": [],
+                "relation": [],
+                "serialization_type": 0,
+                "usedBy": [],
+                "type": "android::status_t",
+                "loop": []
+            }
+        ],
+        "dependency": [
+            {
+                "filename": "BnKeystoreService.json",
+                "type": "Transaction",
+                "name": "IKeystoreService::23-23",
+                "possIdx": 0,
+                "varIdx": 2,
+                "varName": "out_characteristics",
+                "varType": "struct android::security::keymaster::KeyCharacteristics"
+            },
+            {
+                "filename": "BnKeystoreService.json",
+                "type": "Transaction",
+                "name": "IKeystoreService::24-24",
+                "possIdx": 0,
+                "varIdx": 2,
+                "varName": "out_characteristics",
+                "varType": "struct android::security::keymaster::KeyCharacteristics"
+            },
+            {
+                "filename": "BnKeystoreService.json",
+                "type": "Transaction",
+                "name": "IKeystoreService::25-25",
+                "possIdx": 0,
+                "varIdx": 2,
+                "varName": "out_characteristics",
+                "varType": "struct android::security::keymaster::KeyCharacteristics"
+            },
+            {
+                "filename": "BnKeystoreService.json",
+                "type": "Transaction",
+                "name": "IKeystoreService::38-38",
+                "possIdx": 0,
+                "varIdx": 2,
+                "varName": "out_characteristics",
+                "varType": "struct android::security::keymaster::KeyCharacteristics"
+            }
+        ],
+        "loop": [],
+        "possibility": [
+            {
+                "return": "implicit_2",
+                "reply": [
+                    "softwareEnforced",
+                    "hardwareEnforced"
+                ],
+                "data": [],
+                "id": 0
+            }
+        ],
+        "constraint": []
+    }
+}

@@ -1,0 +1,58 @@
+{
+    "class android::os::ParcelFileDescriptor": {
+        "variable": [
+            {
+                "count": 1,
+                "self_constraint": [],
+                "name": "implicit_1",
+                "under_constraint": [],
+                "dependency": [],
+                "relation": [],
+                "serialization_type": 2,
+                "usedBy": [],
+                "type": "_Bool",
+                "loop": []
+            },
+            {
+                "count": 1,
+                "self_constraint": [],
+                "name": "fd_",
+                "under_constraint": [],
+                "signature": "int",
+                "dependency": [],
+                "relation": [],
+                "takeOwnership": "takeOwnership_",
+                "serialization_type": 2,
+                "usedBy": [],
+                "type": "int",
+                "loop": []
+            },
+            {
+                "count": 1,
+                "self_constraint": [],
+                "name": "implicit_2",
+                "under_constraint": [],
+                "dependency": [],
+                "relation": [],
+                "serialization_type": 0,
+                "usedBy": [],
+                "type": "android::status_t",
+                "loop": []
+            }
+        ],
+        "dependency": [],
+        "loop": [],
+        "possibility": [
+            {
+                "return": "implicit_2",
+                "reply": [
+                    "implicit_1",
+                    "fd_"
+                ],
+                "data": [],
+                "id": 0
+            }
+        ],
+        "constraint": []
+    }
+}

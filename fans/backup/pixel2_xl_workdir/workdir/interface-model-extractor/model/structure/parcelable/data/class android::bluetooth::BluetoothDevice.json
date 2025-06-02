@@ -1,0 +1,73 @@
+{
+    "class android::bluetooth::BluetoothDevice": {
+        "variable": [
+            {
+                "count": 1,
+                "self_constraint": [],
+                "name": "tmp",
+                "under_constraint": [],
+                "dependency": [],
+                "relation": [],
+                "serialization_type": 1,
+                "usedBy": [],
+                "type": "class android::String16",
+                "loop": []
+            },
+            {
+                "count": 1,
+                "self_constraint": [
+                    "constraint0"
+                ],
+                "name": "status",
+                "under_constraint": [],
+                "dependency": [],
+                "relation": [],
+                "serialization_type": 0,
+                "usedBy": [],
+                "type": "android::status_t",
+                "loop": []
+            },
+            {
+                "count": 1,
+                "self_constraint": [],
+                "name": "android::OK",
+                "under_constraint": [],
+                "value": 0,
+                "dependency": [],
+                "relation": [],
+                "serialization_type": 0,
+                "usedBy": [],
+                "type": "android::status_t",
+                "loop": []
+            }
+        ],
+        "dependency": [],
+        "loop": [],
+        "possibility": [
+            {
+                "return": "android::OK",
+                "reply": [],
+                "data": [
+                    "tmp"
+                ],
+                "id": 0
+            }
+        ],
+        "constraint": [
+            {
+                "lhs": {
+                    "type": "android::status_t",
+                    "name": "status"
+                },
+                "rhs": {
+                    "type": "android::status_t",
+                    "name": "android::OK",
+                    "value": 0
+                },
+                "opcode": "!=",
+                "name": "constraint0",
+                "probability": 0.5
+            }
+        ]
+    }
+}

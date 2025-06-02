@@ -1,0 +1,1113 @@
+{
+    "IPermissionController::1-1": {
+        "code": [
+            1
+        ],
+        "dependency": [],
+        "possibility": [
+            {
+                "id": 0,
+                "data": [
+                    "ServiceInterfaceDescriptor"
+                ],
+                "reply": [],
+                "return": "android::PERMISSION_DENIED"
+            },
+            {
+                "id": 1,
+                "data": [
+                    "ServiceInterfaceDescriptor",
+                    "permission",
+                    "pid",
+                    "uid"
+                ],
+                "reply": [
+                    "implicit_5",
+                    "implicit_6",
+                    "implicit_7"
+                ],
+                "return": "android::NO_ERROR"
+            }
+        ],
+        "variable": [
+            {
+                "name": "ServiceInterfaceDescriptor",
+                "type": "class android::String16",
+                "serialization_type": 1,
+                "self_constraint": [
+                    "constraint0"
+                ],
+                "under_constraint": [],
+                "relation": [],
+                "loop": [],
+                "usedBy": [],
+                "dependency": [],
+                "count": 1
+            },
+            {
+                "name": "android::PERMISSION_DENIED",
+                "type": "android::status_t",
+                "value": -1,
+                "serialization_type": 0,
+                "self_constraint": [],
+                "under_constraint": [
+                    {
+                        "name": "constraint0",
+                        "status": true
+                    }
+                ],
+                "relation": [],
+                "loop": [],
+                "usedBy": [],
+                "dependency": [],
+                "count": 1
+            },
+            {
+                "type": "class android::String16",
+                "name": "permission",
+                "serialization_type": 1,
+                "self_constraint": [],
+                "under_constraint": [
+                    {
+                        "name": "constraint0",
+                        "status": false
+                    }
+                ],
+                "relation": [],
+                "loop": [],
+                "usedBy": [],
+                "dependency": [],
+                "count": 1
+            },
+            {
+                "type": "int",
+                "name": "pid",
+                "serialization_type": 1,
+                "self_constraint": [],
+                "under_constraint": [
+                    {
+                        "name": "constraint0",
+                        "status": false
+                    }
+                ],
+                "relation": [],
+                "loop": [],
+                "usedBy": [],
+                "dependency": [],
+                "count": 1
+            },
+            {
+                "type": "int",
+                "name": "uid",
+                "serialization_type": 1,
+                "self_constraint": [],
+                "under_constraint": [
+                    {
+                        "name": "constraint0",
+                        "status": false
+                    }
+                ],
+                "relation": [],
+                "loop": [],
+                "usedBy": [],
+                "dependency": [
+                    {
+                        "filename": "BnPermissionController.json",
+                        "type": "Transaction",
+                        "name": "IPermissionController::5-5",
+                        "possIdx": 1,
+                        "varIdx": 1,
+                        "varName": "uid",
+                        "varType": "int"
+                    },
+                    {
+                        "filename": "class android::os::storaged::UidInfo.json",
+                        "type": "Structure",
+                        "name": "class android::os::storaged::UidInfo",
+                        "possIdx": 0,
+                        "varIdx": 0,
+                        "varName": "uid",
+                        "varType": "int"
+                    }
+                ],
+                "count": 1
+            },
+            {
+                "name": "mException",
+                "type": "int",
+                "serialization_type": 0,
+                "self_constraint": [],
+                "under_constraint": [
+                    {
+                        "name": "constraint0",
+                        "status": false
+                    }
+                ],
+                "relation": [],
+                "loop": [],
+                "usedBy": [],
+                "dependency": [],
+                "count": 1
+            },
+            {
+                "type": "class android::binder::Status",
+                "name": "implicit_5",
+                "serialization_type": 2,
+                "self_constraint": [],
+                "under_constraint": [
+                    {
+                        "name": "constraint0",
+                        "status": false
+                    }
+                ],
+                "relation": [],
+                "loop": [],
+                "usedBy": [],
+                "dependency": [],
+                "count": 1
+            },
+            {
+                "name": "implicit_6",
+                "type": "IntegerLiteral",
+                "value": 1,
+                "serialization_type": 2,
+                "self_constraint": [],
+                "under_constraint": [
+                    {
+                        "name": "constraint0",
+                        "status": false
+                    },
+                    {
+                        "name": "constraint1",
+                        "status": true
+                    }
+                ],
+                "relation": [],
+                "loop": [],
+                "usedBy": [],
+                "dependency": [],
+                "count": 1
+            },
+            {
+                "name": "implicit_7",
+                "type": "IntegerLiteral",
+                "value": 0,
+                "serialization_type": 2,
+                "self_constraint": [],
+                "under_constraint": [
+                    {
+                        "name": "constraint0",
+                        "status": false
+                    },
+                    {
+                        "name": "constraint1",
+                        "status": false
+                    }
+                ],
+                "relation": [],
+                "loop": [],
+                "usedBy": [],
+                "dependency": [],
+                "count": 1
+            },
+            {
+                "name": "android::NO_ERROR",
+                "type": "android::status_t",
+                "value": 0,
+                "serialization_type": 0,
+                "self_constraint": [],
+                "under_constraint": [
+                    {
+                        "name": "constraint0",
+                        "status": false
+                    }
+                ],
+                "relation": [],
+                "loop": [],
+                "usedBy": [],
+                "dependency": [],
+                "count": 1
+            }
+        ],
+        "constraint": [
+            {
+                "name": "constraint0",
+                "opcode": "!",
+                "lhs": {
+                    "name": "ServiceInterfaceDescriptor",
+                    "type": "class android::String16",
+                    "serialization_type": 1
+                },
+                "probability": 0.1
+            },
+            {
+                "opcode": "",
+                "lhs": {
+                    "name": "res",
+                    "type": "_Bool"
+                },
+                "probability": 0.5,
+                "name": "constraint1"
+            }
+        ],
+        "loop": [],
+        "serviceName": "permission",
+        "interfaceName": "IPermissionController",
+        "interfaceToken": "android.os.IPermissionController"
+    },
+    "IPermissionController::2-2": {
+        "code": [
+            2
+        ],
+        "dependency": [],
+        "possibility": [
+            {
+                "id": 0,
+                "data": [
+                    "ServiceInterfaceDescriptor"
+                ],
+                "reply": [],
+                "return": "android::PERMISSION_DENIED"
+            },
+            {
+                "id": 1,
+                "data": [
+                    "ServiceInterfaceDescriptor",
+                    "op",
+                    "uid",
+                    "packageName"
+                ],
+                "reply": [
+                    "implicit_5",
+                    "res"
+                ],
+                "return": "android::NO_ERROR"
+            }
+        ],
+        "variable": [
+            {
+                "name": "ServiceInterfaceDescriptor",
+                "type": "class android::String16",
+                "serialization_type": 1,
+                "self_constraint": [
+                    "constraint0"
+                ],
+                "under_constraint": [],
+                "relation": [],
+                "loop": [],
+                "usedBy": [],
+                "dependency": [],
+                "count": 1
+            },
+            {
+                "name": "android::PERMISSION_DENIED",
+                "type": "android::status_t",
+                "value": -1,
+                "serialization_type": 0,
+                "self_constraint": [],
+                "under_constraint": [
+                    {
+                        "name": "constraint0",
+                        "status": true
+                    }
+                ],
+                "relation": [],
+                "loop": [],
+                "usedBy": [],
+                "dependency": [],
+                "count": 1
+            },
+            {
+                "type": "class android::String16",
+                "name": "op",
+                "serialization_type": 1,
+                "self_constraint": [],
+                "under_constraint": [
+                    {
+                        "name": "constraint0",
+                        "status": false
+                    }
+                ],
+                "relation": [],
+                "loop": [],
+                "usedBy": [],
+                "dependency": [],
+                "count": 1
+            },
+            {
+                "type": "int",
+                "name": "uid",
+                "serialization_type": 1,
+                "self_constraint": [],
+                "under_constraint": [
+                    {
+                        "name": "constraint0",
+                        "status": false
+                    }
+                ],
+                "relation": [],
+                "loop": [],
+                "usedBy": [],
+                "dependency": [
+                    {
+                        "filename": "BnPermissionController.json",
+                        "type": "Transaction",
+                        "name": "IPermissionController::5-5",
+                        "possIdx": 1,
+                        "varIdx": 1,
+                        "varName": "uid",
+                        "varType": "int"
+                    },
+                    {
+                        "filename": "class android::os::storaged::UidInfo.json",
+                        "type": "Structure",
+                        "name": "class android::os::storaged::UidInfo",
+                        "possIdx": 0,
+                        "varIdx": 0,
+                        "varName": "uid",
+                        "varType": "int"
+                    }
+                ],
+                "count": 1
+            },
+            {
+                "type": "class android::String16",
+                "name": "packageName",
+                "serialization_type": 1,
+                "self_constraint": [],
+                "under_constraint": [
+                    {
+                        "name": "constraint0",
+                        "status": false
+                    }
+                ],
+                "relation": [],
+                "loop": [],
+                "usedBy": [],
+                "dependency": [],
+                "count": 1
+            },
+            {
+                "name": "mException",
+                "type": "int",
+                "serialization_type": 0,
+                "self_constraint": [],
+                "under_constraint": [
+                    {
+                        "name": "constraint0",
+                        "status": false
+                    }
+                ],
+                "relation": [],
+                "loop": [],
+                "usedBy": [],
+                "dependency": [],
+                "count": 1
+            },
+            {
+                "type": "class android::binder::Status",
+                "name": "implicit_5",
+                "serialization_type": 2,
+                "self_constraint": [],
+                "under_constraint": [
+                    {
+                        "name": "constraint0",
+                        "status": false
+                    }
+                ],
+                "relation": [],
+                "loop": [],
+                "usedBy": [],
+                "dependency": [],
+                "count": 1
+            },
+            {
+                "name": "res",
+                "type": "int",
+                "serialization_type": 2,
+                "self_constraint": [],
+                "under_constraint": [
+                    {
+                        "name": "constraint0",
+                        "status": false
+                    }
+                ],
+                "relation": [],
+                "loop": [],
+                "usedBy": [],
+                "dependency": [],
+                "count": 1
+            },
+            {
+                "name": "android::NO_ERROR",
+                "type": "android::status_t",
+                "value": 0,
+                "serialization_type": 0,
+                "self_constraint": [],
+                "under_constraint": [
+                    {
+                        "name": "constraint0",
+                        "status": false
+                    }
+                ],
+                "relation": [],
+                "loop": [],
+                "usedBy": [],
+                "dependency": [],
+                "count": 1
+            }
+        ],
+        "constraint": [
+            {
+                "name": "constraint0",
+                "opcode": "!",
+                "lhs": {
+                    "name": "ServiceInterfaceDescriptor",
+                    "type": "class android::String16",
+                    "serialization_type": 1
+                },
+                "probability": 0.1
+            }
+        ],
+        "loop": [],
+        "serviceName": "permission",
+        "interfaceName": "IPermissionController",
+        "interfaceToken": "android.os.IPermissionController"
+    },
+    "IPermissionController::3-3": {
+        "code": [
+            3
+        ],
+        "dependency": [],
+        "possibility": [
+            {
+                "id": 0,
+                "data": [
+                    "ServiceInterfaceDescriptor"
+                ],
+                "reply": [],
+                "return": "android::PERMISSION_DENIED"
+            },
+            {
+                "id": 1,
+                "data": [
+                    "ServiceInterfaceDescriptor",
+                    "uid"
+                ],
+                "reply": [
+                    "implicit_3",
+                    "size",
+                    "packages[i]"
+                ],
+                "return": "android::NO_ERROR"
+            }
+        ],
+        "variable": [
+            {
+                "name": "ServiceInterfaceDescriptor",
+                "type": "class android::String16",
+                "serialization_type": 1,
+                "self_constraint": [
+                    "constraint0"
+                ],
+                "under_constraint": [],
+                "relation": [],
+                "loop": [],
+                "usedBy": [],
+                "dependency": [],
+                "count": 1
+            },
+            {
+                "name": "android::PERMISSION_DENIED",
+                "type": "android::status_t",
+                "value": -1,
+                "serialization_type": 0,
+                "self_constraint": [],
+                "under_constraint": [
+                    {
+                        "name": "constraint0",
+                        "status": true
+                    }
+                ],
+                "relation": [],
+                "loop": [],
+                "usedBy": [],
+                "dependency": [],
+                "count": 1
+            },
+            {
+                "type": "int",
+                "name": "uid",
+                "serialization_type": 1,
+                "self_constraint": [],
+                "under_constraint": [
+                    {
+                        "name": "constraint0",
+                        "status": false
+                    }
+                ],
+                "relation": [],
+                "loop": [],
+                "usedBy": [],
+                "dependency": [
+                    {
+                        "filename": "BnPermissionController.json",
+                        "type": "Transaction",
+                        "name": "IPermissionController::5-5",
+                        "possIdx": 1,
+                        "varIdx": 1,
+                        "varName": "uid",
+                        "varType": "int"
+                    },
+                    {
+                        "filename": "class android::os::storaged::UidInfo.json",
+                        "type": "Structure",
+                        "name": "class android::os::storaged::UidInfo",
+                        "possIdx": 0,
+                        "varIdx": 0,
+                        "varName": "uid",
+                        "varType": "int"
+                    }
+                ],
+                "count": 1
+            },
+            {
+                "name": "mException",
+                "type": "int",
+                "serialization_type": 0,
+                "self_constraint": [],
+                "under_constraint": [
+                    {
+                        "name": "constraint0",
+                        "status": false
+                    }
+                ],
+                "relation": [],
+                "loop": [],
+                "usedBy": [],
+                "dependency": [],
+                "count": 1
+            },
+            {
+                "type": "class android::binder::Status",
+                "name": "implicit_3",
+                "serialization_type": 2,
+                "self_constraint": [],
+                "under_constraint": [
+                    {
+                        "name": "constraint0",
+                        "status": false
+                    }
+                ],
+                "relation": [],
+                "loop": [],
+                "usedBy": [],
+                "dependency": [],
+                "count": 1
+            },
+            {
+                "name": "size",
+                "type": "int",
+                "serialization_type": 2,
+                "self_constraint": [
+                    "constraint1"
+                ],
+                "under_constraint": [
+                    {
+                        "name": "constraint0",
+                        "status": false
+                    }
+                ],
+                "relation": [],
+                "loop": [],
+                "usedBy": [],
+                "dependency": [],
+                "count": 1
+            },
+            {
+                "name": "i",
+                "type": "size_t",
+                "value": 0,
+                "serialization_type": 0,
+                "self_constraint": [
+                    "constraint1"
+                ],
+                "under_constraint": [
+                    {
+                        "name": "constraint0",
+                        "status": false
+                    }
+                ],
+                "relation": [],
+                "loop": [],
+                "usedBy": [],
+                "dependency": [],
+                "count": 1
+            },
+            {
+                "name": "packages[i]",
+                "type": "class android::String16",
+                "serialization_type": 2,
+                "self_constraint": [],
+                "under_constraint": [
+                    {
+                        "name": "constraint0",
+                        "status": false
+                    }
+                ],
+                "relation": [],
+                "loop": [
+                    "loop0"
+                ],
+                "usedBy": [],
+                "dependency": [],
+                "count": 1
+            },
+            {
+                "name": "android::NO_ERROR",
+                "type": "android::status_t",
+                "value": 0,
+                "serialization_type": 0,
+                "self_constraint": [],
+                "under_constraint": [
+                    {
+                        "name": "constraint0",
+                        "status": false
+                    }
+                ],
+                "relation": [],
+                "loop": [],
+                "usedBy": [],
+                "dependency": [],
+                "count": 1
+            }
+        ],
+        "constraint": [
+            {
+                "name": "constraint0",
+                "opcode": "!",
+                "lhs": {
+                    "name": "ServiceInterfaceDescriptor",
+                    "type": "class android::String16",
+                    "serialization_type": 1
+                },
+                "probability": 0.1
+            },
+            {
+                "name": "constraint1",
+                "opcode": "<",
+                "lhs": {
+                    "name": "i",
+                    "type": "size_t"
+                },
+                "rhs": {
+                    "name": "size",
+                    "type": "int"
+                },
+                "probability": 0.5
+            }
+        ],
+        "loop": [
+            {
+                "name": "loop0",
+                "counter": {
+                    "name": "i",
+                    "type": "size_t",
+                    "value": 0
+                },
+                "constraint": "constraint1",
+                "inc": {
+                    "opcode": "++",
+                    "name": "i",
+                    "type": "size_t"
+                }
+            }
+        ],
+        "serviceName": "permission",
+        "interfaceName": "IPermissionController",
+        "interfaceToken": "android.os.IPermissionController"
+    },
+    "IPermissionController::4-4": {
+        "code": [
+            4
+        ],
+        "dependency": [],
+        "possibility": [
+            {
+                "id": 0,
+                "data": [
+                    "ServiceInterfaceDescriptor"
+                ],
+                "reply": [],
+                "return": "android::PERMISSION_DENIED"
+            },
+            {
+                "id": 1,
+                "data": [
+                    "ServiceInterfaceDescriptor",
+                    "permission"
+                ],
+                "reply": [
+                    "implicit_3",
+                    "implicit_4",
+                    "implicit_5"
+                ],
+                "return": "android::NO_ERROR"
+            }
+        ],
+        "variable": [
+            {
+                "name": "ServiceInterfaceDescriptor",
+                "type": "class android::String16",
+                "serialization_type": 1,
+                "self_constraint": [
+                    "constraint0"
+                ],
+                "under_constraint": [],
+                "relation": [],
+                "loop": [],
+                "usedBy": [],
+                "dependency": [],
+                "count": 1
+            },
+            {
+                "name": "android::PERMISSION_DENIED",
+                "type": "android::status_t",
+                "value": -1,
+                "serialization_type": 0,
+                "self_constraint": [],
+                "under_constraint": [
+                    {
+                        "name": "constraint0",
+                        "status": true
+                    }
+                ],
+                "relation": [],
+                "loop": [],
+                "usedBy": [],
+                "dependency": [],
+                "count": 1
+            },
+            {
+                "type": "class android::String16",
+                "name": "permission",
+                "serialization_type": 1,
+                "self_constraint": [],
+                "under_constraint": [
+                    {
+                        "name": "constraint0",
+                        "status": false
+                    }
+                ],
+                "relation": [],
+                "loop": [],
+                "usedBy": [],
+                "dependency": [],
+                "count": 1
+            },
+            {
+                "name": "mException",
+                "type": "int",
+                "serialization_type": 0,
+                "self_constraint": [],
+                "under_constraint": [
+                    {
+                        "name": "constraint0",
+                        "status": false
+                    }
+                ],
+                "relation": [],
+                "loop": [],
+                "usedBy": [],
+                "dependency": [],
+                "count": 1
+            },
+            {
+                "type": "class android::binder::Status",
+                "name": "implicit_3",
+                "serialization_type": 2,
+                "self_constraint": [],
+                "under_constraint": [
+                    {
+                        "name": "constraint0",
+                        "status": false
+                    }
+                ],
+                "relation": [],
+                "loop": [],
+                "usedBy": [],
+                "dependency": [],
+                "count": 1
+            },
+            {
+                "name": "implicit_4",
+                "type": "IntegerLiteral",
+                "value": 1,
+                "serialization_type": 2,
+                "self_constraint": [],
+                "under_constraint": [
+                    {
+                        "name": "constraint0",
+                        "status": false
+                    },
+                    {
+                        "name": "constraint1",
+                        "status": true
+                    }
+                ],
+                "relation": [],
+                "loop": [],
+                "usedBy": [],
+                "dependency": [],
+                "count": 1
+            },
+            {
+                "name": "implicit_5",
+                "type": "IntegerLiteral",
+                "value": 0,
+                "serialization_type": 2,
+                "self_constraint": [],
+                "under_constraint": [
+                    {
+                        "name": "constraint0",
+                        "status": false
+                    },
+                    {
+                        "name": "constraint1",
+                        "status": false
+                    }
+                ],
+                "relation": [],
+                "loop": [],
+                "usedBy": [],
+                "dependency": [],
+                "count": 1
+            },
+            {
+                "name": "android::NO_ERROR",
+                "type": "android::status_t",
+                "value": 0,
+                "serialization_type": 0,
+                "self_constraint": [],
+                "under_constraint": [
+                    {
+                        "name": "constraint0",
+                        "status": false
+                    }
+                ],
+                "relation": [],
+                "loop": [],
+                "usedBy": [],
+                "dependency": [],
+                "count": 1
+            }
+        ],
+        "constraint": [
+            {
+                "name": "constraint0",
+                "opcode": "!",
+                "lhs": {
+                    "name": "ServiceInterfaceDescriptor",
+                    "type": "class android::String16",
+                    "serialization_type": 1
+                },
+                "probability": 0.1
+            },
+            {
+                "opcode": "",
+                "lhs": {
+                    "name": "res",
+                    "type": "_Bool"
+                },
+                "probability": 0.5,
+                "name": "constraint1"
+            }
+        ],
+        "loop": [],
+        "serviceName": "permission",
+        "interfaceName": "IPermissionController",
+        "interfaceToken": "android.os.IPermissionController"
+    },
+    "IPermissionController::5-5": {
+        "code": [
+            5
+        ],
+        "dependency": [],
+        "possibility": [
+            {
+                "id": 0,
+                "data": [
+                    "ServiceInterfaceDescriptor"
+                ],
+                "reply": [],
+                "return": "android::PERMISSION_DENIED"
+            },
+            {
+                "id": 1,
+                "data": [
+                    "ServiceInterfaceDescriptor",
+                    "package",
+                    "flags"
+                ],
+                "reply": [
+                    "implicit_4",
+                    "uid"
+                ],
+                "return": "android::NO_ERROR"
+            }
+        ],
+        "variable": [
+            {
+                "name": "ServiceInterfaceDescriptor",
+                "type": "class android::String16",
+                "serialization_type": 1,
+                "self_constraint": [
+                    "constraint0"
+                ],
+                "under_constraint": [],
+                "relation": [],
+                "loop": [],
+                "usedBy": [],
+                "dependency": [],
+                "count": 1
+            },
+            {
+                "name": "android::PERMISSION_DENIED",
+                "type": "android::status_t",
+                "value": -1,
+                "serialization_type": 0,
+                "self_constraint": [],
+                "under_constraint": [
+                    {
+                        "name": "constraint0",
+                        "status": true
+                    }
+                ],
+                "relation": [],
+                "loop": [],
+                "usedBy": [],
+                "dependency": [],
+                "count": 1
+            },
+            {
+                "type": "class android::String16",
+                "name": "package",
+                "serialization_type": 1,
+                "self_constraint": [],
+                "under_constraint": [
+                    {
+                        "name": "constraint0",
+                        "status": false
+                    }
+                ],
+                "relation": [],
+                "loop": [],
+                "usedBy": [],
+                "dependency": [],
+                "count": 1
+            },
+            {
+                "type": "int",
+                "name": "flags",
+                "serialization_type": 1,
+                "self_constraint": [],
+                "under_constraint": [
+                    {
+                        "name": "constraint0",
+                        "status": false
+                    }
+                ],
+                "relation": [],
+                "loop": [],
+                "usedBy": [],
+                "dependency": [],
+                "count": 1
+            },
+            {
+                "name": "mException",
+                "type": "int",
+                "serialization_type": 0,
+                "self_constraint": [],
+                "under_constraint": [
+                    {
+                        "name": "constraint0",
+                        "status": false
+                    }
+                ],
+                "relation": [],
+                "loop": [],
+                "usedBy": [],
+                "dependency": [],
+                "count": 1
+            },
+            {
+                "type": "class android::binder::Status",
+                "name": "implicit_4",
+                "serialization_type": 2,
+                "self_constraint": [],
+                "under_constraint": [
+                    {
+                        "name": "constraint0",
+                        "status": false
+                    }
+                ],
+                "relation": [],
+                "loop": [],
+                "usedBy": [],
+                "dependency": [],
+                "count": 1
+            },
+            {
+                "name": "uid",
+                "type": "int",
+                "serialization_type": 2,
+                "self_constraint": [],
+                "under_constraint": [
+                    {
+                        "name": "constraint0",
+                        "status": false
+                    }
+                ],
+                "relation": [],
+                "loop": [],
+                "usedBy": [],
+                "dependency": [],
+                "count": 1
+            },
+            {
+                "name": "android::NO_ERROR",
+                "type": "android::status_t",
+                "value": 0,
+                "serialization_type": 0,
+                "self_constraint": [],
+                "under_constraint": [
+                    {
+                        "name": "constraint0",
+                        "status": false
+                    }
+                ],
+                "relation": [],
+                "loop": [],
+                "usedBy": [],
+                "dependency": [],
+                "count": 1
+            }
+        ],
+        "constraint": [
+            {
+                "name": "constraint0",
+                "opcode": "!",
+                "lhs": {
+                    "name": "ServiceInterfaceDescriptor",
+                    "type": "class android::String16",
+                    "serialization_type": 1
+                },
+                "probability": 0.1
+            }
+        ],
+        "loop": [],
+        "serviceName": "permission",
+        "interfaceName": "IPermissionController",
+        "interfaceToken": "android.os.IPermissionController"
+    }
+}

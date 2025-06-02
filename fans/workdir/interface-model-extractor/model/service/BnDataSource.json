@@ -1,0 +1,1345 @@
+{
+    "IDataSource::1-1": {
+        "code": [
+            1
+        ],
+        "dependency": [
+            {
+                "filename": "BnMediaExtractorService.json",
+                "type": "Transaction",
+                "name": "IMediaExtractorService::2-2",
+                "possIdx": 1,
+                "varIdx": 0,
+                "varName": "source",
+                "varType": "class android::sp<class android::IDataSource>"
+            }
+        ],
+        "possibility": [
+            {
+                "id": 0,
+                "data": [
+                    "ServiceInterfaceDescriptor"
+                ],
+                "reply": [],
+                "return": "android::PERMISSION_DENIED"
+            },
+            {
+                "id": 1,
+                "data": [
+                    "ServiceInterfaceDescriptor"
+                ],
+                "reply": [
+                    "IMemory"
+                ],
+                "return": "android::NO_ERROR"
+            }
+        ],
+        "variable": [
+            {
+                "name": "ServiceInterfaceDescriptor",
+                "type": "class android::String16",
+                "serialization_type": 1,
+                "self_constraint": [
+                    "constraint0"
+                ],
+                "under_constraint": [],
+                "relation": [],
+                "loop": [],
+                "usedBy": [],
+                "dependency": [],
+                "count": 1
+            },
+            {
+                "name": "android::PERMISSION_DENIED",
+                "type": "android::status_t",
+                "value": -1,
+                "serialization_type": 0,
+                "self_constraint": [],
+                "under_constraint": [
+                    {
+                        "name": "constraint0",
+                        "status": true
+                    }
+                ],
+                "relation": [],
+                "loop": [],
+                "usedBy": [],
+                "dependency": [],
+                "count": 1
+            },
+            {
+                "type": "class android::sp<class android::IMemory>",
+                "name": "IMemory",
+                "serialization_type": 2,
+                "self_constraint": [],
+                "under_constraint": [
+                    {
+                        "name": "constraint0",
+                        "status": false
+                    }
+                ],
+                "relation": [],
+                "loop": [],
+                "usedBy": [],
+                "dependency": [],
+                "count": 1,
+                "interfaceName": "IMemory"
+            },
+            {
+                "name": "android::NO_ERROR",
+                "type": "android::status_t",
+                "value": 0,
+                "serialization_type": 0,
+                "self_constraint": [],
+                "under_constraint": [
+                    {
+                        "name": "constraint0",
+                        "status": false
+                    }
+                ],
+                "relation": [],
+                "loop": [],
+                "usedBy": [],
+                "dependency": [],
+                "count": 1
+            }
+        ],
+        "constraint": [
+            {
+                "name": "constraint0",
+                "opcode": "!",
+                "lhs": {
+                    "name": "ServiceInterfaceDescriptor",
+                    "type": "class android::String16",
+                    "serialization_type": 1
+                },
+                "probability": 0.1
+            }
+        ],
+        "loop": [],
+        "serviceName": "None",
+        "interfaceName": "IDataSource",
+        "interfaceToken": "android.media.IDataSource"
+    },
+    "IDataSource::2-2": {
+        "code": [
+            2
+        ],
+        "dependency": [
+            {
+                "filename": "BnMediaExtractorService.json",
+                "type": "Transaction",
+                "name": "IMediaExtractorService::2-2",
+                "possIdx": 1,
+                "varIdx": 0,
+                "varName": "source",
+                "varType": "class android::sp<class android::IDataSource>"
+            }
+        ],
+        "possibility": [
+            {
+                "id": 0,
+                "data": [
+                    "ServiceInterfaceDescriptor"
+                ],
+                "reply": [],
+                "return": "android::PERMISSION_DENIED"
+            },
+            {
+                "id": 1,
+                "data": [
+                    "ServiceInterfaceDescriptor",
+                    "offset",
+                    "size"
+                ],
+                "reply": [
+                    "implicit_5"
+                ],
+                "return": "android::NO_ERROR"
+            }
+        ],
+        "variable": [
+            {
+                "name": "ServiceInterfaceDescriptor",
+                "type": "class android::String16",
+                "serialization_type": 1,
+                "self_constraint": [
+                    "constraint0"
+                ],
+                "under_constraint": [],
+                "relation": [],
+                "loop": [],
+                "usedBy": [],
+                "dependency": [],
+                "count": 1
+            },
+            {
+                "name": "android::PERMISSION_DENIED",
+                "type": "android::status_t",
+                "value": -1,
+                "serialization_type": 0,
+                "self_constraint": [],
+                "under_constraint": [
+                    {
+                        "name": "constraint0",
+                        "status": true
+                    }
+                ],
+                "relation": [],
+                "loop": [],
+                "usedBy": [],
+                "dependency": [],
+                "count": 1
+            },
+            {
+                "type": "off64_t",
+                "name": "offset",
+                "serialization_type": 1,
+                "self_constraint": [],
+                "under_constraint": [
+                    {
+                        "name": "constraint0",
+                        "status": false
+                    }
+                ],
+                "relation": [],
+                "loop": [],
+                "usedBy": [],
+                "dependency": [
+                    {
+                        "filename": "BnDataSource.json",
+                        "type": "Transaction",
+                        "name": "IDataSource::3-3",
+                        "possIdx": 1,
+                        "varIdx": 1,
+                        "varName": "size",
+                        "varType": "off64_t"
+                    }
+                ],
+                "count": 1
+            },
+            {
+                "type": "size_t",
+                "name": "size",
+                "serialization_type": 1,
+                "self_constraint": [],
+                "under_constraint": [
+                    {
+                        "name": "constraint0",
+                        "status": false
+                    }
+                ],
+                "relation": [],
+                "loop": [],
+                "usedBy": [],
+                "dependency": [],
+                "count": 1
+            },
+            {
+                "type": "ssize_t",
+                "name": "implicit_5",
+                "serialization_type": 2,
+                "self_constraint": [],
+                "under_constraint": [
+                    {
+                        "name": "constraint0",
+                        "status": false
+                    }
+                ],
+                "relation": [],
+                "loop": [],
+                "usedBy": [],
+                "dependency": [],
+                "count": 1
+            },
+            {
+                "name": "android::NO_ERROR",
+                "type": "android::status_t",
+                "value": 0,
+                "serialization_type": 0,
+                "self_constraint": [],
+                "under_constraint": [
+                    {
+                        "name": "constraint0",
+                        "status": false
+                    }
+                ],
+                "relation": [],
+                "loop": [],
+                "usedBy": [],
+                "dependency": [],
+                "count": 1
+            }
+        ],
+        "constraint": [
+            {
+                "name": "constraint0",
+                "opcode": "!",
+                "lhs": {
+                    "name": "ServiceInterfaceDescriptor",
+                    "type": "class android::String16",
+                    "serialization_type": 1
+                },
+                "probability": 0.1
+            }
+        ],
+        "loop": [],
+        "serviceName": "None",
+        "interfaceName": "IDataSource",
+        "interfaceToken": "android.media.IDataSource"
+    },
+    "IDataSource::3-3": {
+        "code": [
+            3
+        ],
+        "dependency": [
+            {
+                "filename": "BnMediaExtractorService.json",
+                "type": "Transaction",
+                "name": "IMediaExtractorService::2-2",
+                "possIdx": 1,
+                "varIdx": 0,
+                "varName": "source",
+                "varType": "class android::sp<class android::IDataSource>"
+            }
+        ],
+        "possibility": [
+            {
+                "id": 0,
+                "data": [
+                    "ServiceInterfaceDescriptor"
+                ],
+                "reply": [],
+                "return": "android::PERMISSION_DENIED"
+            },
+            {
+                "id": 1,
+                "data": [
+                    "ServiceInterfaceDescriptor"
+                ],
+                "reply": [
+                    "err",
+                    "size"
+                ],
+                "return": "android::NO_ERROR"
+            }
+        ],
+        "variable": [
+            {
+                "name": "ServiceInterfaceDescriptor",
+                "type": "class android::String16",
+                "serialization_type": 1,
+                "self_constraint": [
+                    "constraint0"
+                ],
+                "under_constraint": [],
+                "relation": [],
+                "loop": [],
+                "usedBy": [],
+                "dependency": [],
+                "count": 1
+            },
+            {
+                "name": "android::PERMISSION_DENIED",
+                "type": "android::status_t",
+                "value": -1,
+                "serialization_type": 0,
+                "self_constraint": [],
+                "under_constraint": [
+                    {
+                        "name": "constraint0",
+                        "status": true
+                    }
+                ],
+                "relation": [],
+                "loop": [],
+                "usedBy": [],
+                "dependency": [],
+                "count": 1
+            },
+            {
+                "name": "err",
+                "type": "android::status_t",
+                "serialization_type": 2,
+                "self_constraint": [],
+                "under_constraint": [
+                    {
+                        "name": "constraint0",
+                        "status": false
+                    }
+                ],
+                "relation": [],
+                "loop": [],
+                "usedBy": [],
+                "dependency": [],
+                "count": 1
+            },
+            {
+                "name": "size",
+                "type": "off64_t",
+                "serialization_type": 2,
+                "self_constraint": [],
+                "under_constraint": [
+                    {
+                        "name": "constraint0",
+                        "status": false
+                    }
+                ],
+                "relation": [],
+                "loop": [],
+                "usedBy": [],
+                "dependency": [],
+                "count": 1
+            },
+            {
+                "name": "android::NO_ERROR",
+                "type": "android::status_t",
+                "value": 0,
+                "serialization_type": 0,
+                "self_constraint": [],
+                "under_constraint": [
+                    {
+                        "name": "constraint0",
+                        "status": false
+                    }
+                ],
+                "relation": [],
+                "loop": [],
+                "usedBy": [],
+                "dependency": [],
+                "count": 1
+            }
+        ],
+        "constraint": [
+            {
+                "name": "constraint0",
+                "opcode": "!",
+                "lhs": {
+                    "name": "ServiceInterfaceDescriptor",
+                    "type": "class android::String16",
+                    "serialization_type": 1
+                },
+                "probability": 0.1
+            }
+        ],
+        "loop": [],
+        "serviceName": "None",
+        "interfaceName": "IDataSource",
+        "interfaceToken": "android.media.IDataSource"
+    },
+    "IDataSource::4-4": {
+        "code": [
+            4
+        ],
+        "dependency": [
+            {
+                "filename": "BnMediaExtractorService.json",
+                "type": "Transaction",
+                "name": "IMediaExtractorService::2-2",
+                "possIdx": 1,
+                "varIdx": 0,
+                "varName": "source",
+                "varType": "class android::sp<class android::IDataSource>"
+            }
+        ],
+        "possibility": [
+            {
+                "id": 0,
+                "data": [
+                    "ServiceInterfaceDescriptor"
+                ],
+                "reply": [],
+                "return": "android::PERMISSION_DENIED"
+            },
+            {
+                "id": 1,
+                "data": [
+                    "ServiceInterfaceDescriptor"
+                ],
+                "reply": [],
+                "return": "android::NO_ERROR"
+            }
+        ],
+        "variable": [
+            {
+                "name": "ServiceInterfaceDescriptor",
+                "type": "class android::String16",
+                "serialization_type": 1,
+                "self_constraint": [
+                    "constraint0"
+                ],
+                "under_constraint": [],
+                "relation": [],
+                "loop": [],
+                "usedBy": [],
+                "dependency": [],
+                "count": 1
+            },
+            {
+                "name": "android::PERMISSION_DENIED",
+                "type": "android::status_t",
+                "value": -1,
+                "serialization_type": 0,
+                "self_constraint": [],
+                "under_constraint": [
+                    {
+                        "name": "constraint0",
+                        "status": true
+                    }
+                ],
+                "relation": [],
+                "loop": [],
+                "usedBy": [],
+                "dependency": [],
+                "count": 1
+            },
+            {
+                "name": "android::NO_ERROR",
+                "type": "android::status_t",
+                "value": 0,
+                "serialization_type": 0,
+                "self_constraint": [],
+                "under_constraint": [
+                    {
+                        "name": "constraint0",
+                        "status": false
+                    }
+                ],
+                "relation": [],
+                "loop": [],
+                "usedBy": [],
+                "dependency": [],
+                "count": 1
+            }
+        ],
+        "constraint": [
+            {
+                "name": "constraint0",
+                "opcode": "!",
+                "lhs": {
+                    "name": "ServiceInterfaceDescriptor",
+                    "type": "class android::String16",
+                    "serialization_type": 1
+                },
+                "probability": 0.1
+            }
+        ],
+        "loop": [],
+        "serviceName": "None",
+        "interfaceName": "IDataSource",
+        "interfaceToken": "android.media.IDataSource"
+    },
+    "IDataSource::5-5": {
+        "code": [
+            5
+        ],
+        "dependency": [
+            {
+                "filename": "BnMediaExtractorService.json",
+                "type": "Transaction",
+                "name": "IMediaExtractorService::2-2",
+                "possIdx": 1,
+                "varIdx": 0,
+                "varName": "source",
+                "varType": "class android::sp<class android::IDataSource>"
+            }
+        ],
+        "possibility": [
+            {
+                "id": 0,
+                "data": [
+                    "ServiceInterfaceDescriptor"
+                ],
+                "reply": [],
+                "return": "android::PERMISSION_DENIED"
+            },
+            {
+                "id": 1,
+                "data": [
+                    "ServiceInterfaceDescriptor"
+                ],
+                "reply": [
+                    "Flags"
+                ],
+                "return": "android::NO_ERROR"
+            }
+        ],
+        "variable": [
+            {
+                "name": "ServiceInterfaceDescriptor",
+                "type": "class android::String16",
+                "serialization_type": 1,
+                "self_constraint": [
+                    "constraint0"
+                ],
+                "under_constraint": [],
+                "relation": [],
+                "loop": [],
+                "usedBy": [],
+                "dependency": [],
+                "count": 1
+            },
+            {
+                "name": "android::PERMISSION_DENIED",
+                "type": "android::status_t",
+                "value": -1,
+                "serialization_type": 0,
+                "self_constraint": [],
+                "under_constraint": [
+                    {
+                        "name": "constraint0",
+                        "status": true
+                    }
+                ],
+                "relation": [],
+                "loop": [],
+                "usedBy": [],
+                "dependency": [],
+                "count": 1
+            },
+            {
+                "type": "unsigned int",
+                "name": "Flags",
+                "serialization_type": 2,
+                "self_constraint": [],
+                "under_constraint": [
+                    {
+                        "name": "constraint0",
+                        "status": false
+                    }
+                ],
+                "relation": [],
+                "loop": [],
+                "usedBy": [],
+                "dependency": [],
+                "count": 1
+            },
+            {
+                "name": "android::NO_ERROR",
+                "type": "android::status_t",
+                "value": 0,
+                "serialization_type": 0,
+                "self_constraint": [],
+                "under_constraint": [
+                    {
+                        "name": "constraint0",
+                        "status": false
+                    }
+                ],
+                "relation": [],
+                "loop": [],
+                "usedBy": [],
+                "dependency": [],
+                "count": 1
+            }
+        ],
+        "constraint": [
+            {
+                "name": "constraint0",
+                "opcode": "!",
+                "lhs": {
+                    "name": "ServiceInterfaceDescriptor",
+                    "type": "class android::String16",
+                    "serialization_type": 1
+                },
+                "probability": 0.1
+            }
+        ],
+        "loop": [],
+        "serviceName": "None",
+        "interfaceName": "IDataSource",
+        "interfaceToken": "android.media.IDataSource"
+    },
+    "IDataSource::6-6": {
+        "code": [
+            6
+        ],
+        "dependency": [
+            {
+                "filename": "BnMediaExtractorService.json",
+                "type": "Transaction",
+                "name": "IMediaExtractorService::2-2",
+                "possIdx": 1,
+                "varIdx": 0,
+                "varName": "source",
+                "varType": "class android::sp<class android::IDataSource>"
+            }
+        ],
+        "possibility": [
+            {
+                "id": 0,
+                "data": [
+                    "ServiceInterfaceDescriptor"
+                ],
+                "reply": [],
+                "return": "android::PERMISSION_DENIED"
+            },
+            {
+                "id": 1,
+                "data": [
+                    "ServiceInterfaceDescriptor"
+                ],
+                "reply": [
+                    "toString"
+                ],
+                "return": "android::NO_ERROR"
+            }
+        ],
+        "variable": [
+            {
+                "name": "ServiceInterfaceDescriptor",
+                "type": "class android::String16",
+                "serialization_type": 1,
+                "self_constraint": [
+                    "constraint0"
+                ],
+                "under_constraint": [],
+                "relation": [],
+                "loop": [],
+                "usedBy": [],
+                "dependency": [],
+                "count": 1
+            },
+            {
+                "name": "android::PERMISSION_DENIED",
+                "type": "android::status_t",
+                "value": -1,
+                "serialization_type": 0,
+                "self_constraint": [],
+                "under_constraint": [
+                    {
+                        "name": "constraint0",
+                        "status": true
+                    }
+                ],
+                "relation": [],
+                "loop": [],
+                "usedBy": [],
+                "dependency": [],
+                "count": 1
+            },
+            {
+                "type": "class android::String8",
+                "name": "toString",
+                "serialization_type": 2,
+                "self_constraint": [],
+                "under_constraint": [
+                    {
+                        "name": "constraint0",
+                        "status": false
+                    }
+                ],
+                "relation": [],
+                "loop": [],
+                "usedBy": [],
+                "dependency": [],
+                "count": 1
+            },
+            {
+                "name": "android::NO_ERROR",
+                "type": "android::status_t",
+                "value": 0,
+                "serialization_type": 0,
+                "self_constraint": [],
+                "under_constraint": [
+                    {
+                        "name": "constraint0",
+                        "status": false
+                    }
+                ],
+                "relation": [],
+                "loop": [],
+                "usedBy": [],
+                "dependency": [],
+                "count": 1
+            }
+        ],
+        "constraint": [
+            {
+                "name": "constraint0",
+                "opcode": "!",
+                "lhs": {
+                    "name": "ServiceInterfaceDescriptor",
+                    "type": "class android::String16",
+                    "serialization_type": 1
+                },
+                "probability": 0.1
+            }
+        ],
+        "loop": [],
+        "serviceName": "None",
+        "interfaceName": "IDataSource",
+        "interfaceToken": "android.media.IDataSource"
+    },
+    "IDataSource::7-7": {
+        "code": [
+            7
+        ],
+        "dependency": [
+            {
+                "filename": "BnMediaExtractorService.json",
+                "type": "Transaction",
+                "name": "IMediaExtractorService::2-2",
+                "possIdx": 1,
+                "varIdx": 0,
+                "varName": "source",
+                "varType": "class android::sp<class android::IDataSource>"
+            }
+        ],
+        "possibility": [
+            {
+                "id": 0,
+                "data": [
+                    "ServiceInterfaceDescriptor"
+                ],
+                "reply": [],
+                "return": "android::PERMISSION_DENIED"
+            },
+            {
+                "id": 1,
+                "data": [
+                    "ServiceInterfaceDescriptor",
+                    "flag",
+                    "mime"
+                ],
+                "reply": [
+                    "handle->decryptId",
+                    "handle->mimeType",
+                    "handle->decryptApiType",
+                    "handle->status",
+                    "handle->decryptInfo.decryptBufferLength",
+                    "implicit_12",
+                    "size",
+                    "implicit_16",
+                    "implicit_18",
+                    "size_1",
+                    "implicit_22",
+                    "implicit_24"
+                ],
+                "return": "android::NO_ERROR"
+            }
+        ],
+        "variable": [
+            {
+                "name": "ServiceInterfaceDescriptor",
+                "type": "class android::String16",
+                "serialization_type": 1,
+                "self_constraint": [
+                    "constraint0"
+                ],
+                "under_constraint": [],
+                "relation": [],
+                "loop": [],
+                "usedBy": [],
+                "dependency": [],
+                "count": 1
+            },
+            {
+                "name": "android::PERMISSION_DENIED",
+                "type": "android::status_t",
+                "value": -1,
+                "serialization_type": 0,
+                "self_constraint": [],
+                "under_constraint": [
+                    {
+                        "name": "constraint0",
+                        "status": true
+                    }
+                ],
+                "relation": [],
+                "loop": [],
+                "usedBy": [],
+                "dependency": [],
+                "count": 1
+            },
+            {
+                "type": "int32_t",
+                "name": "flag",
+                "serialization_type": 1,
+                "self_constraint": [
+                    "constraint1"
+                ],
+                "under_constraint": [
+                    {
+                        "name": "constraint0",
+                        "status": false
+                    }
+                ],
+                "relation": [],
+                "loop": [],
+                "usedBy": [],
+                "dependency": [],
+                "count": 1
+            },
+            {
+                "type": "char *",
+                "name": "mime",
+                "serialization_type": 1,
+                "self_constraint": [],
+                "under_constraint": [
+                    {
+                        "name": "constraint0",
+                        "status": false
+                    },
+                    {
+                        "name": "constraint1",
+                        "status": true
+                    }
+                ],
+                "relation": [],
+                "loop": [],
+                "usedBy": [],
+                "dependency": [],
+                "count": 1,
+                "size": -1
+            },
+            {
+                "type": "char",
+                "name": "mime::item",
+                "serialization_type": 1,
+                "self_constraint": [],
+                "under_constraint": [],
+                "relation": [],
+                "loop": [],
+                "usedBy": [],
+                "dependency": [],
+                "count": 1
+            },
+            {
+                "name": "handle->decryptId",
+                "type": "int",
+                "signature": "int",
+                "serialization_type": 2,
+                "self_constraint": [],
+                "under_constraint": [
+                    {
+                        "name": "constraint0",
+                        "status": false
+                    },
+                    {
+                        "name": "constraint2",
+                        "status": true
+                    }
+                ],
+                "relation": [],
+                "loop": [],
+                "usedBy": [],
+                "dependency": [],
+                "count": 1
+            },
+            {
+                "name": "handle->mimeType",
+                "type": "class android::String8",
+                "signature": "class android::String8",
+                "serialization_type": 2,
+                "self_constraint": [],
+                "under_constraint": [
+                    {
+                        "name": "constraint0",
+                        "status": false
+                    },
+                    {
+                        "name": "constraint2",
+                        "status": true
+                    }
+                ],
+                "relation": [],
+                "loop": [],
+                "usedBy": [],
+                "dependency": [],
+                "count": 1
+            },
+            {
+                "name": "handle->decryptApiType",
+                "type": "int",
+                "signature": "int",
+                "serialization_type": 2,
+                "self_constraint": [],
+                "under_constraint": [
+                    {
+                        "name": "constraint0",
+                        "status": false
+                    },
+                    {
+                        "name": "constraint2",
+                        "status": true
+                    }
+                ],
+                "relation": [],
+                "loop": [],
+                "usedBy": [],
+                "dependency": [],
+                "count": 1
+            },
+            {
+                "name": "handle->status",
+                "type": "int",
+                "signature": "int",
+                "serialization_type": 2,
+                "self_constraint": [],
+                "under_constraint": [
+                    {
+                        "name": "constraint0",
+                        "status": false
+                    },
+                    {
+                        "name": "constraint2",
+                        "status": true
+                    }
+                ],
+                "relation": [],
+                "loop": [],
+                "usedBy": [],
+                "dependency": [],
+                "count": 1
+            },
+            {
+                "name": "handle->decryptInfo.decryptBufferLength",
+                "type": "int",
+                "signature": "int",
+                "serialization_type": 2,
+                "self_constraint": [],
+                "under_constraint": [
+                    {
+                        "name": "constraint0",
+                        "status": false
+                    },
+                    {
+                        "name": "constraint2",
+                        "status": true
+                    },
+                    {
+                        "name": "constraint3",
+                        "status": true
+                    }
+                ],
+                "relation": [],
+                "loop": [],
+                "usedBy": [],
+                "dependency": [],
+                "count": 1
+            },
+            {
+                "name": "implicit_12",
+                "type": "IntegerLiteral",
+                "value": -1,
+                "serialization_type": 2,
+                "self_constraint": [],
+                "under_constraint": [
+                    {
+                        "name": "constraint0",
+                        "status": false
+                    },
+                    {
+                        "name": "constraint2",
+                        "status": true
+                    },
+                    {
+                        "name": "constraint3",
+                        "status": false
+                    }
+                ],
+                "relation": [],
+                "loop": [],
+                "usedBy": [],
+                "dependency": [],
+                "count": 1
+            },
+            {
+                "name": "size",
+                "type": "int",
+                "serialization_type": 2,
+                "self_constraint": [
+                    "constraint4"
+                ],
+                "under_constraint": [
+                    {
+                        "name": "constraint0",
+                        "status": false
+                    },
+                    {
+                        "name": "constraint2",
+                        "status": true
+                    }
+                ],
+                "relation": [],
+                "loop": [],
+                "usedBy": [],
+                "dependency": [],
+                "count": 2
+            },
+            {
+                "name": "i",
+                "type": "size_t",
+                "value": 0,
+                "serialization_type": 0,
+                "self_constraint": [
+                    "constraint4",
+                    "constraint5"
+                ],
+                "under_constraint": [
+                    {
+                        "name": "constraint0",
+                        "status": false
+                    },
+                    {
+                        "name": "constraint2",
+                        "status": true
+                    }
+                ],
+                "relation": [],
+                "loop": [],
+                "usedBy": [],
+                "dependency": [],
+                "count": 1
+            },
+            {
+                "type": "enum android::DrmCopyControl",
+                "name": "implicit_16",
+                "serialization_type": 2,
+                "self_constraint": [],
+                "under_constraint": [
+                    {
+                        "name": "constraint0",
+                        "status": false
+                    },
+                    {
+                        "name": "constraint2",
+                        "status": true
+                    }
+                ],
+                "relation": [],
+                "loop": [
+                    "loop0"
+                ],
+                "usedBy": [],
+                "dependency": [],
+                "count": 1
+            },
+            {
+                "type": "int",
+                "name": "implicit_18",
+                "serialization_type": 2,
+                "self_constraint": [],
+                "under_constraint": [
+                    {
+                        "name": "constraint0",
+                        "status": false
+                    },
+                    {
+                        "name": "constraint2",
+                        "status": true
+                    }
+                ],
+                "relation": [],
+                "loop": [
+                    "loop0"
+                ],
+                "usedBy": [],
+                "dependency": [],
+                "count": 1
+            },
+            {
+                "name": "size_1",
+                "type": "int",
+                "serialization_type": 2,
+                "self_constraint": [
+                    "constraint5"
+                ],
+                "under_constraint": [
+                    {
+                        "name": "constraint0",
+                        "status": false
+                    },
+                    {
+                        "name": "constraint2",
+                        "status": true
+                    }
+                ],
+                "relation": [],
+                "loop": [],
+                "usedBy": [],
+                "dependency": [],
+                "count": 1
+            },
+            {
+                "type": "class android::String8",
+                "name": "implicit_22",
+                "serialization_type": 2,
+                "self_constraint": [],
+                "under_constraint": [
+                    {
+                        "name": "constraint0",
+                        "status": false
+                    },
+                    {
+                        "name": "constraint2",
+                        "status": true
+                    }
+                ],
+                "relation": [],
+                "loop": [
+                    "loop1"
+                ],
+                "usedBy": [],
+                "dependency": [],
+                "count": 1
+            },
+            {
+                "type": "class android::String8",
+                "name": "implicit_24",
+                "serialization_type": 2,
+                "self_constraint": [],
+                "under_constraint": [
+                    {
+                        "name": "constraint0",
+                        "status": false
+                    },
+                    {
+                        "name": "constraint2",
+                        "status": true
+                    }
+                ],
+                "relation": [],
+                "loop": [
+                    "loop1"
+                ],
+                "usedBy": [],
+                "dependency": [],
+                "count": 1
+            },
+            {
+                "name": "android::NO_ERROR",
+                "type": "android::status_t",
+                "value": 0,
+                "serialization_type": 0,
+                "self_constraint": [],
+                "under_constraint": [
+                    {
+                        "name": "constraint0",
+                        "status": false
+                    }
+                ],
+                "relation": [],
+                "loop": [],
+                "usedBy": [],
+                "dependency": [],
+                "count": 1
+            }
+        ],
+        "constraint": [
+            {
+                "name": "constraint0",
+                "opcode": "!",
+                "lhs": {
+                    "name": "ServiceInterfaceDescriptor",
+                    "type": "class android::String16",
+                    "serialization_type": 1
+                },
+                "probability": 0.1
+            },
+            {
+                "name": "constraint1",
+                "opcode": "!=",
+                "lhs": {
+                    "name": "flag",
+                    "type": "int32_t"
+                },
+                "rhs": {
+                    "name": "implicit_3",
+                    "type": "IntegerLiteral",
+                    "value": 0
+                },
+                "probability": 0.5
+            },
+            {
+                "name": "constraint2",
+                "opcode": "operator!=",
+                "lhs": {
+                    "name": "handle",
+                    "type": "class android::sp<class android::DecryptHandle>"
+                },
+                "rhs": {
+                    "name": "implicit_5",
+                    "type": "const class android::DecryptHandle *",
+                    "value": "NULL"
+                },
+                "probability": 0.5
+            },
+            {
+                "name": "constraint3",
+                "opcode": "!=",
+                "lhs": {
+                    "name": "handle->decryptInfo",
+                    "type": "class android::DecryptInfo *",
+                    "signature": "class android::DecryptInfo *"
+                },
+                "rhs": {
+                    "name": "implicit_10",
+                    "type": "class android::DecryptInfo *",
+                    "value": "NULL"
+                },
+                "probability": 0.5
+            },
+            {
+                "name": "constraint4",
+                "opcode": "<",
+                "lhs": {
+                    "name": "i",
+                    "type": "size_t"
+                },
+                "rhs": {
+                    "name": "size",
+                    "type": "int"
+                },
+                "probability": 0.5
+            },
+            {
+                "name": "constraint5",
+                "opcode": "<",
+                "lhs": {
+                    "name": "i",
+                    "type": "size_t"
+                },
+                "rhs": {
+                    "name": "size_1",
+                    "type": "int"
+                },
+                "probability": 0.5
+            }
+        ],
+        "loop": [
+            {
+                "name": "loop0",
+                "counter": {
+                    "name": "i",
+                    "type": "size_t",
+                    "value": 0
+                },
+                "constraint": "constraint4",
+                "inc": {
+                    "opcode": "++",
+                    "name": "i",
+                    "type": "size_t"
+                }
+            },
+            {
+                "name": "loop1",
+                "counter": {
+                    "name": "i",
+                    "type": "size_t",
+                    "value": 0
+                },
+                "constraint": "constraint5",
+                "inc": {
+                    "opcode": "++",
+                    "name": "i",
+                    "type": "size_t"
+                }
+            }
+        ],
+        "serviceName": "None",
+        "interfaceName": "IDataSource",
+        "interfaceToken": "android.media.IDataSource"
+    }
+}

@@ -1,0 +1,82 @@
+{
+    "class android::MetaData": {
+        "variable": [
+            {
+                "count": 1,
+                "self_constraint": [],
+                "name": "implicit_1",
+                "under_constraint": [],
+                "dependency": [
+                    {
+                        "filename": "BnMediaSource.json",
+                        "type": "Transaction",
+                        "name": "IMediaSource::5-5",
+                        "possIdx": 1,
+                        "varIdx": 7,
+                        "varName": "buf.meta_data",
+                        "varType": "class android::MetaDataBase"
+                    },
+                    {
+                        "filename": "BnMediaSource.json",
+                        "type": "Transaction",
+                        "name": "IMediaSource::5-5",
+                        "possIdx": 1,
+                        "varIdx": 10,
+                        "varName": "buf.meta_data_1",
+                        "varType": "class android::MetaDataBase"
+                    }
+                ],
+                "relation": [],
+                "serialization_type": 1,
+                "usedBy": [],
+                "type": "class android::MetaDataBase",
+                "loop": []
+            },
+            {
+                "count": 1,
+                "self_constraint": [],
+                "name": "meta",
+                "under_constraint": [],
+                "dependency": [],
+                "relation": [],
+                "serialization_type": 0,
+                "usedBy": [],
+                "type": "class android::MetaData",
+                "loop": []
+            },
+            {
+                "count": 1,
+                "self_constraint": [],
+                "name": "implicit_3",
+                "under_constraint": [],
+                "func_name": "android::sp<android::MetaData>::sp",
+                "argv": [
+                    {
+                        "type": "class android::sp<class android::MetaData>",
+                        "name": "meta"
+                    }
+                ],
+                "dependency": [],
+                "relation": [],
+                "signature": "void (sp<class android::MetaData> &&)",
+                "serialization_type": 0,
+                "usedBy": [],
+                "type": "Function",
+                "loop": []
+            }
+        ],
+        "dependency": [],
+        "loop": [],
+        "possibility": [
+            {
+                "return": "implicit_3",
+                "reply": [],
+                "data": [
+                    "implicit_1"
+                ],
+                "id": 0
+            }
+        ],
+        "constraint": []
+    }
+}

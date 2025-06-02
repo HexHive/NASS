@@ -1,0 +1,993 @@
+{
+    "class android::hardware::camera2::params::VendorTagDescriptor": {
+        "variable": [
+            {
+                "count": 1,
+                "self_constraint": [],
+                "name": "android::BAD_VALUE",
+                "under_constraint": [
+                    {
+                        "status": true,
+                        "name": "constraint0"
+                    }
+                ],
+                "value": -22,
+                "dependency": [],
+                "relation": [],
+                "serialization_type": 0,
+                "usedBy": [],
+                "type": "android::status_t",
+                "loop": []
+            },
+            {
+                "count": 1,
+                "self_constraint": [
+                    "constraint2_lhs",
+                    "constraint2_rhs",
+                    "constraint3",
+                    "constraint11"
+                ],
+                "name": "tagCount",
+                "under_constraint": [
+                    {
+                        "status": false,
+                        "name": "constraint0"
+                    }
+                ],
+                "dependency": [],
+                "relation": [],
+                "serialization_type": 1,
+                "usedBy": [],
+                "type": "int",
+                "loop": []
+            },
+            {
+                "count": 1,
+                "self_constraint": [
+                    "constraint1",
+                    "constraint4",
+                    "constraint6",
+                    "constraint9",
+                    "constraint10",
+                    "constraint12"
+                ],
+                "name": "res",
+                "under_constraint": [
+                    {
+                        "status": false,
+                        "name": "constraint0"
+                    }
+                ],
+                "dependency": [],
+                "relation": [],
+                "serialization_type": 0,
+                "usedBy": [],
+                "type": "android::status_t",
+                "loop": []
+            },
+            {
+                "count": 1,
+                "self_constraint": [
+                    "constraint3",
+                    "constraint14"
+                ],
+                "name": "i",
+                "under_constraint": [
+                    {
+                        "status": false,
+                        "name": "constraint0"
+                    },
+                    {
+                        "status": false,
+                        "name": "constraint1"
+                    },
+                    {
+                        "status": false,
+                        "name": "constraint2"
+                    }
+                ],
+                "value": 0,
+                "dependency": [],
+                "relation": [],
+                "serialization_type": 0,
+                "usedBy": [],
+                "type": "int",
+                "loop": []
+            },
+            {
+                "count": 1,
+                "self_constraint": [
+                    "constraint5"
+                ],
+                "name": "tag",
+                "under_constraint": [
+                    {
+                        "status": false,
+                        "name": "constraint0"
+                    },
+                    {
+                        "status": false,
+                        "name": "constraint1"
+                    },
+                    {
+                        "status": false,
+                        "name": "constraint2"
+                    }
+                ],
+                "dependency": [],
+                "relation": [],
+                "serialization_type": 1,
+                "usedBy": [],
+                "type": "unsigned int",
+                "loop": [
+                    "loop0"
+                ]
+            },
+            {
+                "count": 1,
+                "self_constraint": [
+                    "constraint7_lhs",
+                    "constraint7_rhs"
+                ],
+                "name": "tagType",
+                "under_constraint": [
+                    {
+                        "status": false,
+                        "name": "constraint0"
+                    },
+                    {
+                        "status": false,
+                        "name": "constraint1"
+                    },
+                    {
+                        "status": false,
+                        "name": "constraint2"
+                    }
+                ],
+                "dependency": [],
+                "relation": [],
+                "serialization_type": 1,
+                "usedBy": [],
+                "type": "int",
+                "loop": [
+                    "loop0"
+                ]
+            },
+            {
+                "count": 1,
+                "self_constraint": [],
+                "name": "tagName",
+                "under_constraint": [
+                    {
+                        "status": false,
+                        "name": "constraint0"
+                    },
+                    {
+                        "status": false,
+                        "name": "constraint1"
+                    },
+                    {
+                        "status": false,
+                        "name": "constraint2"
+                    }
+                ],
+                "dependency": [],
+                "relation": [],
+                "serialization_type": 1,
+                "usedBy": [],
+                "type": "class android::String8",
+                "loop": [
+                    "loop0"
+                ]
+            },
+            {
+                "count": 1,
+                "self_constraint": [
+                    "constraint8"
+                ],
+                "name": "tagName.isEmpty",
+                "under_constraint": [
+                    {
+                        "status": false,
+                        "name": "constraint0"
+                    },
+                    {
+                        "status": false,
+                        "name": "constraint1"
+                    },
+                    {
+                        "status": false,
+                        "name": "constraint2"
+                    }
+                ],
+                "dependency": [],
+                "relation": [],
+                "serialization_type": 0,
+                "usedBy": [],
+                "type": "_Bool",
+                "loop": [
+                    "loop0"
+                ]
+            },
+            {
+                "count": 1,
+                "self_constraint": [],
+                "name": "sectionIndex",
+                "under_constraint": [
+                    {
+                        "status": false,
+                        "name": "constraint0"
+                    },
+                    {
+                        "status": false,
+                        "name": "constraint1"
+                    },
+                    {
+                        "status": false,
+                        "name": "constraint2"
+                    }
+                ],
+                "dependency": [],
+                "relation": [],
+                "serialization_type": 1,
+                "usedBy": [],
+                "type": "unsigned int",
+                "loop": [
+                    "loop0"
+                ]
+            },
+            {
+                "count": 1,
+                "self_constraint": [
+                    "constraint13",
+                    "constraint14"
+                ],
+                "name": "sectionCount",
+                "under_constraint": [
+                    {
+                        "status": false,
+                        "name": "constraint0"
+                    },
+                    {
+                        "status": false,
+                        "name": "constraint1"
+                    },
+                    {
+                        "status": false,
+                        "name": "constraint2"
+                    },
+                    {
+                        "status": false,
+                        "name": "constraint10"
+                    },
+                    {
+                        "status": true,
+                        "name": "constraint11"
+                    }
+                ],
+                "dependency": [],
+                "relation": [],
+                "serialization_type": 1,
+                "usedBy": [],
+                "type": "size_t",
+                "loop": []
+            },
+            {
+                "count": 1,
+                "self_constraint": [
+                    "constraint13"
+                ],
+                "name": "implicit_55",
+                "under_constraint": [
+                    {
+                        "status": false,
+                        "name": "constraint0"
+                    },
+                    {
+                        "status": false,
+                        "name": "constraint1"
+                    },
+                    {
+                        "status": false,
+                        "name": "constraint2"
+                    },
+                    {
+                        "status": false,
+                        "name": "constraint10"
+                    },
+                    {
+                        "status": true,
+                        "name": "constraint11"
+                    },
+                    {
+                        "status": false,
+                        "name": "constraint12"
+                    }
+                ],
+                "value": "maxSectionIndex+implicit_54",
+                "dependency": [],
+                "relation": [],
+                "serialization_type": 0,
+                "usedBy": [],
+                "type": "unsigned int",
+                "loop": []
+            },
+            {
+                "count": 1,
+                "self_constraint": [],
+                "name": "maxSectionIndex",
+                "under_constraint": [
+                    {
+                        "status": false,
+                        "name": "constraint0"
+                    },
+                    {
+                        "status": false,
+                        "name": "constraint1"
+                    },
+                    {
+                        "status": false,
+                        "name": "constraint2"
+                    },
+                    {
+                        "status": false,
+                        "name": "constraint10"
+                    },
+                    {
+                        "status": true,
+                        "name": "constraint11"
+                    },
+                    {
+                        "status": false,
+                        "name": "constraint12"
+                    }
+                ],
+                "dependency": [],
+                "relation": [],
+                "serialization_type": 0,
+                "usedBy": [],
+                "type": "unsigned int",
+                "loop": []
+            },
+            {
+                "count": 1,
+                "self_constraint": [],
+                "name": "implicit_54",
+                "under_constraint": [
+                    {
+                        "status": false,
+                        "name": "constraint0"
+                    },
+                    {
+                        "status": false,
+                        "name": "constraint1"
+                    },
+                    {
+                        "status": false,
+                        "name": "constraint2"
+                    },
+                    {
+                        "status": false,
+                        "name": "constraint10"
+                    },
+                    {
+                        "status": true,
+                        "name": "constraint11"
+                    },
+                    {
+                        "status": false,
+                        "name": "constraint12"
+                    }
+                ],
+                "value": 1,
+                "dependency": [],
+                "relation": [],
+                "serialization_type": 0,
+                "usedBy": [],
+                "type": "IntegerLiteral",
+                "loop": []
+            },
+            {
+                "count": 1,
+                "self_constraint": [],
+                "name": "implicit_60",
+                "under_constraint": [
+                    {
+                        "status": false,
+                        "name": "constraint0"
+                    },
+                    {
+                        "status": false,
+                        "name": "constraint1"
+                    },
+                    {
+                        "status": false,
+                        "name": "constraint2"
+                    },
+                    {
+                        "status": false,
+                        "name": "constraint10"
+                    },
+                    {
+                        "status": true,
+                        "name": "constraint11"
+                    },
+                    {
+                        "status": false,
+                        "name": "constraint12"
+                    },
+                    {
+                        "status": true,
+                        "name": "constraint13"
+                    }
+                ],
+                "value": "maxSectionIndex+implicit_59",
+                "dependency": [],
+                "relation": [],
+                "serialization_type": 0,
+                "usedBy": [],
+                "type": "unsigned int",
+                "loop": []
+            },
+            {
+                "count": 1,
+                "self_constraint": [],
+                "name": "implicit_59",
+                "under_constraint": [
+                    {
+                        "status": false,
+                        "name": "constraint0"
+                    },
+                    {
+                        "status": false,
+                        "name": "constraint1"
+                    },
+                    {
+                        "status": false,
+                        "name": "constraint2"
+                    },
+                    {
+                        "status": false,
+                        "name": "constraint10"
+                    },
+                    {
+                        "status": true,
+                        "name": "constraint11"
+                    },
+                    {
+                        "status": false,
+                        "name": "constraint12"
+                    },
+                    {
+                        "status": true,
+                        "name": "constraint13"
+                    }
+                ],
+                "value": 1,
+                "dependency": [],
+                "relation": [],
+                "serialization_type": 0,
+                "usedBy": [],
+                "type": "IntegerLiteral",
+                "loop": []
+            },
+            {
+                "count": 1,
+                "self_constraint": [],
+                "name": "sectionName",
+                "under_constraint": [
+                    {
+                        "status": false,
+                        "name": "constraint0"
+                    },
+                    {
+                        "status": false,
+                        "name": "constraint1"
+                    },
+                    {
+                        "status": false,
+                        "name": "constraint2"
+                    },
+                    {
+                        "status": false,
+                        "name": "constraint10"
+                    },
+                    {
+                        "status": true,
+                        "name": "constraint11"
+                    },
+                    {
+                        "status": false,
+                        "name": "constraint12"
+                    },
+                    {
+                        "status": false,
+                        "name": "constraint13"
+                    }
+                ],
+                "dependency": [],
+                "relation": [],
+                "serialization_type": 1,
+                "usedBy": [],
+                "type": "class android::String8",
+                "loop": [
+                    "loop1"
+                ]
+            },
+            {
+                "count": 1,
+                "self_constraint": [
+                    "constraint15"
+                ],
+                "name": "sectionName.isEmpty",
+                "under_constraint": [
+                    {
+                        "status": false,
+                        "name": "constraint0"
+                    },
+                    {
+                        "status": false,
+                        "name": "constraint1"
+                    },
+                    {
+                        "status": false,
+                        "name": "constraint2"
+                    },
+                    {
+                        "status": false,
+                        "name": "constraint10"
+                    },
+                    {
+                        "status": true,
+                        "name": "constraint11"
+                    },
+                    {
+                        "status": false,
+                        "name": "constraint12"
+                    },
+                    {
+                        "status": false,
+                        "name": "constraint13"
+                    }
+                ],
+                "dependency": [],
+                "relation": [],
+                "serialization_type": 0,
+                "usedBy": [],
+                "type": "_Bool",
+                "loop": [
+                    "loop1"
+                ]
+            },
+            {
+                "count": 1,
+                "self_constraint": [],
+                "name": "android::NOT_ENOUGH_DATA",
+                "under_constraint": [
+                    {
+                        "status": false,
+                        "name": "constraint0"
+                    },
+                    {
+                        "status": false,
+                        "name": "constraint1"
+                    },
+                    {
+                        "status": false,
+                        "name": "constraint2"
+                    },
+                    {
+                        "status": false,
+                        "name": "constraint10"
+                    },
+                    {
+                        "status": true,
+                        "name": "constraint11"
+                    },
+                    {
+                        "status": false,
+                        "name": "constraint12"
+                    },
+                    {
+                        "status": false,
+                        "name": "constraint13"
+                    },
+                    {
+                        "status": true,
+                        "name": "constraint15"
+                    }
+                ],
+                "value": -61,
+                "dependency": [],
+                "relation": [],
+                "serialization_type": 0,
+                "usedBy": [],
+                "type": "android::status_t",
+                "loop": [
+                    "loop1"
+                ]
+            }
+        ],
+        "dependency": [],
+        "loop": [
+            {
+                "counter": {
+                    "type": "int",
+                    "name": "i",
+                    "value": 0
+                },
+                "inc": {
+                    "type": "int",
+                    "opcode": "++",
+                    "name": "i"
+                },
+                "name": "loop0",
+                "constraint": "constraint3"
+            },
+            {
+                "counter": {
+                    "type": "int",
+                    "name": "i",
+                    "value": 0
+                },
+                "inc": {
+                    "type": "int",
+                    "opcode": "++",
+                    "name": "i"
+                },
+                "name": "loop1",
+                "constraint": "constraint14"
+            }
+        ],
+        "possibility": [
+            {
+                "return": "android::BAD_VALUE",
+                "reply": [],
+                "data": [],
+                "id": 0
+            },
+            {
+                "return": "res",
+                "reply": [],
+                "data": [
+                    "tagCount"
+                ],
+                "id": 1
+            },
+            {
+                "return": "android::BAD_VALUE",
+                "reply": [],
+                "data": [
+                    "tagCount"
+                ],
+                "id": 2
+            },
+            {
+                "return": "res",
+                "reply": [],
+                "data": [
+                    "tagCount",
+                    "tag",
+                    "tagType",
+                    "tagName",
+                    "sectionIndex"
+                ],
+                "id": 3
+            },
+            {
+                "return": "res",
+                "reply": [],
+                "data": [
+                    "tagCount",
+                    "tag",
+                    "tagType",
+                    "tagName",
+                    "sectionIndex",
+                    "sectionCount"
+                ],
+                "id": 4
+            },
+            {
+                "return": "android::BAD_VALUE",
+                "reply": [],
+                "data": [
+                    "tagCount",
+                    "tag",
+                    "tagType",
+                    "tagName",
+                    "sectionIndex",
+                    "sectionCount"
+                ],
+                "id": 5
+            },
+            {
+                "return": "android::NOT_ENOUGH_DATA",
+                "reply": [],
+                "data": [
+                    "tagCount",
+                    "tag",
+                    "tagType",
+                    "tagName",
+                    "sectionIndex",
+                    "sectionCount",
+                    "sectionName"
+                ],
+                "id": 6
+            },
+            {
+                "return": "res",
+                "reply": [],
+                "data": [
+                    "tagCount",
+                    "tag",
+                    "tagType",
+                    "tagName",
+                    "sectionIndex",
+                    "sectionCount",
+                    "sectionName"
+                ],
+                "id": 7
+            }
+        ],
+        "constraint": [
+            {
+                "lhs": {
+                    "type": "const class android::Parcel *",
+                    "name": "parcel"
+                },
+                "rhs": {
+                    "type": "const class android::Parcel *",
+                    "name": "implicit_1",
+                    "value": "NULL"
+                },
+                "opcode": "==",
+                "name": "constraint0",
+                "probability": 0.1
+            },
+            {
+                "lhs": {
+                    "serialization_type": 0,
+                    "type": "android::status_t",
+                    "name": "res"
+                },
+                "rhs": {
+                    "type": "enum android::(anonymous at system.core.libutils.include.utils.Errors.h:45:1)",
+                    "name": "android::OK",
+                    "value": 0
+                },
+                "opcode": "!=",
+                "name": "constraint1",
+                "probability": 0.1
+            },
+            {
+                "lhs": {
+                    "lhs": {
+                        "type": "int",
+                        "name": "tagCount"
+                    },
+                    "rhs": {
+                        "type": "IntegerLiteral",
+                        "name": "implicit_11",
+                        "value": 0
+                    },
+                    "opcode": "<",
+                    "name": "constraint2_lhs",
+                    "probability": 0.1
+                },
+                "rhs": {
+                    "lhs": {
+                        "type": "int",
+                        "name": "tagCount"
+                    },
+                    "rhs": {
+                        "type": "IntegerLiteral",
+                        "name": "implicit_12",
+                        "value": 2147483647
+                    },
+                    "opcode": ">",
+                    "name": "constraint2_rhs",
+                    "probability": 0.1
+                },
+                "opcode": "||",
+                "name": "constraint2",
+                "probability": 0.1
+            },
+            {
+                "lhs": {
+                    "type": "int",
+                    "name": "i"
+                },
+                "rhs": {
+                    "type": "int",
+                    "name": "tagCount"
+                },
+                "opcode": "<",
+                "name": "constraint3",
+                "probability": 0.5
+            },
+            {
+                "lhs": {
+                    "serialization_type": 0,
+                    "type": "android::status_t",
+                    "name": "res"
+                },
+                "rhs": {
+                    "type": "enum android::(anonymous at system.core.libutils.include.utils.Errors.h:45:1)",
+                    "name": "android::OK",
+                    "value": 0
+                },
+                "opcode": "!=",
+                "name": "constraint4",
+                "probability": 0.5
+            },
+            {
+                "lhs": {
+                    "type": "unsigned int",
+                    "name": "tag"
+                },
+                "rhs": {
+                    "type": "IntegerLiteral",
+                    "name": "implicit_23",
+                    "value": 2147483648
+                },
+                "opcode": "<",
+                "name": "constraint5",
+                "probability": 0.5
+            },
+            {
+                "lhs": {
+                    "serialization_type": 0,
+                    "type": "android::status_t",
+                    "name": "res"
+                },
+                "rhs": {
+                    "type": "enum android::(anonymous at system.core.libutils.include.utils.Errors.h:45:1)",
+                    "name": "android::OK",
+                    "value": 0
+                },
+                "opcode": "!=",
+                "name": "constraint6",
+                "probability": 0.5
+            },
+            {
+                "lhs": {
+                    "lhs": {
+                        "type": "int",
+                        "name": "tagType"
+                    },
+                    "rhs": {
+                        "type": "IntegerLiteral",
+                        "name": "implicit_33",
+                        "value": 0
+                    },
+                    "opcode": "<",
+                    "name": "constraint7_lhs",
+                    "probability": 0.5
+                },
+                "rhs": {
+                    "lhs": {
+                        "type": "int",
+                        "name": "tagType"
+                    },
+                    "rhs": {
+                        "type": "enum (anonymous at system.media.camera.include.system.camera_metadata.h:51:1)",
+                        "name": "NUM_TYPES",
+                        "value": 6
+                    },
+                    "opcode": ">=",
+                    "name": "constraint7_rhs",
+                    "probability": 0.5
+                },
+                "opcode": "||",
+                "name": "constraint7",
+                "probability": 0.5
+            },
+            {
+                "lhs": {
+                    "serialization_type": 0,
+                    "type": "_Bool",
+                    "name": "tagName.isEmpty"
+                },
+                "opcode": "",
+                "name": "constraint8",
+                "probability": 0.5
+            },
+            {
+                "lhs": {
+                    "serialization_type": 0,
+                    "type": "android::status_t",
+                    "name": "res"
+                },
+                "rhs": {
+                    "type": "enum android::(anonymous at system.core.libutils.include.utils.Errors.h:45:1)",
+                    "name": "android::OK",
+                    "value": 0
+                },
+                "opcode": "!=",
+                "name": "constraint9",
+                "probability": 0.5
+            },
+            {
+                "lhs": {
+                    "type": "android::status_t",
+                    "name": "res"
+                },
+                "rhs": {
+                    "type": "enum android::(anonymous at system.core.libutils.include.utils.Errors.h:45:1)",
+                    "name": "android::OK",
+                    "value": 0
+                },
+                "opcode": "!=",
+                "name": "constraint10",
+                "probability": 0.1
+            },
+            {
+                "lhs": {
+                    "type": "int",
+                    "name": "tagCount"
+                },
+                "rhs": {
+                    "type": "IntegerLiteral",
+                    "name": "implicit_48",
+                    "value": 0
+                },
+                "opcode": ">",
+                "name": "constraint11",
+                "probability": 0.5
+            },
+            {
+                "lhs": {
+                    "serialization_type": 0,
+                    "type": "android::status_t",
+                    "name": "res"
+                },
+                "rhs": {
+                    "type": "enum android::(anonymous at system.core.libutils.include.utils.Errors.h:45:1)",
+                    "name": "android::OK",
+                    "value": 0
+                },
+                "opcode": "!=",
+                "name": "constraint12",
+                "probability": 0.1
+            },
+            {
+                "lhs": {
+                    "type": "size_t",
+                    "name": "sectionCount"
+                },
+                "rhs": {
+                    "serialization_type": 0,
+                    "type": "unsigned int",
+                    "name": "implicit_55",
+                    "value": "maxSectionIndex+implicit_54"
+                },
+                "opcode": "<",
+                "name": "constraint13",
+                "probability": 0.1
+            },
+            {
+                "lhs": {
+                    "type": "int",
+                    "name": "i"
+                },
+                "rhs": {
+                    "type": "size_t",
+                    "name": "sectionCount"
+                },
+                "opcode": "<",
+                "name": "constraint14",
+                "probability": 0.5
+            },
+            {
+                "lhs": {
+                    "serialization_type": 0,
+                    "type": "_Bool",
+                    "name": "sectionName.isEmpty"
+                },
+                "opcode": "",
+                "name": "constraint15",
+                "probability": 0.1
+            }
+        ]
+    }
+}

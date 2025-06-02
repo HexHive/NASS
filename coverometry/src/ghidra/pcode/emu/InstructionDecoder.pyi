@@ -1,0 +1,49 @@
+import ghidra.program.model.address
+import ghidra.program.model.lang
+import ghidra.program.model.listing
+import java.lang
+
+
+class InstructionDecoder(object):
+
+
+
+
+
+
+
+
+    def branched(self, __a0: ghidra.program.model.address.Address) -> None: ...
+
+    def decodeInstruction(self, __a0: ghidra.program.model.address.Address, __a1: ghidra.program.model.lang.RegisterValue) -> ghidra.program.model.listing.Instruction: ...
+
+    def equals(self, __a0: object) -> bool: ...
+
+    def getClass(self) -> java.lang.Class: ...
+
+    def getLastInstruction(self) -> ghidra.program.model.listing.Instruction: ...
+
+    def getLastLengthWithDelays(self) -> int: ...
+
+    def hashCode(self) -> int: ...
+
+    def notify(self) -> None: ...
+
+    def notifyAll(self) -> None: ...
+
+    def toString(self) -> unicode: ...
+
+    @overload
+    def wait(self) -> None: ...
+
+    @overload
+    def wait(self, __a0: long) -> None: ...
+
+    @overload
+    def wait(self, __a0: long, __a1: int) -> None: ...
+
+    @property
+    def lastInstruction(self) -> ghidra.program.model.listing.Instruction: ...
+
+    @property
+    def lastLengthWithDelays(self) -> int: ...

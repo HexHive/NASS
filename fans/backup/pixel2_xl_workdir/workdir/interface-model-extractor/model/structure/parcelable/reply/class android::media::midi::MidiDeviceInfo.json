@@ -1,0 +1,644 @@
+{
+    "class android::media::midi::MidiDeviceInfo": {
+        "variable": [
+            {
+                "count": 1,
+                "self_constraint": [],
+                "name": "mType",
+                "under_constraint": [],
+                "dependency": [],
+                "relation": [],
+                "signature": "int32_t",
+                "serialization_type": 2,
+                "usedBy": [],
+                "type": "int",
+                "loop": []
+            },
+            {
+                "count": 1,
+                "self_constraint": [
+                    "constraint0",
+                    "constraint1",
+                    "constraint2",
+                    "constraint3",
+                    "constraint4",
+                    "constraint5",
+                    "constraint7",
+                    "constraint8",
+                    "constraint9"
+                ],
+                "name": "returnStatus",
+                "under_constraint": [],
+                "dependency": [],
+                "relation": [],
+                "serialization_type": 0,
+                "usedBy": [],
+                "type": "android::status_t",
+                "loop": []
+            },
+            {
+                "count": 1,
+                "self_constraint": [],
+                "name": "mId",
+                "under_constraint": [
+                    {
+                        "status": false,
+                        "name": "constraint0"
+                    }
+                ],
+                "dependency": [],
+                "relation": [],
+                "signature": "int32_t",
+                "serialization_type": 2,
+                "usedBy": [],
+                "type": "int",
+                "loop": []
+            },
+            {
+                "count": 1,
+                "self_constraint": [],
+                "name": "android::media::midi::MidiDeviceInfo::mInputPortNames.size",
+                "under_constraint": [
+                    {
+                        "status": false,
+                        "name": "constraint0"
+                    },
+                    {
+                        "status": false,
+                        "name": "constraint1"
+                    }
+                ],
+                "dependency": [],
+                "relation": [],
+                "serialization_type": 2,
+                "usedBy": [],
+                "type": "int",
+                "loop": []
+            },
+            {
+                "count": 1,
+                "self_constraint": [],
+                "name": "android::media::midi::MidiDeviceInfo::mOutputPortNames.size",
+                "under_constraint": [
+                    {
+                        "status": false,
+                        "name": "constraint0"
+                    },
+                    {
+                        "status": false,
+                        "name": "constraint1"
+                    },
+                    {
+                        "status": false,
+                        "name": "constraint2"
+                    }
+                ],
+                "dependency": [],
+                "relation": [],
+                "serialization_type": 2,
+                "usedBy": [],
+                "type": "int",
+                "loop": []
+            },
+            {
+                "count": 1,
+                "self_constraint": [],
+                "name": "mInputPortNames",
+                "under_constraint": [
+                    {
+                        "status": false,
+                        "name": "constraint0"
+                    },
+                    {
+                        "status": false,
+                        "name": "constraint1"
+                    },
+                    {
+                        "status": false,
+                        "name": "constraint2"
+                    },
+                    {
+                        "status": false,
+                        "name": "constraint3"
+                    }
+                ],
+                "dependency": [],
+                "relation": [],
+                "signature": "Vector<class android::String16>",
+                "serialization_type": 2,
+                "usedBy": [],
+                "type": "class android::Vector<class android::String16>",
+                "loop": [],
+                "size": -1
+            },
+            {
+                "count": 1,
+                "self_constraint": [],
+                "name": "mInputPortNames::item",
+                "under_constraint": [],
+                "dependency": [],
+                "relation": [],
+                "signature": "Vector<class android::String16>",
+                "serialization_type": 2,
+                "usedBy": [],
+                "type": "class android::String16",
+                "loop": []
+            },
+            {
+                "count": 1,
+                "self_constraint": [],
+                "name": "mOutputPortNames",
+                "under_constraint": [
+                    {
+                        "status": false,
+                        "name": "constraint0"
+                    },
+                    {
+                        "status": false,
+                        "name": "constraint1"
+                    },
+                    {
+                        "status": false,
+                        "name": "constraint2"
+                    },
+                    {
+                        "status": false,
+                        "name": "constraint3"
+                    },
+                    {
+                        "status": false,
+                        "name": "constraint4"
+                    }
+                ],
+                "dependency": [],
+                "relation": [],
+                "signature": "Vector<class android::String16>",
+                "serialization_type": 2,
+                "usedBy": [],
+                "type": "class android::Vector<class android::String16>",
+                "loop": [],
+                "size": -1
+            },
+            {
+                "count": 1,
+                "self_constraint": [],
+                "name": "mOutputPortNames::item",
+                "under_constraint": [],
+                "dependency": [],
+                "relation": [],
+                "signature": "Vector<class android::String16>",
+                "serialization_type": 2,
+                "usedBy": [],
+                "type": "class android::String16",
+                "loop": []
+            },
+            {
+                "count": 1,
+                "self_constraint": [],
+                "name": "implicit_43",
+                "under_constraint": [
+                    {
+                        "status": false,
+                        "name": "constraint0"
+                    },
+                    {
+                        "status": false,
+                        "name": "constraint1"
+                    },
+                    {
+                        "status": false,
+                        "name": "constraint2"
+                    },
+                    {
+                        "status": false,
+                        "name": "constraint3"
+                    },
+                    {
+                        "status": false,
+                        "name": "constraint4"
+                    },
+                    {
+                        "status": false,
+                        "name": "constraint5"
+                    },
+                    {
+                        "status": true,
+                        "name": "constraint6"
+                    }
+                ],
+                "value": 1,
+                "dependency": [],
+                "relation": [],
+                "serialization_type": 2,
+                "usedBy": [],
+                "type": "IntegerLiteral",
+                "loop": []
+            },
+            {
+                "count": 1,
+                "self_constraint": [],
+                "name": "implicit_44",
+                "under_constraint": [
+                    {
+                        "status": false,
+                        "name": "constraint0"
+                    },
+                    {
+                        "status": false,
+                        "name": "constraint1"
+                    },
+                    {
+                        "status": false,
+                        "name": "constraint2"
+                    },
+                    {
+                        "status": false,
+                        "name": "constraint3"
+                    },
+                    {
+                        "status": false,
+                        "name": "constraint4"
+                    },
+                    {
+                        "status": false,
+                        "name": "constraint5"
+                    },
+                    {
+                        "status": false,
+                        "name": "constraint6"
+                    }
+                ],
+                "value": 0,
+                "dependency": [],
+                "relation": [],
+                "serialization_type": 2,
+                "usedBy": [],
+                "type": "IntegerLiteral",
+                "loop": []
+            },
+            {
+                "count": 2,
+                "self_constraint": [],
+                "name": "mProperties",
+                "under_constraint": [
+                    {
+                        "status": false,
+                        "name": "constraint0"
+                    },
+                    {
+                        "status": false,
+                        "name": "constraint1"
+                    },
+                    {
+                        "status": false,
+                        "name": "constraint2"
+                    },
+                    {
+                        "status": false,
+                        "name": "constraint3"
+                    },
+                    {
+                        "status": false,
+                        "name": "constraint4"
+                    },
+                    {
+                        "status": false,
+                        "name": "constraint5"
+                    },
+                    {
+                        "status": false,
+                        "name": "constraint7"
+                    }
+                ],
+                "dependency": [],
+                "relation": [],
+                "signature": "os::PersistableBundle",
+                "serialization_type": 2,
+                "usedBy": [],
+                "type": "class android::os::PersistableBundle",
+                "loop": []
+            },
+            {
+                "count": 1,
+                "self_constraint": [],
+                "name": "mProperties_1",
+                "under_constraint": [
+                    {
+                        "status": false,
+                        "name": "constraint0"
+                    },
+                    {
+                        "status": false,
+                        "name": "constraint1"
+                    },
+                    {
+                        "status": false,
+                        "name": "constraint2"
+                    },
+                    {
+                        "status": false,
+                        "name": "constraint3"
+                    },
+                    {
+                        "status": false,
+                        "name": "constraint4"
+                    },
+                    {
+                        "status": false,
+                        "name": "constraint5"
+                    },
+                    {
+                        "status": false,
+                        "name": "constraint7"
+                    },
+                    {
+                        "status": false,
+                        "name": "constraint8"
+                    }
+                ],
+                "dependency": [],
+                "relation": [],
+                "signature": "os::PersistableBundle",
+                "serialization_type": 2,
+                "usedBy": [],
+                "type": "class android::os::PersistableBundle",
+                "loop": []
+            },
+            {
+                "count": 1,
+                "self_constraint": [],
+                "name": "android::OK",
+                "under_constraint": [
+                    {
+                        "status": false,
+                        "name": "constraint0"
+                    },
+                    {
+                        "status": false,
+                        "name": "constraint1"
+                    },
+                    {
+                        "status": false,
+                        "name": "constraint2"
+                    },
+                    {
+                        "status": false,
+                        "name": "constraint3"
+                    },
+                    {
+                        "status": false,
+                        "name": "constraint4"
+                    },
+                    {
+                        "status": false,
+                        "name": "constraint5"
+                    },
+                    {
+                        "status": false,
+                        "name": "constraint7"
+                    },
+                    {
+                        "status": false,
+                        "name": "constraint8"
+                    },
+                    {
+                        "status": false,
+                        "name": "constraint9"
+                    }
+                ],
+                "value": 0,
+                "dependency": [],
+                "relation": [],
+                "serialization_type": 0,
+                "usedBy": [],
+                "type": "android::status_t",
+                "loop": []
+            }
+        ],
+        "dependency": [],
+        "loop": [],
+        "possibility": [
+            {
+                "return": "returnStatus",
+                "reply": [
+                    "mType"
+                ],
+                "data": [],
+                "id": 0
+            },
+            {
+                "return": "returnStatus",
+                "reply": [
+                    "mType",
+                    "mId"
+                ],
+                "data": [],
+                "id": 1
+            },
+            {
+                "return": "returnStatus",
+                "reply": [
+                    "mType",
+                    "mId",
+                    "android::media::midi::MidiDeviceInfo::mInputPortNames.size"
+                ],
+                "data": [],
+                "id": 2
+            },
+            {
+                "return": "returnStatus",
+                "reply": [
+                    "mType",
+                    "mId",
+                    "android::media::midi::MidiDeviceInfo::mInputPortNames.size",
+                    "android::media::midi::MidiDeviceInfo::mOutputPortNames.size"
+                ],
+                "data": [],
+                "id": 3
+            },
+            {
+                "return": "returnStatus",
+                "reply": [
+                    "mType",
+                    "mId",
+                    "android::media::midi::MidiDeviceInfo::mInputPortNames.size",
+                    "android::media::midi::MidiDeviceInfo::mOutputPortNames.size",
+                    "mInputPortNames"
+                ],
+                "data": [],
+                "id": 4
+            },
+            {
+                "return": "returnStatus",
+                "reply": [
+                    "mType",
+                    "mId",
+                    "android::media::midi::MidiDeviceInfo::mInputPortNames.size",
+                    "android::media::midi::MidiDeviceInfo::mOutputPortNames.size",
+                    "mInputPortNames",
+                    "mOutputPortNames"
+                ],
+                "data": [],
+                "id": 5
+            },
+            {
+                "return": "returnStatus",
+                "reply": [
+                    "mType",
+                    "mId",
+                    "android::media::midi::MidiDeviceInfo::mInputPortNames.size",
+                    "android::media::midi::MidiDeviceInfo::mOutputPortNames.size",
+                    "mInputPortNames",
+                    "mOutputPortNames",
+                    "implicit_43",
+                    "implicit_44"
+                ],
+                "data": [],
+                "id": 6
+            },
+            {
+                "return": "returnStatus",
+                "reply": [
+                    "mType",
+                    "mId",
+                    "android::media::midi::MidiDeviceInfo::mInputPortNames.size",
+                    "android::media::midi::MidiDeviceInfo::mOutputPortNames.size",
+                    "mInputPortNames",
+                    "mOutputPortNames",
+                    "implicit_43",
+                    "implicit_44",
+                    "mProperties"
+                ],
+                "data": [],
+                "id": 7
+            },
+            {
+                "return": "returnStatus",
+                "reply": [
+                    "mType",
+                    "mId",
+                    "android::media::midi::MidiDeviceInfo::mInputPortNames.size",
+                    "android::media::midi::MidiDeviceInfo::mOutputPortNames.size",
+                    "mInputPortNames",
+                    "mOutputPortNames",
+                    "implicit_43",
+                    "implicit_44",
+                    "mProperties",
+                    "mProperties_1"
+                ],
+                "data": [],
+                "id": 8
+            },
+            {
+                "return": "android::OK",
+                "reply": [
+                    "mType",
+                    "mId",
+                    "android::media::midi::MidiDeviceInfo::mInputPortNames.size",
+                    "android::media::midi::MidiDeviceInfo::mOutputPortNames.size",
+                    "mInputPortNames",
+                    "mOutputPortNames",
+                    "implicit_43",
+                    "implicit_44",
+                    "mProperties",
+                    "mProperties_1"
+                ],
+                "data": [],
+                "id": 9
+            }
+        ],
+        "constraint": [
+            {
+                "lhs": {
+                    "type": "android::status_t",
+                    "name": "returnStatus"
+                },
+                "opcode": "",
+                "name": "constraint0",
+                "probability": 0.1
+            },
+            {
+                "lhs": {
+                    "type": "android::status_t",
+                    "name": "returnStatus"
+                },
+                "opcode": "",
+                "name": "constraint1",
+                "probability": 0.1
+            },
+            {
+                "lhs": {
+                    "type": "android::status_t",
+                    "name": "returnStatus"
+                },
+                "opcode": "",
+                "name": "constraint2",
+                "probability": 0.1
+            },
+            {
+                "lhs": {
+                    "type": "android::status_t",
+                    "name": "returnStatus"
+                },
+                "opcode": "",
+                "name": "constraint3",
+                "probability": 0.1
+            },
+            {
+                "lhs": {
+                    "type": "android::status_t",
+                    "name": "returnStatus"
+                },
+                "opcode": "",
+                "name": "constraint4",
+                "probability": 0.1
+            },
+            {
+                "lhs": {
+                    "type": "android::status_t",
+                    "name": "returnStatus"
+                },
+                "opcode": "",
+                "name": "constraint5",
+                "probability": 0.1
+            },
+            {
+                "lhs": {
+                    "type": "_Bool",
+                    "name": "mIsPrivate",
+                    "signature": "_Bool"
+                },
+                "opcode": "",
+                "name": "constraint6",
+                "probability": 0.5
+            },
+            {
+                "lhs": {
+                    "type": "android::status_t",
+                    "name": "returnStatus"
+                },
+                "opcode": "",
+                "name": "constraint7",
+                "probability": 0.1
+            },
+            {
+                "lhs": {
+                    "type": "android::status_t",
+                    "name": "returnStatus"
+                },
+                "opcode": "",
+                "name": "constraint8",
+                "probability": 0.1
+            },
+            {
+                "lhs": {
+                    "type": "android::status_t",
+                    "name": "returnStatus"
+                },
+                "opcode": "",
+                "name": "constraint9",
+                "probability": 0.1
+            }
+        ]
+    }
+}

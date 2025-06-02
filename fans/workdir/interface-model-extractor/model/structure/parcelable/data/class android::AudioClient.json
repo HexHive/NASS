@@ -1,0 +1,103 @@
+{
+    "class android::AudioClient": {
+        "variable": [
+            {
+                "count": 1,
+                "self_constraint": [],
+                "name": "clientUid",
+                "under_constraint": [],
+                "dependency": [],
+                "relation": [],
+                "serialization_type": 1,
+                "usedBy": [],
+                "type": "uid_t",
+                "loop": []
+            },
+            {
+                "count": 1,
+                "self_constraint": [],
+                "name": "clientPid",
+                "under_constraint": [],
+                "dependency": [
+                    {
+                        "filename": "class android::os::storaged::UidInfo.json",
+                        "type": "Structure",
+                        "name": "class android::os::storaged::UidInfo",
+                        "possIdx": 0,
+                        "varIdx": 4,
+                        "varName": "task_it.first",
+                        "varType": "pid_t"
+                    }
+                ],
+                "relation": [],
+                "serialization_type": 1,
+                "usedBy": [],
+                "type": "pid_t",
+                "loop": []
+            },
+            {
+                "count": 1,
+                "self_constraint": [],
+                "name": "clientTid",
+                "under_constraint": [],
+                "dependency": [
+                    {
+                        "filename": "class android::os::storaged::UidInfo.json",
+                        "type": "Structure",
+                        "name": "class android::os::storaged::UidInfo",
+                        "possIdx": 0,
+                        "varIdx": 4,
+                        "varName": "task_it.first",
+                        "varType": "pid_t"
+                    }
+                ],
+                "relation": [],
+                "serialization_type": 1,
+                "usedBy": [],
+                "type": "pid_t",
+                "loop": []
+            },
+            {
+                "count": 1,
+                "self_constraint": [],
+                "name": "packageName",
+                "under_constraint": [],
+                "dependency": [],
+                "relation": [],
+                "serialization_type": 1,
+                "usedBy": [],
+                "type": "class android::String16",
+                "loop": []
+            },
+            {
+                "count": 1,
+                "self_constraint": [],
+                "name": "android::NO_ERROR",
+                "under_constraint": [],
+                "value": 0,
+                "dependency": [],
+                "relation": [],
+                "serialization_type": 0,
+                "usedBy": [],
+                "type": "android::status_t",
+                "loop": []
+            }
+        ],
+        "dependency": [],
+        "loop": [],
+        "possibility": [
+            {
+                "return": "android::NO_ERROR",
+                "reply": [],
+                "data": [
+                    "clientUid",
+                    "clientPid",
+                    "clientTid",
+                    "packageName"
+                ],
+                "id": 0
+            }
+        ],
+        "constraint": []
+    }
+}

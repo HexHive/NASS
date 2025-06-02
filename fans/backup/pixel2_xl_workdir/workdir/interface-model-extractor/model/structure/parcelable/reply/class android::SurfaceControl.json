@@ -1,0 +1,62 @@
+{
+    "class android::SurfaceControl": {
+        "variable": [
+            {
+                "count": 1,
+                "self_constraint": [],
+                "name": "Client",
+                "under_constraint": [],
+                "dependency": [],
+                "relation": [],
+                "serialization_type": 2,
+                "usedBy": [],
+                "type": "class android::sp<class android::ISurfaceComposerClient>",
+                "loop": [],
+                "interfaceName": "ISurfaceComposerClient"
+            },
+            {
+                "count": 1,
+                "self_constraint": [],
+                "name": "mHandle",
+                "under_constraint": [],
+                "dependency": [],
+                "relation": [],
+                "signature": "sp<class android::IBinder>",
+                "serialization_type": 2,
+                "usedBy": [],
+                "type": "class android::sp<class android::IBinder>",
+                "loop": [],
+                "interfaceName": "IBinder"
+            },
+            {
+                "count": 1,
+                "self_constraint": [],
+                "name": "mGraphicBufferProducer",
+                "under_constraint": [],
+                "dependency": [],
+                "relation": [],
+                "signature": "sp<class android::IGraphicBufferProducer>",
+                "serialization_type": 2,
+                "usedBy": [],
+                "type": "class android::sp<class android::IGraphicBufferProducer>",
+                "loop": [],
+                "interfaceName": "IGraphicBufferProducer"
+            }
+        ],
+        "dependency": [],
+        "loop": [],
+        "possibility": [
+            {
+                "return": "",
+                "reply": [
+                    "Client",
+                    "mHandle",
+                    "mGraphicBufferProducer"
+                ],
+                "data": [],
+                "id": 0
+            }
+        ],
+        "constraint": []
+    }
+}

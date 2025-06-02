@@ -1,0 +1,85 @@
+{
+    "struct audio_config":{
+        "dependency":[],
+        "possibility":[
+            {
+                "id":0,
+                "data":[
+                    "audio_config::sample_rate",
+                    "audio_config::channel_mask",
+                    "audio_config::format",
+                    "audio_config::offload_info",
+                    "audio_config::frame_count"
+                ],
+                "reply":[],
+                "return":""
+            }
+        ],
+        "variable":[
+            {
+                "name":"audio_config::sample_rate",
+                "type":"unsigned int",
+                "serialization_type":1,
+                "self_constraint":[],
+                "under_constraint":[],
+                "relation":[],
+                "loop":[],
+                "usedBy":[],
+                "dependency":[],
+                "count":1
+            },
+            {
+                "name":"audio_config::channel_mask",
+                "type":"audio_channel_mask_t",
+                "serialization_type":1,
+                "self_constraint":[],
+                "under_constraint":[],
+                "relation":[],
+                "loop":[],
+                "usedBy":[],
+                "dependency":[],
+                "count":1
+            },
+            {
+                "name":"audio_config::format",
+                "type":"enum audio_format_t",
+                "serialization_type":1,
+                "self_constraint":[],
+                "under_constraint":[],
+                "relation":[],
+                "loop":[],
+                "usedBy":[],
+                "dependency":[],
+                "count":1,
+                "type_alias":1
+            },
+            {
+                "name":"audio_config::offload_info",
+                "type":"struct audio_offload_info_t",
+                "serialization_type":1,
+                "self_constraint":[],
+                "under_constraint":[],
+                "relation":[],
+                "loop":[],
+                "usedBy":[],
+                "dependency":[],
+                "count":1,
+                "type_alias":1
+            },
+            {
+                "name":"audio_config::frame_count",
+                "type":"unsigned int",
+                "serialization_type":1,
+                "self_constraint":[],
+                "under_constraint":[],
+                "relation":[],
+                "loop":[],
+                "usedBy":[],
+                "dependency":[],
+                "count":1
+            }
+        ],
+        "constraint":[],
+        "loop":[]
+    }
+}

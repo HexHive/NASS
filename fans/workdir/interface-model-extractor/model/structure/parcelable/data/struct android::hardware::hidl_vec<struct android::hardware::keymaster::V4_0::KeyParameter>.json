@@ -1,0 +1,189 @@
+{
+    "struct android::hardware::hidl_vec<struct android::hardware::keymaster::V4_0::KeyParameter>": {
+        "variable": [
+            {
+                "count": 1,
+                "self_constraint": [],
+                "name": "length",
+                "under_constraint": [],
+                "dependency": [],
+                "relation": [],
+                "serialization_type": 1,
+                "usedBy": [],
+                "type": "ssize_t",
+                "loop": []
+            },
+            {
+                "count": 1,
+                "self_constraint": [
+                    "constraint0"
+                ],
+                "name": "i",
+                "under_constraint": [],
+                "value": 0,
+                "dependency": [],
+                "relation": [],
+                "serialization_type": 0,
+                "usedBy": [],
+                "type": "size_t",
+                "loop": []
+            },
+            {
+                "count": 1,
+                "self_constraint": [],
+                "name": "param",
+                "under_constraint": [],
+                "dependency": [],
+                "relation": [],
+                "serialization_type": 1,
+                "usedBy": [],
+                "type": "struct android::hardware::keymaster::V4_0::KeyParameter",
+                "loop": [
+                    "loop0"
+                ]
+            },
+            {
+                "count": 1,
+                "self_constraint": [
+                    "constraint1"
+                ],
+                "name": "param.isOk",
+                "under_constraint": [],
+                "dependency": [],
+                "relation": [],
+                "serialization_type": 0,
+                "usedBy": [],
+                "type": "_Bool",
+                "loop": [
+                    "loop0"
+                ]
+            },
+            {
+                "count": 1,
+                "self_constraint": [],
+                "name": "implicit_4",
+                "under_constraint": [
+                    {
+                        "status": true,
+                        "name": "constraint1"
+                    }
+                ],
+                "func_name": "android::hardware::hidl_vec<android::hardware::keymaster::V4_0::KeyParameter>::hidl_vec",
+                "argv": [],
+                "dependency": [],
+                "relation": [],
+                "signature": "void (void)",
+                "serialization_type": 0,
+                "usedBy": [],
+                "type": "Function",
+                "loop": [
+                    "loop0"
+                ]
+            },
+            {
+                "count": 1,
+                "self_constraint": [],
+                "name": "result",
+                "under_constraint": [
+                    {
+                        "status": false,
+                        "name": "constraint1"
+                    }
+                ],
+                "dependency": [],
+                "relation": [],
+                "serialization_type": 0,
+                "usedBy": [],
+                "type": "struct android::hardware::hidl_vec<struct android::hardware::keymaster::V4_0::KeyParameter>",
+                "loop": []
+            },
+            {
+                "count": 1,
+                "self_constraint": [],
+                "name": "implicit_5",
+                "under_constraint": [
+                    {
+                        "status": false,
+                        "name": "constraint1"
+                    }
+                ],
+                "func_name": "android::hardware::hidl_vec<android::hardware::keymaster::V4_0::KeyParameter>::hidl_vec",
+                "argv": [
+                    {
+                        "type": "struct android::hardware::hidl_vec<struct android::hardware::keymaster::V4_0::KeyParameter>",
+                        "name": "result"
+                    }
+                ],
+                "dependency": [],
+                "relation": [],
+                "signature": "void (hidl_vec<struct android::hardware::keymaster::V4_0::KeyParameter> &&) noexcept",
+                "serialization_type": 0,
+                "usedBy": [],
+                "type": "Function",
+                "loop": []
+            }
+        ],
+        "dependency": [],
+        "loop": [
+            {
+                "counter": {
+                    "type": "size_t",
+                    "name": "i",
+                    "value": 0
+                },
+                "inc": {
+                    "type": "size_t",
+                    "opcode": "++",
+                    "name": "i"
+                },
+                "name": "loop0",
+                "constraint": "constraint0"
+            }
+        ],
+        "possibility": [
+            {
+                "return": "implicit_4",
+                "reply": [],
+                "data": [
+                    "length",
+                    "param"
+                ],
+                "id": 0
+            },
+            {
+                "return": "implicit_5",
+                "reply": [],
+                "data": [
+                    "length",
+                    "param"
+                ],
+                "id": 1
+            }
+        ],
+        "constraint": [
+            {
+                "lhs": {
+                    "type": "size_t",
+                    "name": "i"
+                },
+                "rhs": {
+                    "type": "size_t",
+                    "name": "ulength"
+                },
+                "opcode": "<",
+                "name": "constraint0",
+                "probability": 0.5
+            },
+            {
+                "lhs": {
+                    "serialization_type": 0,
+                    "type": "_Bool",
+                    "name": "param.isOk"
+                },
+                "opcode": "!",
+                "name": "constraint1",
+                "probability": 0.1
+            }
+        ]
+    }
+}

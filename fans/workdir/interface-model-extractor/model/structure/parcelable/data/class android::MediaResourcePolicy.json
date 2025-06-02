@@ -1,0 +1,54 @@
+{
+    "class android::MediaResourcePolicy": {
+        "variable": [
+            {
+                "count": 1,
+                "self_constraint": [],
+                "name": "mType",
+                "under_constraint": [],
+                "dependency": [],
+                "relation": [],
+                "serialization_type": 1,
+                "usedBy": [],
+                "type": "class android::String8",
+                "loop": []
+            },
+            {
+                "count": 1,
+                "self_constraint": [],
+                "name": "mValue",
+                "under_constraint": [],
+                "dependency": [
+                    {
+                        "filename": "BnDrm.json",
+                        "type": "Transaction",
+                        "name": "IDrm::16-16",
+                        "possIdx": 1,
+                        "varIdx": 0,
+                        "varName": "value",
+                        "varType": "class android::String8"
+                    }
+                ],
+                "relation": [],
+                "serialization_type": 1,
+                "usedBy": [],
+                "type": "class android::String8",
+                "loop": []
+            }
+        ],
+        "dependency": [],
+        "loop": [],
+        "possibility": [
+            {
+                "return": "",
+                "reply": [],
+                "data": [
+                    "mType",
+                    "mValue"
+                ],
+                "id": 0
+            }
+        ],
+        "constraint": []
+    }
+}

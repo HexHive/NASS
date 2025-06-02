@@ -1,0 +1,149 @@
+{
+    "CompoundStmt":{
+        "CXXMemberCallExpr1":{
+            "ReturnType":{
+                "$":"android::status_t"
+            },
+            "MemberExpr":{
+                "name":{
+                    "$":"android::Parcel::writeInt32"
+                },
+                "type":{
+                    "$":"<bound member function type>"
+                },
+                "signature":{
+                    "$":"android::status_t (int32_t)"
+                },
+                "ImplicitCastExpr":{
+                    "type":{
+                        "$":"class android::Parcel *"
+                    },
+                    "DeclRef":{
+                        "name":{
+                            "$":"parcel"
+                        },
+                        "type":{
+                            "$":"class android::Parcel *"
+                        }
+                    }
+                }
+            },
+            "argv":{
+                "ImplicitCastExpr":{
+                    "type":{
+                        "$":"int"
+                    },
+                    "ImplicitCastExpr":{
+                        "type":{
+                            "$":"unsigned int"
+                        },
+                        "MemberExpr":{
+                            "name":{
+                                "$":"android::AudioMixMatchCriterion::mRule"
+                            },
+                            "type":{
+                                "$":"const uint32_t"
+                            },
+                            "signature":{
+                                "$":"uint32_t"
+                            },
+                            "CXXThisExpr":{
+                                "Type":{
+                                    "$":"const class android::AudioMixMatchCriterion *"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "CXXMemberCallExpr2":{
+            "ReturnType":{
+                "$":"android::status_t"
+            },
+            "MemberExpr":{
+                "name":{
+                    "$":"android::Parcel::writeInt32"
+                },
+                "type":{
+                    "$":"<bound member function type>"
+                },
+                "signature":{
+                    "$":"android::status_t (int32_t)"
+                },
+                "ImplicitCastExpr":{
+                    "type":{
+                        "$":"class android::Parcel *"
+                    },
+                    "DeclRef":{
+                        "name":{
+                            "$":"parcel"
+                        },
+                        "type":{
+                            "$":"class android::Parcel *"
+                        }
+                    }
+                }
+            },
+            "argv":{
+                "ImplicitCastExpr":{
+                    "type":{
+                        "$":"int"
+                    },
+                    "ImplicitCastExpr":{
+                        "type":{
+                            "$":"audio_usage_t"
+                        },
+                        "MemberExpr":{
+                            "name":{
+                                "$":"android::AudioMixMatchCriterion::(anonymous union)::mUsage"
+                            },
+                            "type":{
+                                "$":"const audio_usage_t"
+                            },
+                            "signature":{
+                                "$":"audio_usage_t"
+                            },
+                            "MemberExpr":{
+                                "name":{
+                                    "$":"android::AudioMixMatchCriterion::mValue"
+                                },
+                                "type":{
+                                    "$":"const union android::AudioMixMatchCriterion::(anonymous at frameworks.av.media.libaudioclient.include.media.AudioPolicy.h:67:5)"
+                                },
+                                "signature":{
+                                    "$":"union (anonymous union at frameworks/av/media/libaudioclient/include/media/AudioPolicy.h:67:5)"
+                                },
+                                "CXXThisExpr":{
+                                    "Type":{
+                                        "$":"const class android::AudioMixMatchCriterion *"
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "ReturnStmt":{
+            "ImplicitCastExpr":{
+                "type":{
+                    "$":"android::status_t"
+                },
+                "IntegerLiteral":{
+                    "value":{
+                        "$":0
+                    },
+                    "DeclRef":{
+                        "name":{
+                            "$":"android::NO_ERROR"
+                        },
+                        "type":{
+                            "$":"enum android::(anonymous at system.core.libutils.include.utils.Errors.h:45:1)"
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

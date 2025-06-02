@@ -1,0 +1,189 @@
+{
+    "class aaudio::RingBufferParcelable": {
+        "variable": [
+            {
+                "count": 1,
+                "self_constraint": [
+                    "constraint0"
+                ],
+                "name": "mCapacityInFrames",
+                "under_constraint": [],
+                "dependency": [],
+                "relation": [],
+                "signature": "int32_t",
+                "serialization_type": 2,
+                "usedBy": [],
+                "type": "int",
+                "loop": []
+            },
+            {
+                "count": 1,
+                "self_constraint": [],
+                "name": "status",
+                "under_constraint": [],
+                "dependency": [],
+                "relation": [],
+                "serialization_type": 0,
+                "usedBy": [],
+                "type": "android::status_t",
+                "loop": []
+            },
+            {
+                "count": 1,
+                "self_constraint": [],
+                "name": "mBytesPerFrame",
+                "under_constraint": [
+                    {
+                        "status": true,
+                        "name": "constraint0"
+                    }
+                ],
+                "dependency": [],
+                "relation": [],
+                "signature": "int32_t",
+                "serialization_type": 2,
+                "usedBy": [],
+                "type": "int",
+                "loop": []
+            },
+            {
+                "count": 1,
+                "self_constraint": [],
+                "name": "mFramesPerBurst",
+                "under_constraint": [
+                    {
+                        "status": true,
+                        "name": "constraint0"
+                    }
+                ],
+                "dependency": [],
+                "relation": [],
+                "signature": "int32_t",
+                "serialization_type": 2,
+                "usedBy": [],
+                "type": "int",
+                "loop": []
+            },
+            {
+                "count": 1,
+                "self_constraint": [],
+                "name": "mFlags",
+                "under_constraint": [
+                    {
+                        "status": true,
+                        "name": "constraint0"
+                    }
+                ],
+                "dependency": [],
+                "relation": [],
+                "signature": "enum aaudio::RingbufferFlags",
+                "serialization_type": 2,
+                "usedBy": [],
+                "type": "enum aaudio::RingbufferFlags",
+                "loop": []
+            },
+            {
+                "count": 1,
+                "self_constraint": [],
+                "name": "mReadCounterParcelable",
+                "under_constraint": [
+                    {
+                        "status": true,
+                        "name": "constraint0"
+                    }
+                ],
+                "dependency": [],
+                "relation": [],
+                "signature": "class aaudio::SharedRegionParcelable",
+                "serialization_type": 2,
+                "usedBy": [],
+                "type": "class aaudio::SharedRegionParcelable",
+                "loop": []
+            },
+            {
+                "count": 1,
+                "self_constraint": [],
+                "name": "mWriteCounterParcelable",
+                "under_constraint": [
+                    {
+                        "status": true,
+                        "name": "constraint0"
+                    }
+                ],
+                "dependency": [],
+                "relation": [],
+                "signature": "class aaudio::SharedRegionParcelable",
+                "serialization_type": 2,
+                "usedBy": [],
+                "type": "class aaudio::SharedRegionParcelable",
+                "loop": []
+            },
+            {
+                "count": 1,
+                "self_constraint": [],
+                "name": "mDataParcelable",
+                "under_constraint": [
+                    {
+                        "status": true,
+                        "name": "constraint0"
+                    }
+                ],
+                "dependency": [],
+                "relation": [],
+                "signature": "class aaudio::SharedRegionParcelable",
+                "serialization_type": 2,
+                "usedBy": [],
+                "type": "class aaudio::SharedRegionParcelable",
+                "loop": []
+            },
+            {
+                "count": 1,
+                "self_constraint": [],
+                "name": "android::NO_ERROR",
+                "under_constraint": [],
+                "value": 0,
+                "dependency": [],
+                "relation": [],
+                "serialization_type": 0,
+                "usedBy": [],
+                "type": "android::status_t",
+                "loop": []
+            }
+        ],
+        "dependency": [],
+        "loop": [],
+        "possibility": [
+            {
+                "return": "status",
+                "reply": [
+                    "mCapacityInFrames",
+                    "mBytesPerFrame",
+                    "mFramesPerBurst",
+                    "mFlags",
+                    "mReadCounterParcelable",
+                    "mWriteCounterParcelable",
+                    "mDataParcelable"
+                ],
+                "data": [],
+                "id": 0
+            }
+        ],
+        "constraint": [
+            {
+                "lhs": {
+                    "type": "int",
+                    "name": "mCapacityInFrames",
+                    "signature": "int32_t"
+                },
+                "rhs": {
+                    "type": "IntegerLiteral",
+                    "name": "implicit_2",
+                    "value": 0
+                },
+                "opcode": ">",
+                "name": "constraint0",
+                "probability": 0.5
+            }
+        ]
+    }
+}

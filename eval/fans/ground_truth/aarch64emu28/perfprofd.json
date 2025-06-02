@@ -1,0 +1,27 @@
+{
+	"1":[
+		"Int32",
+		"Int32",
+		"Int32",
+		"Int32",
+		"Int32",
+		"Int32",
+		"Bool",
+		"Bool",
+		"Bool"
+	],
+	"2":[
+		"String16"
+	],
+	"3":[
+		"ByteVector"
+	],
+	"4":[],
+	"1598246212":[
+		"FileDescriptor",
+		"FileDescriptor",
+		"FileDescriptor",
+		"String16VectorInline",
+		"StrongBinder"
+	]
+}

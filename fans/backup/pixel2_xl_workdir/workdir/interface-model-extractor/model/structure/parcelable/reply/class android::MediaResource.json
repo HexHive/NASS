@@ -1,0 +1,60 @@
+{
+    "class android::MediaResource": {
+        "variable": [
+            {
+                "count": 1,
+                "self_constraint": [],
+                "name": "mType",
+                "under_constraint": [],
+                "dependency": [],
+                "relation": [],
+                "signature": "enum android::MediaResource::Type",
+                "serialization_type": 2,
+                "usedBy": [],
+                "type": "enum android::MediaResource::Type",
+                "loop": []
+            },
+            {
+                "count": 1,
+                "self_constraint": [],
+                "name": "mSubType",
+                "under_constraint": [],
+                "dependency": [],
+                "relation": [],
+                "signature": "enum android::MediaResource::SubType",
+                "serialization_type": 2,
+                "usedBy": [],
+                "type": "enum android::MediaResource::SubType",
+                "loop": []
+            },
+            {
+                "count": 1,
+                "self_constraint": [],
+                "name": "mValue",
+                "under_constraint": [],
+                "dependency": [],
+                "relation": [],
+                "signature": "uint64_t",
+                "serialization_type": 2,
+                "usedBy": [],
+                "type": "unsigned long long",
+                "loop": []
+            }
+        ],
+        "dependency": [],
+        "loop": [],
+        "possibility": [
+            {
+                "return": "",
+                "reply": [
+                    "mType",
+                    "mSubType",
+                    "mValue"
+                ],
+                "data": [],
+                "id": 0
+            }
+        ],
+        "constraint": []
+    }
+}

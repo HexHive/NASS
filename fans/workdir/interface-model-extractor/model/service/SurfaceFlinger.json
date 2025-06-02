@@ -1,0 +1,2968 @@
+{
+    "ISurfaceComposer::1000-1001": {
+        "code": [
+            1000,
+            1001
+        ],
+        "dependency": [],
+        "possibility": [
+            {
+                "id": 0,
+                "data": [
+                    "ServiceInterfaceDescriptor"
+                ],
+                "reply": [],
+                "return": "android::PERMISSION_DENIED"
+            },
+            {
+                "id": 1,
+                "data": [
+                    "ServiceInterfaceDescriptor"
+                ],
+                "reply": [],
+                "return": "android::NO_ERROR"
+            }
+        ],
+        "variable": [
+            {
+                "name": "ServiceInterfaceDescriptor",
+                "type": "class android::String16",
+                "serialization_type": 1,
+                "self_constraint": [
+                    "constraint0"
+                ],
+                "under_constraint": [],
+                "relation": [],
+                "loop": [],
+                "usedBy": [],
+                "dependency": [],
+                "count": 1
+            },
+            {
+                "name": "android::PERMISSION_DENIED",
+                "type": "android::status_t",
+                "value": -1,
+                "serialization_type": 0,
+                "self_constraint": [],
+                "under_constraint": [
+                    {
+                        "name": "constraint0",
+                        "status": true
+                    }
+                ],
+                "relation": [],
+                "loop": [],
+                "usedBy": [],
+                "dependency": [],
+                "count": 1
+            },
+            {
+                "name": "android::NO_ERROR",
+                "type": "android::status_t",
+                "value": 0,
+                "serialization_type": 0,
+                "self_constraint": [],
+                "under_constraint": [
+                    {
+                        "name": "constraint0",
+                        "status": false
+                    }
+                ],
+                "relation": [],
+                "loop": [],
+                "usedBy": [],
+                "dependency": [],
+                "count": 1
+            }
+        ],
+        "constraint": [
+            {
+                "name": "constraint0",
+                "opcode": "!",
+                "lhs": {
+                    "name": "ServiceInterfaceDescriptor",
+                    "type": "class android::String16",
+                    "serialization_type": 1
+                },
+                "probability": 0.1
+            }
+        ],
+        "loop": [],
+        "serviceName": "SurfaceFlinger",
+        "interfaceName": "ISurfaceComposer",
+        "interfaceToken": "android.ui.ISurfaceComposer"
+    },
+    "ISurfaceComposer::1002-1002": {
+        "code": [
+            1002
+        ],
+        "dependency": [],
+        "possibility": [
+            {
+                "id": 0,
+                "data": [
+                    "ServiceInterfaceDescriptor"
+                ],
+                "reply": [],
+                "return": "android::PERMISSION_DENIED"
+            },
+            {
+                "id": 1,
+                "data": [
+                    "ServiceInterfaceDescriptor",
+                    "n"
+                ],
+                "reply": [],
+                "return": "android::NO_ERROR"
+            }
+        ],
+        "variable": [
+            {
+                "name": "ServiceInterfaceDescriptor",
+                "type": "class android::String16",
+                "serialization_type": 1,
+                "self_constraint": [
+                    "constraint0"
+                ],
+                "under_constraint": [],
+                "relation": [],
+                "loop": [],
+                "usedBy": [],
+                "dependency": [],
+                "count": 1
+            },
+            {
+                "name": "android::PERMISSION_DENIED",
+                "type": "android::status_t",
+                "value": -1,
+                "serialization_type": 0,
+                "self_constraint": [],
+                "under_constraint": [
+                    {
+                        "name": "constraint0",
+                        "status": true
+                    }
+                ],
+                "relation": [],
+                "loop": [],
+                "usedBy": [],
+                "dependency": [],
+                "count": 1
+            },
+            {
+                "type": "int",
+                "name": "n",
+                "serialization_type": 1,
+                "self_constraint": [],
+                "under_constraint": [
+                    {
+                        "name": "constraint0",
+                        "status": false
+                    }
+                ],
+                "relation": [],
+                "loop": [],
+                "usedBy": [],
+                "dependency": [],
+                "count": 1
+            },
+            {
+                "name": "android::NO_ERROR",
+                "type": "android::status_t",
+                "value": 0,
+                "serialization_type": 0,
+                "self_constraint": [],
+                "under_constraint": [
+                    {
+                        "name": "constraint0",
+                        "status": false
+                    }
+                ],
+                "relation": [],
+                "loop": [],
+                "usedBy": [],
+                "dependency": [],
+                "count": 1
+            }
+        ],
+        "constraint": [
+            {
+                "name": "constraint0",
+                "opcode": "!",
+                "lhs": {
+                    "name": "ServiceInterfaceDescriptor",
+                    "type": "class android::String16",
+                    "serialization_type": 1
+                },
+                "probability": 0.1
+            }
+        ],
+        "loop": [],
+        "serviceName": "SurfaceFlinger",
+        "interfaceName": "ISurfaceComposer",
+        "interfaceToken": "android.ui.ISurfaceComposer"
+    },
+    "ISurfaceComposer::1004-1004": {
+        "code": [
+            1004
+        ],
+        "dependency": [],
+        "possibility": [
+            {
+                "id": 0,
+                "data": [
+                    "ServiceInterfaceDescriptor"
+                ],
+                "reply": [],
+                "return": "android::PERMISSION_DENIED"
+            },
+            {
+                "id": 1,
+                "data": [
+                    "ServiceInterfaceDescriptor"
+                ],
+                "reply": [],
+                "return": "android::NO_ERROR"
+            }
+        ],
+        "variable": [
+            {
+                "name": "ServiceInterfaceDescriptor",
+                "type": "class android::String16",
+                "serialization_type": 1,
+                "self_constraint": [
+                    "constraint0"
+                ],
+                "under_constraint": [],
+                "relation": [],
+                "loop": [],
+                "usedBy": [],
+                "dependency": [],
+                "count": 1
+            },
+            {
+                "name": "android::PERMISSION_DENIED",
+                "type": "android::status_t",
+                "value": -1,
+                "serialization_type": 0,
+                "self_constraint": [],
+                "under_constraint": [
+                    {
+                        "name": "constraint0",
+                        "status": true
+                    }
+                ],
+                "relation": [],
+                "loop": [],
+                "usedBy": [],
+                "dependency": [],
+                "count": 1
+            },
+            {
+                "name": "android::NO_ERROR",
+                "type": "android::status_t",
+                "value": 0,
+                "serialization_type": 0,
+                "self_constraint": [],
+                "under_constraint": [
+                    {
+                        "name": "constraint0",
+                        "status": false
+                    }
+                ],
+                "relation": [],
+                "loop": [],
+                "usedBy": [],
+                "dependency": [],
+                "count": 1
+            }
+        ],
+        "constraint": [
+            {
+                "name": "constraint0",
+                "opcode": "!",
+                "lhs": {
+                    "name": "ServiceInterfaceDescriptor",
+                    "type": "class android::String16",
+                    "serialization_type": 1
+                },
+                "probability": 0.1
+            }
+        ],
+        "loop": [],
+        "serviceName": "SurfaceFlinger",
+        "interfaceName": "ISurfaceComposer",
+        "interfaceToken": "android.ui.ISurfaceComposer"
+    },
+    "ISurfaceComposer::1005-1005": {
+        "code": [
+            1005
+        ],
+        "dependency": [],
+        "possibility": [
+            {
+                "id": 0,
+                "data": [
+                    "ServiceInterfaceDescriptor"
+                ],
+                "reply": [],
+                "return": "android::PERMISSION_DENIED"
+            },
+            {
+                "id": 1,
+                "data": [
+                    "ServiceInterfaceDescriptor"
+                ],
+                "reply": [],
+                "return": "android::NO_ERROR"
+            }
+        ],
+        "variable": [
+            {
+                "name": "ServiceInterfaceDescriptor",
+                "type": "class android::String16",
+                "serialization_type": 1,
+                "self_constraint": [
+                    "constraint0"
+                ],
+                "under_constraint": [],
+                "relation": [],
+                "loop": [],
+                "usedBy": [],
+                "dependency": [],
+                "count": 1
+            },
+            {
+                "name": "android::PERMISSION_DENIED",
+                "type": "android::status_t",
+                "value": -1,
+                "serialization_type": 0,
+                "self_constraint": [],
+                "under_constraint": [
+                    {
+                        "name": "constraint0",
+                        "status": true
+                    }
+                ],
+                "relation": [],
+                "loop": [],
+                "usedBy": [],
+                "dependency": [],
+                "count": 1
+            },
+            {
+                "name": "android::NO_ERROR",
+                "type": "android::status_t",
+                "value": 0,
+                "serialization_type": 0,
+                "self_constraint": [],
+                "under_constraint": [
+                    {
+                        "name": "constraint0",
+                        "status": false
+                    }
+                ],
+                "relation": [],
+                "loop": [],
+                "usedBy": [],
+                "dependency": [],
+                "count": 1
+            }
+        ],
+        "constraint": [
+            {
+                "name": "constraint0",
+                "opcode": "!",
+                "lhs": {
+                    "name": "ServiceInterfaceDescriptor",
+                    "type": "class android::String16",
+                    "serialization_type": 1
+                },
+                "probability": 0.1
+            }
+        ],
+        "loop": [],
+        "serviceName": "SurfaceFlinger",
+        "interfaceName": "ISurfaceComposer",
+        "interfaceToken": "android.ui.ISurfaceComposer"
+    },
+    "ISurfaceComposer::1006-1006": {
+        "code": [
+            1006
+        ],
+        "dependency": [],
+        "possibility": [
+            {
+                "id": 0,
+                "data": [
+                    "ServiceInterfaceDescriptor"
+                ],
+                "reply": [],
+                "return": "android::PERMISSION_DENIED"
+            },
+            {
+                "id": 1,
+                "data": [
+                    "ServiceInterfaceDescriptor"
+                ],
+                "reply": [],
+                "return": "android::NO_ERROR"
+            }
+        ],
+        "variable": [
+            {
+                "name": "ServiceInterfaceDescriptor",
+                "type": "class android::String16",
+                "serialization_type": 1,
+                "self_constraint": [
+                    "constraint0"
+                ],
+                "under_constraint": [],
+                "relation": [],
+                "loop": [],
+                "usedBy": [],
+                "dependency": [],
+                "count": 1
+            },
+            {
+                "name": "android::PERMISSION_DENIED",
+                "type": "android::status_t",
+                "value": -1,
+                "serialization_type": 0,
+                "self_constraint": [],
+                "under_constraint": [
+                    {
+                        "name": "constraint0",
+                        "status": true
+                    }
+                ],
+                "relation": [],
+                "loop": [],
+                "usedBy": [],
+                "dependency": [],
+                "count": 1
+            },
+            {
+                "name": "android::NO_ERROR",
+                "type": "android::status_t",
+                "value": 0,
+                "serialization_type": 0,
+                "self_constraint": [],
+                "under_constraint": [
+                    {
+                        "name": "constraint0",
+                        "status": false
+                    }
+                ],
+                "relation": [],
+                "loop": [],
+                "usedBy": [],
+                "dependency": [],
+                "count": 1
+            }
+        ],
+        "constraint": [
+            {
+                "name": "constraint0",
+                "opcode": "!",
+                "lhs": {
+                    "name": "ServiceInterfaceDescriptor",
+                    "type": "class android::String16",
+                    "serialization_type": 1
+                },
+                "probability": 0.1
+            }
+        ],
+        "loop": [],
+        "serviceName": "SurfaceFlinger",
+        "interfaceName": "ISurfaceComposer",
+        "interfaceToken": "android.ui.ISurfaceComposer"
+    },
+    "ISurfaceComposer::1008-1008": {
+        "code": [
+            1008
+        ],
+        "dependency": [],
+        "possibility": [
+            {
+                "id": 0,
+                "data": [
+                    "ServiceInterfaceDescriptor"
+                ],
+                "reply": [],
+                "return": "android::PERMISSION_DENIED"
+            },
+            {
+                "id": 1,
+                "data": [
+                    "ServiceInterfaceDescriptor",
+                    "n"
+                ],
+                "reply": [],
+                "return": "android::NO_ERROR"
+            }
+        ],
+        "variable": [
+            {
+                "name": "ServiceInterfaceDescriptor",
+                "type": "class android::String16",
+                "serialization_type": 1,
+                "self_constraint": [
+                    "constraint0"
+                ],
+                "under_constraint": [],
+                "relation": [],
+                "loop": [],
+                "usedBy": [],
+                "dependency": [],
+                "count": 1
+            },
+            {
+                "name": "android::PERMISSION_DENIED",
+                "type": "android::status_t",
+                "value": -1,
+                "serialization_type": 0,
+                "self_constraint": [],
+                "under_constraint": [
+                    {
+                        "name": "constraint0",
+                        "status": true
+                    }
+                ],
+                "relation": [],
+                "loop": [],
+                "usedBy": [],
+                "dependency": [],
+                "count": 1
+            },
+            {
+                "type": "int",
+                "name": "n",
+                "serialization_type": 1,
+                "self_constraint": [],
+                "under_constraint": [
+                    {
+                        "name": "constraint0",
+                        "status": false
+                    }
+                ],
+                "relation": [],
+                "loop": [],
+                "usedBy": [],
+                "dependency": [],
+                "count": 1
+            },
+            {
+                "name": "android::NO_ERROR",
+                "type": "android::status_t",
+                "value": 0,
+                "serialization_type": 0,
+                "self_constraint": [],
+                "under_constraint": [
+                    {
+                        "name": "constraint0",
+                        "status": false
+                    }
+                ],
+                "relation": [],
+                "loop": [],
+                "usedBy": [],
+                "dependency": [],
+                "count": 1
+            }
+        ],
+        "constraint": [
+            {
+                "name": "constraint0",
+                "opcode": "!",
+                "lhs": {
+                    "name": "ServiceInterfaceDescriptor",
+                    "type": "class android::String16",
+                    "serialization_type": 1
+                },
+                "probability": 0.1
+            }
+        ],
+        "loop": [],
+        "serviceName": "SurfaceFlinger",
+        "interfaceName": "ISurfaceComposer",
+        "interfaceToken": "android.ui.ISurfaceComposer"
+    },
+    "ISurfaceComposer::1009-1009": {
+        "code": [
+            1009
+        ],
+        "dependency": [],
+        "possibility": [
+            {
+                "id": 0,
+                "data": [
+                    "ServiceInterfaceDescriptor"
+                ],
+                "reply": [],
+                "return": "android::PERMISSION_DENIED"
+            },
+            {
+                "id": 1,
+                "data": [
+                    "ServiceInterfaceDescriptor",
+                    "n"
+                ],
+                "reply": [],
+                "return": "android::NO_ERROR"
+            }
+        ],
+        "variable": [
+            {
+                "name": "ServiceInterfaceDescriptor",
+                "type": "class android::String16",
+                "serialization_type": 1,
+                "self_constraint": [
+                    "constraint0"
+                ],
+                "under_constraint": [],
+                "relation": [],
+                "loop": [],
+                "usedBy": [],
+                "dependency": [],
+                "count": 1
+            },
+            {
+                "name": "android::PERMISSION_DENIED",
+                "type": "android::status_t",
+                "value": -1,
+                "serialization_type": 0,
+                "self_constraint": [],
+                "under_constraint": [
+                    {
+                        "name": "constraint0",
+                        "status": true
+                    }
+                ],
+                "relation": [],
+                "loop": [],
+                "usedBy": [],
+                "dependency": [],
+                "count": 1
+            },
+            {
+                "type": "int",
+                "name": "n",
+                "serialization_type": 1,
+                "self_constraint": [],
+                "under_constraint": [
+                    {
+                        "name": "constraint0",
+                        "status": false
+                    }
+                ],
+                "relation": [],
+                "loop": [],
+                "usedBy": [],
+                "dependency": [],
+                "count": 1
+            },
+            {
+                "name": "android::NO_ERROR",
+                "type": "android::status_t",
+                "value": 0,
+                "serialization_type": 0,
+                "self_constraint": [],
+                "under_constraint": [
+                    {
+                        "name": "constraint0",
+                        "status": false
+                    }
+                ],
+                "relation": [],
+                "loop": [],
+                "usedBy": [],
+                "dependency": [],
+                "count": 1
+            }
+        ],
+        "constraint": [
+            {
+                "name": "constraint0",
+                "opcode": "!",
+                "lhs": {
+                    "name": "ServiceInterfaceDescriptor",
+                    "type": "class android::String16",
+                    "serialization_type": 1
+                },
+                "probability": 0.1
+            }
+        ],
+        "loop": [],
+        "serviceName": "SurfaceFlinger",
+        "interfaceName": "ISurfaceComposer",
+        "interfaceToken": "android.ui.ISurfaceComposer"
+    },
+    "ISurfaceComposer::1010-1010": {
+        "code": [
+            1010
+        ],
+        "dependency": [],
+        "possibility": [
+            {
+                "id": 0,
+                "data": [
+                    "ServiceInterfaceDescriptor"
+                ],
+                "reply": [],
+                "return": "android::PERMISSION_DENIED"
+            },
+            {
+                "id": 1,
+                "data": [
+                    "ServiceInterfaceDescriptor"
+                ],
+                "reply": [
+                    "implicit_2",
+                    "implicit_4",
+                    "mDebugRegion",
+                    "implicit_7",
+                    "mDebugDisableHWC"
+                ],
+                "return": "android::NO_ERROR"
+            }
+        ],
+        "variable": [
+            {
+                "name": "ServiceInterfaceDescriptor",
+                "type": "class android::String16",
+                "serialization_type": 1,
+                "self_constraint": [
+                    "constraint0"
+                ],
+                "under_constraint": [],
+                "relation": [],
+                "loop": [],
+                "usedBy": [],
+                "dependency": [],
+                "count": 1
+            },
+            {
+                "name": "android::PERMISSION_DENIED",
+                "type": "android::status_t",
+                "value": -1,
+                "serialization_type": 0,
+                "self_constraint": [],
+                "under_constraint": [
+                    {
+                        "name": "constraint0",
+                        "status": true
+                    }
+                ],
+                "relation": [],
+                "loop": [],
+                "usedBy": [],
+                "dependency": [],
+                "count": 1
+            },
+            {
+                "name": "implicit_2",
+                "type": "IntegerLiteral",
+                "value": 0,
+                "serialization_type": 2,
+                "self_constraint": [],
+                "under_constraint": [
+                    {
+                        "name": "constraint0",
+                        "status": false
+                    }
+                ],
+                "relation": [],
+                "loop": [],
+                "usedBy": [],
+                "dependency": [],
+                "count": 1
+            },
+            {
+                "name": "implicit_4",
+                "type": "IntegerLiteral",
+                "value": 0,
+                "serialization_type": 2,
+                "self_constraint": [],
+                "under_constraint": [
+                    {
+                        "name": "constraint0",
+                        "status": false
+                    }
+                ],
+                "relation": [],
+                "loop": [],
+                "usedBy": [],
+                "dependency": [],
+                "count": 1
+            },
+            {
+                "name": "mDebugRegion",
+                "type": "int",
+                "signature": "int",
+                "serialization_type": 2,
+                "self_constraint": [],
+                "under_constraint": [
+                    {
+                        "name": "constraint0",
+                        "status": false
+                    }
+                ],
+                "relation": [],
+                "loop": [],
+                "usedBy": [],
+                "dependency": [],
+                "count": 1
+            },
+            {
+                "name": "implicit_7",
+                "type": "IntegerLiteral",
+                "value": 0,
+                "serialization_type": 2,
+                "self_constraint": [],
+                "under_constraint": [
+                    {
+                        "name": "constraint0",
+                        "status": false
+                    }
+                ],
+                "relation": [],
+                "loop": [],
+                "usedBy": [],
+                "dependency": [],
+                "count": 1
+            },
+            {
+                "name": "mDebugDisableHWC",
+                "type": "int",
+                "signature": "int",
+                "serialization_type": 2,
+                "self_constraint": [],
+                "under_constraint": [
+                    {
+                        "name": "constraint0",
+                        "status": false
+                    }
+                ],
+                "relation": [],
+                "loop": [],
+                "usedBy": [],
+                "dependency": [],
+                "count": 1
+            },
+            {
+                "name": "android::NO_ERROR",
+                "type": "android::status_t",
+                "value": 0,
+                "serialization_type": 0,
+                "self_constraint": [],
+                "under_constraint": [
+                    {
+                        "name": "constraint0",
+                        "status": false
+                    }
+                ],
+                "relation": [],
+                "loop": [],
+                "usedBy": [],
+                "dependency": [],
+                "count": 1
+            }
+        ],
+        "constraint": [
+            {
+                "name": "constraint0",
+                "opcode": "!",
+                "lhs": {
+                    "name": "ServiceInterfaceDescriptor",
+                    "type": "class android::String16",
+                    "serialization_type": 1
+                },
+                "probability": 0.1
+            }
+        ],
+        "loop": [],
+        "serviceName": "SurfaceFlinger",
+        "interfaceName": "ISurfaceComposer",
+        "interfaceToken": "android.ui.ISurfaceComposer"
+    },
+    "ISurfaceComposer::1013-1013": {
+        "code": [
+            1013
+        ],
+        "dependency": [],
+        "possibility": [
+            {
+                "id": 0,
+                "data": [
+                    "ServiceInterfaceDescriptor"
+                ],
+                "reply": [],
+                "return": "android::PERMISSION_DENIED"
+            },
+            {
+                "id": 1,
+                "data": [
+                    "ServiceInterfaceDescriptor"
+                ],
+                "reply": [
+                    "PageFlipCount"
+                ],
+                "return": "android::NO_ERROR"
+            }
+        ],
+        "variable": [
+            {
+                "name": "ServiceInterfaceDescriptor",
+                "type": "class android::String16",
+                "serialization_type": 1,
+                "self_constraint": [
+                    "constraint0"
+                ],
+                "under_constraint": [],
+                "relation": [],
+                "loop": [],
+                "usedBy": [],
+                "dependency": [],
+                "count": 1
+            },
+            {
+                "name": "android::PERMISSION_DENIED",
+                "type": "android::status_t",
+                "value": -1,
+                "serialization_type": 0,
+                "self_constraint": [],
+                "under_constraint": [
+                    {
+                        "name": "constraint0",
+                        "status": true
+                    }
+                ],
+                "relation": [],
+                "loop": [],
+                "usedBy": [],
+                "dependency": [],
+                "count": 1
+            },
+            {
+                "type": "int",
+                "name": "PageFlipCount",
+                "serialization_type": 2,
+                "self_constraint": [],
+                "under_constraint": [
+                    {
+                        "name": "constraint0",
+                        "status": false
+                    }
+                ],
+                "relation": [],
+                "loop": [],
+                "usedBy": [],
+                "dependency": [],
+                "count": 1
+            },
+            {
+                "name": "android::NO_ERROR",
+                "type": "android::status_t",
+                "value": 0,
+                "serialization_type": 0,
+                "self_constraint": [],
+                "under_constraint": [
+                    {
+                        "name": "constraint0",
+                        "status": false
+                    }
+                ],
+                "relation": [],
+                "loop": [],
+                "usedBy": [],
+                "dependency": [],
+                "count": 1
+            }
+        ],
+        "constraint": [
+            {
+                "name": "constraint0",
+                "opcode": "!",
+                "lhs": {
+                    "name": "ServiceInterfaceDescriptor",
+                    "type": "class android::String16",
+                    "serialization_type": 1
+                },
+                "probability": 0.1
+            }
+        ],
+        "loop": [],
+        "serviceName": "SurfaceFlinger",
+        "interfaceName": "ISurfaceComposer",
+        "interfaceToken": "android.ui.ISurfaceComposer"
+    },
+    "ISurfaceComposer::1014-1014": {
+        "code": [
+            1014
+        ],
+        "dependency": [],
+        "possibility": [
+            {
+                "id": 0,
+                "data": [
+                    "ServiceInterfaceDescriptor"
+                ],
+                "reply": [],
+                "return": "android::PERMISSION_DENIED"
+            },
+            {
+                "id": 1,
+                "data": [
+                    "ServiceInterfaceDescriptor",
+                    "n"
+                ],
+                "reply": [],
+                "return": "android::NO_ERROR"
+            }
+        ],
+        "variable": [
+            {
+                "name": "ServiceInterfaceDescriptor",
+                "type": "class android::String16",
+                "serialization_type": 1,
+                "self_constraint": [
+                    "constraint0"
+                ],
+                "under_constraint": [],
+                "relation": [],
+                "loop": [],
+                "usedBy": [],
+                "dependency": [],
+                "count": 1
+            },
+            {
+                "name": "android::PERMISSION_DENIED",
+                "type": "android::status_t",
+                "value": -1,
+                "serialization_type": 0,
+                "self_constraint": [],
+                "under_constraint": [
+                    {
+                        "name": "constraint0",
+                        "status": true
+                    }
+                ],
+                "relation": [],
+                "loop": [],
+                "usedBy": [],
+                "dependency": [],
+                "count": 1
+            },
+            {
+                "type": "int",
+                "name": "n",
+                "serialization_type": 1,
+                "self_constraint": [],
+                "under_constraint": [
+                    {
+                        "name": "constraint0",
+                        "status": false
+                    }
+                ],
+                "relation": [],
+                "loop": [],
+                "usedBy": [],
+                "dependency": [],
+                "count": 1
+            },
+            {
+                "name": "android::NO_ERROR",
+                "type": "android::status_t",
+                "value": 0,
+                "serialization_type": 0,
+                "self_constraint": [],
+                "under_constraint": [
+                    {
+                        "name": "constraint0",
+                        "status": false
+                    }
+                ],
+                "relation": [],
+                "loop": [],
+                "usedBy": [],
+                "dependency": [],
+                "count": 1
+            }
+        ],
+        "constraint": [
+            {
+                "name": "constraint0",
+                "opcode": "!",
+                "lhs": {
+                    "name": "ServiceInterfaceDescriptor",
+                    "type": "class android::String16",
+                    "serialization_type": 1
+                },
+                "probability": 0.1
+            }
+        ],
+        "loop": [],
+        "serviceName": "SurfaceFlinger",
+        "interfaceName": "ISurfaceComposer",
+        "interfaceToken": "android.ui.ISurfaceComposer"
+    },
+    "ISurfaceComposer::1015-1015": {
+        "code": [
+            1015
+        ],
+        "dependency": [],
+        "possibility": [
+            {
+                "id": 0,
+                "data": [
+                    "ServiceInterfaceDescriptor"
+                ],
+                "reply": [],
+                "return": "android::PERMISSION_DENIED"
+            },
+            {
+                "id": 1,
+                "data": [
+                    "ServiceInterfaceDescriptor",
+                    "n",
+                    "mClientColorMatrix[i][j]"
+                ],
+                "reply": [],
+                "return": "android::NO_ERROR"
+            }
+        ],
+        "variable": [
+            {
+                "name": "ServiceInterfaceDescriptor",
+                "type": "class android::String16",
+                "serialization_type": 1,
+                "self_constraint": [
+                    "constraint0"
+                ],
+                "under_constraint": [],
+                "relation": [],
+                "loop": [],
+                "usedBy": [],
+                "dependency": [],
+                "count": 1
+            },
+            {
+                "name": "android::PERMISSION_DENIED",
+                "type": "android::status_t",
+                "value": -1,
+                "serialization_type": 0,
+                "self_constraint": [],
+                "under_constraint": [
+                    {
+                        "name": "constraint0",
+                        "status": true
+                    }
+                ],
+                "relation": [],
+                "loop": [],
+                "usedBy": [],
+                "dependency": [],
+                "count": 1
+            },
+            {
+                "type": "int",
+                "name": "n",
+                "serialization_type": 1,
+                "self_constraint": [
+                    "constraint1"
+                ],
+                "under_constraint": [
+                    {
+                        "name": "constraint0",
+                        "status": false
+                    }
+                ],
+                "relation": [],
+                "loop": [],
+                "usedBy": [],
+                "dependency": [],
+                "count": 1
+            },
+            {
+                "name": "i",
+                "type": "size_t",
+                "value": 0,
+                "serialization_type": 0,
+                "self_constraint": [
+                    "constraint2"
+                ],
+                "under_constraint": [
+                    {
+                        "name": "constraint0",
+                        "status": false
+                    },
+                    {
+                        "name": "constraint1",
+                        "status": true
+                    }
+                ],
+                "relation": [],
+                "loop": [],
+                "usedBy": [],
+                "dependency": [],
+                "count": 1
+            },
+            {
+                "name": "j",
+                "type": "size_t",
+                "value": 0,
+                "serialization_type": 0,
+                "self_constraint": [
+                    "constraint3"
+                ],
+                "under_constraint": [
+                    {
+                        "name": "constraint0",
+                        "status": false
+                    },
+                    {
+                        "name": "constraint1",
+                        "status": true
+                    }
+                ],
+                "relation": [],
+                "loop": [
+                    "loop0"
+                ],
+                "usedBy": [],
+                "dependency": [],
+                "count": 1
+            },
+            {
+                "type": "float",
+                "name": "mClientColorMatrix[i][j]",
+                "serialization_type": 1,
+                "self_constraint": [],
+                "under_constraint": [
+                    {
+                        "name": "constraint0",
+                        "status": false
+                    },
+                    {
+                        "name": "constraint1",
+                        "status": true
+                    }
+                ],
+                "relation": [],
+                "loop": [
+                    "loop0",
+                    "loop1"
+                ],
+                "usedBy": [],
+                "dependency": [],
+                "count": 1
+            },
+            {
+                "name": "android::NO_ERROR",
+                "type": "android::status_t",
+                "value": 0,
+                "serialization_type": 0,
+                "self_constraint": [],
+                "under_constraint": [
+                    {
+                        "name": "constraint0",
+                        "status": false
+                    }
+                ],
+                "relation": [],
+                "loop": [],
+                "usedBy": [],
+                "dependency": [],
+                "count": 1
+            }
+        ],
+        "constraint": [
+            {
+                "name": "constraint0",
+                "opcode": "!",
+                "lhs": {
+                    "name": "ServiceInterfaceDescriptor",
+                    "type": "class android::String16",
+                    "serialization_type": 1
+                },
+                "probability": 0.1
+            },
+            {
+                "name": "constraint1",
+                "opcode": "",
+                "lhs": {
+                    "name": "n",
+                    "type": "int"
+                },
+                "probability": 0.5
+            },
+            {
+                "name": "constraint2",
+                "opcode": "<",
+                "lhs": {
+                    "name": "i",
+                    "type": "size_t"
+                },
+                "rhs": {
+                    "name": "implicit_4",
+                    "type": "IntegerLiteral",
+                    "value": 4
+                },
+                "probability": 0.5
+            },
+            {
+                "name": "constraint3",
+                "opcode": "<",
+                "lhs": {
+                    "name": "j",
+                    "type": "size_t"
+                },
+                "rhs": {
+                    "name": "implicit_6",
+                    "type": "IntegerLiteral",
+                    "value": 4
+                },
+                "probability": 0.5
+            }
+        ],
+        "loop": [
+            {
+                "name": "loop0",
+                "counter": {
+                    "name": "i",
+                    "type": "size_t",
+                    "value": 0
+                },
+                "constraint": "constraint2",
+                "inc": {
+                    "opcode": "++",
+                    "name": "i",
+                    "type": "size_t"
+                }
+            },
+            {
+                "name": "loop1",
+                "counter": {
+                    "name": "j",
+                    "type": "size_t",
+                    "value": 0
+                },
+                "constraint": "constraint3",
+                "inc": {
+                    "opcode": "++",
+                    "name": "j",
+                    "type": "size_t"
+                }
+            }
+        ],
+        "serviceName": "SurfaceFlinger",
+        "interfaceName": "ISurfaceComposer",
+        "interfaceToken": "android.ui.ISurfaceComposer"
+    },
+    "ISurfaceComposer::1016-1016": {
+        "code": [
+            1016
+        ],
+        "dependency": [],
+        "possibility": [
+            {
+                "id": 0,
+                "data": [
+                    "ServiceInterfaceDescriptor"
+                ],
+                "reply": [],
+                "return": "android::PERMISSION_DENIED"
+            },
+            {
+                "id": 1,
+                "data": [
+                    "ServiceInterfaceDescriptor",
+                    "n"
+                ],
+                "reply": [],
+                "return": "android::NO_ERROR"
+            }
+        ],
+        "variable": [
+            {
+                "name": "ServiceInterfaceDescriptor",
+                "type": "class android::String16",
+                "serialization_type": 1,
+                "self_constraint": [
+                    "constraint0"
+                ],
+                "under_constraint": [],
+                "relation": [],
+                "loop": [],
+                "usedBy": [],
+                "dependency": [],
+                "count": 1
+            },
+            {
+                "name": "android::PERMISSION_DENIED",
+                "type": "android::status_t",
+                "value": -1,
+                "serialization_type": 0,
+                "self_constraint": [],
+                "under_constraint": [
+                    {
+                        "name": "constraint0",
+                        "status": true
+                    }
+                ],
+                "relation": [],
+                "loop": [],
+                "usedBy": [],
+                "dependency": [],
+                "count": 1
+            },
+            {
+                "type": "int",
+                "name": "n",
+                "serialization_type": 1,
+                "self_constraint": [],
+                "under_constraint": [
+                    {
+                        "name": "constraint0",
+                        "status": false
+                    }
+                ],
+                "relation": [],
+                "loop": [],
+                "usedBy": [],
+                "dependency": [],
+                "count": 1
+            },
+            {
+                "name": "android::NO_ERROR",
+                "type": "android::status_t",
+                "value": 0,
+                "serialization_type": 0,
+                "self_constraint": [],
+                "under_constraint": [
+                    {
+                        "name": "constraint0",
+                        "status": false
+                    }
+                ],
+                "relation": [],
+                "loop": [],
+                "usedBy": [],
+                "dependency": [],
+                "count": 1
+            }
+        ],
+        "constraint": [
+            {
+                "name": "constraint0",
+                "opcode": "!",
+                "lhs": {
+                    "name": "ServiceInterfaceDescriptor",
+                    "type": "class android::String16",
+                    "serialization_type": 1
+                },
+                "probability": 0.1
+            }
+        ],
+        "loop": [],
+        "serviceName": "SurfaceFlinger",
+        "interfaceName": "ISurfaceComposer",
+        "interfaceToken": "android.ui.ISurfaceComposer"
+    },
+    "ISurfaceComposer::1017-1017": {
+        "code": [
+            1017
+        ],
+        "dependency": [],
+        "possibility": [
+            {
+                "id": 0,
+                "data": [
+                    "ServiceInterfaceDescriptor"
+                ],
+                "reply": [],
+                "return": "android::PERMISSION_DENIED"
+            },
+            {
+                "id": 1,
+                "data": [
+                    "ServiceInterfaceDescriptor",
+                    "n"
+                ],
+                "reply": [],
+                "return": "android::NO_ERROR"
+            }
+        ],
+        "variable": [
+            {
+                "name": "ServiceInterfaceDescriptor",
+                "type": "class android::String16",
+                "serialization_type": 1,
+                "self_constraint": [
+                    "constraint0"
+                ],
+                "under_constraint": [],
+                "relation": [],
+                "loop": [],
+                "usedBy": [],
+                "dependency": [],
+                "count": 1
+            },
+            {
+                "name": "android::PERMISSION_DENIED",
+                "type": "android::status_t",
+                "value": -1,
+                "serialization_type": 0,
+                "self_constraint": [],
+                "under_constraint": [
+                    {
+                        "name": "constraint0",
+                        "status": true
+                    }
+                ],
+                "relation": [],
+                "loop": [],
+                "usedBy": [],
+                "dependency": [],
+                "count": 1
+            },
+            {
+                "type": "int",
+                "name": "n",
+                "serialization_type": 1,
+                "self_constraint": [],
+                "under_constraint": [
+                    {
+                        "name": "constraint0",
+                        "status": false
+                    }
+                ],
+                "relation": [],
+                "loop": [],
+                "usedBy": [],
+                "dependency": [],
+                "count": 1
+            },
+            {
+                "name": "android::NO_ERROR",
+                "type": "android::status_t",
+                "value": 0,
+                "serialization_type": 0,
+                "self_constraint": [],
+                "under_constraint": [
+                    {
+                        "name": "constraint0",
+                        "status": false
+                    }
+                ],
+                "relation": [],
+                "loop": [],
+                "usedBy": [],
+                "dependency": [],
+                "count": 1
+            }
+        ],
+        "constraint": [
+            {
+                "name": "constraint0",
+                "opcode": "!",
+                "lhs": {
+                    "name": "ServiceInterfaceDescriptor",
+                    "type": "class android::String16",
+                    "serialization_type": 1
+                },
+                "probability": 0.1
+            }
+        ],
+        "loop": [],
+        "serviceName": "SurfaceFlinger",
+        "interfaceName": "ISurfaceComposer",
+        "interfaceToken": "android.ui.ISurfaceComposer"
+    },
+    "ISurfaceComposer::1018-1018": {
+        "code": [
+            1018
+        ],
+        "dependency": [],
+        "possibility": [
+            {
+                "id": 0,
+                "data": [
+                    "ServiceInterfaceDescriptor"
+                ],
+                "reply": [],
+                "return": "android::PERMISSION_DENIED"
+            },
+            {
+                "id": 1,
+                "data": [
+                    "ServiceInterfaceDescriptor",
+                    "n"
+                ],
+                "reply": [],
+                "return": "android::NO_ERROR"
+            }
+        ],
+        "variable": [
+            {
+                "name": "ServiceInterfaceDescriptor",
+                "type": "class android::String16",
+                "serialization_type": 1,
+                "self_constraint": [
+                    "constraint0"
+                ],
+                "under_constraint": [],
+                "relation": [],
+                "loop": [],
+                "usedBy": [],
+                "dependency": [],
+                "count": 1
+            },
+            {
+                "name": "android::PERMISSION_DENIED",
+                "type": "android::status_t",
+                "value": -1,
+                "serialization_type": 0,
+                "self_constraint": [],
+                "under_constraint": [
+                    {
+                        "name": "constraint0",
+                        "status": true
+                    }
+                ],
+                "relation": [],
+                "loop": [],
+                "usedBy": [],
+                "dependency": [],
+                "count": 1
+            },
+            {
+                "type": "int",
+                "name": "n",
+                "serialization_type": 1,
+                "self_constraint": [],
+                "under_constraint": [
+                    {
+                        "name": "constraint0",
+                        "status": false
+                    }
+                ],
+                "relation": [],
+                "loop": [],
+                "usedBy": [],
+                "dependency": [],
+                "count": 1
+            },
+            {
+                "name": "android::NO_ERROR",
+                "type": "android::status_t",
+                "value": 0,
+                "serialization_type": 0,
+                "self_constraint": [],
+                "under_constraint": [
+                    {
+                        "name": "constraint0",
+                        "status": false
+                    }
+                ],
+                "relation": [],
+                "loop": [],
+                "usedBy": [],
+                "dependency": [],
+                "count": 1
+            }
+        ],
+        "constraint": [
+            {
+                "name": "constraint0",
+                "opcode": "!",
+                "lhs": {
+                    "name": "ServiceInterfaceDescriptor",
+                    "type": "class android::String16",
+                    "serialization_type": 1
+                },
+                "probability": 0.1
+            }
+        ],
+        "loop": [],
+        "serviceName": "SurfaceFlinger",
+        "interfaceName": "ISurfaceComposer",
+        "interfaceToken": "android.ui.ISurfaceComposer"
+    },
+    "ISurfaceComposer::1019-1019": {
+        "code": [
+            1019
+        ],
+        "dependency": [],
+        "possibility": [
+            {
+                "id": 0,
+                "data": [
+                    "ServiceInterfaceDescriptor"
+                ],
+                "reply": [],
+                "return": "android::PERMISSION_DENIED"
+            },
+            {
+                "id": 1,
+                "data": [
+                    "ServiceInterfaceDescriptor",
+                    "n"
+                ],
+                "reply": [],
+                "return": "android::NO_ERROR"
+            }
+        ],
+        "variable": [
+            {
+                "name": "ServiceInterfaceDescriptor",
+                "type": "class android::String16",
+                "serialization_type": 1,
+                "self_constraint": [
+                    "constraint0"
+                ],
+                "under_constraint": [],
+                "relation": [],
+                "loop": [],
+                "usedBy": [],
+                "dependency": [],
+                "count": 1
+            },
+            {
+                "name": "android::PERMISSION_DENIED",
+                "type": "android::status_t",
+                "value": -1,
+                "serialization_type": 0,
+                "self_constraint": [],
+                "under_constraint": [
+                    {
+                        "name": "constraint0",
+                        "status": true
+                    }
+                ],
+                "relation": [],
+                "loop": [],
+                "usedBy": [],
+                "dependency": [],
+                "count": 1
+            },
+            {
+                "type": "int",
+                "name": "n",
+                "serialization_type": 1,
+                "self_constraint": [],
+                "under_constraint": [
+                    {
+                        "name": "constraint0",
+                        "status": false
+                    }
+                ],
+                "relation": [],
+                "loop": [],
+                "usedBy": [],
+                "dependency": [],
+                "count": 1
+            },
+            {
+                "name": "android::NO_ERROR",
+                "type": "android::status_t",
+                "value": 0,
+                "serialization_type": 0,
+                "self_constraint": [],
+                "under_constraint": [
+                    {
+                        "name": "constraint0",
+                        "status": false
+                    }
+                ],
+                "relation": [],
+                "loop": [],
+                "usedBy": [],
+                "dependency": [],
+                "count": 1
+            }
+        ],
+        "constraint": [
+            {
+                "name": "constraint0",
+                "opcode": "!",
+                "lhs": {
+                    "name": "ServiceInterfaceDescriptor",
+                    "type": "class android::String16",
+                    "serialization_type": 1
+                },
+                "probability": 0.1
+            }
+        ],
+        "loop": [],
+        "serviceName": "SurfaceFlinger",
+        "interfaceName": "ISurfaceComposer",
+        "interfaceToken": "android.ui.ISurfaceComposer"
+    },
+    "ISurfaceComposer::1020-1020": {
+        "code": [
+            1020
+        ],
+        "dependency": [],
+        "possibility": [
+            {
+                "id": 0,
+                "data": [
+                    "ServiceInterfaceDescriptor"
+                ],
+                "reply": [],
+                "return": "android::PERMISSION_DENIED"
+            },
+            {
+                "id": 1,
+                "data": [
+                    "ServiceInterfaceDescriptor",
+                    "n"
+                ],
+                "reply": [],
+                "return": "android::NO_ERROR"
+            }
+        ],
+        "variable": [
+            {
+                "name": "ServiceInterfaceDescriptor",
+                "type": "class android::String16",
+                "serialization_type": 1,
+                "self_constraint": [
+                    "constraint0"
+                ],
+                "under_constraint": [],
+                "relation": [],
+                "loop": [],
+                "usedBy": [],
+                "dependency": [],
+                "count": 1
+            },
+            {
+                "name": "android::PERMISSION_DENIED",
+                "type": "android::status_t",
+                "value": -1,
+                "serialization_type": 0,
+                "self_constraint": [],
+                "under_constraint": [
+                    {
+                        "name": "constraint0",
+                        "status": true
+                    }
+                ],
+                "relation": [],
+                "loop": [],
+                "usedBy": [],
+                "dependency": [],
+                "count": 1
+            },
+            {
+                "type": "int",
+                "name": "n",
+                "serialization_type": 1,
+                "self_constraint": [
+                    "constraint1"
+                ],
+                "under_constraint": [
+                    {
+                        "name": "constraint0",
+                        "status": false
+                    }
+                ],
+                "relation": [],
+                "loop": [],
+                "usedBy": [],
+                "dependency": [],
+                "count": 1
+            },
+            {
+                "name": "android::NO_ERROR",
+                "type": "android::status_t",
+                "value": 0,
+                "serialization_type": 0,
+                "self_constraint": [],
+                "under_constraint": [
+                    {
+                        "name": "constraint0",
+                        "status": false
+                    }
+                ],
+                "relation": [],
+                "loop": [],
+                "usedBy": [],
+                "dependency": [],
+                "count": 1
+            }
+        ],
+        "constraint": [
+            {
+                "name": "constraint0",
+                "opcode": "!",
+                "lhs": {
+                    "name": "ServiceInterfaceDescriptor",
+                    "type": "class android::String16",
+                    "serialization_type": 1
+                },
+                "probability": 0.1
+            },
+            {
+                "name": "constraint1",
+                "opcode": "",
+                "lhs": {
+                    "name": "n",
+                    "type": "int"
+                },
+                "probability": 0.5
+            }
+        ],
+        "loop": [],
+        "serviceName": "SurfaceFlinger",
+        "interfaceName": "ISurfaceComposer",
+        "interfaceToken": "android.ui.ISurfaceComposer"
+    },
+    "ISurfaceComposer::1021-1021": {
+        "code": [
+            1021
+        ],
+        "dependency": [],
+        "possibility": [
+            {
+                "id": 0,
+                "data": [
+                    "ServiceInterfaceDescriptor"
+                ],
+                "reply": [],
+                "return": "android::PERMISSION_DENIED"
+            },
+            {
+                "id": 1,
+                "data": [
+                    "ServiceInterfaceDescriptor",
+                    "n"
+                ],
+                "reply": [],
+                "return": "android::NO_ERROR"
+            }
+        ],
+        "variable": [
+            {
+                "name": "ServiceInterfaceDescriptor",
+                "type": "class android::String16",
+                "serialization_type": 1,
+                "self_constraint": [
+                    "constraint0"
+                ],
+                "under_constraint": [],
+                "relation": [],
+                "loop": [],
+                "usedBy": [],
+                "dependency": [],
+                "count": 1
+            },
+            {
+                "name": "android::PERMISSION_DENIED",
+                "type": "android::status_t",
+                "value": -1,
+                "serialization_type": 0,
+                "self_constraint": [],
+                "under_constraint": [
+                    {
+                        "name": "constraint0",
+                        "status": true
+                    }
+                ],
+                "relation": [],
+                "loop": [],
+                "usedBy": [],
+                "dependency": [],
+                "count": 1
+            },
+            {
+                "type": "int",
+                "name": "n",
+                "serialization_type": 1,
+                "self_constraint": [],
+                "under_constraint": [
+                    {
+                        "name": "constraint0",
+                        "status": false
+                    }
+                ],
+                "relation": [],
+                "loop": [],
+                "usedBy": [],
+                "dependency": [],
+                "count": 1
+            },
+            {
+                "name": "android::NO_ERROR",
+                "type": "android::status_t",
+                "value": 0,
+                "serialization_type": 0,
+                "self_constraint": [],
+                "under_constraint": [
+                    {
+                        "name": "constraint0",
+                        "status": false
+                    }
+                ],
+                "relation": [],
+                "loop": [],
+                "usedBy": [],
+                "dependency": [],
+                "count": 1
+            }
+        ],
+        "constraint": [
+            {
+                "name": "constraint0",
+                "opcode": "!",
+                "lhs": {
+                    "name": "ServiceInterfaceDescriptor",
+                    "type": "class android::String16",
+                    "serialization_type": 1
+                },
+                "probability": 0.1
+            }
+        ],
+        "loop": [],
+        "serviceName": "SurfaceFlinger",
+        "interfaceName": "ISurfaceComposer",
+        "interfaceToken": "android.ui.ISurfaceComposer"
+    },
+    "ISurfaceComposer::1022-1022": {
+        "code": [
+            1022
+        ],
+        "dependency": [],
+        "possibility": [
+            {
+                "id": 0,
+                "data": [
+                    "ServiceInterfaceDescriptor"
+                ],
+                "reply": [],
+                "return": "android::PERMISSION_DENIED"
+            },
+            {
+                "id": 1,
+                "data": [
+                    "ServiceInterfaceDescriptor",
+                    "implicit_3"
+                ],
+                "reply": [],
+                "return": "android::NO_ERROR"
+            }
+        ],
+        "variable": [
+            {
+                "name": "ServiceInterfaceDescriptor",
+                "type": "class android::String16",
+                "serialization_type": 1,
+                "self_constraint": [
+                    "constraint0"
+                ],
+                "under_constraint": [],
+                "relation": [],
+                "loop": [],
+                "usedBy": [],
+                "dependency": [],
+                "count": 1
+            },
+            {
+                "name": "android::PERMISSION_DENIED",
+                "type": "android::status_t",
+                "value": -1,
+                "serialization_type": 0,
+                "self_constraint": [],
+                "under_constraint": [
+                    {
+                        "name": "constraint0",
+                        "status": true
+                    }
+                ],
+                "relation": [],
+                "loop": [],
+                "usedBy": [],
+                "dependency": [],
+                "count": 1
+            },
+            {
+                "type": "float",
+                "name": "implicit_3",
+                "serialization_type": 1,
+                "self_constraint": [],
+                "under_constraint": [
+                    {
+                        "name": "constraint0",
+                        "status": false
+                    }
+                ],
+                "relation": [],
+                "loop": [],
+                "usedBy": [],
+                "dependency": [],
+                "count": 1
+            },
+            {
+                "name": "mGlobalSaturationFactor",
+                "type": "float",
+                "signature": "float",
+                "serialization_type": 0,
+                "self_constraint": [],
+                "under_constraint": [
+                    {
+                        "name": "constraint0",
+                        "status": false
+                    }
+                ],
+                "relation": [],
+                "loop": [],
+                "usedBy": [],
+                "dependency": [],
+                "count": 1
+            },
+            {
+                "name": "android::NO_ERROR",
+                "type": "android::status_t",
+                "value": 0,
+                "serialization_type": 0,
+                "self_constraint": [],
+                "under_constraint": [
+                    {
+                        "name": "constraint0",
+                        "status": false
+                    }
+                ],
+                "relation": [],
+                "loop": [],
+                "usedBy": [],
+                "dependency": [],
+                "count": 1
+            }
+        ],
+        "constraint": [
+            {
+                "name": "constraint0",
+                "opcode": "!",
+                "lhs": {
+                    "name": "ServiceInterfaceDescriptor",
+                    "type": "class android::String16",
+                    "serialization_type": 1
+                },
+                "probability": 0.1
+            }
+        ],
+        "loop": [],
+        "serviceName": "SurfaceFlinger",
+        "interfaceName": "ISurfaceComposer",
+        "interfaceToken": "android.ui.ISurfaceComposer"
+    },
+    "ISurfaceComposer::1023-1023": {
+        "code": [
+            1023
+        ],
+        "dependency": [],
+        "possibility": [
+            {
+                "id": 0,
+                "data": [
+                    "ServiceInterfaceDescriptor"
+                ],
+                "reply": [],
+                "return": "android::PERMISSION_DENIED"
+            },
+            {
+                "id": 1,
+                "data": [
+                    "ServiceInterfaceDescriptor",
+                    "mDisplayColorSetting"
+                ],
+                "reply": [],
+                "return": "android::NO_ERROR"
+            }
+        ],
+        "variable": [
+            {
+                "name": "ServiceInterfaceDescriptor",
+                "type": "class android::String16",
+                "serialization_type": 1,
+                "self_constraint": [
+                    "constraint0"
+                ],
+                "under_constraint": [],
+                "relation": [],
+                "loop": [],
+                "usedBy": [],
+                "dependency": [],
+                "count": 1
+            },
+            {
+                "name": "android::PERMISSION_DENIED",
+                "type": "android::status_t",
+                "value": -1,
+                "serialization_type": 0,
+                "self_constraint": [],
+                "under_constraint": [
+                    {
+                        "name": "constraint0",
+                        "status": true
+                    }
+                ],
+                "relation": [],
+                "loop": [],
+                "usedBy": [],
+                "dependency": [],
+                "count": 1
+            },
+            {
+                "type": "enum android::DisplayColorSetting",
+                "name": "mDisplayColorSetting",
+                "serialization_type": 1,
+                "self_constraint": [],
+                "under_constraint": [
+                    {
+                        "name": "constraint0",
+                        "status": false
+                    }
+                ],
+                "relation": [],
+                "loop": [],
+                "usedBy": [],
+                "dependency": [],
+                "count": 1
+            },
+            {
+                "name": "android::NO_ERROR",
+                "type": "android::status_t",
+                "value": 0,
+                "serialization_type": 0,
+                "self_constraint": [],
+                "under_constraint": [
+                    {
+                        "name": "constraint0",
+                        "status": false
+                    }
+                ],
+                "relation": [],
+                "loop": [],
+                "usedBy": [],
+                "dependency": [],
+                "count": 1
+            }
+        ],
+        "constraint": [
+            {
+                "name": "constraint0",
+                "opcode": "!",
+                "lhs": {
+                    "name": "ServiceInterfaceDescriptor",
+                    "type": "class android::String16",
+                    "serialization_type": 1
+                },
+                "probability": 0.1
+            }
+        ],
+        "loop": [],
+        "serviceName": "SurfaceFlinger",
+        "interfaceName": "ISurfaceComposer",
+        "interfaceToken": "android.ui.ISurfaceComposer"
+    },
+    "ISurfaceComposer::1024-1024": {
+        "code": [
+            1024
+        ],
+        "dependency": [],
+        "possibility": [
+            {
+                "id": 0,
+                "data": [
+                    "ServiceInterfaceDescriptor"
+                ],
+                "reply": [],
+                "return": "android::PERMISSION_DENIED"
+            },
+            {
+                "id": 1,
+                "data": [
+                    "ServiceInterfaceDescriptor"
+                ],
+                "reply": [
+                    "android::SurfaceFlinger::hasWideColorDisplay"
+                ],
+                "return": "android::NO_ERROR"
+            }
+        ],
+        "variable": [
+            {
+                "name": "ServiceInterfaceDescriptor",
+                "type": "class android::String16",
+                "serialization_type": 1,
+                "self_constraint": [
+                    "constraint0"
+                ],
+                "under_constraint": [],
+                "relation": [],
+                "loop": [],
+                "usedBy": [],
+                "dependency": [],
+                "count": 1
+            },
+            {
+                "name": "android::PERMISSION_DENIED",
+                "type": "android::status_t",
+                "value": -1,
+                "serialization_type": 0,
+                "self_constraint": [],
+                "under_constraint": [
+                    {
+                        "name": "constraint0",
+                        "status": true
+                    }
+                ],
+                "relation": [],
+                "loop": [],
+                "usedBy": [],
+                "dependency": [],
+                "count": 1
+            },
+            {
+                "name": "android::SurfaceFlinger::hasWideColorDisplay",
+                "type": "_Bool",
+                "serialization_type": 2,
+                "self_constraint": [],
+                "under_constraint": [
+                    {
+                        "name": "constraint0",
+                        "status": false
+                    }
+                ],
+                "relation": [],
+                "loop": [],
+                "usedBy": [],
+                "dependency": [],
+                "count": 1
+            },
+            {
+                "name": "android::NO_ERROR",
+                "type": "android::status_t",
+                "value": 0,
+                "serialization_type": 0,
+                "self_constraint": [],
+                "under_constraint": [
+                    {
+                        "name": "constraint0",
+                        "status": false
+                    }
+                ],
+                "relation": [],
+                "loop": [],
+                "usedBy": [],
+                "dependency": [],
+                "count": 1
+            }
+        ],
+        "constraint": [
+            {
+                "name": "constraint0",
+                "opcode": "!",
+                "lhs": {
+                    "name": "ServiceInterfaceDescriptor",
+                    "type": "class android::String16",
+                    "serialization_type": 1
+                },
+                "probability": 0.1
+            }
+        ],
+        "loop": [],
+        "serviceName": "SurfaceFlinger",
+        "interfaceName": "ISurfaceComposer",
+        "interfaceToken": "android.ui.ISurfaceComposer"
+    },
+    "ISurfaceComposer::1025-1025": {
+        "code": [
+            1025
+        ],
+        "dependency": [],
+        "possibility": [
+            {
+                "id": 0,
+                "data": [
+                    "ServiceInterfaceDescriptor"
+                ],
+                "reply": [],
+                "return": "android::PERMISSION_DENIED"
+            },
+            {
+                "id": 1,
+                "data": [
+                    "ServiceInterfaceDescriptor",
+                    "n"
+                ],
+                "reply": [
+                    "android::NO_ERROR",
+                    "err"
+                ],
+                "return": "android::NO_ERROR"
+            }
+        ],
+        "variable": [
+            {
+                "name": "ServiceInterfaceDescriptor",
+                "type": "class android::String16",
+                "serialization_type": 1,
+                "self_constraint": [
+                    "constraint0"
+                ],
+                "under_constraint": [],
+                "relation": [],
+                "loop": [],
+                "usedBy": [],
+                "dependency": [],
+                "count": 1
+            },
+            {
+                "name": "android::PERMISSION_DENIED",
+                "type": "android::status_t",
+                "value": -1,
+                "serialization_type": 0,
+                "self_constraint": [],
+                "under_constraint": [
+                    {
+                        "name": "constraint0",
+                        "status": true
+                    }
+                ],
+                "relation": [],
+                "loop": [],
+                "usedBy": [],
+                "dependency": [],
+                "count": 1
+            },
+            {
+                "type": "int",
+                "name": "n",
+                "serialization_type": 1,
+                "self_constraint": [
+                    "constraint1"
+                ],
+                "under_constraint": [
+                    {
+                        "name": "constraint0",
+                        "status": false
+                    }
+                ],
+                "relation": [],
+                "loop": [],
+                "usedBy": [],
+                "dependency": [],
+                "count": 1
+            },
+            {
+                "name": "android::NO_ERROR",
+                "type": "enum android::(anonymous at system.core.libutils.include.utils.Errors.h:45:1)",
+                "value": 0,
+                "serialization_type": 2,
+                "self_constraint": [],
+                "under_constraint": [
+                    {
+                        "name": "constraint0",
+                        "status": false
+                    },
+                    {
+                        "name": "constraint1",
+                        "status": true
+                    }
+                ],
+                "relation": [],
+                "loop": [],
+                "usedBy": [],
+                "dependency": [],
+                "count": 1
+            },
+            {
+                "name": "err",
+                "type": "android::status_t",
+                "serialization_type": 2,
+                "self_constraint": [],
+                "under_constraint": [
+                    {
+                        "name": "constraint0",
+                        "status": false
+                    },
+                    {
+                        "name": "constraint1",
+                        "status": false
+                    }
+                ],
+                "relation": [],
+                "loop": [],
+                "usedBy": [],
+                "dependency": [],
+                "count": 1
+            }
+        ],
+        "constraint": [
+            {
+                "name": "constraint0",
+                "opcode": "!",
+                "lhs": {
+                    "name": "ServiceInterfaceDescriptor",
+                    "type": "class android::String16",
+                    "serialization_type": 1
+                },
+                "probability": 0.1
+            },
+            {
+                "name": "constraint1",
+                "opcode": "",
+                "lhs": {
+                    "name": "n",
+                    "type": "int"
+                },
+                "probability": 0.5
+            }
+        ],
+        "loop": [],
+        "serviceName": "SurfaceFlinger",
+        "interfaceName": "ISurfaceComposer",
+        "interfaceToken": "android.ui.ISurfaceComposer"
+    },
+    "ISurfaceComposer::1026-1026": {
+        "code": [
+            1026
+        ],
+        "dependency": [],
+        "possibility": [
+            {
+                "id": 0,
+                "data": [
+                    "ServiceInterfaceDescriptor"
+                ],
+                "reply": [],
+                "return": "android::PERMISSION_DENIED"
+            },
+            {
+                "id": 1,
+                "data": [
+                    "ServiceInterfaceDescriptor"
+                ],
+                "reply": [
+                    "mTracing.isEnabled"
+                ],
+                "return": "android::NO_ERROR"
+            }
+        ],
+        "variable": [
+            {
+                "name": "ServiceInterfaceDescriptor",
+                "type": "class android::String16",
+                "serialization_type": 1,
+                "self_constraint": [
+                    "constraint0"
+                ],
+                "under_constraint": [],
+                "relation": [],
+                "loop": [],
+                "usedBy": [],
+                "dependency": [],
+                "count": 1
+            },
+            {
+                "name": "android::PERMISSION_DENIED",
+                "type": "android::status_t",
+                "value": -1,
+                "serialization_type": 0,
+                "self_constraint": [],
+                "under_constraint": [
+                    {
+                        "name": "constraint0",
+                        "status": true
+                    }
+                ],
+                "relation": [],
+                "loop": [],
+                "usedBy": [],
+                "dependency": [],
+                "count": 1
+            },
+            {
+                "type": "_Bool",
+                "name": "mTracing.isEnabled",
+                "serialization_type": 2,
+                "self_constraint": [],
+                "under_constraint": [
+                    {
+                        "name": "constraint0",
+                        "status": false
+                    }
+                ],
+                "relation": [],
+                "loop": [],
+                "usedBy": [],
+                "dependency": [],
+                "count": 1
+            },
+            {
+                "name": "android::NO_ERROR",
+                "type": "android::status_t",
+                "value": 0,
+                "serialization_type": 0,
+                "self_constraint": [],
+                "under_constraint": [
+                    {
+                        "name": "constraint0",
+                        "status": false
+                    }
+                ],
+                "relation": [],
+                "loop": [],
+                "usedBy": [],
+                "dependency": [],
+                "count": 1
+            }
+        ],
+        "constraint": [
+            {
+                "name": "constraint0",
+                "opcode": "!",
+                "lhs": {
+                    "name": "ServiceInterfaceDescriptor",
+                    "type": "class android::String16",
+                    "serialization_type": 1
+                },
+                "probability": 0.1
+            }
+        ],
+        "loop": [],
+        "serviceName": "SurfaceFlinger",
+        "interfaceName": "ISurfaceComposer",
+        "interfaceToken": "android.ui.ISurfaceComposer"
+    },
+    "ISurfaceComposer::1027-1027": {
+        "code": [
+            1027
+        ],
+        "dependency": [],
+        "possibility": [
+            {
+                "id": 0,
+                "data": [
+                    "ServiceInterfaceDescriptor"
+                ],
+                "reply": [],
+                "return": "android::PERMISSION_DENIED"
+            },
+            {
+                "id": 1,
+                "data": [
+                    "ServiceInterfaceDescriptor"
+                ],
+                "reply": [],
+                "return": "android::NAME_NOT_FOUND"
+            },
+            {
+                "id": 2,
+                "data": [
+                    "ServiceInterfaceDescriptor",
+                    "setting"
+                ],
+                "reply": [
+                    "android::SurfaceFlinger::hasWideColorDisplay",
+                    "implicit_6",
+                    "implicit_9",
+                    "implicit_11"
+                ],
+                "return": "android::NO_ERROR"
+            }
+        ],
+        "variable": [
+            {
+                "name": "ServiceInterfaceDescriptor",
+                "type": "class android::String16",
+                "serialization_type": 1,
+                "self_constraint": [
+                    "constraint0"
+                ],
+                "under_constraint": [],
+                "relation": [],
+                "loop": [],
+                "usedBy": [],
+                "dependency": [],
+                "count": 1
+            },
+            {
+                "name": "android::PERMISSION_DENIED",
+                "type": "android::status_t",
+                "value": -1,
+                "serialization_type": 0,
+                "self_constraint": [],
+                "under_constraint": [
+                    {
+                        "name": "constraint0",
+                        "status": true
+                    }
+                ],
+                "relation": [],
+                "loop": [],
+                "usedBy": [],
+                "dependency": [],
+                "count": 1
+            },
+            {
+                "type": "_Bool",
+                "name": "hw.toBool",
+                "serialization_type": 0,
+                "self_constraint": [
+                    "constraint1"
+                ],
+                "under_constraint": [
+                    {
+                        "name": "constraint0",
+                        "status": false
+                    }
+                ],
+                "relation": [],
+                "loop": [],
+                "usedBy": [],
+                "dependency": [],
+                "count": 1
+            },
+            {
+                "name": "android::NAME_NOT_FOUND",
+                "type": "android::status_t",
+                "value": -2,
+                "serialization_type": 0,
+                "self_constraint": [],
+                "under_constraint": [
+                    {
+                        "name": "constraint0",
+                        "status": false
+                    },
+                    {
+                        "name": "constraint1",
+                        "status": true
+                    }
+                ],
+                "relation": [],
+                "loop": [],
+                "usedBy": [],
+                "dependency": [],
+                "count": 1
+            },
+            {
+                "type": "enum android::hardware::graphics::common::V1_1::RenderIntent",
+                "name": "setting",
+                "serialization_type": 1,
+                "self_constraint": [
+                    "constraint2",
+                    "constraint3",
+                    "constraint4"
+                ],
+                "under_constraint": [
+                    {
+                        "name": "constraint0",
+                        "status": false
+                    },
+                    {
+                        "name": "constraint1",
+                        "status": false
+                    }
+                ],
+                "relation": [],
+                "loop": [],
+                "usedBy": [],
+                "dependency": [],
+                "count": 1
+            },
+            {
+                "name": "android::SurfaceFlinger::hasWideColorDisplay",
+                "type": "_Bool",
+                "serialization_type": 2,
+                "self_constraint": [],
+                "under_constraint": [
+                    {
+                        "name": "constraint0",
+                        "status": false
+                    },
+                    {
+                        "name": "constraint1",
+                        "status": false
+                    },
+                    {
+                        "name": "constraint2",
+                        "status": true
+                    }
+                ],
+                "relation": [],
+                "loop": [],
+                "usedBy": [],
+                "dependency": [],
+                "count": 1
+            },
+            {
+                "name": "implicit_6",
+                "value": true,
+                "type": "_Bool",
+                "serialization_type": 2,
+                "self_constraint": [],
+                "under_constraint": [
+                    {
+                        "name": "constraint0",
+                        "status": false
+                    },
+                    {
+                        "name": "constraint1",
+                        "status": false
+                    },
+                    {
+                        "name": "constraint3",
+                        "status": true
+                    }
+                ],
+                "relation": [],
+                "loop": [],
+                "usedBy": [],
+                "dependency": [],
+                "count": 1
+            },
+            {
+                "type": "_Bool",
+                "name": "implicit_9",
+                "serialization_type": 2,
+                "self_constraint": [],
+                "under_constraint": [
+                    {
+                        "name": "constraint0",
+                        "status": false
+                    },
+                    {
+                        "name": "constraint1",
+                        "status": false
+                    },
+                    {
+                        "name": "constraint4",
+                        "status": true
+                    }
+                ],
+                "relation": [],
+                "loop": [],
+                "usedBy": [],
+                "dependency": [],
+                "count": 1
+            },
+            {
+                "type": "_Bool",
+                "name": "implicit_11",
+                "serialization_type": 2,
+                "self_constraint": [],
+                "under_constraint": [
+                    {
+                        "name": "constraint0",
+                        "status": false
+                    },
+                    {
+                        "name": "constraint1",
+                        "status": false
+                    }
+                ],
+                "relation": [],
+                "loop": [],
+                "usedBy": [],
+                "dependency": [],
+                "count": 1
+            },
+            {
+                "name": "android::NO_ERROR",
+                "type": "android::status_t",
+                "value": 0,
+                "serialization_type": 0,
+                "self_constraint": [],
+                "under_constraint": [
+                    {
+                        "name": "constraint0",
+                        "status": false
+                    },
+                    {
+                        "name": "constraint1",
+                        "status": false
+                    }
+                ],
+                "relation": [],
+                "loop": [],
+                "usedBy": [],
+                "dependency": [],
+                "count": 1
+            }
+        ],
+        "constraint": [
+            {
+                "name": "constraint0",
+                "opcode": "!",
+                "lhs": {
+                    "name": "ServiceInterfaceDescriptor",
+                    "type": "class android::String16",
+                    "serialization_type": 1
+                },
+                "probability": 0.1
+            },
+            {
+                "name": "constraint1",
+                "opcode": "!",
+                "lhs": {
+                    "type": "_Bool",
+                    "name": "hw.toBool",
+                    "serialization_type": 0
+                },
+                "probability": 0.1
+            },
+            {
+                "name": "constraint2",
+                "opcode": "==",
+                "lhs": {
+                    "name": "setting",
+                    "type": "enum android::hardware::graphics::common::V1_1::RenderIntent"
+                },
+                "rhs": {
+                    "name": "implicit_3",
+                    "type": "IntegerLiteral",
+                    "value": 0
+                },
+                "probability": 0.9
+            },
+            {
+                "name": "constraint3",
+                "opcode": "==",
+                "lhs": {
+                    "name": "setting",
+                    "type": "enum android::hardware::graphics::common::V1_1::RenderIntent"
+                },
+                "rhs": {
+                    "name": "implicit_5",
+                    "type": "IntegerLiteral",
+                    "value": 1
+                },
+                "probability": 0.9
+            },
+            {
+                "name": "constraint4",
+                "opcode": "==",
+                "lhs": {
+                    "name": "setting",
+                    "type": "enum android::hardware::graphics::common::V1_1::RenderIntent"
+                },
+                "rhs": {
+                    "name": "implicit_8",
+                    "type": "IntegerLiteral",
+                    "value": 2
+                },
+                "probability": 0.9
+            }
+        ],
+        "loop": [],
+        "serviceName": "SurfaceFlinger",
+        "interfaceName": "ISurfaceComposer",
+        "interfaceToken": "android.ui.ISurfaceComposer"
+    }
+}

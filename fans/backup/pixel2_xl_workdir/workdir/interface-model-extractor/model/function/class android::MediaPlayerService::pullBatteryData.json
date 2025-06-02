@@ -1,0 +1,83 @@
+{
+    "android::MediaPlayerService::pullBatteryData+android::status_t (class android::Parcel *)":{
+        "dependency":[],
+        "possibility":[
+            {
+                "id":0,
+                "data":[],
+                "reply":[
+                    "implicit_1"
+                ],
+                "return":"implicit_2"
+            }
+        ],
+        "variable":[
+            {
+                "name":"implicit_1",
+                "func_name":"android::MediaPlayerService::BatteryTracker::pullBatteryData",
+                "signature":"android::status_t (class android::Parcel *)",
+                "type":"Function",
+                "argv":[
+                    {
+                        "name":"reply",
+                        "type":"class android::Parcel *"
+                    }
+                ],
+                "serialization_type":2,
+                "self_constraint":[],
+                "under_constraint":[],
+                "relation":[],
+                "loop":[],
+                "usedBy":[],
+                "dependency":[],
+                "count":1
+            },
+            {
+                "type":"android::status_t",
+                "name":"implicit_2",
+                "serialization_type":0,
+                "self_constraint":[],
+                "under_constraint":[],
+                "relation":[],
+                "loop":[],
+                "usedBy":[],
+                "dependency":[],
+                "count":1
+            },
+            {
+                "name":"reply",
+                "type":"class android::Parcel *",
+                "serialization_type":0,
+                "self_constraint":[],
+                "under_constraint":[],
+                "relation":[],
+                "loop":[],
+                "usedBy":[],
+                "dependency":[],
+                "count":1,
+                "size":-1
+            },
+            {
+                "name":"reply::item",
+                "type":"class android::Parcel",
+                "serialization_type":0,
+                "self_constraint":[],
+                "under_constraint":[],
+                "relation":[],
+                "loop":[],
+                "usedBy":[],
+                "dependency":[],
+                "count":1
+            }
+        ],
+        "constraint":[],
+        "loop":[],
+        "argv":[
+            {
+                "name":"reply",
+                "type":"class android::Parcel *",
+                "serialization_type":0
+            }
+        ]
+    }
+}

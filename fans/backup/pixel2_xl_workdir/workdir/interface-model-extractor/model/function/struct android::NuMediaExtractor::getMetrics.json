@@ -1,0 +1,83 @@
+{
+    "android::NuMediaExtractor::getMetrics+android::status_t (class android::Parcel *)":{
+        "dependency":[],
+        "possibility":[
+            {
+                "id":0,
+                "data":[],
+                "reply":[
+                    "implicit_1"
+                ],
+                "return":"status"
+            }
+        ],
+        "variable":[
+            {
+                "name":"implicit_1",
+                "func_name":"android::IMediaExtractor::getMetrics",
+                "signature":"android::status_t (class android::Parcel *)",
+                "type":"Function",
+                "argv":[
+                    {
+                        "name":"reply",
+                        "type":"class android::Parcel *"
+                    }
+                ],
+                "serialization_type":2,
+                "self_constraint":[],
+                "under_constraint":[],
+                "relation":[],
+                "loop":[],
+                "usedBy":[],
+                "dependency":[],
+                "count":1
+            },
+            {
+                "name":"status",
+                "type":"android::status_t",
+                "serialization_type":0,
+                "self_constraint":[],
+                "under_constraint":[],
+                "relation":[],
+                "loop":[],
+                "usedBy":[],
+                "dependency":[],
+                "count":1
+            },
+            {
+                "name":"reply",
+                "type":"class android::Parcel *",
+                "serialization_type":0,
+                "self_constraint":[],
+                "under_constraint":[],
+                "relation":[],
+                "loop":[],
+                "usedBy":[],
+                "dependency":[],
+                "count":1,
+                "size":-1
+            },
+            {
+                "name":"reply::item",
+                "type":"class android::Parcel",
+                "serialization_type":0,
+                "self_constraint":[],
+                "under_constraint":[],
+                "relation":[],
+                "loop":[],
+                "usedBy":[],
+                "dependency":[],
+                "count":1
+            }
+        ],
+        "constraint":[],
+        "loop":[],
+        "argv":[
+            {
+                "name":"reply",
+                "type":"class android::Parcel *",
+                "serialization_type":0
+            }
+        ]
+    }
+}

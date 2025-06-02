@@ -1,0 +1,72 @@
+{
+    "class android::gui::BitTube": {
+        "variable": [
+            {
+                "count": 1,
+                "self_constraint": [
+                    "constraint0"
+                ],
+                "name": "mReceiveFd",
+                "under_constraint": [],
+                "dependency": [],
+                "relation": [],
+                "takeOwnership": false,
+                "serialization_type": 2,
+                "usedBy": [],
+                "type": "FileDescriptor",
+                "loop": []
+            },
+            {
+                "count": 1,
+                "self_constraint": [],
+                "name": "result",
+                "under_constraint": [],
+                "dependency": [],
+                "relation": [],
+                "serialization_type": 0,
+                "usedBy": [],
+                "type": "android::status_t",
+                "loop": []
+            }
+        ],
+        "dependency": [
+            {
+                "filename": "BnDisplayEventConnection.json",
+                "type": "Transaction",
+                "name": "IDisplayEventConnection::1-1",
+                "possIdx": 1,
+                "varIdx": 0,
+                "varName": "outChannel",
+                "varType": "class android::gui::BitTube"
+            }
+        ],
+        "loop": [],
+        "possibility": [
+            {
+                "return": "result",
+                "reply": [
+                    "mReceiveFd"
+                ],
+                "data": [],
+                "id": 0
+            }
+        ],
+        "constraint": [
+            {
+                "lhs": {
+                    "serialization_type": 0,
+                    "type": "FileDescriptor",
+                    "name": "mReceiveFd"
+                },
+                "rhs": {
+                    "type": "IntegerLiteral",
+                    "name": "implicit_1",
+                    "value": 0
+                },
+                "opcode": "<",
+                "name": "constraint0",
+                "probability": 0.5
+            }
+        ]
+    }
+}

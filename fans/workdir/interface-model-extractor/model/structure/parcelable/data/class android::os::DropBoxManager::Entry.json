@@ -1,0 +1,476 @@
+{
+    "class android::os::DropBoxManager::Entry": {
+        "variable": [
+            {
+                "count": 1,
+                "self_constraint": [],
+                "name": "mTag",
+                "under_constraint": [],
+                "dependency": [],
+                "relation": [],
+                "signature": "class android::String16",
+                "serialization_type": 1,
+                "usedBy": [],
+                "type": "class android::String16",
+                "loop": []
+            },
+            {
+                "count": 1,
+                "self_constraint": [
+                    "constraint0",
+                    "constraint1",
+                    "constraint2",
+                    "constraint4"
+                ],
+                "name": "err",
+                "under_constraint": [],
+                "dependency": [],
+                "relation": [],
+                "serialization_type": 0,
+                "usedBy": [],
+                "type": "android::status_t",
+                "loop": []
+            },
+            {
+                "count": 1,
+                "self_constraint": [],
+                "name": "mTimeMillis",
+                "under_constraint": [
+                    {
+                        "status": false,
+                        "name": "constraint0"
+                    }
+                ],
+                "dependency": [],
+                "relation": [],
+                "signature": "int64_t",
+                "serialization_type": 1,
+                "usedBy": [],
+                "type": "long",
+                "loop": []
+            },
+            {
+                "count": 1,
+                "self_constraint": [],
+                "name": "mFlags",
+                "under_constraint": [
+                    {
+                        "status": false,
+                        "name": "constraint0"
+                    },
+                    {
+                        "status": false,
+                        "name": "constraint1"
+                    }
+                ],
+                "dependency": [
+                    {
+                        "filename": "BnMemoryHeap.json",
+                        "type": "Transaction",
+                        "name": "IMemoryHeap::1-1",
+                        "possIdx": 1,
+                        "varIdx": 2,
+                        "varName": "Flags",
+                        "varType": "int"
+                    }
+                ],
+                "relation": [],
+                "signature": "int32_t",
+                "serialization_type": 1,
+                "usedBy": [],
+                "type": "int",
+                "loop": []
+            },
+            {
+                "count": 1,
+                "self_constraint": [],
+                "name": "mData",
+                "under_constraint": [
+                    {
+                        "status": false,
+                        "name": "constraint0"
+                    },
+                    {
+                        "status": false,
+                        "name": "constraint1"
+                    },
+                    {
+                        "status": false,
+                        "name": "constraint2"
+                    },
+                    {
+                        "status": true,
+                        "name": "constraint3"
+                    }
+                ],
+                "dependency": [],
+                "relation": [],
+                "signature": "vector<uint8_t>",
+                "serialization_type": 1,
+                "usedBy": [],
+                "type": "class vector<unsigned char>",
+                "loop": [],
+                "size": -1
+            },
+            {
+                "count": 1,
+                "self_constraint": [],
+                "name": "mData::item",
+                "under_constraint": [],
+                "dependency": [],
+                "relation": [],
+                "signature": "vector<uint8_t>",
+                "serialization_type": 1,
+                "usedBy": [],
+                "type": "unsigned char",
+                "loop": []
+            },
+            {
+                "count": 1,
+                "self_constraint": [
+                    "constraint5",
+                    "constraint6"
+                ],
+                "name": "fd",
+                "under_constraint": [
+                    {
+                        "status": false,
+                        "name": "constraint0"
+                    },
+                    {
+                        "status": false,
+                        "name": "constraint1"
+                    },
+                    {
+                        "status": false,
+                        "name": "constraint2"
+                    },
+                    {
+                        "status": false,
+                        "name": "constraint3"
+                    },
+                    {
+                        "status": false,
+                        "name": "constraint4"
+                    }
+                ],
+                "dependency": [],
+                "relation": [],
+                "serialization_type": 1,
+                "usedBy": [],
+                "type": "int",
+                "loop": []
+            },
+            {
+                "count": 1,
+                "self_constraint": [],
+                "name": "implicit_8",
+                "under_constraint": [
+                    {
+                        "status": false,
+                        "name": "constraint0"
+                    },
+                    {
+                        "status": false,
+                        "name": "constraint1"
+                    },
+                    {
+                        "status": false,
+                        "name": "constraint2"
+                    },
+                    {
+                        "status": false,
+                        "name": "constraint3"
+                    },
+                    {
+                        "status": false,
+                        "name": "constraint4"
+                    },
+                    {
+                        "status": true,
+                        "name": "constraint5"
+                    }
+                ],
+                "value": 9,
+                "dependency": [],
+                "relation": [],
+                "serialization_type": 0,
+                "usedBy": [],
+                "type": "IntegerLiteral",
+                "loop": []
+            },
+            {
+                "count": 1,
+                "self_constraint": [],
+                "name": "implicit_10",
+                "under_constraint": [
+                    {
+                        "status": false,
+                        "name": "constraint0"
+                    },
+                    {
+                        "status": false,
+                        "name": "constraint1"
+                    },
+                    {
+                        "status": false,
+                        "name": "constraint2"
+                    },
+                    {
+                        "status": false,
+                        "name": "constraint3"
+                    },
+                    {
+                        "status": false,
+                        "name": "constraint4"
+                    },
+                    {
+                        "status": false,
+                        "name": "constraint5"
+                    },
+                    {
+                        "status": true,
+                        "name": "constraint6"
+                    }
+                ],
+                "dependency": [],
+                "relation": [],
+                "serialization_type": 0,
+                "usedBy": [],
+                "type": "int",
+                "loop": []
+            },
+            {
+                "count": 1,
+                "self_constraint": [],
+                "name": "android::NO_ERROR",
+                "under_constraint": [
+                    {
+                        "status": false,
+                        "name": "constraint0"
+                    },
+                    {
+                        "status": false,
+                        "name": "constraint1"
+                    },
+                    {
+                        "status": false,
+                        "name": "constraint2"
+                    },
+                    {
+                        "status": false,
+                        "name": "constraint3"
+                    },
+                    {
+                        "status": false,
+                        "name": "constraint4"
+                    },
+                    {
+                        "status": false,
+                        "name": "constraint5"
+                    }
+                ],
+                "value": 0,
+                "dependency": [],
+                "relation": [],
+                "serialization_type": 0,
+                "usedBy": [],
+                "type": "android::status_t",
+                "loop": []
+            }
+        ],
+        "dependency": [],
+        "loop": [],
+        "possibility": [
+            {
+                "return": "err",
+                "reply": [],
+                "data": [
+                    "mTag"
+                ],
+                "id": 0
+            },
+            {
+                "return": "err",
+                "reply": [],
+                "data": [
+                    "mTag",
+                    "mTimeMillis"
+                ],
+                "id": 1
+            },
+            {
+                "return": "err",
+                "reply": [],
+                "data": [
+                    "mTag",
+                    "mTimeMillis",
+                    "mFlags"
+                ],
+                "id": 2
+            },
+            {
+                "return": "err",
+                "reply": [],
+                "data": [
+                    "mTag",
+                    "mTimeMillis",
+                    "mFlags",
+                    "mData"
+                ],
+                "id": 3
+            },
+            {
+                "return": "implicit_8",
+                "reply": [],
+                "data": [
+                    "mTag",
+                    "mTimeMillis",
+                    "mFlags",
+                    "mData",
+                    "fd"
+                ],
+                "id": 4
+            },
+            {
+                "return": "implicit_10",
+                "reply": [],
+                "data": [
+                    "mTag",
+                    "mTimeMillis",
+                    "mFlags",
+                    "mData",
+                    "fd"
+                ],
+                "id": 5
+            },
+            {
+                "return": "android::NO_ERROR",
+                "reply": [],
+                "data": [
+                    "mTag",
+                    "mTimeMillis",
+                    "mFlags",
+                    "mData",
+                    "fd"
+                ],
+                "id": 6
+            }
+        ],
+        "constraint": [
+            {
+                "lhs": {
+                    "type": "android::status_t",
+                    "name": "err"
+                },
+                "rhs": {
+                    "type": "android::status_t",
+                    "name": "android::NO_ERROR",
+                    "value": 0
+                },
+                "opcode": "!=",
+                "name": "constraint0",
+                "probability": 0.1
+            },
+            {
+                "lhs": {
+                    "type": "android::status_t",
+                    "name": "err"
+                },
+                "rhs": {
+                    "type": "android::status_t",
+                    "name": "android::NO_ERROR",
+                    "value": 0
+                },
+                "opcode": "!=",
+                "name": "constraint1",
+                "probability": 0.1
+            },
+            {
+                "lhs": {
+                    "type": "android::status_t",
+                    "name": "err"
+                },
+                "rhs": {
+                    "type": "android::status_t",
+                    "name": "android::NO_ERROR",
+                    "value": 0
+                },
+                "opcode": "!=",
+                "name": "constraint2",
+                "probability": 0.1
+            },
+            {
+                "lhs": {
+                    "lhs": {
+                        "type": "int",
+                        "name": "mFlags",
+                        "signature": "int32_t"
+                    },
+                    "rhs": {
+                        "type": "enum android::os::DropBoxManager::(anonymous at frameworks.base.libs.services.include.android.os.DropBoxManager.h:96:5)",
+                        "name": "android::os::DropBoxManager::HAS_BYTE_ARRAY",
+                        "value": 8
+                    },
+                    "opcode": "&"
+                },
+                "rhs": {
+                    "type": "IntegerLiteral",
+                    "name": "implicit_4",
+                    "value": 0
+                },
+                "opcode": "!=",
+                "name": "constraint3",
+                "probability": 0.5
+            },
+            {
+                "lhs": {
+                    "type": "android::status_t",
+                    "name": "err"
+                },
+                "rhs": {
+                    "type": "android::status_t",
+                    "name": "android::NO_ERROR",
+                    "value": 0
+                },
+                "opcode": "!=",
+                "name": "constraint4",
+                "probability": 0.1
+            },
+            {
+                "lhs": {
+                    "type": "int",
+                    "name": "fd"
+                },
+                "rhs": {
+                    "lhs": {
+                        "type": "IntegerLiteral",
+                        "name": "implicit_7",
+                        "value": -1
+                    },
+                    "opcode": "-"
+                },
+                "opcode": "==",
+                "name": "constraint5",
+                "probability": 0.1
+            },
+            {
+                "lhs": {
+                    "type": "int",
+                    "name": "fd"
+                },
+                "rhs": {
+                    "lhs": {
+                        "type": "IntegerLiteral",
+                        "name": "implicit_9",
+                        "value": -1
+                    },
+                    "opcode": "-"
+                },
+                "opcode": "==",
+                "name": "constraint6",
+                "probability": 0.1
+            }
+        ]
+    }
+}

@@ -1,0 +1,80 @@
+{
+    "1": [
+        "UNKNOWN",
+        "INT32",
+        "INT32",
+        "UNKNOWN",
+        "INT32",
+        "UNKNOWN",
+        "INT32",
+        "UNKNOWN"
+    ],
+    "1598311760": [
+        "INT32",
+        "UNKNOWN",
+        "UNKNOWN",
+        "UNKNOWN",
+        "UNKNOWN",
+        "UNKNOWN",
+        "UNKNOWN",
+        "UNKNOWN",
+        "UNKNOWN",
+        "UNKNOWN",
+        "UNKNOWN",
+        "UNKNOWN",
+        "UNKNOWN",
+        "UNKNOWN",
+        "UNKNOWN",
+        "UNKNOWN",
+        "UNKNOWN",
+        "UNKNOWN",
+        "UNKNOWN",
+        "UNKNOWN",
+        "UNKNOWN",
+        "UNKNOWN",
+        "UNKNOWN",
+        "UNKNOWN",
+        "UNKNOWN",
+        "UNKNOWN",
+        "UNKNOWN",
+        "UNKNOWN",
+        "UNKNOWN",
+        "UNKNOWN",
+        "UNKNOWN",
+        "UNKNOWN",
+        "UNKNOWN",
+        "UNKNOWN",
+        "UNKNOWN",
+        "UNKNOWN",
+        "UNKNOWN",
+        "UNKNOWN"
+    ],
+    "2": [
+        "UNKNOWN",
+        "INT32",
+        "INT32",
+        "UNKNOWN",
+        "INT32",
+        "UNKNOWN"
+    ],
+    "3": [
+        "UNKNOWN",
+        "INT32",
+        "INT64",
+        "INT32",
+        "UNKNOWN",
+        "INT32",
+        "UNKNOWN"
+    ],
+    "4": [
+        "UNKNOWN",
+        "INT32"
+    ],
+    "5": [
+        "UNKNOWN",
+        "INT32"
+    ],
+    "6": [
+        "UNKNOWN"
+    ]
+}

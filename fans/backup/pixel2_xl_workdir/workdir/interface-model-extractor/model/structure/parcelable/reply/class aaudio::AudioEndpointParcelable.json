@@ -1,0 +1,185 @@
+{
+    "class aaudio::AudioEndpointParcelable": {
+        "variable": [
+            {
+                "count": 1,
+                "self_constraint": [
+                    "constraint0"
+                ],
+                "name": "mNumSharedMemories",
+                "under_constraint": [],
+                "dependency": [],
+                "relation": [],
+                "signature": "int32_t",
+                "serialization_type": 2,
+                "usedBy": [],
+                "type": "int",
+                "loop": []
+            },
+            {
+                "count": 1,
+                "self_constraint": [],
+                "name": "status",
+                "under_constraint": [],
+                "dependency": [],
+                "relation": [],
+                "serialization_type": 0,
+                "usedBy": [],
+                "type": "android::status_t",
+                "loop": []
+            },
+            {
+                "count": 1,
+                "self_constraint": [
+                    "constraint0"
+                ],
+                "name": "i",
+                "under_constraint": [],
+                "value": 0,
+                "dependency": [],
+                "relation": [],
+                "serialization_type": 0,
+                "usedBy": [],
+                "type": "int",
+                "loop": []
+            },
+            {
+                "count": 1,
+                "self_constraint": [],
+                "name": "mSharedMemories[i]",
+                "under_constraint": [],
+                "dependency": [],
+                "relation": [],
+                "serialization_type": 2,
+                "usedBy": [],
+                "type": "class aaudio::SharedMemoryParcelable",
+                "loop": [
+                    "loop0"
+                ]
+            },
+            {
+                "count": 1,
+                "self_constraint": [],
+                "name": "mUpMessageQueueParcelable",
+                "under_constraint": [],
+                "dependency": [],
+                "relation": [],
+                "signature": "class aaudio::RingBufferParcelable",
+                "serialization_type": 2,
+                "usedBy": [],
+                "type": "class aaudio::RingBufferParcelable",
+                "loop": []
+            },
+            {
+                "count": 1,
+                "self_constraint": [],
+                "name": "mDownMessageQueueParcelable",
+                "under_constraint": [],
+                "dependency": [],
+                "relation": [],
+                "signature": "class aaudio::RingBufferParcelable",
+                "serialization_type": 2,
+                "usedBy": [],
+                "type": "class aaudio::RingBufferParcelable",
+                "loop": []
+            },
+            {
+                "count": 1,
+                "self_constraint": [],
+                "name": "mUpDataQueueParcelable",
+                "under_constraint": [],
+                "dependency": [],
+                "relation": [],
+                "signature": "class aaudio::RingBufferParcelable",
+                "serialization_type": 2,
+                "usedBy": [],
+                "type": "class aaudio::RingBufferParcelable",
+                "loop": []
+            },
+            {
+                "count": 1,
+                "self_constraint": [],
+                "name": "mDownDataQueueParcelable",
+                "under_constraint": [],
+                "dependency": [],
+                "relation": [],
+                "signature": "class aaudio::RingBufferParcelable",
+                "serialization_type": 2,
+                "usedBy": [],
+                "type": "class aaudio::RingBufferParcelable",
+                "loop": []
+            },
+            {
+                "count": 1,
+                "self_constraint": [],
+                "name": "android::NO_ERROR",
+                "under_constraint": [],
+                "value": 0,
+                "dependency": [],
+                "relation": [],
+                "serialization_type": 0,
+                "usedBy": [],
+                "type": "android::status_t",
+                "loop": []
+            }
+        ],
+        "dependency": [
+            {
+                "filename": "BnAAudioService.json",
+                "type": "Transaction",
+                "name": "IAAudioService::4-4",
+                "possIdx": 4,
+                "varIdx": 1,
+                "varName": "parcelable",
+                "varType": "class aaudio::AudioEndpointParcelable"
+            }
+        ],
+        "loop": [
+            {
+                "counter": {
+                    "type": "int",
+                    "name": "i",
+                    "value": 0
+                },
+                "inc": {
+                    "type": "int",
+                    "opcode": "++",
+                    "name": "i"
+                },
+                "name": "loop0",
+                "constraint": "constraint0"
+            }
+        ],
+        "possibility": [
+            {
+                "return": "status",
+                "reply": [
+                    "mNumSharedMemories",
+                    "mSharedMemories[i]",
+                    "mUpMessageQueueParcelable",
+                    "mDownMessageQueueParcelable",
+                    "mUpDataQueueParcelable",
+                    "mDownDataQueueParcelable"
+                ],
+                "data": [],
+                "id": 0
+            }
+        ],
+        "constraint": [
+            {
+                "lhs": {
+                    "type": "int",
+                    "name": "i"
+                },
+                "rhs": {
+                    "type": "int",
+                    "name": "mNumSharedMemories",
+                    "signature": "int32_t"
+                },
+                "opcode": "<",
+                "name": "constraint0",
+                "probability": 0.5
+            }
+        ]
+    }
+}

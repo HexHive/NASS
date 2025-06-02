@@ -1,0 +1,186 @@
+{
+    "class android::dvr::BufferHubQueueParcelable": {
+        "variable": [
+            {
+                "count": 1,
+                "self_constraint": [
+                    "constraint0"
+                ],
+                "name": "implicit_1",
+                "under_constraint": [],
+                "dependency": [],
+                "relation": [],
+                "serialization_type": 2,
+                "usedBy": [],
+                "type": "int",
+                "loop": []
+            },
+            {
+                "count": 1,
+                "self_constraint": [],
+                "name": "implicit_5",
+                "under_constraint": [
+                    {
+                        "status": true,
+                        "name": "constraint0"
+                    }
+                ],
+                "value": -22,
+                "dependency": [],
+                "relation": [],
+                "serialization_type": 0,
+                "usedBy": [],
+                "type": "IntegerLiteral",
+                "loop": []
+            },
+            {
+                "count": 1,
+                "self_constraint": [],
+                "name": "Magic",
+                "under_constraint": [
+                    {
+                        "status": false,
+                        "name": "constraint0"
+                    }
+                ],
+                "dependency": [],
+                "relation": [],
+                "serialization_type": 2,
+                "usedBy": [],
+                "type": "enum android::dvr::BufferHubQueueParcelableMagic",
+                "loop": []
+            },
+            {
+                "count": 1,
+                "self_constraint": [
+                    "constraint1"
+                ],
+                "name": "res",
+                "under_constraint": [
+                    {
+                        "status": false,
+                        "name": "constraint0"
+                    }
+                ],
+                "dependency": [],
+                "relation": [],
+                "serialization_type": 0,
+                "usedBy": [],
+                "type": "android::status_t",
+                "loop": []
+            },
+            {
+                "count": 1,
+                "self_constraint": [],
+                "name": "parcel",
+                "under_constraint": [
+                    {
+                        "status": false,
+                        "name": "constraint0"
+                    },
+                    {
+                        "status": false,
+                        "name": "constraint1"
+                    }
+                ],
+                "dependency": [],
+                "relation": [],
+                "serialization_type": 2,
+                "usedBy": [],
+                "type": "class android::pdx::ChannelParcelable",
+                "loop": [],
+                "size": -1
+            },
+            {
+                "count": 1,
+                "self_constraint": [],
+                "name": "parcel::item",
+                "under_constraint": [],
+                "dependency": [],
+                "relation": [],
+                "serialization_type": 2,
+                "usedBy": [],
+                "type": "class android::Parcel",
+                "loop": []
+            },
+            {
+                "count": 1,
+                "self_constraint": [],
+                "name": "implicit_10",
+                "under_constraint": [
+                    {
+                        "status": false,
+                        "name": "constraint0"
+                    },
+                    {
+                        "status": false,
+                        "name": "constraint1"
+                    }
+                ],
+                "dependency": [],
+                "relation": [],
+                "serialization_type": 0,
+                "usedBy": [],
+                "type": "int",
+                "loop": []
+            }
+        ],
+        "dependency": [],
+        "loop": [],
+        "possibility": [
+            {
+                "return": "implicit_5",
+                "reply": [
+                    "implicit_1"
+                ],
+                "data": [],
+                "id": 0
+            },
+            {
+                "return": "res",
+                "reply": [
+                    "implicit_1",
+                    "Magic"
+                ],
+                "data": [],
+                "id": 1
+            },
+            {
+                "return": "implicit_10",
+                "reply": [
+                    "implicit_1",
+                    "Magic",
+                    "parcel"
+                ],
+                "data": [],
+                "id": 2
+            }
+        ],
+        "constraint": [
+            {
+                "lhs": {
+                    "serialization_type": 2,
+                    "type": "int",
+                    "name": "implicit_1"
+                },
+                "opcode": "!",
+                "name": "constraint0",
+                "probability": 0.1
+            },
+            {
+                "lhs": {
+                    "type": "android::status_t",
+                    "name": "res"
+                },
+                "rhs": {
+                    "type": "enum android::(anonymous at system.core.libutils.include.utils.Errors.h:45:1)",
+                    "name": "android::NO_ERROR",
+                    "value": 0
+                },
+                "opcode": "!=",
+                "name": "constraint1",
+                "probability": 0.1
+            }
+        ]
+    }
+}

@@ -1,0 +1,100 @@
+{
+    "struct android::security::keymaster::ExportResult": {
+        "variable": [
+            {
+                "count": 1,
+                "self_constraint": [],
+                "name": "in",
+                "under_constraint": [],
+                "dependency": [],
+                "relation": [],
+                "serialization_type": 0,
+                "usedBy": [],
+                "type": "class android::Parcel",
+                "loop": []
+            },
+            {
+                "count": 1,
+                "self_constraint": [],
+                "name": "resultCode.toInt",
+                "under_constraint": [],
+                "dependency": [
+                    {
+                        "filename": "struct android::security::keymaster::OperationResult.json",
+                        "type": "Structure",
+                        "name": "struct android::security::keymaster::OperationResult",
+                        "possIdx": 0,
+                        "varIdx": 0,
+                        "varName": "resultCode.toInt",
+                        "varType": "int"
+                    }
+                ],
+                "relation": [],
+                "serialization_type": 1,
+                "usedBy": [],
+                "type": "int",
+                "loop": []
+            },
+            {
+                "count": 1,
+                "self_constraint": [],
+                "name": "implicit_2",
+                "under_constraint": [],
+                "func_name": "keystore::readKeymasterBlob",
+                "argv": [
+                    {
+                        "type": "const class android::Parcel",
+                        "name": "in"
+                    }
+                ],
+                "dependency": [],
+                "relation": [],
+                "signature": "hidl_vec<uint8_t> (const android::Parcel &, _Bool)",
+                "serialization_type": 1,
+                "usedBy": [],
+                "type": "Function",
+                "loop": []
+            },
+            {
+                "count": 1,
+                "self_constraint": [],
+                "name": "exportData",
+                "under_constraint": [],
+                "dependency": [],
+                "relation": [],
+                "signature": "hardware::hidl_vec<uint8_t>",
+                "serialization_type": 0,
+                "usedBy": [],
+                "type": "struct android::hardware::hidl_vec<unsigned char>",
+                "loop": []
+            },
+            {
+                "count": 1,
+                "self_constraint": [],
+                "name": "android::OK",
+                "under_constraint": [],
+                "value": 0,
+                "dependency": [],
+                "relation": [],
+                "serialization_type": 0,
+                "usedBy": [],
+                "type": "android::status_t",
+                "loop": []
+            }
+        ],
+        "dependency": [],
+        "loop": [],
+        "possibility": [
+            {
+                "return": "android::OK",
+                "reply": [],
+                "data": [
+                    "resultCode.toInt",
+                    "implicit_2"
+                ],
+                "id": 0
+            }
+        ],
+        "constraint": []
+    }
+}

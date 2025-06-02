@@ -1,0 +1,341 @@
+{
+    "class android::DecryptHandle": {
+        "variable": [
+            {
+                "count": 1,
+                "self_constraint": [
+                    "constraint0"
+                ],
+                "name": "dataAvail",
+                "under_constraint": [],
+                "dependency": [],
+                "relation": [],
+                "serialization_type": 0,
+                "usedBy": [],
+                "type": "size_t",
+                "loop": []
+            },
+            {
+                "count": 1,
+                "self_constraint": [],
+                "name": "handle.decryptId",
+                "under_constraint": [],
+                "dependency": [
+                    {
+                        "filename": "BnDataSource.json",
+                        "type": "Transaction",
+                        "name": "IDataSource::7-7",
+                        "possIdx": 1,
+                        "varIdx": 0,
+                        "varName": "handle->decryptId",
+                        "varType": "int"
+                    }
+                ],
+                "relation": [],
+                "serialization_type": 1,
+                "usedBy": [],
+                "type": "int",
+                "loop": []
+            },
+            {
+                "count": 1,
+                "self_constraint": [],
+                "name": "handle.mimeType",
+                "under_constraint": [],
+                "dependency": [
+                    {
+                        "filename": "BnDrmManagerService.json",
+                        "type": "Transaction",
+                        "name": "IDrmManagerService::10-10",
+                        "possIdx": 2,
+                        "varIdx": 2,
+                        "varName": "drmInfoStatus.mimeType",
+                        "varType": "class android::String8"
+                    },
+                    {
+                        "filename": "BnDrmManagerService.json",
+                        "type": "Transaction",
+                        "name": "IDrmManagerService::11-11",
+                        "possIdx": 1,
+                        "varIdx": 3,
+                        "varName": "MimeType",
+                        "varType": "class android::String8"
+                    },
+                    {
+                        "filename": "BnDataSource.json",
+                        "type": "Transaction",
+                        "name": "IDataSource::7-7",
+                        "possIdx": 1,
+                        "varIdx": 1,
+                        "varName": "handle->mimeType",
+                        "varType": "class android::String8"
+                    }
+                ],
+                "relation": [],
+                "serialization_type": 1,
+                "usedBy": [],
+                "type": "class android::String8",
+                "loop": []
+            },
+            {
+                "count": 1,
+                "self_constraint": [],
+                "name": "handle.decryptApiType",
+                "under_constraint": [],
+                "dependency": [
+                    {
+                        "filename": "BnDataSource.json",
+                        "type": "Transaction",
+                        "name": "IDataSource::7-7",
+                        "possIdx": 1,
+                        "varIdx": 2,
+                        "varName": "handle->decryptApiType",
+                        "varType": "int"
+                    }
+                ],
+                "relation": [],
+                "serialization_type": 1,
+                "usedBy": [],
+                "type": "int",
+                "loop": []
+            },
+            {
+                "count": 1,
+                "self_constraint": [],
+                "name": "handle.status",
+                "under_constraint": [],
+                "dependency": [],
+                "relation": [],
+                "serialization_type": 1,
+                "usedBy": [],
+                "type": "int",
+                "loop": []
+            },
+            {
+                "count": 1,
+                "self_constraint": [
+                    "constraint1",
+                    "constraint2"
+                ],
+                "name": "size",
+                "under_constraint": [],
+                "dependency": [],
+                "relation": [],
+                "serialization_type": 1,
+                "usedBy": [],
+                "type": "int",
+                "loop": []
+            },
+            {
+                "count": 1,
+                "self_constraint": [
+                    "constraint1",
+                    "constraint2"
+                ],
+                "name": "i",
+                "under_constraint": [],
+                "value": 0,
+                "dependency": [],
+                "relation": [],
+                "serialization_type": 0,
+                "usedBy": [],
+                "type": "int",
+                "loop": []
+            },
+            {
+                "count": 1,
+                "self_constraint": [],
+                "name": "key",
+                "under_constraint": [],
+                "dependency": [
+                    {
+                        "filename": "BnDataSource.json",
+                        "type": "Transaction",
+                        "name": "IDataSource::7-7",
+                        "possIdx": 1,
+                        "varIdx": 7,
+                        "varName": "implicit_16",
+                        "varType": "enum android::DrmCopyControl"
+                    }
+                ],
+                "relation": [],
+                "serialization_type": 1,
+                "usedBy": [],
+                "type": "enum android::DrmCopyControl",
+                "loop": [
+                    "loop0"
+                ]
+            },
+            {
+                "count": 1,
+                "self_constraint": [],
+                "name": "value",
+                "under_constraint": [],
+                "dependency": [
+                    {
+                        "filename": "BnGraphicBufferProducer.json",
+                        "type": "Transaction",
+                        "name": "IGraphicBufferProducer::8-8",
+                        "possIdx": 1,
+                        "varIdx": 0,
+                        "varName": "value",
+                        "varType": "int"
+                    }
+                ],
+                "relation": [],
+                "serialization_type": 1,
+                "usedBy": [],
+                "type": "int",
+                "loop": [
+                    "loop0"
+                ]
+            },
+            {
+                "count": 1,
+                "self_constraint": [],
+                "name": "size_2",
+                "under_constraint": [],
+                "dependency": [],
+                "relation": [],
+                "serialization_type": 1,
+                "usedBy": [],
+                "type": "int",
+                "loop": []
+            },
+            {
+                "count": 1,
+                "self_constraint": [],
+                "name": "key_2",
+                "under_constraint": [],
+                "dependency": [],
+                "relation": [],
+                "serialization_type": 1,
+                "usedBy": [],
+                "type": "class android::String8",
+                "loop": [
+                    "loop1"
+                ]
+            },
+            {
+                "count": 1,
+                "self_constraint": [],
+                "name": "value_2",
+                "under_constraint": [],
+                "dependency": [],
+                "relation": [],
+                "serialization_type": 1,
+                "usedBy": [],
+                "type": "class android::String8",
+                "loop": [
+                    "loop1"
+                ]
+            },
+            {
+                "count": 1,
+                "self_constraint": [],
+                "name": "bufferLen",
+                "under_constraint": [],
+                "dependency": [],
+                "relation": [],
+                "serialization_type": 1,
+                "usedBy": [],
+                "type": "int",
+                "loop": []
+            }
+        ],
+        "dependency": [],
+        "loop": [
+            {
+                "counter": {
+                    "type": "int",
+                    "name": "i",
+                    "value": 0
+                },
+                "inc": {
+                    "type": "int",
+                    "opcode": "++",
+                    "name": "i"
+                },
+                "name": "loop0",
+                "constraint": "constraint1"
+            },
+            {
+                "counter": {
+                    "type": "int",
+                    "name": "i",
+                    "value": 0
+                },
+                "inc": {
+                    "type": "int",
+                    "opcode": "++",
+                    "name": "i"
+                },
+                "name": "loop1",
+                "constraint": "constraint2"
+            }
+        ],
+        "possibility": [
+            {
+                "return": "",
+                "reply": [],
+                "data": [
+                    "handle.decryptId",
+                    "handle.mimeType",
+                    "handle.decryptApiType",
+                    "handle.status",
+                    "size",
+                    "key",
+                    "value",
+                    "size_2",
+                    "key_2",
+                    "value_2",
+                    "bufferLen"
+                ],
+                "id": 0
+            }
+        ],
+        "constraint": [
+            {
+                "lhs": {
+                    "type": "IntegerLiteral",
+                    "name": "implicit_1",
+                    "value": 0
+                },
+                "rhs": {
+                    "serialization_type": 0,
+                    "type": "size_t",
+                    "name": "dataAvail"
+                },
+                "opcode": "==",
+                "name": "constraint0",
+                "probability": 0.5
+            },
+            {
+                "lhs": {
+                    "type": "int",
+                    "name": "i"
+                },
+                "rhs": {
+                    "type": "int",
+                    "name": "size"
+                },
+                "opcode": "<",
+                "name": "constraint1",
+                "probability": 0.5
+            },
+            {
+                "lhs": {
+                    "type": "int",
+                    "name": "i"
+                },
+                "rhs": {
+                    "type": "int",
+                    "name": "size"
+                },
+                "opcode": "<",
+                "name": "constraint2",
+                "probability": 0.5
+            }
+        ]
+    }
+}

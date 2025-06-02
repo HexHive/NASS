@@ -1,0 +1,58 @@
+{
+    "class android::content::pm::Signature": {
+        "variable": [
+            {
+                "count": 1,
+                "self_constraint": [],
+                "name": "sig_data_",
+                "under_constraint": [],
+                "dependency": [],
+                "relation": [],
+                "signature": "std::vector<uint8_t>",
+                "serialization_type": 2,
+                "usedBy": [],
+                "type": "class vector<unsigned char>",
+                "loop": [],
+                "size": -1
+            },
+            {
+                "count": 1,
+                "self_constraint": [],
+                "name": "sig_data_::item",
+                "under_constraint": [],
+                "dependency": [],
+                "relation": [],
+                "signature": "std::vector<uint8_t>",
+                "serialization_type": 2,
+                "usedBy": [],
+                "type": "unsigned char",
+                "loop": []
+            },
+            {
+                "count": 1,
+                "self_constraint": [],
+                "name": "implicit_1",
+                "under_constraint": [],
+                "dependency": [],
+                "relation": [],
+                "serialization_type": 0,
+                "usedBy": [],
+                "type": "android::status_t",
+                "loop": []
+            }
+        ],
+        "dependency": [],
+        "loop": [],
+        "possibility": [
+            {
+                "return": "implicit_1",
+                "reply": [
+                    "sig_data_"
+                ],
+                "data": [],
+                "id": 0
+            }
+        ],
+        "constraint": []
+    }
+}

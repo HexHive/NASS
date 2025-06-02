@@ -1,0 +1,3059 @@
+{
+    "class android::binder::Status": {
+        "variable": [
+            {
+                "count": 1,
+                "self_constraint": [],
+                "name": "mErrorCode",
+                "under_constraint": [
+                    {
+                        "status": false,
+                        "name": "constraint0"
+                    },
+                    {
+                        "status": false,
+                        "name": "constraint1"
+                    },
+                    {
+                        "status": false,
+                        "name": "constraint2"
+                    },
+                    {
+                        "status": true,
+                        "name": "constraint3"
+                    }
+                ],
+                "dependency": [],
+                "relation": [],
+                "signature": "int32_t",
+                "serialization_type": 2,
+                "usedBy": [],
+                "type": "int",
+                "loop": []
+            },
+            {
+                "count": 1,
+                "self_constraint": [
+                    "constraint2",
+                    "constraint3",
+                    "constraint4"
+                ],
+                "name": "mException",
+                "under_constraint": [
+                    {
+                        "status": false,
+                        "name": "constraint0"
+                    }
+                ],
+                "dependency": [],
+                "relation": [],
+                "signature": "int32_t",
+                "serialization_type": 2,
+                "usedBy": [],
+                "type": "int",
+                "loop": []
+            },
+            {
+                "count": 1,
+                "self_constraint": [
+                    "constraint1"
+                ],
+                "name": "status",
+                "under_constraint": [
+                    {
+                        "status": false,
+                        "name": "constraint0"
+                    }
+                ],
+                "dependency": [],
+                "relation": [],
+                "serialization_type": 0,
+                "usedBy": [],
+                "type": "android::status_t",
+                "loop": []
+            },
+            {
+                "count": 1,
+                "self_constraint": [],
+                "name": "mMessage",
+                "under_constraint": [
+                    {
+                        "status": false,
+                        "name": "constraint0"
+                    },
+                    {
+                        "status": false,
+                        "name": "constraint1"
+                    },
+                    {
+                        "status": false,
+                        "name": "constraint2"
+                    }
+                ],
+                "dependency": [],
+                "relation": [],
+                "signature": "class android::String8",
+                "serialization_type": 2,
+                "usedBy": [],
+                "type": "class android::String8",
+                "loop": []
+            },
+            {
+                "count": 1,
+                "self_constraint": [],
+                "name": "implicit_3",
+                "under_constraint": [
+                    {
+                        "status": false,
+                        "name": "constraint0"
+                    },
+                    {
+                        "status": false,
+                        "name": "constraint1"
+                    },
+                    {
+                        "status": false,
+                        "name": "constraint2"
+                    }
+                ],
+                "value": 0,
+                "dependency": [],
+                "relation": [],
+                "serialization_type": 2,
+                "usedBy": [],
+                "type": "IntegerLiteral",
+                "loop": []
+            },
+            {
+                "count": 1,
+                "self_constraint": [],
+                "name": "implicit_6",
+                "under_constraint": [
+                    {
+                        "status": false,
+                        "name": "constraint0"
+                    },
+                    {
+                        "status": false,
+                        "name": "constraint1"
+                    },
+                    {
+                        "status": false,
+                        "name": "constraint2"
+                    },
+                    {
+                        "status": false,
+                        "name": "constraint3"
+                    },
+                    {
+                        "status": true,
+                        "name": "constraint4"
+                    }
+                ],
+                "value": 0,
+                "dependency": [],
+                "relation": [],
+                "serialization_type": 2,
+                "usedBy": [],
+                "type": "IntegerLiteral",
+                "loop": []
+            }
+        ],
+        "dependency": [
+            {
+                "filename": "BnStoragedPrivate.json",
+                "type": "Transaction",
+                "name": "IStoragedPrivate::1-1",
+                "possIdx": 0,
+                "varIdx": 0,
+                "varName": "_aidl_status",
+                "varType": "class android::binder::Status"
+            },
+            {
+                "filename": "BnStoragedPrivate.json",
+                "type": "Transaction",
+                "name": "IStoragedPrivate::2-2",
+                "possIdx": 0,
+                "varIdx": 0,
+                "varName": "_aidl_status",
+                "varType": "class android::binder::Status"
+            },
+            {
+                "filename": "BnBatteryStats.json",
+                "type": "Transaction",
+                "name": "IBatteryStats::1-1",
+                "possIdx": 1,
+                "varIdx": 0,
+                "varName": "implicit_4",
+                "varType": "class android::binder::Status"
+            },
+            {
+                "filename": "BnBatteryStats.json",
+                "type": "Transaction",
+                "name": "IBatteryStats::2-2",
+                "possIdx": 1,
+                "varIdx": 0,
+                "varName": "implicit_4",
+                "varType": "class android::binder::Status"
+            },
+            {
+                "filename": "BnBatteryStats.json",
+                "type": "Transaction",
+                "name": "IBatteryStats::3-3",
+                "possIdx": 1,
+                "varIdx": 0,
+                "varName": "implicit_3",
+                "varType": "class android::binder::Status"
+            },
+            {
+                "filename": "BnBatteryStats.json",
+                "type": "Transaction",
+                "name": "IBatteryStats::4-4",
+                "possIdx": 1,
+                "varIdx": 0,
+                "varName": "implicit_3",
+                "varType": "class android::binder::Status"
+            },
+            {
+                "filename": "BnBatteryStats.json",
+                "type": "Transaction",
+                "name": "IBatteryStats::5-5",
+                "possIdx": 1,
+                "varIdx": 0,
+                "varName": "implicit_3",
+                "varType": "class android::binder::Status"
+            },
+            {
+                "filename": "BnBatteryStats.json",
+                "type": "Transaction",
+                "name": "IBatteryStats::6-6",
+                "possIdx": 1,
+                "varIdx": 0,
+                "varName": "implicit_3",
+                "varType": "class android::binder::Status"
+            },
+            {
+                "filename": "BnBatteryStats.json",
+                "type": "Transaction",
+                "name": "IBatteryStats::7-7",
+                "possIdx": 1,
+                "varIdx": 0,
+                "varName": "implicit_2",
+                "varType": "class android::binder::Status"
+            },
+            {
+                "filename": "BnBatteryStats.json",
+                "type": "Transaction",
+                "name": "IBatteryStats::8-8",
+                "possIdx": 1,
+                "varIdx": 0,
+                "varName": "implicit_2",
+                "varType": "class android::binder::Status"
+            },
+            {
+                "filename": "BnBatteryStats.json",
+                "type": "Transaction",
+                "name": "IBatteryStats::9-9",
+                "possIdx": 1,
+                "varIdx": 0,
+                "varName": "implicit_3",
+                "varType": "class android::binder::Status"
+            },
+            {
+                "filename": "BnBatteryStats.json",
+                "type": "Transaction",
+                "name": "IBatteryStats::10-10",
+                "possIdx": 1,
+                "varIdx": 0,
+                "varName": "implicit_3",
+                "varType": "class android::binder::Status"
+            },
+            {
+                "filename": "BnBatteryStats.json",
+                "type": "Transaction",
+                "name": "IBatteryStats::11-11",
+                "possIdx": 1,
+                "varIdx": 0,
+                "varName": "implicit_3",
+                "varType": "class android::binder::Status"
+            },
+            {
+                "filename": "BnBatteryStats.json",
+                "type": "Transaction",
+                "name": "IBatteryStats::12-12",
+                "possIdx": 1,
+                "varIdx": 0,
+                "varName": "implicit_3",
+                "varType": "class android::binder::Status"
+            },
+            {
+                "filename": "BnBatteryStats.json",
+                "type": "Transaction",
+                "name": "IBatteryStats::13-13",
+                "possIdx": 1,
+                "varIdx": 0,
+                "varName": "implicit_2",
+                "varType": "class android::binder::Status"
+            },
+            {
+                "filename": "BnBatteryStats.json",
+                "type": "Transaction",
+                "name": "IBatteryStats::14-14",
+                "possIdx": 1,
+                "varIdx": 0,
+                "varName": "implicit_2",
+                "varType": "class android::binder::Status"
+            },
+            {
+                "filename": "BnApInterface.json",
+                "type": "Transaction",
+                "name": "IApInterface::1-1",
+                "possIdx": 0,
+                "varIdx": 0,
+                "varName": "_aidl_status",
+                "varType": "class android::binder::Status"
+            },
+            {
+                "filename": "BnApInterface.json",
+                "type": "Transaction",
+                "name": "IApInterface::2-2",
+                "possIdx": 0,
+                "varIdx": 0,
+                "varName": "_aidl_status",
+                "varType": "class android::binder::Status"
+            },
+            {
+                "filename": "BnApInterface.json",
+                "type": "Transaction",
+                "name": "IApInterface::3-3",
+                "possIdx": 0,
+                "varIdx": 0,
+                "varName": "_aidl_status",
+                "varType": "class android::binder::Status"
+            },
+            {
+                "filename": "BnApInterface.json",
+                "type": "Transaction",
+                "name": "IApInterface::4-4",
+                "possIdx": 0,
+                "varIdx": 0,
+                "varName": "_aidl_status",
+                "varType": "class android::binder::Status"
+            },
+            {
+                "filename": "BnCameraService.json",
+                "type": "Transaction",
+                "name": "ICameraService::1-1",
+                "possIdx": 0,
+                "varIdx": 0,
+                "varName": "_aidl_status",
+                "varType": "class android::binder::Status"
+            },
+            {
+                "filename": "BnCameraService.json",
+                "type": "Transaction",
+                "name": "ICameraService::2-2",
+                "possIdx": 0,
+                "varIdx": 0,
+                "varName": "_aidl_status",
+                "varType": "class android::binder::Status"
+            },
+            {
+                "filename": "BnCameraService.json",
+                "type": "Transaction",
+                "name": "ICameraService::3-3",
+                "possIdx": 0,
+                "varIdx": 0,
+                "varName": "_aidl_status",
+                "varType": "class android::binder::Status"
+            },
+            {
+                "filename": "BnCameraService.json",
+                "type": "Transaction",
+                "name": "ICameraService::4-4",
+                "possIdx": 0,
+                "varIdx": 0,
+                "varName": "_aidl_status",
+                "varType": "class android::binder::Status"
+            },
+            {
+                "filename": "BnCameraService.json",
+                "type": "Transaction",
+                "name": "ICameraService::5-5",
+                "possIdx": 0,
+                "varIdx": 0,
+                "varName": "_aidl_status",
+                "varType": "class android::binder::Status"
+            },
+            {
+                "filename": "BnCameraService.json",
+                "type": "Transaction",
+                "name": "ICameraService::6-6",
+                "possIdx": 0,
+                "varIdx": 0,
+                "varName": "_aidl_status",
+                "varType": "class android::binder::Status"
+            },
+            {
+                "filename": "BnCameraService.json",
+                "type": "Transaction",
+                "name": "ICameraService::7-7",
+                "possIdx": 0,
+                "varIdx": 0,
+                "varName": "_aidl_status",
+                "varType": "class android::binder::Status"
+            },
+            {
+                "filename": "BnCameraService.json",
+                "type": "Transaction",
+                "name": "ICameraService::8-8",
+                "possIdx": 0,
+                "varIdx": 0,
+                "varName": "_aidl_status",
+                "varType": "class android::binder::Status"
+            },
+            {
+                "filename": "BnCameraService.json",
+                "type": "Transaction",
+                "name": "ICameraService::9-9",
+                "possIdx": 0,
+                "varIdx": 0,
+                "varName": "_aidl_status",
+                "varType": "class android::binder::Status"
+            },
+            {
+                "filename": "BnCameraService.json",
+                "type": "Transaction",
+                "name": "ICameraService::10-10",
+                "possIdx": 0,
+                "varIdx": 0,
+                "varName": "_aidl_status",
+                "varType": "class android::binder::Status"
+            },
+            {
+                "filename": "BnCameraService.json",
+                "type": "Transaction",
+                "name": "ICameraService::11-11",
+                "possIdx": 0,
+                "varIdx": 0,
+                "varName": "_aidl_status",
+                "varType": "class android::binder::Status"
+            },
+            {
+                "filename": "BnCameraService.json",
+                "type": "Transaction",
+                "name": "ICameraService::12-12",
+                "possIdx": 0,
+                "varIdx": 0,
+                "varName": "_aidl_status",
+                "varType": "class android::binder::Status"
+            },
+            {
+                "filename": "BnCameraService.json",
+                "type": "Transaction",
+                "name": "ICameraService::13-13",
+                "possIdx": 0,
+                "varIdx": 0,
+                "varName": "_aidl_status",
+                "varType": "class android::binder::Status"
+            },
+            {
+                "filename": "BnClientInterface.json",
+                "type": "Transaction",
+                "name": "IClientInterface::1-1",
+                "possIdx": 0,
+                "varIdx": 0,
+                "varName": "_aidl_status",
+                "varType": "class android::binder::Status"
+            },
+            {
+                "filename": "BnClientInterface.json",
+                "type": "Transaction",
+                "name": "IClientInterface::2-2",
+                "possIdx": 0,
+                "varIdx": 0,
+                "varName": "_aidl_status",
+                "varType": "class android::binder::Status"
+            },
+            {
+                "filename": "BnClientInterface.json",
+                "type": "Transaction",
+                "name": "IClientInterface::3-3",
+                "possIdx": 0,
+                "varIdx": 0,
+                "varName": "_aidl_status",
+                "varType": "class android::binder::Status"
+            },
+            {
+                "filename": "BnClientInterface.json",
+                "type": "Transaction",
+                "name": "IClientInterface::4-4",
+                "possIdx": 0,
+                "varIdx": 0,
+                "varName": "_aidl_status",
+                "varType": "class android::binder::Status"
+            },
+            {
+                "filename": "BnClientInterface.json",
+                "type": "Transaction",
+                "name": "IClientInterface::5-5",
+                "possIdx": 0,
+                "varIdx": 0,
+                "varName": "_aidl_status",
+                "varType": "class android::binder::Status"
+            },
+            {
+                "filename": "BnClientInterface.json",
+                "type": "Transaction",
+                "name": "IClientInterface::6-6",
+                "possIdx": 0,
+                "varIdx": 0,
+                "varName": "_aidl_status",
+                "varType": "class android::binder::Status"
+            },
+            {
+                "filename": "BnNetd.json",
+                "type": "Transaction",
+                "name": "INetd::1-1",
+                "possIdx": 0,
+                "varIdx": 0,
+                "varName": "_aidl_status",
+                "varType": "class android::binder::Status"
+            },
+            {
+                "filename": "BnNetd.json",
+                "type": "Transaction",
+                "name": "INetd::2-2",
+                "possIdx": 0,
+                "varIdx": 0,
+                "varName": "_aidl_status",
+                "varType": "class android::binder::Status"
+            },
+            {
+                "filename": "BnNetd.json",
+                "type": "Transaction",
+                "name": "INetd::3-3",
+                "possIdx": 0,
+                "varIdx": 0,
+                "varName": "_aidl_status",
+                "varType": "class android::binder::Status"
+            },
+            {
+                "filename": "BnNetd.json",
+                "type": "Transaction",
+                "name": "INetd::4-4",
+                "possIdx": 0,
+                "varIdx": 0,
+                "varName": "_aidl_status",
+                "varType": "class android::binder::Status"
+            },
+            {
+                "filename": "BnNetd.json",
+                "type": "Transaction",
+                "name": "INetd::5-5",
+                "possIdx": 0,
+                "varIdx": 0,
+                "varName": "_aidl_status",
+                "varType": "class android::binder::Status"
+            },
+            {
+                "filename": "BnNetd.json",
+                "type": "Transaction",
+                "name": "INetd::6-6",
+                "possIdx": 0,
+                "varIdx": 0,
+                "varName": "_aidl_status",
+                "varType": "class android::binder::Status"
+            },
+            {
+                "filename": "BnNetd.json",
+                "type": "Transaction",
+                "name": "INetd::7-7",
+                "possIdx": 0,
+                "varIdx": 0,
+                "varName": "_aidl_status",
+                "varType": "class android::binder::Status"
+            },
+            {
+                "filename": "BnNetd.json",
+                "type": "Transaction",
+                "name": "INetd::8-8",
+                "possIdx": 0,
+                "varIdx": 0,
+                "varName": "_aidl_status",
+                "varType": "class android::binder::Status"
+            },
+            {
+                "filename": "BnNetd.json",
+                "type": "Transaction",
+                "name": "INetd::9-9",
+                "possIdx": 0,
+                "varIdx": 0,
+                "varName": "_aidl_status",
+                "varType": "class android::binder::Status"
+            },
+            {
+                "filename": "BnNetd.json",
+                "type": "Transaction",
+                "name": "INetd::10-10",
+                "possIdx": 0,
+                "varIdx": 0,
+                "varName": "_aidl_status",
+                "varType": "class android::binder::Status"
+            },
+            {
+                "filename": "BnNetd.json",
+                "type": "Transaction",
+                "name": "INetd::11-11",
+                "possIdx": 0,
+                "varIdx": 0,
+                "varName": "_aidl_status",
+                "varType": "class android::binder::Status"
+            },
+            {
+                "filename": "BnNetd.json",
+                "type": "Transaction",
+                "name": "INetd::12-12",
+                "possIdx": 0,
+                "varIdx": 0,
+                "varName": "_aidl_status",
+                "varType": "class android::binder::Status"
+            },
+            {
+                "filename": "BnNetd.json",
+                "type": "Transaction",
+                "name": "INetd::13-13",
+                "possIdx": 0,
+                "varIdx": 0,
+                "varName": "_aidl_status",
+                "varType": "class android::binder::Status"
+            },
+            {
+                "filename": "BnNetd.json",
+                "type": "Transaction",
+                "name": "INetd::14-14",
+                "possIdx": 0,
+                "varIdx": 0,
+                "varName": "_aidl_status",
+                "varType": "class android::binder::Status"
+            },
+            {
+                "filename": "BnNetd.json",
+                "type": "Transaction",
+                "name": "INetd::15-15",
+                "possIdx": 0,
+                "varIdx": 0,
+                "varName": "_aidl_status",
+                "varType": "class android::binder::Status"
+            },
+            {
+                "filename": "BnNetd.json",
+                "type": "Transaction",
+                "name": "INetd::16-16",
+                "possIdx": 0,
+                "varIdx": 0,
+                "varName": "_aidl_status",
+                "varType": "class android::binder::Status"
+            },
+            {
+                "filename": "BnNetd.json",
+                "type": "Transaction",
+                "name": "INetd::17-17",
+                "possIdx": 0,
+                "varIdx": 0,
+                "varName": "_aidl_status",
+                "varType": "class android::binder::Status"
+            },
+            {
+                "filename": "BnNetd.json",
+                "type": "Transaction",
+                "name": "INetd::18-18",
+                "possIdx": 0,
+                "varIdx": 0,
+                "varName": "_aidl_status",
+                "varType": "class android::binder::Status"
+            },
+            {
+                "filename": "BnNetd.json",
+                "type": "Transaction",
+                "name": "INetd::19-19",
+                "possIdx": 0,
+                "varIdx": 0,
+                "varName": "_aidl_status",
+                "varType": "class android::binder::Status"
+            },
+            {
+                "filename": "BnNetd.json",
+                "type": "Transaction",
+                "name": "INetd::20-20",
+                "possIdx": 0,
+                "varIdx": 0,
+                "varName": "_aidl_status",
+                "varType": "class android::binder::Status"
+            },
+            {
+                "filename": "BnNetd.json",
+                "type": "Transaction",
+                "name": "INetd::21-21",
+                "possIdx": 0,
+                "varIdx": 0,
+                "varName": "_aidl_status",
+                "varType": "class android::binder::Status"
+            },
+            {
+                "filename": "BnNetd.json",
+                "type": "Transaction",
+                "name": "INetd::22-22",
+                "possIdx": 0,
+                "varIdx": 0,
+                "varName": "_aidl_status",
+                "varType": "class android::binder::Status"
+            },
+            {
+                "filename": "BnNetd.json",
+                "type": "Transaction",
+                "name": "INetd::23-23",
+                "possIdx": 0,
+                "varIdx": 0,
+                "varName": "_aidl_status",
+                "varType": "class android::binder::Status"
+            },
+            {
+                "filename": "BnNetd.json",
+                "type": "Transaction",
+                "name": "INetd::24-24",
+                "possIdx": 0,
+                "varIdx": 0,
+                "varName": "_aidl_status",
+                "varType": "class android::binder::Status"
+            },
+            {
+                "filename": "BnNetd.json",
+                "type": "Transaction",
+                "name": "INetd::25-25",
+                "possIdx": 0,
+                "varIdx": 0,
+                "varName": "_aidl_status",
+                "varType": "class android::binder::Status"
+            },
+            {
+                "filename": "BnNetd.json",
+                "type": "Transaction",
+                "name": "INetd::26-26",
+                "possIdx": 0,
+                "varIdx": 0,
+                "varName": "_aidl_status",
+                "varType": "class android::binder::Status"
+            },
+            {
+                "filename": "BnNetd.json",
+                "type": "Transaction",
+                "name": "INetd::27-27",
+                "possIdx": 0,
+                "varIdx": 0,
+                "varName": "_aidl_status",
+                "varType": "class android::binder::Status"
+            },
+            {
+                "filename": "BnNetd.json",
+                "type": "Transaction",
+                "name": "INetd::28-28",
+                "possIdx": 0,
+                "varIdx": 0,
+                "varName": "_aidl_status",
+                "varType": "class android::binder::Status"
+            },
+            {
+                "filename": "BnNetd.json",
+                "type": "Transaction",
+                "name": "INetd::29-29",
+                "possIdx": 0,
+                "varIdx": 0,
+                "varName": "_aidl_status",
+                "varType": "class android::binder::Status"
+            },
+            {
+                "filename": "BnNetd.json",
+                "type": "Transaction",
+                "name": "INetd::30-30",
+                "possIdx": 0,
+                "varIdx": 0,
+                "varName": "_aidl_status",
+                "varType": "class android::binder::Status"
+            },
+            {
+                "filename": "BnNetd.json",
+                "type": "Transaction",
+                "name": "INetd::31-31",
+                "possIdx": 0,
+                "varIdx": 0,
+                "varName": "_aidl_status",
+                "varType": "class android::binder::Status"
+            },
+            {
+                "filename": "BnNetd.json",
+                "type": "Transaction",
+                "name": "INetd::32-32",
+                "possIdx": 0,
+                "varIdx": 0,
+                "varName": "_aidl_status",
+                "varType": "class android::binder::Status"
+            },
+            {
+                "filename": "BnNetd.json",
+                "type": "Transaction",
+                "name": "INetd::33-33",
+                "possIdx": 0,
+                "varIdx": 0,
+                "varName": "_aidl_status",
+                "varType": "class android::binder::Status"
+            },
+            {
+                "filename": "BnNetd.json",
+                "type": "Transaction",
+                "name": "INetd::34-34",
+                "possIdx": 0,
+                "varIdx": 0,
+                "varName": "_aidl_status",
+                "varType": "class android::binder::Status"
+            },
+            {
+                "filename": "BnNetd.json",
+                "type": "Transaction",
+                "name": "INetd::35-35",
+                "possIdx": 0,
+                "varIdx": 0,
+                "varName": "_aidl_status",
+                "varType": "class android::binder::Status"
+            },
+            {
+                "filename": "BnNetd.json",
+                "type": "Transaction",
+                "name": "INetd::36-36",
+                "possIdx": 0,
+                "varIdx": 0,
+                "varName": "_aidl_status",
+                "varType": "class android::binder::Status"
+            },
+            {
+                "filename": "BnNetd.json",
+                "type": "Transaction",
+                "name": "INetd::37-37",
+                "possIdx": 0,
+                "varIdx": 0,
+                "varName": "_aidl_status",
+                "varType": "class android::binder::Status"
+            },
+            {
+                "filename": "BnPerfProfd.json",
+                "type": "Transaction",
+                "name": "IPerfProfd::1-1",
+                "possIdx": 0,
+                "varIdx": 0,
+                "varName": "_aidl_status",
+                "varType": "class android::binder::Status"
+            },
+            {
+                "filename": "BnPerfProfd.json",
+                "type": "Transaction",
+                "name": "IPerfProfd::2-2",
+                "possIdx": 0,
+                "varIdx": 0,
+                "varName": "_aidl_status",
+                "varType": "class android::binder::Status"
+            },
+            {
+                "filename": "BnPerfProfd.json",
+                "type": "Transaction",
+                "name": "IPerfProfd::3-3",
+                "possIdx": 0,
+                "varIdx": 0,
+                "varName": "_aidl_status",
+                "varType": "class android::binder::Status"
+            },
+            {
+                "filename": "BnPerfProfd.json",
+                "type": "Transaction",
+                "name": "IPerfProfd::4-4",
+                "possIdx": 0,
+                "varIdx": 0,
+                "varName": "_aidl_status",
+                "varType": "class android::binder::Status"
+            },
+            {
+                "filename": "BnThermalService.json",
+                "type": "Transaction",
+                "name": "IThermalService::1-1",
+                "possIdx": 0,
+                "varIdx": 0,
+                "varName": "_aidl_status",
+                "varType": "class android::binder::Status"
+            },
+            {
+                "filename": "BnThermalService.json",
+                "type": "Transaction",
+                "name": "IThermalService::2-2",
+                "possIdx": 0,
+                "varIdx": 0,
+                "varName": "_aidl_status",
+                "varType": "class android::binder::Status"
+            },
+            {
+                "filename": "BnThermalService.json",
+                "type": "Transaction",
+                "name": "IThermalService::4-4",
+                "possIdx": 0,
+                "varIdx": 0,
+                "varName": "_aidl_status",
+                "varType": "class android::binder::Status"
+            },
+            {
+                "filename": "BnVold.json",
+                "type": "Transaction",
+                "name": "IVold::1-1",
+                "possIdx": 0,
+                "varIdx": 0,
+                "varName": "_aidl_status",
+                "varType": "class android::binder::Status"
+            },
+            {
+                "filename": "BnVold.json",
+                "type": "Transaction",
+                "name": "IVold::2-2",
+                "possIdx": 0,
+                "varIdx": 0,
+                "varName": "_aidl_status",
+                "varType": "class android::binder::Status"
+            },
+            {
+                "filename": "BnVold.json",
+                "type": "Transaction",
+                "name": "IVold::3-3",
+                "possIdx": 0,
+                "varIdx": 0,
+                "varName": "_aidl_status",
+                "varType": "class android::binder::Status"
+            },
+            {
+                "filename": "BnVold.json",
+                "type": "Transaction",
+                "name": "IVold::4-4",
+                "possIdx": 0,
+                "varIdx": 0,
+                "varName": "_aidl_status",
+                "varType": "class android::binder::Status"
+            },
+            {
+                "filename": "BnVold.json",
+                "type": "Transaction",
+                "name": "IVold::5-5",
+                "possIdx": 0,
+                "varIdx": 0,
+                "varName": "_aidl_status",
+                "varType": "class android::binder::Status"
+            },
+            {
+                "filename": "BnVold.json",
+                "type": "Transaction",
+                "name": "IVold::6-6",
+                "possIdx": 0,
+                "varIdx": 0,
+                "varName": "_aidl_status",
+                "varType": "class android::binder::Status"
+            },
+            {
+                "filename": "BnVold.json",
+                "type": "Transaction",
+                "name": "IVold::7-7",
+                "possIdx": 0,
+                "varIdx": 0,
+                "varName": "_aidl_status",
+                "varType": "class android::binder::Status"
+            },
+            {
+                "filename": "BnVold.json",
+                "type": "Transaction",
+                "name": "IVold::8-8",
+                "possIdx": 0,
+                "varIdx": 0,
+                "varName": "_aidl_status",
+                "varType": "class android::binder::Status"
+            },
+            {
+                "filename": "BnVold.json",
+                "type": "Transaction",
+                "name": "IVold::9-9",
+                "possIdx": 0,
+                "varIdx": 0,
+                "varName": "_aidl_status",
+                "varType": "class android::binder::Status"
+            },
+            {
+                "filename": "BnVold.json",
+                "type": "Transaction",
+                "name": "IVold::10-10",
+                "possIdx": 0,
+                "varIdx": 0,
+                "varName": "_aidl_status",
+                "varType": "class android::binder::Status"
+            },
+            {
+                "filename": "BnVold.json",
+                "type": "Transaction",
+                "name": "IVold::11-11",
+                "possIdx": 0,
+                "varIdx": 0,
+                "varName": "_aidl_status",
+                "varType": "class android::binder::Status"
+            },
+            {
+                "filename": "BnVold.json",
+                "type": "Transaction",
+                "name": "IVold::12-12",
+                "possIdx": 0,
+                "varIdx": 0,
+                "varName": "_aidl_status",
+                "varType": "class android::binder::Status"
+            },
+            {
+                "filename": "BnVold.json",
+                "type": "Transaction",
+                "name": "IVold::13-13",
+                "possIdx": 0,
+                "varIdx": 0,
+                "varName": "_aidl_status",
+                "varType": "class android::binder::Status"
+            },
+            {
+                "filename": "BnVold.json",
+                "type": "Transaction",
+                "name": "IVold::14-14",
+                "possIdx": 0,
+                "varIdx": 0,
+                "varName": "_aidl_status",
+                "varType": "class android::binder::Status"
+            },
+            {
+                "filename": "BnVold.json",
+                "type": "Transaction",
+                "name": "IVold::15-15",
+                "possIdx": 0,
+                "varIdx": 0,
+                "varName": "_aidl_status",
+                "varType": "class android::binder::Status"
+            },
+            {
+                "filename": "BnVold.json",
+                "type": "Transaction",
+                "name": "IVold::16-16",
+                "possIdx": 0,
+                "varIdx": 0,
+                "varName": "_aidl_status",
+                "varType": "class android::binder::Status"
+            },
+            {
+                "filename": "BnVold.json",
+                "type": "Transaction",
+                "name": "IVold::17-17",
+                "possIdx": 0,
+                "varIdx": 0,
+                "varName": "_aidl_status",
+                "varType": "class android::binder::Status"
+            },
+            {
+                "filename": "BnVold.json",
+                "type": "Transaction",
+                "name": "IVold::18-18",
+                "possIdx": 0,
+                "varIdx": 0,
+                "varName": "_aidl_status",
+                "varType": "class android::binder::Status"
+            },
+            {
+                "filename": "BnVold.json",
+                "type": "Transaction",
+                "name": "IVold::19-19",
+                "possIdx": 0,
+                "varIdx": 0,
+                "varName": "_aidl_status",
+                "varType": "class android::binder::Status"
+            },
+            {
+                "filename": "BnVold.json",
+                "type": "Transaction",
+                "name": "IVold::20-20",
+                "possIdx": 0,
+                "varIdx": 0,
+                "varName": "_aidl_status",
+                "varType": "class android::binder::Status"
+            },
+            {
+                "filename": "BnVold.json",
+                "type": "Transaction",
+                "name": "IVold::21-21",
+                "possIdx": 0,
+                "varIdx": 0,
+                "varName": "_aidl_status",
+                "varType": "class android::binder::Status"
+            },
+            {
+                "filename": "BnVold.json",
+                "type": "Transaction",
+                "name": "IVold::22-22",
+                "possIdx": 0,
+                "varIdx": 0,
+                "varName": "_aidl_status",
+                "varType": "class android::binder::Status"
+            },
+            {
+                "filename": "BnVold.json",
+                "type": "Transaction",
+                "name": "IVold::23-23",
+                "possIdx": 0,
+                "varIdx": 0,
+                "varName": "_aidl_status",
+                "varType": "class android::binder::Status"
+            },
+            {
+                "filename": "BnVold.json",
+                "type": "Transaction",
+                "name": "IVold::24-24",
+                "possIdx": 0,
+                "varIdx": 0,
+                "varName": "_aidl_status",
+                "varType": "class android::binder::Status"
+            },
+            {
+                "filename": "BnVold.json",
+                "type": "Transaction",
+                "name": "IVold::25-25",
+                "possIdx": 0,
+                "varIdx": 0,
+                "varName": "_aidl_status",
+                "varType": "class android::binder::Status"
+            },
+            {
+                "filename": "BnVold.json",
+                "type": "Transaction",
+                "name": "IVold::26-26",
+                "possIdx": 0,
+                "varIdx": 0,
+                "varName": "_aidl_status",
+                "varType": "class android::binder::Status"
+            },
+            {
+                "filename": "BnVold.json",
+                "type": "Transaction",
+                "name": "IVold::27-27",
+                "possIdx": 0,
+                "varIdx": 0,
+                "varName": "_aidl_status",
+                "varType": "class android::binder::Status"
+            },
+            {
+                "filename": "BnVold.json",
+                "type": "Transaction",
+                "name": "IVold::28-28",
+                "possIdx": 0,
+                "varIdx": 0,
+                "varName": "_aidl_status",
+                "varType": "class android::binder::Status"
+            },
+            {
+                "filename": "BnVold.json",
+                "type": "Transaction",
+                "name": "IVold::29-29",
+                "possIdx": 0,
+                "varIdx": 0,
+                "varName": "_aidl_status",
+                "varType": "class android::binder::Status"
+            },
+            {
+                "filename": "BnVold.json",
+                "type": "Transaction",
+                "name": "IVold::30-30",
+                "possIdx": 0,
+                "varIdx": 0,
+                "varName": "_aidl_status",
+                "varType": "class android::binder::Status"
+            },
+            {
+                "filename": "BnVold.json",
+                "type": "Transaction",
+                "name": "IVold::31-31",
+                "possIdx": 0,
+                "varIdx": 0,
+                "varName": "_aidl_status",
+                "varType": "class android::binder::Status"
+            },
+            {
+                "filename": "BnVold.json",
+                "type": "Transaction",
+                "name": "IVold::32-32",
+                "possIdx": 0,
+                "varIdx": 0,
+                "varName": "_aidl_status",
+                "varType": "class android::binder::Status"
+            },
+            {
+                "filename": "BnVold.json",
+                "type": "Transaction",
+                "name": "IVold::33-33",
+                "possIdx": 0,
+                "varIdx": 0,
+                "varName": "_aidl_status",
+                "varType": "class android::binder::Status"
+            },
+            {
+                "filename": "BnVold.json",
+                "type": "Transaction",
+                "name": "IVold::34-34",
+                "possIdx": 0,
+                "varIdx": 0,
+                "varName": "_aidl_status",
+                "varType": "class android::binder::Status"
+            },
+            {
+                "filename": "BnVold.json",
+                "type": "Transaction",
+                "name": "IVold::35-35",
+                "possIdx": 0,
+                "varIdx": 0,
+                "varName": "_aidl_status",
+                "varType": "class android::binder::Status"
+            },
+            {
+                "filename": "BnVold.json",
+                "type": "Transaction",
+                "name": "IVold::36-36",
+                "possIdx": 0,
+                "varIdx": 0,
+                "varName": "_aidl_status",
+                "varType": "class android::binder::Status"
+            },
+            {
+                "filename": "BnVold.json",
+                "type": "Transaction",
+                "name": "IVold::37-37",
+                "possIdx": 0,
+                "varIdx": 0,
+                "varName": "_aidl_status",
+                "varType": "class android::binder::Status"
+            },
+            {
+                "filename": "BnVold.json",
+                "type": "Transaction",
+                "name": "IVold::38-38",
+                "possIdx": 0,
+                "varIdx": 0,
+                "varName": "_aidl_status",
+                "varType": "class android::binder::Status"
+            },
+            {
+                "filename": "BnVold.json",
+                "type": "Transaction",
+                "name": "IVold::39-39",
+                "possIdx": 0,
+                "varIdx": 0,
+                "varName": "_aidl_status",
+                "varType": "class android::binder::Status"
+            },
+            {
+                "filename": "BnVold.json",
+                "type": "Transaction",
+                "name": "IVold::40-40",
+                "possIdx": 0,
+                "varIdx": 0,
+                "varName": "_aidl_status",
+                "varType": "class android::binder::Status"
+            },
+            {
+                "filename": "BnVold.json",
+                "type": "Transaction",
+                "name": "IVold::41-41",
+                "possIdx": 0,
+                "varIdx": 0,
+                "varName": "_aidl_status",
+                "varType": "class android::binder::Status"
+            },
+            {
+                "filename": "BnVold.json",
+                "type": "Transaction",
+                "name": "IVold::42-42",
+                "possIdx": 0,
+                "varIdx": 0,
+                "varName": "_aidl_status",
+                "varType": "class android::binder::Status"
+            },
+            {
+                "filename": "BnVold.json",
+                "type": "Transaction",
+                "name": "IVold::43-43",
+                "possIdx": 0,
+                "varIdx": 0,
+                "varName": "_aidl_status",
+                "varType": "class android::binder::Status"
+            },
+            {
+                "filename": "BnVold.json",
+                "type": "Transaction",
+                "name": "IVold::44-44",
+                "possIdx": 0,
+                "varIdx": 0,
+                "varName": "_aidl_status",
+                "varType": "class android::binder::Status"
+            },
+            {
+                "filename": "BnVold.json",
+                "type": "Transaction",
+                "name": "IVold::45-45",
+                "possIdx": 0,
+                "varIdx": 0,
+                "varName": "_aidl_status",
+                "varType": "class android::binder::Status"
+            },
+            {
+                "filename": "BnVold.json",
+                "type": "Transaction",
+                "name": "IVold::46-46",
+                "possIdx": 0,
+                "varIdx": 0,
+                "varName": "_aidl_status",
+                "varType": "class android::binder::Status"
+            },
+            {
+                "filename": "BnVold.json",
+                "type": "Transaction",
+                "name": "IVold::47-47",
+                "possIdx": 0,
+                "varIdx": 0,
+                "varName": "_aidl_status",
+                "varType": "class android::binder::Status"
+            },
+            {
+                "filename": "BnVold.json",
+                "type": "Transaction",
+                "name": "IVold::48-48",
+                "possIdx": 0,
+                "varIdx": 0,
+                "varName": "_aidl_status",
+                "varType": "class android::binder::Status"
+            },
+            {
+                "filename": "BnVold.json",
+                "type": "Transaction",
+                "name": "IVold::49-49",
+                "possIdx": 0,
+                "varIdx": 0,
+                "varName": "_aidl_status",
+                "varType": "class android::binder::Status"
+            },
+            {
+                "filename": "BnVold.json",
+                "type": "Transaction",
+                "name": "IVold::50-50",
+                "possIdx": 0,
+                "varIdx": 0,
+                "varName": "_aidl_status",
+                "varType": "class android::binder::Status"
+            },
+            {
+                "filename": "BnVold.json",
+                "type": "Transaction",
+                "name": "IVold::51-51",
+                "possIdx": 0,
+                "varIdx": 0,
+                "varName": "_aidl_status",
+                "varType": "class android::binder::Status"
+            },
+            {
+                "filename": "BnAppOpsService.json",
+                "type": "Transaction",
+                "name": "IAppOpsService::1-1",
+                "possIdx": 1,
+                "varIdx": 0,
+                "varName": "implicit_5",
+                "varType": "class android::binder::Status"
+            },
+            {
+                "filename": "BnAppOpsService.json",
+                "type": "Transaction",
+                "name": "IAppOpsService::2-2",
+                "possIdx": 1,
+                "varIdx": 0,
+                "varName": "implicit_5",
+                "varType": "class android::binder::Status"
+            },
+            {
+                "filename": "BnAppOpsService.json",
+                "type": "Transaction",
+                "name": "IAppOpsService::3-3",
+                "possIdx": 1,
+                "varIdx": 0,
+                "varName": "implicit_11",
+                "varType": "class android::binder::Status"
+            },
+            {
+                "filename": "BnAppOpsService.json",
+                "type": "Transaction",
+                "name": "IAppOpsService::4-4",
+                "possIdx": 1,
+                "varIdx": 0,
+                "varName": "implicit_8",
+                "varType": "class android::binder::Status"
+            },
+            {
+                "filename": "BnAppOpsService.json",
+                "type": "Transaction",
+                "name": "IAppOpsService::5-5",
+                "possIdx": 1,
+                "varIdx": 0,
+                "varName": "implicit_5",
+                "varType": "class android::binder::Status"
+            },
+            {
+                "filename": "BnAppOpsService.json",
+                "type": "Transaction",
+                "name": "IAppOpsService::6-6",
+                "possIdx": 1,
+                "varIdx": 0,
+                "varName": "implicit_3",
+                "varType": "class android::binder::Status"
+            },
+            {
+                "filename": "BnAppOpsService.json",
+                "type": "Transaction",
+                "name": "IAppOpsService::7-7",
+                "possIdx": 1,
+                "varIdx": 0,
+                "varName": "implicit_5",
+                "varType": "class android::binder::Status"
+            },
+            {
+                "filename": "BnAppOpsService.json",
+                "type": "Transaction",
+                "name": "IAppOpsService::8-8",
+                "possIdx": 1,
+                "varIdx": 0,
+                "varName": "implicit_3",
+                "varType": "class android::binder::Status"
+            },
+            {
+                "filename": "BnMediaExtractorUpdateService.json",
+                "type": "Transaction",
+                "name": "IMediaExtractorUpdateService::1-1",
+                "possIdx": 0,
+                "varIdx": 0,
+                "varName": "_aidl_status",
+                "varType": "class android::binder::Status"
+            },
+            {
+                "filename": "BnKeyAttestationApplicationIdProvider.json",
+                "type": "Transaction",
+                "name": "IKeyAttestationApplicationIdProvider::1-1",
+                "possIdx": 0,
+                "varIdx": 0,
+                "varName": "_aidl_status",
+                "varType": "class android::binder::Status"
+            },
+            {
+                "filename": "BnGateKeeperService.json",
+                "type": "Transaction",
+                "name": "IGateKeeperService::1-1",
+                "possIdx": 1,
+                "varIdx": 0,
+                "varName": "implicit_9",
+                "varType": "class android::binder::Status"
+            },
+            {
+                "filename": "BnGateKeeperService.json",
+                "type": "Transaction",
+                "name": "IGateKeeperService::2-2",
+                "possIdx": 1,
+                "varIdx": 0,
+                "varName": "implicit_7",
+                "varType": "class android::binder::Status"
+            },
+            {
+                "filename": "BnGateKeeperService.json",
+                "type": "Transaction",
+                "name": "IGateKeeperService::3-3",
+                "possIdx": 1,
+                "varIdx": 0,
+                "varName": "implicit_8",
+                "varType": "class android::binder::Status"
+            },
+            {
+                "filename": "BnGateKeeperService.json",
+                "type": "Transaction",
+                "name": "IGateKeeperService::4-4",
+                "possIdx": 1,
+                "varIdx": 0,
+                "varName": "implicit_3",
+                "varType": "class android::binder::Status"
+            },
+            {
+                "filename": "BnGateKeeperService.json",
+                "type": "Transaction",
+                "name": "IGateKeeperService::5-5",
+                "possIdx": 1,
+                "varIdx": 0,
+                "varName": "implicit_3",
+                "varType": "class android::binder::Status"
+            },
+            {
+                "filename": "BnGateKeeperService.json",
+                "type": "Transaction",
+                "name": "IGateKeeperService::6-6",
+                "possIdx": 1,
+                "varIdx": 0,
+                "varName": "implicit_2",
+                "varType": "class android::binder::Status"
+            },
+            {
+                "filename": "BnKeystoreService.json",
+                "type": "Transaction",
+                "name": "IKeystoreService::1-1",
+                "possIdx": 0,
+                "varIdx": 0,
+                "varName": "_aidl_status",
+                "varType": "class android::binder::Status"
+            },
+            {
+                "filename": "BnKeystoreService.json",
+                "type": "Transaction",
+                "name": "IKeystoreService::2-2",
+                "possIdx": 0,
+                "varIdx": 0,
+                "varName": "_aidl_status",
+                "varType": "class android::binder::Status"
+            },
+            {
+                "filename": "BnKeystoreService.json",
+                "type": "Transaction",
+                "name": "IKeystoreService::3-3",
+                "possIdx": 0,
+                "varIdx": 0,
+                "varName": "_aidl_status",
+                "varType": "class android::binder::Status"
+            },
+            {
+                "filename": "BnKeystoreService.json",
+                "type": "Transaction",
+                "name": "IKeystoreService::4-4",
+                "possIdx": 0,
+                "varIdx": 0,
+                "varName": "_aidl_status",
+                "varType": "class android::binder::Status"
+            },
+            {
+                "filename": "BnKeystoreService.json",
+                "type": "Transaction",
+                "name": "IKeystoreService::5-5",
+                "possIdx": 0,
+                "varIdx": 0,
+                "varName": "_aidl_status",
+                "varType": "class android::binder::Status"
+            },
+            {
+                "filename": "BnKeystoreService.json",
+                "type": "Transaction",
+                "name": "IKeystoreService::6-6",
+                "possIdx": 0,
+                "varIdx": 0,
+                "varName": "_aidl_status",
+                "varType": "class android::binder::Status"
+            },
+            {
+                "filename": "BnKeystoreService.json",
+                "type": "Transaction",
+                "name": "IKeystoreService::7-7",
+                "possIdx": 0,
+                "varIdx": 0,
+                "varName": "_aidl_status",
+                "varType": "class android::binder::Status"
+            },
+            {
+                "filename": "BnKeystoreService.json",
+                "type": "Transaction",
+                "name": "IKeystoreService::8-8",
+                "possIdx": 0,
+                "varIdx": 0,
+                "varName": "_aidl_status",
+                "varType": "class android::binder::Status"
+            },
+            {
+                "filename": "BnKeystoreService.json",
+                "type": "Transaction",
+                "name": "IKeystoreService::9-9",
+                "possIdx": 0,
+                "varIdx": 0,
+                "varName": "_aidl_status",
+                "varType": "class android::binder::Status"
+            },
+            {
+                "filename": "BnKeystoreService.json",
+                "type": "Transaction",
+                "name": "IKeystoreService::10-10",
+                "possIdx": 0,
+                "varIdx": 0,
+                "varName": "_aidl_status",
+                "varType": "class android::binder::Status"
+            },
+            {
+                "filename": "BnKeystoreService.json",
+                "type": "Transaction",
+                "name": "IKeystoreService::11-11",
+                "possIdx": 0,
+                "varIdx": 0,
+                "varName": "_aidl_status",
+                "varType": "class android::binder::Status"
+            },
+            {
+                "filename": "BnKeystoreService.json",
+                "type": "Transaction",
+                "name": "IKeystoreService::12-12",
+                "possIdx": 0,
+                "varIdx": 0,
+                "varName": "_aidl_status",
+                "varType": "class android::binder::Status"
+            },
+            {
+                "filename": "BnKeystoreService.json",
+                "type": "Transaction",
+                "name": "IKeystoreService::13-13",
+                "possIdx": 0,
+                "varIdx": 0,
+                "varName": "_aidl_status",
+                "varType": "class android::binder::Status"
+            },
+            {
+                "filename": "BnKeystoreService.json",
+                "type": "Transaction",
+                "name": "IKeystoreService::14-14",
+                "possIdx": 0,
+                "varIdx": 0,
+                "varName": "_aidl_status",
+                "varType": "class android::binder::Status"
+            },
+            {
+                "filename": "BnKeystoreService.json",
+                "type": "Transaction",
+                "name": "IKeystoreService::15-15",
+                "possIdx": 0,
+                "varIdx": 0,
+                "varName": "_aidl_status",
+                "varType": "class android::binder::Status"
+            },
+            {
+                "filename": "BnKeystoreService.json",
+                "type": "Transaction",
+                "name": "IKeystoreService::16-16",
+                "possIdx": 0,
+                "varIdx": 0,
+                "varName": "_aidl_status",
+                "varType": "class android::binder::Status"
+            },
+            {
+                "filename": "BnKeystoreService.json",
+                "type": "Transaction",
+                "name": "IKeystoreService::17-17",
+                "possIdx": 0,
+                "varIdx": 0,
+                "varName": "_aidl_status",
+                "varType": "class android::binder::Status"
+            },
+            {
+                "filename": "BnKeystoreService.json",
+                "type": "Transaction",
+                "name": "IKeystoreService::18-18",
+                "possIdx": 0,
+                "varIdx": 0,
+                "varName": "_aidl_status",
+                "varType": "class android::binder::Status"
+            },
+            {
+                "filename": "BnKeystoreService.json",
+                "type": "Transaction",
+                "name": "IKeystoreService::19-19",
+                "possIdx": 0,
+                "varIdx": 0,
+                "varName": "_aidl_status",
+                "varType": "class android::binder::Status"
+            },
+            {
+                "filename": "BnKeystoreService.json",
+                "type": "Transaction",
+                "name": "IKeystoreService::20-20",
+                "possIdx": 0,
+                "varIdx": 0,
+                "varName": "_aidl_status",
+                "varType": "class android::binder::Status"
+            },
+            {
+                "filename": "BnKeystoreService.json",
+                "type": "Transaction",
+                "name": "IKeystoreService::21-21",
+                "possIdx": 0,
+                "varIdx": 0,
+                "varName": "_aidl_status",
+                "varType": "class android::binder::Status"
+            },
+            {
+                "filename": "BnKeystoreService.json",
+                "type": "Transaction",
+                "name": "IKeystoreService::22-22",
+                "possIdx": 0,
+                "varIdx": 0,
+                "varName": "_aidl_status",
+                "varType": "class android::binder::Status"
+            },
+            {
+                "filename": "BnKeystoreService.json",
+                "type": "Transaction",
+                "name": "IKeystoreService::23-23",
+                "possIdx": 0,
+                "varIdx": 0,
+                "varName": "_aidl_status",
+                "varType": "class android::binder::Status"
+            },
+            {
+                "filename": "BnKeystoreService.json",
+                "type": "Transaction",
+                "name": "IKeystoreService::24-24",
+                "possIdx": 0,
+                "varIdx": 0,
+                "varName": "_aidl_status",
+                "varType": "class android::binder::Status"
+            },
+            {
+                "filename": "BnKeystoreService.json",
+                "type": "Transaction",
+                "name": "IKeystoreService::25-25",
+                "possIdx": 0,
+                "varIdx": 0,
+                "varName": "_aidl_status",
+                "varType": "class android::binder::Status"
+            },
+            {
+                "filename": "BnKeystoreService.json",
+                "type": "Transaction",
+                "name": "IKeystoreService::26-26",
+                "possIdx": 0,
+                "varIdx": 0,
+                "varName": "_aidl_status",
+                "varType": "class android::binder::Status"
+            },
+            {
+                "filename": "BnKeystoreService.json",
+                "type": "Transaction",
+                "name": "IKeystoreService::27-27",
+                "possIdx": 0,
+                "varIdx": 0,
+                "varName": "_aidl_status",
+                "varType": "class android::binder::Status"
+            },
+            {
+                "filename": "BnKeystoreService.json",
+                "type": "Transaction",
+                "name": "IKeystoreService::28-28",
+                "possIdx": 0,
+                "varIdx": 0,
+                "varName": "_aidl_status",
+                "varType": "class android::binder::Status"
+            },
+            {
+                "filename": "BnKeystoreService.json",
+                "type": "Transaction",
+                "name": "IKeystoreService::29-29",
+                "possIdx": 0,
+                "varIdx": 0,
+                "varName": "_aidl_status",
+                "varType": "class android::binder::Status"
+            },
+            {
+                "filename": "BnKeystoreService.json",
+                "type": "Transaction",
+                "name": "IKeystoreService::30-30",
+                "possIdx": 0,
+                "varIdx": 0,
+                "varName": "_aidl_status",
+                "varType": "class android::binder::Status"
+            },
+            {
+                "filename": "BnKeystoreService.json",
+                "type": "Transaction",
+                "name": "IKeystoreService::31-31",
+                "possIdx": 0,
+                "varIdx": 0,
+                "varName": "_aidl_status",
+                "varType": "class android::binder::Status"
+            },
+            {
+                "filename": "BnKeystoreService.json",
+                "type": "Transaction",
+                "name": "IKeystoreService::32-32",
+                "possIdx": 0,
+                "varIdx": 0,
+                "varName": "_aidl_status",
+                "varType": "class android::binder::Status"
+            },
+            {
+                "filename": "BnKeystoreService.json",
+                "type": "Transaction",
+                "name": "IKeystoreService::33-33",
+                "possIdx": 0,
+                "varIdx": 0,
+                "varName": "_aidl_status",
+                "varType": "class android::binder::Status"
+            },
+            {
+                "filename": "BnKeystoreService.json",
+                "type": "Transaction",
+                "name": "IKeystoreService::34-34",
+                "possIdx": 0,
+                "varIdx": 0,
+                "varName": "_aidl_status",
+                "varType": "class android::binder::Status"
+            },
+            {
+                "filename": "BnKeystoreService.json",
+                "type": "Transaction",
+                "name": "IKeystoreService::35-35",
+                "possIdx": 0,
+                "varIdx": 0,
+                "varName": "_aidl_status",
+                "varType": "class android::binder::Status"
+            },
+            {
+                "filename": "BnKeystoreService.json",
+                "type": "Transaction",
+                "name": "IKeystoreService::36-36",
+                "possIdx": 0,
+                "varIdx": 0,
+                "varName": "_aidl_status",
+                "varType": "class android::binder::Status"
+            },
+            {
+                "filename": "BnKeystoreService.json",
+                "type": "Transaction",
+                "name": "IKeystoreService::37-37",
+                "possIdx": 0,
+                "varIdx": 0,
+                "varName": "_aidl_status",
+                "varType": "class android::binder::Status"
+            },
+            {
+                "filename": "BnKeystoreService.json",
+                "type": "Transaction",
+                "name": "IKeystoreService::38-38",
+                "possIdx": 0,
+                "varIdx": 0,
+                "varName": "_aidl_status",
+                "varType": "class android::binder::Status"
+            },
+            {
+                "filename": "BnKeystoreService.json",
+                "type": "Transaction",
+                "name": "IKeystoreService::39-39",
+                "possIdx": 0,
+                "varIdx": 0,
+                "varName": "_aidl_status",
+                "varType": "class android::binder::Status"
+            },
+            {
+                "filename": "BnKeystoreService.json",
+                "type": "Transaction",
+                "name": "IKeystoreService::40-40",
+                "possIdx": 0,
+                "varIdx": 0,
+                "varName": "_aidl_status",
+                "varType": "class android::binder::Status"
+            },
+            {
+                "filename": "BnKeystoreService.json",
+                "type": "Transaction",
+                "name": "IKeystoreService::41-41",
+                "possIdx": 0,
+                "varIdx": 0,
+                "varName": "_aidl_status",
+                "varType": "class android::binder::Status"
+            },
+            {
+                "filename": "BnKeystoreService.json",
+                "type": "Transaction",
+                "name": "IKeystoreService::42-42",
+                "possIdx": 0,
+                "varIdx": 0,
+                "varName": "_aidl_status",
+                "varType": "class android::binder::Status"
+            },
+            {
+                "filename": "BnInstalld.json",
+                "type": "Transaction",
+                "name": "IInstalld::1-1",
+                "possIdx": 0,
+                "varIdx": 0,
+                "varName": "_aidl_status",
+                "varType": "class android::binder::Status"
+            },
+            {
+                "filename": "BnInstalld.json",
+                "type": "Transaction",
+                "name": "IInstalld::2-2",
+                "possIdx": 0,
+                "varIdx": 0,
+                "varName": "_aidl_status",
+                "varType": "class android::binder::Status"
+            },
+            {
+                "filename": "BnInstalld.json",
+                "type": "Transaction",
+                "name": "IInstalld::3-3",
+                "possIdx": 0,
+                "varIdx": 0,
+                "varName": "_aidl_status",
+                "varType": "class android::binder::Status"
+            },
+            {
+                "filename": "BnInstalld.json",
+                "type": "Transaction",
+                "name": "IInstalld::4-4",
+                "possIdx": 0,
+                "varIdx": 0,
+                "varName": "_aidl_status",
+                "varType": "class android::binder::Status"
+            },
+            {
+                "filename": "BnInstalld.json",
+                "type": "Transaction",
+                "name": "IInstalld::5-5",
+                "possIdx": 0,
+                "varIdx": 0,
+                "varName": "_aidl_status",
+                "varType": "class android::binder::Status"
+            },
+            {
+                "filename": "BnInstalld.json",
+                "type": "Transaction",
+                "name": "IInstalld::6-6",
+                "possIdx": 0,
+                "varIdx": 0,
+                "varName": "_aidl_status",
+                "varType": "class android::binder::Status"
+            },
+            {
+                "filename": "BnInstalld.json",
+                "type": "Transaction",
+                "name": "IInstalld::7-7",
+                "possIdx": 0,
+                "varIdx": 0,
+                "varName": "_aidl_status",
+                "varType": "class android::binder::Status"
+            },
+            {
+                "filename": "BnInstalld.json",
+                "type": "Transaction",
+                "name": "IInstalld::8-8",
+                "possIdx": 0,
+                "varIdx": 0,
+                "varName": "_aidl_status",
+                "varType": "class android::binder::Status"
+            },
+            {
+                "filename": "BnInstalld.json",
+                "type": "Transaction",
+                "name": "IInstalld::9-9",
+                "possIdx": 0,
+                "varIdx": 0,
+                "varName": "_aidl_status",
+                "varType": "class android::binder::Status"
+            },
+            {
+                "filename": "BnInstalld.json",
+                "type": "Transaction",
+                "name": "IInstalld::10-10",
+                "possIdx": 0,
+                "varIdx": 0,
+                "varName": "_aidl_status",
+                "varType": "class android::binder::Status"
+            },
+            {
+                "filename": "BnInstalld.json",
+                "type": "Transaction",
+                "name": "IInstalld::11-11",
+                "possIdx": 0,
+                "varIdx": 0,
+                "varName": "_aidl_status",
+                "varType": "class android::binder::Status"
+            },
+            {
+                "filename": "BnInstalld.json",
+                "type": "Transaction",
+                "name": "IInstalld::12-12",
+                "possIdx": 0,
+                "varIdx": 0,
+                "varName": "_aidl_status",
+                "varType": "class android::binder::Status"
+            },
+            {
+                "filename": "BnInstalld.json",
+                "type": "Transaction",
+                "name": "IInstalld::13-13",
+                "possIdx": 0,
+                "varIdx": 0,
+                "varName": "_aidl_status",
+                "varType": "class android::binder::Status"
+            },
+            {
+                "filename": "BnInstalld.json",
+                "type": "Transaction",
+                "name": "IInstalld::14-14",
+                "possIdx": 0,
+                "varIdx": 0,
+                "varName": "_aidl_status",
+                "varType": "class android::binder::Status"
+            },
+            {
+                "filename": "BnInstalld.json",
+                "type": "Transaction",
+                "name": "IInstalld::15-15",
+                "possIdx": 0,
+                "varIdx": 0,
+                "varName": "_aidl_status",
+                "varType": "class android::binder::Status"
+            },
+            {
+                "filename": "BnInstalld.json",
+                "type": "Transaction",
+                "name": "IInstalld::16-16",
+                "possIdx": 0,
+                "varIdx": 0,
+                "varName": "_aidl_status",
+                "varType": "class android::binder::Status"
+            },
+            {
+                "filename": "BnInstalld.json",
+                "type": "Transaction",
+                "name": "IInstalld::17-17",
+                "possIdx": 0,
+                "varIdx": 0,
+                "varName": "_aidl_status",
+                "varType": "class android::binder::Status"
+            },
+            {
+                "filename": "BnInstalld.json",
+                "type": "Transaction",
+                "name": "IInstalld::18-18",
+                "possIdx": 0,
+                "varIdx": 0,
+                "varName": "_aidl_status",
+                "varType": "class android::binder::Status"
+            },
+            {
+                "filename": "BnInstalld.json",
+                "type": "Transaction",
+                "name": "IInstalld::19-19",
+                "possIdx": 0,
+                "varIdx": 0,
+                "varName": "_aidl_status",
+                "varType": "class android::binder::Status"
+            },
+            {
+                "filename": "BnInstalld.json",
+                "type": "Transaction",
+                "name": "IInstalld::20-20",
+                "possIdx": 0,
+                "varIdx": 0,
+                "varName": "_aidl_status",
+                "varType": "class android::binder::Status"
+            },
+            {
+                "filename": "BnInstalld.json",
+                "type": "Transaction",
+                "name": "IInstalld::21-21",
+                "possIdx": 0,
+                "varIdx": 0,
+                "varName": "_aidl_status",
+                "varType": "class android::binder::Status"
+            },
+            {
+                "filename": "BnInstalld.json",
+                "type": "Transaction",
+                "name": "IInstalld::22-22",
+                "possIdx": 0,
+                "varIdx": 0,
+                "varName": "_aidl_status",
+                "varType": "class android::binder::Status"
+            },
+            {
+                "filename": "BnInstalld.json",
+                "type": "Transaction",
+                "name": "IInstalld::23-23",
+                "possIdx": 0,
+                "varIdx": 0,
+                "varName": "_aidl_status",
+                "varType": "class android::binder::Status"
+            },
+            {
+                "filename": "BnInstalld.json",
+                "type": "Transaction",
+                "name": "IInstalld::24-24",
+                "possIdx": 0,
+                "varIdx": 0,
+                "varName": "_aidl_status",
+                "varType": "class android::binder::Status"
+            },
+            {
+                "filename": "BnInstalld.json",
+                "type": "Transaction",
+                "name": "IInstalld::25-25",
+                "possIdx": 0,
+                "varIdx": 0,
+                "varName": "_aidl_status",
+                "varType": "class android::binder::Status"
+            },
+            {
+                "filename": "BnInstalld.json",
+                "type": "Transaction",
+                "name": "IInstalld::26-26",
+                "possIdx": 0,
+                "varIdx": 0,
+                "varName": "_aidl_status",
+                "varType": "class android::binder::Status"
+            },
+            {
+                "filename": "BnInstalld.json",
+                "type": "Transaction",
+                "name": "IInstalld::27-27",
+                "possIdx": 0,
+                "varIdx": 0,
+                "varName": "_aidl_status",
+                "varType": "class android::binder::Status"
+            },
+            {
+                "filename": "BnInstalld.json",
+                "type": "Transaction",
+                "name": "IInstalld::28-28",
+                "possIdx": 0,
+                "varIdx": 0,
+                "varName": "_aidl_status",
+                "varType": "class android::binder::Status"
+            },
+            {
+                "filename": "BnInstalld.json",
+                "type": "Transaction",
+                "name": "IInstalld::29-29",
+                "possIdx": 0,
+                "varIdx": 0,
+                "varName": "_aidl_status",
+                "varType": "class android::binder::Status"
+            },
+            {
+                "filename": "BnInstalld.json",
+                "type": "Transaction",
+                "name": "IInstalld::30-30",
+                "possIdx": 0,
+                "varIdx": 0,
+                "varName": "_aidl_status",
+                "varType": "class android::binder::Status"
+            },
+            {
+                "filename": "BnInstalld.json",
+                "type": "Transaction",
+                "name": "IInstalld::31-31",
+                "possIdx": 0,
+                "varIdx": 0,
+                "varName": "_aidl_status",
+                "varType": "class android::binder::Status"
+            },
+            {
+                "filename": "BnInstalld.json",
+                "type": "Transaction",
+                "name": "IInstalld::32-32",
+                "possIdx": 0,
+                "varIdx": 0,
+                "varName": "_aidl_status",
+                "varType": "class android::binder::Status"
+            },
+            {
+                "filename": "BnInstalld.json",
+                "type": "Transaction",
+                "name": "IInstalld::33-33",
+                "possIdx": 0,
+                "varIdx": 0,
+                "varName": "_aidl_status",
+                "varType": "class android::binder::Status"
+            },
+            {
+                "filename": "BnInstalld.json",
+                "type": "Transaction",
+                "name": "IInstalld::34-34",
+                "possIdx": 0,
+                "varIdx": 0,
+                "varName": "_aidl_status",
+                "varType": "class android::binder::Status"
+            },
+            {
+                "filename": "BnInstalld.json",
+                "type": "Transaction",
+                "name": "IInstalld::35-35",
+                "possIdx": 0,
+                "varIdx": 0,
+                "varName": "_aidl_status",
+                "varType": "class android::binder::Status"
+            },
+            {
+                "filename": "BnInstalld.json",
+                "type": "Transaction",
+                "name": "IInstalld::36-36",
+                "possIdx": 0,
+                "varIdx": 0,
+                "varName": "_aidl_status",
+                "varType": "class android::binder::Status"
+            },
+            {
+                "filename": "BnInstalld.json",
+                "type": "Transaction",
+                "name": "IInstalld::37-37",
+                "possIdx": 0,
+                "varIdx": 0,
+                "varName": "_aidl_status",
+                "varType": "class android::binder::Status"
+            },
+            {
+                "filename": "BnInstalld.json",
+                "type": "Transaction",
+                "name": "IInstalld::38-38",
+                "possIdx": 0,
+                "varIdx": 0,
+                "varName": "_aidl_status",
+                "varType": "class android::binder::Status"
+            },
+            {
+                "filename": "BnInstalld.json",
+                "type": "Transaction",
+                "name": "IInstalld::39-39",
+                "possIdx": 0,
+                "varIdx": 0,
+                "varName": "_aidl_status",
+                "varType": "class android::binder::Status"
+            },
+            {
+                "filename": "BnCamera.json",
+                "type": "Transaction",
+                "name": "ICamera::1-1",
+                "possIdx": 1,
+                "varIdx": 0,
+                "varName": "implicit_2",
+                "varType": "class android::binder::Status"
+            },
+            {
+                "filename": "BnWificond.json",
+                "type": "Transaction",
+                "name": "IWificond::1-1",
+                "possIdx": 0,
+                "varIdx": 0,
+                "varName": "_aidl_status",
+                "varType": "class android::binder::Status"
+            },
+            {
+                "filename": "BnWificond.json",
+                "type": "Transaction",
+                "name": "IWificond::2-2",
+                "possIdx": 0,
+                "varIdx": 0,
+                "varName": "_aidl_status",
+                "varType": "class android::binder::Status"
+            },
+            {
+                "filename": "BnWificond.json",
+                "type": "Transaction",
+                "name": "IWificond::3-3",
+                "possIdx": 0,
+                "varIdx": 0,
+                "varName": "_aidl_status",
+                "varType": "class android::binder::Status"
+            },
+            {
+                "filename": "BnWificond.json",
+                "type": "Transaction",
+                "name": "IWificond::4-4",
+                "possIdx": 0,
+                "varIdx": 0,
+                "varName": "_aidl_status",
+                "varType": "class android::binder::Status"
+            },
+            {
+                "filename": "BnWificond.json",
+                "type": "Transaction",
+                "name": "IWificond::5-5",
+                "possIdx": 0,
+                "varIdx": 0,
+                "varName": "_aidl_status",
+                "varType": "class android::binder::Status"
+            },
+            {
+                "filename": "BnWificond.json",
+                "type": "Transaction",
+                "name": "IWificond::6-6",
+                "possIdx": 0,
+                "varIdx": 0,
+                "varName": "_aidl_status",
+                "varType": "class android::binder::Status"
+            },
+            {
+                "filename": "BnWificond.json",
+                "type": "Transaction",
+                "name": "IWificond::7-7",
+                "possIdx": 0,
+                "varIdx": 0,
+                "varName": "_aidl_status",
+                "varType": "class android::binder::Status"
+            },
+            {
+                "filename": "BnWificond.json",
+                "type": "Transaction",
+                "name": "IWificond::8-8",
+                "possIdx": 0,
+                "varIdx": 0,
+                "varName": "_aidl_status",
+                "varType": "class android::binder::Status"
+            },
+            {
+                "filename": "BnWificond.json",
+                "type": "Transaction",
+                "name": "IWificond::9-9",
+                "possIdx": 0,
+                "varIdx": 0,
+                "varName": "_aidl_status",
+                "varType": "class android::binder::Status"
+            },
+            {
+                "filename": "BnWificond.json",
+                "type": "Transaction",
+                "name": "IWificond::10-10",
+                "possIdx": 0,
+                "varIdx": 0,
+                "varName": "_aidl_status",
+                "varType": "class android::binder::Status"
+            },
+            {
+                "filename": "BnWificond.json",
+                "type": "Transaction",
+                "name": "IWificond::11-11",
+                "possIdx": 0,
+                "varIdx": 0,
+                "varName": "_aidl_status",
+                "varType": "class android::binder::Status"
+            },
+            {
+                "filename": "BnWificond.json",
+                "type": "Transaction",
+                "name": "IWificond::12-12",
+                "possIdx": 0,
+                "varIdx": 0,
+                "varName": "_aidl_status",
+                "varType": "class android::binder::Status"
+            },
+            {
+                "filename": "BnStatsCompanionService.json",
+                "type": "Transaction",
+                "name": "IStatsCompanionService::8-8",
+                "possIdx": 0,
+                "varIdx": 0,
+                "varName": "_aidl_status",
+                "varType": "class android::binder::Status"
+            },
+            {
+                "filename": "BnPackageManagerNative.json",
+                "type": "Transaction",
+                "name": "IPackageManagerNative::1-1",
+                "possIdx": 0,
+                "varIdx": 0,
+                "varName": "_aidl_status",
+                "varType": "class android::binder::Status"
+            },
+            {
+                "filename": "BnPackageManagerNative.json",
+                "type": "Transaction",
+                "name": "IPackageManagerNative::2-2",
+                "possIdx": 0,
+                "varIdx": 0,
+                "varName": "_aidl_status",
+                "varType": "class android::binder::Status"
+            },
+            {
+                "filename": "BnPackageManagerNative.json",
+                "type": "Transaction",
+                "name": "IPackageManagerNative::3-3",
+                "possIdx": 0,
+                "varIdx": 0,
+                "varName": "_aidl_status",
+                "varType": "class android::binder::Status"
+            },
+            {
+                "filename": "BnPermissionController.json",
+                "type": "Transaction",
+                "name": "IPermissionController::1-1",
+                "possIdx": 1,
+                "varIdx": 0,
+                "varName": "implicit_5",
+                "varType": "class android::binder::Status"
+            },
+            {
+                "filename": "BnPermissionController.json",
+                "type": "Transaction",
+                "name": "IPermissionController::2-2",
+                "possIdx": 1,
+                "varIdx": 0,
+                "varName": "implicit_5",
+                "varType": "class android::binder::Status"
+            },
+            {
+                "filename": "BnPermissionController.json",
+                "type": "Transaction",
+                "name": "IPermissionController::3-3",
+                "possIdx": 1,
+                "varIdx": 0,
+                "varName": "implicit_3",
+                "varType": "class android::binder::Status"
+            },
+            {
+                "filename": "BnPermissionController.json",
+                "type": "Transaction",
+                "name": "IPermissionController::4-4",
+                "possIdx": 1,
+                "varIdx": 0,
+                "varName": "implicit_3",
+                "varType": "class android::binder::Status"
+            },
+            {
+                "filename": "BnPermissionController.json",
+                "type": "Transaction",
+                "name": "IPermissionController::5-5",
+                "possIdx": 1,
+                "varIdx": 0,
+                "varName": "implicit_4",
+                "varType": "class android::binder::Status"
+            },
+            {
+                "filename": "BnWifiScannerImpl.json",
+                "type": "Transaction",
+                "name": "IWifiScannerImpl::1-1",
+                "possIdx": 0,
+                "varIdx": 0,
+                "varName": "_aidl_status",
+                "varType": "class android::binder::Status"
+            },
+            {
+                "filename": "BnWifiScannerImpl.json",
+                "type": "Transaction",
+                "name": "IWifiScannerImpl::2-2",
+                "possIdx": 0,
+                "varIdx": 0,
+                "varName": "_aidl_status",
+                "varType": "class android::binder::Status"
+            },
+            {
+                "filename": "BnWifiScannerImpl.json",
+                "type": "Transaction",
+                "name": "IWifiScannerImpl::3-3",
+                "possIdx": 0,
+                "varIdx": 0,
+                "varName": "_aidl_status",
+                "varType": "class android::binder::Status"
+            },
+            {
+                "filename": "BnWifiScannerImpl.json",
+                "type": "Transaction",
+                "name": "IWifiScannerImpl::8-8",
+                "possIdx": 0,
+                "varIdx": 0,
+                "varName": "_aidl_status",
+                "varType": "class android::binder::Status"
+            },
+            {
+                "filename": "BnWifiScannerImpl.json",
+                "type": "Transaction",
+                "name": "IWifiScannerImpl::9-9",
+                "possIdx": 0,
+                "varIdx": 0,
+                "varName": "_aidl_status",
+                "varType": "class android::binder::Status"
+            },
+            {
+                "filename": "BnWifiScannerImpl.json",
+                "type": "Transaction",
+                "name": "IWifiScannerImpl::10-10",
+                "possIdx": 0,
+                "varIdx": 0,
+                "varName": "_aidl_status",
+                "varType": "class android::binder::Status"
+            },
+            {
+                "filename": "BnAudioRecord.json",
+                "type": "Transaction",
+                "name": "IAudioRecord::1-1",
+                "possIdx": 0,
+                "varIdx": 0,
+                "varName": "_aidl_status",
+                "varType": "class android::binder::Status"
+            },
+            {
+                "filename": "BnAudioRecord.json",
+                "type": "Transaction",
+                "name": "IAudioRecord::2-2",
+                "possIdx": 0,
+                "varIdx": 0,
+                "varName": "_aidl_status",
+                "varType": "class android::binder::Status"
+            },
+            {
+                "filename": "BnAudioRecord.json",
+                "type": "Transaction",
+                "name": "IAudioRecord::3-3",
+                "possIdx": 0,
+                "varIdx": 0,
+                "varName": "_aidl_status",
+                "varType": "class android::binder::Status"
+            },
+            {
+                "filename": "BnStoraged.json",
+                "type": "Transaction",
+                "name": "IStoraged::1-1",
+                "possIdx": 0,
+                "varIdx": 0,
+                "varName": "_aidl_status",
+                "varType": "class android::binder::Status"
+            },
+            {
+                "filename": "BnStoraged.json",
+                "type": "Transaction",
+                "name": "IStoraged::2-2",
+                "possIdx": 0,
+                "varIdx": 0,
+                "varName": "_aidl_status",
+                "varType": "class android::binder::Status"
+            },
+            {
+                "filename": "BnStoraged.json",
+                "type": "Transaction",
+                "name": "IStoraged::3-3",
+                "possIdx": 0,
+                "varIdx": 0,
+                "varName": "_aidl_status",
+                "varType": "class android::binder::Status"
+            },
+            {
+                "filename": "BnIncidentManager.json",
+                "type": "Transaction",
+                "name": "IIncidentManager::1-1",
+                "possIdx": 0,
+                "varIdx": 0,
+                "varName": "_aidl_status",
+                "varType": "class android::binder::Status"
+            },
+            {
+                "filename": "BnIncidentManager.json",
+                "type": "Transaction",
+                "name": "IIncidentManager::2-2",
+                "possIdx": 0,
+                "varIdx": 0,
+                "varName": "_aidl_status",
+                "varType": "class android::binder::Status"
+            },
+            {
+                "filename": "BnIncidentManager.json",
+                "type": "Transaction",
+                "name": "IIncidentManager::3-3",
+                "possIdx": 0,
+                "varIdx": 0,
+                "varName": "_aidl_status",
+                "varType": "class android::binder::Status"
+            },
+            {
+                "filename": "BnStatsManager.json",
+                "type": "Transaction",
+                "name": "IStatsManager::2-2",
+                "possIdx": 0,
+                "varIdx": 0,
+                "varName": "_aidl_status",
+                "varType": "class android::binder::Status"
+            },
+            {
+                "filename": "BnStatsManager.json",
+                "type": "Transaction",
+                "name": "IStatsManager::3-3",
+                "possIdx": 0,
+                "varIdx": 0,
+                "varName": "_aidl_status",
+                "varType": "class android::binder::Status"
+            },
+            {
+                "filename": "BnStatsManager.json",
+                "type": "Transaction",
+                "name": "IStatsManager::4-4",
+                "possIdx": 0,
+                "varIdx": 0,
+                "varName": "_aidl_status",
+                "varType": "class android::binder::Status"
+            },
+            {
+                "filename": "BnStatsManager.json",
+                "type": "Transaction",
+                "name": "IStatsManager::5-5",
+                "possIdx": 0,
+                "varIdx": 0,
+                "varName": "_aidl_status",
+                "varType": "class android::binder::Status"
+            },
+            {
+                "filename": "BnStatsManager.json",
+                "type": "Transaction",
+                "name": "IStatsManager::6-6",
+                "possIdx": 0,
+                "varIdx": 0,
+                "varName": "_aidl_status",
+                "varType": "class android::binder::Status"
+            },
+            {
+                "filename": "BnStatsManager.json",
+                "type": "Transaction",
+                "name": "IStatsManager::10-10",
+                "possIdx": 0,
+                "varIdx": 0,
+                "varName": "_aidl_status",
+                "varType": "class android::binder::Status"
+            },
+            {
+                "filename": "BnStatsManager.json",
+                "type": "Transaction",
+                "name": "IStatsManager::11-11",
+                "possIdx": 0,
+                "varIdx": 0,
+                "varName": "_aidl_status",
+                "varType": "class android::binder::Status"
+            },
+            {
+                "filename": "BnStatsManager.json",
+                "type": "Transaction",
+                "name": "IStatsManager::12-12",
+                "possIdx": 0,
+                "varIdx": 0,
+                "varName": "_aidl_status",
+                "varType": "class android::binder::Status"
+            },
+            {
+                "filename": "BnStatsManager.json",
+                "type": "Transaction",
+                "name": "IStatsManager::13-13",
+                "possIdx": 0,
+                "varIdx": 0,
+                "varName": "_aidl_status",
+                "varType": "class android::binder::Status"
+            },
+            {
+                "filename": "BnStatsManager.json",
+                "type": "Transaction",
+                "name": "IStatsManager::14-14",
+                "possIdx": 0,
+                "varIdx": 0,
+                "varName": "_aidl_status",
+                "varType": "class android::binder::Status"
+            },
+            {
+                "filename": "BnStatsManager.json",
+                "type": "Transaction",
+                "name": "IStatsManager::15-15",
+                "possIdx": 0,
+                "varIdx": 0,
+                "varName": "_aidl_status",
+                "varType": "class android::binder::Status"
+            },
+            {
+                "filename": "BnStatsManager.json",
+                "type": "Transaction",
+                "name": "IStatsManager::16-16",
+                "possIdx": 0,
+                "varIdx": 0,
+                "varName": "_aidl_status",
+                "varType": "class android::binder::Status"
+            },
+            {
+                "filename": "BnStatsManager.json",
+                "type": "Transaction",
+                "name": "IStatsManager::17-17",
+                "possIdx": 0,
+                "varIdx": 0,
+                "varName": "_aidl_status",
+                "varType": "class android::binder::Status"
+            },
+            {
+                "filename": "BnStatsManager.json",
+                "type": "Transaction",
+                "name": "IStatsManager::18-18",
+                "possIdx": 0,
+                "varIdx": 0,
+                "varName": "_aidl_status",
+                "varType": "class android::binder::Status"
+            },
+            {
+                "filename": "BnCameraDeviceUser.json",
+                "type": "Transaction",
+                "name": "ICameraDeviceUser::1-1",
+                "possIdx": 0,
+                "varIdx": 0,
+                "varName": "_aidl_status",
+                "varType": "class android::binder::Status"
+            },
+            {
+                "filename": "BnCameraDeviceUser.json",
+                "type": "Transaction",
+                "name": "ICameraDeviceUser::2-2",
+                "possIdx": 0,
+                "varIdx": 0,
+                "varName": "_aidl_status",
+                "varType": "class android::binder::Status"
+            },
+            {
+                "filename": "BnCameraDeviceUser.json",
+                "type": "Transaction",
+                "name": "ICameraDeviceUser::3-3",
+                "possIdx": 0,
+                "varIdx": 0,
+                "varName": "_aidl_status",
+                "varType": "class android::binder::Status"
+            },
+            {
+                "filename": "BnCameraDeviceUser.json",
+                "type": "Transaction",
+                "name": "ICameraDeviceUser::4-4",
+                "possIdx": 0,
+                "varIdx": 0,
+                "varName": "_aidl_status",
+                "varType": "class android::binder::Status"
+            },
+            {
+                "filename": "BnCameraDeviceUser.json",
+                "type": "Transaction",
+                "name": "ICameraDeviceUser::5-5",
+                "possIdx": 0,
+                "varIdx": 0,
+                "varName": "_aidl_status",
+                "varType": "class android::binder::Status"
+            },
+            {
+                "filename": "BnCameraDeviceUser.json",
+                "type": "Transaction",
+                "name": "ICameraDeviceUser::6-6",
+                "possIdx": 0,
+                "varIdx": 0,
+                "varName": "_aidl_status",
+                "varType": "class android::binder::Status"
+            },
+            {
+                "filename": "BnCameraDeviceUser.json",
+                "type": "Transaction",
+                "name": "ICameraDeviceUser::7-7",
+                "possIdx": 0,
+                "varIdx": 0,
+                "varName": "_aidl_status",
+                "varType": "class android::binder::Status"
+            },
+            {
+                "filename": "BnCameraDeviceUser.json",
+                "type": "Transaction",
+                "name": "ICameraDeviceUser::8-8",
+                "possIdx": 0,
+                "varIdx": 0,
+                "varName": "_aidl_status",
+                "varType": "class android::binder::Status"
+            },
+            {
+                "filename": "BnCameraDeviceUser.json",
+                "type": "Transaction",
+                "name": "ICameraDeviceUser::9-9",
+                "possIdx": 0,
+                "varIdx": 0,
+                "varName": "_aidl_status",
+                "varType": "class android::binder::Status"
+            },
+            {
+                "filename": "BnCameraDeviceUser.json",
+                "type": "Transaction",
+                "name": "ICameraDeviceUser::10-10",
+                "possIdx": 0,
+                "varIdx": 0,
+                "varName": "_aidl_status",
+                "varType": "class android::binder::Status"
+            },
+            {
+                "filename": "BnCameraDeviceUser.json",
+                "type": "Transaction",
+                "name": "ICameraDeviceUser::11-11",
+                "possIdx": 0,
+                "varIdx": 0,
+                "varName": "_aidl_status",
+                "varType": "class android::binder::Status"
+            },
+            {
+                "filename": "BnCameraDeviceUser.json",
+                "type": "Transaction",
+                "name": "ICameraDeviceUser::12-12",
+                "possIdx": 0,
+                "varIdx": 0,
+                "varName": "_aidl_status",
+                "varType": "class android::binder::Status"
+            },
+            {
+                "filename": "BnCameraDeviceUser.json",
+                "type": "Transaction",
+                "name": "ICameraDeviceUser::13-13",
+                "possIdx": 0,
+                "varIdx": 0,
+                "varName": "_aidl_status",
+                "varType": "class android::binder::Status"
+            },
+            {
+                "filename": "BnCameraDeviceUser.json",
+                "type": "Transaction",
+                "name": "ICameraDeviceUser::14-14",
+                "possIdx": 0,
+                "varIdx": 0,
+                "varName": "_aidl_status",
+                "varType": "class android::binder::Status"
+            },
+            {
+                "filename": "BnCameraDeviceUser.json",
+                "type": "Transaction",
+                "name": "ICameraDeviceUser::15-15",
+                "possIdx": 0,
+                "varIdx": 0,
+                "varName": "_aidl_status",
+                "varType": "class android::binder::Status"
+            },
+            {
+                "filename": "BnCameraDeviceUser.json",
+                "type": "Transaction",
+                "name": "ICameraDeviceUser::16-16",
+                "possIdx": 0,
+                "varIdx": 0,
+                "varName": "_aidl_status",
+                "varType": "class android::binder::Status"
+            },
+            {
+                "filename": "BnCameraDeviceUser.json",
+                "type": "Transaction",
+                "name": "ICameraDeviceUser::17-17",
+                "possIdx": 0,
+                "varIdx": 0,
+                "varName": "_aidl_status",
+                "varType": "class android::binder::Status"
+            },
+            {
+                "filename": "BnCameraDeviceUser.json",
+                "type": "Transaction",
+                "name": "ICameraDeviceUser::18-18",
+                "possIdx": 0,
+                "varIdx": 0,
+                "varName": "_aidl_status",
+                "varType": "class android::binder::Status"
+            },
+            {
+                "filename": "BnCameraDeviceUser.json",
+                "type": "Transaction",
+                "name": "ICameraDeviceUser::19-19",
+                "possIdx": 0,
+                "varIdx": 0,
+                "varName": "_aidl_status",
+                "varType": "class android::binder::Status"
+            },
+            {
+                "filename": "BnDropBoxManagerService.json",
+                "type": "Transaction",
+                "name": "IDropBoxManagerService::1-1",
+                "possIdx": 0,
+                "varIdx": 0,
+                "varName": "_aidl_status",
+                "varType": "class android::binder::Status"
+            },
+            {
+                "filename": "BnDropBoxManagerService.json",
+                "type": "Transaction",
+                "name": "IDropBoxManagerService::2-2",
+                "possIdx": 0,
+                "varIdx": 0,
+                "varName": "_aidl_status",
+                "varType": "class android::binder::Status"
+            },
+            {
+                "filename": "BnDropBoxManagerService.json",
+                "type": "Transaction",
+                "name": "IDropBoxManagerService::3-3",
+                "possIdx": 0,
+                "varIdx": 0,
+                "varName": "_aidl_status",
+                "varType": "class android::binder::Status"
+            },
+            {
+                "filename": "BnNetdEventListener.json",
+                "type": "Transaction",
+                "name": "INetdEventListener::1-1",
+                "possIdx": 0,
+                "varIdx": 0,
+                "varName": "_aidl_status",
+                "varType": "class android::binder::Status"
+            },
+            {
+                "filename": "BnNetdEventListener.json",
+                "type": "Transaction",
+                "name": "INetdEventListener::2-2",
+                "possIdx": 0,
+                "varIdx": 0,
+                "varName": "_aidl_status",
+                "varType": "class android::binder::Status"
+            },
+            {
+                "filename": "BnNetdEventListener.json",
+                "type": "Transaction",
+                "name": "INetdEventListener::3-3",
+                "possIdx": 0,
+                "varIdx": 0,
+                "varName": "_aidl_status",
+                "varType": "class android::binder::Status"
+            },
+            {
+                "filename": "BnNetdEventListener.json",
+                "type": "Transaction",
+                "name": "INetdEventListener::4-4",
+                "possIdx": 0,
+                "varIdx": 0,
+                "varName": "_aidl_status",
+                "varType": "class android::binder::Status"
+            },
+            {
+                "filename": "BnNetdEventListener.json",
+                "type": "Transaction",
+                "name": "INetdEventListener::5-5",
+                "possIdx": 0,
+                "varIdx": 0,
+                "varName": "_aidl_status",
+                "varType": "class android::binder::Status"
+            }
+        ],
+        "loop": [],
+        "possibility": [
+            {
+                "return": "mErrorCode",
+                "reply": [],
+                "data": [],
+                "id": 0
+            },
+            {
+                "return": "status",
+                "reply": [
+                    "mException"
+                ],
+                "data": [],
+                "id": 1
+            },
+            {
+                "return": "status",
+                "reply": [
+                    "mException"
+                ],
+                "data": [],
+                "id": 2
+            },
+            {
+                "return": "status",
+                "reply": [
+                    "mException",
+                    "mMessage",
+                    "implicit_3",
+                    "mErrorCode",
+                    "implicit_6"
+                ],
+                "data": [],
+                "id": 3
+            }
+        ],
+        "constraint": [
+            {
+                "lhs": {
+                    "type": "int",
+                    "name": "mException",
+                    "signature": "int32_t"
+                },
+                "rhs": {
+                    "type": "enum android::binder::Status::Exception",
+                    "name": "android::binder::Status::Exception::EX_TRANSACTION_FAILED",
+                    "value": -129
+                },
+                "opcode": "==",
+                "name": "constraint0",
+                "probability": 0.1
+            },
+            {
+                "lhs": {
+                    "type": "android::status_t",
+                    "name": "status"
+                },
+                "rhs": {
+                    "type": "enum android::(anonymous at system.core.libutils.include.utils.Errors.h:45:1)",
+                    "name": "android::OK",
+                    "value": 0
+                },
+                "opcode": "!=",
+                "name": "constraint1",
+                "probability": 0.5
+            },
+            {
+                "lhs": {
+                    "type": "int",
+                    "name": "mException",
+                    "signature": "int32_t"
+                },
+                "rhs": {
+                    "type": "enum android::binder::Status::Exception",
+                    "name": "android::binder::Status::Exception::EX_NONE",
+                    "value": 0
+                },
+                "opcode": "==",
+                "name": "constraint2",
+                "probability": 0.5
+            },
+            {
+                "lhs": {
+                    "type": "int",
+                    "name": "mException",
+                    "signature": "int32_t"
+                },
+                "rhs": {
+                    "type": "enum android::binder::Status::Exception",
+                    "name": "android::binder::Status::Exception::EX_SERVICE_SPECIFIC",
+                    "value": -8
+                },
+                "opcode": "==",
+                "name": "constraint3",
+                "probability": 0.5
+            },
+            {
+                "lhs": {
+                    "type": "int",
+                    "name": "mException",
+                    "signature": "int32_t"
+                },
+                "rhs": {
+                    "type": "enum android::binder::Status::Exception",
+                    "name": "android::binder::Status::Exception::EX_PARCELABLE",
+                    "value": -9
+                },
+                "opcode": "==",
+                "name": "constraint4",
+                "probability": 0.5
+            }
+        ]
+    }
+}

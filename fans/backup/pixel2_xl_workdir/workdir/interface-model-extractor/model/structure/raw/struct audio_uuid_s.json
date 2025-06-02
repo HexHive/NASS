@@ -1,0 +1,96 @@
+{
+    "struct audio_uuid_s":{
+        "dependency":[],
+        "possibility":[
+            {
+                "id":0,
+                "data":[
+                    "audio_uuid_s::timeLow",
+                    "audio_uuid_s::timeMid",
+                    "audio_uuid_s::timeHiAndVersion",
+                    "audio_uuid_s::clockSeq",
+                    "audio_uuid_s::node"
+                ],
+                "reply":[],
+                "return":""
+            }
+        ],
+        "variable":[
+            {
+                "name":"audio_uuid_s::timeLow",
+                "type":"unsigned int",
+                "serialization_type":1,
+                "self_constraint":[],
+                "under_constraint":[],
+                "relation":[],
+                "loop":[],
+                "usedBy":[],
+                "dependency":[],
+                "count":1
+            },
+            {
+                "name":"audio_uuid_s::timeMid",
+                "type":"unsigned short",
+                "serialization_type":1,
+                "self_constraint":[],
+                "under_constraint":[],
+                "relation":[],
+                "loop":[],
+                "usedBy":[],
+                "dependency":[],
+                "count":1
+            },
+            {
+                "name":"audio_uuid_s::timeHiAndVersion",
+                "type":"unsigned short",
+                "serialization_type":1,
+                "self_constraint":[],
+                "under_constraint":[],
+                "relation":[],
+                "loop":[],
+                "usedBy":[],
+                "dependency":[],
+                "count":1
+            },
+            {
+                "name":"audio_uuid_s::clockSeq",
+                "type":"unsigned short",
+                "serialization_type":1,
+                "self_constraint":[],
+                "under_constraint":[],
+                "relation":[],
+                "loop":[],
+                "usedBy":[],
+                "dependency":[],
+                "count":1
+            },
+            {
+                "name":"audio_uuid_s::node",
+                "type":"unsigned char [6]",
+                "serialization_type":1,
+                "self_constraint":[],
+                "under_constraint":[],
+                "relation":[],
+                "loop":[],
+                "usedBy":[],
+                "dependency":[],
+                "count":1,
+                "size":6
+            },
+            {
+                "name":"audio_uuid_s::node::item",
+                "type":"unsigned char",
+                "serialization_type":1,
+                "self_constraint":[],
+                "under_constraint":[],
+                "relation":[],
+                "loop":[],
+                "usedBy":[],
+                "dependency":[],
+                "count":1
+            }
+        ],
+        "constraint":[],
+        "loop":[]
+    }
+}

@@ -1,0 +1,121 @@
+{
+    "class aaudio::SharedMemoryParcelable": {
+        "variable": [
+            {
+                "count": 1,
+                "self_constraint": [
+                    "constraint0"
+                ],
+                "name": "mSizeInBytes",
+                "under_constraint": [],
+                "dependency": [],
+                "relation": [],
+                "signature": "int32_t",
+                "serialization_type": 1,
+                "usedBy": [],
+                "type": "int",
+                "loop": []
+            },
+            {
+                "count": 1,
+                "self_constraint": [
+                    "constraint1"
+                ],
+                "name": "status",
+                "under_constraint": [],
+                "dependency": [],
+                "relation": [],
+                "serialization_type": 0,
+                "usedBy": [],
+                "type": "android::status_t",
+                "loop": []
+            },
+            {
+                "count": 1,
+                "self_constraint": [],
+                "name": "mmapFd",
+                "under_constraint": [
+                    {
+                        "status": true,
+                        "name": "constraint0"
+                    }
+                ],
+                "dependency": [],
+                "relation": [],
+                "serialization_type": 1,
+                "takeOwnership": true,
+                "usedBy": [],
+                "type": "FileDescriptor",
+                "loop": []
+            },
+            {
+                "count": 1,
+                "self_constraint": [],
+                "name": "validate",
+                "under_constraint": [],
+                "dependency": [],
+                "relation": [],
+                "serialization_type": 0,
+                "usedBy": [],
+                "type": "aaudio_result_t",
+                "loop": []
+            },
+            {
+                "count": 1,
+                "self_constraint": [],
+                "name": "implicit_9",
+                "under_constraint": [],
+                "dependency": [],
+                "relation": [],
+                "serialization_type": 0,
+                "usedBy": [],
+                "type": "android::status_t",
+                "loop": []
+            }
+        ],
+        "dependency": [],
+        "loop": [],
+        "possibility": [
+            {
+                "return": "implicit_9",
+                "reply": [],
+                "data": [
+                    "mSizeInBytes",
+                    "mmapFd"
+                ],
+                "id": 0
+            }
+        ],
+        "constraint": [
+            {
+                "lhs": {
+                    "type": "int",
+                    "name": "mSizeInBytes",
+                    "signature": "int32_t"
+                },
+                "rhs": {
+                    "type": "IntegerLiteral",
+                    "name": "implicit_2",
+                    "value": 0
+                },
+                "opcode": ">",
+                "name": "constraint0",
+                "probability": 0.5
+            },
+            {
+                "lhs": {
+                    "type": "android::status_t",
+                    "name": "status"
+                },
+                "rhs": {
+                    "type": "enum android::(anonymous at system.core.libutils.include.utils.Errors.h:45:1)",
+                    "name": "android::NO_ERROR",
+                    "value": 0
+                },
+                "opcode": "!=",
+                "name": "constraint1",
+                "probability": 0.5
+            }
+        ]
+    }
+}

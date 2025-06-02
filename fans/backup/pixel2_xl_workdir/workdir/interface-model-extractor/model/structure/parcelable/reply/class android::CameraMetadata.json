@@ -1,0 +1,174 @@
+{
+    "class android::CameraMetadata": {
+        "variable": [
+            {
+                "count": 1,
+                "self_constraint": [],
+                "name": "android::BAD_VALUE",
+                "under_constraint": [
+                    {
+                        "status": true,
+                        "name": "constraint1"
+                    }
+                ],
+                "value": -22,
+                "dependency": [],
+                "relation": [],
+                "serialization_type": 0,
+                "usedBy": [],
+                "type": "android::status_t",
+                "loop": []
+            },
+            {
+                "count": 1,
+                "self_constraint": [],
+                "name": "mBuffer",
+                "under_constraint": [
+                    {
+                        "status": false,
+                        "name": "constraint1"
+                    }
+                ],
+                "dependency": [],
+                "relation": [],
+                "signature": "camera_metadata_t *",
+                "serialization_type": 0,
+                "usedBy": [],
+                "type": "struct camera_metadata *",
+                "loop": [],
+                "size": -1
+            },
+            {
+                "count": 1,
+                "self_constraint": [],
+                "name": "mBuffer::item",
+                "under_constraint": [],
+                "dependency": [],
+                "relation": [],
+                "signature": "camera_metadata_t *",
+                "serialization_type": 0,
+                "usedBy": [],
+                "type": "struct camera_metadata",
+                "loop": []
+            },
+            {
+                "count": 1,
+                "self_constraint": [],
+                "name": "implicit_11",
+                "under_constraint": [
+                    {
+                        "status": false,
+                        "name": "constraint1"
+                    }
+                ],
+                "func_name": "android::CameraMetadata::writeToParcel",
+                "argv": [
+                    {
+                        "type": "class android::Parcel ",
+                        "name": "parcel"
+                    },
+                    {
+                        "type": "struct camera_metadata *",
+                        "name": "mBuffer"
+                    }
+                ],
+                "dependency": [],
+                "relation": [],
+                "signature": "android::status_t (class android::Parcel &, const camera_metadata_t *)",
+                "serialization_type": 2,
+                "usedBy": [],
+                "type": "Function",
+                "loop": []
+            },
+            {
+                "count": 1,
+                "self_constraint": [],
+                "name": "implicit_12",
+                "under_constraint": [
+                    {
+                        "status": false,
+                        "name": "constraint1"
+                    }
+                ],
+                "dependency": [],
+                "relation": [],
+                "serialization_type": 0,
+                "usedBy": [],
+                "type": "android::status_t",
+                "loop": []
+            }
+        ],
+        "dependency": [
+            {
+                "filename": "BnCameraService.json",
+                "type": "Transaction",
+                "name": "ICameraService::8-8",
+                "possIdx": 0,
+                "varIdx": 1,
+                "varName": "_aidl_return",
+                "varType": "class android::CameraMetadata"
+            },
+            {
+                "filename": "BnCameraDeviceUser.json",
+                "type": "Transaction",
+                "name": "ICameraDeviceUser::11-11",
+                "possIdx": 0,
+                "varIdx": 1,
+                "varName": "_aidl_return",
+                "varType": "class android::CameraMetadata"
+            },
+            {
+                "filename": "BnCameraDeviceUser.json",
+                "type": "Transaction",
+                "name": "ICameraDeviceUser::12-12",
+                "possIdx": 0,
+                "varIdx": 1,
+                "varName": "_aidl_return",
+                "varType": "class android::CameraMetadata"
+            }
+        ],
+        "loop": [],
+        "possibility": [
+            {
+                "return": "android::BAD_VALUE",
+                "reply": [],
+                "data": [],
+                "id": 0
+            },
+            {
+                "return": "implicit_12",
+                "reply": [
+                    "implicit_11"
+                ],
+                "data": [],
+                "id": 1
+            }
+        ],
+        "constraint": [
+            {
+                "lhs": {
+                    "type": "IntegerLiteral",
+                    "name": "implicit_1",
+                    "value": 0
+                },
+                "opcode": "",
+                "name": "constraint0",
+                "probability": 0.5
+            },
+            {
+                "lhs": {
+                    "type": "class android::Parcel *",
+                    "name": "parcel"
+                },
+                "rhs": {
+                    "type": "class android::Parcel *",
+                    "name": "implicit_6",
+                    "value": "NULL"
+                },
+                "opcode": "==",
+                "name": "constraint1",
+                "probability": 0.1
+            }
+        ]
+    }
+}

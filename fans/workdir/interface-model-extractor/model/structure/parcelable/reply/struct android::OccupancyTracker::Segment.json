@@ -1,0 +1,212 @@
+{
+    "struct android::OccupancyTracker::Segment": {
+        "variable": [
+            {
+                "count": 1,
+                "self_constraint": [],
+                "name": "totalTime",
+                "under_constraint": [],
+                "dependency": [],
+                "relation": [],
+                "signature": "nsecs_t",
+                "serialization_type": 2,
+                "usedBy": [],
+                "type": "nsecs_t",
+                "loop": []
+            },
+            {
+                "count": 1,
+                "self_constraint": [
+                    "constraint0",
+                    "constraint1",
+                    "constraint2"
+                ],
+                "name": "result",
+                "under_constraint": [],
+                "dependency": [],
+                "relation": [],
+                "serialization_type": 0,
+                "usedBy": [],
+                "type": "android::status_t",
+                "loop": []
+            },
+            {
+                "count": 1,
+                "self_constraint": [],
+                "name": "numFrames",
+                "under_constraint": [
+                    {
+                        "status": false,
+                        "name": "constraint0"
+                    }
+                ],
+                "dependency": [],
+                "relation": [],
+                "signature": "size_t",
+                "serialization_type": 2,
+                "usedBy": [],
+                "type": "unsigned long",
+                "loop": []
+            },
+            {
+                "count": 1,
+                "self_constraint": [],
+                "name": "occupancyAverage",
+                "under_constraint": [
+                    {
+                        "status": false,
+                        "name": "constraint0"
+                    },
+                    {
+                        "status": false,
+                        "name": "constraint1"
+                    }
+                ],
+                "dependency": [],
+                "relation": [],
+                "signature": "float",
+                "serialization_type": 2,
+                "usedBy": [],
+                "type": "float",
+                "loop": []
+            },
+            {
+                "count": 1,
+                "self_constraint": [],
+                "name": "usedThirdBuffer",
+                "under_constraint": [
+                    {
+                        "status": false,
+                        "name": "constraint0"
+                    },
+                    {
+                        "status": false,
+                        "name": "constraint1"
+                    },
+                    {
+                        "status": false,
+                        "name": "constraint2"
+                    }
+                ],
+                "dependency": [],
+                "relation": [],
+                "signature": "_Bool",
+                "serialization_type": 2,
+                "usedBy": [],
+                "type": "_Bool",
+                "loop": []
+            },
+            {
+                "count": 1,
+                "self_constraint": [],
+                "name": "implicit_4",
+                "under_constraint": [
+                    {
+                        "status": false,
+                        "name": "constraint0"
+                    },
+                    {
+                        "status": false,
+                        "name": "constraint1"
+                    },
+                    {
+                        "status": false,
+                        "name": "constraint2"
+                    }
+                ],
+                "dependency": [],
+                "relation": [],
+                "serialization_type": 0,
+                "usedBy": [],
+                "type": "android::status_t",
+                "loop": []
+            }
+        ],
+        "dependency": [],
+        "loop": [],
+        "possibility": [
+            {
+                "return": "result",
+                "reply": [
+                    "totalTime"
+                ],
+                "data": [],
+                "id": 0
+            },
+            {
+                "return": "result",
+                "reply": [
+                    "totalTime",
+                    "numFrames"
+                ],
+                "data": [],
+                "id": 1
+            },
+            {
+                "return": "result",
+                "reply": [
+                    "totalTime",
+                    "numFrames",
+                    "occupancyAverage"
+                ],
+                "data": [],
+                "id": 2
+            },
+            {
+                "return": "implicit_4",
+                "reply": [
+                    "totalTime",
+                    "numFrames",
+                    "occupancyAverage",
+                    "usedThirdBuffer"
+                ],
+                "data": [],
+                "id": 3
+            }
+        ],
+        "constraint": [
+            {
+                "lhs": {
+                    "type": "android::status_t",
+                    "name": "result"
+                },
+                "rhs": {
+                    "type": "enum android::(anonymous at system.core.libutils.include.utils.Errors.h:45:1)",
+                    "name": "android::OK",
+                    "value": 0
+                },
+                "opcode": "!=",
+                "name": "constraint0",
+                "probability": 0.1
+            },
+            {
+                "lhs": {
+                    "type": "android::status_t",
+                    "name": "result"
+                },
+                "rhs": {
+                    "type": "enum android::(anonymous at system.core.libutils.include.utils.Errors.h:45:1)",
+                    "name": "android::OK",
+                    "value": 0
+                },
+                "opcode": "!=",
+                "name": "constraint1",
+                "probability": 0.1
+            },
+            {
+                "lhs": {
+                    "type": "android::status_t",
+                    "name": "result"
+                },
+                "rhs": {
+                    "type": "enum android::(anonymous at system.core.libutils.include.utils.Errors.h:45:1)",
+                    "name": "android::OK",
+                    "value": 0
+                },
+                "opcode": "!=",
+                "name": "constraint2",
+                "probability": 0.1
+            }
+        ]
+    }
+}

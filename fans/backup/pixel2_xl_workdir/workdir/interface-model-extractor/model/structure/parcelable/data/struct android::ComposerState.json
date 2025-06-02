@@ -1,0 +1,76 @@
+{
+    "struct android::ComposerState": {
+        "dependency": [],
+        "possibility": [
+            {
+                "id": 0,
+                "data": [
+                    "client",
+                    "implicit_2"
+                ],
+                "reply": [],
+                "return": "implicit_3"
+            }
+        ],
+        "variable": [
+            {
+                "type": "class android::sp<class android::ISurfaceComposerClient>",
+                "name": "client",
+                "serialization_type": 1,
+                "self_constraint": [],
+                "under_constraint": [],
+                "relation": [],
+                "loop": [],
+                "usedBy": [],
+                "dependency": [
+                    {
+                        "filename": "BnSurfaceComposer.json",
+                        "type": "Transaction",
+                        "name": "ISurfaceComposer::2-2",
+                        "possIdx": 1,
+                        "varIdx": 0,
+                        "varName": "b",
+                        "varType": "class android::sp<class android::ISurfaceComposerClient>"
+                    },
+                    {
+                        "filename": "BnSurfaceComposer.json",
+                        "type": "Transaction",
+                        "name": "ISurfaceComposer::28-28",
+                        "possIdx": 1,
+                        "varIdx": 0,
+                        "varName": "b",
+                        "varType": "class android::sp<class android::ISurfaceComposerClient>"
+                    }
+                ],
+                "count": 1,
+                "interfaceName": "ISurfaceComposerClient"
+            },
+            {
+                "name": "implicit_2",
+                "type": "struct android::layer_state_t",
+                "serialization_type": 1,
+                "self_constraint": [],
+                "under_constraint": [],
+                "relation": [],
+                "loop": [],
+                "usedBy": [],
+                "dependency": [],
+                "count": 1
+            },
+            {
+                "type": "android::status_t",
+                "name": "implicit_3",
+                "serialization_type": 0,
+                "self_constraint": [],
+                "under_constraint": [],
+                "relation": [],
+                "loop": [],
+                "usedBy": [],
+                "dependency": [],
+                "count": 1
+            }
+        ],
+        "constraint": [],
+        "loop": []
+    }
+}

@@ -1,0 +1,140 @@
+{
+    "class android::os::PersistableBundle": {
+        "variable": [
+            {
+                "count": 1,
+                "self_constraint": [
+                    "constraint0"
+                ],
+                "name": "length",
+                "under_constraint": [],
+                "dependency": [
+                    {
+                        "filename": "BnDrmManagerService.json",
+                        "type": "Transaction",
+                        "name": "IDrmManagerService::24-24",
+                        "possIdx": 1,
+                        "varIdx": 0,
+                        "varName": "length",
+                        "varType": "int"
+                    },
+                    {
+                        "filename": "BnMediaSource.json",
+                        "type": "Transaction",
+                        "name": "IMediaSource::5-5",
+                        "possIdx": 1,
+                        "varIdx": 6,
+                        "varName": "length",
+                        "varType": "int"
+                    }
+                ],
+                "relation": [],
+                "serialization_type": 1,
+                "usedBy": [],
+                "type": "int",
+                "loop": []
+            },
+            {
+                "count": 1,
+                "self_constraint": [],
+                "name": "android::UNEXPECTED_NULL",
+                "under_constraint": [
+                    {
+                        "status": true,
+                        "name": "constraint0"
+                    }
+                ],
+                "value": -2147483640,
+                "dependency": [],
+                "relation": [],
+                "serialization_type": 0,
+                "usedBy": [],
+                "type": "android::status_t",
+                "loop": []
+            },
+            {
+                "count": 1,
+                "self_constraint": [],
+                "name": "implicit_3",
+                "under_constraint": [
+                    {
+                        "status": false,
+                        "name": "constraint0"
+                    }
+                ],
+                "func_name": "android::os::PersistableBundle::readFromParcelInner",
+                "argv": [
+                    {
+                        "type": "const class android::Parcel *",
+                        "name": "parcel"
+                    },
+                    {
+                        "type": "size_t",
+                        "name": "length"
+                    }
+                ],
+                "dependency": [],
+                "relation": [],
+                "signature": "android::status_t (const class android::Parcel *, size_t)",
+                "serialization_type": 1,
+                "usedBy": [],
+                "type": "Function",
+                "loop": []
+            },
+            {
+                "count": 1,
+                "self_constraint": [],
+                "name": "implicit_4",
+                "under_constraint": [
+                    {
+                        "status": false,
+                        "name": "constraint0"
+                    }
+                ],
+                "dependency": [],
+                "relation": [],
+                "serialization_type": 0,
+                "usedBy": [],
+                "type": "android::status_t",
+                "loop": []
+            }
+        ],
+        "dependency": [],
+        "loop": [],
+        "possibility": [
+            {
+                "return": "android::UNEXPECTED_NULL",
+                "reply": [],
+                "data": [
+                    "length"
+                ],
+                "id": 0
+            },
+            {
+                "return": "implicit_4",
+                "reply": [],
+                "data": [
+                    "length",
+                    "implicit_3"
+                ],
+                "id": 1
+            }
+        ],
+        "constraint": [
+            {
+                "lhs": {
+                    "type": "int",
+                    "name": "length"
+                },
+                "rhs": {
+                    "type": "IntegerLiteral",
+                    "name": "implicit_2",
+                    "value": 0
+                },
+                "opcode": "<",
+                "name": "constraint0",
+                "probability": 0.1
+            }
+        ]
+    }
+}

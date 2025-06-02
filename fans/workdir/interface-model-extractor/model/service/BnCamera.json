@@ -1,0 +1,3528 @@
+{
+    "ICamera::1-1": {
+        "code": [
+            1
+        ],
+        "dependency": [
+            {
+                "filename": "BnCameraService.json",
+                "type": "Transaction",
+                "name": "ICameraService::3-3",
+                "possIdx": 0,
+                "varIdx": 1,
+                "varName": "_aidl_return",
+                "varType": "class android::sp<class android::hardware::ICamera>"
+            },
+            {
+                "filename": "BnCameraService.json",
+                "type": "Transaction",
+                "name": "ICameraService::5-5",
+                "possIdx": 0,
+                "varIdx": 1,
+                "varName": "_aidl_return",
+                "varType": "class android::sp<class android::hardware::ICamera>"
+            }
+        ],
+        "possibility": [
+            {
+                "id": 0,
+                "data": [
+                    "ServiceInterfaceDescriptor"
+                ],
+                "reply": [],
+                "return": "android::PERMISSION_DENIED"
+            },
+            {
+                "id": 1,
+                "data": [
+                    "ServiceInterfaceDescriptor"
+                ],
+                "reply": [
+                    "implicit_2"
+                ],
+                "return": "android::NO_ERROR"
+            }
+        ],
+        "variable": [
+            {
+                "name": "ServiceInterfaceDescriptor",
+                "type": "class android::String16",
+                "serialization_type": 1,
+                "self_constraint": [
+                    "constraint0"
+                ],
+                "under_constraint": [],
+                "relation": [],
+                "loop": [],
+                "usedBy": [],
+                "dependency": [],
+                "count": 1
+            },
+            {
+                "name": "android::PERMISSION_DENIED",
+                "type": "android::status_t",
+                "value": -1,
+                "serialization_type": 0,
+                "self_constraint": [],
+                "under_constraint": [
+                    {
+                        "name": "constraint0",
+                        "status": true
+                    }
+                ],
+                "relation": [],
+                "loop": [],
+                "usedBy": [],
+                "dependency": [],
+                "count": 1
+            },
+            {
+                "name": "mException",
+                "type": "int",
+                "serialization_type": 0,
+                "self_constraint": [],
+                "under_constraint": [
+                    {
+                        "name": "constraint0",
+                        "status": false
+                    }
+                ],
+                "relation": [],
+                "loop": [],
+                "usedBy": [],
+                "dependency": [],
+                "count": 1
+            },
+            {
+                "type": "class android::binder::Status",
+                "name": "implicit_2",
+                "serialization_type": 2,
+                "self_constraint": [],
+                "under_constraint": [
+                    {
+                        "name": "constraint0",
+                        "status": false
+                    }
+                ],
+                "relation": [],
+                "loop": [],
+                "usedBy": [],
+                "dependency": [],
+                "count": 1
+            },
+            {
+                "name": "android::NO_ERROR",
+                "type": "android::status_t",
+                "value": 0,
+                "serialization_type": 0,
+                "self_constraint": [],
+                "under_constraint": [
+                    {
+                        "name": "constraint0",
+                        "status": false
+                    }
+                ],
+                "relation": [],
+                "loop": [],
+                "usedBy": [],
+                "dependency": [],
+                "count": 1
+            }
+        ],
+        "constraint": [
+            {
+                "name": "constraint0",
+                "opcode": "!",
+                "lhs": {
+                    "name": "ServiceInterfaceDescriptor",
+                    "type": "class android::String16",
+                    "serialization_type": 1
+                },
+                "probability": 0.1
+            }
+        ],
+        "loop": [],
+        "serviceName": "None",
+        "interfaceName": "ICamera",
+        "interfaceToken": "android.hardware.ICamera"
+    },
+    "ICamera::2-2": {
+        "code": [
+            2
+        ],
+        "dependency": [
+            {
+                "filename": "BnCameraService.json",
+                "type": "Transaction",
+                "name": "ICameraService::3-3",
+                "possIdx": 0,
+                "varIdx": 1,
+                "varName": "_aidl_return",
+                "varType": "class android::sp<class android::hardware::ICamera>"
+            },
+            {
+                "filename": "BnCameraService.json",
+                "type": "Transaction",
+                "name": "ICameraService::5-5",
+                "possIdx": 0,
+                "varIdx": 1,
+                "varName": "_aidl_return",
+                "varType": "class android::sp<class android::hardware::ICamera>"
+            }
+        ],
+        "possibility": [
+            {
+                "id": 0,
+                "data": [
+                    "ServiceInterfaceDescriptor"
+                ],
+                "reply": [],
+                "return": "android::PERMISSION_DENIED"
+            },
+            {
+                "id": 1,
+                "data": [
+                    "ServiceInterfaceDescriptor",
+                    "st"
+                ],
+                "reply": [
+                    "implicit_4"
+                ],
+                "return": "android::NO_ERROR"
+            }
+        ],
+        "variable": [
+            {
+                "name": "ServiceInterfaceDescriptor",
+                "type": "class android::String16",
+                "serialization_type": 1,
+                "self_constraint": [
+                    "constraint0"
+                ],
+                "under_constraint": [],
+                "relation": [],
+                "loop": [],
+                "usedBy": [],
+                "dependency": [],
+                "count": 1
+            },
+            {
+                "name": "android::PERMISSION_DENIED",
+                "type": "android::status_t",
+                "value": -1,
+                "serialization_type": 0,
+                "self_constraint": [],
+                "under_constraint": [
+                    {
+                        "name": "constraint0",
+                        "status": true
+                    }
+                ],
+                "relation": [],
+                "loop": [],
+                "usedBy": [],
+                "dependency": [],
+                "count": 1
+            },
+            {
+                "type": "class android::sp<class android::IGraphicBufferProducer>",
+                "name": "st",
+                "serialization_type": 1,
+                "self_constraint": [],
+                "under_constraint": [
+                    {
+                        "name": "constraint0",
+                        "status": false
+                    }
+                ],
+                "relation": [],
+                "loop": [],
+                "usedBy": [],
+                "dependency": [
+                    {
+                        "filename": "BnSurfaceComposerClient.json",
+                        "type": "Transaction",
+                        "name": "ISurfaceComposerClient::1-1",
+                        "possIdx": 1,
+                        "varIdx": 1,
+                        "varName": "gbp",
+                        "varType": "class android::sp<class android::IGraphicBufferProducer>"
+                    },
+                    {
+                        "filename": "BnMediaRecorder.json",
+                        "type": "Transaction",
+                        "name": "IMediaRecorder::5-5",
+                        "possIdx": 1,
+                        "varIdx": 1,
+                        "varName": "surfaceMediaSource",
+                        "varType": "class android::sp<class android::IGraphicBufferProducer>"
+                    }
+                ],
+                "count": 1,
+                "interfaceName": "IGraphicBufferProducer"
+            },
+            {
+                "type": "android::status_t",
+                "name": "implicit_4",
+                "serialization_type": 2,
+                "self_constraint": [],
+                "under_constraint": [
+                    {
+                        "name": "constraint0",
+                        "status": false
+                    }
+                ],
+                "relation": [],
+                "loop": [],
+                "usedBy": [],
+                "dependency": [],
+                "count": 1
+            },
+            {
+                "name": "android::NO_ERROR",
+                "type": "android::status_t",
+                "value": 0,
+                "serialization_type": 0,
+                "self_constraint": [],
+                "under_constraint": [
+                    {
+                        "name": "constraint0",
+                        "status": false
+                    }
+                ],
+                "relation": [],
+                "loop": [],
+                "usedBy": [],
+                "dependency": [],
+                "count": 1
+            }
+        ],
+        "constraint": [
+            {
+                "name": "constraint0",
+                "opcode": "!",
+                "lhs": {
+                    "name": "ServiceInterfaceDescriptor",
+                    "type": "class android::String16",
+                    "serialization_type": 1
+                },
+                "probability": 0.1
+            }
+        ],
+        "loop": [],
+        "serviceName": "None",
+        "interfaceName": "ICamera",
+        "interfaceToken": "android.hardware.ICamera"
+    },
+    "ICamera::3-3": {
+        "code": [
+            3
+        ],
+        "dependency": [
+            {
+                "filename": "BnCameraService.json",
+                "type": "Transaction",
+                "name": "ICameraService::3-3",
+                "possIdx": 0,
+                "varIdx": 1,
+                "varName": "_aidl_return",
+                "varType": "class android::sp<class android::hardware::ICamera>"
+            },
+            {
+                "filename": "BnCameraService.json",
+                "type": "Transaction",
+                "name": "ICameraService::5-5",
+                "possIdx": 0,
+                "varIdx": 1,
+                "varName": "_aidl_return",
+                "varType": "class android::sp<class android::hardware::ICamera>"
+            }
+        ],
+        "possibility": [
+            {
+                "id": 0,
+                "data": [
+                    "ServiceInterfaceDescriptor"
+                ],
+                "reply": [],
+                "return": "android::PERMISSION_DENIED"
+            },
+            {
+                "id": 1,
+                "data": [
+                    "ServiceInterfaceDescriptor",
+                    "callback_flag"
+                ],
+                "reply": [],
+                "return": "android::NO_ERROR"
+            }
+        ],
+        "variable": [
+            {
+                "name": "ServiceInterfaceDescriptor",
+                "type": "class android::String16",
+                "serialization_type": 1,
+                "self_constraint": [
+                    "constraint0"
+                ],
+                "under_constraint": [],
+                "relation": [],
+                "loop": [],
+                "usedBy": [],
+                "dependency": [],
+                "count": 1
+            },
+            {
+                "name": "android::PERMISSION_DENIED",
+                "type": "android::status_t",
+                "value": -1,
+                "serialization_type": 0,
+                "self_constraint": [],
+                "under_constraint": [
+                    {
+                        "name": "constraint0",
+                        "status": true
+                    }
+                ],
+                "relation": [],
+                "loop": [],
+                "usedBy": [],
+                "dependency": [],
+                "count": 1
+            },
+            {
+                "type": "int",
+                "name": "callback_flag",
+                "serialization_type": 1,
+                "self_constraint": [],
+                "under_constraint": [
+                    {
+                        "name": "constraint0",
+                        "status": false
+                    }
+                ],
+                "relation": [],
+                "loop": [],
+                "usedBy": [],
+                "dependency": [],
+                "count": 1
+            },
+            {
+                "name": "android::NO_ERROR",
+                "type": "android::status_t",
+                "value": 0,
+                "serialization_type": 0,
+                "self_constraint": [],
+                "under_constraint": [
+                    {
+                        "name": "constraint0",
+                        "status": false
+                    }
+                ],
+                "relation": [],
+                "loop": [],
+                "usedBy": [],
+                "dependency": [],
+                "count": 1
+            }
+        ],
+        "constraint": [
+            {
+                "name": "constraint0",
+                "opcode": "!",
+                "lhs": {
+                    "name": "ServiceInterfaceDescriptor",
+                    "type": "class android::String16",
+                    "serialization_type": 1
+                },
+                "probability": 0.1
+            }
+        ],
+        "loop": [],
+        "serviceName": "None",
+        "interfaceName": "ICamera",
+        "interfaceToken": "android.hardware.ICamera"
+    },
+    "ICamera::4-4": {
+        "code": [
+            4
+        ],
+        "dependency": [
+            {
+                "filename": "BnCameraService.json",
+                "type": "Transaction",
+                "name": "ICameraService::3-3",
+                "possIdx": 0,
+                "varIdx": 1,
+                "varName": "_aidl_return",
+                "varType": "class android::sp<class android::hardware::ICamera>"
+            },
+            {
+                "filename": "BnCameraService.json",
+                "type": "Transaction",
+                "name": "ICameraService::5-5",
+                "possIdx": 0,
+                "varIdx": 1,
+                "varName": "_aidl_return",
+                "varType": "class android::sp<class android::hardware::ICamera>"
+            }
+        ],
+        "possibility": [
+            {
+                "id": 0,
+                "data": [
+                    "ServiceInterfaceDescriptor"
+                ],
+                "reply": [],
+                "return": "android::PERMISSION_DENIED"
+            },
+            {
+                "id": 1,
+                "data": [
+                    "ServiceInterfaceDescriptor",
+                    "cp"
+                ],
+                "reply": [
+                    "implicit_4"
+                ],
+                "return": "android::NO_ERROR"
+            }
+        ],
+        "variable": [
+            {
+                "name": "ServiceInterfaceDescriptor",
+                "type": "class android::String16",
+                "serialization_type": 1,
+                "self_constraint": [
+                    "constraint0"
+                ],
+                "under_constraint": [],
+                "relation": [],
+                "loop": [],
+                "usedBy": [],
+                "dependency": [],
+                "count": 1
+            },
+            {
+                "name": "android::PERMISSION_DENIED",
+                "type": "android::status_t",
+                "value": -1,
+                "serialization_type": 0,
+                "self_constraint": [],
+                "under_constraint": [
+                    {
+                        "name": "constraint0",
+                        "status": true
+                    }
+                ],
+                "relation": [],
+                "loop": [],
+                "usedBy": [],
+                "dependency": [],
+                "count": 1
+            },
+            {
+                "type": "class android::sp<class android::IGraphicBufferProducer>",
+                "name": "cp",
+                "serialization_type": 1,
+                "self_constraint": [],
+                "under_constraint": [
+                    {
+                        "name": "constraint0",
+                        "status": false
+                    }
+                ],
+                "relation": [],
+                "loop": [],
+                "usedBy": [],
+                "dependency": [
+                    {
+                        "filename": "BnSurfaceComposerClient.json",
+                        "type": "Transaction",
+                        "name": "ISurfaceComposerClient::1-1",
+                        "possIdx": 1,
+                        "varIdx": 1,
+                        "varName": "gbp",
+                        "varType": "class android::sp<class android::IGraphicBufferProducer>"
+                    },
+                    {
+                        "filename": "BnMediaRecorder.json",
+                        "type": "Transaction",
+                        "name": "IMediaRecorder::5-5",
+                        "possIdx": 1,
+                        "varIdx": 1,
+                        "varName": "surfaceMediaSource",
+                        "varType": "class android::sp<class android::IGraphicBufferProducer>"
+                    }
+                ],
+                "count": 1,
+                "interfaceName": "IGraphicBufferProducer"
+            },
+            {
+                "type": "android::status_t",
+                "name": "implicit_4",
+                "serialization_type": 2,
+                "self_constraint": [],
+                "under_constraint": [
+                    {
+                        "name": "constraint0",
+                        "status": false
+                    }
+                ],
+                "relation": [],
+                "loop": [],
+                "usedBy": [],
+                "dependency": [],
+                "count": 1
+            },
+            {
+                "name": "android::NO_ERROR",
+                "type": "android::status_t",
+                "value": 0,
+                "serialization_type": 0,
+                "self_constraint": [],
+                "under_constraint": [
+                    {
+                        "name": "constraint0",
+                        "status": false
+                    }
+                ],
+                "relation": [],
+                "loop": [],
+                "usedBy": [],
+                "dependency": [],
+                "count": 1
+            }
+        ],
+        "constraint": [
+            {
+                "name": "constraint0",
+                "opcode": "!",
+                "lhs": {
+                    "name": "ServiceInterfaceDescriptor",
+                    "type": "class android::String16",
+                    "serialization_type": 1
+                },
+                "probability": 0.1
+            }
+        ],
+        "loop": [],
+        "serviceName": "None",
+        "interfaceName": "ICamera",
+        "interfaceToken": "android.hardware.ICamera"
+    },
+    "ICamera::5-5": {
+        "code": [
+            5
+        ],
+        "dependency": [
+            {
+                "filename": "BnCameraService.json",
+                "type": "Transaction",
+                "name": "ICameraService::3-3",
+                "possIdx": 0,
+                "varIdx": 1,
+                "varName": "_aidl_return",
+                "varType": "class android::sp<class android::hardware::ICamera>"
+            },
+            {
+                "filename": "BnCameraService.json",
+                "type": "Transaction",
+                "name": "ICameraService::5-5",
+                "possIdx": 0,
+                "varIdx": 1,
+                "varName": "_aidl_return",
+                "varType": "class android::sp<class android::hardware::ICamera>"
+            }
+        ],
+        "possibility": [
+            {
+                "id": 0,
+                "data": [
+                    "ServiceInterfaceDescriptor"
+                ],
+                "reply": [],
+                "return": "android::PERMISSION_DENIED"
+            },
+            {
+                "id": 1,
+                "data": [
+                    "ServiceInterfaceDescriptor"
+                ],
+                "reply": [
+                    "startPreview"
+                ],
+                "return": "android::NO_ERROR"
+            }
+        ],
+        "variable": [
+            {
+                "name": "ServiceInterfaceDescriptor",
+                "type": "class android::String16",
+                "serialization_type": 1,
+                "self_constraint": [
+                    "constraint0"
+                ],
+                "under_constraint": [],
+                "relation": [],
+                "loop": [],
+                "usedBy": [],
+                "dependency": [],
+                "count": 1
+            },
+            {
+                "name": "android::PERMISSION_DENIED",
+                "type": "android::status_t",
+                "value": -1,
+                "serialization_type": 0,
+                "self_constraint": [],
+                "under_constraint": [
+                    {
+                        "name": "constraint0",
+                        "status": true
+                    }
+                ],
+                "relation": [],
+                "loop": [],
+                "usedBy": [],
+                "dependency": [],
+                "count": 1
+            },
+            {
+                "type": "android::status_t",
+                "name": "startPreview",
+                "serialization_type": 2,
+                "self_constraint": [],
+                "under_constraint": [
+                    {
+                        "name": "constraint0",
+                        "status": false
+                    }
+                ],
+                "relation": [],
+                "loop": [],
+                "usedBy": [],
+                "dependency": [],
+                "count": 1
+            },
+            {
+                "name": "android::NO_ERROR",
+                "type": "android::status_t",
+                "value": 0,
+                "serialization_type": 0,
+                "self_constraint": [],
+                "under_constraint": [
+                    {
+                        "name": "constraint0",
+                        "status": false
+                    }
+                ],
+                "relation": [],
+                "loop": [],
+                "usedBy": [],
+                "dependency": [],
+                "count": 1
+            }
+        ],
+        "constraint": [
+            {
+                "name": "constraint0",
+                "opcode": "!",
+                "lhs": {
+                    "name": "ServiceInterfaceDescriptor",
+                    "type": "class android::String16",
+                    "serialization_type": 1
+                },
+                "probability": 0.1
+            }
+        ],
+        "loop": [],
+        "serviceName": "None",
+        "interfaceName": "ICamera",
+        "interfaceToken": "android.hardware.ICamera"
+    },
+    "ICamera::17-17": {
+        "code": [
+            17
+        ],
+        "dependency": [
+            {
+                "filename": "BnCameraService.json",
+                "type": "Transaction",
+                "name": "ICameraService::3-3",
+                "possIdx": 0,
+                "varIdx": 1,
+                "varName": "_aidl_return",
+                "varType": "class android::sp<class android::hardware::ICamera>"
+            },
+            {
+                "filename": "BnCameraService.json",
+                "type": "Transaction",
+                "name": "ICameraService::5-5",
+                "possIdx": 0,
+                "varIdx": 1,
+                "varName": "_aidl_return",
+                "varType": "class android::sp<class android::hardware::ICamera>"
+            }
+        ],
+        "possibility": [
+            {
+                "id": 0,
+                "data": [
+                    "ServiceInterfaceDescriptor"
+                ],
+                "reply": [],
+                "return": "android::PERMISSION_DENIED"
+            },
+            {
+                "id": 1,
+                "data": [
+                    "ServiceInterfaceDescriptor"
+                ],
+                "reply": [
+                    "startRecording"
+                ],
+                "return": "android::NO_ERROR"
+            }
+        ],
+        "variable": [
+            {
+                "name": "ServiceInterfaceDescriptor",
+                "type": "class android::String16",
+                "serialization_type": 1,
+                "self_constraint": [
+                    "constraint0"
+                ],
+                "under_constraint": [],
+                "relation": [],
+                "loop": [],
+                "usedBy": [],
+                "dependency": [],
+                "count": 1
+            },
+            {
+                "name": "android::PERMISSION_DENIED",
+                "type": "android::status_t",
+                "value": -1,
+                "serialization_type": 0,
+                "self_constraint": [],
+                "under_constraint": [
+                    {
+                        "name": "constraint0",
+                        "status": true
+                    }
+                ],
+                "relation": [],
+                "loop": [],
+                "usedBy": [],
+                "dependency": [],
+                "count": 1
+            },
+            {
+                "type": "android::status_t",
+                "name": "startRecording",
+                "serialization_type": 2,
+                "self_constraint": [],
+                "under_constraint": [
+                    {
+                        "name": "constraint0",
+                        "status": false
+                    }
+                ],
+                "relation": [],
+                "loop": [],
+                "usedBy": [],
+                "dependency": [],
+                "count": 1
+            },
+            {
+                "name": "android::NO_ERROR",
+                "type": "android::status_t",
+                "value": 0,
+                "serialization_type": 0,
+                "self_constraint": [],
+                "under_constraint": [
+                    {
+                        "name": "constraint0",
+                        "status": false
+                    }
+                ],
+                "relation": [],
+                "loop": [],
+                "usedBy": [],
+                "dependency": [],
+                "count": 1
+            }
+        ],
+        "constraint": [
+            {
+                "name": "constraint0",
+                "opcode": "!",
+                "lhs": {
+                    "name": "ServiceInterfaceDescriptor",
+                    "type": "class android::String16",
+                    "serialization_type": 1
+                },
+                "probability": 0.1
+            }
+        ],
+        "loop": [],
+        "serviceName": "None",
+        "interfaceName": "ICamera",
+        "interfaceToken": "android.hardware.ICamera"
+    },
+    "ICamera::6-6": {
+        "code": [
+            6
+        ],
+        "dependency": [
+            {
+                "filename": "BnCameraService.json",
+                "type": "Transaction",
+                "name": "ICameraService::3-3",
+                "possIdx": 0,
+                "varIdx": 1,
+                "varName": "_aidl_return",
+                "varType": "class android::sp<class android::hardware::ICamera>"
+            },
+            {
+                "filename": "BnCameraService.json",
+                "type": "Transaction",
+                "name": "ICameraService::5-5",
+                "possIdx": 0,
+                "varIdx": 1,
+                "varName": "_aidl_return",
+                "varType": "class android::sp<class android::hardware::ICamera>"
+            }
+        ],
+        "possibility": [
+            {
+                "id": 0,
+                "data": [
+                    "ServiceInterfaceDescriptor"
+                ],
+                "reply": [],
+                "return": "android::PERMISSION_DENIED"
+            },
+            {
+                "id": 1,
+                "data": [
+                    "ServiceInterfaceDescriptor"
+                ],
+                "reply": [],
+                "return": "android::NO_ERROR"
+            }
+        ],
+        "variable": [
+            {
+                "name": "ServiceInterfaceDescriptor",
+                "type": "class android::String16",
+                "serialization_type": 1,
+                "self_constraint": [
+                    "constraint0"
+                ],
+                "under_constraint": [],
+                "relation": [],
+                "loop": [],
+                "usedBy": [],
+                "dependency": [],
+                "count": 1
+            },
+            {
+                "name": "android::PERMISSION_DENIED",
+                "type": "android::status_t",
+                "value": -1,
+                "serialization_type": 0,
+                "self_constraint": [],
+                "under_constraint": [
+                    {
+                        "name": "constraint0",
+                        "status": true
+                    }
+                ],
+                "relation": [],
+                "loop": [],
+                "usedBy": [],
+                "dependency": [],
+                "count": 1
+            },
+            {
+                "name": "android::NO_ERROR",
+                "type": "android::status_t",
+                "value": 0,
+                "serialization_type": 0,
+                "self_constraint": [],
+                "under_constraint": [
+                    {
+                        "name": "constraint0",
+                        "status": false
+                    }
+                ],
+                "relation": [],
+                "loop": [],
+                "usedBy": [],
+                "dependency": [],
+                "count": 1
+            }
+        ],
+        "constraint": [
+            {
+                "name": "constraint0",
+                "opcode": "!",
+                "lhs": {
+                    "name": "ServiceInterfaceDescriptor",
+                    "type": "class android::String16",
+                    "serialization_type": 1
+                },
+                "probability": 0.1
+            }
+        ],
+        "loop": [],
+        "serviceName": "None",
+        "interfaceName": "ICamera",
+        "interfaceToken": "android.hardware.ICamera"
+    },
+    "ICamera::18-18": {
+        "code": [
+            18
+        ],
+        "dependency": [
+            {
+                "filename": "BnCameraService.json",
+                "type": "Transaction",
+                "name": "ICameraService::3-3",
+                "possIdx": 0,
+                "varIdx": 1,
+                "varName": "_aidl_return",
+                "varType": "class android::sp<class android::hardware::ICamera>"
+            },
+            {
+                "filename": "BnCameraService.json",
+                "type": "Transaction",
+                "name": "ICameraService::5-5",
+                "possIdx": 0,
+                "varIdx": 1,
+                "varName": "_aidl_return",
+                "varType": "class android::sp<class android::hardware::ICamera>"
+            }
+        ],
+        "possibility": [
+            {
+                "id": 0,
+                "data": [
+                    "ServiceInterfaceDescriptor"
+                ],
+                "reply": [],
+                "return": "android::PERMISSION_DENIED"
+            },
+            {
+                "id": 1,
+                "data": [
+                    "ServiceInterfaceDescriptor"
+                ],
+                "reply": [],
+                "return": "android::NO_ERROR"
+            }
+        ],
+        "variable": [
+            {
+                "name": "ServiceInterfaceDescriptor",
+                "type": "class android::String16",
+                "serialization_type": 1,
+                "self_constraint": [
+                    "constraint0"
+                ],
+                "under_constraint": [],
+                "relation": [],
+                "loop": [],
+                "usedBy": [],
+                "dependency": [],
+                "count": 1
+            },
+            {
+                "name": "android::PERMISSION_DENIED",
+                "type": "android::status_t",
+                "value": -1,
+                "serialization_type": 0,
+                "self_constraint": [],
+                "under_constraint": [
+                    {
+                        "name": "constraint0",
+                        "status": true
+                    }
+                ],
+                "relation": [],
+                "loop": [],
+                "usedBy": [],
+                "dependency": [],
+                "count": 1
+            },
+            {
+                "name": "android::NO_ERROR",
+                "type": "android::status_t",
+                "value": 0,
+                "serialization_type": 0,
+                "self_constraint": [],
+                "under_constraint": [
+                    {
+                        "name": "constraint0",
+                        "status": false
+                    }
+                ],
+                "relation": [],
+                "loop": [],
+                "usedBy": [],
+                "dependency": [],
+                "count": 1
+            }
+        ],
+        "constraint": [
+            {
+                "name": "constraint0",
+                "opcode": "!",
+                "lhs": {
+                    "name": "ServiceInterfaceDescriptor",
+                    "type": "class android::String16",
+                    "serialization_type": 1
+                },
+                "probability": 0.1
+            }
+        ],
+        "loop": [],
+        "serviceName": "None",
+        "interfaceName": "ICamera",
+        "interfaceToken": "android.hardware.ICamera"
+    },
+    "ICamera::20-20": {
+        "code": [
+            20
+        ],
+        "dependency": [
+            {
+                "filename": "BnCameraService.json",
+                "type": "Transaction",
+                "name": "ICameraService::3-3",
+                "possIdx": 0,
+                "varIdx": 1,
+                "varName": "_aidl_return",
+                "varType": "class android::sp<class android::hardware::ICamera>"
+            },
+            {
+                "filename": "BnCameraService.json",
+                "type": "Transaction",
+                "name": "ICameraService::5-5",
+                "possIdx": 0,
+                "varIdx": 1,
+                "varName": "_aidl_return",
+                "varType": "class android::sp<class android::hardware::ICamera>"
+            }
+        ],
+        "possibility": [
+            {
+                "id": 0,
+                "data": [
+                    "ServiceInterfaceDescriptor"
+                ],
+                "reply": [],
+                "return": "android::PERMISSION_DENIED"
+            },
+            {
+                "id": 1,
+                "data": [
+                    "ServiceInterfaceDescriptor",
+                    "mem"
+                ],
+                "reply": [],
+                "return": "android::NO_ERROR"
+            }
+        ],
+        "variable": [
+            {
+                "name": "ServiceInterfaceDescriptor",
+                "type": "class android::String16",
+                "serialization_type": 1,
+                "self_constraint": [
+                    "constraint0"
+                ],
+                "under_constraint": [],
+                "relation": [],
+                "loop": [],
+                "usedBy": [],
+                "dependency": [],
+                "count": 1
+            },
+            {
+                "name": "android::PERMISSION_DENIED",
+                "type": "android::status_t",
+                "value": -1,
+                "serialization_type": 0,
+                "self_constraint": [],
+                "under_constraint": [
+                    {
+                        "name": "constraint0",
+                        "status": true
+                    }
+                ],
+                "relation": [],
+                "loop": [],
+                "usedBy": [],
+                "dependency": [],
+                "count": 1
+            },
+            {
+                "type": "class android::sp<class android::IMemory>",
+                "name": "mem",
+                "serialization_type": 1,
+                "self_constraint": [],
+                "under_constraint": [
+                    {
+                        "name": "constraint0",
+                        "status": false
+                    }
+                ],
+                "relation": [],
+                "loop": [],
+                "usedBy": [],
+                "dependency": [
+                    {
+                        "filename": "BnEffect.json",
+                        "type": "Transaction",
+                        "name": "IEffect::5-5",
+                        "possIdx": 1,
+                        "varIdx": 0,
+                        "varName": "Cblk",
+                        "varType": "class android::sp<class android::IMemory>"
+                    },
+                    {
+                        "filename": "BnMediaSource.json",
+                        "type": "Transaction",
+                        "name": "IMediaSource::5-5",
+                        "possIdx": 1,
+                        "varIdx": 2,
+                        "varName": "transferBuf.mMemory",
+                        "varType": "class android::sp<class android::IMemory>"
+                    },
+                    {
+                        "filename": "BnMediaMetadataRetriever.json",
+                        "type": "Transaction",
+                        "name": "IMediaMetadataRetriever::5-5",
+                        "possIdx": 1,
+                        "varIdx": 1,
+                        "varName": "bitmap",
+                        "varType": "class android::sp<class android::IMemory>"
+                    },
+                    {
+                        "filename": "BnMediaMetadataRetriever.json",
+                        "type": "Transaction",
+                        "name": "IMediaMetadataRetriever::6-6",
+                        "possIdx": 1,
+                        "varIdx": 1,
+                        "varName": "bitmap",
+                        "varType": "class android::sp<class android::IMemory>"
+                    },
+                    {
+                        "filename": "BnMediaMetadataRetriever.json",
+                        "type": "Transaction",
+                        "name": "IMediaMetadataRetriever::7-7",
+                        "possIdx": 1,
+                        "varIdx": 1,
+                        "varName": "bitmap",
+                        "varType": "class android::sp<class android::IMemory>"
+                    },
+                    {
+                        "filename": "BnMediaMetadataRetriever.json",
+                        "type": "Transaction",
+                        "name": "IMediaMetadataRetriever::8-8",
+                        "possIdx": 1,
+                        "varIdx": 2,
+                        "varName": "frames[i]",
+                        "varType": "class android::sp<class android::IMemory>"
+                    },
+                    {
+                        "filename": "BnMediaMetadataRetriever.json",
+                        "type": "Transaction",
+                        "name": "IMediaMetadataRetriever::9-9",
+                        "possIdx": 1,
+                        "varIdx": 1,
+                        "varName": "albumArt",
+                        "varType": "class android::sp<class android::IMemory>"
+                    },
+                    {
+                        "filename": "BnAudioTrack.json",
+                        "type": "Transaction",
+                        "name": "IAudioTrack::1-1",
+                        "possIdx": 1,
+                        "varIdx": 0,
+                        "varName": "Cblk",
+                        "varType": "class android::sp<class android::IMemory>"
+                    },
+                    {
+                        "filename": "BnDataSource.json",
+                        "type": "Transaction",
+                        "name": "IDataSource::1-1",
+                        "possIdx": 1,
+                        "varIdx": 0,
+                        "varName": "IMemory",
+                        "varType": "class android::sp<class android::IMemory>"
+                    },
+                    {
+                        "filename": "class android::IAudioFlinger::CreateRecordOutput.json",
+                        "type": "Structure",
+                        "name": "class android::IAudioFlinger::CreateRecordOutput",
+                        "possIdx": 0,
+                        "varIdx": 8,
+                        "varName": "cblk",
+                        "varType": "class android::sp<class android::IMemory>"
+                    },
+                    {
+                        "filename": "class android::IAudioFlinger::CreateRecordOutput.json",
+                        "type": "Structure",
+                        "name": "class android::IAudioFlinger::CreateRecordOutput",
+                        "possIdx": 0,
+                        "varIdx": 11,
+                        "varName": "buffers",
+                        "varType": "class android::sp<class android::IMemory>"
+                    }
+                ],
+                "count": 1,
+                "interfaceName": "IMemory"
+            },
+            {
+                "name": "android::NO_ERROR",
+                "type": "android::status_t",
+                "value": 0,
+                "serialization_type": 0,
+                "self_constraint": [],
+                "under_constraint": [
+                    {
+                        "name": "constraint0",
+                        "status": false
+                    }
+                ],
+                "relation": [],
+                "loop": [],
+                "usedBy": [],
+                "dependency": [],
+                "count": 1
+            }
+        ],
+        "constraint": [
+            {
+                "name": "constraint0",
+                "opcode": "!",
+                "lhs": {
+                    "name": "ServiceInterfaceDescriptor",
+                    "type": "class android::String16",
+                    "serialization_type": 1
+                },
+                "probability": 0.1
+            }
+        ],
+        "loop": [],
+        "serviceName": "None",
+        "interfaceName": "ICamera",
+        "interfaceToken": "android.hardware.ICamera"
+    },
+    "ICamera::23-23": {
+        "code": [
+            23
+        ],
+        "dependency": [
+            {
+                "filename": "BnCameraService.json",
+                "type": "Transaction",
+                "name": "ICameraService::3-3",
+                "possIdx": 0,
+                "varIdx": 1,
+                "varName": "_aidl_return",
+                "varType": "class android::sp<class android::hardware::ICamera>"
+            },
+            {
+                "filename": "BnCameraService.json",
+                "type": "Transaction",
+                "name": "ICameraService::5-5",
+                "possIdx": 0,
+                "varIdx": 1,
+                "varName": "_aidl_return",
+                "varType": "class android::sp<class android::hardware::ICamera>"
+            }
+        ],
+        "possibility": [
+            {
+                "id": 0,
+                "data": [
+                    "ServiceInterfaceDescriptor"
+                ],
+                "reply": [],
+                "return": "android::PERMISSION_DENIED"
+            },
+            {
+                "id": 1,
+                "data": [
+                    "ServiceInterfaceDescriptor",
+                    "implicit_3"
+                ],
+                "reply": [],
+                "return": "android::NO_ERROR"
+            }
+        ],
+        "variable": [
+            {
+                "name": "ServiceInterfaceDescriptor",
+                "type": "class android::String16",
+                "serialization_type": 1,
+                "self_constraint": [
+                    "constraint0"
+                ],
+                "under_constraint": [],
+                "relation": [],
+                "loop": [],
+                "usedBy": [],
+                "dependency": [],
+                "count": 1
+            },
+            {
+                "name": "android::PERMISSION_DENIED",
+                "type": "android::status_t",
+                "value": -1,
+                "serialization_type": 0,
+                "self_constraint": [],
+                "under_constraint": [
+                    {
+                        "name": "constraint0",
+                        "status": true
+                    }
+                ],
+                "relation": [],
+                "loop": [],
+                "usedBy": [],
+                "dependency": [],
+                "count": 1
+            },
+            {
+                "type": "struct native_handle",
+                "name": "implicit_3",
+                "serialization_type": 1,
+                "self_constraint": [],
+                "under_constraint": [
+                    {
+                        "name": "constraint0",
+                        "status": false
+                    }
+                ],
+                "relation": [],
+                "loop": [],
+                "usedBy": [],
+                "dependency": [],
+                "count": 1
+            },
+            {
+                "name": "android::NO_ERROR",
+                "type": "android::status_t",
+                "value": 0,
+                "serialization_type": 0,
+                "self_constraint": [],
+                "under_constraint": [
+                    {
+                        "name": "constraint0",
+                        "status": false
+                    }
+                ],
+                "relation": [],
+                "loop": [],
+                "usedBy": [],
+                "dependency": [],
+                "count": 1
+            }
+        ],
+        "constraint": [
+            {
+                "name": "constraint0",
+                "opcode": "!",
+                "lhs": {
+                    "name": "ServiceInterfaceDescriptor",
+                    "type": "class android::String16",
+                    "serialization_type": 1
+                },
+                "probability": 0.1
+            }
+        ],
+        "loop": [],
+        "serviceName": "None",
+        "interfaceName": "ICamera",
+        "interfaceToken": "android.hardware.ICamera"
+    },
+    "ICamera::24-24": {
+        "code": [
+            24
+        ],
+        "dependency": [
+            {
+                "filename": "BnCameraService.json",
+                "type": "Transaction",
+                "name": "ICameraService::3-3",
+                "possIdx": 0,
+                "varIdx": 1,
+                "varName": "_aidl_return",
+                "varType": "class android::sp<class android::hardware::ICamera>"
+            },
+            {
+                "filename": "BnCameraService.json",
+                "type": "Transaction",
+                "name": "ICameraService::5-5",
+                "possIdx": 0,
+                "varIdx": 1,
+                "varName": "_aidl_return",
+                "varType": "class android::sp<class android::hardware::ICamera>"
+            }
+        ],
+        "possibility": [
+            {
+                "id": 0,
+                "data": [
+                    "ServiceInterfaceDescriptor"
+                ],
+                "reply": [],
+                "return": "android::PERMISSION_DENIED"
+            },
+            {
+                "id": 1,
+                "data": [
+                    "ServiceInterfaceDescriptor",
+                    "n",
+                    "implicit_4"
+                ],
+                "reply": [],
+                "return": "android::NO_ERROR"
+            }
+        ],
+        "variable": [
+            {
+                "name": "ServiceInterfaceDescriptor",
+                "type": "class android::String16",
+                "serialization_type": 1,
+                "self_constraint": [
+                    "constraint0"
+                ],
+                "under_constraint": [],
+                "relation": [],
+                "loop": [],
+                "usedBy": [],
+                "dependency": [],
+                "count": 1
+            },
+            {
+                "name": "android::PERMISSION_DENIED",
+                "type": "android::status_t",
+                "value": -1,
+                "serialization_type": 0,
+                "self_constraint": [],
+                "under_constraint": [
+                    {
+                        "name": "constraint0",
+                        "status": true
+                    }
+                ],
+                "relation": [],
+                "loop": [],
+                "usedBy": [],
+                "dependency": [],
+                "count": 1
+            },
+            {
+                "type": "unsigned int",
+                "name": "n",
+                "serialization_type": 1,
+                "self_constraint": [
+                    "constraint1"
+                ],
+                "under_constraint": [
+                    {
+                        "name": "constraint0",
+                        "status": false
+                    }
+                ],
+                "relation": [],
+                "loop": [],
+                "usedBy": [],
+                "dependency": [
+                    {
+                        "filename": "BnSensorServer.json",
+                        "type": "Transaction",
+                        "name": "ISensorServer::1-1",
+                        "possIdx": 1,
+                        "varIdx": 0,
+                        "varName": "n",
+                        "varType": "unsigned int"
+                    },
+                    {
+                        "filename": "BnSensorServer.json",
+                        "type": "Transaction",
+                        "name": "ISensorServer::4-4",
+                        "possIdx": 1,
+                        "varIdx": 0,
+                        "varName": "n",
+                        "varType": "unsigned int"
+                    }
+                ],
+                "count": 1
+            },
+            {
+                "name": "i",
+                "type": "unsigned int",
+                "value": 0,
+                "serialization_type": 0,
+                "self_constraint": [
+                    "constraint1"
+                ],
+                "under_constraint": [
+                    {
+                        "name": "constraint0",
+                        "status": false
+                    }
+                ],
+                "relation": [],
+                "loop": [],
+                "usedBy": [],
+                "dependency": [],
+                "count": 1
+            },
+            {
+                "type": "struct native_handle",
+                "name": "implicit_4",
+                "serialization_type": 1,
+                "self_constraint": [],
+                "under_constraint": [
+                    {
+                        "name": "constraint0",
+                        "status": false
+                    }
+                ],
+                "relation": [],
+                "loop": [
+                    "loop0"
+                ],
+                "usedBy": [],
+                "dependency": [],
+                "count": 1
+            },
+            {
+                "name": "android::NO_ERROR",
+                "type": "android::status_t",
+                "value": 0,
+                "serialization_type": 0,
+                "self_constraint": [],
+                "under_constraint": [
+                    {
+                        "name": "constraint0",
+                        "status": false
+                    }
+                ],
+                "relation": [],
+                "loop": [],
+                "usedBy": [],
+                "dependency": [],
+                "count": 1
+            }
+        ],
+        "constraint": [
+            {
+                "name": "constraint0",
+                "opcode": "!",
+                "lhs": {
+                    "name": "ServiceInterfaceDescriptor",
+                    "type": "class android::String16",
+                    "serialization_type": 1
+                },
+                "probability": 0.1
+            },
+            {
+                "name": "constraint1",
+                "opcode": "<",
+                "lhs": {
+                    "name": "i",
+                    "type": "unsigned int"
+                },
+                "rhs": {
+                    "name": "n",
+                    "type": "unsigned int"
+                },
+                "probability": 0.5
+            }
+        ],
+        "loop": [
+            {
+                "name": "loop0",
+                "counter": {
+                    "name": "i",
+                    "type": "unsigned int",
+                    "value": 0
+                },
+                "constraint": "constraint1",
+                "inc": {
+                    "opcode": "++",
+                    "name": "i",
+                    "type": "unsigned int"
+                }
+            }
+        ],
+        "serviceName": "None",
+        "interfaceName": "ICamera",
+        "interfaceToken": "android.hardware.ICamera"
+    },
+    "ICamera::21-21": {
+        "code": [
+            21
+        ],
+        "dependency": [
+            {
+                "filename": "BnCameraService.json",
+                "type": "Transaction",
+                "name": "ICameraService::3-3",
+                "possIdx": 0,
+                "varIdx": 1,
+                "varName": "_aidl_return",
+                "varType": "class android::sp<class android::hardware::ICamera>"
+            },
+            {
+                "filename": "BnCameraService.json",
+                "type": "Transaction",
+                "name": "ICameraService::5-5",
+                "possIdx": 0,
+                "varIdx": 1,
+                "varName": "_aidl_return",
+                "varType": "class android::sp<class android::hardware::ICamera>"
+            }
+        ],
+        "possibility": [
+            {
+                "id": 0,
+                "data": [
+                    "ServiceInterfaceDescriptor"
+                ],
+                "reply": [],
+                "return": "android::PERMISSION_DENIED"
+            },
+            {
+                "id": 1,
+                "data": [
+                    "ServiceInterfaceDescriptor",
+                    "mode"
+                ],
+                "reply": [
+                    "implicit_4"
+                ],
+                "return": "android::NO_ERROR"
+            }
+        ],
+        "variable": [
+            {
+                "name": "ServiceInterfaceDescriptor",
+                "type": "class android::String16",
+                "serialization_type": 1,
+                "self_constraint": [
+                    "constraint0"
+                ],
+                "under_constraint": [],
+                "relation": [],
+                "loop": [],
+                "usedBy": [],
+                "dependency": [],
+                "count": 1
+            },
+            {
+                "name": "android::PERMISSION_DENIED",
+                "type": "android::status_t",
+                "value": -1,
+                "serialization_type": 0,
+                "self_constraint": [],
+                "under_constraint": [
+                    {
+                        "name": "constraint0",
+                        "status": true
+                    }
+                ],
+                "relation": [],
+                "loop": [],
+                "usedBy": [],
+                "dependency": [],
+                "count": 1
+            },
+            {
+                "type": "int",
+                "name": "mode",
+                "serialization_type": 1,
+                "self_constraint": [],
+                "under_constraint": [
+                    {
+                        "name": "constraint0",
+                        "status": false
+                    }
+                ],
+                "relation": [],
+                "loop": [],
+                "usedBy": [],
+                "dependency": [],
+                "count": 1
+            },
+            {
+                "type": "android::status_t",
+                "name": "implicit_4",
+                "serialization_type": 2,
+                "self_constraint": [],
+                "under_constraint": [
+                    {
+                        "name": "constraint0",
+                        "status": false
+                    }
+                ],
+                "relation": [],
+                "loop": [],
+                "usedBy": [],
+                "dependency": [],
+                "count": 1
+            },
+            {
+                "name": "android::NO_ERROR",
+                "type": "android::status_t",
+                "value": 0,
+                "serialization_type": 0,
+                "self_constraint": [],
+                "under_constraint": [
+                    {
+                        "name": "constraint0",
+                        "status": false
+                    }
+                ],
+                "relation": [],
+                "loop": [],
+                "usedBy": [],
+                "dependency": [],
+                "count": 1
+            }
+        ],
+        "constraint": [
+            {
+                "name": "constraint0",
+                "opcode": "!",
+                "lhs": {
+                    "name": "ServiceInterfaceDescriptor",
+                    "type": "class android::String16",
+                    "serialization_type": 1
+                },
+                "probability": 0.1
+            }
+        ],
+        "loop": [],
+        "serviceName": "None",
+        "interfaceName": "ICamera",
+        "interfaceToken": "android.hardware.ICamera"
+    },
+    "ICamera::16-16": {
+        "code": [
+            16
+        ],
+        "dependency": [
+            {
+                "filename": "BnCameraService.json",
+                "type": "Transaction",
+                "name": "ICameraService::3-3",
+                "possIdx": 0,
+                "varIdx": 1,
+                "varName": "_aidl_return",
+                "varType": "class android::sp<class android::hardware::ICamera>"
+            },
+            {
+                "filename": "BnCameraService.json",
+                "type": "Transaction",
+                "name": "ICameraService::5-5",
+                "possIdx": 0,
+                "varIdx": 1,
+                "varName": "_aidl_return",
+                "varType": "class android::sp<class android::hardware::ICamera>"
+            }
+        ],
+        "possibility": [
+            {
+                "id": 0,
+                "data": [
+                    "ServiceInterfaceDescriptor"
+                ],
+                "reply": [],
+                "return": "android::PERMISSION_DENIED"
+            },
+            {
+                "id": 1,
+                "data": [
+                    "ServiceInterfaceDescriptor"
+                ],
+                "reply": [
+                    "previewEnabled"
+                ],
+                "return": "android::NO_ERROR"
+            }
+        ],
+        "variable": [
+            {
+                "name": "ServiceInterfaceDescriptor",
+                "type": "class android::String16",
+                "serialization_type": 1,
+                "self_constraint": [
+                    "constraint0"
+                ],
+                "under_constraint": [],
+                "relation": [],
+                "loop": [],
+                "usedBy": [],
+                "dependency": [],
+                "count": 1
+            },
+            {
+                "name": "android::PERMISSION_DENIED",
+                "type": "android::status_t",
+                "value": -1,
+                "serialization_type": 0,
+                "self_constraint": [],
+                "under_constraint": [
+                    {
+                        "name": "constraint0",
+                        "status": true
+                    }
+                ],
+                "relation": [],
+                "loop": [],
+                "usedBy": [],
+                "dependency": [],
+                "count": 1
+            },
+            {
+                "type": "int",
+                "name": "previewEnabled",
+                "serialization_type": 2,
+                "self_constraint": [],
+                "under_constraint": [
+                    {
+                        "name": "constraint0",
+                        "status": false
+                    }
+                ],
+                "relation": [],
+                "loop": [],
+                "usedBy": [],
+                "dependency": [],
+                "count": 1
+            },
+            {
+                "name": "android::NO_ERROR",
+                "type": "android::status_t",
+                "value": 0,
+                "serialization_type": 0,
+                "self_constraint": [],
+                "under_constraint": [
+                    {
+                        "name": "constraint0",
+                        "status": false
+                    }
+                ],
+                "relation": [],
+                "loop": [],
+                "usedBy": [],
+                "dependency": [],
+                "count": 1
+            }
+        ],
+        "constraint": [
+            {
+                "name": "constraint0",
+                "opcode": "!",
+                "lhs": {
+                    "name": "ServiceInterfaceDescriptor",
+                    "type": "class android::String16",
+                    "serialization_type": 1
+                },
+                "probability": 0.1
+            }
+        ],
+        "loop": [],
+        "serviceName": "None",
+        "interfaceName": "ICamera",
+        "interfaceToken": "android.hardware.ICamera"
+    },
+    "ICamera::19-19": {
+        "code": [
+            19
+        ],
+        "dependency": [
+            {
+                "filename": "BnCameraService.json",
+                "type": "Transaction",
+                "name": "ICameraService::3-3",
+                "possIdx": 0,
+                "varIdx": 1,
+                "varName": "_aidl_return",
+                "varType": "class android::sp<class android::hardware::ICamera>"
+            },
+            {
+                "filename": "BnCameraService.json",
+                "type": "Transaction",
+                "name": "ICameraService::5-5",
+                "possIdx": 0,
+                "varIdx": 1,
+                "varName": "_aidl_return",
+                "varType": "class android::sp<class android::hardware::ICamera>"
+            }
+        ],
+        "possibility": [
+            {
+                "id": 0,
+                "data": [
+                    "ServiceInterfaceDescriptor"
+                ],
+                "reply": [],
+                "return": "android::PERMISSION_DENIED"
+            },
+            {
+                "id": 1,
+                "data": [
+                    "ServiceInterfaceDescriptor"
+                ],
+                "reply": [
+                    "recordingEnabled"
+                ],
+                "return": "android::NO_ERROR"
+            }
+        ],
+        "variable": [
+            {
+                "name": "ServiceInterfaceDescriptor",
+                "type": "class android::String16",
+                "serialization_type": 1,
+                "self_constraint": [
+                    "constraint0"
+                ],
+                "under_constraint": [],
+                "relation": [],
+                "loop": [],
+                "usedBy": [],
+                "dependency": [],
+                "count": 1
+            },
+            {
+                "name": "android::PERMISSION_DENIED",
+                "type": "android::status_t",
+                "value": -1,
+                "serialization_type": 0,
+                "self_constraint": [],
+                "under_constraint": [
+                    {
+                        "name": "constraint0",
+                        "status": true
+                    }
+                ],
+                "relation": [],
+                "loop": [],
+                "usedBy": [],
+                "dependency": [],
+                "count": 1
+            },
+            {
+                "type": "int",
+                "name": "recordingEnabled",
+                "serialization_type": 2,
+                "self_constraint": [],
+                "under_constraint": [
+                    {
+                        "name": "constraint0",
+                        "status": false
+                    }
+                ],
+                "relation": [],
+                "loop": [],
+                "usedBy": [],
+                "dependency": [],
+                "count": 1
+            },
+            {
+                "name": "android::NO_ERROR",
+                "type": "android::status_t",
+                "value": 0,
+                "serialization_type": 0,
+                "self_constraint": [],
+                "under_constraint": [
+                    {
+                        "name": "constraint0",
+                        "status": false
+                    }
+                ],
+                "relation": [],
+                "loop": [],
+                "usedBy": [],
+                "dependency": [],
+                "count": 1
+            }
+        ],
+        "constraint": [
+            {
+                "name": "constraint0",
+                "opcode": "!",
+                "lhs": {
+                    "name": "ServiceInterfaceDescriptor",
+                    "type": "class android::String16",
+                    "serialization_type": 1
+                },
+                "probability": 0.1
+            }
+        ],
+        "loop": [],
+        "serviceName": "None",
+        "interfaceName": "ICamera",
+        "interfaceToken": "android.hardware.ICamera"
+    },
+    "ICamera::7-7": {
+        "code": [
+            7
+        ],
+        "dependency": [
+            {
+                "filename": "BnCameraService.json",
+                "type": "Transaction",
+                "name": "ICameraService::3-3",
+                "possIdx": 0,
+                "varIdx": 1,
+                "varName": "_aidl_return",
+                "varType": "class android::sp<class android::hardware::ICamera>"
+            },
+            {
+                "filename": "BnCameraService.json",
+                "type": "Transaction",
+                "name": "ICameraService::5-5",
+                "possIdx": 0,
+                "varIdx": 1,
+                "varName": "_aidl_return",
+                "varType": "class android::sp<class android::hardware::ICamera>"
+            }
+        ],
+        "possibility": [
+            {
+                "id": 0,
+                "data": [
+                    "ServiceInterfaceDescriptor"
+                ],
+                "reply": [],
+                "return": "android::PERMISSION_DENIED"
+            },
+            {
+                "id": 1,
+                "data": [
+                    "ServiceInterfaceDescriptor"
+                ],
+                "reply": [
+                    "autoFocus"
+                ],
+                "return": "android::NO_ERROR"
+            }
+        ],
+        "variable": [
+            {
+                "name": "ServiceInterfaceDescriptor",
+                "type": "class android::String16",
+                "serialization_type": 1,
+                "self_constraint": [
+                    "constraint0"
+                ],
+                "under_constraint": [],
+                "relation": [],
+                "loop": [],
+                "usedBy": [],
+                "dependency": [],
+                "count": 1
+            },
+            {
+                "name": "android::PERMISSION_DENIED",
+                "type": "android::status_t",
+                "value": -1,
+                "serialization_type": 0,
+                "self_constraint": [],
+                "under_constraint": [
+                    {
+                        "name": "constraint0",
+                        "status": true
+                    }
+                ],
+                "relation": [],
+                "loop": [],
+                "usedBy": [],
+                "dependency": [],
+                "count": 1
+            },
+            {
+                "type": "android::status_t",
+                "name": "autoFocus",
+                "serialization_type": 2,
+                "self_constraint": [],
+                "under_constraint": [
+                    {
+                        "name": "constraint0",
+                        "status": false
+                    }
+                ],
+                "relation": [],
+                "loop": [],
+                "usedBy": [],
+                "dependency": [],
+                "count": 1
+            },
+            {
+                "name": "android::NO_ERROR",
+                "type": "android::status_t",
+                "value": 0,
+                "serialization_type": 0,
+                "self_constraint": [],
+                "under_constraint": [
+                    {
+                        "name": "constraint0",
+                        "status": false
+                    }
+                ],
+                "relation": [],
+                "loop": [],
+                "usedBy": [],
+                "dependency": [],
+                "count": 1
+            }
+        ],
+        "constraint": [
+            {
+                "name": "constraint0",
+                "opcode": "!",
+                "lhs": {
+                    "name": "ServiceInterfaceDescriptor",
+                    "type": "class android::String16",
+                    "serialization_type": 1
+                },
+                "probability": 0.1
+            }
+        ],
+        "loop": [],
+        "serviceName": "None",
+        "interfaceName": "ICamera",
+        "interfaceToken": "android.hardware.ICamera"
+    },
+    "ICamera::8-8": {
+        "code": [
+            8
+        ],
+        "dependency": [
+            {
+                "filename": "BnCameraService.json",
+                "type": "Transaction",
+                "name": "ICameraService::3-3",
+                "possIdx": 0,
+                "varIdx": 1,
+                "varName": "_aidl_return",
+                "varType": "class android::sp<class android::hardware::ICamera>"
+            },
+            {
+                "filename": "BnCameraService.json",
+                "type": "Transaction",
+                "name": "ICameraService::5-5",
+                "possIdx": 0,
+                "varIdx": 1,
+                "varName": "_aidl_return",
+                "varType": "class android::sp<class android::hardware::ICamera>"
+            }
+        ],
+        "possibility": [
+            {
+                "id": 0,
+                "data": [
+                    "ServiceInterfaceDescriptor"
+                ],
+                "reply": [],
+                "return": "android::PERMISSION_DENIED"
+            },
+            {
+                "id": 1,
+                "data": [
+                    "ServiceInterfaceDescriptor"
+                ],
+                "reply": [
+                    "cancelAutoFocus"
+                ],
+                "return": "android::NO_ERROR"
+            }
+        ],
+        "variable": [
+            {
+                "name": "ServiceInterfaceDescriptor",
+                "type": "class android::String16",
+                "serialization_type": 1,
+                "self_constraint": [
+                    "constraint0"
+                ],
+                "under_constraint": [],
+                "relation": [],
+                "loop": [],
+                "usedBy": [],
+                "dependency": [],
+                "count": 1
+            },
+            {
+                "name": "android::PERMISSION_DENIED",
+                "type": "android::status_t",
+                "value": -1,
+                "serialization_type": 0,
+                "self_constraint": [],
+                "under_constraint": [
+                    {
+                        "name": "constraint0",
+                        "status": true
+                    }
+                ],
+                "relation": [],
+                "loop": [],
+                "usedBy": [],
+                "dependency": [],
+                "count": 1
+            },
+            {
+                "type": "android::status_t",
+                "name": "cancelAutoFocus",
+                "serialization_type": 2,
+                "self_constraint": [],
+                "under_constraint": [
+                    {
+                        "name": "constraint0",
+                        "status": false
+                    }
+                ],
+                "relation": [],
+                "loop": [],
+                "usedBy": [],
+                "dependency": [],
+                "count": 1
+            },
+            {
+                "name": "android::NO_ERROR",
+                "type": "android::status_t",
+                "value": 0,
+                "serialization_type": 0,
+                "self_constraint": [],
+                "under_constraint": [
+                    {
+                        "name": "constraint0",
+                        "status": false
+                    }
+                ],
+                "relation": [],
+                "loop": [],
+                "usedBy": [],
+                "dependency": [],
+                "count": 1
+            }
+        ],
+        "constraint": [
+            {
+                "name": "constraint0",
+                "opcode": "!",
+                "lhs": {
+                    "name": "ServiceInterfaceDescriptor",
+                    "type": "class android::String16",
+                    "serialization_type": 1
+                },
+                "probability": 0.1
+            }
+        ],
+        "loop": [],
+        "serviceName": "None",
+        "interfaceName": "ICamera",
+        "interfaceToken": "android.hardware.ICamera"
+    },
+    "ICamera::9-9": {
+        "code": [
+            9
+        ],
+        "dependency": [
+            {
+                "filename": "BnCameraService.json",
+                "type": "Transaction",
+                "name": "ICameraService::3-3",
+                "possIdx": 0,
+                "varIdx": 1,
+                "varName": "_aidl_return",
+                "varType": "class android::sp<class android::hardware::ICamera>"
+            },
+            {
+                "filename": "BnCameraService.json",
+                "type": "Transaction",
+                "name": "ICameraService::5-5",
+                "possIdx": 0,
+                "varIdx": 1,
+                "varName": "_aidl_return",
+                "varType": "class android::sp<class android::hardware::ICamera>"
+            }
+        ],
+        "possibility": [
+            {
+                "id": 0,
+                "data": [
+                    "ServiceInterfaceDescriptor"
+                ],
+                "reply": [],
+                "return": "android::PERMISSION_DENIED"
+            },
+            {
+                "id": 1,
+                "data": [
+                    "ServiceInterfaceDescriptor",
+                    "msgType"
+                ],
+                "reply": [
+                    "implicit_4"
+                ],
+                "return": "android::NO_ERROR"
+            }
+        ],
+        "variable": [
+            {
+                "name": "ServiceInterfaceDescriptor",
+                "type": "class android::String16",
+                "serialization_type": 1,
+                "self_constraint": [
+                    "constraint0"
+                ],
+                "under_constraint": [],
+                "relation": [],
+                "loop": [],
+                "usedBy": [],
+                "dependency": [],
+                "count": 1
+            },
+            {
+                "name": "android::PERMISSION_DENIED",
+                "type": "android::status_t",
+                "value": -1,
+                "serialization_type": 0,
+                "self_constraint": [],
+                "under_constraint": [
+                    {
+                        "name": "constraint0",
+                        "status": true
+                    }
+                ],
+                "relation": [],
+                "loop": [],
+                "usedBy": [],
+                "dependency": [],
+                "count": 1
+            },
+            {
+                "type": "int",
+                "name": "msgType",
+                "serialization_type": 1,
+                "self_constraint": [],
+                "under_constraint": [
+                    {
+                        "name": "constraint0",
+                        "status": false
+                    }
+                ],
+                "relation": [],
+                "loop": [],
+                "usedBy": [],
+                "dependency": [],
+                "count": 1
+            },
+            {
+                "type": "android::status_t",
+                "name": "implicit_4",
+                "serialization_type": 2,
+                "self_constraint": [],
+                "under_constraint": [
+                    {
+                        "name": "constraint0",
+                        "status": false
+                    }
+                ],
+                "relation": [],
+                "loop": [],
+                "usedBy": [],
+                "dependency": [],
+                "count": 1
+            },
+            {
+                "name": "android::NO_ERROR",
+                "type": "android::status_t",
+                "value": 0,
+                "serialization_type": 0,
+                "self_constraint": [],
+                "under_constraint": [
+                    {
+                        "name": "constraint0",
+                        "status": false
+                    }
+                ],
+                "relation": [],
+                "loop": [],
+                "usedBy": [],
+                "dependency": [],
+                "count": 1
+            }
+        ],
+        "constraint": [
+            {
+                "name": "constraint0",
+                "opcode": "!",
+                "lhs": {
+                    "name": "ServiceInterfaceDescriptor",
+                    "type": "class android::String16",
+                    "serialization_type": 1
+                },
+                "probability": 0.1
+            }
+        ],
+        "loop": [],
+        "serviceName": "None",
+        "interfaceName": "ICamera",
+        "interfaceToken": "android.hardware.ICamera"
+    },
+    "ICamera::10-10": {
+        "code": [
+            10
+        ],
+        "dependency": [
+            {
+                "filename": "BnCameraService.json",
+                "type": "Transaction",
+                "name": "ICameraService::3-3",
+                "possIdx": 0,
+                "varIdx": 1,
+                "varName": "_aidl_return",
+                "varType": "class android::sp<class android::hardware::ICamera>"
+            },
+            {
+                "filename": "BnCameraService.json",
+                "type": "Transaction",
+                "name": "ICameraService::5-5",
+                "possIdx": 0,
+                "varIdx": 1,
+                "varName": "_aidl_return",
+                "varType": "class android::sp<class android::hardware::ICamera>"
+            }
+        ],
+        "possibility": [
+            {
+                "id": 0,
+                "data": [
+                    "ServiceInterfaceDescriptor"
+                ],
+                "reply": [],
+                "return": "android::PERMISSION_DENIED"
+            },
+            {
+                "id": 1,
+                "data": [
+                    "ServiceInterfaceDescriptor",
+                    "params"
+                ],
+                "reply": [
+                    "implicit_4"
+                ],
+                "return": "android::NO_ERROR"
+            }
+        ],
+        "variable": [
+            {
+                "name": "ServiceInterfaceDescriptor",
+                "type": "class android::String16",
+                "serialization_type": 1,
+                "self_constraint": [
+                    "constraint0"
+                ],
+                "under_constraint": [],
+                "relation": [],
+                "loop": [],
+                "usedBy": [],
+                "dependency": [],
+                "count": 1
+            },
+            {
+                "name": "android::PERMISSION_DENIED",
+                "type": "android::status_t",
+                "value": -1,
+                "serialization_type": 0,
+                "self_constraint": [],
+                "under_constraint": [
+                    {
+                        "name": "constraint0",
+                        "status": true
+                    }
+                ],
+                "relation": [],
+                "loop": [],
+                "usedBy": [],
+                "dependency": [],
+                "count": 1
+            },
+            {
+                "type": "class android::String8",
+                "name": "params",
+                "serialization_type": 1,
+                "self_constraint": [],
+                "under_constraint": [
+                    {
+                        "name": "constraint0",
+                        "status": false
+                    }
+                ],
+                "relation": [],
+                "loop": [],
+                "usedBy": [],
+                "dependency": [],
+                "count": 1
+            },
+            {
+                "type": "android::status_t",
+                "name": "implicit_4",
+                "serialization_type": 2,
+                "self_constraint": [],
+                "under_constraint": [
+                    {
+                        "name": "constraint0",
+                        "status": false
+                    }
+                ],
+                "relation": [],
+                "loop": [],
+                "usedBy": [],
+                "dependency": [],
+                "count": 1
+            },
+            {
+                "name": "android::NO_ERROR",
+                "type": "android::status_t",
+                "value": 0,
+                "serialization_type": 0,
+                "self_constraint": [],
+                "under_constraint": [
+                    {
+                        "name": "constraint0",
+                        "status": false
+                    }
+                ],
+                "relation": [],
+                "loop": [],
+                "usedBy": [],
+                "dependency": [],
+                "count": 1
+            }
+        ],
+        "constraint": [
+            {
+                "name": "constraint0",
+                "opcode": "!",
+                "lhs": {
+                    "name": "ServiceInterfaceDescriptor",
+                    "type": "class android::String16",
+                    "serialization_type": 1
+                },
+                "probability": 0.1
+            }
+        ],
+        "loop": [],
+        "serviceName": "None",
+        "interfaceName": "ICamera",
+        "interfaceToken": "android.hardware.ICamera"
+    },
+    "ICamera::11-11": {
+        "code": [
+            11
+        ],
+        "dependency": [
+            {
+                "filename": "BnCameraService.json",
+                "type": "Transaction",
+                "name": "ICameraService::3-3",
+                "possIdx": 0,
+                "varIdx": 1,
+                "varName": "_aidl_return",
+                "varType": "class android::sp<class android::hardware::ICamera>"
+            },
+            {
+                "filename": "BnCameraService.json",
+                "type": "Transaction",
+                "name": "ICameraService::5-5",
+                "possIdx": 0,
+                "varIdx": 1,
+                "varName": "_aidl_return",
+                "varType": "class android::sp<class android::hardware::ICamera>"
+            }
+        ],
+        "possibility": [
+            {
+                "id": 0,
+                "data": [
+                    "ServiceInterfaceDescriptor"
+                ],
+                "reply": [],
+                "return": "android::PERMISSION_DENIED"
+            },
+            {
+                "id": 1,
+                "data": [
+                    "ServiceInterfaceDescriptor"
+                ],
+                "reply": [
+                    "Parameters"
+                ],
+                "return": "android::NO_ERROR"
+            }
+        ],
+        "variable": [
+            {
+                "name": "ServiceInterfaceDescriptor",
+                "type": "class android::String16",
+                "serialization_type": 1,
+                "self_constraint": [
+                    "constraint0"
+                ],
+                "under_constraint": [],
+                "relation": [],
+                "loop": [],
+                "usedBy": [],
+                "dependency": [],
+                "count": 1
+            },
+            {
+                "name": "android::PERMISSION_DENIED",
+                "type": "android::status_t",
+                "value": -1,
+                "serialization_type": 0,
+                "self_constraint": [],
+                "under_constraint": [
+                    {
+                        "name": "constraint0",
+                        "status": true
+                    }
+                ],
+                "relation": [],
+                "loop": [],
+                "usedBy": [],
+                "dependency": [],
+                "count": 1
+            },
+            {
+                "type": "class android::String8",
+                "name": "Parameters",
+                "serialization_type": 2,
+                "self_constraint": [],
+                "under_constraint": [
+                    {
+                        "name": "constraint0",
+                        "status": false
+                    }
+                ],
+                "relation": [],
+                "loop": [],
+                "usedBy": [],
+                "dependency": [],
+                "count": 1
+            },
+            {
+                "name": "android::NO_ERROR",
+                "type": "android::status_t",
+                "value": 0,
+                "serialization_type": 0,
+                "self_constraint": [],
+                "under_constraint": [
+                    {
+                        "name": "constraint0",
+                        "status": false
+                    }
+                ],
+                "relation": [],
+                "loop": [],
+                "usedBy": [],
+                "dependency": [],
+                "count": 1
+            }
+        ],
+        "constraint": [
+            {
+                "name": "constraint0",
+                "opcode": "!",
+                "lhs": {
+                    "name": "ServiceInterfaceDescriptor",
+                    "type": "class android::String16",
+                    "serialization_type": 1
+                },
+                "probability": 0.1
+            }
+        ],
+        "loop": [],
+        "serviceName": "None",
+        "interfaceName": "ICamera",
+        "interfaceToken": "android.hardware.ICamera"
+    },
+    "ICamera::12-12": {
+        "code": [
+            12
+        ],
+        "dependency": [
+            {
+                "filename": "BnCameraService.json",
+                "type": "Transaction",
+                "name": "ICameraService::3-3",
+                "possIdx": 0,
+                "varIdx": 1,
+                "varName": "_aidl_return",
+                "varType": "class android::sp<class android::hardware::ICamera>"
+            },
+            {
+                "filename": "BnCameraService.json",
+                "type": "Transaction",
+                "name": "ICameraService::5-5",
+                "possIdx": 0,
+                "varIdx": 1,
+                "varName": "_aidl_return",
+                "varType": "class android::sp<class android::hardware::ICamera>"
+            }
+        ],
+        "possibility": [
+            {
+                "id": 0,
+                "data": [
+                    "ServiceInterfaceDescriptor"
+                ],
+                "reply": [],
+                "return": "android::PERMISSION_DENIED"
+            },
+            {
+                "id": 1,
+                "data": [
+                    "ServiceInterfaceDescriptor",
+                    "command",
+                    "arg1",
+                    "arg2"
+                ],
+                "reply": [
+                    "implicit_6"
+                ],
+                "return": "android::NO_ERROR"
+            }
+        ],
+        "variable": [
+            {
+                "name": "ServiceInterfaceDescriptor",
+                "type": "class android::String16",
+                "serialization_type": 1,
+                "self_constraint": [
+                    "constraint0"
+                ],
+                "under_constraint": [],
+                "relation": [],
+                "loop": [],
+                "usedBy": [],
+                "dependency": [],
+                "count": 1
+            },
+            {
+                "name": "android::PERMISSION_DENIED",
+                "type": "android::status_t",
+                "value": -1,
+                "serialization_type": 0,
+                "self_constraint": [],
+                "under_constraint": [
+                    {
+                        "name": "constraint0",
+                        "status": true
+                    }
+                ],
+                "relation": [],
+                "loop": [],
+                "usedBy": [],
+                "dependency": [],
+                "count": 1
+            },
+            {
+                "type": "int",
+                "name": "command",
+                "serialization_type": 1,
+                "self_constraint": [],
+                "under_constraint": [
+                    {
+                        "name": "constraint0",
+                        "status": false
+                    }
+                ],
+                "relation": [],
+                "loop": [],
+                "usedBy": [],
+                "dependency": [],
+                "count": 1
+            },
+            {
+                "type": "int",
+                "name": "arg1",
+                "serialization_type": 1,
+                "self_constraint": [],
+                "under_constraint": [
+                    {
+                        "name": "constraint0",
+                        "status": false
+                    }
+                ],
+                "relation": [],
+                "loop": [],
+                "usedBy": [],
+                "dependency": [],
+                "count": 1
+            },
+            {
+                "type": "int",
+                "name": "arg2",
+                "serialization_type": 1,
+                "self_constraint": [],
+                "under_constraint": [
+                    {
+                        "name": "constraint0",
+                        "status": false
+                    }
+                ],
+                "relation": [],
+                "loop": [],
+                "usedBy": [],
+                "dependency": [],
+                "count": 1
+            },
+            {
+                "type": "android::status_t",
+                "name": "implicit_6",
+                "serialization_type": 2,
+                "self_constraint": [],
+                "under_constraint": [
+                    {
+                        "name": "constraint0",
+                        "status": false
+                    }
+                ],
+                "relation": [],
+                "loop": [],
+                "usedBy": [],
+                "dependency": [],
+                "count": 1
+            },
+            {
+                "name": "android::NO_ERROR",
+                "type": "android::status_t",
+                "value": 0,
+                "serialization_type": 0,
+                "self_constraint": [],
+                "under_constraint": [
+                    {
+                        "name": "constraint0",
+                        "status": false
+                    }
+                ],
+                "relation": [],
+                "loop": [],
+                "usedBy": [],
+                "dependency": [],
+                "count": 1
+            }
+        ],
+        "constraint": [
+            {
+                "name": "constraint0",
+                "opcode": "!",
+                "lhs": {
+                    "name": "ServiceInterfaceDescriptor",
+                    "type": "class android::String16",
+                    "serialization_type": 1
+                },
+                "probability": 0.1
+            }
+        ],
+        "loop": [],
+        "serviceName": "None",
+        "interfaceName": "ICamera",
+        "interfaceToken": "android.hardware.ICamera"
+    },
+    "ICamera::13-13": {
+        "code": [
+            13
+        ],
+        "dependency": [
+            {
+                "filename": "BnCameraService.json",
+                "type": "Transaction",
+                "name": "ICameraService::3-3",
+                "possIdx": 0,
+                "varIdx": 1,
+                "varName": "_aidl_return",
+                "varType": "class android::sp<class android::hardware::ICamera>"
+            },
+            {
+                "filename": "BnCameraService.json",
+                "type": "Transaction",
+                "name": "ICameraService::5-5",
+                "possIdx": 0,
+                "varIdx": 1,
+                "varName": "_aidl_return",
+                "varType": "class android::sp<class android::hardware::ICamera>"
+            }
+        ],
+        "possibility": [
+            {
+                "id": 0,
+                "data": [
+                    "ServiceInterfaceDescriptor"
+                ],
+                "reply": [],
+                "return": "android::PERMISSION_DENIED"
+            },
+            {
+                "id": 1,
+                "data": [
+                    "ServiceInterfaceDescriptor",
+                    "cameraClient"
+                ],
+                "reply": [
+                    "implicit_4"
+                ],
+                "return": "android::NO_ERROR"
+            }
+        ],
+        "variable": [
+            {
+                "name": "ServiceInterfaceDescriptor",
+                "type": "class android::String16",
+                "serialization_type": 1,
+                "self_constraint": [
+                    "constraint0"
+                ],
+                "under_constraint": [],
+                "relation": [],
+                "loop": [],
+                "usedBy": [],
+                "dependency": [],
+                "count": 1
+            },
+            {
+                "name": "android::PERMISSION_DENIED",
+                "type": "android::status_t",
+                "value": -1,
+                "serialization_type": 0,
+                "self_constraint": [],
+                "under_constraint": [
+                    {
+                        "name": "constraint0",
+                        "status": true
+                    }
+                ],
+                "relation": [],
+                "loop": [],
+                "usedBy": [],
+                "dependency": [],
+                "count": 1
+            },
+            {
+                "type": "class android::sp<class android::hardware::ICameraClient>",
+                "name": "cameraClient",
+                "serialization_type": 1,
+                "self_constraint": [],
+                "under_constraint": [
+                    {
+                        "name": "constraint0",
+                        "status": false
+                    }
+                ],
+                "relation": [],
+                "loop": [],
+                "usedBy": [],
+                "dependency": [],
+                "count": 1,
+                "interfaceName": "ICameraClient"
+            },
+            {
+                "type": "android::status_t",
+                "name": "implicit_4",
+                "serialization_type": 2,
+                "self_constraint": [],
+                "under_constraint": [
+                    {
+                        "name": "constraint0",
+                        "status": false
+                    }
+                ],
+                "relation": [],
+                "loop": [],
+                "usedBy": [],
+                "dependency": [],
+                "count": 1
+            },
+            {
+                "name": "android::NO_ERROR",
+                "type": "android::status_t",
+                "value": 0,
+                "serialization_type": 0,
+                "self_constraint": [],
+                "under_constraint": [
+                    {
+                        "name": "constraint0",
+                        "status": false
+                    }
+                ],
+                "relation": [],
+                "loop": [],
+                "usedBy": [],
+                "dependency": [],
+                "count": 1
+            }
+        ],
+        "constraint": [
+            {
+                "name": "constraint0",
+                "opcode": "!",
+                "lhs": {
+                    "name": "ServiceInterfaceDescriptor",
+                    "type": "class android::String16",
+                    "serialization_type": 1
+                },
+                "probability": 0.1
+            }
+        ],
+        "loop": [],
+        "serviceName": "None",
+        "interfaceName": "ICamera",
+        "interfaceToken": "android.hardware.ICamera"
+    },
+    "ICamera::14-14": {
+        "code": [
+            14
+        ],
+        "dependency": [
+            {
+                "filename": "BnCameraService.json",
+                "type": "Transaction",
+                "name": "ICameraService::3-3",
+                "possIdx": 0,
+                "varIdx": 1,
+                "varName": "_aidl_return",
+                "varType": "class android::sp<class android::hardware::ICamera>"
+            },
+            {
+                "filename": "BnCameraService.json",
+                "type": "Transaction",
+                "name": "ICameraService::5-5",
+                "possIdx": 0,
+                "varIdx": 1,
+                "varName": "_aidl_return",
+                "varType": "class android::sp<class android::hardware::ICamera>"
+            }
+        ],
+        "possibility": [
+            {
+                "id": 0,
+                "data": [
+                    "ServiceInterfaceDescriptor"
+                ],
+                "reply": [],
+                "return": "android::PERMISSION_DENIED"
+            },
+            {
+                "id": 1,
+                "data": [
+                    "ServiceInterfaceDescriptor"
+                ],
+                "reply": [
+                    "lock"
+                ],
+                "return": "android::NO_ERROR"
+            }
+        ],
+        "variable": [
+            {
+                "name": "ServiceInterfaceDescriptor",
+                "type": "class android::String16",
+                "serialization_type": 1,
+                "self_constraint": [
+                    "constraint0"
+                ],
+                "under_constraint": [],
+                "relation": [],
+                "loop": [],
+                "usedBy": [],
+                "dependency": [],
+                "count": 1
+            },
+            {
+                "name": "android::PERMISSION_DENIED",
+                "type": "android::status_t",
+                "value": -1,
+                "serialization_type": 0,
+                "self_constraint": [],
+                "under_constraint": [
+                    {
+                        "name": "constraint0",
+                        "status": true
+                    }
+                ],
+                "relation": [],
+                "loop": [],
+                "usedBy": [],
+                "dependency": [],
+                "count": 1
+            },
+            {
+                "type": "android::status_t",
+                "name": "lock",
+                "serialization_type": 2,
+                "self_constraint": [],
+                "under_constraint": [
+                    {
+                        "name": "constraint0",
+                        "status": false
+                    }
+                ],
+                "relation": [],
+                "loop": [],
+                "usedBy": [],
+                "dependency": [],
+                "count": 1
+            },
+            {
+                "name": "android::NO_ERROR",
+                "type": "android::status_t",
+                "value": 0,
+                "serialization_type": 0,
+                "self_constraint": [],
+                "under_constraint": [
+                    {
+                        "name": "constraint0",
+                        "status": false
+                    }
+                ],
+                "relation": [],
+                "loop": [],
+                "usedBy": [],
+                "dependency": [],
+                "count": 1
+            }
+        ],
+        "constraint": [
+            {
+                "name": "constraint0",
+                "opcode": "!",
+                "lhs": {
+                    "name": "ServiceInterfaceDescriptor",
+                    "type": "class android::String16",
+                    "serialization_type": 1
+                },
+                "probability": 0.1
+            }
+        ],
+        "loop": [],
+        "serviceName": "None",
+        "interfaceName": "ICamera",
+        "interfaceToken": "android.hardware.ICamera"
+    },
+    "ICamera::15-15": {
+        "code": [
+            15
+        ],
+        "dependency": [
+            {
+                "filename": "BnCameraService.json",
+                "type": "Transaction",
+                "name": "ICameraService::3-3",
+                "possIdx": 0,
+                "varIdx": 1,
+                "varName": "_aidl_return",
+                "varType": "class android::sp<class android::hardware::ICamera>"
+            },
+            {
+                "filename": "BnCameraService.json",
+                "type": "Transaction",
+                "name": "ICameraService::5-5",
+                "possIdx": 0,
+                "varIdx": 1,
+                "varName": "_aidl_return",
+                "varType": "class android::sp<class android::hardware::ICamera>"
+            }
+        ],
+        "possibility": [
+            {
+                "id": 0,
+                "data": [
+                    "ServiceInterfaceDescriptor"
+                ],
+                "reply": [],
+                "return": "android::PERMISSION_DENIED"
+            },
+            {
+                "id": 1,
+                "data": [
+                    "ServiceInterfaceDescriptor"
+                ],
+                "reply": [
+                    "unlock"
+                ],
+                "return": "android::NO_ERROR"
+            }
+        ],
+        "variable": [
+            {
+                "name": "ServiceInterfaceDescriptor",
+                "type": "class android::String16",
+                "serialization_type": 1,
+                "self_constraint": [
+                    "constraint0"
+                ],
+                "under_constraint": [],
+                "relation": [],
+                "loop": [],
+                "usedBy": [],
+                "dependency": [],
+                "count": 1
+            },
+            {
+                "name": "android::PERMISSION_DENIED",
+                "type": "android::status_t",
+                "value": -1,
+                "serialization_type": 0,
+                "self_constraint": [],
+                "under_constraint": [
+                    {
+                        "name": "constraint0",
+                        "status": true
+                    }
+                ],
+                "relation": [],
+                "loop": [],
+                "usedBy": [],
+                "dependency": [],
+                "count": 1
+            },
+            {
+                "type": "android::status_t",
+                "name": "unlock",
+                "serialization_type": 2,
+                "self_constraint": [],
+                "under_constraint": [
+                    {
+                        "name": "constraint0",
+                        "status": false
+                    }
+                ],
+                "relation": [],
+                "loop": [],
+                "usedBy": [],
+                "dependency": [],
+                "count": 1
+            },
+            {
+                "name": "android::NO_ERROR",
+                "type": "android::status_t",
+                "value": 0,
+                "serialization_type": 0,
+                "self_constraint": [],
+                "under_constraint": [
+                    {
+                        "name": "constraint0",
+                        "status": false
+                    }
+                ],
+                "relation": [],
+                "loop": [],
+                "usedBy": [],
+                "dependency": [],
+                "count": 1
+            }
+        ],
+        "constraint": [
+            {
+                "name": "constraint0",
+                "opcode": "!",
+                "lhs": {
+                    "name": "ServiceInterfaceDescriptor",
+                    "type": "class android::String16",
+                    "serialization_type": 1
+                },
+                "probability": 0.1
+            }
+        ],
+        "loop": [],
+        "serviceName": "None",
+        "interfaceName": "ICamera",
+        "interfaceToken": "android.hardware.ICamera"
+    },
+    "ICamera::22-22": {
+        "code": [
+            22
+        ],
+        "dependency": [
+            {
+                "filename": "BnCameraService.json",
+                "type": "Transaction",
+                "name": "ICameraService::3-3",
+                "possIdx": 0,
+                "varIdx": 1,
+                "varName": "_aidl_return",
+                "varType": "class android::sp<class android::hardware::ICamera>"
+            },
+            {
+                "filename": "BnCameraService.json",
+                "type": "Transaction",
+                "name": "ICameraService::5-5",
+                "possIdx": 0,
+                "varIdx": 1,
+                "varName": "_aidl_return",
+                "varType": "class android::sp<class android::hardware::ICamera>"
+            }
+        ],
+        "possibility": [
+            {
+                "id": 0,
+                "data": [
+                    "ServiceInterfaceDescriptor"
+                ],
+                "reply": [],
+                "return": "android::PERMISSION_DENIED"
+            },
+            {
+                "id": 1,
+                "data": [
+                    "ServiceInterfaceDescriptor",
+                    "st"
+                ],
+                "reply": [
+                    "implicit_4"
+                ],
+                "return": "android::NO_ERROR"
+            }
+        ],
+        "variable": [
+            {
+                "name": "ServiceInterfaceDescriptor",
+                "type": "class android::String16",
+                "serialization_type": 1,
+                "self_constraint": [
+                    "constraint0"
+                ],
+                "under_constraint": [],
+                "relation": [],
+                "loop": [],
+                "usedBy": [],
+                "dependency": [],
+                "count": 1
+            },
+            {
+                "name": "android::PERMISSION_DENIED",
+                "type": "android::status_t",
+                "value": -1,
+                "serialization_type": 0,
+                "self_constraint": [],
+                "under_constraint": [
+                    {
+                        "name": "constraint0",
+                        "status": true
+                    }
+                ],
+                "relation": [],
+                "loop": [],
+                "usedBy": [],
+                "dependency": [],
+                "count": 1
+            },
+            {
+                "type": "class android::sp<class android::IGraphicBufferProducer>",
+                "name": "st",
+                "serialization_type": 1,
+                "self_constraint": [],
+                "under_constraint": [
+                    {
+                        "name": "constraint0",
+                        "status": false
+                    }
+                ],
+                "relation": [],
+                "loop": [],
+                "usedBy": [],
+                "dependency": [
+                    {
+                        "filename": "BnSurfaceComposerClient.json",
+                        "type": "Transaction",
+                        "name": "ISurfaceComposerClient::1-1",
+                        "possIdx": 1,
+                        "varIdx": 1,
+                        "varName": "gbp",
+                        "varType": "class android::sp<class android::IGraphicBufferProducer>"
+                    },
+                    {
+                        "filename": "BnMediaRecorder.json",
+                        "type": "Transaction",
+                        "name": "IMediaRecorder::5-5",
+                        "possIdx": 1,
+                        "varIdx": 1,
+                        "varName": "surfaceMediaSource",
+                        "varType": "class android::sp<class android::IGraphicBufferProducer>"
+                    }
+                ],
+                "count": 1,
+                "interfaceName": "IGraphicBufferProducer"
+            },
+            {
+                "type": "android::status_t",
+                "name": "implicit_4",
+                "serialization_type": 2,
+                "self_constraint": [],
+                "under_constraint": [
+                    {
+                        "name": "constraint0",
+                        "status": false
+                    }
+                ],
+                "relation": [],
+                "loop": [],
+                "usedBy": [],
+                "dependency": [],
+                "count": 1
+            },
+            {
+                "name": "android::NO_ERROR",
+                "type": "android::status_t",
+                "value": 0,
+                "serialization_type": 0,
+                "self_constraint": [],
+                "under_constraint": [
+                    {
+                        "name": "constraint0",
+                        "status": false
+                    }
+                ],
+                "relation": [],
+                "loop": [],
+                "usedBy": [],
+                "dependency": [],
+                "count": 1
+            }
+        ],
+        "constraint": [
+            {
+                "name": "constraint0",
+                "opcode": "!",
+                "lhs": {
+                    "name": "ServiceInterfaceDescriptor",
+                    "type": "class android::String16",
+                    "serialization_type": 1
+                },
+                "probability": 0.1
+            }
+        ],
+        "loop": [],
+        "serviceName": "None",
+        "interfaceName": "ICamera",
+        "interfaceToken": "android.hardware.ICamera"
+    }
+}

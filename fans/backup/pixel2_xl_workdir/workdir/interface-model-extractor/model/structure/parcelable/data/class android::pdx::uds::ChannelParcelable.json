@@ -1,0 +1,396 @@
+{
+    "class android::pdx::uds::ChannelParcelable": {
+        "variable": [
+            {
+                "count": 1,
+                "self_constraint": [
+                    "constraint0",
+                    "constraint3"
+                ],
+                "name": "IsValid",
+                "under_constraint": [],
+                "dependency": [],
+                "relation": [],
+                "serialization_type": 0,
+                "usedBy": [],
+                "type": "_Bool",
+                "loop": []
+            },
+            {
+                "count": 1,
+                "self_constraint": [],
+                "name": "android::ALREADY_EXISTS",
+                "under_constraint": [
+                    {
+                        "status": true,
+                        "name": "constraint0"
+                    }
+                ],
+                "value": -17,
+                "dependency": [],
+                "relation": [],
+                "serialization_type": 0,
+                "usedBy": [],
+                "type": "android::status_t",
+                "loop": []
+            },
+            {
+                "count": 1,
+                "self_constraint": [
+                    "constraint2"
+                ],
+                "name": "magic",
+                "under_constraint": [
+                    {
+                        "status": false,
+                        "name": "constraint0"
+                    }
+                ],
+                "dependency": [],
+                "relation": [],
+                "serialization_type": 1,
+                "usedBy": [],
+                "type": "unsigned int",
+                "loop": []
+            },
+            {
+                "count": 1,
+                "self_constraint": [
+                    "constraint1"
+                ],
+                "name": "res",
+                "under_constraint": [
+                    {
+                        "status": false,
+                        "name": "constraint0"
+                    }
+                ],
+                "dependency": [],
+                "relation": [],
+                "serialization_type": 0,
+                "usedBy": [],
+                "type": "android::status_t",
+                "loop": []
+            },
+            {
+                "count": 1,
+                "self_constraint": [],
+                "name": "android::BAD_VALUE",
+                "under_constraint": [
+                    {
+                        "status": false,
+                        "name": "constraint0"
+                    },
+                    {
+                        "status": false,
+                        "name": "constraint1"
+                    },
+                    {
+                        "status": true,
+                        "name": "constraint2"
+                    }
+                ],
+                "value": -22,
+                "dependency": [],
+                "relation": [],
+                "serialization_type": 0,
+                "usedBy": [],
+                "type": "android::status_t",
+                "loop": []
+            },
+            {
+                "count": 1,
+                "self_constraint": [],
+                "name": "android::pdx::uds::ChannelParcelable::data_fd_.Get",
+                "under_constraint": [
+                    {
+                        "status": false,
+                        "name": "constraint0"
+                    },
+                    {
+                        "status": false,
+                        "name": "constraint1"
+                    },
+                    {
+                        "status": false,
+                        "name": "constraint2"
+                    }
+                ],
+                "dependency": [],
+                "relation": [],
+                "takeOwnership": false,
+                "serialization_type": 1,
+                "usedBy": [],
+                "type": "FileDescriptor",
+                "loop": []
+            },
+            {
+                "count": 1,
+                "self_constraint": [],
+                "name": "android::pdx::uds::ChannelParcelable::pollin_event_fd_.Get",
+                "under_constraint": [
+                    {
+                        "status": false,
+                        "name": "constraint0"
+                    },
+                    {
+                        "status": false,
+                        "name": "constraint1"
+                    },
+                    {
+                        "status": false,
+                        "name": "constraint2"
+                    }
+                ],
+                "dependency": [],
+                "relation": [],
+                "takeOwnership": false,
+                "serialization_type": 1,
+                "usedBy": [],
+                "type": "FileDescriptor",
+                "loop": []
+            },
+            {
+                "count": 1,
+                "self_constraint": [],
+                "name": "android::pdx::uds::ChannelParcelable::pollhup_event_fd_.Get",
+                "under_constraint": [
+                    {
+                        "status": false,
+                        "name": "constraint0"
+                    },
+                    {
+                        "status": false,
+                        "name": "constraint1"
+                    },
+                    {
+                        "status": false,
+                        "name": "constraint2"
+                    }
+                ],
+                "dependency": [],
+                "relation": [],
+                "takeOwnership": false,
+                "serialization_type": 1,
+                "usedBy": [],
+                "type": "FileDescriptor",
+                "loop": []
+            },
+            {
+                "count": 1,
+                "self_constraint": [],
+                "name": "data_fd_.Get",
+                "under_constraint": [
+                    {
+                        "status": false,
+                        "name": "constraint0"
+                    },
+                    {
+                        "status": false,
+                        "name": "constraint1"
+                    },
+                    {
+                        "status": false,
+                        "name": "constraint2"
+                    },
+                    {
+                        "status": true,
+                        "name": "constraint3"
+                    }
+                ],
+                "dependency": [],
+                "relation": [],
+                "serialization_type": 0,
+                "usedBy": [],
+                "type": "int",
+                "loop": []
+            },
+            {
+                "count": 1,
+                "self_constraint": [],
+                "name": "pollin_event_fd_.Get",
+                "under_constraint": [
+                    {
+                        "status": false,
+                        "name": "constraint0"
+                    },
+                    {
+                        "status": false,
+                        "name": "constraint1"
+                    },
+                    {
+                        "status": false,
+                        "name": "constraint2"
+                    },
+                    {
+                        "status": true,
+                        "name": "constraint3"
+                    }
+                ],
+                "dependency": [],
+                "relation": [],
+                "serialization_type": 0,
+                "usedBy": [],
+                "type": "int",
+                "loop": []
+            },
+            {
+                "count": 1,
+                "self_constraint": [],
+                "name": "pollhup_event_fd_.Get",
+                "under_constraint": [
+                    {
+                        "status": false,
+                        "name": "constraint0"
+                    },
+                    {
+                        "status": false,
+                        "name": "constraint1"
+                    },
+                    {
+                        "status": false,
+                        "name": "constraint2"
+                    },
+                    {
+                        "status": true,
+                        "name": "constraint3"
+                    }
+                ],
+                "dependency": [],
+                "relation": [],
+                "serialization_type": 0,
+                "usedBy": [],
+                "type": "int",
+                "loop": []
+            },
+            {
+                "count": 1,
+                "self_constraint": [],
+                "name": "android::DEAD_OBJECT",
+                "under_constraint": [
+                    {
+                        "status": false,
+                        "name": "constraint0"
+                    },
+                    {
+                        "status": false,
+                        "name": "constraint1"
+                    },
+                    {
+                        "status": false,
+                        "name": "constraint2"
+                    },
+                    {
+                        "status": true,
+                        "name": "constraint3"
+                    }
+                ],
+                "value": -32,
+                "dependency": [],
+                "relation": [],
+                "serialization_type": 0,
+                "usedBy": [],
+                "type": "android::status_t",
+                "loop": []
+            }
+        ],
+        "dependency": [],
+        "loop": [],
+        "possibility": [
+            {
+                "return": "android::ALREADY_EXISTS",
+                "reply": [],
+                "data": [],
+                "id": 0
+            },
+            {
+                "return": "res",
+                "reply": [],
+                "data": [
+                    "magic"
+                ],
+                "id": 1
+            },
+            {
+                "return": "android::BAD_VALUE",
+                "reply": [],
+                "data": [
+                    "magic"
+                ],
+                "id": 2
+            },
+            {
+                "return": "android::DEAD_OBJECT",
+                "reply": [],
+                "data": [
+                    "magic",
+                    "android::pdx::uds::ChannelParcelable::data_fd_.Get",
+                    "android::pdx::uds::ChannelParcelable::pollin_event_fd_.Get",
+                    "android::pdx::uds::ChannelParcelable::pollhup_event_fd_.Get"
+                ],
+                "id": 3
+            },
+            {
+                "return": "res",
+                "reply": [],
+                "data": [
+                    "magic",
+                    "android::pdx::uds::ChannelParcelable::data_fd_.Get",
+                    "android::pdx::uds::ChannelParcelable::pollin_event_fd_.Get",
+                    "android::pdx::uds::ChannelParcelable::pollhup_event_fd_.Get"
+                ],
+                "id": 4
+            }
+        ],
+        "constraint": [
+            {
+                "lhs": {
+                    "serialization_type": 0,
+                    "type": "_Bool",
+                    "name": "IsValid"
+                },
+                "opcode": "",
+                "name": "constraint0",
+                "probability": 0.1
+            },
+            {
+                "lhs": {
+                    "type": "android::status_t",
+                    "name": "res"
+                },
+                "rhs": {
+                    "type": "enum android::(anonymous at system.core.libutils.include.utils.Errors.h:45:1)",
+                    "name": "android::NO_ERROR",
+                    "value": 0
+                },
+                "opcode": "!=",
+                "name": "constraint1",
+                "probability": 0.1
+            },
+            {
+                "lhs": {
+                    "type": "unsigned int",
+                    "name": "magic"
+                },
+                "rhs": {
+                    "type": "unsigned int",
+                    "name": "android::pdx::uds::(anonymous namespace)::kUdsMagicParcelHeader",
+                    "value": 1969517421
+                },
+                "opcode": "!=",
+                "name": "constraint2",
+                "probability": 0.1
+            },
+            {
+                "lhs": {
+                    "serialization_type": 0,
+                    "type": "_Bool",
+                    "name": "IsValid"
+                },
+                "opcode": "!",
+                "name": "constraint3",
+                "probability": 0.1
+            }
+        ]
+    }
+}

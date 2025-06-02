@@ -1,0 +1,983 @@
+{
+    "IMediaCodecList::2-2": {
+        "code": [
+            2
+        ],
+        "dependency": [
+            {
+                "filename": "BnMediaPlayerService.json",
+                "type": "Transaction",
+                "name": "IMediaPlayerService::7-7",
+                "possIdx": 1,
+                "varIdx": 0,
+                "varName": "mcl",
+                "varType": "class android::sp<class android::IMediaCodecList>"
+            }
+        ],
+        "possibility": [
+            {
+                "id": 0,
+                "data": [
+                    "ServiceInterfaceDescriptor"
+                ],
+                "reply": [],
+                "return": "android::PERMISSION_DENIED"
+            },
+            {
+                "id": 1,
+                "data": [
+                    "ServiceInterfaceDescriptor"
+                ],
+                "reply": [
+                    "count"
+                ],
+                "return": "android::NO_ERROR"
+            }
+        ],
+        "variable": [
+            {
+                "name": "ServiceInterfaceDescriptor",
+                "type": "class android::String16",
+                "serialization_type": 1,
+                "self_constraint": [
+                    "constraint0"
+                ],
+                "under_constraint": [],
+                "relation": [],
+                "loop": [],
+                "usedBy": [],
+                "dependency": [],
+                "count": 1
+            },
+            {
+                "name": "android::PERMISSION_DENIED",
+                "type": "android::status_t",
+                "value": -1,
+                "serialization_type": 0,
+                "self_constraint": [],
+                "under_constraint": [
+                    {
+                        "name": "constraint0",
+                        "status": true
+                    }
+                ],
+                "relation": [],
+                "loop": [],
+                "usedBy": [],
+                "dependency": [],
+                "count": 1
+            },
+            {
+                "name": "count",
+                "type": "int",
+                "serialization_type": 2,
+                "self_constraint": [],
+                "under_constraint": [
+                    {
+                        "name": "constraint0",
+                        "status": false
+                    }
+                ],
+                "relation": [],
+                "loop": [],
+                "usedBy": [],
+                "dependency": [],
+                "count": 1
+            },
+            {
+                "name": "android::NO_ERROR",
+                "type": "android::status_t",
+                "value": 0,
+                "serialization_type": 0,
+                "self_constraint": [],
+                "under_constraint": [
+                    {
+                        "name": "constraint0",
+                        "status": false
+                    }
+                ],
+                "relation": [],
+                "loop": [],
+                "usedBy": [],
+                "dependency": [],
+                "count": 1
+            }
+        ],
+        "constraint": [
+            {
+                "name": "constraint0",
+                "opcode": "!",
+                "lhs": {
+                    "name": "ServiceInterfaceDescriptor",
+                    "type": "class android::String16",
+                    "serialization_type": 1
+                },
+                "probability": 0.1
+            }
+        ],
+        "loop": [],
+        "serviceName": "None",
+        "interfaceName": "IMediaCodecList",
+        "interfaceToken": "android.media.IMediaCodecList"
+    },
+    "IMediaCodecList::3-3": {
+        "code": [
+            3
+        ],
+        "dependency": [
+            {
+                "filename": "BnMediaPlayerService.json",
+                "type": "Transaction",
+                "name": "IMediaPlayerService::7-7",
+                "possIdx": 1,
+                "varIdx": 0,
+                "varName": "mcl",
+                "varType": "class android::sp<class android::IMediaCodecList>"
+            }
+        ],
+        "possibility": [
+            {
+                "id": 0,
+                "data": [
+                    "ServiceInterfaceDescriptor"
+                ],
+                "reply": [],
+                "return": "android::PERMISSION_DENIED"
+            },
+            {
+                "id": 1,
+                "data": [
+                    "ServiceInterfaceDescriptor",
+                    "index"
+                ],
+                "reply": [
+                    "android::OK",
+                    "info",
+                    "implicit_6"
+                ],
+                "return": "android::NO_ERROR"
+            }
+        ],
+        "variable": [
+            {
+                "name": "ServiceInterfaceDescriptor",
+                "type": "class android::String16",
+                "serialization_type": 1,
+                "self_constraint": [
+                    "constraint0"
+                ],
+                "under_constraint": [],
+                "relation": [],
+                "loop": [],
+                "usedBy": [],
+                "dependency": [],
+                "count": 1
+            },
+            {
+                "name": "android::PERMISSION_DENIED",
+                "type": "android::status_t",
+                "value": -1,
+                "serialization_type": 0,
+                "self_constraint": [],
+                "under_constraint": [
+                    {
+                        "name": "constraint0",
+                        "status": true
+                    }
+                ],
+                "relation": [],
+                "loop": [],
+                "usedBy": [],
+                "dependency": [],
+                "count": 1
+            },
+            {
+                "type": "int",
+                "name": "index",
+                "serialization_type": 1,
+                "self_constraint": [],
+                "under_constraint": [
+                    {
+                        "name": "constraint0",
+                        "status": false
+                    }
+                ],
+                "relation": [],
+                "loop": [],
+                "usedBy": [],
+                "dependency": [],
+                "count": 1
+            },
+            {
+                "name": "android::OK",
+                "type": "enum android::(anonymous at system.core.libutils.include.utils.Errors.h:45:1)",
+                "value": 0,
+                "serialization_type": 2,
+                "self_constraint": [],
+                "under_constraint": [
+                    {
+                        "name": "constraint0",
+                        "status": false
+                    },
+                    {
+                        "name": "constraint1",
+                        "status": true
+                    }
+                ],
+                "relation": [],
+                "loop": [],
+                "usedBy": [],
+                "dependency": [],
+                "count": 1
+            },
+            {
+                "name": "info",
+                "type": "struct android::MediaCodecInfo",
+                "serialization_type": 2,
+                "self_constraint": [],
+                "under_constraint": [
+                    {
+                        "name": "constraint0",
+                        "status": false
+                    },
+                    {
+                        "name": "constraint1",
+                        "status": true
+                    }
+                ],
+                "relation": [],
+                "loop": [],
+                "usedBy": [],
+                "dependency": [],
+                "count": 1
+            },
+            {
+                "name": "implicit_6",
+                "type": "IntegerLiteral",
+                "value": -34,
+                "serialization_type": 2,
+                "self_constraint": [],
+                "under_constraint": [
+                    {
+                        "name": "constraint0",
+                        "status": false
+                    },
+                    {
+                        "name": "constraint1",
+                        "status": false
+                    }
+                ],
+                "relation": [],
+                "loop": [],
+                "usedBy": [],
+                "dependency": [],
+                "count": 1
+            },
+            {
+                "name": "android::NO_ERROR",
+                "type": "android::status_t",
+                "value": 0,
+                "serialization_type": 0,
+                "self_constraint": [],
+                "under_constraint": [
+                    {
+                        "name": "constraint0",
+                        "status": false
+                    }
+                ],
+                "relation": [],
+                "loop": [],
+                "usedBy": [],
+                "dependency": [],
+                "count": 1
+            }
+        ],
+        "constraint": [
+            {
+                "name": "constraint0",
+                "opcode": "!",
+                "lhs": {
+                    "name": "ServiceInterfaceDescriptor",
+                    "type": "class android::String16",
+                    "serialization_type": 1
+                },
+                "probability": 0.1
+            },
+            {
+                "name": "constraint1",
+                "opcode": "operator!=",
+                "lhs": {
+                    "name": "info",
+                    "type": "struct android::MediaCodecInfo"
+                },
+                "rhs": {
+                    "name": "implicit_3",
+                    "type": "const struct android::MediaCodecInfo *",
+                    "value": "NULL"
+                },
+                "probability": 0.5
+            }
+        ],
+        "loop": [],
+        "serviceName": "None",
+        "interfaceName": "IMediaCodecList",
+        "interfaceToken": "android.media.IMediaCodecList"
+    },
+    "IMediaCodecList::4-4": {
+        "code": [
+            4
+        ],
+        "dependency": [
+            {
+                "filename": "BnMediaPlayerService.json",
+                "type": "Transaction",
+                "name": "IMediaPlayerService::7-7",
+                "possIdx": 1,
+                "varIdx": 0,
+                "varName": "mcl",
+                "varType": "class android::sp<class android::IMediaCodecList>"
+            }
+        ],
+        "possibility": [
+            {
+                "id": 0,
+                "data": [
+                    "ServiceInterfaceDescriptor"
+                ],
+                "reply": [],
+                "return": "android::PERMISSION_DENIED"
+            },
+            {
+                "id": 1,
+                "data": [
+                    "ServiceInterfaceDescriptor"
+                ],
+                "reply": [
+                    "android::OK",
+                    "info",
+                    "implicit_5"
+                ],
+                "return": "android::NO_ERROR"
+            }
+        ],
+        "variable": [
+            {
+                "name": "ServiceInterfaceDescriptor",
+                "type": "class android::String16",
+                "serialization_type": 1,
+                "self_constraint": [
+                    "constraint0"
+                ],
+                "under_constraint": [],
+                "relation": [],
+                "loop": [],
+                "usedBy": [],
+                "dependency": [],
+                "count": 1
+            },
+            {
+                "name": "android::PERMISSION_DENIED",
+                "type": "android::status_t",
+                "value": -1,
+                "serialization_type": 0,
+                "self_constraint": [],
+                "under_constraint": [
+                    {
+                        "name": "constraint0",
+                        "status": true
+                    }
+                ],
+                "relation": [],
+                "loop": [],
+                "usedBy": [],
+                "dependency": [],
+                "count": 1
+            },
+            {
+                "name": "android::OK",
+                "type": "enum android::(anonymous at system.core.libutils.include.utils.Errors.h:45:1)",
+                "value": 0,
+                "serialization_type": 2,
+                "self_constraint": [],
+                "under_constraint": [
+                    {
+                        "name": "constraint0",
+                        "status": false
+                    },
+                    {
+                        "name": "constraint1",
+                        "status": true
+                    }
+                ],
+                "relation": [],
+                "loop": [],
+                "usedBy": [],
+                "dependency": [],
+                "count": 1
+            },
+            {
+                "name": "info",
+                "type": "struct android::AMessage",
+                "serialization_type": 2,
+                "self_constraint": [],
+                "under_constraint": [
+                    {
+                        "name": "constraint0",
+                        "status": false
+                    },
+                    {
+                        "name": "constraint1",
+                        "status": true
+                    }
+                ],
+                "relation": [],
+                "loop": [],
+                "usedBy": [],
+                "dependency": [],
+                "count": 1
+            },
+            {
+                "name": "implicit_5",
+                "type": "IntegerLiteral",
+                "value": -34,
+                "serialization_type": 2,
+                "self_constraint": [],
+                "under_constraint": [
+                    {
+                        "name": "constraint0",
+                        "status": false
+                    },
+                    {
+                        "name": "constraint1",
+                        "status": false
+                    }
+                ],
+                "relation": [],
+                "loop": [],
+                "usedBy": [],
+                "dependency": [],
+                "count": 1
+            },
+            {
+                "name": "android::NO_ERROR",
+                "type": "android::status_t",
+                "value": 0,
+                "serialization_type": 0,
+                "self_constraint": [],
+                "under_constraint": [
+                    {
+                        "name": "constraint0",
+                        "status": false
+                    }
+                ],
+                "relation": [],
+                "loop": [],
+                "usedBy": [],
+                "dependency": [],
+                "count": 1
+            }
+        ],
+        "constraint": [
+            {
+                "name": "constraint0",
+                "opcode": "!",
+                "lhs": {
+                    "name": "ServiceInterfaceDescriptor",
+                    "type": "class android::String16",
+                    "serialization_type": 1
+                },
+                "probability": 0.1
+            },
+            {
+                "name": "constraint1",
+                "opcode": "operator!=",
+                "lhs": {
+                    "name": "info",
+                    "type": "struct android::AMessage"
+                },
+                "rhs": {
+                    "name": "implicit_2",
+                    "type": "const struct android::AMessage *",
+                    "value": "NULL"
+                },
+                "probability": 0.5
+            }
+        ],
+        "loop": [],
+        "serviceName": "None",
+        "interfaceName": "IMediaCodecList",
+        "interfaceToken": "android.media.IMediaCodecList"
+    },
+    "IMediaCodecList::5-5": {
+        "code": [
+            5
+        ],
+        "dependency": [
+            {
+                "filename": "BnMediaPlayerService.json",
+                "type": "Transaction",
+                "name": "IMediaPlayerService::7-7",
+                "possIdx": 1,
+                "varIdx": 0,
+                "varName": "mcl",
+                "varType": "class android::sp<class android::IMediaCodecList>"
+            }
+        ],
+        "possibility": [
+            {
+                "id": 0,
+                "data": [
+                    "ServiceInterfaceDescriptor"
+                ],
+                "reply": [],
+                "return": "android::PERMISSION_DENIED"
+            },
+            {
+                "id": 1,
+                "data": [
+                    "ServiceInterfaceDescriptor",
+                    "type"
+                ],
+                "reply": [
+                    "android::NAME_NOT_FOUND"
+                ],
+                "return": "android::NO_ERROR"
+            },
+            {
+                "id": 2,
+                "data": [
+                    "ServiceInterfaceDescriptor",
+                    "type",
+                    "isEncoder",
+                    "startIndex"
+                ],
+                "reply": [
+                    "index"
+                ],
+                "return": "android::NO_ERROR"
+            }
+        ],
+        "variable": [
+            {
+                "name": "ServiceInterfaceDescriptor",
+                "type": "class android::String16",
+                "serialization_type": 1,
+                "self_constraint": [
+                    "constraint0"
+                ],
+                "under_constraint": [],
+                "relation": [],
+                "loop": [],
+                "usedBy": [],
+                "dependency": [],
+                "count": 1
+            },
+            {
+                "name": "android::PERMISSION_DENIED",
+                "type": "android::status_t",
+                "value": -1,
+                "serialization_type": 0,
+                "self_constraint": [],
+                "under_constraint": [
+                    {
+                        "name": "constraint0",
+                        "status": true
+                    }
+                ],
+                "relation": [],
+                "loop": [],
+                "usedBy": [],
+                "dependency": [],
+                "count": 1
+            },
+            {
+                "type": "char *",
+                "name": "type",
+                "serialization_type": 1,
+                "self_constraint": [
+                    "constraint1"
+                ],
+                "under_constraint": [
+                    {
+                        "name": "constraint0",
+                        "status": false
+                    }
+                ],
+                "relation": [],
+                "loop": [],
+                "usedBy": [],
+                "dependency": [],
+                "count": 1,
+                "size": -1
+            },
+            {
+                "type": "char",
+                "name": "type::item",
+                "serialization_type": 1,
+                "self_constraint": [],
+                "under_constraint": [],
+                "relation": [],
+                "loop": [],
+                "usedBy": [],
+                "dependency": [],
+                "count": 1
+            },
+            {
+                "name": "android::NAME_NOT_FOUND",
+                "type": "enum android::(anonymous at system.core.libutils.include.utils.Errors.h:45:1)",
+                "value": -2,
+                "serialization_type": 2,
+                "self_constraint": [],
+                "under_constraint": [
+                    {
+                        "name": "constraint0",
+                        "status": false
+                    },
+                    {
+                        "name": "constraint1",
+                        "status": true
+                    }
+                ],
+                "relation": [],
+                "loop": [],
+                "usedBy": [],
+                "dependency": [],
+                "count": 1
+            },
+            {
+                "name": "android::NO_ERROR",
+                "type": "android::status_t",
+                "value": 0,
+                "serialization_type": 0,
+                "self_constraint": [],
+                "under_constraint": [
+                    {
+                        "name": "constraint0",
+                        "status": false
+                    },
+                    {
+                        "name": "constraint1",
+                        "status": true
+                    }
+                ],
+                "relation": [],
+                "loop": [],
+                "usedBy": [],
+                "dependency": [],
+                "count": 1
+            },
+            {
+                "type": "int",
+                "name": "isEncoder",
+                "serialization_type": 1,
+                "self_constraint": [],
+                "under_constraint": [
+                    {
+                        "name": "constraint0",
+                        "status": false
+                    },
+                    {
+                        "name": "constraint1",
+                        "status": false
+                    }
+                ],
+                "relation": [],
+                "loop": [],
+                "usedBy": [],
+                "dependency": [
+                    {
+                        "filename": "struct android::MediaCodecInfo.json",
+                        "type": "Structure",
+                        "name": "struct android::MediaCodecInfo",
+                        "possIdx": 0,
+                        "varIdx": 2,
+                        "varName": "mIsEncoder",
+                        "varType": "int"
+                    }
+                ],
+                "count": 1
+            },
+            {
+                "type": "int",
+                "name": "startIndex",
+                "serialization_type": 1,
+                "self_constraint": [],
+                "under_constraint": [
+                    {
+                        "name": "constraint0",
+                        "status": false
+                    },
+                    {
+                        "name": "constraint1",
+                        "status": false
+                    }
+                ],
+                "relation": [],
+                "loop": [],
+                "usedBy": [],
+                "dependency": [],
+                "count": 1
+            },
+            {
+                "name": "index",
+                "type": "int",
+                "serialization_type": 2,
+                "self_constraint": [],
+                "under_constraint": [
+                    {
+                        "name": "constraint0",
+                        "status": false
+                    },
+                    {
+                        "name": "constraint1",
+                        "status": false
+                    }
+                ],
+                "relation": [],
+                "loop": [],
+                "usedBy": [],
+                "dependency": [],
+                "count": 1
+            }
+        ],
+        "constraint": [
+            {
+                "name": "constraint0",
+                "opcode": "!",
+                "lhs": {
+                    "name": "ServiceInterfaceDescriptor",
+                    "type": "class android::String16",
+                    "serialization_type": 1
+                },
+                "probability": 0.1
+            },
+            {
+                "name": "constraint1",
+                "opcode": "==",
+                "lhs": {
+                    "name": "type",
+                    "type": "char *"
+                },
+                "rhs": {
+                    "name": "implicit_3",
+                    "type": "const char *",
+                    "value": "NULL"
+                },
+                "probability": 0.1
+            }
+        ],
+        "loop": [],
+        "serviceName": "None",
+        "interfaceName": "IMediaCodecList",
+        "interfaceToken": "android.media.IMediaCodecList"
+    },
+    "IMediaCodecList::6-6": {
+        "code": [
+            6
+        ],
+        "dependency": [
+            {
+                "filename": "BnMediaPlayerService.json",
+                "type": "Transaction",
+                "name": "IMediaPlayerService::7-7",
+                "possIdx": 1,
+                "varIdx": 0,
+                "varName": "mcl",
+                "varType": "class android::sp<class android::IMediaCodecList>"
+            }
+        ],
+        "possibility": [
+            {
+                "id": 0,
+                "data": [
+                    "ServiceInterfaceDescriptor"
+                ],
+                "reply": [],
+                "return": "android::PERMISSION_DENIED"
+            },
+            {
+                "id": 1,
+                "data": [
+                    "ServiceInterfaceDescriptor",
+                    "name"
+                ],
+                "reply": [
+                    "android::NAME_NOT_FOUND"
+                ],
+                "return": "android::NO_ERROR"
+            },
+            {
+                "id": 2,
+                "data": [
+                    "ServiceInterfaceDescriptor",
+                    "name"
+                ],
+                "reply": [
+                    "index"
+                ],
+                "return": "android::NO_ERROR"
+            }
+        ],
+        "variable": [
+            {
+                "name": "ServiceInterfaceDescriptor",
+                "type": "class android::String16",
+                "serialization_type": 1,
+                "self_constraint": [
+                    "constraint0"
+                ],
+                "under_constraint": [],
+                "relation": [],
+                "loop": [],
+                "usedBy": [],
+                "dependency": [],
+                "count": 1
+            },
+            {
+                "name": "android::PERMISSION_DENIED",
+                "type": "android::status_t",
+                "value": -1,
+                "serialization_type": 0,
+                "self_constraint": [],
+                "under_constraint": [
+                    {
+                        "name": "constraint0",
+                        "status": true
+                    }
+                ],
+                "relation": [],
+                "loop": [],
+                "usedBy": [],
+                "dependency": [],
+                "count": 1
+            },
+            {
+                "type": "char *",
+                "name": "name",
+                "serialization_type": 1,
+                "self_constraint": [
+                    "constraint1"
+                ],
+                "under_constraint": [
+                    {
+                        "name": "constraint0",
+                        "status": false
+                    }
+                ],
+                "relation": [],
+                "loop": [],
+                "usedBy": [],
+                "dependency": [],
+                "count": 1,
+                "size": -1
+            },
+            {
+                "type": "char",
+                "name": "name::item",
+                "serialization_type": 1,
+                "self_constraint": [],
+                "under_constraint": [],
+                "relation": [],
+                "loop": [],
+                "usedBy": [],
+                "dependency": [],
+                "count": 1
+            },
+            {
+                "name": "android::NAME_NOT_FOUND",
+                "type": "enum android::(anonymous at system.core.libutils.include.utils.Errors.h:45:1)",
+                "value": -2,
+                "serialization_type": 2,
+                "self_constraint": [],
+                "under_constraint": [
+                    {
+                        "name": "constraint0",
+                        "status": false
+                    },
+                    {
+                        "name": "constraint1",
+                        "status": true
+                    }
+                ],
+                "relation": [],
+                "loop": [],
+                "usedBy": [],
+                "dependency": [],
+                "count": 1
+            },
+            {
+                "name": "android::NO_ERROR",
+                "type": "android::status_t",
+                "value": 0,
+                "serialization_type": 0,
+                "self_constraint": [],
+                "under_constraint": [
+                    {
+                        "name": "constraint0",
+                        "status": false
+                    },
+                    {
+                        "name": "constraint1",
+                        "status": true
+                    }
+                ],
+                "relation": [],
+                "loop": [],
+                "usedBy": [],
+                "dependency": [],
+                "count": 1
+            },
+            {
+                "name": "index",
+                "type": "int",
+                "serialization_type": 2,
+                "self_constraint": [],
+                "under_constraint": [
+                    {
+                        "name": "constraint0",
+                        "status": false
+                    },
+                    {
+                        "name": "constraint1",
+                        "status": false
+                    }
+                ],
+                "relation": [],
+                "loop": [],
+                "usedBy": [],
+                "dependency": [],
+                "count": 1
+            }
+        ],
+        "constraint": [
+            {
+                "name": "constraint0",
+                "opcode": "!",
+                "lhs": {
+                    "name": "ServiceInterfaceDescriptor",
+                    "type": "class android::String16",
+                    "serialization_type": 1
+                },
+                "probability": 0.1
+            },
+            {
+                "name": "constraint1",
+                "opcode": "==",
+                "lhs": {
+                    "name": "name",
+                    "type": "char *"
+                },
+                "rhs": {
+                    "name": "implicit_3",
+                    "type": "const char *",
+                    "value": "NULL"
+                },
+                "probability": 0.1
+            }
+        ],
+        "loop": [],
+        "serviceName": "None",
+        "interfaceName": "IMediaCodecList",
+        "interfaceToken": "android.media.IMediaCodecList"
+    }
+}

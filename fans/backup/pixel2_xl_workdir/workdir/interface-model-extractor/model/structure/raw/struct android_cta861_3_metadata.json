@@ -1,0 +1,44 @@
+{
+    "struct android_cta861_3_metadata":{
+        "dependency":[],
+        "possibility":[
+            {
+                "id":0,
+                "data":[
+                    "android_cta861_3_metadata::maxContentLightLevel",
+                    "android_cta861_3_metadata::maxFrameAverageLightLevel"
+                ],
+                "reply":[],
+                "return":""
+            }
+        ],
+        "variable":[
+            {
+                "name":"android_cta861_3_metadata::maxContentLightLevel",
+                "type":"float",
+                "serialization_type":1,
+                "self_constraint":[],
+                "under_constraint":[],
+                "relation":[],
+                "loop":[],
+                "usedBy":[],
+                "dependency":[],
+                "count":1
+            },
+            {
+                "name":"android_cta861_3_metadata::maxFrameAverageLightLevel",
+                "type":"float",
+                "serialization_type":1,
+                "self_constraint":[],
+                "under_constraint":[],
+                "relation":[],
+                "loop":[],
+                "usedBy":[],
+                "dependency":[],
+                "count":1
+            }
+        ],
+        "constraint":[],
+        "loop":[]
+    }
+}

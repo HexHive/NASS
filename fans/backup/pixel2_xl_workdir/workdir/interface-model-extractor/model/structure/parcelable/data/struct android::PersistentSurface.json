@@ -1,0 +1,134 @@
+{
+    "struct android::PersistentSurface": {
+        "variable": [
+            {
+                "count": 1,
+                "self_constraint": [],
+                "name": "mBufferProducer",
+                "under_constraint": [],
+                "dependency": [
+                    {
+                        "filename": "BnSurfaceComposerClient.json",
+                        "type": "Transaction",
+                        "name": "ISurfaceComposerClient::1-1",
+                        "possIdx": 1,
+                        "varIdx": 1,
+                        "varName": "gbp",
+                        "varType": "class android::sp<class android::IGraphicBufferProducer>"
+                    },
+                    {
+                        "filename": "BnMediaRecorder.json",
+                        "type": "Transaction",
+                        "name": "IMediaRecorder::5-5",
+                        "possIdx": 1,
+                        "varIdx": 1,
+                        "varName": "surfaceMediaSource",
+                        "varType": "class android::sp<class android::IGraphicBufferProducer>"
+                    }
+                ],
+                "relation": [],
+                "serialization_type": 1,
+                "usedBy": [],
+                "type": "class android::sp<class android::IGraphicBufferProducer>",
+                "loop": [],
+                "interfaceName": "IGraphicBufferProducer"
+            },
+            {
+                "count": 1,
+                "self_constraint": [],
+                "name": "mBufferSource",
+                "under_constraint": [],
+                "dependency": [],
+                "relation": [],
+                "serialization_type": 1,
+                "usedBy": [],
+                "type": "class android::sp<class android::IGraphicBufferSource>",
+                "loop": [],
+                "interfaceName": "IGraphicBufferSource"
+            },
+            {
+                "count": 1,
+                "self_constraint": [
+                    "constraint0"
+                ],
+                "name": "haveHidlTarget",
+                "under_constraint": [],
+                "dependency": [],
+                "relation": [],
+                "serialization_type": 1,
+                "usedBy": [],
+                "type": "_Bool",
+                "loop": []
+            },
+            {
+                "count": 1,
+                "self_constraint": [],
+                "name": "tokenVector",
+                "under_constraint": [
+                    {
+                        "status": true,
+                        "name": "constraint0"
+                    }
+                ],
+                "dependency": [],
+                "relation": [],
+                "serialization_type": 1,
+                "usedBy": [],
+                "type": "class vector<unsigned char>",
+                "loop": [],
+                "size": -1
+            },
+            {
+                "count": 1,
+                "self_constraint": [],
+                "name": "tokenVector::item",
+                "under_constraint": [],
+                "dependency": [],
+                "relation": [],
+                "serialization_type": 1,
+                "usedBy": [],
+                "type": "unsigned char",
+                "loop": []
+            },
+            {
+                "count": 1,
+                "self_constraint": [],
+                "name": "android::NO_ERROR",
+                "under_constraint": [],
+                "value": 0,
+                "dependency": [],
+                "relation": [],
+                "serialization_type": 0,
+                "usedBy": [],
+                "type": "android::status_t",
+                "loop": []
+            }
+        ],
+        "dependency": [],
+        "loop": [],
+        "possibility": [
+            {
+                "return": "android::NO_ERROR",
+                "reply": [],
+                "data": [
+                    "mBufferProducer",
+                    "mBufferSource",
+                    "haveHidlTarget",
+                    "tokenVector"
+                ],
+                "id": 0
+            }
+        ],
+        "constraint": [
+            {
+                "lhs": {
+                    "type": "_Bool",
+                    "name": "haveHidlTarget"
+                },
+                "opcode": "",
+                "name": "constraint0",
+                "probability": 0.5
+            }
+        ]
+    }
+}

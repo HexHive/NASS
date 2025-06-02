@@ -1,0 +1,989 @@
+{
+    "class android::hardware::camera2::params::OutputConfiguration": {
+        "variable": [
+            {
+                "count": 1,
+                "self_constraint": [],
+                "name": "rotation",
+                "under_constraint": [],
+                "dependency": [],
+                "relation": [],
+                "serialization_type": 1,
+                "usedBy": [],
+                "type": "int",
+                "loop": []
+            },
+            {
+                "count": 1,
+                "self_constraint": [
+                    "constraint1",
+                    "constraint2",
+                    "constraint3",
+                    "constraint4",
+                    "constraint5",
+                    "constraint6",
+                    "constraint7",
+                    "constraint9"
+                ],
+                "name": "err",
+                "under_constraint": [],
+                "dependency": [],
+                "relation": [],
+                "serialization_type": 0,
+                "usedBy": [],
+                "type": "android::status_t",
+                "loop": []
+            },
+            {
+                "count": 1,
+                "self_constraint": [],
+                "name": "setID",
+                "under_constraint": [
+                    {
+                        "status": false,
+                        "name": "constraint1"
+                    }
+                ],
+                "dependency": [],
+                "relation": [],
+                "serialization_type": 1,
+                "usedBy": [],
+                "type": "int",
+                "loop": []
+            },
+            {
+                "count": 1,
+                "self_constraint": [
+                    "constraint8_lhs_rhs",
+                    "constraint8_rhs"
+                ],
+                "name": "surfaceType",
+                "under_constraint": [
+                    {
+                        "status": false,
+                        "name": "constraint1"
+                    },
+                    {
+                        "status": false,
+                        "name": "constraint2"
+                    }
+                ],
+                "dependency": [],
+                "relation": [],
+                "serialization_type": 1,
+                "usedBy": [],
+                "type": "int",
+                "loop": []
+            },
+            {
+                "count": 1,
+                "self_constraint": [],
+                "name": "width",
+                "under_constraint": [
+                    {
+                        "status": false,
+                        "name": "constraint1"
+                    },
+                    {
+                        "status": false,
+                        "name": "constraint2"
+                    },
+                    {
+                        "status": false,
+                        "name": "constraint3"
+                    }
+                ],
+                "dependency": [],
+                "relation": [],
+                "serialization_type": 1,
+                "usedBy": [],
+                "type": "int",
+                "loop": []
+            },
+            {
+                "count": 1,
+                "self_constraint": [],
+                "name": "height",
+                "under_constraint": [
+                    {
+                        "status": false,
+                        "name": "constraint1"
+                    },
+                    {
+                        "status": false,
+                        "name": "constraint2"
+                    },
+                    {
+                        "status": false,
+                        "name": "constraint3"
+                    },
+                    {
+                        "status": false,
+                        "name": "constraint4"
+                    }
+                ],
+                "dependency": [],
+                "relation": [],
+                "serialization_type": 1,
+                "usedBy": [],
+                "type": "int",
+                "loop": []
+            },
+            {
+                "count": 1,
+                "self_constraint": [
+                    "constraint8_lhs_lhs"
+                ],
+                "name": "isDeferred",
+                "under_constraint": [
+                    {
+                        "status": false,
+                        "name": "constraint1"
+                    },
+                    {
+                        "status": false,
+                        "name": "constraint2"
+                    },
+                    {
+                        "status": false,
+                        "name": "constraint3"
+                    },
+                    {
+                        "status": false,
+                        "name": "constraint4"
+                    },
+                    {
+                        "status": false,
+                        "name": "constraint5"
+                    }
+                ],
+                "dependency": [],
+                "relation": [],
+                "serialization_type": 1,
+                "usedBy": [],
+                "type": "int",
+                "loop": []
+            },
+            {
+                "count": 1,
+                "self_constraint": [],
+                "name": "isShared",
+                "under_constraint": [
+                    {
+                        "status": false,
+                        "name": "constraint1"
+                    },
+                    {
+                        "status": false,
+                        "name": "constraint2"
+                    },
+                    {
+                        "status": false,
+                        "name": "constraint3"
+                    },
+                    {
+                        "status": false,
+                        "name": "constraint4"
+                    },
+                    {
+                        "status": false,
+                        "name": "constraint5"
+                    },
+                    {
+                        "status": false,
+                        "name": "constraint6"
+                    }
+                ],
+                "dependency": [],
+                "relation": [],
+                "serialization_type": 1,
+                "usedBy": [],
+                "type": "int",
+                "loop": []
+            },
+            {
+                "count": 1,
+                "self_constraint": [],
+                "name": "android::BAD_VALUE",
+                "under_constraint": [
+                    {
+                        "status": false,
+                        "name": "constraint1"
+                    },
+                    {
+                        "status": false,
+                        "name": "constraint2"
+                    },
+                    {
+                        "status": false,
+                        "name": "constraint3"
+                    },
+                    {
+                        "status": false,
+                        "name": "constraint4"
+                    },
+                    {
+                        "status": false,
+                        "name": "constraint5"
+                    },
+                    {
+                        "status": false,
+                        "name": "constraint6"
+                    },
+                    {
+                        "status": false,
+                        "name": "constraint7"
+                    },
+                    {
+                        "status": true,
+                        "name": "constraint8"
+                    }
+                ],
+                "value": -22,
+                "dependency": [],
+                "relation": [],
+                "serialization_type": 0,
+                "usedBy": [],
+                "type": "android::status_t",
+                "loop": []
+            },
+            {
+                "count": 1,
+                "self_constraint": [],
+                "name": "surfaceShims",
+                "dependency": [],
+                "under_constraint": [
+                    {
+                        "status": false,
+                        "name": "constraint1"
+                    },
+                    {
+                        "status": false,
+                        "name": "constraint2"
+                    },
+                    {
+                        "status": false,
+                        "name": "constraint3"
+                    },
+                    {
+                        "status": false,
+                        "name": "constraint4"
+                    },
+                    {
+                        "status": false,
+                        "name": "constraint5"
+                    },
+                    {
+                        "status": false,
+                        "name": "constraint6"
+                    },
+                    {
+                        "status": false,
+                        "name": "constraint7"
+                    },
+                    {
+                        "status": false,
+                        "name": "constraint8"
+                    }
+                ],
+                "have_parcelable": 1,
+                "relation": [],
+                "serialization_type": 1,
+                "usedBy": [],
+                "type": "class vector<class android::view::Surface>",
+                "loop": [],
+                "size": -1
+            },
+            {
+                "count": 1,
+                "self_constraint": [],
+                "name": "surfaceShims::item",
+                "dependency": [
+                    {
+                        "filename": "BnCameraDeviceUser.json",
+                        "type": "Transaction",
+                        "name": "ICameraDeviceUser::10-10",
+                        "possIdx": 0,
+                        "varIdx": 1,
+                        "varName": "_aidl_return",
+                        "varType": "class android::view::Surface"
+                    }
+                ],
+                "under_constraint": [],
+                "have_parcelable": 1,
+                "relation": [],
+                "serialization_type": 1,
+                "usedBy": [],
+                "type": "class android::view::Surface",
+                "loop": []
+            },
+            {
+                "count": 1,
+                "self_constraint": [],
+                "name": "mPhysicalCameraId",
+                "under_constraint": [
+                    {
+                        "status": false,
+                        "name": "constraint1"
+                    },
+                    {
+                        "status": false,
+                        "name": "constraint2"
+                    },
+                    {
+                        "status": false,
+                        "name": "constraint3"
+                    },
+                    {
+                        "status": false,
+                        "name": "constraint4"
+                    },
+                    {
+                        "status": false,
+                        "name": "constraint5"
+                    },
+                    {
+                        "status": false,
+                        "name": "constraint6"
+                    },
+                    {
+                        "status": false,
+                        "name": "constraint7"
+                    },
+                    {
+                        "status": false,
+                        "name": "constraint8"
+                    },
+                    {
+                        "status": false,
+                        "name": "constraint9"
+                    }
+                ],
+                "dependency": [],
+                "relation": [],
+                "signature": "class android::String16",
+                "serialization_type": 1,
+                "usedBy": [],
+                "type": "class android::String16",
+                "loop": []
+            },
+            {
+                "count": 1,
+                "self_constraint": [
+                    "constraint10"
+                ],
+                "name": "implicit_47",
+                "under_constraint": [
+                    {
+                        "status": false,
+                        "name": "constraint1"
+                    },
+                    {
+                        "status": false,
+                        "name": "constraint2"
+                    },
+                    {
+                        "status": false,
+                        "name": "constraint3"
+                    },
+                    {
+                        "status": false,
+                        "name": "constraint4"
+                    },
+                    {
+                        "status": false,
+                        "name": "constraint5"
+                    },
+                    {
+                        "status": false,
+                        "name": "constraint6"
+                    },
+                    {
+                        "status": false,
+                        "name": "constraint7"
+                    },
+                    {
+                        "status": false,
+                        "name": "constraint8"
+                    },
+                    {
+                        "status": false,
+                        "name": "constraint9"
+                    }
+                ],
+                "value": 0,
+                "dependency": [],
+                "relation": [],
+                "serialization_type": 0,
+                "usedBy": [],
+                "type": "unsigned int",
+                "loop": []
+            },
+            {
+                "count": 1,
+                "self_constraint": [],
+                "name": "surface",
+                "under_constraint": [
+                    {
+                        "status": false,
+                        "name": "constraint1"
+                    },
+                    {
+                        "status": false,
+                        "name": "constraint2"
+                    },
+                    {
+                        "status": false,
+                        "name": "constraint3"
+                    },
+                    {
+                        "status": false,
+                        "name": "constraint4"
+                    },
+                    {
+                        "status": false,
+                        "name": "constraint5"
+                    },
+                    {
+                        "status": false,
+                        "name": "constraint6"
+                    },
+                    {
+                        "status": false,
+                        "name": "constraint7"
+                    },
+                    {
+                        "status": false,
+                        "name": "constraint8"
+                    },
+                    {
+                        "status": false,
+                        "name": "constraint9"
+                    },
+                    {
+                        "status": true,
+                        "name": "constraint11"
+                    }
+                ],
+                "dependency": [],
+                "relation": [],
+                "serialization_type": 0,
+                "usedBy": [],
+                "type": "class android::IGraphicBufferProducer *",
+                "loop": [
+                    "loop0"
+                ],
+                "size": -1
+            },
+            {
+                "count": 1,
+                "self_constraint": [],
+                "name": "surface::item",
+                "under_constraint": [],
+                "dependency": [],
+                "relation": [],
+                "serialization_type": 0,
+                "usedBy": [],
+                "type": "class android::IGraphicBufferProducer",
+                "loop": [
+                    "loop0"
+                ]
+            },
+            {
+                "count": 1,
+                "self_constraint": [],
+                "name": "surface.string",
+                "under_constraint": [
+                    {
+                        "status": false,
+                        "name": "constraint1"
+                    },
+                    {
+                        "status": false,
+                        "name": "constraint2"
+                    },
+                    {
+                        "status": false,
+                        "name": "constraint3"
+                    },
+                    {
+                        "status": false,
+                        "name": "constraint4"
+                    },
+                    {
+                        "status": false,
+                        "name": "constraint5"
+                    },
+                    {
+                        "status": false,
+                        "name": "constraint6"
+                    },
+                    {
+                        "status": false,
+                        "name": "constraint7"
+                    },
+                    {
+                        "status": false,
+                        "name": "constraint8"
+                    },
+                    {
+                        "status": false,
+                        "name": "constraint9"
+                    },
+                    {
+                        "status": true,
+                        "name": "constraint11"
+                    }
+                ],
+                "dependency": [],
+                "relation": [],
+                "serialization_type": 0,
+                "usedBy": [],
+                "type": "char *",
+                "loop": [
+                    "loop0"
+                ],
+                "size": -1
+            },
+            {
+                "count": 1,
+                "self_constraint": [],
+                "name": "surface.string::item",
+                "under_constraint": [],
+                "dependency": [],
+                "relation": [],
+                "serialization_type": 0,
+                "usedBy": [],
+                "type": "char",
+                "loop": [
+                    "loop0"
+                ]
+            },
+            {
+                "count": 1,
+                "self_constraint": [],
+                "name": "mPhysicalCameraId.string",
+                "under_constraint": [
+                    {
+                        "status": false,
+                        "name": "constraint1"
+                    },
+                    {
+                        "status": false,
+                        "name": "constraint2"
+                    },
+                    {
+                        "status": false,
+                        "name": "constraint3"
+                    },
+                    {
+                        "status": false,
+                        "name": "constraint4"
+                    },
+                    {
+                        "status": false,
+                        "name": "constraint5"
+                    },
+                    {
+                        "status": false,
+                        "name": "constraint6"
+                    },
+                    {
+                        "status": false,
+                        "name": "constraint7"
+                    },
+                    {
+                        "status": false,
+                        "name": "constraint8"
+                    },
+                    {
+                        "status": false,
+                        "name": "constraint9"
+                    },
+                    {
+                        "status": true,
+                        "name": "constraint12"
+                    }
+                ],
+                "dependency": [],
+                "relation": [],
+                "serialization_type": 0,
+                "usedBy": [],
+                "type": "char *",
+                "loop": [],
+                "size": -1
+            },
+            {
+                "count": 1,
+                "self_constraint": [],
+                "name": "mPhysicalCameraId.string::item",
+                "under_constraint": [],
+                "dependency": [],
+                "relation": [],
+                "serialization_type": 0,
+                "usedBy": [],
+                "type": "char",
+                "loop": []
+            }
+        ],
+        "dependency": [],
+        "loop": [
+            {
+                "counter": {
+                    "type": "unsigned int",
+                    "name": "implicit_47",
+                    "value": 0
+                },
+                "inc": {
+                    "type": "unsigned int",
+                    "opcode": "++",
+                    "name": "implicit_47"
+                },
+                "name": "loop0",
+                "constraint": "constraint10"
+            }
+        ],
+        "possibility": [
+            {
+                "return": "err",
+                "reply": [],
+                "data": [
+                    "rotation"
+                ],
+                "id": 0
+            },
+            {
+                "return": "err",
+                "reply": [],
+                "data": [
+                    "rotation",
+                    "setID"
+                ],
+                "id": 1
+            },
+            {
+                "return": "err",
+                "reply": [],
+                "data": [
+                    "rotation",
+                    "setID",
+                    "surfaceType"
+                ],
+                "id": 2
+            },
+            {
+                "return": "err",
+                "reply": [],
+                "data": [
+                    "rotation",
+                    "setID",
+                    "surfaceType",
+                    "width"
+                ],
+                "id": 3
+            },
+            {
+                "return": "err",
+                "reply": [],
+                "data": [
+                    "rotation",
+                    "setID",
+                    "surfaceType",
+                    "width",
+                    "height"
+                ],
+                "id": 4
+            },
+            {
+                "return": "err",
+                "reply": [],
+                "data": [
+                    "rotation",
+                    "setID",
+                    "surfaceType",
+                    "width",
+                    "height",
+                    "isDeferred"
+                ],
+                "id": 5
+            },
+            {
+                "return": "err",
+                "reply": [],
+                "data": [
+                    "rotation",
+                    "setID",
+                    "surfaceType",
+                    "width",
+                    "height",
+                    "isDeferred",
+                    "isShared"
+                ],
+                "id": 6
+            },
+            {
+                "return": "android::BAD_VALUE",
+                "reply": [],
+                "data": [
+                    "rotation",
+                    "setID",
+                    "surfaceType",
+                    "width",
+                    "height",
+                    "isDeferred",
+                    "isShared"
+                ],
+                "id": 7
+            },
+            {
+                "return": "err",
+                "reply": [],
+                "data": [
+                    "rotation",
+                    "setID",
+                    "surfaceType",
+                    "width",
+                    "height",
+                    "isDeferred",
+                    "isShared",
+                    "surfaceShims"
+                ],
+                "id": 8
+            },
+            {
+                "return": "err",
+                "reply": [],
+                "data": [
+                    "rotation",
+                    "setID",
+                    "surfaceType",
+                    "width",
+                    "height",
+                    "isDeferred",
+                    "isShared",
+                    "surfaceShims",
+                    "mPhysicalCameraId"
+                ],
+                "id": 9
+            }
+        ],
+        "constraint": [
+            {
+                "lhs": {
+                    "type": "const class android::Parcel *",
+                    "name": "parcel"
+                },
+                "rhs": {
+                    "type": "const class android::Parcel *",
+                    "name": "implicit_1",
+                    "value": "NULL"
+                },
+                "opcode": "==",
+                "name": "constraint0",
+                "probability": 0.5
+            },
+            {
+                "lhs": {
+                    "serialization_type": 0,
+                    "type": "android::status_t",
+                    "name": "err"
+                },
+                "rhs": {
+                    "type": "enum android::(anonymous at system.core.libutils.include.utils.Errors.h:45:1)",
+                    "name": "android::OK",
+                    "value": 0
+                },
+                "opcode": "!=",
+                "name": "constraint1",
+                "probability": 0.1
+            },
+            {
+                "lhs": {
+                    "serialization_type": 0,
+                    "type": "android::status_t",
+                    "name": "err"
+                },
+                "rhs": {
+                    "type": "enum android::(anonymous at system.core.libutils.include.utils.Errors.h:45:1)",
+                    "name": "android::OK",
+                    "value": 0
+                },
+                "opcode": "!=",
+                "name": "constraint2",
+                "probability": 0.1
+            },
+            {
+                "lhs": {
+                    "serialization_type": 0,
+                    "type": "android::status_t",
+                    "name": "err"
+                },
+                "rhs": {
+                    "type": "enum android::(anonymous at system.core.libutils.include.utils.Errors.h:45:1)",
+                    "name": "android::OK",
+                    "value": 0
+                },
+                "opcode": "!=",
+                "name": "constraint3",
+                "probability": 0.1
+            },
+            {
+                "lhs": {
+                    "serialization_type": 0,
+                    "type": "android::status_t",
+                    "name": "err"
+                },
+                "rhs": {
+                    "type": "enum android::(anonymous at system.core.libutils.include.utils.Errors.h:45:1)",
+                    "name": "android::OK",
+                    "value": 0
+                },
+                "opcode": "!=",
+                "name": "constraint4",
+                "probability": 0.1
+            },
+            {
+                "lhs": {
+                    "serialization_type": 0,
+                    "type": "android::status_t",
+                    "name": "err"
+                },
+                "rhs": {
+                    "type": "enum android::(anonymous at system.core.libutils.include.utils.Errors.h:45:1)",
+                    "name": "android::OK",
+                    "value": 0
+                },
+                "opcode": "!=",
+                "name": "constraint5",
+                "probability": 0.1
+            },
+            {
+                "lhs": {
+                    "serialization_type": 0,
+                    "type": "android::status_t",
+                    "name": "err"
+                },
+                "rhs": {
+                    "type": "enum android::(anonymous at system.core.libutils.include.utils.Errors.h:45:1)",
+                    "name": "android::OK",
+                    "value": 0
+                },
+                "opcode": "!=",
+                "name": "constraint6",
+                "probability": 0.1
+            },
+            {
+                "lhs": {
+                    "serialization_type": 0,
+                    "type": "android::status_t",
+                    "name": "err"
+                },
+                "rhs": {
+                    "type": "enum android::(anonymous at system.core.libutils.include.utils.Errors.h:45:1)",
+                    "name": "android::OK",
+                    "value": 0
+                },
+                "opcode": "!=",
+                "name": "constraint7",
+                "probability": 0.1
+            },
+            {
+                "lhs": {
+                    "lhs": {
+                        "lhs": {
+                            "type": "int",
+                            "name": "isDeferred"
+                        },
+                        "opcode": "",
+                        "name": "constraint8_lhs_lhs",
+                        "probability": 0.1
+                    },
+                    "rhs": {
+                        "lhs": {
+                            "type": "int",
+                            "name": "surfaceType"
+                        },
+                        "rhs": {
+                            "type": "enum android::hardware::camera2::params::OutputConfiguration::SurfaceType",
+                            "name": "android::hardware::camera2::params::OutputConfiguration::SurfaceType::SURFACE_TYPE_SURFACE_VIEW",
+                            "value": 0
+                        },
+                        "opcode": "!=",
+                        "name": "constraint8_lhs_rhs",
+                        "probability": 0.1
+                    },
+                    "opcode": "&&",
+                    "name": "constraint8_lhs",
+                    "probability": 0.1
+                },
+                "rhs": {
+                    "lhs": {
+                        "type": "int",
+                        "name": "surfaceType"
+                    },
+                    "rhs": {
+                        "type": "enum android::hardware::camera2::params::OutputConfiguration::SurfaceType",
+                        "name": "android::hardware::camera2::params::OutputConfiguration::SurfaceType::SURFACE_TYPE_SURFACE_TEXTURE",
+                        "value": 1
+                    },
+                    "opcode": "!=",
+                    "name": "constraint8_rhs",
+                    "probability": 0.1
+                },
+                "opcode": "&&",
+                "name": "constraint8",
+                "probability": 0.1
+            },
+            {
+                "lhs": {
+                    "serialization_type": 0,
+                    "type": "android::status_t",
+                    "name": "err"
+                },
+                "rhs": {
+                    "type": "enum android::(anonymous at system.core.libutils.include.utils.Errors.h:45:1)",
+                    "name": "android::OK",
+                    "value": 0
+                },
+                "opcode": "!=",
+                "name": "constraint9",
+                "probability": 0.1
+            },
+            {
+                "lhs": {
+                    "serialization_type": 0,
+                    "type": "unsigned int",
+                    "name": "implicit_47",
+                    "value": 0
+                },
+                "rhs": {
+                    "type": "unsigned int",
+                    "name": null
+                },
+                "opcode": "<",
+                "name": "constraint10",
+                "probability": 0.5
+            },
+            {
+                "lhs": {
+                    "type": "IntegerLiteral",
+                    "name": "implicit_48",
+                    "value": 0
+                },
+                "opcode": "",
+                "name": "constraint11",
+                "probability": 0.5
+            },
+            {
+                "lhs": {
+                    "type": "IntegerLiteral",
+                    "name": "implicit_53",
+                    "value": 0
+                },
+                "opcode": "",
+                "name": "constraint12",
+                "probability": 0.5
+            }
+        ]
+    }
+}

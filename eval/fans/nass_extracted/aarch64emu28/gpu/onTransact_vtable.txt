@@ -1,0 +1,7 @@
+0x0	0x6e8f4	/system/lib64/libsurfaceflinger.so
+0x8	0x6e934	/system/lib64/libsurfaceflinger.so
+0x10	0x4a75c	/system/lib64/libsurfaceflinger.so
+0x18	0x6dfa0	/system/lib64/libsurfaceflinger.so
+0x20	0x6e68c	/system/lib64/libsurfaceflinger.so
+0x28	0x6e378	/system/lib64/libsurfaceflinger.so
+0x30	0x6dfac	/system/lib64/libsurfaceflinger.so

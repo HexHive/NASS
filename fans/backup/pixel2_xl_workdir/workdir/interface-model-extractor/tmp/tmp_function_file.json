@@ -1,0 +1,290 @@
+{
+    "function":{
+        "funcName":{
+            "$":"class android::BpMediaRecorder::getMetrics"
+        },
+        "signature":{
+            "$":"android::status_t (class android::Parcel *)"
+        },
+        "CompoundStmt":{
+            "Var1":{
+                "lhs":{
+                    "name":{
+                        "$":"data"
+                    },
+                    "type":{
+                        "$":"class android::Parcel"
+                    }
+                },
+                "rhs":{
+                    "CXXConstructExpr":{
+                        "signature":{
+                            "$":"void (void)"
+                        },
+                        "name":{
+                            "$":"android::Parcel::Parcel"
+                        },
+                        "member":{}
+                    }
+                }
+            },
+            "CXXMemberCallExpr":{
+                "ReturnType":{
+                    "$":"android::status_t"
+                },
+                "MemberExpr":{
+                    "name":{
+                        "$":"android::Parcel::writeInterfaceToken"
+                    },
+                    "type":{
+                        "$":"<bound member function type>"
+                    },
+                    "signature":{
+                        "$":"android::status_t (const class android::String16 &)"
+                    },
+                    "DeclRef":{
+                        "name":{
+                            "$":"data"
+                        },
+                        "type":{
+                            "$":"class android::Parcel"
+                        }
+                    }
+                },
+                "argv":{
+                    "CXXMemberCallExpr":{
+                        "ReturnType":{
+                            "$":"const class android::String16"
+                        },
+                        "MemberExpr":{
+                            "name":{
+                                "$":"android::IMediaRecorder::getInterfaceDescriptor"
+                            },
+                            "type":{
+                                "$":"<bound member function type>"
+                            },
+                            "signature":{
+                                "$":"const ::android::String16 &(void) const"
+                            },
+                            "ImplicitCastExpr":{
+                                "type":{
+                                    "$":"const class android::IMediaRecorder *"
+                                },
+                                "ImplicitCastExpr":{
+                                    "type":{
+                                        "$":"class android::IMediaRecorder *"
+                                    },
+                                    "CXXThisExpr":{
+                                        "Type":{
+                                            "$":"class android::BpMediaRecorder *"
+                                        }
+                                    }
+                                }
+                            }
+                        },
+                        "argv":{}
+                    }
+                }
+            },
+            "Var2":{
+                "lhs":{
+                    "name":{
+                        "$":"ret"
+                    },
+                    "type":{
+                        "$":"android::status_t"
+                    }
+                },
+                "rhs":{
+                    "CXXMemberCallExpr":{
+                        "ReturnType":{
+                            "$":"android::status_t"
+                        },
+                        "MemberExpr":{
+                            "name":{
+                                "$":"android::IBinder::transact"
+                            },
+                            "type":{
+                                "$":"<bound member function type>"
+                            },
+                            "signature":{
+                                "$":"android::status_t (uint32_t, const class android::Parcel &, class android::Parcel *, uint32_t)"
+                            },
+                            "CXXMemberCallExpr":{
+                                "ReturnType":{
+                                    "$":"class android::IBinder *"
+                                },
+                                "MemberExpr":{
+                                    "name":{
+                                        "$":"android::BpRefBase::remote"
+                                    },
+                                    "type":{
+                                        "$":"<bound member function type>"
+                                    },
+                                    "signature":{
+                                        "$":"class android::IBinder *(void)"
+                                    },
+                                    "ImplicitCastExpr":{
+                                        "type":{
+                                            "$":"class android::BpRefBase *"
+                                        },
+                                        "CXXThisExpr":{
+                                            "Type":{
+                                                "$":"class android::BpMediaRecorder *"
+                                            }
+                                        }
+                                    }
+                                },
+                                "argv":{}
+                            }
+                        },
+                        "argv":{
+                            "ImplicitCastExpr1":{
+                                "type":{
+                                    "$":"unsigned int"
+                                },
+                                "IntegerLiteral":{
+                                    "value":{
+                                        "$":27
+                                    },
+                                    "DeclRef":{
+                                        "name":{
+                                            "$":"android::GET_METRICS"
+                                        },
+                                        "type":{
+                                            "$":"enum android::(anonymous at frameworks.av.media.libmedia.IMediaRecorder.cpp:36:1)"
+                                        }
+                                    }
+                                }
+                            },
+                            "ImplicitCastExpr2":{
+                                "type":{
+                                    "$":"const class android::Parcel"
+                                },
+                                "DeclRef":{
+                                    "name":{
+                                        "$":"data"
+                                    },
+                                    "type":{
+                                        "$":"class android::Parcel"
+                                    }
+                                }
+                            },
+                            "ImplicitCastExpr3":{
+                                "type":{
+                                    "$":"class android::Parcel *"
+                                },
+                                "DeclRef":{
+                                    "name":{
+                                        "$":"reply"
+                                    },
+                                    "type":{
+                                        "$":"class android::Parcel *"
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            "IfStmt":{
+                "IfCond":{
+                    "BinaryOperator":{
+                        "opcode":{
+                            "$":"=="
+                        },
+                        "LHS":{
+                            "ImplicitCastExpr":{
+                                "type":{
+                                    "$":"android::status_t"
+                                },
+                                "DeclRef":{
+                                    "name":{
+                                        "$":"ret"
+                                    },
+                                    "type":{
+                                        "$":"android::status_t"
+                                    }
+                                }
+                            }
+                        },
+                        "RHS":{
+                            "ImplicitCastExpr":{
+                                "type":{
+                                    "$":"int"
+                                },
+                                "IntegerLiteral":{
+                                    "value":{
+                                        "$":0
+                                    },
+                                    "DeclRef":{
+                                        "name":{
+                                            "$":"android::NO_ERROR"
+                                        },
+                                        "type":{
+                                            "$":"enum android::(anonymous at system.core.libutils.include.utils.Errors.h:45:1)"
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                },
+                "Then":{
+                    "CompoundStmt":{
+                        "ReturnStmt":{
+                            "ImplicitCastExpr":{
+                                "type":{
+                                    "$":"android::status_t"
+                                },
+                                "IntegerLiteral":{
+                                    "value":{
+                                        "$":0
+                                    },
+                                    "DeclRef":{
+                                        "name":{
+                                            "$":"android::OK"
+                                        },
+                                        "type":{
+                                            "$":"enum android::(anonymous at system.core.libutils.include.utils.Errors.h:45:1)"
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            "ReturnStmt":{
+                "ImplicitCastExpr":{
+                    "type":{
+                        "$":"android::status_t"
+                    },
+                    "IntegerLiteral":{
+                        "value":{
+                            "$":-2147483648
+                        },
+                        "DeclRef":{
+                            "name":{
+                                "$":"android::UNKNOWN_ERROR"
+                            },
+                            "type":{
+                                "$":"enum android::(anonymous at system.core.libutils.include.utils.Errors.h:45:1)"
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "argv":{
+            "argv0":{
+                "name":{
+                    "$":"reply"
+                },
+                "type":{
+                    "$":"class android::Parcel *"
+                }
+            }
+        }
+    }
+}

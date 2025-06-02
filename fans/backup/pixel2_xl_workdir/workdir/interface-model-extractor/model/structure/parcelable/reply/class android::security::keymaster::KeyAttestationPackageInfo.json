@@ -1,0 +1,132 @@
+{
+    "class android::security::keymaster::KeyAttestationPackageInfo": {
+        "variable": [
+            {
+                "count": 1,
+                "self_constraint": [],
+                "name": "packageName_",
+                "under_constraint": [],
+                "dependency": [],
+                "relation": [],
+                "signature": "std::unique_ptr<String16>",
+                "serialization_type": 2,
+                "usedBy": [],
+                "type": "class android::String16",
+                "loop": []
+            },
+            {
+                "count": 1,
+                "self_constraint": [
+                    "constraint0",
+                    "constraint1"
+                ],
+                "name": "rc",
+                "under_constraint": [],
+                "dependency": [],
+                "relation": [],
+                "serialization_type": 0,
+                "usedBy": [],
+                "type": "int",
+                "loop": []
+            },
+            {
+                "count": 1,
+                "self_constraint": [],
+                "name": "versionCode_",
+                "under_constraint": [],
+                "dependency": [],
+                "relation": [],
+                "signature": "int64_t",
+                "serialization_type": 2,
+                "usedBy": [],
+                "type": "long long",
+                "loop": []
+            },
+            {
+                "count": 1,
+                "self_constraint": [],
+                "name": "signatures_",
+                "dependency": [],
+                "under_constraint": [],
+                "have_parcelable": 1,
+                "relation": [],
+                "signature": "android::security::keymaster::KeyAttestationPackageInfo::SharedSignaturesVector",
+                "serialization_type": 2,
+                "usedBy": [],
+                "type": "class vector<class android::content::pm::Signature>",
+                "loop": [],
+                "size": -1
+            },
+            {
+                "count": 1,
+                "self_constraint": [],
+                "name": "signatures_::item",
+                "dependency": [],
+                "under_constraint": [],
+                "have_parcelable": 1,
+                "relation": [],
+                "signature": "android::security::keymaster::KeyAttestationPackageInfo::SharedSignaturesVector",
+                "serialization_type": 2,
+                "usedBy": [],
+                "type": "class android::content::pm::Signature",
+                "loop": []
+            },
+            {
+                "count": 1,
+                "self_constraint": [],
+                "name": "implicit_3",
+                "under_constraint": [],
+                "dependency": [],
+                "relation": [],
+                "serialization_type": 0,
+                "usedBy": [],
+                "type": "android::status_t",
+                "loop": []
+            }
+        ],
+        "dependency": [],
+        "loop": [],
+        "possibility": [
+            {
+                "return": "implicit_3",
+                "reply": [
+                    "packageName_",
+                    "versionCode_",
+                    "signatures_"
+                ],
+                "data": [],
+                "id": 0
+            }
+        ],
+        "constraint": [
+            {
+                "lhs": {
+                    "type": "int",
+                    "name": "rc"
+                },
+                "rhs": {
+                    "type": "enum android::(anonymous at system.core.libutils.include.utils.Errors.h:45:1)",
+                    "name": "android::NO_ERROR",
+                    "value": 0
+                },
+                "opcode": "!=",
+                "name": "constraint0",
+                "probability": 0.5
+            },
+            {
+                "lhs": {
+                    "type": "int",
+                    "name": "rc"
+                },
+                "rhs": {
+                    "type": "enum android::(anonymous at system.core.libutils.include.utils.Errors.h:45:1)",
+                    "name": "android::NO_ERROR",
+                    "value": 0
+                },
+                "opcode": "!=",
+                "name": "constraint1",
+                "probability": 0.5
+            }
+        ]
+    }
+}

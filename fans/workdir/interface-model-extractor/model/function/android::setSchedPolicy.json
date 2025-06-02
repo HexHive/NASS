@@ -1,0 +1,51 @@
+{
+    "android::setSchedPolicy+void (const class android::Parcel &)":{
+        "dependency":[],
+        "possibility":[
+            {
+                "id":0,
+                "data":[
+                    "policy"
+                ],
+                "reply":[],
+                "return":""
+            }
+        ],
+        "variable":[
+            {
+                "type":"enum SchedPolicy",
+                "name":"policy",
+                "serialization_type":1,
+                "self_constraint":[],
+                "under_constraint":[],
+                "relation":[],
+                "loop":[],
+                "usedBy":[],
+                "dependency":[],
+                "count":1,
+                "type_alias":1
+            },
+            {
+                "name":"data",
+                "type":"class android::Parcel",
+                "serialization_type":0,
+                "self_constraint":[],
+                "under_constraint":[],
+                "relation":[],
+                "loop":[],
+                "usedBy":[],
+                "dependency":[],
+                "count":1
+            }
+        ],
+        "constraint":[],
+        "loop":[],
+        "argv":[
+            {
+                "name":"data",
+                "type":"const class android::Parcel &",
+                "serialization_type":0
+            }
+        ]
+    }
+}

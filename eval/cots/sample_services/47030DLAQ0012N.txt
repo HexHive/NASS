@@ -1,0 +1,3 @@
+android.hardware.neuralnetworks.IDevice/google-edgetpu
+android.hardware.radio.sap.ISap/slot1
+com.google.pixel.shared_modem_platform.ISharedModemPlatform/default

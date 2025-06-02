@@ -1,0 +1,281 @@
+{
+    "class android::AudioMix": {
+        "variable": [
+            {
+                "count": 1,
+                "self_constraint": [],
+                "name": "mMixType",
+                "under_constraint": [],
+                "dependency": [],
+                "relation": [],
+                "serialization_type": 1,
+                "usedBy": [],
+                "type": "int",
+                "loop": []
+            },
+            {
+                "count": 1,
+                "self_constraint": [],
+                "name": "mFormat.sample_rate",
+                "under_constraint": [],
+                "dependency": [
+                    {
+                        "filename": "class aaudio::AAudioStreamConfiguration.json",
+                        "type": "Structure",
+                        "name": "class aaudio::AAudioStreamConfiguration",
+                        "possIdx": 0,
+                        "varIdx": 1,
+                        "varName": "SampleRate",
+                        "varType": "int"
+                    }
+                ],
+                "relation": [],
+                "serialization_type": 1,
+                "usedBy": [],
+                "type": "int",
+                "loop": []
+            },
+            {
+                "count": 1,
+                "self_constraint": [],
+                "name": "mFormat.channel_mask",
+                "under_constraint": [],
+                "dependency": [],
+                "relation": [],
+                "serialization_type": 1,
+                "usedBy": [],
+                "type": "audio_channel_mask_t",
+                "loop": []
+            },
+            {
+                "count": 1,
+                "self_constraint": [],
+                "name": "mFormat.format",
+                "under_constraint": [],
+                "dependency": [
+                    {
+                        "filename": "BnAudioFlinger.json",
+                        "type": "Transaction",
+                        "name": "IAudioFlinger::5-5",
+                        "possIdx": 1,
+                        "varIdx": 0,
+                        "varName": "implicit_4",
+                        "varType": "enum audio_format_t"
+                    }
+                ],
+                "relation": [],
+                "type_alias": 1,
+                "serialization_type": 1,
+                "usedBy": [],
+                "type": "enum audio_format_t",
+                "loop": []
+            },
+            {
+                "count": 1,
+                "self_constraint": [],
+                "name": "mRouteFlags",
+                "under_constraint": [],
+                "dependency": [],
+                "relation": [],
+                "serialization_type": 1,
+                "usedBy": [],
+                "type": "int",
+                "loop": []
+            },
+            {
+                "count": 1,
+                "self_constraint": [],
+                "name": "mDeviceType",
+                "under_constraint": [],
+                "dependency": [
+                    {
+                        "filename": "BnAudioPolicyService.json",
+                        "type": "Transaction",
+                        "name": "IAudioPolicyService::25-25",
+                        "possIdx": 1,
+                        "varIdx": 0,
+                        "varName": "implicit_4",
+                        "varType": "audio_devices_t"
+                    },
+                    {
+                        "filename": "BnAudioPolicyService.json",
+                        "type": "Transaction",
+                        "name": "IAudioPolicyService::38-38",
+                        "possIdx": 1,
+                        "varIdx": 3,
+                        "varName": "device",
+                        "varType": "audio_devices_t"
+                    },
+                    {
+                        "filename": "BnAudioFlinger.json",
+                        "type": "Transaction",
+                        "name": "IAudioFlinger::24-24",
+                        "possIdx": 1,
+                        "varIdx": 3,
+                        "varName": "devices_1",
+                        "varType": "audio_devices_t"
+                    },
+                    {
+                        "filename": "BnAudioFlinger.json",
+                        "type": "Transaction",
+                        "name": "IAudioFlinger::29-29",
+                        "possIdx": 1,
+                        "varIdx": 3,
+                        "varName": "device_1",
+                        "varType": "audio_devices_t"
+                    }
+                ],
+                "relation": [],
+                "serialization_type": 1,
+                "usedBy": [],
+                "type": "audio_devices_t",
+                "loop": []
+            },
+            {
+                "count": 1,
+                "self_constraint": [],
+                "name": "mDeviceAddress",
+                "under_constraint": [],
+                "dependency": [],
+                "relation": [],
+                "serialization_type": 1,
+                "usedBy": [],
+                "type": "class android::String8",
+                "loop": []
+            },
+            {
+                "count": 1,
+                "self_constraint": [],
+                "name": "mCbFlags",
+                "under_constraint": [],
+                "dependency": [],
+                "relation": [],
+                "serialization_type": 1,
+                "usedBy": [],
+                "type": "int",
+                "loop": []
+            },
+            {
+                "count": 1,
+                "self_constraint": [
+                    "constraint0"
+                ],
+                "name": "size",
+                "under_constraint": [],
+                "dependency": [],
+                "relation": [],
+                "serialization_type": 1,
+                "usedBy": [],
+                "type": "size_t",
+                "loop": []
+            },
+            {
+                "count": 1,
+                "self_constraint": [
+                    "constraint0"
+                ],
+                "name": "i",
+                "under_constraint": [],
+                "value": 0,
+                "dependency": [],
+                "relation": [],
+                "serialization_type": 0,
+                "usedBy": [],
+                "type": "size_t",
+                "loop": []
+            },
+            {
+                "count": 1,
+                "self_constraint": [],
+                "name": "criterion",
+                "under_constraint": [],
+                "dependency": [],
+                "relation": [],
+                "serialization_type": 1,
+                "usedBy": [],
+                "type": "class android::AudioMixMatchCriterion",
+                "loop": [
+                    "loop0"
+                ]
+            },
+            {
+                "count": 1,
+                "self_constraint": [],
+                "name": "android::NO_ERROR",
+                "under_constraint": [],
+                "value": 0,
+                "dependency": [],
+                "relation": [],
+                "serialization_type": 0,
+                "usedBy": [],
+                "type": "android::status_t",
+                "loop": []
+            }
+        ],
+        "dependency": [],
+        "loop": [
+            {
+                "counter": {
+                    "type": "size_t",
+                    "name": "i",
+                    "value": 0
+                },
+                "inc": {
+                    "type": "size_t",
+                    "opcode": "++",
+                    "name": "i"
+                },
+                "name": "loop0",
+                "constraint": "constraint0"
+            }
+        ],
+        "possibility": [
+            {
+                "return": "android::NO_ERROR",
+                "reply": [],
+                "data": [
+                    "mMixType",
+                    "mFormat.sample_rate",
+                    "mFormat.channel_mask",
+                    "mFormat.format",
+                    "mRouteFlags",
+                    "mDeviceType",
+                    "mDeviceAddress",
+                    "mCbFlags",
+                    "size",
+                    "criterion"
+                ],
+                "id": 0
+            }
+        ],
+        "constraint": [
+            {
+                "lhs": {
+                    "type": "size_t",
+                    "name": "i"
+                },
+                "rhs": {
+                    "type": "size_t",
+                    "name": "size"
+                },
+                "opcode": "<",
+                "name": "constraint0",
+                "probability": 0.5
+            },
+            {
+                "lhs": {
+                    "type": "android::status_t",
+                    "name": "implicit_11"
+                },
+                "rhs": {
+                    "type": "android::status_t",
+                    "name": "android::NO_ERROR",
+                    "value": 0
+                },
+                "opcode": "==",
+                "name": "constraint1",
+                "probability": 0.5
+            }
+        ]
+    }
+}

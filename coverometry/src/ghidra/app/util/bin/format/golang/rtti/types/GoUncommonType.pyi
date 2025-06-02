@@ -1,0 +1,66 @@
+from typing import List
+import ghidra.app.util.bin.format.golang.rtti
+import ghidra.app.util.bin.format.golang.rtti.types
+import java.lang
+
+
+class GoUncommonType(object):
+
+
+
+
+    def __init__(self): ...
+
+
+
+    def equals(self, __a0: object) -> bool: ...
+
+    def getClass(self) -> java.lang.Class: ...
+
+    def getEndOfTypeInfo(self) -> long:
+        """
+        Returns the location of where this object, and any known associated optional
+         structures ends.
+        @return index location of end of this type object
+        """
+        ...
+
+    def getMethods(self) -> List[ghidra.app.util.bin.format.golang.rtti.types.GoMethod]: ...
+
+    def getMethodsSlice(self) -> ghidra.app.util.bin.format.golang.rtti.GoSlice: ...
+
+    def getPackagePathString(self) -> unicode: ...
+
+    def getPkgPath(self) -> ghidra.app.util.bin.format.golang.rtti.GoName: ...
+
+    def hashCode(self) -> int: ...
+
+    def notify(self) -> None: ...
+
+    def notifyAll(self) -> None: ...
+
+    def toString(self) -> unicode: ...
+
+    @overload
+    def wait(self) -> None: ...
+
+    @overload
+    def wait(self, __a0: long) -> None: ...
+
+    @overload
+    def wait(self, __a0: long, __a1: int) -> None: ...
+
+    @property
+    def endOfTypeInfo(self) -> long: ...
+
+    @property
+    def methods(self) -> List[object]: ...
+
+    @property
+    def methodsSlice(self) -> ghidra.app.util.bin.format.golang.rtti.GoSlice: ...
+
+    @property
+    def packagePathString(self) -> unicode: ...
+
+    @property
+    def pkgPath(self) -> ghidra.app.util.bin.format.golang.rtti.GoName: ...

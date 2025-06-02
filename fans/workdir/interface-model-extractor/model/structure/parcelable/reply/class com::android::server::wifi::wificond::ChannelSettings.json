@@ -1,0 +1,198 @@
+{
+    "class com::android::server::wifi::wificond::ChannelSettings": {
+        "variable": [
+            {
+                "count": 1,
+                "self_constraint": [],
+                "name": "frequency_",
+                "under_constraint": [],
+                "dependency": [],
+                "relation": [],
+                "signature": "int32_t",
+                "serialization_type": 2,
+                "usedBy": [],
+                "type": "int",
+                "loop": []
+            },
+            {
+                "count": 1,
+                "self_constraint": [
+                    "constraint0"
+                ],
+                "name": "return_status",
+                "under_constraint": [],
+                "dependency": [],
+                "relation": [],
+                "serialization_type": 0,
+                "usedBy": [],
+                "type": "android::status_t",
+                "loop": []
+            },
+            {
+                "count": 1,
+                "self_constraint": [],
+                "name": "implicit_11",
+                "under_constraint": [
+                    {
+                        "status": true,
+                        "name": "constraint0"
+                    },
+                    {
+                        "status": true,
+                        "name": "constraint1"
+                    }
+                ],
+                "func_name": "android::base::ErrnoRestorer::ErrnoRestorer",
+                "argv": [],
+                "dependency": [],
+                "relation": [],
+                "signature": "void (void)",
+                "serialization_type": 0,
+                "usedBy": [],
+                "type": "Function",
+                "loop": []
+            },
+            {
+                "count": 1,
+                "self_constraint": [],
+                "name": "implicit_12",
+                "under_constraint": [
+                    {
+                        "status": true,
+                        "name": "constraint0"
+                    },
+                    {
+                        "status": true,
+                        "name": "constraint1"
+                    }
+                ],
+                "func_name": "android::base::ErrnoRestorer::ErrnoRestorer",
+                "argv": [],
+                "dependency": [],
+                "relation": [],
+                "signature": "void (void)",
+                "serialization_type": 0,
+                "usedBy": [],
+                "type": "Function",
+                "loop": []
+            },
+            {
+                "count": 1,
+                "self_constraint": [],
+                "name": "implicit_12.toBool",
+                "under_constraint": [
+                    {
+                        "status": true,
+                        "name": "constraint0"
+                    },
+                    {
+                        "status": true,
+                        "name": "constraint1"
+                    }
+                ],
+                "dependency": [],
+                "relation": [],
+                "serialization_type": 0,
+                "usedBy": [],
+                "type": "_Bool",
+                "loop": []
+            },
+            {
+                "count": 1,
+                "self_constraint": [],
+                "name": "implicit_14.toBool",
+                "under_constraint": [
+                    {
+                        "status": true,
+                        "name": "constraint0"
+                    },
+                    {
+                        "status": true,
+                        "name": "constraint1"
+                    }
+                ],
+                "dependency": [],
+                "relation": [],
+                "serialization_type": 0,
+                "usedBy": [],
+                "type": "_Bool",
+                "loop": []
+            },
+            {
+                "count": 1,
+                "self_constraint": [],
+                "name": "android::OK",
+                "under_constraint": [
+                    {
+                        "status": false,
+                        "name": "constraint0"
+                    },
+                    {
+                        "status": true,
+                        "name": "constraint1"
+                    }
+                ],
+                "value": 0,
+                "dependency": [],
+                "relation": [],
+                "serialization_type": 0,
+                "usedBy": [],
+                "type": "android::status_t",
+                "loop": []
+            }
+        ],
+        "dependency": [],
+        "loop": [],
+        "possibility": [
+            {
+                "return": "return_status",
+                "reply": [
+                    "frequency_"
+                ],
+                "data": [],
+                "id": 0
+            },
+            {
+                "return": "android::OK",
+                "reply": [
+                    "frequency_"
+                ],
+                "data": [],
+                "id": 1
+            }
+        ],
+        "constraint": [
+            {
+                "lhs": {
+                    "type": "android::status_t",
+                    "name": "return_status"
+                },
+                "opcode": "",
+                "name": "constraint0",
+                "probability": 0.5
+            },
+            {
+                "lhs": {
+                    "lhs": {
+                        "type": "int",
+                        "name": "implicit_2"
+                    },
+                    "rhs": {
+                        "type": "enum android::base::LogSeverity",
+                        "name": "implicit_3"
+                    },
+                    "opcode": ">=",
+                    "name": "constraint1_lhs"
+                },
+                "rhs": {
+                    "type": "IntegerLiteral",
+                    "name": "implicit_4",
+                    "value": 0
+                },
+                "opcode": "!=",
+                "name": "constraint1",
+                "probability": 0.5
+            }
+        ]
+    }
+}

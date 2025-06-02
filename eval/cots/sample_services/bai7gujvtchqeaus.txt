@@ -1,0 +1,3 @@
+miui.whetstone.klo
+vendor.xiaomi.hardware.mrm.IMrm/default
+vendor.xiaomi.hardware.mrm.IMiCertificate/default

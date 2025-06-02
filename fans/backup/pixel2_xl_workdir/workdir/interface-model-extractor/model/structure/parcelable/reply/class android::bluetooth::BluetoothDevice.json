@@ -1,0 +1,56 @@
+{
+    "class android::bluetooth::BluetoothDevice": {
+        "variable": [
+            {
+                "count": 1,
+                "self_constraint": [],
+                "name": "android::bluetooth::BluetoothDevice::address.ToString",
+                "under_constraint": [],
+                "utf8": false,
+                "dependency": [],
+                "relation": [],
+                "serialization_type": 0,
+                "usedBy": [],
+                "type": "string",
+                "loop": []
+            },
+            {
+                "count": 1,
+                "self_constraint": [],
+                "name": "android::bluetooth::BluetoothDevice::address",
+                "under_constraint": [],
+                "dependency": [],
+                "relation": [],
+                "serialization_type": 2,
+                "usedBy": [],
+                "type": "class android::String16",
+                "loop": []
+            },
+            {
+                "count": 1,
+                "self_constraint": [],
+                "name": "status",
+                "under_constraint": [],
+                "dependency": [],
+                "relation": [],
+                "serialization_type": 0,
+                "usedBy": [],
+                "type": "android::status_t",
+                "loop": []
+            }
+        ],
+        "dependency": [],
+        "loop": [],
+        "possibility": [
+            {
+                "return": "status",
+                "reply": [
+                    "android::bluetooth::BluetoothDevice::address"
+                ],
+                "data": [],
+                "id": 0
+            }
+        ],
+        "constraint": []
+    }
+}

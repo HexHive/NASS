@@ -1,0 +1,44 @@
+android::hardware::graphics::composer::V2_1::Config+unsigned int
+audio_channel_mask_t+unsigned int
+aaudio::aaudio_handle_t+int
+aaudio_input_preset_t+int
+in_addr_t+unsigned int
+android::hardware::graphics::composer::V2_1::Display+unsigned long long
+audio_flags_mask_t+unsigned int
+android::status_t+int
+audio_patch_handle_t+int
+android::media::Metadata::Type+int
+nsecs_t+long long
+audio_io_handle_t+int
+aaudio_sharing_mode_t+int
+__be16+unsigned short
+metadata_vendor_id_t+unsigned long long
+uid_t+unsigned int
+android::hardware::graphics::composer::V2_1::Layer+unsigned long long
+aaudio_direction_t+int
+int32_t+int
+audio_hw_sync_t+unsigned int
+__kernel_sa_family_t+unsigned short
+aaudio_content_type_t+int
+audio_port_handle_t+int
+android::MediaAnalyticsItem::SessionID_t+long long
+aaudio_usage_t+int
+uint32_t+unsigned int
+audio_devices_t+unsigned int
+ssize_t+int
+audio_module_handle_t+int
+audio_gain_mode_t+unsigned int
+uintptr_t+unsigned int
+aaudio_session_id_t+int
+int64_t+long long
+off64_t+long long
+pid_t+int
+android::PixelFormat+int
+size_t+unsigned int
+sound_trigger_module_handle_t+int
+time_t+long
+OMX_U32+unsigned int
+audio_unique_id_t+int
+sound_model_handle_t+int
+aaudio_result_t+int
+aaudio_format_t+int

@@ -1,0 +1,164 @@
+{
+    "struct android::hardware::camera2::impl::PhysicalCaptureResultInfo": {
+        "variable": [
+            {
+                "count": 1,
+                "self_constraint": [],
+                "name": "mPhysicalCameraId",
+                "under_constraint": [],
+                "dependency": [],
+                "relation": [],
+                "signature": "class android::String16",
+                "serialization_type": 1,
+                "usedBy": [],
+                "type": "class android::String16",
+                "loop": []
+            },
+            {
+                "count": 1,
+                "self_constraint": [
+                    "constraint0",
+                    "constraint1"
+                ],
+                "name": "res",
+                "under_constraint": [],
+                "dependency": [],
+                "relation": [],
+                "serialization_type": 0,
+                "usedBy": [],
+                "type": "android::status_t",
+                "loop": []
+            },
+            {
+                "count": 1,
+                "self_constraint": [],
+                "name": "mPhysicalCameraMetadata",
+                "under_constraint": [
+                    {
+                        "status": false,
+                        "name": "constraint0"
+                    }
+                ],
+                "dependency": [
+                    {
+                        "filename": "BnCameraService.json",
+                        "type": "Transaction",
+                        "name": "ICameraService::8-8",
+                        "possIdx": 0,
+                        "varIdx": 1,
+                        "varName": "_aidl_return",
+                        "varType": "class android::CameraMetadata"
+                    },
+                    {
+                        "filename": "BnCameraDeviceUser.json",
+                        "type": "Transaction",
+                        "name": "ICameraDeviceUser::11-11",
+                        "possIdx": 0,
+                        "varIdx": 1,
+                        "varName": "_aidl_return",
+                        "varType": "class android::CameraMetadata"
+                    },
+                    {
+                        "filename": "BnCameraDeviceUser.json",
+                        "type": "Transaction",
+                        "name": "ICameraDeviceUser::12-12",
+                        "possIdx": 0,
+                        "varIdx": 1,
+                        "varName": "_aidl_return",
+                        "varType": "class android::CameraMetadata"
+                    }
+                ],
+                "relation": [],
+                "signature": "class android::CameraMetadata",
+                "serialization_type": 1,
+                "usedBy": [],
+                "type": "class android::CameraMetadata",
+                "loop": []
+            },
+            {
+                "count": 1,
+                "self_constraint": [],
+                "name": "android::OK",
+                "under_constraint": [
+                    {
+                        "status": false,
+                        "name": "constraint0"
+                    },
+                    {
+                        "status": false,
+                        "name": "constraint1"
+                    }
+                ],
+                "value": 0,
+                "dependency": [],
+                "relation": [],
+                "serialization_type": 0,
+                "usedBy": [],
+                "type": "android::status_t",
+                "loop": []
+            }
+        ],
+        "dependency": [],
+        "loop": [],
+        "possibility": [
+            {
+                "return": "res",
+                "reply": [],
+                "data": [
+                    "mPhysicalCameraId"
+                ],
+                "id": 0
+            },
+            {
+                "return": "res",
+                "reply": [],
+                "data": [
+                    "mPhysicalCameraId",
+                    "mPhysicalCameraMetadata"
+                ],
+                "id": 1
+            },
+            {
+                "return": "android::OK",
+                "reply": [],
+                "data": [
+                    "mPhysicalCameraId",
+                    "mPhysicalCameraMetadata"
+                ],
+                "id": 2
+            }
+        ],
+        "constraint": [
+            {
+                "lhs": {
+                    "serialization_type": 0,
+                    "type": "android::status_t",
+                    "name": "res"
+                },
+                "rhs": {
+                    "type": "android::status_t",
+                    "name": "android::OK",
+                    "value": 0
+                },
+                "opcode": "!=",
+                "name": "constraint0",
+                "probability": 0.1
+            },
+            {
+                "lhs": {
+                    "serialization_type": 0,
+                    "type": "android::status_t",
+                    "name": "res"
+                },
+                "rhs": {
+                    "type": "android::status_t",
+                    "name": "android::OK",
+                    "value": 0
+                },
+                "opcode": "!=",
+                "name": "constraint1",
+                "probability": 0.1
+            }
+        ]
+    }
+}

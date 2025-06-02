@@ -1,0 +1,150 @@
+{
+    "class android::dvr::ParcelableUniqueFd": {
+        "variable": [
+            {
+                "count": 1,
+                "self_constraint": [
+                    "constraint0",
+                    "constraint2"
+                ],
+                "name": "android::dvr::ParcelableUniqueFd::fence_",
+                "under_constraint": [],
+                "dependency": [],
+                "relation": [],
+                "serialization_type": 0,
+                "usedBy": [],
+                "type": "int",
+                "loop": []
+            },
+            {
+                "count": 1,
+                "self_constraint": [],
+                "name": "implicit_2",
+                "under_constraint": [
+                    {
+                        "status": true,
+                        "name": "constraint0"
+                    }
+                ],
+                "value": 1,
+                "dependency": [],
+                "relation": [],
+                "serialization_type": 2,
+                "usedBy": [],
+                "type": "IntegerLiteral",
+                "loop": []
+            },
+            {
+                "count": 1,
+                "self_constraint": [],
+                "name": "implicit_3",
+                "under_constraint": [
+                    {
+                        "status": false,
+                        "name": "constraint0"
+                    }
+                ],
+                "value": 0,
+                "dependency": [],
+                "relation": [],
+                "serialization_type": 2,
+                "usedBy": [],
+                "type": "IntegerLiteral",
+                "loop": []
+            },
+            {
+                "count": 1,
+                "self_constraint": [
+                    "constraint1"
+                ],
+                "name": "ret",
+                "under_constraint": [],
+                "dependency": [],
+                "relation": [],
+                "serialization_type": 0,
+                "usedBy": [],
+                "type": "android::status_t",
+                "loop": []
+            },
+            {
+                "count": 1,
+                "self_constraint": [],
+                "name": "fence_",
+                "under_constraint": [
+                    {
+                        "status": true,
+                        "name": "constraint2"
+                    }
+                ],
+                "signature": "base::unique_fd",
+                "dependency": [],
+                "relation": [],
+                "takeOwnership": true,
+                "serialization_type": 2,
+                "usedBy": [],
+                "type": "FileDescriptor",
+                "loop": []
+            }
+        ],
+        "dependency": [],
+        "loop": [],
+        "possibility": [
+            {
+                "return": "ret",
+                "reply": [
+                    "implicit_2",
+                    "implicit_3",
+                    "fence_"
+                ],
+                "data": [],
+                "id": 0
+            }
+        ],
+        "constraint": [
+            {
+                "lhs": {
+                    "serialization_type": 0,
+                    "type": "int",
+                    "name": "android::dvr::ParcelableUniqueFd::fence_"
+                },
+                "rhs": {
+                    "type": "IntegerLiteral",
+                    "name": "implicit_1",
+                    "value": 0
+                },
+                "opcode": ">=",
+                "name": "constraint0",
+                "probability": 0.5
+            },
+            {
+                "lhs": {
+                    "type": "android::status_t",
+                    "name": "ret"
+                },
+                "rhs": {
+                    "type": "enum android::(anonymous at system.core.libutils.include.utils.Errors.h:45:1)",
+                    "name": "android::OK",
+                    "value": 0
+                },
+                "opcode": "!=",
+                "name": "constraint1",
+                "probability": 0.5
+            },
+            {
+                "lhs": {
+                    "serialization_type": 0,
+                    "type": "int",
+                    "name": "android::dvr::ParcelableUniqueFd::fence_"
+                },
+                "rhs": {
+                    "type": "IntegerLiteral",
+                    "name": "implicit_5",
+                    "value": 0
+                },
+                "opcode": ">=",
+                "name": "constraint2",
+                "probability": 0.5
+            }
+        ]
+    }
+}

@@ -1,0 +1,30 @@
+{
+    "class android::os::StatsDimensionsValue": {
+        "variable": [
+            {
+                "count": 1,
+                "self_constraint": [],
+                "name": "android::UNKNOWN_ERROR",
+                "under_constraint": [],
+                "value": -2147483648,
+                "dependency": [],
+                "relation": [],
+                "serialization_type": 0,
+                "usedBy": [],
+                "type": "android::status_t",
+                "loop": []
+            }
+        ],
+        "dependency": [],
+        "loop": [],
+        "possibility": [
+            {
+                "return": "android::UNKNOWN_ERROR",
+                "reply": [],
+                "data": [],
+                "id": 0
+            }
+        ],
+        "constraint": []
+    }
+}

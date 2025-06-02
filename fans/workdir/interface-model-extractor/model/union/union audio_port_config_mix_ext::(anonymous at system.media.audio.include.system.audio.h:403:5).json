@@ -1,0 +1,46 @@
+{
+    "union audio_port_config_mix_ext::(anonymous at system.media.audio.include.system.audio.h:403:5)":{
+        "dependency":[],
+        "possibility":[
+            {
+                "id":0,
+                "data":[
+                    "audio_port_config_mix_ext::(anonymous union)::stream",
+                    "audio_port_config_mix_ext::(anonymous union)::source"
+                ],
+                "reply":[],
+                "return":""
+            }
+        ],
+        "variable":[
+            {
+                "name":"audio_port_config_mix_ext::(anonymous union)::stream",
+                "type":"enum audio_stream_type_t",
+                "serialization_type":1,
+                "self_constraint":[],
+                "under_constraint":[],
+                "relation":[],
+                "loop":[],
+                "usedBy":[],
+                "dependency":[],
+                "count":1,
+                "type_alias":1
+            },
+            {
+                "name":"audio_port_config_mix_ext::(anonymous union)::source",
+                "type":"enum audio_source_t",
+                "serialization_type":1,
+                "self_constraint":[],
+                "under_constraint":[],
+                "relation":[],
+                "loop":[],
+                "usedBy":[],
+                "dependency":[],
+                "count":1,
+                "type_alias":1
+            }
+        ],
+        "constraint":[],
+        "loop":[]
+    }
+}

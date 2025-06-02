@@ -1,0 +1,327 @@
+{
+    "struct android::hardware::keymaster::V4_0::KeyParameter": {
+        "variable": [
+            {
+                "count": 1,
+                "self_constraint": [
+                    "constraint0"
+                ],
+                "name": "implicit_1",
+                "under_constraint": [],
+                "dependency": [],
+                "relation": [],
+                "serialization_type": 1,
+                "usedBy": [],
+                "type": "int",
+                "loop": []
+            },
+            {
+                "count": 1,
+                "self_constraint": [],
+                "name": "implicit_3",
+                "under_constraint": [
+                    {
+                        "status": true,
+                        "name": "constraint0"
+                    }
+                ],
+                "func_name": "android::hardware::keymaster::V4_0::NullOr<android::hardware::keymaster::V4_0::KeyParameter>::NullOr",
+                "argv": [],
+                "dependency": [],
+                "relation": [],
+                "signature": "void (void)",
+                "serialization_type": 0,
+                "usedBy": [],
+                "type": "Function",
+                "loop": []
+            },
+            {
+                "count": 1,
+                "self_constraint": [],
+                "name": "tag",
+                "under_constraint": [
+                    {
+                        "status": false,
+                        "name": "constraint0"
+                    }
+                ],
+                "dependency": [],
+                "relation": [],
+                "serialization_type": 1,
+                "usedBy": [],
+                "type": "enum android::hardware::keymaster::V4_0::Tag",
+                "loop": []
+            },
+            {
+                "count": 1,
+                "self_constraint": [
+                    "constraint1",
+                    "constraint2",
+                    "constraint3",
+                    "constraint4"
+                ],
+                "name": "implicit_5",
+                "under_constraint": [
+                    {
+                        "status": false,
+                        "name": "constraint0"
+                    }
+                ],
+                "dependency": [],
+                "relation": [],
+                "serialization_type": 0,
+                "usedBy": [],
+                "type": "enum android::hardware::keymaster::V4_0::TagType",
+                "loop": []
+            },
+            {
+                "count": 1,
+                "self_constraint": [],
+                "name": "result.f.integer",
+                "under_constraint": [
+                    {
+                        "status": false,
+                        "name": "constraint0"
+                    },
+                    {
+                        "status": true,
+                        "name": "constraint1"
+                    }
+                ],
+                "dependency": [],
+                "relation": [],
+                "serialization_type": 1,
+                "usedBy": [],
+                "type": "int",
+                "loop": []
+            },
+            {
+                "count": 1,
+                "self_constraint": [],
+                "name": "result.f.longInteger",
+                "under_constraint": [
+                    {
+                        "status": false,
+                        "name": "constraint0"
+                    },
+                    {
+                        "status": true,
+                        "name": "constraint2"
+                    }
+                ],
+                "dependency": [],
+                "relation": [],
+                "serialization_type": 1,
+                "usedBy": [],
+                "type": "unsigned long",
+                "loop": []
+            },
+            {
+                "count": 1,
+                "self_constraint": [],
+                "name": "implicit_12",
+                "under_constraint": [
+                    {
+                        "status": false,
+                        "name": "constraint0"
+                    },
+                    {
+                        "status": true,
+                        "name": "constraint3"
+                    },
+                    {
+                        "status": true,
+                        "name": "constraint4"
+                    }
+                ],
+                "func_name": "keystore::readKeymasterBlob",
+                "argv": [
+                    {
+                        "type": "const class android::Parcel",
+                        "name": "in"
+                    }
+                ],
+                "dependency": [],
+                "relation": [],
+                "signature": "hidl_vec<uint8_t> (const android::Parcel &, _Bool)",
+                "serialization_type": 1,
+                "usedBy": [],
+                "type": "Function",
+                "loop": []
+            },
+            {
+                "count": 1,
+                "self_constraint": [],
+                "name": "result.blob",
+                "under_constraint": [
+                    {
+                        "status": false,
+                        "name": "constraint0"
+                    },
+                    {
+                        "status": true,
+                        "name": "constraint3"
+                    },
+                    {
+                        "status": true,
+                        "name": "constraint4"
+                    }
+                ],
+                "dependency": [],
+                "relation": [],
+                "signature": "::android::hardware::hidl_vec<uint8_t>",
+                "serialization_type": 0,
+                "usedBy": [],
+                "type": "struct android::hardware::hidl_vec<unsigned char>",
+                "loop": []
+            },
+            {
+                "count": 1,
+                "self_constraint": [],
+                "name": "result",
+                "under_constraint": [
+                    {
+                        "status": false,
+                        "name": "constraint0"
+                    },
+                    {
+                        "status": true,
+                        "name": "constraint3"
+                    }
+                ],
+                "dependency": [],
+                "relation": [],
+                "serialization_type": 0,
+                "usedBy": [],
+                "type": "struct android::hardware::keymaster::V4_0::KeyParameter",
+                "loop": []
+            },
+            {
+                "count": 1,
+                "self_constraint": [],
+                "name": "implicit_14",
+                "under_constraint": [
+                    {
+                        "status": false,
+                        "name": "constraint0"
+                    },
+                    {
+                        "status": true,
+                        "name": "constraint3"
+                    }
+                ],
+                "func_name": "android::hardware::keymaster::V4_0::NullOr<android::hardware::keymaster::V4_0::KeyParameter>::NullOr",
+                "argv": [
+                    {
+                        "type": "struct android::hardware::keymaster::V4_0::KeyParameter",
+                        "name": "result"
+                    }
+                ],
+                "dependency": [],
+                "relation": [],
+                "signature": "void (struct android::hardware::keymaster::V4_0::KeyParameter &&)",
+                "serialization_type": 0,
+                "usedBy": [],
+                "type": "Function",
+                "loop": []
+            }
+        ],
+        "dependency": [],
+        "loop": [],
+        "possibility": [
+            {
+                "return": "implicit_3",
+                "reply": [],
+                "data": [
+                    "implicit_1"
+                ],
+                "id": 0
+            },
+            {
+                "return": "implicit_14",
+                "reply": [],
+                "data": [
+                    "implicit_1",
+                    "tag",
+                    "result.f.integer",
+                    "result.f.longInteger",
+                    "implicit_12"
+                ],
+                "id": 1
+            }
+        ],
+        "constraint": [
+            {
+                "lhs": {
+                    "serialization_type": 1,
+                    "type": "int",
+                    "name": "implicit_1"
+                },
+                "rhs": {
+                    "type": "IntegerLiteral",
+                    "name": "implicit_2",
+                    "value": 0
+                },
+                "opcode": "==",
+                "name": "constraint0",
+                "probability": 0.1
+            },
+            {
+                "lhs": {
+                    "type": "enum android::hardware::keymaster::V4_0::TagType",
+                    "name": "implicit_5"
+                },
+                "rhs": {
+                    "type": "IntegerLiteral",
+                    "name": "implicit_6",
+                    "value": 268435456
+                },
+                "opcode": "==",
+                "name": "constraint1",
+                "probability": 0.9
+            },
+            {
+                "lhs": {
+                    "type": "enum android::hardware::keymaster::V4_0::TagType",
+                    "name": "implicit_5"
+                },
+                "rhs": {
+                    "type": "IntegerLiteral",
+                    "name": "implicit_8",
+                    "value": 1342177280
+                },
+                "opcode": "==",
+                "name": "constraint2",
+                "probability": 0.9
+            },
+            {
+                "lhs": {
+                    "type": "enum android::hardware::keymaster::V4_0::TagType",
+                    "name": "implicit_5"
+                },
+                "rhs": {
+                    "type": "IntegerLiteral",
+                    "name": "implicit_10",
+                    "value": 1879048192
+                },
+                "opcode": "==",
+                "name": "constraint3",
+                "probability": 0.9
+            },
+            {
+                "lhs": {
+                    "type": "enum android::hardware::keymaster::V4_0::TagType",
+                    "name": "implicit_5"
+                },
+                "rhs": {
+                    "type": "IntegerLiteral",
+                    "name": "implicit_11",
+                    "value": 2147483648
+                },
+                "opcode": "==",
+                "name": "constraint4",
+                "probability": 0.9
+            }
+        ]
+    }
+}

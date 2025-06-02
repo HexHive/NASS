@@ -1,0 +1,123 @@
+{
+    "struct android::BufferingSettings": {
+        "variable": [
+            {
+                "count": 1,
+                "self_constraint": [],
+                "name": "android::BAD_VALUE",
+                "under_constraint": [
+                    {
+                        "status": true,
+                        "name": "constraint0"
+                    }
+                ],
+                "value": -22,
+                "dependency": [],
+                "relation": [],
+                "serialization_type": 0,
+                "usedBy": [],
+                "type": "android::status_t",
+                "loop": []
+            },
+            {
+                "count": 1,
+                "self_constraint": [],
+                "name": "mInitialMarkMs",
+                "under_constraint": [
+                    {
+                        "status": false,
+                        "name": "constraint0"
+                    }
+                ],
+                "dependency": [],
+                "relation": [],
+                "signature": "int",
+                "serialization_type": 2,
+                "usedBy": [],
+                "type": "int",
+                "loop": []
+            },
+            {
+                "count": 1,
+                "self_constraint": [],
+                "name": "mResumePlaybackMarkMs",
+                "under_constraint": [
+                    {
+                        "status": false,
+                        "name": "constraint0"
+                    }
+                ],
+                "dependency": [],
+                "relation": [],
+                "signature": "int",
+                "serialization_type": 2,
+                "usedBy": [],
+                "type": "int",
+                "loop": []
+            },
+            {
+                "count": 1,
+                "self_constraint": [],
+                "name": "android::OK",
+                "under_constraint": [
+                    {
+                        "status": false,
+                        "name": "constraint0"
+                    }
+                ],
+                "value": 0,
+                "dependency": [],
+                "relation": [],
+                "serialization_type": 0,
+                "usedBy": [],
+                "type": "android::status_t",
+                "loop": []
+            }
+        ],
+        "dependency": [
+            {
+                "filename": "BnMediaPlayer.json",
+                "type": "Transaction",
+                "name": "IMediaPlayer::7-7",
+                "possIdx": 1,
+                "varIdx": 1,
+                "varName": "buffering",
+                "varType": "struct android::BufferingSettings"
+            }
+        ],
+        "loop": [],
+        "possibility": [
+            {
+                "return": "android::BAD_VALUE",
+                "reply": [],
+                "data": [],
+                "id": 0
+            },
+            {
+                "return": "android::OK",
+                "reply": [
+                    "mInitialMarkMs",
+                    "mResumePlaybackMarkMs"
+                ],
+                "data": [],
+                "id": 1
+            }
+        ],
+        "constraint": [
+            {
+                "lhs": {
+                    "type": "class android::Parcel *",
+                    "name": "parcel"
+                },
+                "rhs": {
+                    "type": "class android::Parcel *",
+                    "name": "implicit_1",
+                    "value": "NULL"
+                },
+                "opcode": "==",
+                "name": "constraint0",
+                "probability": 0.1
+            }
+        ]
+    }
+}

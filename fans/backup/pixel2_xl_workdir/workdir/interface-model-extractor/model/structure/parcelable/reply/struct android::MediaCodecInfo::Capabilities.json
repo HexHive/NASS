@@ -1,0 +1,210 @@
+{
+    "struct android::MediaCodecInfo::Capabilities": {
+        "dependency": [],
+        "possibility": [
+            {
+                "id": 0,
+                "data": [],
+                "reply": [
+                    "android::MediaCodecInfo::Capabilities::mProfileLevels.size",
+                    "implicit_3.mProfile",
+                    "implicit_5.mLevel",
+                    "android::MediaCodecInfo::Capabilities::mColorFormats.size",
+                    "implicit_9",
+                    "mFlags",
+                    "mDetails"
+                ],
+                "return": "android::OK"
+            }
+        ],
+        "variable": [
+            {
+                "type": "int",
+                "name": "android::MediaCodecInfo::Capabilities::mProfileLevels.size",
+                "serialization_type": 2,
+                "self_constraint": [
+                    "constraint0"
+                ],
+                "under_constraint": [],
+                "relation": [],
+                "loop": [],
+                "usedBy": [],
+                "dependency": [],
+                "count": 1
+            },
+            {
+                "name": "i",
+                "type": "size_t",
+                "value": 0,
+                "serialization_type": 0,
+                "self_constraint": [
+                    "constraint0",
+                    "constraint1"
+                ],
+                "under_constraint": [],
+                "relation": [],
+                "loop": [],
+                "usedBy": [],
+                "dependency": [],
+                "count": 1
+            },
+            {
+                "name": "implicit_3.mProfile",
+                "type": "int",
+                "signature": "uint32_t",
+                "serialization_type": 2,
+                "self_constraint": [],
+                "under_constraint": [],
+                "relation": [],
+                "loop": [
+                    "loop0"
+                ],
+                "usedBy": [],
+                "dependency": [],
+                "count": 1
+            },
+            {
+                "name": "implicit_5.mLevel",
+                "type": "int",
+                "signature": "uint32_t",
+                "serialization_type": 2,
+                "self_constraint": [],
+                "under_constraint": [],
+                "relation": [],
+                "loop": [
+                    "loop0"
+                ],
+                "usedBy": [],
+                "dependency": [],
+                "count": 1
+            },
+            {
+                "type": "int",
+                "name": "android::MediaCodecInfo::Capabilities::mColorFormats.size",
+                "serialization_type": 2,
+                "self_constraint": [
+                    "constraint1"
+                ],
+                "under_constraint": [],
+                "relation": [],
+                "loop": [],
+                "usedBy": [],
+                "dependency": [],
+                "count": 1
+            },
+            {
+                "type": "int",
+                "name": "implicit_9",
+                "serialization_type": 2,
+                "self_constraint": [],
+                "under_constraint": [],
+                "relation": [],
+                "loop": [
+                    "loop1"
+                ],
+                "usedBy": [],
+                "dependency": [],
+                "count": 1
+            },
+            {
+                "name": "mFlags",
+                "type": "int",
+                "signature": "uint32_t",
+                "serialization_type": 2,
+                "self_constraint": [],
+                "under_constraint": [],
+                "relation": [],
+                "loop": [],
+                "usedBy": [],
+                "dependency": [],
+                "count": 1
+            },
+            {
+                "name": "mDetails",
+                "type": "struct android::AMessage",
+                "signature": "sp<struct android::AMessage>",
+                "serialization_type": 2,
+                "self_constraint": [],
+                "under_constraint": [],
+                "relation": [],
+                "loop": [],
+                "usedBy": [],
+                "dependency": [],
+                "count": 1
+            },
+            {
+                "name": "android::OK",
+                "type": "android::status_t",
+                "value": 0,
+                "serialization_type": 0,
+                "self_constraint": [],
+                "under_constraint": [],
+                "relation": [],
+                "loop": [],
+                "usedBy": [],
+                "dependency": [],
+                "count": 1
+            }
+        ],
+        "constraint": [
+            {
+                "name": "constraint0",
+                "opcode": "<",
+                "lhs": {
+                    "name": "i",
+                    "type": "size_t"
+                },
+                "rhs": {
+                    "type": "int",
+                    "name": "android::MediaCodecInfo::Capabilities::mProfileLevels.size",
+                    "serialization_type": 0
+                },
+                "probability": 0.5
+            },
+            {
+                "name": "constraint1",
+                "opcode": "<",
+                "lhs": {
+                    "name": "i",
+                    "type": "size_t"
+                },
+                "rhs": {
+                    "type": "int",
+                    "name": "android::MediaCodecInfo::Capabilities::mColorFormats.size",
+                    "serialization_type": 0
+                },
+                "probability": 0.5
+            }
+        ],
+        "loop": [
+            {
+                "name": "loop0",
+                "counter": {
+                    "name": "i",
+                    "type": "size_t",
+                    "value": 0
+                },
+                "constraint": "constraint0",
+                "inc": {
+                    "opcode": "++",
+                    "name": "i",
+                    "type": "size_t"
+                }
+            },
+            {
+                "name": "loop1",
+                "counter": {
+                    "name": "i",
+                    "type": "size_t",
+                    "value": 0
+                },
+                "constraint": "constraint1",
+                "inc": {
+                    "opcode": "++",
+                    "name": "i",
+                    "type": "size_t"
+                }
+            }
+        ]
+    }
+}

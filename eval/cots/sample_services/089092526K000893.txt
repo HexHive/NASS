@@ -1,0 +1,3 @@
+media.VTS
+android.os.UpdateEngineStableService
+android.hardware.vibrator.IVibratorManager/default

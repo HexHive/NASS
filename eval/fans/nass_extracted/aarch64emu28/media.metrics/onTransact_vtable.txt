@@ -1,0 +1,9 @@
+0x0	0x7a20	/system/bin/mediametrics
+0x8	0x7a4c	/system/bin/mediametrics
+0x10	0x7a80	/system/bin/mediametrics
+0x18	0x7a88	/system/bin/mediametrics
+0x20	0x7aec	/system/bin/mediametrics
+0x28	0x7b34	/system/bin/mediametrics
+0x30	0x7ea0	/system/bin/mediametrics
+0x38	0x6ca0	/system/lib64/libmediametrics.so
+0x40	0x7f80	/system/bin/mediametrics

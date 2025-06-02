@@ -1,0 +1,13 @@
+{
+	"1":["Parcelable"],
+	"2":["Parcelable", "StrongBidner", "FileDescriptor"],
+	"3":[],
+	"0x5f434d44":[
+		"FD",
+		"FD",
+		"FD",
+		"String16VectorScuffed",
+		"StrongBinder",
+		"StrongBinder"
+	]
+}

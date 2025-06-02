@@ -1,0 +1,600 @@
+{
+    "class android::os::IncidentReportArgs": {
+        "variable": [
+            {
+                "count": 1,
+                "self_constraint": [],
+                "name": "mAll",
+                "under_constraint": [],
+                "dependency": [],
+                "relation": [],
+                "signature": "_Bool",
+                "serialization_type": 2,
+                "usedBy": [],
+                "type": "int",
+                "loop": []
+            },
+            {
+                "count": 1,
+                "self_constraint": [
+                    "constraint0",
+                    "constraint1",
+                    "constraint3",
+                    "constraint4",
+                    "constraint6",
+                    "constraint7"
+                ],
+                "name": "err",
+                "under_constraint": [],
+                "dependency": [],
+                "relation": [],
+                "serialization_type": 0,
+                "usedBy": [],
+                "type": "android::status_t",
+                "loop": []
+            },
+            {
+                "count": 1,
+                "self_constraint": [],
+                "name": "android::os::IncidentReportArgs::mSections.size",
+                "under_constraint": [
+                    {
+                        "status": false,
+                        "name": "constraint0"
+                    }
+                ],
+                "dependency": [],
+                "relation": [],
+                "serialization_type": 2,
+                "usedBy": [],
+                "type": "int",
+                "loop": []
+            },
+            {
+                "count": 1,
+                "self_constraint": [],
+                "name": "android::os::IncidentReportArgs::mSections.begin",
+                "under_constraint": [
+                    {
+                        "status": false,
+                        "name": "constraint0"
+                    },
+                    {
+                        "status": false,
+                        "name": "constraint1"
+                    }
+                ],
+                "dependency": [],
+                "relation": [],
+                "serialization_type": 0,
+                "usedBy": [],
+                "type": "class __tree__iterator<int, class __tree_node<int, void *> *, long>",
+                "loop": [],
+                "size": -1
+            },
+            {
+                "count": 1,
+                "self_constraint": [],
+                "name": "android::os::IncidentReportArgs::mSections.begin::item",
+                "under_constraint": [],
+                "dependency": [],
+                "relation": [],
+                "serialization_type": 0,
+                "usedBy": [],
+                "type": "class __tree__iterator<int, class __tree_node<int, void > , long>",
+                "loop": []
+            },
+            {
+                "count": 1,
+                "self_constraint": [],
+                "name": "implicit_3",
+                "under_constraint": [
+                    {
+                        "status": false,
+                        "name": "constraint0"
+                    },
+                    {
+                        "status": false,
+                        "name": "constraint1"
+                    }
+                ],
+                "func_name": "std::__1::__tree_const_iterator<int, std::__1::__tree_node<int, void *> *, long>::__tree_const_iterator",
+                "argv": [
+                    {
+                        "type": "class std::__1::__tree_const_iterator<int, class std::__1::__tree_node<int, void *> *, long>",
+                        "name": "android::os::IncidentReportArgs::mSections.begin"
+                    }
+                ],
+                "dependency": [],
+                "relation": [],
+                "signature": "void (class std::__1::__tree_const_iterator<int, class std::__1::__tree_node<int, void *> *, long> &&) noexcept",
+                "serialization_type": 0,
+                "usedBy": [],
+                "type": "Function",
+                "loop": []
+            },
+            {
+                "count": 2,
+                "self_constraint": [
+                    "constraint2",
+                    "constraint5"
+                ],
+                "name": "it",
+                "under_constraint": [
+                    {
+                        "status": false,
+                        "name": "constraint0"
+                    },
+                    {
+                        "status": false,
+                        "name": "constraint1"
+                    }
+                ],
+                "dependency": [],
+                "relation": [],
+                "serialization_type": 2,
+                "usedBy": [],
+                "type": "class __tree__iterator<int, class __tree_node<int, void *> *, long>",
+                "loop": [],
+                "size": -1
+            },
+            {
+                "count": 1,
+                "self_constraint": [],
+                "name": "it::item",
+                "under_constraint": [],
+                "dependency": [],
+                "relation": [],
+                "serialization_type": 2,
+                "usedBy": [],
+                "type": "class __tree__iterator<int, class __tree_node<int, void > , long>",
+                "loop": []
+            },
+            {
+                "count": 1,
+                "self_constraint": [],
+                "name": "android::os::IncidentReportArgs::mHeaders.size",
+                "under_constraint": [
+                    {
+                        "status": false,
+                        "name": "constraint0"
+                    },
+                    {
+                        "status": false,
+                        "name": "constraint1"
+                    },
+                    {
+                        "status": false,
+                        "name": "constraint3"
+                    }
+                ],
+                "dependency": [],
+                "relation": [],
+                "serialization_type": 2,
+                "usedBy": [],
+                "type": "int",
+                "loop": []
+            },
+            {
+                "count": 1,
+                "self_constraint": [],
+                "name": "android::os::IncidentReportArgs::mHeaders.begin",
+                "under_constraint": [
+                    {
+                        "status": false,
+                        "name": "constraint0"
+                    },
+                    {
+                        "status": false,
+                        "name": "constraint1"
+                    },
+                    {
+                        "status": false,
+                        "name": "constraint3"
+                    },
+                    {
+                        "status": false,
+                        "name": "constraint4"
+                    }
+                ],
+                "dependency": [],
+                "relation": [],
+                "serialization_type": 0,
+                "usedBy": [],
+                "type": "class __wrap_iter< class vector<unsigned char>",
+                "loop": [],
+                "size": -1
+            },
+            {
+                "count": 1,
+                "self_constraint": [],
+                "name": "android::os::IncidentReportArgs::mHeaders.begin::item",
+                "under_constraint": [],
+                "dependency": [],
+                "relation": [],
+                "serialization_type": 0,
+                "usedBy": [],
+                "type": "unsigned char",
+                "loop": []
+            },
+            {
+                "count": 1,
+                "self_constraint": [],
+                "name": "implicit_6",
+                "under_constraint": [
+                    {
+                        "status": false,
+                        "name": "constraint0"
+                    },
+                    {
+                        "status": false,
+                        "name": "constraint1"
+                    },
+                    {
+                        "status": false,
+                        "name": "constraint3"
+                    },
+                    {
+                        "status": false,
+                        "name": "constraint4"
+                    }
+                ],
+                "func_name": "std::__1::__wrap_iter<const std::__1::vector<unsigned char, std::__1::allocator<unsigned char> > *>::__wrap_iter",
+                "argv": [
+                    {
+                        "type": "class std::__1::__wrap_iter<const class std::__1::vector<unsigned char, class std::__1::allocator<unsigned char> > *>",
+                        "name": "android::os::IncidentReportArgs::mHeaders.begin"
+                    }
+                ],
+                "dependency": [],
+                "relation": [],
+                "signature": "void (class std::__1::__wrap_iter<const class std::__1::vector<unsigned char, class std::__1::allocator<unsigned char> > *> &&) noexcept",
+                "serialization_type": 0,
+                "usedBy": [],
+                "type": "Function",
+                "loop": []
+            },
+            {
+                "count": 1,
+                "self_constraint": [],
+                "name": "it_1",
+                "under_constraint": [
+                    {
+                        "status": false,
+                        "name": "constraint0"
+                    },
+                    {
+                        "status": false,
+                        "name": "constraint1"
+                    },
+                    {
+                        "status": false,
+                        "name": "constraint3"
+                    },
+                    {
+                        "status": false,
+                        "name": "constraint4"
+                    }
+                ],
+                "dependency": [],
+                "relation": [],
+                "serialization_type": 2,
+                "usedBy": [],
+                "type": "class vector<unsigned char>",
+                "loop": [
+                    "loop1"
+                ],
+                "size": -1
+            },
+            {
+                "count": 1,
+                "self_constraint": [],
+                "name": "it_1::item",
+                "under_constraint": [],
+                "dependency": [],
+                "relation": [],
+                "serialization_type": 2,
+                "usedBy": [],
+                "type": "unsigned char",
+                "loop": [
+                    "loop1"
+                ]
+            },
+            {
+                "count": 1,
+                "self_constraint": [],
+                "name": "mDest",
+                "under_constraint": [
+                    {
+                        "status": false,
+                        "name": "constraint0"
+                    },
+                    {
+                        "status": false,
+                        "name": "constraint1"
+                    },
+                    {
+                        "status": false,
+                        "name": "constraint3"
+                    },
+                    {
+                        "status": false,
+                        "name": "constraint4"
+                    },
+                    {
+                        "status": false,
+                        "name": "constraint6"
+                    }
+                ],
+                "dependency": [],
+                "relation": [],
+                "signature": "int",
+                "serialization_type": 2,
+                "usedBy": [],
+                "type": "int",
+                "loop": []
+            },
+            {
+                "count": 1,
+                "self_constraint": [],
+                "name": "android::NO_ERROR",
+                "under_constraint": [
+                    {
+                        "status": false,
+                        "name": "constraint0"
+                    },
+                    {
+                        "status": false,
+                        "name": "constraint1"
+                    },
+                    {
+                        "status": false,
+                        "name": "constraint3"
+                    },
+                    {
+                        "status": false,
+                        "name": "constraint4"
+                    },
+                    {
+                        "status": false,
+                        "name": "constraint6"
+                    },
+                    {
+                        "status": false,
+                        "name": "constraint7"
+                    }
+                ],
+                "value": 0,
+                "dependency": [],
+                "relation": [],
+                "serialization_type": 0,
+                "usedBy": [],
+                "type": "android::status_t",
+                "loop": []
+            }
+        ],
+        "dependency": [],
+        "loop": [
+            {
+                "counter": {
+                    "type": "class __tree__iterator<int, class __tree_node<int, void *> *, long>",
+                    "name": "it",
+                    "value": 0
+                },
+                "inc": {
+                    "type": "class __tree__iterator<int, class __tree_node<int, void *> *, long>",
+                    "opcode": "++",
+                    "name": "it"
+                },
+                "name": "loop0",
+                "constraint": "constraint2"
+            },
+            {
+                "counter": {
+                    "type": "class __tree__iterator<int, class __tree_node<int, void *> *, long>",
+                    "name": "it",
+                    "value": 0
+                },
+                "inc": {
+                    "type": "class __tree__iterator<int, class __tree_node<int, void *> *, long>",
+                    "opcode": "++",
+                    "name": "it"
+                },
+                "name": "loop1",
+                "constraint": "constraint5"
+            }
+        ],
+        "possibility": [
+            {
+                "return": "err",
+                "reply": [
+                    "mAll"
+                ],
+                "data": [],
+                "id": 0
+            },
+            {
+                "return": "err",
+                "reply": [
+                    "mAll",
+                    "android::os::IncidentReportArgs::mSections.size"
+                ],
+                "data": [],
+                "id": 1
+            },
+            {
+                "return": "err",
+                "reply": [
+                    "mAll",
+                    "android::os::IncidentReportArgs::mSections.size",
+                    "it"
+                ],
+                "data": [],
+                "id": 2
+            },
+            {
+                "return": "err",
+                "reply": [
+                    "mAll",
+                    "android::os::IncidentReportArgs::mSections.size",
+                    "it",
+                    "android::os::IncidentReportArgs::mHeaders.size"
+                ],
+                "data": [],
+                "id": 3
+            },
+            {
+                "return": "err",
+                "reply": [
+                    "mAll",
+                    "android::os::IncidentReportArgs::mSections.size",
+                    "it",
+                    "android::os::IncidentReportArgs::mHeaders.size",
+                    "it_1"
+                ],
+                "data": [],
+                "id": 4
+            },
+            {
+                "return": "err",
+                "reply": [
+                    "mAll",
+                    "android::os::IncidentReportArgs::mSections.size",
+                    "it",
+                    "android::os::IncidentReportArgs::mHeaders.size",
+                    "it_1",
+                    "mDest"
+                ],
+                "data": [],
+                "id": 5
+            },
+            {
+                "return": "android::NO_ERROR",
+                "reply": [
+                    "mAll",
+                    "android::os::IncidentReportArgs::mSections.size",
+                    "it",
+                    "android::os::IncidentReportArgs::mHeaders.size",
+                    "it_1",
+                    "mDest"
+                ],
+                "data": [],
+                "id": 6
+            }
+        ],
+        "constraint": [
+            {
+                "lhs": {
+                    "type": "android::status_t",
+                    "name": "err"
+                },
+                "rhs": {
+                    "type": "android::status_t",
+                    "name": "android::NO_ERROR",
+                    "value": 0
+                },
+                "opcode": "!=",
+                "name": "constraint0",
+                "probability": 0.1
+            },
+            {
+                "lhs": {
+                    "type": "android::status_t",
+                    "name": "err"
+                },
+                "rhs": {
+                    "type": "android::status_t",
+                    "name": "android::NO_ERROR",
+                    "value": 0
+                },
+                "opcode": "!=",
+                "name": "constraint1",
+                "probability": 0.1
+            },
+            {
+                "lhs": {
+                    "type": "class __tree__iterator<int, class __tree_node<int, void *> *, long>",
+                    "name": "it"
+                },
+                "rhs": {
+                    "serialization_type": 0,
+                    "type": "class std::__1::__tree_const_iterator<int, class std::__1::__tree_node<int, void *> *, long>",
+                    "name": "android::os::IncidentReportArgs::mSections.end"
+                },
+                "opcode": "operator!=",
+                "name": "constraint2",
+                "probability": 0.5
+            },
+            {
+                "lhs": {
+                    "type": "android::status_t",
+                    "name": "err"
+                },
+                "rhs": {
+                    "type": "android::status_t",
+                    "name": "android::NO_ERROR",
+                    "value": 0
+                },
+                "opcode": "!=",
+                "name": "constraint3",
+                "probability": 0.1
+            },
+            {
+                "lhs": {
+                    "type": "android::status_t",
+                    "name": "err"
+                },
+                "rhs": {
+                    "type": "android::status_t",
+                    "name": "android::NO_ERROR",
+                    "value": 0
+                },
+                "opcode": "!=",
+                "name": "constraint4",
+                "probability": 0.1
+            },
+            {
+                "lhs": {
+                    "type": "class __tree__iterator<int, class __tree_node<int, void *> *, long>",
+                    "name": "it"
+                },
+                "rhs": {
+                    "serialization_type": 0,
+                    "type": "class std::__1::__wrap_iter<const class std::__1::vector<unsigned char, class std::__1::allocator<unsigned char> > *>",
+                    "name": "android::os::IncidentReportArgs::mHeaders.end"
+                },
+                "opcode": "operator!=",
+                "name": "constraint5",
+                "probability": 0.5
+            },
+            {
+                "lhs": {
+                    "type": "android::status_t",
+                    "name": "err"
+                },
+                "rhs": {
+                    "type": "android::status_t",
+                    "name": "android::NO_ERROR",
+                    "value": 0
+                },
+                "opcode": "!=",
+                "name": "constraint6",
+                "probability": 0.1
+            },
+            {
+                "lhs": {
+                    "type": "android::status_t",
+                    "name": "err"
+                },
+                "rhs": {
+                    "type": "android::status_t",
+                    "name": "android::NO_ERROR",
+                    "value": 0
+                },
+                "opcode": "!=",
+                "name": "constraint7",
+                "probability": 0.1
+            }
+        ]
+    }
+}

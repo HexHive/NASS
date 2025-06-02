@@ -1,0 +1,1101 @@
+{
+    "IEffect::1-1": {
+        "code": [
+            1
+        ],
+        "dependency": [
+            {
+                "filename": "BnAudioFlinger.json",
+                "type": "Transaction",
+                "name": "IAudioFlinger::41-41",
+                "possIdx": 1,
+                "varIdx": 3,
+                "varName": "effect",
+                "varType": "class android::sp<class android::IEffect>"
+            }
+        ],
+        "possibility": [
+            {
+                "id": 0,
+                "data": [
+                    "ServiceInterfaceDescriptor"
+                ],
+                "reply": [],
+                "return": "android::PERMISSION_DENIED"
+            },
+            {
+                "id": 1,
+                "data": [
+                    "ServiceInterfaceDescriptor"
+                ],
+                "reply": [
+                    "enable"
+                ],
+                "return": "android::NO_ERROR"
+            }
+        ],
+        "variable": [
+            {
+                "name": "ServiceInterfaceDescriptor",
+                "type": "class android::String16",
+                "serialization_type": 1,
+                "self_constraint": [
+                    "constraint0"
+                ],
+                "under_constraint": [],
+                "relation": [],
+                "loop": [],
+                "usedBy": [],
+                "dependency": [],
+                "count": 1
+            },
+            {
+                "name": "android::PERMISSION_DENIED",
+                "type": "android::status_t",
+                "value": -1,
+                "serialization_type": 0,
+                "self_constraint": [],
+                "under_constraint": [
+                    {
+                        "name": "constraint0",
+                        "status": true
+                    }
+                ],
+                "relation": [],
+                "loop": [],
+                "usedBy": [],
+                "dependency": [],
+                "count": 1
+            },
+            {
+                "type": "android::status_t",
+                "name": "enable",
+                "serialization_type": 2,
+                "self_constraint": [],
+                "under_constraint": [
+                    {
+                        "name": "constraint0",
+                        "status": false
+                    }
+                ],
+                "relation": [],
+                "loop": [],
+                "usedBy": [],
+                "dependency": [],
+                "count": 1
+            },
+            {
+                "name": "android::NO_ERROR",
+                "type": "android::status_t",
+                "value": 0,
+                "serialization_type": 0,
+                "self_constraint": [],
+                "under_constraint": [
+                    {
+                        "name": "constraint0",
+                        "status": false
+                    }
+                ],
+                "relation": [],
+                "loop": [],
+                "usedBy": [],
+                "dependency": [],
+                "count": 1
+            }
+        ],
+        "constraint": [
+            {
+                "name": "constraint0",
+                "opcode": "!",
+                "lhs": {
+                    "name": "ServiceInterfaceDescriptor",
+                    "type": "class android::String16",
+                    "serialization_type": 1
+                },
+                "probability": 0.1
+            }
+        ],
+        "loop": [],
+        "serviceName": "None",
+        "interfaceName": "IEffect",
+        "interfaceToken": "android.media.IEffect"
+    },
+    "IEffect::2-2": {
+        "code": [
+            2
+        ],
+        "dependency": [
+            {
+                "filename": "BnAudioFlinger.json",
+                "type": "Transaction",
+                "name": "IAudioFlinger::41-41",
+                "possIdx": 1,
+                "varIdx": 3,
+                "varName": "effect",
+                "varType": "class android::sp<class android::IEffect>"
+            }
+        ],
+        "possibility": [
+            {
+                "id": 0,
+                "data": [
+                    "ServiceInterfaceDescriptor"
+                ],
+                "reply": [],
+                "return": "android::PERMISSION_DENIED"
+            },
+            {
+                "id": 1,
+                "data": [
+                    "ServiceInterfaceDescriptor"
+                ],
+                "reply": [
+                    "disable"
+                ],
+                "return": "android::NO_ERROR"
+            }
+        ],
+        "variable": [
+            {
+                "name": "ServiceInterfaceDescriptor",
+                "type": "class android::String16",
+                "serialization_type": 1,
+                "self_constraint": [
+                    "constraint0"
+                ],
+                "under_constraint": [],
+                "relation": [],
+                "loop": [],
+                "usedBy": [],
+                "dependency": [],
+                "count": 1
+            },
+            {
+                "name": "android::PERMISSION_DENIED",
+                "type": "android::status_t",
+                "value": -1,
+                "serialization_type": 0,
+                "self_constraint": [],
+                "under_constraint": [
+                    {
+                        "name": "constraint0",
+                        "status": true
+                    }
+                ],
+                "relation": [],
+                "loop": [],
+                "usedBy": [],
+                "dependency": [],
+                "count": 1
+            },
+            {
+                "type": "android::status_t",
+                "name": "disable",
+                "serialization_type": 2,
+                "self_constraint": [],
+                "under_constraint": [
+                    {
+                        "name": "constraint0",
+                        "status": false
+                    }
+                ],
+                "relation": [],
+                "loop": [],
+                "usedBy": [],
+                "dependency": [],
+                "count": 1
+            },
+            {
+                "name": "android::NO_ERROR",
+                "type": "android::status_t",
+                "value": 0,
+                "serialization_type": 0,
+                "self_constraint": [],
+                "under_constraint": [
+                    {
+                        "name": "constraint0",
+                        "status": false
+                    }
+                ],
+                "relation": [],
+                "loop": [],
+                "usedBy": [],
+                "dependency": [],
+                "count": 1
+            }
+        ],
+        "constraint": [
+            {
+                "name": "constraint0",
+                "opcode": "!",
+                "lhs": {
+                    "name": "ServiceInterfaceDescriptor",
+                    "type": "class android::String16",
+                    "serialization_type": 1
+                },
+                "probability": 0.1
+            }
+        ],
+        "loop": [],
+        "serviceName": "None",
+        "interfaceName": "IEffect",
+        "interfaceToken": "android.media.IEffect"
+    },
+    "IEffect::3-3": {
+        "code": [
+            3
+        ],
+        "dependency": [
+            {
+                "filename": "BnAudioFlinger.json",
+                "type": "Transaction",
+                "name": "IAudioFlinger::41-41",
+                "possIdx": 1,
+                "varIdx": 3,
+                "varName": "effect",
+                "varType": "class android::sp<class android::IEffect>"
+            }
+        ],
+        "possibility": [
+            {
+                "id": 0,
+                "data": [
+                    "ServiceInterfaceDescriptor"
+                ],
+                "reply": [],
+                "return": "android::PERMISSION_DENIED"
+            },
+            {
+                "id": 1,
+                "data": [
+                    "ServiceInterfaceDescriptor",
+                    "cmdCode",
+                    "cmdSize"
+                ],
+                "reply": [
+                    "android::NO_MEMORY"
+                ],
+                "return": "android::NO_ERROR"
+            },
+            {
+                "id": 2,
+                "data": [
+                    "ServiceInterfaceDescriptor",
+                    "cmdCode",
+                    "cmdSize"
+                ],
+                "reply": [
+                    "android::NO_MEMORY_1"
+                ],
+                "return": "android::NO_ERROR"
+            },
+            {
+                "id": 3,
+                "data": [
+                    "ServiceInterfaceDescriptor",
+                    "cmdCode",
+                    "cmdSize",
+                    "cmd",
+                    "replySize"
+                ],
+                "reply": [
+                    "android::NO_MEMORY_2"
+                ],
+                "return": "android::NO_ERROR"
+            },
+            {
+                "id": 4,
+                "data": [
+                    "ServiceInterfaceDescriptor",
+                    "cmdCode",
+                    "cmdSize",
+                    "cmd",
+                    "replySize"
+                ],
+                "reply": [
+                    "android::NO_MEMORY_3"
+                ],
+                "return": "android::NO_ERROR"
+            },
+            {
+                "id": 5,
+                "data": [
+                    "ServiceInterfaceDescriptor",
+                    "cmdCode",
+                    "cmdSize",
+                    "cmd",
+                    "replySize"
+                ],
+                "reply": [
+                    "status",
+                    "replySize_1",
+                    "resp"
+                ],
+                "return": "android::NO_ERROR"
+            }
+        ],
+        "variable": [
+            {
+                "name": "ServiceInterfaceDescriptor",
+                "type": "class android::String16",
+                "serialization_type": 1,
+                "self_constraint": [
+                    "constraint0"
+                ],
+                "under_constraint": [],
+                "relation": [],
+                "loop": [],
+                "usedBy": [],
+                "dependency": [],
+                "count": 1
+            },
+            {
+                "name": "android::PERMISSION_DENIED",
+                "type": "android::status_t",
+                "value": -1,
+                "serialization_type": 0,
+                "self_constraint": [],
+                "under_constraint": [
+                    {
+                        "name": "constraint0",
+                        "status": true
+                    }
+                ],
+                "relation": [],
+                "loop": [],
+                "usedBy": [],
+                "dependency": [],
+                "count": 1
+            },
+            {
+                "type": "int",
+                "name": "cmdCode",
+                "serialization_type": 1,
+                "self_constraint": [],
+                "under_constraint": [
+                    {
+                        "name": "constraint0",
+                        "status": false
+                    }
+                ],
+                "relation": [],
+                "loop": [],
+                "usedBy": [],
+                "dependency": [],
+                "count": 1
+            },
+            {
+                "type": "int",
+                "name": "cmdSize",
+                "serialization_type": 1,
+                "self_constraint": [
+                    "constraint1",
+                    "constraint2"
+                ],
+                "under_constraint": [
+                    {
+                        "name": "constraint0",
+                        "status": false
+                    }
+                ],
+                "relation": [],
+                "loop": [],
+                "usedBy": [],
+                "dependency": [],
+                "count": 1
+            },
+            {
+                "name": "android::NO_MEMORY",
+                "type": "enum android::(anonymous at system.core.libutils.include.utils.Errors.h:45:1)",
+                "value": -12,
+                "serialization_type": 2,
+                "self_constraint": [],
+                "under_constraint": [
+                    {
+                        "name": "constraint0",
+                        "status": false
+                    },
+                    {
+                        "name": "constraint1",
+                        "status": true
+                    },
+                    {
+                        "name": "constraint2",
+                        "status": true
+                    }
+                ],
+                "relation": [],
+                "loop": [],
+                "usedBy": [],
+                "dependency": [],
+                "count": 4
+            },
+            {
+                "name": "android::NO_ERROR",
+                "type": "android::status_t",
+                "value": 0,
+                "serialization_type": 0,
+                "self_constraint": [
+                    "constraint7"
+                ],
+                "under_constraint": [
+                    {
+                        "name": "constraint0",
+                        "status": false
+                    },
+                    {
+                        "name": "constraint1",
+                        "status": true
+                    },
+                    {
+                        "name": "constraint2",
+                        "status": true
+                    }
+                ],
+                "relation": [],
+                "loop": [],
+                "usedBy": [],
+                "dependency": [],
+                "count": 1
+            },
+            {
+                "name": "android::NO_MEMORY_1",
+                "type": "enum android::(anonymous at system.core.libutils.include.utils.Errors.h:45:1)",
+                "value": -12,
+                "serialization_type": 2,
+                "self_constraint": [],
+                "under_constraint": [
+                    {
+                        "name": "constraint0",
+                        "status": false
+                    },
+                    {
+                        "name": "constraint1",
+                        "status": true
+                    },
+                    {
+                        "name": "constraint2",
+                        "status": false
+                    },
+                    {
+                        "name": "constraint3",
+                        "status": true
+                    }
+                ],
+                "relation": [],
+                "loop": [],
+                "usedBy": [],
+                "dependency": [],
+                "count": 1
+            },
+            {
+                "name": "cmd",
+                "type": "char *",
+                "size": "cmdSize",
+                "serialization_type": 1,
+                "self_constraint": [],
+                "under_constraint": [
+                    {
+                        "name": "constraint0",
+                        "status": false
+                    },
+                    {
+                        "name": "constraint1",
+                        "status": true
+                    },
+                    {
+                        "name": "constraint2",
+                        "status": false
+                    },
+                    {
+                        "name": "constraint3",
+                        "status": false
+                    }
+                ],
+                "relation": [],
+                "loop": [],
+                "usedBy": [],
+                "dependency": [],
+                "count": 1
+            },
+            {
+                "name": "cmd::item",
+                "type": "char",
+                "size": "cmdSize",
+                "serialization_type": 1,
+                "self_constraint": [],
+                "under_constraint": [],
+                "relation": [],
+                "loop": [],
+                "usedBy": [],
+                "dependency": [],
+                "count": 1
+            },
+            {
+                "type": "int",
+                "name": "replySize",
+                "serialization_type": 1,
+                "self_constraint": [
+                    "constraint4",
+                    "constraint5",
+                    "constraint8"
+                ],
+                "under_constraint": [
+                    {
+                        "name": "constraint0",
+                        "status": false
+                    },
+                    {
+                        "name": "constraint1",
+                        "status": false
+                    },
+                    {
+                        "name": "constraint2",
+                        "status": false
+                    }
+                ],
+                "relation": [],
+                "loop": [],
+                "usedBy": [],
+                "dependency": [],
+                "count": 2
+            },
+            {
+                "name": "android::NO_MEMORY_2",
+                "type": "enum android::(anonymous at system.core.libutils.include.utils.Errors.h:45:1)",
+                "value": -12,
+                "serialization_type": 2,
+                "self_constraint": [],
+                "under_constraint": [
+                    {
+                        "name": "constraint0",
+                        "status": false
+                    },
+                    {
+                        "name": "constraint1",
+                        "status": false
+                    },
+                    {
+                        "name": "constraint2",
+                        "status": false
+                    },
+                    {
+                        "name": "constraint4",
+                        "status": true
+                    },
+                    {
+                        "name": "constraint5",
+                        "status": true
+                    }
+                ],
+                "relation": [],
+                "loop": [],
+                "usedBy": [],
+                "dependency": [],
+                "count": 1
+            },
+            {
+                "name": "android::NO_MEMORY_3",
+                "type": "enum android::(anonymous at system.core.libutils.include.utils.Errors.h:45:1)",
+                "value": -12,
+                "serialization_type": 2,
+                "self_constraint": [],
+                "under_constraint": [
+                    {
+                        "name": "constraint0",
+                        "status": false
+                    },
+                    {
+                        "name": "constraint1",
+                        "status": false
+                    },
+                    {
+                        "name": "constraint2",
+                        "status": false
+                    },
+                    {
+                        "name": "constraint4",
+                        "status": true
+                    },
+                    {
+                        "name": "constraint5",
+                        "status": false
+                    },
+                    {
+                        "name": "constraint6",
+                        "status": true
+                    }
+                ],
+                "relation": [],
+                "loop": [],
+                "usedBy": [],
+                "dependency": [],
+                "count": 1
+            },
+            {
+                "name": "status",
+                "type": "android::status_t",
+                "serialization_type": 2,
+                "self_constraint": [
+                    "constraint7"
+                ],
+                "under_constraint": [
+                    {
+                        "name": "constraint0",
+                        "status": false
+                    },
+                    {
+                        "name": "constraint1",
+                        "status": false
+                    },
+                    {
+                        "name": "constraint2",
+                        "status": false
+                    },
+                    {
+                        "name": "constraint4",
+                        "status": false
+                    },
+                    {
+                        "name": "constraint5",
+                        "status": false
+                    }
+                ],
+                "relation": [],
+                "loop": [],
+                "usedBy": [],
+                "dependency": [],
+                "count": 1
+            },
+            {
+                "name": "replySize_1",
+                "type": "int",
+                "serialization_type": 2,
+                "self_constraint": [],
+                "under_constraint": [
+                    {
+                        "name": "constraint0",
+                        "status": false
+                    },
+                    {
+                        "name": "constraint1",
+                        "status": false
+                    },
+                    {
+                        "name": "constraint2",
+                        "status": false
+                    },
+                    {
+                        "name": "constraint4",
+                        "status": false
+                    },
+                    {
+                        "name": "constraint5",
+                        "status": false
+                    },
+                    {
+                        "name": "constraint7",
+                        "status": true
+                    }
+                ],
+                "relation": [],
+                "loop": [],
+                "usedBy": [],
+                "dependency": [],
+                "count": 1
+            },
+            {
+                "name": "resp",
+                "type": "char *",
+                "size": "replySize_1",
+                "serialization_type": 2,
+                "self_constraint": [],
+                "under_constraint": [
+                    {
+                        "name": "constraint0",
+                        "status": false
+                    },
+                    {
+                        "name": "constraint1",
+                        "status": false
+                    },
+                    {
+                        "name": "constraint2",
+                        "status": false
+                    },
+                    {
+                        "name": "constraint4",
+                        "status": false
+                    },
+                    {
+                        "name": "constraint5",
+                        "status": false
+                    },
+                    {
+                        "name": "constraint7",
+                        "status": true
+                    },
+                    {
+                        "name": "constraint8",
+                        "status": true
+                    }
+                ],
+                "relation": [],
+                "loop": [],
+                "usedBy": [],
+                "dependency": [],
+                "count": 1
+            },
+            {
+                "name": "resp::item",
+                "type": "char",
+                "size": "replySize_1",
+                "serialization_type": 2,
+                "self_constraint": [],
+                "under_constraint": [],
+                "relation": [],
+                "loop": [],
+                "usedBy": [],
+                "dependency": [],
+                "count": 1
+            }
+        ],
+        "constraint": [
+            {
+                "name": "constraint0",
+                "opcode": "!",
+                "lhs": {
+                    "name": "ServiceInterfaceDescriptor",
+                    "type": "class android::String16",
+                    "serialization_type": 1
+                },
+                "probability": 0.1
+            },
+            {
+                "name": "constraint1",
+                "opcode": "",
+                "lhs": {
+                    "name": "cmdSize",
+                    "type": "int"
+                },
+                "probability": 0.5
+            },
+            {
+                "name": "constraint2",
+                "opcode": ">",
+                "lhs": {
+                    "name": "cmdSize",
+                    "type": "int"
+                },
+                "rhs": {
+                    "name": "implicit_4",
+                    "type": "IntegerLiteral",
+                    "value": 65536
+                },
+                "probability": 0.1
+            },
+            {
+                "name": "constraint3",
+                "opcode": "==",
+                "lhs": {
+                    "name": "cmd",
+                    "type": "char *"
+                },
+                "rhs": {
+                    "name": "implicit_6",
+                    "type": "char *",
+                    "value": "NULL"
+                },
+                "probability": 0.1
+            },
+            {
+                "name": "constraint4",
+                "opcode": "",
+                "lhs": {
+                    "name": "replySize",
+                    "type": "int"
+                },
+                "probability": 0.5
+            },
+            {
+                "name": "constraint5",
+                "opcode": ">",
+                "lhs": {
+                    "name": "replySize",
+                    "type": "int"
+                },
+                "rhs": {
+                    "name": "implicit_10",
+                    "type": "IntegerLiteral",
+                    "value": 65536
+                },
+                "probability": 0.1
+            },
+            {
+                "name": "constraint6",
+                "opcode": "==",
+                "lhs": {
+                    "name": "resp",
+                    "type": "char *"
+                },
+                "rhs": {
+                    "name": "implicit_12",
+                    "type": "char *",
+                    "value": "NULL"
+                },
+                "probability": 0.1
+            },
+            {
+                "name": "constraint7",
+                "opcode": "==",
+                "lhs": {
+                    "name": "status",
+                    "type": "android::status_t"
+                },
+                "rhs": {
+                    "name": "android::NO_ERROR",
+                    "type": "android::status_t",
+                    "value": 0
+                },
+                "probability": 0.5
+            },
+            {
+                "name": "constraint8",
+                "opcode": "",
+                "lhs": {
+                    "name": "replySize",
+                    "type": "int"
+                },
+                "probability": 0.5
+            }
+        ],
+        "loop": [],
+        "serviceName": "None",
+        "interfaceName": "IEffect",
+        "interfaceToken": "android.media.IEffect"
+    },
+    "IEffect::4-4": {
+        "code": [
+            4
+        ],
+        "dependency": [
+            {
+                "filename": "BnAudioFlinger.json",
+                "type": "Transaction",
+                "name": "IAudioFlinger::41-41",
+                "possIdx": 1,
+                "varIdx": 3,
+                "varName": "effect",
+                "varType": "class android::sp<class android::IEffect>"
+            }
+        ],
+        "possibility": [
+            {
+                "id": 0,
+                "data": [
+                    "ServiceInterfaceDescriptor"
+                ],
+                "reply": [],
+                "return": "android::PERMISSION_DENIED"
+            },
+            {
+                "id": 1,
+                "data": [
+                    "ServiceInterfaceDescriptor"
+                ],
+                "reply": [],
+                "return": "android::NO_ERROR"
+            }
+        ],
+        "variable": [
+            {
+                "name": "ServiceInterfaceDescriptor",
+                "type": "class android::String16",
+                "serialization_type": 1,
+                "self_constraint": [
+                    "constraint0"
+                ],
+                "under_constraint": [],
+                "relation": [],
+                "loop": [],
+                "usedBy": [],
+                "dependency": [],
+                "count": 1
+            },
+            {
+                "name": "android::PERMISSION_DENIED",
+                "type": "android::status_t",
+                "value": -1,
+                "serialization_type": 0,
+                "self_constraint": [],
+                "under_constraint": [
+                    {
+                        "name": "constraint0",
+                        "status": true
+                    }
+                ],
+                "relation": [],
+                "loop": [],
+                "usedBy": [],
+                "dependency": [],
+                "count": 1
+            },
+            {
+                "name": "android::NO_ERROR",
+                "type": "android::status_t",
+                "value": 0,
+                "serialization_type": 0,
+                "self_constraint": [],
+                "under_constraint": [
+                    {
+                        "name": "constraint0",
+                        "status": false
+                    }
+                ],
+                "relation": [],
+                "loop": [],
+                "usedBy": [],
+                "dependency": [],
+                "count": 1
+            }
+        ],
+        "constraint": [
+            {
+                "name": "constraint0",
+                "opcode": "!",
+                "lhs": {
+                    "name": "ServiceInterfaceDescriptor",
+                    "type": "class android::String16",
+                    "serialization_type": 1
+                },
+                "probability": 0.1
+            }
+        ],
+        "loop": [],
+        "serviceName": "None",
+        "interfaceName": "IEffect",
+        "interfaceToken": "android.media.IEffect"
+    },
+    "IEffect::5-5": {
+        "code": [
+            5
+        ],
+        "dependency": [
+            {
+                "filename": "BnAudioFlinger.json",
+                "type": "Transaction",
+                "name": "IAudioFlinger::41-41",
+                "possIdx": 1,
+                "varIdx": 3,
+                "varName": "effect",
+                "varType": "class android::sp<class android::IEffect>"
+            }
+        ],
+        "possibility": [
+            {
+                "id": 0,
+                "data": [
+                    "ServiceInterfaceDescriptor"
+                ],
+                "reply": [],
+                "return": "android::PERMISSION_DENIED"
+            },
+            {
+                "id": 1,
+                "data": [
+                    "ServiceInterfaceDescriptor"
+                ],
+                "reply": [
+                    "Cblk"
+                ],
+                "return": "android::NO_ERROR"
+            }
+        ],
+        "variable": [
+            {
+                "name": "ServiceInterfaceDescriptor",
+                "type": "class android::String16",
+                "serialization_type": 1,
+                "self_constraint": [
+                    "constraint0"
+                ],
+                "under_constraint": [],
+                "relation": [],
+                "loop": [],
+                "usedBy": [],
+                "dependency": [],
+                "count": 1
+            },
+            {
+                "name": "android::PERMISSION_DENIED",
+                "type": "android::status_t",
+                "value": -1,
+                "serialization_type": 0,
+                "self_constraint": [],
+                "under_constraint": [
+                    {
+                        "name": "constraint0",
+                        "status": true
+                    }
+                ],
+                "relation": [],
+                "loop": [],
+                "usedBy": [],
+                "dependency": [],
+                "count": 1
+            },
+            {
+                "type": "class android::sp<class android::IMemory>",
+                "name": "Cblk",
+                "serialization_type": 2,
+                "self_constraint": [],
+                "under_constraint": [
+                    {
+                        "name": "constraint0",
+                        "status": false
+                    }
+                ],
+                "relation": [],
+                "loop": [],
+                "usedBy": [],
+                "dependency": [],
+                "count": 1,
+                "interfaceName": "IMemory"
+            },
+            {
+                "name": "android::NO_ERROR",
+                "type": "android::status_t",
+                "value": 0,
+                "serialization_type": 0,
+                "self_constraint": [],
+                "under_constraint": [
+                    {
+                        "name": "constraint0",
+                        "status": false
+                    }
+                ],
+                "relation": [],
+                "loop": [],
+                "usedBy": [],
+                "dependency": [],
+                "count": 1
+            }
+        ],
+        "constraint": [
+            {
+                "name": "constraint0",
+                "opcode": "!",
+                "lhs": {
+                    "name": "ServiceInterfaceDescriptor",
+                    "type": "class android::String16",
+                    "serialization_type": 1
+                },
+                "probability": 0.1
+            }
+        ],
+        "loop": [],
+        "serviceName": "None",
+        "interfaceName": "IEffect",
+        "interfaceToken": "android.media.IEffect"
+    }
+}

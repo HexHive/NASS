@@ -1,0 +1,43 @@
+import java.lang
+
+
+class RegisterTypeInfo(object):
+    pointerSpace: ghidra.program.model.address.AddressSpace
+    settings: ghidra.docking.settings.Settings
+    type: ghidra.program.model.data.DataType
+
+
+
+    @overload
+    def __init__(self, __a0: ghidra.program.model.data.DataType, __a1: ghidra.program.model.address.AddressSpace): ...
+
+    @overload
+    def __init__(self, __a0: ghidra.program.model.data.DataType, __a1: ghidra.docking.settings.Settings, __a2: ghidra.program.model.address.AddressSpace): ...
+
+
+
+    def equals(self, __a0: object) -> bool: ...
+
+    def getClass(self) -> java.lang.Class: ...
+
+    def getValueClass(self) -> java.lang.Class: ...
+
+    def hashCode(self) -> int: ...
+
+    def notify(self) -> None: ...
+
+    def notifyAll(self) -> None: ...
+
+    def toString(self) -> unicode: ...
+
+    @overload
+    def wait(self) -> None: ...
+
+    @overload
+    def wait(self, __a0: long) -> None: ...
+
+    @overload
+    def wait(self, __a0: long, __a1: int) -> None: ...
+
+    @property
+    def valueClass(self) -> java.lang.Class: ...

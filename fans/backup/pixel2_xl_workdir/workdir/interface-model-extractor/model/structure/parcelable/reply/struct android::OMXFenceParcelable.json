@@ -1,0 +1,140 @@
+{
+    "struct android::OMXFenceParcelable": {
+        "variable": [
+            {
+                "count": 1,
+                "self_constraint": [],
+                "name": "implicit_2",
+                "under_constraint": [
+                    {
+                        "status": true,
+                        "name": "constraint0"
+                    }
+                ],
+                "value": 1,
+                "dependency": [],
+                "relation": [],
+                "serialization_type": 2,
+                "usedBy": [],
+                "type": "IntegerLiteral",
+                "loop": []
+            },
+            {
+                "count": 1,
+                "self_constraint": [],
+                "name": "implicit_3",
+                "under_constraint": [
+                    {
+                        "status": false,
+                        "name": "constraint0"
+                    }
+                ],
+                "value": 0,
+                "dependency": [],
+                "relation": [],
+                "serialization_type": 2,
+                "usedBy": [],
+                "type": "IntegerLiteral",
+                "loop": []
+            },
+            {
+                "count": 1,
+                "self_constraint": [
+                    "constraint1_lhs"
+                ],
+                "name": "err",
+                "under_constraint": [],
+                "dependency": [],
+                "relation": [],
+                "serialization_type": 0,
+                "usedBy": [],
+                "type": "android::status_t",
+                "loop": []
+            },
+            {
+                "count": 1,
+                "self_constraint": [],
+                "name": "mFenceFd",
+                "under_constraint": [
+                    {
+                        "status": true,
+                        "name": "constraint1"
+                    }
+                ],
+                "signature": "int",
+                "dependency": [],
+                "relation": [],
+                "takeOwnership": true,
+                "serialization_type": 2,
+                "usedBy": [],
+                "type": "int",
+                "loop": []
+            }
+        ],
+        "dependency": [],
+        "loop": [],
+        "possibility": [
+            {
+                "return": "err",
+                "reply": [
+                    "implicit_2",
+                    "implicit_3",
+                    "mFenceFd"
+                ],
+                "data": [],
+                "id": 0
+            }
+        ],
+        "constraint": [
+            {
+                "lhs": {
+                    "type": "int",
+                    "name": "mFenceFd",
+                    "signature": "int"
+                },
+                "rhs": {
+                    "type": "IntegerLiteral",
+                    "name": "implicit_1",
+                    "value": 0
+                },
+                "opcode": ">=",
+                "name": "constraint0",
+                "probability": 0.5
+            },
+            {
+                "lhs": {
+                    "lhs": {
+                        "type": "android::status_t",
+                        "name": "err"
+                    },
+                    "rhs": {
+                        "type": "enum android::(anonymous at system.core.libutils.include.utils.Errors.h:45:1)",
+                        "name": "android::OK",
+                        "value": 0
+                    },
+                    "opcode": "==",
+                    "name": "constraint1_lhs",
+                    "probability": 0.5
+                },
+                "rhs": {
+                    "lhs": {
+                        "type": "int",
+                        "name": "mFenceFd",
+                        "signature": "int"
+                    },
+                    "rhs": {
+                        "type": "IntegerLiteral",
+                        "name": "implicit_5",
+                        "value": 0
+                    },
+                    "opcode": ">=",
+                    "name": "constraint1_rhs",
+                    "probability": 0.5
+                },
+                "opcode": "&&",
+                "name": "constraint1",
+                "probability": 0.5
+            }
+        ]
+    }
+}

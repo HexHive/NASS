@@ -1,0 +1,124 @@
+{
+    "class android::net::UidRange": {
+        "variable": [
+            {
+                "count": 1,
+                "self_constraint": [],
+                "name": "mStart",
+                "under_constraint": [],
+                "dependency": [],
+                "relation": [],
+                "signature": "int32_t",
+                "serialization_type": 2,
+                "usedBy": [],
+                "type": "int",
+                "loop": []
+            },
+            {
+                "count": 1,
+                "self_constraint": [
+                    "constraint0",
+                    "constraint1"
+                ],
+                "name": "err",
+                "under_constraint": [],
+                "dependency": [],
+                "relation": [],
+                "serialization_type": 0,
+                "usedBy": [],
+                "type": "android::status_t",
+                "loop": []
+            },
+            {
+                "count": 1,
+                "self_constraint": [],
+                "name": "mStop",
+                "under_constraint": [
+                    {
+                        "status": false,
+                        "name": "constraint0"
+                    }
+                ],
+                "dependency": [],
+                "relation": [],
+                "signature": "int32_t",
+                "serialization_type": 2,
+                "usedBy": [],
+                "type": "int",
+                "loop": []
+            },
+            {
+                "count": 1,
+                "self_constraint": [],
+                "name": "android::NO_ERROR",
+                "under_constraint": [
+                    {
+                        "status": false,
+                        "name": "constraint0"
+                    },
+                    {
+                        "status": false,
+                        "name": "constraint1"
+                    }
+                ],
+                "value": 0,
+                "dependency": [],
+                "relation": [],
+                "serialization_type": 0,
+                "usedBy": [],
+                "type": "android::status_t",
+                "loop": []
+            }
+        ],
+        "dependency": [],
+        "loop": [],
+        "possibility": [
+            {
+                "return": "err",
+                "reply": [
+                    "mStart"
+                ],
+                "data": [],
+                "id": 0
+            },
+            {
+                "return": "err",
+                "reply": [
+                    "mStart",
+                    "mStop"
+                ],
+                "data": [],
+                "id": 1
+            },
+            {
+                "return": "android::NO_ERROR",
+                "reply": [
+                    "mStart",
+                    "mStop"
+                ],
+                "data": [],
+                "id": 2
+            }
+        ],
+        "constraint": [
+            {
+                "lhs": {
+                    "type": "android::status_t",
+                    "name": "err"
+                },
+                "opcode": "",
+                "name": "constraint0",
+                "probability": 0.1
+            },
+            {
+                "lhs": {
+                    "type": "android::status_t",
+                    "name": "err"
+                },
+                "opcode": "",
+                "name": "constraint1",
+                "probability": 0.1
+            }
+        ]
+    }
+}

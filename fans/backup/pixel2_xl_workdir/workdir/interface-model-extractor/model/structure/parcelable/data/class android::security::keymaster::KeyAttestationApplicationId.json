@@ -1,0 +1,88 @@
+{
+    "class android::security::keymaster::KeyAttestationApplicationId": {
+        "variable": [
+            {
+                "count": 1,
+                "self_constraint": [],
+                "name": "temp_vector",
+                "dependency": [],
+                "under_constraint": [],
+                "have_parcelable": 1,
+                "relation": [],
+                "serialization_type": 1,
+                "usedBy": [],
+                "type": "class vector<class android::security::keymaster::KeyAttestationPackageInfo>",
+                "loop": [],
+                "size": -1
+            },
+            {
+                "count": 1,
+                "self_constraint": [],
+                "name": "temp_vector::item",
+                "dependency": [],
+                "under_constraint": [],
+                "have_parcelable": 1,
+                "relation": [],
+                "serialization_type": 1,
+                "usedBy": [],
+                "type": "class android::security::keymaster::KeyAttestationPackageInfo",
+                "loop": []
+            },
+            {
+                "count": 1,
+                "self_constraint": [
+                    "constraint0"
+                ],
+                "name": "rc",
+                "under_constraint": [],
+                "dependency": [],
+                "relation": [],
+                "serialization_type": 0,
+                "usedBy": [],
+                "type": "int",
+                "loop": []
+            },
+            {
+                "count": 1,
+                "self_constraint": [],
+                "name": "android::NO_ERROR",
+                "under_constraint": [],
+                "value": 0,
+                "dependency": [],
+                "relation": [],
+                "serialization_type": 0,
+                "usedBy": [],
+                "type": "android::status_t",
+                "loop": []
+            }
+        ],
+        "dependency": [],
+        "loop": [],
+        "possibility": [
+            {
+                "return": "android::NO_ERROR",
+                "reply": [],
+                "data": [
+                    "temp_vector"
+                ],
+                "id": 0
+            }
+        ],
+        "constraint": [
+            {
+                "lhs": {
+                    "type": "int",
+                    "name": "rc"
+                },
+                "rhs": {
+                    "type": "android::status_t",
+                    "name": "android::NO_ERROR",
+                    "value": 0
+                },
+                "opcode": "!=",
+                "name": "constraint0",
+                "probability": 0.5
+            }
+        ]
+    }
+}

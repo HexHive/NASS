@@ -1,0 +1,121 @@
+{
+    "class android::AudioMixMatchCriterion": {
+        "variable": [
+            {
+                "count": 1,
+                "self_constraint": [
+                    "constraint0_lhs",
+                    "constraint0_rhs"
+                ],
+                "name": "mRule",
+                "under_constraint": [],
+                "dependency": [],
+                "relation": [],
+                "serialization_type": 1,
+                "usedBy": [],
+                "type": "int",
+                "loop": []
+            },
+            {
+                "count": 1,
+                "self_constraint": [],
+                "name": "mValue.mUsage",
+                "under_constraint": [
+                    {
+                        "status": true,
+                        "name": "constraint0"
+                    }
+                ],
+                "dependency": [],
+                "relation": [],
+                "type_alias": 1,
+                "serialization_type": 1,
+                "usedBy": [],
+                "type": "enum audio_usage_t",
+                "loop": []
+            },
+            {
+                "count": 1,
+                "self_constraint": [],
+                "name": "mValue.mSource",
+                "under_constraint": [
+                    {
+                        "status": false,
+                        "name": "constraint0"
+                    }
+                ],
+                "dependency": [],
+                "relation": [],
+                "type_alias": 1,
+                "serialization_type": 1,
+                "usedBy": [],
+                "type": "enum audio_source_t",
+                "loop": []
+            },
+            {
+                "count": 1,
+                "self_constraint": [],
+                "name": "android::NO_ERROR",
+                "under_constraint": [],
+                "value": 0,
+                "dependency": [],
+                "relation": [],
+                "serialization_type": 0,
+                "usedBy": [],
+                "type": "android::status_t",
+                "loop": []
+            }
+        ],
+        "dependency": [],
+        "loop": [],
+        "possibility": [
+            {
+                "return": "android::NO_ERROR",
+                "reply": [],
+                "data": [
+                    "mRule",
+                    "mValue.mUsage",
+                    "mValue.mSource"
+                ],
+                "id": 0
+            }
+        ],
+        "constraint": [
+            {
+                "lhs": {
+                    "lhs": {
+                        "type": "int",
+                        "name": "mRule",
+                        "signature": "uint32_t"
+                    },
+                    "rhs": {
+                        "type": "IntegerLiteral",
+                        "name": "implicit_2",
+                        "value": 1
+                    },
+                    "opcode": "==",
+                    "name": "constraint0_lhs",
+                    "probability": 0.5
+                },
+                "rhs": {
+                    "lhs": {
+                        "type": "int",
+                        "name": "mRule",
+                        "signature": "uint32_t"
+                    },
+                    "rhs": {
+                        "type": "IntegerLiteral",
+                        "name": "implicit_3",
+                        "value": 32769
+                    },
+                    "opcode": "==",
+                    "name": "constraint0_rhs",
+                    "probability": 0.5
+                },
+                "opcode": "||",
+                "name": "constraint0",
+                "probability": 0.5
+            }
+        ]
+    }
+}

@@ -1,0 +1,94 @@
+digraph graphname {
+ICameraRecordingProxy -> IMediaRecorder [style=dotted];
+IResultReceiver -> IPerfProfd [style=dotted];
+ICameraServiceListener -> ICameraService [style=dotted];
+IDrmClient -> IDrm [style=dotted];
+IVoldTaskListener -> IVold [style=dotted];
+IBinder -> ICameraService [style=dotted];
+IResultReceiver -> IStatsManager [style=dotted];
+IMediaDrmService -> ICrypto
+IApInterfaceEventCallback -> IApInterface [style=dotted];
+IMediaExtractorService -> IDataSource
+IDataSource -> IMediaExtractorService [style=dotted];
+ICamera -> IMediaRecorder [style=dotted];
+IClientInterface -> IWifiScannerImpl
+ISoundTriggerHwService -> ISoundTrigger
+IMemory -> ISoundTrigger [style=dotted];
+ISurfaceComposerClient -> IGraphicBufferProducer
+ISurfaceComposer -> ISurfaceComposerClient
+IMemory -> ICamera [style=dotted];
+IMediaPlayerService -> IMediaCodecList
+IAppOpsCallback -> IAppOpsService [style=dotted];
+IResourceManagerClient -> IResourceManagerService [style=dotted];
+IAudioFlinger -> IEffect
+IMediaExtractor -> IMediaSource
+ISurfaceComposer -> IDisplayEventConnection
+IGraphicBufferProducer -> IMediaRecorder [style=dotted];
+IMediaPlayerService -> IRemoteDisplay
+IResultReceiver -> IIncidentManager [style=dotted];
+IAudioFlinger -> IAudioTrack
+IResultReceiver -> IGpuService [style=dotted];
+IBinder -> IGpuService [style=dotted];
+IInterfaceEventCallback -> IWificond [style=dotted];
+IAudioPolicyServiceClient -> IAudioPolicyService [style=dotted];
+IMediaPlayer -> IMediaPlayer [style=dotted];
+IResultReceiver -> ICameraService [style=dotted];
+ISoundTriggerClient -> ISoundTriggerHwService [style=dotted];
+IGraphicBufferProducer -> ISurfaceComposer [style=dotted];
+IMediaPlayerService -> IMediaRecorder
+IBinder -> IPerfProfd [style=dotted];
+IShellCallback -> IIncidentManager [style=dotted];
+IBinder -> IStatsCompanionService [style=dotted];
+IMemory -> ICrypto [style=dotted];
+IMediaMetadataRetriever -> IMemory
+IMediaHTTPService -> IMediaMetadataRetriever [style=dotted];
+IResultReceiver -> IAudioPolicyService [style=dotted];
+IBinder -> IStatsManager [style=dotted];
+ICameraClient -> ICamera [style=dotted];
+ICameraService -> ICameraDeviceUser
+IBinder -> ISurfaceComposer [style=dotted];
+IMemory -> IMemoryHeap
+IDrmServiceListener -> IDrmManagerService [style=dotted];
+IWificond -> IApInterface
+IVoldListener -> IVold [style=dotted];
+IEffect -> IMemory
+ICameraService -> ICamera
+IShellCallback -> IStatsManager [style=dotted];
+IResultReceiver -> ISensorServer [style=dotted];
+IBinder -> ISurfaceComposerClient [style=dotted];
+IGraphicBufferProducer -> ICamera [style=dotted];
+ICameraDeviceCallbacks -> ICameraService [style=dotted];
+IDataSource -> IMediaMetadataRetriever [style=dotted];
+IMediaRecorder -> IGraphicBufferProducer
+IMediaHTTPService -> IMediaPlayer [style=dotted];
+IAAudioClient -> IAAudioService [style=dotted];
+IMediaPlayerService -> IMediaPlayer
+IMediaPlayerService -> IMediaMetadataRetriever
+IIncidentReportStatusListener -> IIncidentManager [style=dotted];
+ISensorServer -> ISensorEventConnection
+IThermalEventListener -> IThermalService [style=dotted];
+IBinder -> IAudioPolicyService [style=dotted];
+IAudioTrack -> IMemory
+IMediaSource -> IMemory
+IBinder -> IAppOpsService [style=dotted];
+IMediaPlayerClient -> IMediaPlayerService [style=dotted];
+IGraphicBufferProducer -> IMediaPlayer [style=dotted];
+IStreamSource -> IMediaPlayer [style=dotted];
+IEffectClient -> IAudioFlinger [style=dotted];
+IBinder -> IKeystoreService [style=dotted];
+IWificond -> IClientInterface
+IMediaRecorderClient -> IMediaRecorder [style=dotted];
+IMemoryHeap -> ICrypto [style=dotted];
+IScanEvent -> IWifiScannerImpl [style=dotted];
+IPnoScanEvent -> IWifiScannerImpl [style=dotted];
+IRemoteDisplayClient -> IMediaPlayerService [style=dotted];
+IProducerListener -> IGraphicBufferProducer [style=dotted];
+IDataSource -> IMediaPlayer [style=dotted];
+IBinder -> ISensorServer [style=dotted];
+ICameraClient -> ICameraService [style=dotted];
+IMediaDrmService -> IDrm
+IDataSource -> IMemory
+IMediaExtractorService -> IMediaExtractor
+IAudioFlinger -> IAudioRecord
+IAudioFlingerClient -> IAudioFlinger [style=dotted];
+}

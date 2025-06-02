@@ -1,0 +1,20 @@
+{
+    "union":{
+        "Field1":{
+            "name":{
+                "$":"audio_port_config_mix_ext::(anonymous union)::stream"
+            },
+            "type":{
+                "$":"audio_stream_type_t"
+            }
+        },
+        "Field2":{
+            "name":{
+                "$":"audio_port_config_mix_ext::(anonymous union)::source"
+            },
+            "type":{
+                "$":"audio_source_t"
+            }
+        }
+    }
+}

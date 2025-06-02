@@ -1,0 +1,6 @@
+[submodule "device/android-shmem"]
+	path = device/android-shmem
+	url = https://github.com/pelya/android-shmem.git
+[submodule "fuzz/afl/AFLplusplus"]
+	path = fuzz/afl/AFLplusplus
+	url = git@github.com:philippmao/AFLplusplus.git

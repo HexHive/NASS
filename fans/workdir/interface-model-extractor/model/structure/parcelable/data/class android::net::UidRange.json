@@ -1,0 +1,143 @@
+{
+    "class android::net::UidRange": {
+        "variable": [
+            {
+                "count": 1,
+                "self_constraint": [
+                    "constraint2"
+                ],
+                "name": "mStart",
+                "under_constraint": [],
+                "dependency": [],
+                "relation": [],
+                "signature": "int32_t",
+                "serialization_type": 1,
+                "usedBy": [],
+                "type": "int",
+                "loop": []
+            },
+            {
+                "count": 1,
+                "self_constraint": [
+                    "constraint0",
+                    "constraint1"
+                ],
+                "name": "err",
+                "under_constraint": [],
+                "dependency": [],
+                "relation": [],
+                "serialization_type": 0,
+                "usedBy": [],
+                "type": "android::status_t",
+                "loop": []
+            },
+            {
+                "count": 1,
+                "self_constraint": [
+                    "constraint2"
+                ],
+                "name": "mStop",
+                "under_constraint": [
+                    {
+                        "status": false,
+                        "name": "constraint0"
+                    }
+                ],
+                "dependency": [],
+                "relation": [],
+                "signature": "int32_t",
+                "serialization_type": 1,
+                "usedBy": [],
+                "type": "int",
+                "loop": []
+            },
+            {
+                "count": 1,
+                "self_constraint": [],
+                "name": "android::NO_ERROR",
+                "under_constraint": [
+                    {
+                        "status": false,
+                        "name": "constraint0"
+                    },
+                    {
+                        "status": false,
+                        "name": "constraint1"
+                    }
+                ],
+                "value": 0,
+                "dependency": [],
+                "relation": [],
+                "serialization_type": 0,
+                "usedBy": [],
+                "type": "android::status_t",
+                "loop": []
+            }
+        ],
+        "dependency": [],
+        "loop": [],
+        "possibility": [
+            {
+                "return": "err",
+                "reply": [],
+                "data": [
+                    "mStart"
+                ],
+                "id": 0
+            },
+            {
+                "return": "err",
+                "reply": [],
+                "data": [
+                    "mStart",
+                    "mStop"
+                ],
+                "id": 1
+            },
+            {
+                "return": "android::NO_ERROR",
+                "reply": [],
+                "data": [
+                    "mStart",
+                    "mStop"
+                ],
+                "id": 2
+            }
+        ],
+        "constraint": [
+            {
+                "lhs": {
+                    "type": "android::status_t",
+                    "name": "err"
+                },
+                "opcode": "",
+                "name": "constraint0",
+                "probability": 0.1
+            },
+            {
+                "lhs": {
+                    "type": "android::status_t",
+                    "name": "err"
+                },
+                "opcode": "",
+                "name": "constraint1",
+                "probability": 0.1
+            },
+            {
+                "lhs": {
+                    "type": "int",
+                    "name": "mStart",
+                    "signature": "int32_t"
+                },
+                "rhs": {
+                    "type": "int",
+                    "name": "mStop",
+                    "signature": "int32_t"
+                },
+                "opcode": ">",
+                "name": "constraint2",
+                "probability": 0.5
+            }
+        ]
+    }
+}

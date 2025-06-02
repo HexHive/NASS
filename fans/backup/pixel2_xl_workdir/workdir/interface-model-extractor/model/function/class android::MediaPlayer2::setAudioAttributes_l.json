@@ -1,0 +1,163 @@
+{
+    "android::MediaPlayer2::setAudioAttributes_l+android::status_t (const class android::Parcel &)":{
+        "dependency":[],
+        "possibility":[
+            {
+                "id":0,
+                "data":[],
+                "reply":[],
+                "return":"android::NO_MEMORY"
+            },
+            {
+                "id":1,
+                "data":[
+                    "implicit_2"
+                ],
+                "reply":[],
+                "return":"android::NO_ERROR"
+            }
+        ],
+        "variable":[
+            {
+                "name":"android::NO_MEMORY",
+                "type":"android::status_t",
+                "value":-12,
+                "serialization_type":0,
+                "self_constraint":[],
+                "under_constraint":[
+                    {
+                        "name":"constraint0",
+                        "status":true
+                    }
+                ],
+                "relation":[],
+                "loop":[],
+                "usedBy":[],
+                "dependency":[],
+                "count":1
+            },
+            {
+                "name":"mAudioAttributes",
+                "type":"audio_attributes_t *",
+                "signature":"audio_attributes_t *",
+                "serialization_type":0,
+                "self_constraint":[],
+                "under_constraint":[
+                    {
+                        "name":"constraint0",
+                        "status":false
+                    }
+                ],
+                "relation":[],
+                "loop":[],
+                "usedBy":[],
+                "dependency":[],
+                "count":1,
+                "size":-1
+            },
+            {
+                "name":"mAudioAttributes::item",
+                "type":"struct audio_attributes_t",
+                "signature":"audio_attributes_t *",
+                "serialization_type":0,
+                "self_constraint":[],
+                "under_constraint":[],
+                "relation":[],
+                "loop":[],
+                "usedBy":[],
+                "dependency":[],
+                "count":1,
+                "type_alias":1
+            },
+            {
+                "name":"implicit_2",
+                "func_name":"android::(anonymous namespace)::unmarshallAudioAttributes",
+                "signature":"void (const class android::Parcel &, audio_attributes_t *)",
+                "type":"Function",
+                "argv":[
+                    {
+                        "name":"parcel",
+                        "type":"const class android::Parcel"
+                    },
+                    {
+                        "name":"mAudioAttributes",
+                        "type":"audio_attributes_t *"
+                    }
+                ],
+                "serialization_type":1,
+                "self_constraint":[],
+                "under_constraint":[
+                    {
+                        "name":"constraint0",
+                        "status":false
+                    }
+                ],
+                "relation":[],
+                "loop":[],
+                "usedBy":[],
+                "dependency":[],
+                "count":1
+            },
+            {
+                "name":"android::NO_ERROR",
+                "type":"android::status_t",
+                "value":0,
+                "serialization_type":0,
+                "self_constraint":[],
+                "under_constraint":[
+                    {
+                        "name":"constraint0",
+                        "status":false
+                    }
+                ],
+                "relation":[],
+                "loop":[],
+                "usedBy":[],
+                "dependency":[],
+                "count":1
+            },
+            {
+                "name":"parcel",
+                "type":"class android::Parcel",
+                "serialization_type":0,
+                "self_constraint":[],
+                "under_constraint":[
+                    {
+                        "name":"constraint0",
+                        "status":false
+                    }
+                ],
+                "relation":[],
+                "loop":[],
+                "usedBy":[],
+                "dependency":[],
+                "count":1
+            }
+        ],
+        "constraint":[
+            {
+                "name":"constraint0",
+                "opcode":"==",
+                "lhs":{
+                    "name":"mAudioAttributes",
+                    "type":"audio_attributes_t *",
+                    "signature":"audio_attributes_t *"
+                },
+                "rhs":{
+                    "name":"implicit_1",
+                    "type":"audio_attributes_t *",
+                    "value":"NULL"
+                },
+                "probability":0.1
+            }
+        ],
+        "loop":[],
+        "argv":[
+            {
+                "name":"parcel",
+                "type":"const class android::Parcel &",
+                "serialization_type":0
+            }
+        ]
+    }
+}

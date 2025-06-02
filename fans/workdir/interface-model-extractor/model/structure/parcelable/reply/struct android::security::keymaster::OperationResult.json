@@ -1,0 +1,166 @@
+{
+    "struct android::security::keymaster::OperationResult": {
+        "variable": [
+            {
+                "count": 1,
+                "self_constraint": [],
+                "name": "resultCode.toInt",
+                "under_constraint": [],
+                "dependency": [],
+                "relation": [],
+                "serialization_type": 2,
+                "usedBy": [],
+                "type": "int",
+                "loop": []
+            },
+            {
+                "count": 1,
+                "self_constraint": [],
+                "name": "token",
+                "under_constraint": [],
+                "dependency": [],
+                "relation": [],
+                "signature": "sp<class android::IBinder>",
+                "serialization_type": 2,
+                "usedBy": [],
+                "type": "class android::sp<class android::IBinder>",
+                "loop": [],
+                "interfaceName": "IBinder"
+            },
+            {
+                "count": 1,
+                "self_constraint": [],
+                "name": "handle",
+                "under_constraint": [],
+                "dependency": [],
+                "relation": [],
+                "signature": "uint64_t",
+                "serialization_type": 2,
+                "usedBy": [],
+                "type": "long",
+                "loop": []
+            },
+            {
+                "count": 1,
+                "self_constraint": [],
+                "name": "inputConsumed",
+                "under_constraint": [],
+                "dependency": [],
+                "relation": [],
+                "signature": "int",
+                "serialization_type": 2,
+                "usedBy": [],
+                "type": "int",
+                "loop": []
+            },
+            {
+                "count": 1,
+                "self_constraint": [],
+                "name": "data",
+                "under_constraint": [],
+                "dependency": [],
+                "relation": [],
+                "signature": "::keystore::hidl_vec<uint8_t>",
+                "serialization_type": 0,
+                "usedBy": [],
+                "type": "struct android::hardware::hidl_vec<unsigned char>",
+                "loop": []
+            },
+            {
+                "count": 1,
+                "self_constraint": [],
+                "name": "implicit_5",
+                "under_constraint": [],
+                "func_name": "keystore::writeKeymasterBlob",
+                "argv": [
+                    {
+                        "type": "struct android::hardware::hidl_vec<unsigned char>",
+                        "name": "data"
+                    },
+                    {
+                        "type": "class android::Parcel *",
+                        "name": "out"
+                    }
+                ],
+                "dependency": [],
+                "relation": [],
+                "signature": "android::status_t (const hidl_vec<uint8_t> &, android::Parcel *)",
+                "serialization_type": 2,
+                "usedBy": [],
+                "type": "Function",
+                "loop": []
+            },
+            {
+                "count": 1,
+                "self_constraint": [],
+                "name": "outParams",
+                "under_constraint": [],
+                "dependency": [],
+                "relation": [],
+                "serialization_type": 2,
+                "usedBy": [],
+                "type": "struct android::hardware::hidl_vec<struct android::hardware::keymaster::V4_0::KeyParameter>",
+                "loop": []
+            },
+            {
+                "count": 1,
+                "self_constraint": [],
+                "name": "android::OK",
+                "under_constraint": [],
+                "value": 0,
+                "dependency": [],
+                "relation": [],
+                "serialization_type": 0,
+                "usedBy": [],
+                "type": "android::status_t",
+                "loop": []
+            }
+        ],
+        "dependency": [
+            {
+                "filename": "BnKeystoreService.json",
+                "type": "Transaction",
+                "name": "IKeystoreService::27-27",
+                "possIdx": 0,
+                "varIdx": 1,
+                "varName": "_aidl_return",
+                "varType": "struct android::security::keymaster::OperationResult"
+            },
+            {
+                "filename": "BnKeystoreService.json",
+                "type": "Transaction",
+                "name": "IKeystoreService::28-28",
+                "possIdx": 0,
+                "varIdx": 1,
+                "varName": "_aidl_return",
+                "varType": "struct android::security::keymaster::OperationResult"
+            },
+            {
+                "filename": "BnKeystoreService.json",
+                "type": "Transaction",
+                "name": "IKeystoreService::29-29",
+                "possIdx": 0,
+                "varIdx": 1,
+                "varName": "_aidl_return",
+                "varType": "struct android::security::keymaster::OperationResult"
+            }
+        ],
+        "loop": [],
+        "possibility": [
+            {
+                "return": "android::OK",
+                "reply": [
+                    "resultCode.toInt",
+                    "token",
+                    "handle",
+                    "inputConsumed",
+                    "implicit_5",
+                    "outParams"
+                ],
+                "data": [],
+                "id": 0
+            }
+        ],
+        "constraint": []
+    }
+}

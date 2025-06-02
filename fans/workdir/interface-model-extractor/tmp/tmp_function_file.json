@@ -1,0 +1,177 @@
+{
+    "function":{
+        "funcName":{
+            "$":"class android::MediaPlayerService::Client::setAudioAttributes_l"
+        },
+        "signature":{
+            "$":"android::status_t (const class android::Parcel &)"
+        },
+        "CompoundStmt":{
+            "IfStmt":{
+                "IfCond":{
+                    "BinaryOperator":{
+                        "opcode":{
+                            "$":"=="
+                        },
+                        "LHS":{
+                            "ImplicitCastExpr":{
+                                "type":{
+                                    "$":"audio_attributes_t *"
+                                },
+                                "MemberExpr":{
+                                    "name":{
+                                        "$":"android::MediaPlayerService::Client::mAudioAttributes"
+                                    },
+                                    "type":{
+                                        "$":"audio_attributes_t *"
+                                    },
+                                    "signature":{
+                                        "$":"audio_attributes_t *"
+                                    },
+                                    "CXXThisExpr":{
+                                        "Type":{
+                                            "$":"class android::MediaPlayerService::Client *"
+                                        }
+                                    }
+                                }
+                            }
+                        },
+                        "RHS":{
+                            "ImplicitCastExpr":{
+                                "type":{
+                                    "$":"audio_attributes_t *"
+                                },
+                                "GNUNullExpr":{
+                                    "value":{
+                                        "$":"NULL"
+                                    }
+                                }
+                            }
+                        }
+                    }
+                },
+                "Then":{
+                    "CompoundStmt":{
+                        "ReturnStmt":{
+                            "ImplicitCastExpr":{
+                                "type":{
+                                    "$":"android::status_t"
+                                },
+                                "IntegerLiteral":{
+                                    "value":{
+                                        "$":-12
+                                    },
+                                    "DeclRef":{
+                                        "name":{
+                                            "$":"android::NO_MEMORY"
+                                        },
+                                        "type":{
+                                            "$":"enum android::(anonymous at system.core.libutils.include.utils.Errors.h:45:1)"
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            "CallExpr":{
+                "ReturnType":{
+                    "$":"void"
+                },
+                "MemberExpr":{
+                    "DeclRef":{
+                        "name":{
+                            "$":"(anonymous namespace)::unmarshallAudioAttributes"
+                        },
+                        "type":{
+                            "$":"void (const class android::Parcel &, audio_attributes_t *)"
+                        },
+                        "signature":{
+                            "$":"void (const class android::Parcel &, audio_attributes_t *)"
+                        },
+                        "argv":{
+                            "argv0":{
+                                "name":{
+                                    "$":"parcel"
+                                },
+                                "type":{
+                                    "$":"const class android::Parcel &"
+                                }
+                            },
+                            "argv1":{
+                                "name":{
+                                    "$":"attributes"
+                                },
+                                "type":{
+                                    "$":"audio_attributes_t *"
+                                }
+                            }
+                        }
+                    }
+                },
+                "argv":{
+                    "DeclRef":{
+                        "name":{
+                            "$":"parcel"
+                        },
+                        "type":{
+                            "$":"const class android::Parcel"
+                        }
+                    },
+                    "ImplicitCastExpr":{
+                        "type":{
+                            "$":"audio_attributes_t *"
+                        },
+                        "MemberExpr":{
+                            "name":{
+                                "$":"android::MediaPlayerService::Client::mAudioAttributes"
+                            },
+                            "type":{
+                                "$":"audio_attributes_t *"
+                            },
+                            "signature":{
+                                "$":"audio_attributes_t *"
+                            },
+                            "CXXThisExpr":{
+                                "Type":{
+                                    "$":"class android::MediaPlayerService::Client *"
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            "ReturnStmt":{
+                "ImplicitCastExpr":{
+                    "type":{
+                        "$":"android::status_t"
+                    },
+                    "IntegerLiteral":{
+                        "value":{
+                            "$":0
+                        },
+                        "DeclRef":{
+                            "name":{
+                                "$":"android::NO_ERROR"
+                            },
+                            "type":{
+                                "$":"enum android::(anonymous at system.core.libutils.include.utils.Errors.h:45:1)"
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "argv":{
+            "argv0":{
+                "name":{
+                    "$":"parcel"
+                },
+                "type":{
+                    "$":"const class android::Parcel &"
+                }
+            }
+        }
+    }
+}

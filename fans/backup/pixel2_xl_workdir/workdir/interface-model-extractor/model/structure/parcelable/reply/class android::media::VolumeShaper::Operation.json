@@ -1,0 +1,142 @@
+{
+    "class android::media::VolumeShaper::Operation": {
+        "variable": [
+            {
+                "count": 1,
+                "self_constraint": [],
+                "name": "mFlags",
+                "under_constraint": [],
+                "dependency": [],
+                "relation": [],
+                "signature": "enum android::media::VolumeShaper::Operation::Flag",
+                "serialization_type": 2,
+                "usedBy": [],
+                "type": "enum android::media::VolumeShaper::Operation::Flag",
+                "loop": []
+            },
+            {
+                "count": 1,
+                "self_constraint": [
+                    "constraint1"
+                ],
+                "name": "implicit_2",
+                "under_constraint": [],
+                "dependency": [],
+                "relation": [],
+                "serialization_type": 0,
+                "usedBy": [],
+                "type": "android::status_t",
+                "loop": []
+            },
+            {
+                "count": 1,
+                "self_constraint": [],
+                "name": "mReplaceId",
+                "under_constraint": [
+                    {
+                        "status": false,
+                        "name": "constraint1"
+                    }
+                ],
+                "dependency": [],
+                "relation": [],
+                "signature": "int32_t",
+                "serialization_type": 2,
+                "usedBy": [],
+                "type": "int",
+                "loop": []
+            },
+            {
+                "count": 1,
+                "self_constraint": [
+                    "constraint2"
+                ],
+                "name": "implicit_3",
+                "under_constraint": [
+                    {
+                        "status": false,
+                        "name": "constraint1"
+                    }
+                ],
+                "dependency": [],
+                "relation": [],
+                "serialization_type": 0,
+                "usedBy": [],
+                "type": "android::status_t",
+                "loop": []
+            },
+            {
+                "count": 1,
+                "self_constraint": [],
+                "name": "mXOffset",
+                "under_constraint": [
+                    {
+                        "status": false,
+                        "name": "constraint1"
+                    },
+                    {
+                        "status": false,
+                        "name": "constraint2"
+                    }
+                ],
+                "dependency": [],
+                "relation": [],
+                "signature": "android::media::VolumeShaper::S",
+                "serialization_type": 2,
+                "usedBy": [],
+                "type": "float",
+                "loop": []
+            }
+        ],
+        "dependency": [],
+        "loop": [],
+        "possibility": [
+            {
+                "return": "implicit_2",
+                "reply": [
+                    "mFlags",
+                    "mReplaceId",
+                    "mXOffset"
+                ],
+                "data": [],
+                "id": 0
+            }
+        ],
+        "constraint": [
+            {
+                "lhs": {
+                    "type": "class android::Parcel *",
+                    "name": "parcel"
+                },
+                "rhs": {
+                    "type": "class android::Parcel *",
+                    "name": "implicit_1",
+                    "value": "NULL"
+                },
+                "opcode": "==",
+                "name": "constraint0",
+                "probability": 0.5
+            },
+            {
+                "lhs": {
+                    "serialization_type": 0,
+                    "type": "android::status_t",
+                    "name": "implicit_2"
+                },
+                "opcode": "",
+                "name": "constraint1",
+                "probability": 0.5
+            },
+            {
+                "lhs": {
+                    "serialization_type": 0,
+                    "type": "android::status_t",
+                    "name": "implicit_3"
+                },
+                "opcode": "",
+                "name": "constraint2",
+                "probability": 0.5
+            }
+        ]
+    }
+}

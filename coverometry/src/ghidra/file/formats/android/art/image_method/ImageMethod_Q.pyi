@@ -1,0 +1,70 @@
+from typing import List
+import ghidra.file.formats.android.art.image_method
+import java.lang
+import java.util
+
+
+class ImageMethod_Q(java.lang.Enum):
+    kImageMethodsCount: ghidra.file.formats.android.art.image_method.ImageMethod_Q = kImageMethodsCount
+    kImtConflictMethod: ghidra.file.formats.android.art.image_method.ImageMethod_Q = kImtConflictMethod
+    kImtUnimplementedMethod: ghidra.file.formats.android.art.image_method.ImageMethod_Q = kImtUnimplementedMethod
+    kResolutionMethod: ghidra.file.formats.android.art.image_method.ImageMethod_Q = kResolutionMethod
+    kSaveAllCalleeSavesMethod: ghidra.file.formats.android.art.image_method.ImageMethod_Q = kSaveAllCalleeSavesMethod
+    kSaveEverythingMethod: ghidra.file.formats.android.art.image_method.ImageMethod_Q = kSaveEverythingMethod
+    kSaveEverythingMethodForClinit: ghidra.file.formats.android.art.image_method.ImageMethod_Q = kSaveEverythingMethodForClinit
+    kSaveEverythingMethodForSuspendCheck: ghidra.file.formats.android.art.image_method.ImageMethod_Q = kSaveEverythingMethodForSuspendCheck
+    kSaveRefsAndArgsMethod: ghidra.file.formats.android.art.image_method.ImageMethod_Q = kSaveRefsAndArgsMethod
+    kSaveRefsOnlyMethod: ghidra.file.formats.android.art.image_method.ImageMethod_Q = kSaveRefsOnlyMethod
+
+
+
+
+
+
+
+    @overload
+    def compareTo(self, __a0: java.lang.Enum) -> int: ...
+
+    @overload
+    def compareTo(self, __a0: object) -> int: ...
+
+    def describeConstable(self) -> java.util.Optional: ...
+
+    def equals(self, __a0: object) -> bool: ...
+
+    def getClass(self) -> java.lang.Class: ...
+
+    def getDeclaringClass(self) -> java.lang.Class: ...
+
+    def hashCode(self) -> int: ...
+
+    def name(self) -> unicode: ...
+
+    def notify(self) -> None: ...
+
+    def notifyAll(self) -> None: ...
+
+    def ordinal(self) -> int: ...
+
+    def toString(self) -> unicode: ...
+
+    @overload
+    @staticmethod
+    def valueOf(__a0: unicode) -> ghidra.file.formats.android.art.image_method.ImageMethod_Q: ...
+
+    @overload
+    @staticmethod
+    def valueOf(__a0: java.lang.Class, __a1: unicode) -> java.lang.Enum: ...
+
+    @staticmethod
+    def values() -> List[ghidra.file.formats.android.art.image_method.ImageMethod_Q]: ...
+
+    @overload
+    def wait(self) -> None: ...
+
+    @overload
+    def wait(self, __a0: long) -> None: ...
+
+    @overload
+    def wait(self, __a0: long, __a1: int) -> None: ...
+

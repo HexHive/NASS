@@ -1,0 +1,136 @@
+{
+    "struct android::hardware::camera2::impl::PhysicalCaptureResultInfo": {
+        "variable": [
+            {
+                "count": 1,
+                "self_constraint": [],
+                "name": "mPhysicalCameraId",
+                "under_constraint": [],
+                "dependency": [],
+                "relation": [],
+                "signature": "class android::String16",
+                "serialization_type": 2,
+                "usedBy": [],
+                "type": "class android::String16",
+                "loop": []
+            },
+            {
+                "count": 1,
+                "self_constraint": [
+                    "constraint0",
+                    "constraint1"
+                ],
+                "name": "res",
+                "under_constraint": [],
+                "dependency": [],
+                "relation": [],
+                "serialization_type": 0,
+                "usedBy": [],
+                "type": "android::status_t",
+                "loop": []
+            },
+            {
+                "count": 1,
+                "self_constraint": [],
+                "name": "mPhysicalCameraMetadata",
+                "under_constraint": [
+                    {
+                        "status": false,
+                        "name": "constraint0"
+                    }
+                ],
+                "dependency": [],
+                "relation": [],
+                "signature": "class android::CameraMetadata",
+                "serialization_type": 2,
+                "usedBy": [],
+                "type": "class android::CameraMetadata",
+                "loop": []
+            },
+            {
+                "count": 1,
+                "self_constraint": [],
+                "name": "android::OK",
+                "under_constraint": [
+                    {
+                        "status": false,
+                        "name": "constraint0"
+                    },
+                    {
+                        "status": false,
+                        "name": "constraint1"
+                    }
+                ],
+                "value": 0,
+                "dependency": [],
+                "relation": [],
+                "serialization_type": 0,
+                "usedBy": [],
+                "type": "android::status_t",
+                "loop": []
+            }
+        ],
+        "dependency": [],
+        "loop": [],
+        "possibility": [
+            {
+                "return": "res",
+                "reply": [
+                    "mPhysicalCameraId"
+                ],
+                "data": [],
+                "id": 0
+            },
+            {
+                "return": "res",
+                "reply": [
+                    "mPhysicalCameraId",
+                    "mPhysicalCameraMetadata"
+                ],
+                "data": [],
+                "id": 1
+            },
+            {
+                "return": "android::OK",
+                "reply": [
+                    "mPhysicalCameraId",
+                    "mPhysicalCameraMetadata"
+                ],
+                "data": [],
+                "id": 2
+            }
+        ],
+        "constraint": [
+            {
+                "lhs": {
+                    "serialization_type": 0,
+                    "type": "android::status_t",
+                    "name": "res"
+                },
+                "rhs": {
+                    "type": "android::status_t",
+                    "name": "android::OK",
+                    "value": 0
+                },
+                "opcode": "!=",
+                "name": "constraint0",
+                "probability": 0.1
+            },
+            {
+                "lhs": {
+                    "serialization_type": 0,
+                    "type": "android::status_t",
+                    "name": "res"
+                },
+                "rhs": {
+                    "type": "android::status_t",
+                    "name": "android::OK",
+                    "value": 0
+                },
+                "opcode": "!=",
+                "name": "constraint1",
+                "probability": 0.1
+            }
+        ]
+    }
+}

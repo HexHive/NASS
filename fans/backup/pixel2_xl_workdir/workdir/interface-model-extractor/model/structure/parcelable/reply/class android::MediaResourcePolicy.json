@@ -1,0 +1,46 @@
+{
+    "class android::MediaResourcePolicy": {
+        "variable": [
+            {
+                "count": 1,
+                "self_constraint": [],
+                "name": "mType",
+                "under_constraint": [],
+                "dependency": [],
+                "relation": [],
+                "signature": "class android::String8",
+                "serialization_type": 2,
+                "usedBy": [],
+                "type": "class android::String8",
+                "loop": []
+            },
+            {
+                "count": 1,
+                "self_constraint": [],
+                "name": "mValue",
+                "under_constraint": [],
+                "dependency": [],
+                "relation": [],
+                "signature": "class android::String8",
+                "serialization_type": 2,
+                "usedBy": [],
+                "type": "class android::String8",
+                "loop": []
+            }
+        ],
+        "dependency": [],
+        "loop": [],
+        "possibility": [
+            {
+                "return": "",
+                "reply": [
+                    "mType",
+                    "mValue"
+                ],
+                "data": [],
+                "id": 0
+            }
+        ],
+        "constraint": []
+    }
+}

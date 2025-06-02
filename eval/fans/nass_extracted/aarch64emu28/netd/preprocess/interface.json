@@ -1,0 +1,206 @@
+{
+    "1": [],
+    "10": [
+        "INT32",
+        "INT32PARCEABLEARRAYLEN",
+        "INT32",
+        "INT32",
+        "INT32",
+        "INT32"
+    ],
+    "11": [
+        "BOOL",
+        "INT32PARCEABLEARRAYLEN",
+        "INT32",
+        "INT32"
+    ],
+    "12": [
+        "INT32PARCEABLEARRAYLEN",
+        "INT32",
+        "INT32",
+        "INT32VECTOR"
+    ],
+    "13": [
+        "INT32",
+        "STRING16UTF8VECTOR",
+        "STRING16UTF8VECTOR",
+        "INT32VECTOR",
+        "STRING16UTF8",
+        "STRING16UTF8VECTOR",
+        "STRING16UTF8VECTOR"
+    ],
+    "14": [
+        "INT32",
+        "INT32",
+        "INT32",
+        "INT32",
+        "INT32"
+    ],
+    "15": [],
+    "1598311760": [],
+    "1599295570": [],
+    "16": [],
+    "17": [
+        "STRING16UTF8",
+        "STRING16UTF8",
+        "INT32"
+    ],
+    "18": [
+        "STRING16UTF8",
+        "STRING16UTF8",
+        "INT32"
+    ],
+    "19": [
+        "INT32",
+        "INT32",
+        "STRING16UTF8",
+        "STRING16UTF8",
+        "STRING16UTF8"
+    ],
+    "2": [
+        "STRING16",
+        "BOOL",
+        "INT32VECTOR"
+    ],
+    "20": [],
+    "21": [
+        "INT32"
+    ],
+    "22": [
+        "FILEDESCRIPTOR",
+        "INT32"
+    ],
+    "23": [
+        "INT32",
+        "STRING16UTF8",
+        "STRING16UTF8",
+        "INT32"
+    ],
+    "24": [
+        "INT32",
+        "INT32",
+        "STRING16UTF8",
+        "STRING16UTF8",
+        "INT32",
+        "INT32",
+        "INT32",
+        "INT32",
+        "STRING16UTF8",
+        "BYTEARRAY",
+        "INT32",
+        "STRING16UTF8",
+        "BYTEARRAY",
+        "INT32",
+        "STRING16UTF8",
+        "BYTEARRAY",
+        "INT32",
+        "INT32",
+        "INT32",
+        "INT32"
+    ],
+    "25": [
+        "INT32",
+        "STRING16UTF8",
+        "STRING16UTF8",
+        "INT32",
+        "INT32",
+        "INT32"
+    ],
+    "26": [
+        "FILEDESCRIPTOR",
+        "INT32",
+        "INT32"
+    ],
+    "27": [
+        "FILEDESCRIPTOR"
+    ],
+    "28": [
+        "INT32",
+        "INT32",
+        "STRING16UTF8",
+        "STRING16UTF8",
+        "INT32",
+        "INT32",
+        "INT32"
+    ],
+    "29": [
+        "INT32",
+        "INT32",
+        "STRING16UTF8",
+        "STRING16UTF8",
+        "INT32",
+        "INT32",
+        "INT32"
+    ],
+    "3": [
+        "BOOL"
+    ],
+    "30": [
+        "INT32",
+        "INT32",
+        "STRING16UTF8",
+        "STRING16UTF8",
+        "INT32",
+        "INT32"
+    ],
+    "31": [
+        "STRING16UTF8",
+        "STRING16UTF8",
+        "STRING16UTF8",
+        "INT32",
+        "INT32"
+    ],
+    "32": [
+        "STRING16UTF8",
+        "STRING16UTF8",
+        "STRING16UTF8",
+        "INT32",
+        "INT32"
+    ],
+    "33": [
+        "STRING16UTF8"
+    ],
+    "34": [
+        "STRING16UTF8",
+        "STRING16UTF8",
+        "INT32",
+        "INT32"
+    ],
+    "35": [
+        "STRING16UTF8",
+        "STRING16UTF8",
+        "INT32",
+        "INT32"
+    ],
+    "36": [
+        "STRING16UTF8",
+        "INT32"
+    ],
+    "37": [],
+    "4": [
+        "INT32",
+        "STRING16UTF8"
+    ],
+    "5": [
+        "INT32",
+        "BOOL",
+        "BOOL"
+    ],
+    "6": [
+        "INT32"
+    ],
+    "7": [
+        "INT32",
+        "STRING16UTF8"
+    ],
+    "8": [
+        "INT32",
+        "STRING16UTF8"
+    ],
+    "9": [
+        "INT32",
+        "INT32PARCEABLEARRAYLEN",
+        "INT32",
+        "INT32"
+    ]
+}

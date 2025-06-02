@@ -1,0 +1,69 @@
+{
+    "class android::os::StatsLogEventWrapper": {
+        "variable": [
+            {
+                "count": 1,
+                "self_constraint": [],
+                "name": "bytes",
+                "under_constraint": [],
+                "dependency": [],
+                "relation": [],
+                "signature": "std::vector<uint8_t>",
+                "serialization_type": 2,
+                "usedBy": [],
+                "type": "class vector<unsigned char>",
+                "loop": [],
+                "size": -1
+            },
+            {
+                "count": 1,
+                "self_constraint": [],
+                "name": "bytes::item",
+                "under_constraint": [],
+                "dependency": [],
+                "relation": [],
+                "signature": "std::vector<uint8_t>",
+                "serialization_type": 2,
+                "usedBy": [],
+                "type": "unsigned char",
+                "loop": []
+            },
+            {
+                "count": 1,
+                "self_constraint": [],
+                "name": "android::NO_ERROR",
+                "under_constraint": [],
+                "value": 0,
+                "dependency": [],
+                "relation": [],
+                "serialization_type": 0,
+                "usedBy": [],
+                "type": "android::status_t",
+                "loop": []
+            }
+        ],
+        "dependency": [
+            {
+                "filename": "BnStatsCompanionService.json",
+                "type": "Transaction",
+                "name": "IStatsCompanionService::8-8",
+                "possIdx": 0,
+                "varIdx": 1,
+                "varName": "_aidl_return::item",
+                "varType": "class android::os::StatsLogEventWrapper"
+            }
+        ],
+        "loop": [],
+        "possibility": [
+            {
+                "return": "android::NO_ERROR",
+                "reply": [
+                    "bytes"
+                ],
+                "data": [],
+                "id": 0
+            }
+        ],
+        "constraint": []
+    }
+}

@@ -1,0 +1,32 @@
+{
+    "struct audio_port_session_ext":{
+        "dependency":[],
+        "possibility":[
+            {
+                "id":0,
+                "data":[
+                    "audio_port_session_ext::session"
+                ],
+                "reply":[],
+                "return":""
+            }
+        ],
+        "variable":[
+            {
+                "name":"audio_port_session_ext::session",
+                "type":"enum audio_session_t",
+                "serialization_type":1,
+                "self_constraint":[],
+                "under_constraint":[],
+                "relation":[],
+                "loop":[],
+                "usedBy":[],
+                "dependency":[],
+                "count":1,
+                "type_alias":1
+            }
+        ],
+        "constraint":[],
+        "loop":[]
+    }
+}

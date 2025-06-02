@@ -1,0 +1,59 @@
+{
+    "class android::os::StatsLogEventWrapper": {
+        "variable": [
+            {
+                "count": 1,
+                "self_constraint": [],
+                "name": "bytes",
+                "under_constraint": [],
+                "dependency": [],
+                "relation": [],
+                "signature": "std::vector<uint8_t>",
+                "serialization_type": 1,
+                "usedBy": [],
+                "type": "class vector<unsigned char>",
+                "loop": [],
+                "size": -1
+            },
+            {
+                "count": 1,
+                "self_constraint": [],
+                "name": "bytes::item",
+                "under_constraint": [],
+                "dependency": [],
+                "relation": [],
+                "signature": "std::vector<uint8_t>",
+                "serialization_type": 1,
+                "usedBy": [],
+                "type": "unsigned char",
+                "loop": []
+            },
+            {
+                "count": 1,
+                "self_constraint": [],
+                "name": "android::NO_ERROR",
+                "under_constraint": [],
+                "value": 0,
+                "dependency": [],
+                "relation": [],
+                "serialization_type": 0,
+                "usedBy": [],
+                "type": "android::status_t",
+                "loop": []
+            }
+        ],
+        "dependency": [],
+        "loop": [],
+        "possibility": [
+            {
+                "return": "android::NO_ERROR",
+                "reply": [],
+                "data": [
+                    "bytes"
+                ],
+                "id": 0
+            }
+        ],
+        "constraint": []
+    }
+}

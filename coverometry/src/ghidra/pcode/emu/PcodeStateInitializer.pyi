@@ -1,0 +1,42 @@
+import ghidra.pcode.emu
+import ghidra.program.model.lang
+import ghidra.util.classfinder
+import java.lang
+
+
+class PcodeStateInitializer(ghidra.util.classfinder.ExtensionPoint, object):
+
+
+
+
+
+
+
+
+    def equals(self, __a0: object) -> bool: ...
+
+    def getClass(self) -> java.lang.Class: ...
+
+    def hashCode(self) -> int: ...
+
+    def initializeMachine(self, __a0: ghidra.pcode.emu.PcodeMachine) -> None: ...
+
+    def initializeThread(self, __a0: ghidra.pcode.emu.PcodeThread) -> None: ...
+
+    def isApplicable(self, __a0: ghidra.program.model.lang.Language) -> bool: ...
+
+    def notify(self) -> None: ...
+
+    def notifyAll(self) -> None: ...
+
+    def toString(self) -> unicode: ...
+
+    @overload
+    def wait(self) -> None: ...
+
+    @overload
+    def wait(self, __a0: long) -> None: ...
+
+    @overload
+    def wait(self, __a0: long, __a1: int) -> None: ...
+

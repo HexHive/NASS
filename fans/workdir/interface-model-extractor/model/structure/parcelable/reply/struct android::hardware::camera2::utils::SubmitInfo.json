@@ -1,0 +1,108 @@
+{
+    "struct android::hardware::camera2::utils::SubmitInfo": {
+        "variable": [
+            {
+                "count": 1,
+                "self_constraint": [],
+                "name": "mRequestId",
+                "under_constraint": [],
+                "dependency": [],
+                "relation": [],
+                "signature": "int32_t",
+                "serialization_type": 2,
+                "usedBy": [],
+                "type": "int",
+                "loop": []
+            },
+            {
+                "count": 1,
+                "self_constraint": [
+                    "constraint1"
+                ],
+                "name": "res",
+                "under_constraint": [],
+                "dependency": [],
+                "relation": [],
+                "serialization_type": 0,
+                "usedBy": [],
+                "type": "android::status_t",
+                "loop": []
+            },
+            {
+                "count": 1,
+                "self_constraint": [],
+                "name": "mLastFrameNumber",
+                "under_constraint": [],
+                "dependency": [],
+                "relation": [],
+                "signature": "int64_t",
+                "serialization_type": 2,
+                "usedBy": [],
+                "type": "long",
+                "loop": []
+            }
+        ],
+        "dependency": [
+            {
+                "filename": "BnCameraDeviceUser.json",
+                "type": "Transaction",
+                "name": "ICameraDeviceUser::2-2",
+                "possIdx": 0,
+                "varIdx": 1,
+                "varName": "_aidl_return",
+                "varType": "struct android::hardware::camera2::utils::SubmitInfo"
+            },
+            {
+                "filename": "BnCameraDeviceUser.json",
+                "type": "Transaction",
+                "name": "ICameraDeviceUser::3-3",
+                "possIdx": 0,
+                "varIdx": 1,
+                "varName": "_aidl_return",
+                "varType": "struct android::hardware::camera2::utils::SubmitInfo"
+            }
+        ],
+        "loop": [],
+        "possibility": [
+            {
+                "return": "res",
+                "reply": [
+                    "mRequestId",
+                    "mLastFrameNumber"
+                ],
+                "data": [],
+                "id": 0
+            }
+        ],
+        "constraint": [
+            {
+                "lhs": {
+                    "type": "class android::Parcel *",
+                    "name": "parcel"
+                },
+                "rhs": {
+                    "type": "class android::Parcel *",
+                    "name": "implicit_1",
+                    "value": "NULL"
+                },
+                "opcode": "==",
+                "name": "constraint0",
+                "probability": 0.5
+            },
+            {
+                "lhs": {
+                    "type": "android::status_t",
+                    "name": "res"
+                },
+                "rhs": {
+                    "type": "enum android::(anonymous at system.core.libutils.include.utils.Errors.h:45:1)",
+                    "name": "android::OK",
+                    "value": 0
+                },
+                "opcode": "!=",
+                "name": "constraint1",
+                "probability": 0.5
+            }
+        ]
+    }
+}

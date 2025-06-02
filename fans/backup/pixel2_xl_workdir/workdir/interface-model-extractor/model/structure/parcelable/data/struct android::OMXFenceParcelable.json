@@ -1,0 +1,120 @@
+{
+    "struct android::OMXFenceParcelable": {
+        "variable": [
+            {
+                "count": 1,
+                "self_constraint": [
+                    "constraint0_rhs"
+                ],
+                "name": "haveFence",
+                "under_constraint": [],
+                "dependency": [],
+                "relation": [],
+                "serialization_type": 1,
+                "usedBy": [],
+                "type": "int",
+                "loop": []
+            },
+            {
+                "count": 1,
+                "self_constraint": [
+                    "constraint0_lhs"
+                ],
+                "name": "err",
+                "under_constraint": [],
+                "dependency": [],
+                "relation": [],
+                "serialization_type": 0,
+                "usedBy": [],
+                "type": "android::status_t",
+                "loop": []
+            },
+            {
+                "count": 1,
+                "self_constraint": [
+                    "constraint1"
+                ],
+                "name": "fd",
+                "under_constraint": [
+                    {
+                        "status": true,
+                        "name": "constraint0"
+                    }
+                ],
+                "dependency": [],
+                "relation": [],
+                "takeOwnership": false,
+                "serialization_type": 1,
+                "usedBy": [],
+                "type": "FileDescriptor",
+                "loop": []
+            }
+        ],
+        "dependency": [],
+        "loop": [],
+        "possibility": [
+            {
+                "return": "fd",
+                "reply": [],
+                "data": [
+                    "haveFence",
+                    "fd"
+                ],
+                "id": 0
+            },
+            {
+                "return": "err",
+                "reply": [],
+                "data": [
+                    "haveFence",
+                    "fd"
+                ],
+                "id": 1
+            }
+        ],
+        "constraint": [
+            {
+                "lhs": {
+                    "lhs": {
+                        "type": "android::status_t",
+                        "name": "err"
+                    },
+                    "rhs": {
+                        "type": "enum android::(anonymous at system.core.libutils.include.utils.Errors.h:45:1)",
+                        "name": "android::OK",
+                        "value": 0
+                    },
+                    "opcode": "==",
+                    "name": "constraint0_lhs",
+                    "probability": 0.5
+                },
+                "rhs": {
+                    "lhs": {
+                        "type": "int",
+                        "name": "haveFence"
+                    },
+                    "opcode": "",
+                    "name": "constraint0_rhs",
+                    "probability": 0.5
+                },
+                "opcode": "&&",
+                "name": "constraint0",
+                "probability": 0.5
+            },
+            {
+                "lhs": {
+                    "type": "FileDescriptor",
+                    "name": "fd"
+                },
+                "rhs": {
+                    "type": "IntegerLiteral",
+                    "name": "implicit_3",
+                    "value": 0
+                },
+                "opcode": "<",
+                "name": "constraint1",
+                "probability": 0.1
+            }
+        ]
+    }
+}

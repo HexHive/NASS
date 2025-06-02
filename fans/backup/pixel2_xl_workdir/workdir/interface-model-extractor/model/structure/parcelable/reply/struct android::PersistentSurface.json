@@ -1,0 +1,182 @@
+{
+    "struct android::PersistentSurface": {
+        "variable": [
+            {
+                "count": 1,
+                "self_constraint": [],
+                "name": "mBufferProducer",
+                "under_constraint": [],
+                "dependency": [],
+                "relation": [],
+                "signature": "sp<class android::IGraphicBufferProducer>",
+                "serialization_type": 2,
+                "usedBy": [],
+                "type": "class android::sp<class android::IGraphicBufferProducer>",
+                "loop": [],
+                "interfaceName": "IGraphicBufferProducer"
+            },
+            {
+                "count": 1,
+                "self_constraint": [],
+                "name": "mBufferSource",
+                "under_constraint": [],
+                "dependency": [],
+                "relation": [],
+                "signature": "sp<class android::IGraphicBufferSource>",
+                "serialization_type": 2,
+                "usedBy": [],
+                "type": "class android::sp<class android::IGraphicBufferSource>",
+                "loop": [],
+                "interfaceName": "IGraphicBufferSource"
+            },
+            {
+                "count": 1,
+                "self_constraint": [
+                    "constraint1"
+                ],
+                "name": "result",
+                "under_constraint": [
+                    {
+                        "status": true,
+                        "name": "constraint0"
+                    }
+                ],
+                "dependency": [],
+                "relation": [],
+                "serialization_type": 2,
+                "usedBy": [],
+                "type": "_Bool",
+                "loop": []
+            },
+            {
+                "count": 1,
+                "self_constraint": [],
+                "name": "token.size",
+                "under_constraint": [
+                    {
+                        "status": true,
+                        "name": "constraint0"
+                    },
+                    {
+                        "status": true,
+                        "name": "constraint1"
+                    }
+                ],
+                "dependency": [],
+                "relation": [],
+                "serialization_type": 0,
+                "usedBy": [],
+                "type": "size_t",
+                "loop": []
+            },
+            {
+                "count": 1,
+                "self_constraint": [],
+                "name": "token.data",
+                "under_constraint": [
+                    {
+                        "status": true,
+                        "name": "constraint0"
+                    },
+                    {
+                        "status": true,
+                        "name": "constraint1"
+                    }
+                ],
+                "dependency": [],
+                "relation": [],
+                "serialization_type": 2,
+                "usedBy": [],
+                "type": "char [token.size]",
+                "loop": [],
+                "size": "token.size"
+            },
+            {
+                "count": 1,
+                "self_constraint": [],
+                "name": "token.data::item",
+                "under_constraint": [],
+                "dependency": [],
+                "relation": [],
+                "serialization_type": 2,
+                "usedBy": [],
+                "type": "char",
+                "loop": [],
+                "size": "token.size"
+            },
+            {
+                "count": 1,
+                "self_constraint": [],
+                "name": "implicit_6",
+                "under_constraint": [
+                    {
+                        "status": false,
+                        "name": "constraint0"
+                    }
+                ],
+                "value": false,
+                "dependency": [],
+                "relation": [],
+                "serialization_type": 2,
+                "usedBy": [],
+                "type": "_Bool",
+                "loop": []
+            },
+            {
+                "count": 1,
+                "self_constraint": [],
+                "name": "android::NO_ERROR",
+                "under_constraint": [],
+                "value": 0,
+                "dependency": [],
+                "relation": [],
+                "serialization_type": 0,
+                "usedBy": [],
+                "type": "android::status_t",
+                "loop": []
+            }
+        ],
+        "dependency": [],
+        "loop": [],
+        "possibility": [
+            {
+                "return": "android::NO_ERROR",
+                "reply": [
+                    "mBufferProducer",
+                    "mBufferSource",
+                    "result",
+                    "token.data",
+                    "implicit_6"
+                ],
+                "data": [],
+                "id": 0
+            }
+        ],
+        "constraint": [
+            {
+                "lhs": {
+                    "type": "class android::sp<struct android::hidl::base::V1_0::IBase>",
+                    "name": "mHidlTarget",
+                    "signature": "sp<struct android::hidl::base::V1_0::IBase>"
+                },
+                "rhs": {
+                    "type": "const struct android::hidl::base::V1_0::IBase *",
+                    "name": "implicit_3",
+                    "value": "NULL"
+                },
+                "opcode": "operator!=",
+                "name": "constraint0",
+                "probability": 0.5
+            },
+            {
+                "lhs": {
+                    "type": "_Bool",
+                    "name": "result"
+                },
+                "opcode": "",
+                "name": "constraint1",
+                "probability": 0.5
+            }
+        ]
+    }
+}

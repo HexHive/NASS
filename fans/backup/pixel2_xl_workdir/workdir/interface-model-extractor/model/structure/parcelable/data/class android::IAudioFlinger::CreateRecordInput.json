@@ -1,0 +1,632 @@
+{
+    "class android::IAudioFlinger::CreateRecordInput": {
+        "variable": [
+            {
+                "count": 1,
+                "structSize": 272,
+                "self_constraint": [],
+                "name": "attr",
+                "under_constraint": [],
+                "type_alias": 1,
+                "dependency": [],
+                "relation": [],
+                "signature": "audio_attributes_t",
+                "serialization_type": 1,
+                "usedBy": [],
+                "type": "struct audio_attributes_t",
+                "loop": [],
+                "size": 1
+            },
+            {
+                "count": 1,
+                "self_constraint": [],
+                "name": "implicit_1",
+                "under_constraint": [],
+                "value": 272,
+                "dependency": [],
+                "relation": [],
+                "serialization_type": 0,
+                "sizeof": "audio_attributes_t",
+                "type": "IntegerLiteral",
+                "usedBy": [],
+                "loop": []
+            },
+            {
+                "count": 1,
+                "self_constraint": [],
+                "name": "android::DEAD_OBJECT",
+                "under_constraint": [
+                    {
+                        "status": true,
+                        "name": "constraint0"
+                    }
+                ],
+                "value": -32,
+                "dependency": [],
+                "relation": [],
+                "serialization_type": 0,
+                "usedBy": [],
+                "type": "android::status_t",
+                "loop": []
+            },
+            {
+                "count": 1,
+                "structSize": 12,
+                "self_constraint": [],
+                "name": "config",
+                "under_constraint": [
+                    {
+                        "status": false,
+                        "name": "constraint0"
+                    }
+                ],
+                "dependency": [],
+                "relation": [],
+                "signature": "audio_config_base_t",
+                "serialization_type": 1,
+                "usedBy": [],
+                "type": "struct audio_config_base",
+                "loop": [],
+                "size": 1
+            },
+            {
+                "count": 1,
+                "self_constraint": [],
+                "name": "implicit_3",
+                "under_constraint": [
+                    {
+                        "status": false,
+                        "name": "constraint0"
+                    }
+                ],
+                "value": 12,
+                "dependency": [],
+                "relation": [],
+                "serialization_type": 0,
+                "sizeof": "struct audio_config_base",
+                "type": "IntegerLiteral",
+                "usedBy": [],
+                "loop": []
+            },
+            {
+                "count": 1,
+                "self_constraint": [],
+                "name": "clientInfo",
+                "under_constraint": [
+                    {
+                        "status": false,
+                        "name": "constraint0"
+                    },
+                    {
+                        "status": false,
+                        "name": "constraint1"
+                    }
+                ],
+                "dependency": [],
+                "relation": [],
+                "signature": "class android::AudioClient",
+                "serialization_type": 1,
+                "usedBy": [],
+                "type": "class android::AudioClient",
+                "loop": []
+            },
+            {
+                "count": 1,
+                "self_constraint": [],
+                "name": "opPackageName",
+                "under_constraint": [
+                    {
+                        "status": false,
+                        "name": "constraint0"
+                    },
+                    {
+                        "status": false,
+                        "name": "constraint1"
+                    },
+                    {
+                        "status": false,
+                        "name": "constraint2"
+                    }
+                ],
+                "dependency": [],
+                "relation": [],
+                "serialization_type": 1,
+                "usedBy": [],
+                "type": "class android::String16",
+                "loop": []
+            },
+            {
+                "count": 1,
+                "structSize": 4,
+                "self_constraint": [],
+                "name": "flags",
+                "under_constraint": [
+                    {
+                        "status": false,
+                        "name": "constraint0"
+                    },
+                    {
+                        "status": false,
+                        "name": "constraint1"
+                    },
+                    {
+                        "status": false,
+                        "name": "constraint2"
+                    }
+                ],
+                "type_alias": 1,
+                "dependency": [
+                    {
+                        "filename": "class android::IAudioFlinger::CreateRecordOutput.json",
+                        "type": "Structure",
+                        "name": "class android::IAudioFlinger::CreateRecordOutput",
+                        "possIdx": 0,
+                        "varIdx": 0,
+                        "varName": "flags",
+                        "varType": "enum audio_input_flags_t"
+                    }
+                ],
+                "relation": [],
+                "signature": "audio_input_flags_t",
+                "serialization_type": 1,
+                "usedBy": [],
+                "type": "enum audio_input_flags_t",
+                "loop": [],
+                "size": 1
+            },
+            {
+                "count": 1,
+                "self_constraint": [],
+                "name": "implicit_7",
+                "under_constraint": [
+                    {
+                        "status": false,
+                        "name": "constraint0"
+                    },
+                    {
+                        "status": false,
+                        "name": "constraint1"
+                    },
+                    {
+                        "status": false,
+                        "name": "constraint2"
+                    }
+                ],
+                "value": 4,
+                "dependency": [],
+                "relation": [],
+                "serialization_type": 0,
+                "sizeof": "audio_input_flags_t",
+                "type": "IntegerLiteral",
+                "usedBy": [],
+                "loop": []
+            },
+            {
+                "count": 1,
+                "self_constraint": [],
+                "name": "frameCount",
+                "under_constraint": [
+                    {
+                        "status": false,
+                        "name": "constraint0"
+                    },
+                    {
+                        "status": false,
+                        "name": "constraint1"
+                    },
+                    {
+                        "status": false,
+                        "name": "constraint2"
+                    }
+                ],
+                "dependency": [
+                    {
+                        "filename": "class android::IAudioFlinger::CreateTrackOutput.json",
+                        "type": "Structure",
+                        "name": "class android::IAudioFlinger::CreateTrackOutput",
+                        "possIdx": 0,
+                        "varIdx": 1,
+                        "varName": "frameCount",
+                        "varType": "long long"
+                    },
+                    {
+                        "filename": "class android::IAudioFlinger::CreateTrackOutput.json",
+                        "type": "Structure",
+                        "name": "class android::IAudioFlinger::CreateTrackOutput",
+                        "possIdx": 0,
+                        "varIdx": 6,
+                        "varName": "afFrameCount",
+                        "varType": "long long"
+                    },
+                    {
+                        "filename": "class android::IAudioFlinger::CreateRecordOutput.json",
+                        "type": "Structure",
+                        "name": "class android::IAudioFlinger::CreateRecordOutput",
+                        "possIdx": 0,
+                        "varIdx": 1,
+                        "varName": "frameCount",
+                        "varType": "long long"
+                    }
+                ],
+                "relation": [],
+                "serialization_type": 1,
+                "usedBy": [],
+                "type": "long long",
+                "loop": []
+            },
+            {
+                "count": 1,
+                "self_constraint": [],
+                "name": "notificationFrameCount",
+                "under_constraint": [
+                    {
+                        "status": false,
+                        "name": "constraint0"
+                    },
+                    {
+                        "status": false,
+                        "name": "constraint1"
+                    },
+                    {
+                        "status": false,
+                        "name": "constraint2"
+                    }
+                ],
+                "dependency": [
+                    {
+                        "filename": "class android::IAudioFlinger::CreateTrackOutput.json",
+                        "type": "Structure",
+                        "name": "class android::IAudioFlinger::CreateTrackOutput",
+                        "possIdx": 0,
+                        "varIdx": 2,
+                        "varName": "notificationFrameCount",
+                        "varType": "long long"
+                    },
+                    {
+                        "filename": "class android::IAudioFlinger::CreateRecordOutput.json",
+                        "type": "Structure",
+                        "name": "class android::IAudioFlinger::CreateRecordOutput",
+                        "possIdx": 0,
+                        "varIdx": 2,
+                        "varName": "notificationFrameCount",
+                        "varType": "long long"
+                    }
+                ],
+                "relation": [],
+                "serialization_type": 1,
+                "usedBy": [],
+                "type": "long long",
+                "loop": []
+            },
+            {
+                "count": 1,
+                "structSize": 4,
+                "self_constraint": [],
+                "name": "selectedDeviceId",
+                "under_constraint": [
+                    {
+                        "status": false,
+                        "name": "constraint0"
+                    },
+                    {
+                        "status": false,
+                        "name": "constraint1"
+                    },
+                    {
+                        "status": false,
+                        "name": "constraint2"
+                    }
+                ],
+                "dependency": [
+                    {
+                        "filename": "BnMediaPlayer.json",
+                        "type": "Transaction",
+                        "name": "IMediaPlayer::41-41",
+                        "possIdx": 1,
+                        "varIdx": 1,
+                        "varName": "deviceId",
+                        "varType": "audio_port_handle_t"
+                    },
+                    {
+                        "filename": "BnAudioPolicyService.json",
+                        "type": "Transaction",
+                        "name": "IAudioPolicyService::37-37",
+                        "possIdx": 1,
+                        "varIdx": 3,
+                        "varName": "selectedDeviceId_1",
+                        "varType": "audio_port_handle_t"
+                    },
+                    {
+                        "filename": "BnAudioPolicyService.json",
+                        "type": "Transaction",
+                        "name": "IAudioPolicyService::37-37",
+                        "possIdx": 1,
+                        "varIdx": 4,
+                        "varName": "portId_1",
+                        "varType": "audio_port_handle_t"
+                    },
+                    {
+                        "filename": "BnAudioPolicyService.json",
+                        "type": "Transaction",
+                        "name": "IAudioPolicyService::12-12",
+                        "possIdx": 1,
+                        "varIdx": 2,
+                        "varName": "selectedDeviceId_1",
+                        "varType": "audio_port_handle_t"
+                    },
+                    {
+                        "filename": "BnAudioPolicyService.json",
+                        "type": "Transaction",
+                        "name": "IAudioPolicyService::12-12",
+                        "possIdx": 1,
+                        "varIdx": 3,
+                        "varName": "portId_1",
+                        "varType": "audio_port_handle_t"
+                    },
+                    {
+                        "filename": "BnMediaRecorder.json",
+                        "type": "Transaction",
+                        "name": "IMediaRecorder::29-29",
+                        "possIdx": 1,
+                        "varIdx": 1,
+                        "varName": "deviceId",
+                        "varType": "audio_port_handle_t"
+                    },
+                    {
+                        "filename": "class android::IAudioFlinger::CreateTrackOutput.json",
+                        "type": "Structure",
+                        "name": "class android::IAudioFlinger::CreateTrackOutput",
+                        "possIdx": 0,
+                        "varIdx": 3,
+                        "varName": "selectedDeviceId",
+                        "varType": "audio_port_handle_t"
+                    },
+                    {
+                        "filename": "class android::IAudioFlinger::CreateRecordOutput.json",
+                        "type": "Structure",
+                        "name": "class android::IAudioFlinger::CreateRecordOutput",
+                        "possIdx": 0,
+                        "varIdx": 3,
+                        "varName": "selectedDeviceId",
+                        "varType": "audio_port_handle_t"
+                    }
+                ],
+                "relation": [],
+                "signature": "audio_port_handle_t",
+                "serialization_type": 1,
+                "usedBy": [],
+                "type": "audio_port_handle_t",
+                "loop": [],
+                "size": 1
+            },
+            {
+                "count": 1,
+                "self_constraint": [],
+                "name": "implicit_11",
+                "under_constraint": [
+                    {
+                        "status": false,
+                        "name": "constraint0"
+                    },
+                    {
+                        "status": false,
+                        "name": "constraint1"
+                    },
+                    {
+                        "status": false,
+                        "name": "constraint2"
+                    }
+                ],
+                "value": 4,
+                "dependency": [],
+                "relation": [],
+                "serialization_type": 0,
+                "sizeof": "audio_port_handle_t",
+                "type": "IntegerLiteral",
+                "usedBy": [],
+                "loop": []
+            },
+            {
+                "count": 1,
+                "structSize": 4,
+                "self_constraint": [],
+                "name": "sessionId",
+                "under_constraint": [
+                    {
+                        "status": false,
+                        "name": "constraint0"
+                    },
+                    {
+                        "status": false,
+                        "name": "constraint1"
+                    },
+                    {
+                        "status": false,
+                        "name": "constraint2"
+                    }
+                ],
+                "type_alias": 1,
+                "dependency": [
+                    {
+                        "filename": "BnAudioPolicyService.json",
+                        "type": "Transaction",
+                        "name": "IAudioPolicyService::38-38",
+                        "possIdx": 1,
+                        "varIdx": 1,
+                        "varName": "session",
+                        "varType": "enum audio_session_t"
+                    },
+                    {
+                        "filename": "class android::IAudioFlinger::CreateTrackOutput.json",
+                        "type": "Structure",
+                        "name": "class android::IAudioFlinger::CreateTrackOutput",
+                        "possIdx": 0,
+                        "varIdx": 4,
+                        "varName": "sessionId",
+                        "varType": "enum audio_session_t"
+                    },
+                    {
+                        "filename": "class android::IAudioFlinger::CreateRecordOutput.json",
+                        "type": "Structure",
+                        "name": "class android::IAudioFlinger::CreateRecordOutput",
+                        "possIdx": 0,
+                        "varIdx": 4,
+                        "varName": "sessionId",
+                        "varType": "enum audio_session_t"
+                    }
+                ],
+                "relation": [],
+                "signature": "audio_session_t",
+                "serialization_type": 1,
+                "usedBy": [],
+                "type": "enum audio_session_t",
+                "loop": [],
+                "size": 1
+            },
+            {
+                "count": 1,
+                "self_constraint": [],
+                "name": "implicit_13",
+                "under_constraint": [
+                    {
+                        "status": false,
+                        "name": "constraint0"
+                    },
+                    {
+                        "status": false,
+                        "name": "constraint1"
+                    },
+                    {
+                        "status": false,
+                        "name": "constraint2"
+                    }
+                ],
+                "value": 4,
+                "dependency": [],
+                "relation": [],
+                "serialization_type": 0,
+                "sizeof": "audio_session_t",
+                "type": "IntegerLiteral",
+                "usedBy": [],
+                "loop": []
+            },
+            {
+                "count": 1,
+                "self_constraint": [],
+                "name": "android::NO_ERROR",
+                "under_constraint": [
+                    {
+                        "status": false,
+                        "name": "constraint0"
+                    },
+                    {
+                        "status": false,
+                        "name": "constraint1"
+                    },
+                    {
+                        "status": false,
+                        "name": "constraint2"
+                    }
+                ],
+                "value": 0,
+                "dependency": [],
+                "relation": [],
+                "serialization_type": 0,
+                "usedBy": [],
+                "type": "android::status_t",
+                "loop": []
+            }
+        ],
+        "dependency": [],
+        "loop": [],
+        "possibility": [
+            {
+                "return": "android::DEAD_OBJECT",
+                "reply": [],
+                "data": [
+                    "attr"
+                ],
+                "id": 0
+            },
+            {
+                "return": "android::DEAD_OBJECT",
+                "reply": [],
+                "data": [
+                    "attr",
+                    "config"
+                ],
+                "id": 1
+            },
+            {
+                "return": "android::DEAD_OBJECT",
+                "reply": [],
+                "data": [
+                    "attr",
+                    "config",
+                    "clientInfo"
+                ],
+                "id": 2
+            },
+            {
+                "return": "android::NO_ERROR",
+                "reply": [],
+                "data": [
+                    "attr",
+                    "config",
+                    "clientInfo",
+                    "opPackageName",
+                    "flags",
+                    "frameCount",
+                    "notificationFrameCount",
+                    "selectedDeviceId",
+                    "sessionId"
+                ],
+                "id": 3
+            }
+        ],
+        "constraint": [
+            {
+                "lhs": {
+                    "type": "android::status_t",
+                    "name": "implicit_2"
+                },
+                "rhs": {
+                    "type": "android::status_t",
+                    "name": "android::NO_ERROR",
+                    "value": 0
+                },
+                "opcode": "!=",
+                "name": "constraint0",
+                "probability": 0.1
+            },
+            {
+                "lhs": {
+                    "type": "android::status_t",
+                    "name": "implicit_4"
+                },
+                "rhs": {
+                    "type": "android::status_t",
+                    "name": "android::NO_ERROR",
+                    "value": 0
+                },
+                "opcode": "!=",
+                "name": "constraint1",
+                "probability": 0.1
+            },
+            {
+                "lhs": {
+                    "type": "android::status_t",
+                    "name": "implicit_5"
+                },
+                "rhs": {
+                    "type": "android::status_t",
+                    "name": "android::NO_ERROR",
+                    "value": 0
+                },
+                "opcode": "!=",
+                "name": "constraint2",
+                "probability": 0.1
+            }
+        ]
+    }
+}

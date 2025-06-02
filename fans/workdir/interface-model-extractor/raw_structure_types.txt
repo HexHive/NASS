@@ -1,0 +1,34 @@
+audio_attributes_t
+struct android::os::storaged::io_stats
+struct audio_port
+struct android::layer_state_t::matrix22_t
+struct sound_trigger_module_descriptor
+struct audio_config_base
+struct audio_uuid_s
+struct audio_patch
+struct audio_config
+struct sockaddr_in
+struct audio_port_config
+audio_offload_info_t
+struct android::CryptoPlugin::SubSample
+struct effect_descriptor_s
+struct android_smpte2086_metadata
+struct android_cta861_3_metadata
+struct audio_gain
+union audio_port::(anonymous at system.media.audio.include.system.audio.h:478:5)
+struct audio_port_config
+struct sound_trigger_properties
+struct audio_port_config
+struct in_addr
+union audio_port_config::(anonymous at system.media.audio.include.system.audio.h:427:5)
+struct audio_gain_config
+struct audio_uuid_s
+struct android_xy_color
+struct audio_port_session_ext
+struct audio_port_device_ext
+struct audio_port_mix_ext
+struct audio_uuid_s
+struct audio_port_config_mix_ext
+struct audio_port_config_device_ext
+struct audio_port_config_session_ext
+union audio_port_config_mix_ext::(anonymous at system.media.audio.include.system.audio.h:403:5)

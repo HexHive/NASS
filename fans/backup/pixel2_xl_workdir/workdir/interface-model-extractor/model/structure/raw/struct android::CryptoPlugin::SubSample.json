@@ -1,0 +1,44 @@
+{
+    "struct android::CryptoPlugin::SubSample":{
+        "dependency":[],
+        "possibility":[
+            {
+                "id":0,
+                "data":[
+                    "android::CryptoPlugin::SubSample::mNumBytesOfClearData",
+                    "android::CryptoPlugin::SubSample::mNumBytesOfEncryptedData"
+                ],
+                "reply":[],
+                "return":""
+            }
+        ],
+        "variable":[
+            {
+                "name":"android::CryptoPlugin::SubSample::mNumBytesOfClearData",
+                "type":"unsigned int",
+                "serialization_type":1,
+                "self_constraint":[],
+                "under_constraint":[],
+                "relation":[],
+                "loop":[],
+                "usedBy":[],
+                "dependency":[],
+                "count":1
+            },
+            {
+                "name":"android::CryptoPlugin::SubSample::mNumBytesOfEncryptedData",
+                "type":"unsigned int",
+                "serialization_type":1,
+                "self_constraint":[],
+                "under_constraint":[],
+                "relation":[],
+                "loop":[],
+                "usedBy":[],
+                "dependency":[],
+                "count":1
+            }
+        ],
+        "constraint":[],
+        "loop":[]
+    }
+}

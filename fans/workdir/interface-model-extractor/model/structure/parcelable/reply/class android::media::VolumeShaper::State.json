@@ -1,0 +1,121 @@
+{
+    "class android::media::VolumeShaper::State": {
+        "variable": [
+            {
+                "count": 1,
+                "self_constraint": [],
+                "name": "mVolume",
+                "under_constraint": [],
+                "dependency": [],
+                "relation": [],
+                "signature": "android::media::VolumeShaper::T",
+                "serialization_type": 2,
+                "usedBy": [],
+                "type": "float",
+                "loop": []
+            },
+            {
+                "count": 1,
+                "self_constraint": [
+                    "constraint1"
+                ],
+                "name": "implicit_2",
+                "under_constraint": [],
+                "dependency": [],
+                "relation": [],
+                "serialization_type": 0,
+                "usedBy": [],
+                "type": "android::status_t",
+                "loop": []
+            },
+            {
+                "count": 1,
+                "self_constraint": [],
+                "name": "mXOffset",
+                "under_constraint": [
+                    {
+                        "status": false,
+                        "name": "constraint1"
+                    }
+                ],
+                "dependency": [],
+                "relation": [],
+                "signature": "android::media::VolumeShaper::S",
+                "serialization_type": 2,
+                "usedBy": [],
+                "type": "float",
+                "loop": []
+            },
+            {
+                "count": 1,
+                "self_constraint": [],
+                "name": "implicit_3",
+                "under_constraint": [],
+                "dependency": [],
+                "relation": [],
+                "serialization_type": 0,
+                "usedBy": [],
+                "type": "android::status_t",
+                "loop": []
+            }
+        ],
+        "dependency": [
+            {
+                "filename": "BnMediaPlayer.json",
+                "type": "Transaction",
+                "name": "IMediaPlayer::37-37",
+                "possIdx": 1,
+                "varIdx": 0,
+                "varName": "state",
+                "varType": "class android::media::VolumeShaper::State"
+            },
+            {
+                "filename": "BnAudioTrack.json",
+                "type": "Transaction",
+                "name": "IAudioTrack::12-12",
+                "possIdx": 1,
+                "varIdx": 0,
+                "varName": "state",
+                "varType": "class android::media::VolumeShaper::State"
+            }
+        ],
+        "loop": [],
+        "possibility": [
+            {
+                "return": "implicit_3",
+                "reply": [
+                    "mVolume",
+                    "mXOffset"
+                ],
+                "data": [],
+                "id": 0
+            }
+        ],
+        "constraint": [
+            {
+                "lhs": {
+                    "type": "class android::Parcel *",
+                    "name": "parcel"
+                },
+                "rhs": {
+                    "type": "class android::Parcel *",
+                    "name": "implicit_1",
+                    "value": "NULL"
+                },
+                "opcode": "==",
+                "name": "constraint0",
+                "probability": 0.5
+            },
+            {
+                "lhs": {
+                    "serialization_type": 0,
+                    "type": "android::status_t",
+                    "name": "implicit_2"
+                },
+                "opcode": "",
+                "name": "constraint1",
+                "probability": 0.5
+            }
+        ]
+    }
+}

@@ -1,0 +1,49 @@
+import ghidra.pcode.emu.sys
+import java.lang
+import org.apache.commons.lang3.tuple
+
+
+class PairedEmuFileContents(object, ghidra.pcode.emu.sys.EmuFileContents):
+
+
+
+
+    def __init__(self, __a0: ghidra.pcode.emu.sys.EmuFileContents, __a1: ghidra.pcode.emu.sys.EmuFileContents): ...
+
+
+
+    def equals(self, __a0: object) -> bool: ...
+
+    def getClass(self) -> java.lang.Class: ...
+
+    def hashCode(self) -> int: ...
+
+    def notify(self) -> None: ...
+
+    def notifyAll(self) -> None: ...
+
+    @overload
+    def read(self, __a0: long, __a1: org.apache.commons.lang3.tuple.Pair, __a2: long) -> long: ...
+
+    @overload
+    def read(self, __a0: long, __a1: object, __a2: long) -> long: ...
+
+    def toString(self) -> unicode: ...
+
+    def truncate(self) -> None: ...
+
+    @overload
+    def wait(self) -> None: ...
+
+    @overload
+    def wait(self, __a0: long) -> None: ...
+
+    @overload
+    def wait(self, __a0: long, __a1: int) -> None: ...
+
+    @overload
+    def write(self, __a0: long, __a1: org.apache.commons.lang3.tuple.Pair, __a2: long) -> long: ...
+
+    @overload
+    def write(self, __a0: long, __a1: object, __a2: long) -> long: ...
+

@@ -1,0 +1,44 @@
+{
+    "struct sound_trigger_module_descriptor":{
+        "dependency":[],
+        "possibility":[
+            {
+                "id":0,
+                "data":[
+                    "sound_trigger_module_descriptor::handle",
+                    "sound_trigger_module_descriptor::properties"
+                ],
+                "reply":[],
+                "return":""
+            }
+        ],
+        "variable":[
+            {
+                "name":"sound_trigger_module_descriptor::handle",
+                "type":"sound_trigger_module_handle_t",
+                "serialization_type":1,
+                "self_constraint":[],
+                "under_constraint":[],
+                "relation":[],
+                "loop":[],
+                "usedBy":[],
+                "dependency":[],
+                "count":1
+            },
+            {
+                "name":"sound_trigger_module_descriptor::properties",
+                "type":"struct sound_trigger_properties",
+                "serialization_type":1,
+                "self_constraint":[],
+                "under_constraint":[],
+                "relation":[],
+                "loop":[],
+                "usedBy":[],
+                "dependency":[],
+                "count":1
+            }
+        ],
+        "constraint":[],
+        "loop":[]
+    }
+}

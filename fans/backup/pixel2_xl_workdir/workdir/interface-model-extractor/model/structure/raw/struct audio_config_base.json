@@ -1,0 +1,58 @@
+{
+    "struct audio_config_base":{
+        "dependency":[],
+        "possibility":[
+            {
+                "id":0,
+                "data":[
+                    "audio_config_base::sample_rate",
+                    "audio_config_base::channel_mask",
+                    "audio_config_base::format"
+                ],
+                "reply":[],
+                "return":""
+            }
+        ],
+        "variable":[
+            {
+                "name":"audio_config_base::sample_rate",
+                "type":"unsigned int",
+                "serialization_type":1,
+                "self_constraint":[],
+                "under_constraint":[],
+                "relation":[],
+                "loop":[],
+                "usedBy":[],
+                "dependency":[],
+                "count":1
+            },
+            {
+                "name":"audio_config_base::channel_mask",
+                "type":"audio_channel_mask_t",
+                "serialization_type":1,
+                "self_constraint":[],
+                "under_constraint":[],
+                "relation":[],
+                "loop":[],
+                "usedBy":[],
+                "dependency":[],
+                "count":1
+            },
+            {
+                "name":"audio_config_base::format",
+                "type":"enum audio_format_t",
+                "serialization_type":1,
+                "self_constraint":[],
+                "under_constraint":[],
+                "relation":[],
+                "loop":[],
+                "usedBy":[],
+                "dependency":[],
+                "count":1,
+                "type_alias":1
+            }
+        ],
+        "constraint":[],
+        "loop":[]
+    }
+}

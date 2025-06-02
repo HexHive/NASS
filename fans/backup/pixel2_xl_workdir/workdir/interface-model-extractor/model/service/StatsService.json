@@ -1,0 +1,217 @@
+{
+    "IStatsManager::1598246212-1598246212": {
+        "code": [
+            1598246212
+        ],
+        "dependency": [],
+        "possibility": [
+            {
+                "id": 0,
+                "data": [
+                    "in",
+                    "out",
+                    "err",
+                    "argc",
+                    "implicit_7",
+                    "shellCallback",
+                    "resultReceiver"
+                ],
+                "reply": [],
+                "return": "android::NO_ERROR"
+            }
+        ],
+        "variable": [
+            {
+                "type": "FileDescriptor",
+                "name": "in",
+                "serialization_type": 1,
+                "takeOwnership": false,
+                "self_constraint": [],
+                "under_constraint": [],
+                "relation": [],
+                "loop": [],
+                "usedBy": [],
+                "dependency": [],
+                "count": 1
+            },
+            {
+                "type": "FileDescriptor",
+                "name": "out",
+                "serialization_type": 1,
+                "takeOwnership": false,
+                "self_constraint": [],
+                "under_constraint": [],
+                "relation": [],
+                "loop": [],
+                "usedBy": [],
+                "dependency": [],
+                "count": 1
+            },
+            {
+                "type": "FileDescriptor",
+                "name": "err",
+                "serialization_type": 1,
+                "takeOwnership": false,
+                "self_constraint": [],
+                "under_constraint": [],
+                "relation": [],
+                "loop": [],
+                "usedBy": [],
+                "dependency": [],
+                "count": 1
+            },
+            {
+                "type": "int",
+                "name": "argc",
+                "serialization_type": 1,
+                "self_constraint": [
+                    "constraint0_lhs"
+                ],
+                "under_constraint": [],
+                "relation": [],
+                "loop": [],
+                "usedBy": [],
+                "dependency": [],
+                "count": 1
+            },
+            {
+                "name": "i",
+                "type": "int",
+                "value": 0,
+                "serialization_type": 0,
+                "self_constraint": [
+                    "constraint0_lhs"
+                ],
+                "under_constraint": [],
+                "relation": [],
+                "loop": [],
+                "usedBy": [],
+                "dependency": [],
+                "count": 1
+            },
+            {
+                "type": "size_t",
+                "name": "dataAvail",
+                "serialization_type": 0,
+                "self_constraint": [
+                    "constraint0_rhs"
+                ],
+                "under_constraint": [],
+                "relation": [],
+                "loop": [
+                    "loop0"
+                ],
+                "usedBy": [],
+                "dependency": [],
+                "count": 1
+            },
+            {
+                "type": "class android::String16",
+                "name": "implicit_7",
+                "serialization_type": 1,
+                "self_constraint": [],
+                "under_constraint": [],
+                "relation": [],
+                "loop": [
+                    "loop0"
+                ],
+                "usedBy": [],
+                "dependency": [],
+                "count": 1
+            },
+            {
+                "type": "class android::sp<class android::IShellCallback>",
+                "name": "shellCallback",
+                "serialization_type": 1,
+                "self_constraint": [],
+                "under_constraint": [],
+                "relation": [],
+                "loop": [],
+                "usedBy": [],
+                "dependency": [],
+                "count": 1,
+                "interfaceName": "IShellCallback"
+            },
+            {
+                "type": "class android::sp<class android::IResultReceiver>",
+                "name": "resultReceiver",
+                "serialization_type": 1,
+                "self_constraint": [],
+                "under_constraint": [],
+                "relation": [],
+                "loop": [],
+                "usedBy": [],
+                "dependency": [],
+                "count": 1,
+                "interfaceName": "IResultReceiver"
+            },
+            {
+                "name": "android::NO_ERROR",
+                "type": "android::status_t",
+                "value": 0,
+                "serialization_type": 0,
+                "self_constraint": [],
+                "under_constraint": [],
+                "relation": [],
+                "loop": [],
+                "usedBy": [],
+                "dependency": [],
+                "count": 1
+            }
+        ],
+        "constraint": [
+            {
+                "name": "constraint0",
+                "opcode": "&&",
+                "lhs": {
+                    "opcode": "<",
+                    "lhs": {
+                        "name": "i",
+                        "type": "int"
+                    },
+                    "rhs": {
+                        "name": "argc",
+                        "type": "int"
+                    },
+                    "name": "constraint0_lhs",
+                    "probability": 0.5
+                },
+                "rhs": {
+                    "opcode": ">",
+                    "lhs": {
+                        "type": "size_t",
+                        "name": "dataAvail",
+                        "serialization_type": 0
+                    },
+                    "rhs": {
+                        "name": "implicit_6",
+                        "type": "IntegerLiteral",
+                        "value": 0
+                    },
+                    "name": "constraint0_rhs",
+                    "probability": 0.5
+                },
+                "probability": 0.5
+            }
+        ],
+        "loop": [
+            {
+                "name": "loop0",
+                "counter": {
+                    "name": "i",
+                    "type": "int",
+                    "value": 0
+                },
+                "constraint": "constraint0",
+                "inc": {
+                    "opcode": "++",
+                    "name": "i",
+                    "type": "int"
+                }
+            }
+        ],
+        "serviceName": "stats",
+        "interfaceName": "IStatsManager",
+        "interfaceToken": "android.os.IStatsManager"
+    }
+}

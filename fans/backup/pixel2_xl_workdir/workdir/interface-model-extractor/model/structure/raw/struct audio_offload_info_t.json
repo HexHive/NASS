@@ -1,0 +1,190 @@
+{
+    "struct audio_offload_info_t":{
+        "dependency":[],
+        "possibility":[
+            {
+                "id":0,
+                "data":[
+                    "(anonymous struct)::version",
+                    "(anonymous struct)::size",
+                    "(anonymous struct)::sample_rate",
+                    "(anonymous struct)::channel_mask",
+                    "(anonymous struct)::format",
+                    "(anonymous struct)::stream_type",
+                    "(anonymous struct)::bit_rate",
+                    "(anonymous struct)::duration_us",
+                    "(anonymous struct)::has_video",
+                    "(anonymous struct)::is_streaming",
+                    "(anonymous struct)::bit_width",
+                    "(anonymous struct)::offload_buffer_size",
+                    "(anonymous struct)::usage"
+                ],
+                "reply":[],
+                "return":""
+            }
+        ],
+        "variable":[
+            {
+                "name":"(anonymous struct)::version",
+                "type":"unsigned short",
+                "serialization_type":1,
+                "self_constraint":[],
+                "under_constraint":[],
+                "relation":[],
+                "loop":[],
+                "usedBy":[],
+                "dependency":[],
+                "count":1
+            },
+            {
+                "name":"(anonymous struct)::size",
+                "type":"unsigned short",
+                "serialization_type":1,
+                "self_constraint":[],
+                "under_constraint":[],
+                "relation":[],
+                "loop":[],
+                "usedBy":[],
+                "dependency":[],
+                "count":1
+            },
+            {
+                "name":"(anonymous struct)::sample_rate",
+                "type":"unsigned int",
+                "serialization_type":1,
+                "self_constraint":[],
+                "under_constraint":[],
+                "relation":[],
+                "loop":[],
+                "usedBy":[],
+                "dependency":[],
+                "count":1
+            },
+            {
+                "name":"(anonymous struct)::channel_mask",
+                "type":"audio_channel_mask_t",
+                "serialization_type":1,
+                "self_constraint":[],
+                "under_constraint":[],
+                "relation":[],
+                "loop":[],
+                "usedBy":[],
+                "dependency":[],
+                "count":1
+            },
+            {
+                "name":"(anonymous struct)::format",
+                "type":"enum audio_format_t",
+                "serialization_type":1,
+                "self_constraint":[],
+                "under_constraint":[],
+                "relation":[],
+                "loop":[],
+                "usedBy":[],
+                "dependency":[],
+                "count":1,
+                "type_alias":1
+            },
+            {
+                "name":"(anonymous struct)::stream_type",
+                "type":"enum audio_stream_type_t",
+                "serialization_type":1,
+                "self_constraint":[],
+                "under_constraint":[],
+                "relation":[],
+                "loop":[],
+                "usedBy":[],
+                "dependency":[],
+                "count":1,
+                "type_alias":1
+            },
+            {
+                "name":"(anonymous struct)::bit_rate",
+                "type":"unsigned int",
+                "serialization_type":1,
+                "self_constraint":[],
+                "under_constraint":[],
+                "relation":[],
+                "loop":[],
+                "usedBy":[],
+                "dependency":[],
+                "count":1
+            },
+            {
+                "name":"(anonymous struct)::duration_us",
+                "type":"long long",
+                "serialization_type":1,
+                "self_constraint":[],
+                "under_constraint":[],
+                "relation":[],
+                "loop":[],
+                "usedBy":[],
+                "dependency":[],
+                "count":1
+            },
+            {
+                "name":"(anonymous struct)::has_video",
+                "type":"_Bool",
+                "serialization_type":1,
+                "self_constraint":[],
+                "under_constraint":[],
+                "relation":[],
+                "loop":[],
+                "usedBy":[],
+                "dependency":[],
+                "count":1
+            },
+            {
+                "name":"(anonymous struct)::is_streaming",
+                "type":"_Bool",
+                "serialization_type":1,
+                "self_constraint":[],
+                "under_constraint":[],
+                "relation":[],
+                "loop":[],
+                "usedBy":[],
+                "dependency":[],
+                "count":1
+            },
+            {
+                "name":"(anonymous struct)::bit_width",
+                "type":"unsigned int",
+                "serialization_type":1,
+                "self_constraint":[],
+                "under_constraint":[],
+                "relation":[],
+                "loop":[],
+                "usedBy":[],
+                "dependency":[],
+                "count":1
+            },
+            {
+                "name":"(anonymous struct)::offload_buffer_size",
+                "type":"unsigned int",
+                "serialization_type":1,
+                "self_constraint":[],
+                "under_constraint":[],
+                "relation":[],
+                "loop":[],
+                "usedBy":[],
+                "dependency":[],
+                "count":1
+            },
+            {
+                "name":"(anonymous struct)::usage",
+                "type":"enum audio_usage_t",
+                "serialization_type":1,
+                "self_constraint":[],
+                "under_constraint":[],
+                "relation":[],
+                "loop":[],
+                "usedBy":[],
+                "dependency":[],
+                "count":1,
+                "type_alias":1
+            }
+        ],
+        "constraint":[],
+        "loop":[]
+    }
+}

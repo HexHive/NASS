@@ -1,0 +1,73 @@
+from typing import List
+import ghidra.app.util.bin.format.golang.rtti.types
+import java.lang
+import java.util
+
+
+class GoTypeFlag(java.lang.Enum):
+    ExtraStar: ghidra.app.util.bin.format.golang.rtti.types.GoTypeFlag = ExtraStar
+    Named: ghidra.app.util.bin.format.golang.rtti.types.GoTypeFlag = Named
+    RegularMemory: ghidra.app.util.bin.format.golang.rtti.types.GoTypeFlag = RegularMemory
+    Uncommon: ghidra.app.util.bin.format.golang.rtti.types.GoTypeFlag = Uncommon
+
+
+
+
+
+
+
+    @overload
+    def compareTo(self, __a0: java.lang.Enum) -> int: ...
+
+    @overload
+    def compareTo(self, __a0: object) -> int: ...
+
+    def describeConstable(self) -> java.util.Optional: ...
+
+    def equals(self, __a0: object) -> bool: ...
+
+    def getClass(self) -> java.lang.Class: ...
+
+    def getDeclaringClass(self) -> java.lang.Class: ...
+
+    def getValue(self) -> int: ...
+
+    def hashCode(self) -> int: ...
+
+    def isSet(self, __a0: int) -> bool: ...
+
+    def name(self) -> unicode: ...
+
+    def notify(self) -> None: ...
+
+    def notifyAll(self) -> None: ...
+
+    def ordinal(self) -> int: ...
+
+    @staticmethod
+    def parseFlags(__a0: int) -> java.util.Set: ...
+
+    def toString(self) -> unicode: ...
+
+    @overload
+    @staticmethod
+    def valueOf(__a0: unicode) -> ghidra.app.util.bin.format.golang.rtti.types.GoTypeFlag: ...
+
+    @overload
+    @staticmethod
+    def valueOf(__a0: java.lang.Class, __a1: unicode) -> java.lang.Enum: ...
+
+    @staticmethod
+    def values() -> List[ghidra.app.util.bin.format.golang.rtti.types.GoTypeFlag]: ...
+
+    @overload
+    def wait(self) -> None: ...
+
+    @overload
+    def wait(self, __a0: long) -> None: ...
+
+    @overload
+    def wait(self, __a0: long, __a1: int) -> None: ...
+
+    @property
+    def value(self) -> int: ...

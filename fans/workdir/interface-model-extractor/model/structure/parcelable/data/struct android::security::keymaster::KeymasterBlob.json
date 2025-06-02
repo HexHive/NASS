@@ -1,0 +1,82 @@
+{
+    "struct android::security::keymaster::KeymasterBlob": {
+        "variable": [
+            {
+                "count": 1,
+                "self_constraint": [],
+                "name": "implicit_1",
+                "under_constraint": [],
+                "value": true,
+                "dependency": [],
+                "relation": [],
+                "serialization_type": 0,
+                "usedBy": [],
+                "type": "_Bool",
+                "loop": []
+            },
+            {
+                "count": 1,
+                "self_constraint": [],
+                "name": "implicit_2",
+                "under_constraint": [],
+                "func_name": "keystore::readKeymasterBlob",
+                "argv": [
+                    {
+                        "type": "const class android::Parcel ",
+                        "name": "in"
+                    },
+                    {
+                        "type": "_Bool",
+                        "name": "implicit_1"
+                    }
+                ],
+                "dependency": [],
+                "relation": [],
+                "signature": "hidl_vec<uint8_t> (const android::Parcel &, _Bool)",
+                "serialization_type": 1,
+                "usedBy": [],
+                "type": "Function",
+                "loop": []
+            },
+            {
+                "count": 1,
+                "self_constraint": [],
+                "name": "data_",
+                "under_constraint": [],
+                "dependency": [],
+                "relation": [],
+                "signature": "hardware::hidl_vec<uint8_t>",
+                "serialization_type": 0,
+                "usedBy": [],
+                "type": "struct android::hardware::hidl_vec<unsigned char>",
+                "loop": []
+            },
+            {
+                "count": 1,
+                "self_constraint": [],
+                "name": "android::OK",
+                "under_constraint": [],
+                "value": 0,
+                "dependency": [],
+                "relation": [],
+                "serialization_type": 0,
+                "usedBy": [],
+                "type": "android::status_t",
+                "loop": []
+            }
+        ],
+        "dependency": [],
+        "loop": [],
+        "possibility": [
+            {
+                "return": "android::OK",
+                "reply": [],
+                "data": [
+                    "implicit_2"
+                ],
+                "id": 0
+            }
+        ],
+        "constraint": []
+    }
+}

@@ -1,0 +1,511 @@
+{
+    "class android::MediaAnalyticsItem": {
+        "variable": [
+            {
+                "count": 1,
+                "self_constraint": [],
+                "name": "mKey",
+                "under_constraint": [],
+                "dependency": [],
+                "relation": [],
+                "serialization_type": 2,
+                "usedBy": [],
+                "type": "string",
+                "loop": [],
+                "size": -1
+            },
+            {
+                "count": 1,
+                "self_constraint": [],
+                "name": "mKey::item",
+                "under_constraint": [],
+                "dependency": [],
+                "relation": [],
+                "serialization_type": 2,
+                "usedBy": [],
+                "type": "char",
+                "loop": []
+            },
+            {
+                "count": 1,
+                "self_constraint": [],
+                "name": "mPid",
+                "under_constraint": [],
+                "dependency": [],
+                "relation": [],
+                "signature": "pid_t",
+                "serialization_type": 2,
+                "usedBy": [],
+                "type": "pid_t",
+                "loop": []
+            },
+            {
+                "count": 1,
+                "self_constraint": [],
+                "name": "mUid",
+                "under_constraint": [],
+                "dependency": [],
+                "relation": [],
+                "signature": "uid_t",
+                "serialization_type": 2,
+                "usedBy": [],
+                "type": "uid_t",
+                "loop": []
+            },
+            {
+                "count": 1,
+                "self_constraint": [],
+                "name": "mPkgName",
+                "under_constraint": [],
+                "dependency": [],
+                "relation": [],
+                "serialization_type": 2,
+                "usedBy": [],
+                "type": "string",
+                "loop": [],
+                "size": -1
+            },
+            {
+                "count": 1,
+                "self_constraint": [],
+                "name": "mPkgName::item",
+                "under_constraint": [],
+                "dependency": [],
+                "relation": [],
+                "serialization_type": 2,
+                "usedBy": [],
+                "type": "char",
+                "loop": []
+            },
+            {
+                "count": 1,
+                "self_constraint": [],
+                "name": "mPkgVersionCode",
+                "under_constraint": [],
+                "dependency": [],
+                "relation": [],
+                "signature": "int64_t",
+                "serialization_type": 2,
+                "usedBy": [],
+                "type": "long",
+                "loop": []
+            },
+            {
+                "count": 1,
+                "self_constraint": [],
+                "name": "mSessionID",
+                "under_constraint": [],
+                "dependency": [],
+                "relation": [],
+                "signature": "android::MediaAnalyticsItem::SessionID_t",
+                "serialization_type": 2,
+                "usedBy": [],
+                "type": "android::MediaAnalyticsItem::SessionID_t",
+                "loop": []
+            },
+            {
+                "count": 1,
+                "self_constraint": [],
+                "name": "mFinalized",
+                "under_constraint": [],
+                "dependency": [],
+                "relation": [],
+                "signature": "_Bool",
+                "serialization_type": 2,
+                "usedBy": [],
+                "type": "int",
+                "loop": []
+            },
+            {
+                "count": 1,
+                "self_constraint": [],
+                "name": "mTimestamp",
+                "under_constraint": [],
+                "dependency": [],
+                "relation": [],
+                "signature": "nsecs_t",
+                "serialization_type": 2,
+                "usedBy": [],
+                "type": "nsecs_t",
+                "loop": []
+            },
+            {
+                "count": 1,
+                "self_constraint": [
+                    "constraint1"
+                ],
+                "name": "count",
+                "under_constraint": [],
+                "dependency": [],
+                "relation": [],
+                "serialization_type": 2,
+                "usedBy": [],
+                "type": "int",
+                "loop": []
+            },
+            {
+                "count": 1,
+                "self_constraint": [
+                    "constraint1"
+                ],
+                "name": "i",
+                "under_constraint": [],
+                "value": 0,
+                "dependency": [],
+                "relation": [],
+                "serialization_type": 0,
+                "usedBy": [],
+                "type": "int",
+                "loop": []
+            },
+            {
+                "count": 1,
+                "self_constraint": [],
+                "name": "prop.mName",
+                "under_constraint": [],
+                "dependency": [],
+                "relation": [],
+                "signature": "const char *",
+                "serialization_type": 2,
+                "usedBy": [],
+                "type": "const char *",
+                "loop": [
+                    "loop0"
+                ],
+                "size": -1
+            },
+            {
+                "count": 1,
+                "self_constraint": [],
+                "name": "prop.mName::item",
+                "under_constraint": [],
+                "dependency": [],
+                "relation": [],
+                "signature": "const char *",
+                "serialization_type": 2,
+                "usedBy": [],
+                "type": "char",
+                "loop": [
+                    "loop0"
+                ]
+            },
+            {
+                "count": 1,
+                "self_constraint": [
+                    "constraint2",
+                    "constraint3",
+                    "constraint4",
+                    "constraint5",
+                    "constraint6"
+                ],
+                "name": "prop.mType",
+                "under_constraint": [],
+                "dependency": [],
+                "relation": [],
+                "signature": "enum android::MediaAnalyticsItem::Type",
+                "serialization_type": 2,
+                "usedBy": [],
+                "type": "enum android::MediaAnalyticsItem::Type",
+                "loop": [
+                    "loop0"
+                ]
+            },
+            {
+                "count": 1,
+                "self_constraint": [],
+                "name": "prop.u.int32Value",
+                "under_constraint": [
+                    {
+                        "status": true,
+                        "name": "constraint2"
+                    }
+                ],
+                "dependency": [],
+                "relation": [],
+                "signature": "int32_t",
+                "serialization_type": 2,
+                "usedBy": [],
+                "type": "int",
+                "loop": [
+                    "loop0"
+                ]
+            },
+            {
+                "count": 1,
+                "self_constraint": [],
+                "name": "prop.u.int64Value",
+                "under_constraint": [
+                    {
+                        "status": true,
+                        "name": "constraint3"
+                    }
+                ],
+                "dependency": [],
+                "relation": [],
+                "signature": "int64_t",
+                "serialization_type": 2,
+                "usedBy": [],
+                "type": "long",
+                "loop": [
+                    "loop0"
+                ]
+            },
+            {
+                "count": 1,
+                "self_constraint": [],
+                "name": "prop.u.doubleValue",
+                "under_constraint": [
+                    {
+                        "status": true,
+                        "name": "constraint4"
+                    }
+                ],
+                "dependency": [],
+                "relation": [],
+                "signature": "double",
+                "serialization_type": 2,
+                "usedBy": [],
+                "type": "double",
+                "loop": [
+                    "loop0"
+                ]
+            },
+            {
+                "count": 1,
+                "self_constraint": [],
+                "name": "prop.u.CStringValue",
+                "under_constraint": [
+                    {
+                        "status": true,
+                        "name": "constraint5"
+                    }
+                ],
+                "dependency": [],
+                "relation": [],
+                "signature": "char *",
+                "serialization_type": 2,
+                "usedBy": [],
+                "type": "char *",
+                "loop": [
+                    "loop0"
+                ],
+                "size": -1
+            },
+            {
+                "count": 1,
+                "self_constraint": [],
+                "name": "prop.u.CStringValue::item",
+                "under_constraint": [],
+                "dependency": [],
+                "relation": [],
+                "signature": "char *",
+                "serialization_type": 2,
+                "usedBy": [],
+                "type": "char",
+                "loop": [
+                    "loop0"
+                ]
+            },
+            {
+                "count": 1,
+                "self_constraint": [],
+                "name": "prop.u.rate.count",
+                "under_constraint": [
+                    {
+                        "status": true,
+                        "name": "constraint6"
+                    }
+                ],
+                "dependency": [],
+                "relation": [],
+                "signature": "int64_t",
+                "serialization_type": 2,
+                "usedBy": [],
+                "type": "long",
+                "loop": [
+                    "loop0"
+                ]
+            },
+            {
+                "count": 1,
+                "self_constraint": [],
+                "name": "prop.u.rate.duration",
+                "under_constraint": [
+                    {
+                        "status": true,
+                        "name": "constraint6"
+                    }
+                ],
+                "dependency": [],
+                "relation": [],
+                "signature": "int64_t",
+                "serialization_type": 2,
+                "usedBy": [],
+                "type": "long",
+                "loop": [
+                    "loop0"
+                ]
+            },
+            {
+                "count": 1,
+                "self_constraint": [],
+                "name": "implicit_25",
+                "under_constraint": [],
+                "value": 0,
+                "dependency": [],
+                "relation": [],
+                "serialization_type": 0,
+                "usedBy": [],
+                "type": "IntegerLiteral",
+                "loop": []
+            }
+        ],
+        "dependency": [],
+        "loop": [
+            {
+                "counter": {
+                    "type": "int",
+                    "name": "i",
+                    "value": 0
+                },
+                "inc": {
+                    "type": "int",
+                    "opcode": "++",
+                    "name": "i"
+                },
+                "name": "loop0",
+                "constraint": "constraint1"
+            }
+        ],
+        "possibility": [
+            {
+                "return": "implicit_25",
+                "reply": [
+                    "mKey",
+                    "mPid",
+                    "mUid",
+                    "mPkgName",
+                    "mPkgVersionCode",
+                    "mSessionID",
+                    "mFinalized",
+                    "mTimestamp",
+                    "count",
+                    "prop.mName",
+                    "prop.mType",
+                    "prop.u.int32Value",
+                    "prop.u.int64Value",
+                    "prop.u.doubleValue",
+                    "prop.u.CStringValue",
+                    "prop.u.rate.count",
+                    "prop.u.rate.duration"
+                ],
+                "data": [],
+                "id": 0
+            }
+        ],
+        "constraint": [
+            {
+                "lhs": {
+                    "type": "class android::Parcel *",
+                    "name": "data"
+                },
+                "rhs": {
+                    "type": "class android::Parcel *",
+                    "name": "implicit_1",
+                    "value": "NULL"
+                },
+                "opcode": "==",
+                "name": "constraint0",
+                "probability": 0.5
+            },
+            {
+                "lhs": {
+                    "type": "int",
+                    "name": "i"
+                },
+                "rhs": {
+                    "type": "int",
+                    "name": "count"
+                },
+                "opcode": "<",
+                "name": "constraint1",
+                "probability": 0.5
+            },
+            {
+                "lhs": {
+                    "type": "enum android::MediaAnalyticsItem::Type",
+                    "name": "prop.mType",
+                    "signature": "enum android::MediaAnalyticsItem::Type"
+                },
+                "rhs": {
+                    "type": "IntegerLiteral",
+                    "name": "implicit_14",
+                    "value": 1
+                },
+                "opcode": "==",
+                "name": "constraint2",
+                "probability": 0.9
+            },
+            {
+                "lhs": {
+                    "type": "enum android::MediaAnalyticsItem::Type",
+                    "name": "prop.mType",
+                    "signature": "enum android::MediaAnalyticsItem::Type"
+                },
+                "rhs": {
+                    "type": "IntegerLiteral",
+                    "name": "implicit_16",
+                    "value": 2
+                },
+                "opcode": "==",
+                "name": "constraint3",
+                "probability": 0.9
+            },
+            {
+                "lhs": {
+                    "type": "enum android::MediaAnalyticsItem::Type",
+                    "name": "prop.mType",
+                    "signature": "enum android::MediaAnalyticsItem::Type"
+                },
+                "rhs": {
+                    "type": "IntegerLiteral",
+                    "name": "implicit_18",
+                    "value": 3
+                },
+                "opcode": "==",
+                "name": "constraint4",
+                "probability": 0.9
+            },
+            {
+                "lhs": {
+                    "type": "enum android::MediaAnalyticsItem::Type",
+                    "name": "prop.mType",
+                    "signature": "enum android::MediaAnalyticsItem::Type"
+                },
+                "rhs": {
+                    "type": "IntegerLiteral",
+                    "name": "implicit_20",
+                    "value": 4
+                },
+                "opcode": "==",
+                "name": "constraint5",
+                "probability": 0.9
+            },
+            {
+                "lhs": {
+                    "type": "enum android::MediaAnalyticsItem::Type",
+                    "name": "prop.mType",
+                    "signature": "enum android::MediaAnalyticsItem::Type"
+                },
+                "rhs": {
+                    "type": "IntegerLiteral",
+                    "name": "implicit_22",
+                    "value": 5
+                },
+                "opcode": "==",
+                "name": "constraint6",
+                "probability": 0.9
+            }
+        ]
+    }
+}

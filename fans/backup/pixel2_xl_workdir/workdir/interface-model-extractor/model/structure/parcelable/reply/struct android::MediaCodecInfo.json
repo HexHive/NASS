@@ -1,0 +1,187 @@
+{
+    "struct android::MediaCodecInfo": {
+        "dependency": [
+            {
+                "filename": "BnMediaCodecList.json",
+                "type": "Transaction",
+                "name": "IMediaCodecList::3-3",
+                "possIdx": 1,
+                "varIdx": 1,
+                "varName": "info",
+                "varType": "struct android::MediaCodecInfo"
+            }
+        ],
+        "possibility": [
+            {
+                "id": 0,
+                "data": [],
+                "reply": [
+                    "mName",
+                    "mOwner",
+                    "mIsEncoder",
+                    "mRank",
+                    "android::MediaCodecInfo::mCaps.size",
+                    "implicit_8",
+                    "implicit_11"
+                ],
+                "return": "android::OK"
+            }
+        ],
+        "variable": [
+            {
+                "name": "mName",
+                "type": "struct android::AString",
+                "signature": "struct android::AString",
+                "serialization_type": 2,
+                "self_constraint": [],
+                "under_constraint": [],
+                "relation": [],
+                "loop": [],
+                "usedBy": [],
+                "dependency": [],
+                "count": 1
+            },
+            {
+                "name": "mOwner",
+                "type": "struct android::AString",
+                "signature": "struct android::AString",
+                "serialization_type": 2,
+                "self_constraint": [],
+                "under_constraint": [],
+                "relation": [],
+                "loop": [],
+                "usedBy": [],
+                "dependency": [],
+                "count": 1
+            },
+            {
+                "name": "mIsEncoder",
+                "type": "int",
+                "signature": "_Bool",
+                "serialization_type": 2,
+                "self_constraint": [],
+                "under_constraint": [],
+                "relation": [],
+                "loop": [],
+                "usedBy": [],
+                "dependency": [],
+                "count": 1
+            },
+            {
+                "name": "mRank",
+                "type": "unsigned int",
+                "signature": "uint32_t",
+                "serialization_type": 2,
+                "self_constraint": [],
+                "under_constraint": [],
+                "relation": [],
+                "loop": [],
+                "usedBy": [],
+                "dependency": [],
+                "count": 1
+            },
+            {
+                "type": "int",
+                "name": "android::MediaCodecInfo::mCaps.size",
+                "serialization_type": 2,
+                "self_constraint": [
+                    "constraint0"
+                ],
+                "under_constraint": [],
+                "relation": [],
+                "loop": [],
+                "usedBy": [],
+                "dependency": [],
+                "count": 1
+            },
+            {
+                "name": "i",
+                "type": "size_t",
+                "value": 0,
+                "serialization_type": 0,
+                "self_constraint": [
+                    "constraint0"
+                ],
+                "under_constraint": [],
+                "relation": [],
+                "loop": [],
+                "usedBy": [],
+                "dependency": [],
+                "count": 1
+            },
+            {
+                "type": "struct android::AString",
+                "name": "implicit_8",
+                "serialization_type": 2,
+                "self_constraint": [],
+                "under_constraint": [],
+                "relation": [],
+                "loop": [
+                    "loop0"
+                ],
+                "usedBy": [],
+                "dependency": [],
+                "count": 1
+            },
+            {
+                "type": "struct android::MediaCodecInfo::Capabilities",
+                "name": "implicit_11",
+                "serialization_type": 2,
+                "self_constraint": [],
+                "under_constraint": [],
+                "relation": [],
+                "loop": [
+                    "loop0"
+                ],
+                "usedBy": [],
+                "dependency": [],
+                "count": 1
+            },
+            {
+                "name": "android::OK",
+                "type": "android::status_t",
+                "value": 0,
+                "serialization_type": 0,
+                "self_constraint": [],
+                "under_constraint": [],
+                "relation": [],
+                "loop": [],
+                "usedBy": [],
+                "dependency": [],
+                "count": 1
+            }
+        ],
+        "constraint": [
+            {
+                "name": "constraint0",
+                "opcode": "<",
+                "lhs": {
+                    "name": "i",
+                    "type": "size_t"
+                },
+                "rhs": {
+                    "type": "int",
+                    "name": "android::MediaCodecInfo::mCaps.size",
+                    "serialization_type": 0
+                },
+                "probability": 0.5
+            }
+        ],
+        "loop": [
+            {
+                "name": "loop0",
+                "counter": {
+                    "name": "i",
+                    "type": "size_t",
+                    "value": 0
+                },
+                "constraint": "constraint0",
+                "inc": {
+                    "opcode": "++",
+                    "name": "i",
+                    "type": "size_t"
+                }
+            }
+        ]
+    }
+}

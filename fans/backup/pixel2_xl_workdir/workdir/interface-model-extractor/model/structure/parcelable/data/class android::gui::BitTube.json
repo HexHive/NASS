@@ -1,0 +1,126 @@
+{
+    "class android::gui::BitTube": {
+        "variable": [
+            {
+                "count": 1,
+                "self_constraint": [],
+                "name": "mReceiveFd",
+                "under_constraint": [],
+                "dependency": [
+                    {
+                        "filename": "class android::BitTube.json",
+                        "type": "Structure",
+                        "name": "class android::BitTube",
+                        "possIdx": 0,
+                        "varIdx": 0,
+                        "varName": "mReceiveFd",
+                        "varType": "FileDescriptor"
+                    }
+                ],
+                "relation": [],
+                "takeOwnership": false,
+                "serialization_type": 1,
+                "usedBy": [],
+                "type": "FileDescriptor",
+                "loop": []
+            },
+            {
+                "count": 1,
+                "self_constraint": [
+                    "constraint0"
+                ],
+                "name": "mReceiveFd",
+                "under_constraint": [],
+                "dependency": [
+                    {
+                        "filename": "class android::BitTube.json",
+                        "type": "Structure",
+                        "name": "class android::BitTube",
+                        "possIdx": 0,
+                        "varIdx": 0,
+                        "varName": "mReceiveFd",
+                        "varType": "FileDescriptor"
+                    }
+                ],
+                "relation": [],
+                "takeOwnership": false,
+                "serialization_type": 0,
+                "usedBy": [],
+                "type": "FileDescriptor",
+                "loop": []
+            },
+            {
+                "count": 1,
+                "self_constraint": [],
+                "name": "error",
+                "under_constraint": [
+                    {
+                        "status": true,
+                        "name": "constraint0"
+                    }
+                ],
+                "dependency": [],
+                "relation": [],
+                "serialization_type": 0,
+                "usedBy": [],
+                "type": "int",
+                "loop": []
+            },
+            {
+                "count": 1,
+                "self_constraint": [],
+                "name": "android::NO_ERROR",
+                "under_constraint": [
+                    {
+                        "status": false,
+                        "name": "constraint0"
+                    }
+                ],
+                "value": 0,
+                "dependency": [],
+                "relation": [],
+                "serialization_type": 0,
+                "usedBy": [],
+                "type": "android::status_t",
+                "loop": []
+            }
+        ],
+        "dependency": [],
+        "loop": [],
+        "possibility": [
+            {
+                "return": "error",
+                "reply": [],
+                "data": [
+                    "mReceiveFd"
+                ],
+                "id": 0
+            },
+            {
+                "return": "android::NO_ERROR",
+                "reply": [],
+                "data": [
+                    "mReceiveFd"
+                ],
+                "id": 1
+            }
+        ],
+        "constraint": [
+            {
+                "lhs": {
+                    "serialization_type": 0,
+                    "type": "FileDescriptor",
+                    "name": "mReceiveFd"
+                },
+                "rhs": {
+                    "type": "IntegerLiteral",
+                    "name": "implicit_3",
+                    "value": 0
+                },
+                "opcode": "<",
+                "name": "constraint0",
+                "probability": 0.1
+            }
+        ]
+    }
+}

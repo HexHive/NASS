@@ -1,0 +1,108 @@
+{
+    "class aaudio::AAudioStreamRequest": {
+        "variable": [
+            {
+                "count": 1,
+                "self_constraint": [],
+                "name": "temp",
+                "under_constraint": [],
+                "dependency": [],
+                "relation": [],
+                "serialization_type": 1,
+                "usedBy": [],
+                "type": "uid_t",
+                "loop": []
+            },
+            {
+                "count": 1,
+                "self_constraint": [],
+                "name": "status",
+                "under_constraint": [],
+                "dependency": [],
+                "relation": [],
+                "serialization_type": 0,
+                "usedBy": [],
+                "type": "android::status_t",
+                "loop": []
+            },
+            {
+                "count": 1,
+                "self_constraint": [],
+                "name": "mSharingModeMatchRequired",
+                "under_constraint": [],
+                "dependency": [],
+                "relation": [],
+                "signature": "_Bool",
+                "serialization_type": 1,
+                "usedBy": [],
+                "type": "_Bool",
+                "loop": []
+            },
+            {
+                "count": 1,
+                "self_constraint": [],
+                "name": "mInService",
+                "under_constraint": [],
+                "dependency": [],
+                "relation": [],
+                "signature": "_Bool",
+                "serialization_type": 1,
+                "usedBy": [],
+                "type": "_Bool",
+                "loop": []
+            },
+            {
+                "count": 1,
+                "self_constraint": [],
+                "name": "mConfiguration",
+                "under_constraint": [],
+                "dependency": [
+                    {
+                        "filename": "BnAAudioService.json",
+                        "type": "Transaction",
+                        "name": "IAAudioService::2-2",
+                        "possIdx": 1,
+                        "varIdx": 1,
+                        "varName": "configuration",
+                        "varType": "class aaudio::AAudioStreamConfiguration"
+                    }
+                ],
+                "relation": [],
+                "signature": "class aaudio::AAudioStreamConfiguration",
+                "serialization_type": 1,
+                "usedBy": [],
+                "type": "class aaudio::AAudioStreamConfiguration",
+                "loop": []
+            },
+            {
+                "count": 1,
+                "self_constraint": [],
+                "name": "android::NO_ERROR",
+                "under_constraint": [],
+                "value": 0,
+                "dependency": [],
+                "relation": [],
+                "serialization_type": 0,
+                "usedBy": [],
+                "type": "android::status_t",
+                "loop": []
+            }
+        ],
+        "dependency": [],
+        "loop": [],
+        "possibility": [
+            {
+                "return": "status",
+                "reply": [],
+                "data": [
+                    "temp",
+                    "mSharingModeMatchRequired",
+                    "mInService",
+                    "mConfiguration"
+                ],
+                "id": 0
+            }
+        ],
+        "constraint": []
+    }
+}

@@ -1,0 +1,70 @@
+{
+    "class android::security::keymaster::KeyAttestationApplicationId": {
+        "variable": [
+            {
+                "count": 1,
+                "self_constraint": [],
+                "name": "packageInfos_",
+                "dependency": [],
+                "under_constraint": [],
+                "have_parcelable": 1,
+                "relation": [],
+                "signature": "std::shared_ptr<std::vector<std::unique_ptr<KeyAttestationPackageInfo> > >",
+                "serialization_type": 2,
+                "usedBy": [],
+                "type": "class vector<class android::security::keymaster::KeyAttestationPackageInfo>",
+                "loop": [],
+                "size": -1
+            },
+            {
+                "count": 1,
+                "self_constraint": [],
+                "name": "packageInfos_::item",
+                "dependency": [],
+                "under_constraint": [],
+                "have_parcelable": 1,
+                "relation": [],
+                "signature": "std::shared_ptr<std::vector<std::unique_ptr<KeyAttestationPackageInfo> > >",
+                "serialization_type": 2,
+                "usedBy": [],
+                "type": "class android::security::keymaster::KeyAttestationPackageInfo",
+                "loop": []
+            },
+            {
+                "count": 1,
+                "self_constraint": [],
+                "name": "implicit_1",
+                "under_constraint": [],
+                "dependency": [],
+                "relation": [],
+                "serialization_type": 0,
+                "usedBy": [],
+                "type": "android::status_t",
+                "loop": []
+            }
+        ],
+        "dependency": [
+            {
+                "filename": "BnKeyAttestationApplicationIdProvider.json",
+                "type": "Transaction",
+                "name": "IKeyAttestationApplicationIdProvider::1-1",
+                "possIdx": 0,
+                "varIdx": 1,
+                "varName": "_aidl_return",
+                "varType": "class android::security::keymaster::KeyAttestationApplicationId"
+            }
+        ],
+        "loop": [],
+        "possibility": [
+            {
+                "return": "implicit_1",
+                "reply": [
+                    "packageInfos_"
+                ],
+                "data": [],
+                "id": 0
+            }
+        ],
+        "constraint": []
+    }
+}

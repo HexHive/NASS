@@ -1,0 +1,54 @@
+{
+    "struct android::security::keymaster::KeymasterArguments": {
+        "variable": [
+            {
+                "count": 1,
+                "self_constraint": [],
+                "name": "data_",
+                "under_constraint": [],
+                "dependency": [
+                    {
+                        "filename": "struct android::security::keymaster::OperationResult.json",
+                        "type": "Structure",
+                        "name": "struct android::security::keymaster::OperationResult",
+                        "possIdx": 0,
+                        "varIdx": 5,
+                        "varName": "outParams",
+                        "varType": "struct android::hardware::hidl_vec<struct android::hardware::keymaster::V4_0::KeyParameter>"
+                    }
+                ],
+                "relation": [],
+                "serialization_type": 1,
+                "usedBy": [],
+                "type": "struct android::hardware::hidl_vec<struct android::hardware::keymaster::V4_0::KeyParameter>",
+                "loop": []
+            },
+            {
+                "count": 1,
+                "self_constraint": [],
+                "name": "android::OK",
+                "under_constraint": [],
+                "value": 0,
+                "dependency": [],
+                "relation": [],
+                "serialization_type": 0,
+                "usedBy": [],
+                "type": "android::status_t",
+                "loop": []
+            }
+        ],
+        "dependency": [],
+        "loop": [],
+        "possibility": [
+            {
+                "return": "android::OK",
+                "reply": [],
+                "data": [
+                    "data_"
+                ],
+                "id": 0
+            }
+        ],
+        "constraint": []
+    }
+}

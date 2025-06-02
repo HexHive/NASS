@@ -1,0 +1,119 @@
+{
+    "onTransact":{
+        "switch":{
+            "DeclRef":{
+                "name":{
+                    "$":"code"
+                },
+                "type":{
+                    "$":"unsigned int"
+                }
+            },
+            "code":{
+                "@left":1,
+                "@right":"",
+                "code":{
+                    "@left":2,
+                    "@right":"",
+                    "ReturnStmt":{
+                        "ImplicitCastExpr":{
+                            "type":{
+                                "$":"android::status_t"
+                            },
+                            "IntegerLiteral":{
+                                "value":{
+                                    "$":0
+                                },
+                                "DeclRef":{
+                                    "name":{
+                                        "$":"android::NO_ERROR"
+                                    },
+                                    "type":{
+                                        "$":"enum android::(anonymous at system.core.libutils.include.utils.Errors.h:45:1)"
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            "ReturnStmt":{
+                "CXXMemberCallExpr":{
+                    "ReturnType":{
+                        "$":"android::status_t"
+                    },
+                    "MemberExpr":{
+                        "name":{
+                            "$":"android::BBinder::onTransact"
+                        },
+                        "type":{
+                            "$":"<bound member function type>"
+                        },
+                        "signature":{
+                            "$":"android::status_t (uint32_t, const class android::Parcel &, class android::Parcel *, uint32_t)"
+                        },
+                        "ImplicitCastExpr":{
+                            "type":{
+                                "$":"class android::BBinder *"
+                            },
+                            "CXXThisExpr":{
+                                "Type":{
+                                    "$":"class android::BnSchedulingPolicyService *"
+                                }
+                            }
+                        }
+                    },
+                    "argv":{
+                        "ImplicitCastExpr1":{
+                            "type":{
+                                "$":"unsigned int"
+                            },
+                            "DeclRef":{
+                                "name":{
+                                    "$":"code"
+                                },
+                                "type":{
+                                    "$":"unsigned int"
+                                }
+                            }
+                        },
+                        "DeclRef":{
+                            "name":{
+                                "$":"data"
+                            },
+                            "type":{
+                                "$":"const class android::Parcel"
+                            }
+                        },
+                        "ImplicitCastExpr2":{
+                            "type":{
+                                "$":"class android::Parcel *"
+                            },
+                            "DeclRef":{
+                                "name":{
+                                    "$":"reply"
+                                },
+                                "type":{
+                                    "$":"class android::Parcel *"
+                                }
+                            }
+                        },
+                        "ImplicitCastExpr3":{
+                            "type":{
+                                "$":"unsigned int"
+                            },
+                            "DeclRef":{
+                                "name":{
+                                    "$":"flags"
+                                },
+                                "type":{
+                                    "$":"unsigned int"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,228 @@
+{
+    "1": [
+        "STRING16UTF8",
+        "INT32",
+        "INT32",
+        "INT32"
+    ],
+    "10": [
+        "STRING16UTF8",
+        "INT32",
+        "INT32",
+        "INT32VECTOR"
+    ],
+    "11": [
+        "STRING16UTF8",
+        "INT32",
+        "INT32",
+        "INT32VECTOR"
+    ],
+    "12": [
+        "STRING16UTF8",
+        "INT32",
+        "INT32",
+        "INT64"
+    ],
+    "13": [
+        "STRING16UTF8",
+        "STRING16UTF8",
+        "STRING16UTF8",
+        "STRING16UTF8",
+        "INT32",
+        "STRING16UTF8",
+        "INT32"
+    ],
+    "14": [
+        "STRING16UTF8",
+        "INT32",
+        "STRING16UTF8",
+        "STRING16UTF8",
+        "INT32",
+        "STRING16UTF8",
+        "INT32",
+        "STRING16UTF8",
+        "STRING16UTF8",
+        "STRING16UTF8",
+        "STRING16UTF8",
+        "BOOL",
+        "INT32",
+        "STRING16UTF8",
+        "STRING16UTF8",
+        "STRING16UTF8"
+    ],
+    "15": [
+        "STRING16UTF8",
+        "STRING16UTF8"
+    ],
+    "1598311760": [],
+    "16": [
+        "INT32",
+        "STRING16UTF8",
+        "STRING16UTF8"
+    ],
+    "17": [
+        "INT32",
+        "STRING16UTF8",
+        "STRING16UTF8",
+        "STRING16UTF8"
+    ],
+    "18": [
+        "STRING16UTF8",
+        "INT32",
+        "STRING16UTF8",
+        "STRING16UTF8"
+    ],
+    "19": [
+        "STRING16UTF8",
+        "STRING16UTF8"
+    ],
+    "2": [
+        "STRING16UTF8",
+        "INT32",
+        "INT32"
+    ],
+    "20": [
+        "STRING16UTF8"
+    ],
+    "21": [
+        "INT32",
+        "STRING16UTF8",
+        "STRING16UTF8",
+        "STRING16UTF8"
+    ],
+    "22": [
+        "STRING16UTF8",
+        "STRING16UTF8"
+    ],
+    "23": [
+        "STRING16UTF8",
+        "STRING16UTF8",
+        "INT32"
+    ],
+    "24": [
+        "STRING16UTF8"
+    ],
+    "25": [
+        "STRING16UTF8"
+    ],
+    "26": [
+        "STRING16UTF8"
+    ],
+    "27": [
+        "STRING16UTF8",
+        "INT64",
+        "INT64",
+        "INT32"
+    ],
+    "28": [
+        "STRING16UTF8",
+        "STRING16UTF8",
+        "STRING16UTF8",
+        "INT32"
+    ],
+    "29": [
+        "STRING16UTF8",
+        "STRING16UTF8"
+    ],
+    "3": [
+        "STRING16UTF8",
+        "STRING16UTF8",
+        "INT32",
+        "INT32",
+        "INT32",
+        "STRING16UTF8",
+        "INT32"
+    ],
+    "30": [
+        "STRING16UTF8",
+        "STRING16UTF8",
+        "STRING16UTF8"
+    ],
+    "31": [
+        "STRING16UTF8",
+        "STRING16UTF8",
+        "STRING16UTF8"
+    ],
+    "32": [
+        "STRING16UTF8",
+        "STRING16UTF8",
+        "STRING16UTF8"
+    ],
+    "33": [
+        "STRING16UTF8",
+        "FILEDESCRIPTOR",
+        "INT32"
+    ],
+    "34": [
+        "STRING16UTF8",
+        "BYTEARRAY"
+    ],
+    "35": [
+        "STRING16UTF8",
+        "STRING16UTF8",
+        "INT32",
+        "STRING16UTF8VECTOR",
+        "STRING16UTF8",
+        "INT32"
+    ],
+    "36": [
+        "STRING16UTF8",
+        "STRING16UTF8",
+        "INT32",
+        "STRING16UTF8",
+        "INT32"
+    ],
+    "37": [],
+    "38": [
+        "STRING16UTF8"
+    ],
+    "39": [
+        "STRING16UTF8",
+        "INT32",
+        "INT32",
+        "STRING16UTF8",
+        "STRING16UTF8",
+        "STRING16UTF8"
+    ],
+    "4": [
+        "STRING16UTF8",
+        "STRING16UTF8",
+        "INT32",
+        "INT32",
+        "INT32",
+        "STRING16UTF8"
+    ],
+    "5": [
+        "STRING16UTF8",
+        "STRING16UTF8",
+        "INT32",
+        "INT32"
+    ],
+    "6": [
+        "STRING16UTF8",
+        "STRING16UTF8",
+        "INT32",
+        "INT32",
+        "INT64"
+    ],
+    "7": [
+        "STRING16UTF8",
+        "STRING16UTF8",
+        "INT32",
+        "INT32",
+        "INT64"
+    ],
+    "8": [
+        "STRING16UTF8",
+        "INT32"
+    ],
+    "9": [
+        "STRING16UTF8",
+        "STRING16UTF8VECTOR",
+        "INT32",
+        "INT32",
+        "INT32",
+        "INT64VECTOR",
+        "STRING16UTF8VECTOR"
+    ]
+}

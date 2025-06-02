@@ -1,0 +1,167 @@
+{
+    "1": [
+        "STRONGBINDER"
+    ],
+    "10": [
+        "STRING16UTF8",
+        "INT32",
+        "INT32"
+    ],
+    "11": [
+        "STRING16UTF8",
+        "STRING16UTF8"
+    ],
+    "12": [
+        "STRING16UTF8",
+        "INT32",
+        "INT32"
+    ],
+    "13": [
+        "STRING16UTF8"
+    ],
+    "14": [
+        "STRING16UTF8",
+        "STRING16UTF8"
+    ],
+    "15": [
+        "STRING16UTF8",
+        "STRONGBINDER"
+    ],
+    "1598311760": [],
+    "16": [
+        "STRING16UTF8"
+    ],
+    "17": [
+        "STRING16UTF8",
+        "STRING16UTF8",
+        "STRONGBINDER"
+    ],
+    "18": [
+        "INT32",
+        "INT32"
+    ],
+    "19": [
+        "STRING16UTF8"
+    ],
+    "2": [],
+    "20": [
+        "STRING16UTF8",
+        "STRING16UTF8",
+        "INT32"
+    ],
+    "21": [
+        "STRING16UTF8"
+    ],
+    "22": [
+        "INT32",
+        "STRONGBINDER"
+    ],
+    "23": [
+        "STRONGBINDER"
+    ],
+    "24": [
+        "STRONGBINDER"
+    ],
+    "25": [
+        "INT32",
+        "INT32",
+        "INT32"
+    ],
+    "26": [
+        "INT32",
+        "INT32",
+        "INT32"
+    ],
+    "27": [
+        "STRING16UTF8"
+    ],
+    "28": [],
+    "29": [],
+    "3": [],
+    "30": [
+        "INT32",
+        "STRING16UTF8",
+        "INT32"
+    ],
+    "31": [
+        "INT32",
+        "STRING16UTF8"
+    ],
+    "32": [
+        "STRING16UTF8"
+    ],
+    "33": [
+        "STRING16UTF8"
+    ],
+    "34": [
+        "STRING16UTF8",
+        "STRING16UTF8"
+    ],
+    "35": [],
+    "36": [],
+    "37": [],
+    "38": [],
+    "39": [],
+    "4": [],
+    "40": [],
+    "41": [],
+    "42": [
+        "STRING16UTF8"
+    ],
+    "43": [
+        "STRING16UTF8"
+    ],
+    "44": [
+        "INT32",
+        "INT32",
+        "BOOL"
+    ],
+    "45": [
+        "INT32"
+    ],
+    "46": [
+        "INT32",
+        "INT32",
+        "STRING16UTF8",
+        "STRING16UTF8"
+    ],
+    "47": [
+        "INT32"
+    ],
+    "48": [
+        "INT32",
+        "INT32",
+        "STRING16UTF8",
+        "STRING16UTF8"
+    ],
+    "49": [
+        "INT32"
+    ],
+    "5": [
+        "INT32",
+        "INT32"
+    ],
+    "50": [
+        "STRING16UTF8",
+        "INT32",
+        "INT32",
+        "INT32"
+    ],
+    "51": [
+        "STRING16UTF8",
+        "INT32",
+        "INT32"
+    ],
+    "6": [
+        "INT32"
+    ],
+    "7": [
+        "INT32"
+    ],
+    "8": [
+        "INT32"
+    ],
+    "9": [
+        "BOOL"
+    ]
+}

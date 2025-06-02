@@ -1,0 +1,3 @@
+from .DumpPeShim import DumpPeShim as DumpPeShim
+from .ModuleToPeHelper import ModuleToPeHelper as ModuleToPeHelper
+from .ProgramInsertByteProvider import ProgramInsertByteProvider as ProgramInsertByteProvider

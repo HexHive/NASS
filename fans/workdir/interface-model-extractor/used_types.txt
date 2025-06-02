@@ -1,0 +1,400 @@
+class android::String16
+enum audio_content_type_t
+class android::media::VolumeShaper::Operation
+nsecs_t
+class android::media::MicrophoneInfo
+struct android::AString
+struct android::hardware::CameraStatus
+struct android::AMessage
+class android::security::keymaster::KeyAttestationPackageInfo
+class android::os::storaged::UidInfo
+char [length]
+class android::dvr::ParcelableComposerLayer
+struct audio_uuid_s
+struct android::IGraphicBufferProducer::QueueBufferInput
+class android::SortedVector<int>
+struct android::hardware::camera2::CaptureRequest
+struct android::ComposerState
+class android::SurfaceControl
+enum audio_policy_forced_cfg_t
+enum android::media::VolumeShaper::Operation::Flag
+class aaudio::AAudioStreamConfiguration
+android::hardware::graphics::composer::V2_1::Config
+char [size]
+const char *
+class android::Region
+struct sound_trigger_module_descriptor[numModules]
+string
+struct in_addr
+void
+class android::os::Temperature
+const char
+__kernel_sa_family_t
+class android::sp<class android::IAudioPolicyServiceClient>
+struct effect_descriptor_s[retCount]
+class android::sp<class android::IBinder>
+class android::media::Metadata
+class vector<_Bool>
+class android::sp<class android::net::wifi::IWifiScannerImpl>
+class android::AudioMixMatchCriterion
+pid_t
+class android::sp<struct android::ICrypto>
+aaudio_content_type_t
+class android::dvr::BufferHubQueueParcelable<android::dvr::BufferHubQueueParcelableMagic::Producer>
+android::hardware::graphics::composer::V2_1::Layer
+class android::MediaAnalyticsItem
+audio_io_handle_t
+double
+android::MediaAnalyticsItem::SessionID_t
+class android::FrameEventHistoryDelta
+enum audio_port_role_t
+class aaudio::SharedRegionParcelable
+enum android::hardware::graphics::common::V1_0::ColorMode
+android::hardware::graphics::composer::V2_1::Display
+class android::os::IncidentReportArgs
+struct android::hardware::keymaster::V4_0::KeyParameter
+class android::sp<class android::os::IVoldListener>
+enum android::media::VolumeShaper::Configuration::OptionFlag
+class android::sp<class android::os::IVoldTaskListener>
+class com::android::server::wifi::wificond::ChannelSettings
+struct camera_metadata **
+enum android::IGraphicBufferProducer::DisconnectMode
+enum audio_format_t
+OMX_U32
+class android::IAudioFlinger::CreateRecordInput
+class android::IGraphicBufferProducer
+map<class android::String16, int, struct less<class android::String16>, class allocator<struct pair< class android::String16, int> > >::mapped_type ( map<class android::String16, int, struct less<class android::String16>, class allocator<struct pair< class android::String16, int> > >::key_type )
+class android::pdx::ChannelParcelable
+enum android::MediaTrack::ReadOptions::SeekMode
+enum android::hardware::keymaster::V4_0::TagType
+struct android::security::KeystoreArguments
+class android::sp<struct android::IMediaHTTPService>
+char16_t
+class android::CameraMetadata
+class vector<class android::os::storaged::UidInfo>
+class android::AudioClient
+class com::android::server::wifi::wificond::PnoNetwork
+class android::hardware::camera2::params::VendorTagDescriptorCache
+class android::DrmConstraints
+map<class android::String16, class android::os::PersistableBundle, struct less<class android::String16>, class allocator<struct pair< class android::String16, class android::os::PersistableBundle> > >::mapped_type ( map<class android::String16, class android::os::PersistableBundle, struct less<class android::String16>, class allocator<struct pair< class android::String16, class android::os::PersistableBundle> > >::key_type )
+unsigned char
+enum android::DisplayColorSetting
+class android::security::keymaster::KeyAttestationApplicationId
+class android::os::DropBoxManager::Entry
+map<class android::String16, long, struct less<class android::String16>, class allocator<struct pair< class android::String16, long> > >::mapped_type ( map<class android::String16, long, struct less<class android::String16>, class allocator<struct pair< class android::String16, long> > >::key_type )
+S
+class android::sp<class android::IMediaCodecList>
+class __tree__iterator<int, class __tree_node<int, void > , long>
+class android::hardware::camera2::params::VendorTagDescriptor
+char [token.size]
+enum android::IGateKeeperService::(anonymous at system.core.gatekeeperd.IGateKeeperService.h:39:5)
+class android::sp<class android::IDataSource>
+class android::SortedVector<int> *
+class android::DrmBuffer *
+class android::DrmInfo
+struct android::security::keymaster::OperationResult
+enum audio_policy_force_use_t
+class android::sp<class android::hardware::camera2::ICameraDeviceUser>
+class android::Vector<class android::String16>
+class android::Rect
+class com::android::server::wifi::wificond::NativeScanResult
+map<class android::String16, _Bool, struct less<class android::String16>, class allocator<struct pair< class android::String16, _Bool> > >::mapped_type ( map<class android::String16, _Bool, struct less<class android::String16>, class allocator<struct pair< class android::String16, _Bool> > >::key_type )
+_Bool
+struct sound_trigger_module_descriptor
+class android::Fence
+int32_t
+off64_t
+class android::sp<class android::IMediaSource>
+struct audio_patch
+class aaudio::RingBufferParcelable
+struct audio_port_config_mix_ext
+enum android::DrmPlugin::SecurityLevel
+enum audio_mix_latency_class_t
+class android::sp<class android::IResourceManagerClient>
+class android::sp<class android::IAudioTrack>
+class android::sp<class android::net::wifi::IInterfaceEventCallback>
+class android::sp<class android::IGraphicBufferProducer>
+enum android::hardware::graphics::composer::V2_1::IComposerClient::BlendMode
+class android::content::pm::Signature
+aaudio_direction_t
+int
+class android::VendorTagDescriptor
+class android::HdrCapabilities
+class vector<class com::android::server::wifi::wificond::NativeScanResult>
+class android::DrmBuffer
+aaudio_session_id_t
+class android::sp<class android::IGraphicBufferSource>
+class android::sp<class android::net::wifi::IScanEvent>
+class android::sp<class android::net::wifi::IApInterface>
+aaudio_result_t
+unsigned char [16]
+class android::os::PersistableBundle
+enum android::DrmCopyControl
+enum (anonymous at frameworks.native.libs.binder.PersistableBundle.cpp:41:1)
+struct android::layer_state_t
+class vector<class android::net::UidRange>
+class android::media::VolumeShaper::Configuration
+struct android::security::keymaster::ExportResult
+enum android::DrmPlugin::KeyType
+class vector<class android::os::StatsLogEventWrapper>
+class android::MediaResource
+enum audio_source_t
+struct audio_config
+class vector<long>
+class __wrap_iter< class vector<unsigned char>
+class vector<class android::view::Surface>
+char [256]
+class android::sp<class android::hardware::ICameraServiceListener>
+class android::security::KeystoreArg
+android::media::VolumeShaper::S
+class android::SurfaceControl *
+char [128]
+class android::IAudioFlinger::CreateRecordOutput
+struct sound_trigger_properties
+enum android::MediaResource::Type
+class android::Vector<unsigned char>
+audio_flags_mask_t
+FileDescriptor
+enum android::hardware::keymaster::V4_0::Tag
+class com::android::server::wifi::wificond::HiddenNetwork
+struct android::hardware::camera2::utils::SubmitInfo
+android::media::VolumeShaper::T
+char [32]
+class vector<class android::String16>
+struct android::DisplayState
+aaudio::aaudio_handle_t
+class android::os::StatsLogEventWrapper
+class android::DecryptHandle
+enum android::AVSyncAudioAdjustMode
+time_t
+aaudio_usage_t
+class android::LayerDebugInfo
+enum audio_stream_type_t
+aaudio_sharing_mode_t
+audio_unique_id_t
+struct android::DisplayStatInfo
+audio_hw_sync_t
+vector<unsigned char>
+class android::sp<class android::net::wifi::IPnoScanEvent>
+int [32]
+enum audio_session_t
+struct effect_descriptor_s
+enum android::DrmPlugin::KeyRequestType
+enum SchedPolicy
+class android::sp<class android::IResultReceiver>
+audio_port_handle_t
+struct audio_port_config_device_ext
+aaudio_input_preset_t
+class android::MetaData
+in_addr_t
+class android::sp<class android::net::wifi::IApInterfaceEventCallback>
+enum android::MediaResource::SubType
+enum audio_unique_id_use_t
+ssize_t
+audio_channel_mask_t
+char *
+unsigned char *
+class vector<int>
+class android::binder::Status
+enum android::ISurfaceComposer::Rotation
+class android::sp<class android::ISurfaceComposerClient>
+enum android::AMessage::Type
+android::PixelFormat
+enum android::hardware::graphics::common::V1_1::RenderIntent
+enum audio_policy_dev_state_t
+class android::AudioMix
+class android::sp<class android::IMediaRecorder>
+size_t
+class android::sp<class android::IProducerListener>
+class android::IGraphicBufferProducer *
+class android::DrmInfo *
+class android::sp<class android::net::wifi::IClientInterface>
+enum audio_input_flags_t
+class android::sp<class android::hardware::camera2::ICameraDeviceCallbacks>
+vector<class android::sp<class android::net::wifi::IApInterface>>
+class android::GraphicBuffer
+aaudio_format_t
+class aaudio::SharedMemoryParcelable
+class android::gui::BitTube
+class android::view::Surface
+struct audio_port[numPorts]
+map<class android::String16, double, struct less<class android::String16>, class allocator<struct pair< class android::String16, double> > >::mapped_type ( map<class android::String16, double, struct less<class android::String16>, class allocator<struct pair< class android::String16, double> > >::key_type )
+class android::sp<class android::ISensorEventConnection>
+class vector<double>
+enum android::dvr::BufferHubQueueParcelableMagic
+enum android::ICrypto::DestinationType
+unsigned char [8]
+unsigned long
+uid_t
+struct android::security::keymaster::KeyCharacteristics
+struct android::IGraphicBufferProducer::QueueBufferOutput
+struct android::CryptoPlugin::SubSample
+class android::sp<class android::os::IIncidentReportStatusListener>
+struct audio_config_base
+struct android::PersistentSurface
+sound_model_handle_t
+android::status_t
+struct android::security::keymaster::KeymasterCertificateChain
+struct camera_metadata
+enum android::IGraphicBufferProducer::(anonymous at frameworks.native.libs.gui.include.gui.IGraphicBufferProducer.h:76:5)
+bool[numSurroundFormats]
+audio_format_t [32]
+enum audio_usage_t
+struct android::os::storaged::io_stats
+struct audio_port_config [16]
+enum android::Interpolator::InterpolatorType
+struct audio_port_mix_ext
+enum android::hardware::graphics::common::V1_1::ColorMode
+struct android_xy_color
+struct audio_offload_info_t
+class android::Parcel::Blob
+enum android::hardware::graphics::composer::V2_1::IComposerClient::Vsync
+unsigned int [32]
+class android::BitTube
+map<class android::String16>
+struct android::DisplayInfo
+class android::IAudioFlinger::CreateTrackOutput
+audio_attributes_t *
+class android::sp<class android::media::IAudioRecord>
+class android::sp<class android::hardware::ICameraClient>
+android::String16
+class android::sp<class android::IMediaMetadataRetriever>
+class android::sp<class android::IDrmClient>
+struct android::hardware::hidl_vec<struct android::hardware::hidl_vec<unsigned char> >
+class android::FrameStats
+map<class android::String16, class android::String16, struct less<class android::String16>, class allocator<struct pair< class android::String16, class android::String16> > >::mapped_type ( map<class android::String16, class android::String16, struct less<class android::String16>, class allocator<struct pair< class android::String16, class android::String16> > >::key_type )
+audio_patch_handle_t
+char16_t *
+int64_t
+long long
+class android::sp<class android::IMediaPlayerClient>
+enum audio_port_type_t
+char [64]
+enum android_dataspace_t
+enum android::MediaAnalyticsItem::Type
+class android::sp<class android::IAppOpsCallback>
+class android::sp<class android::ICameraRecordingProxy>
+class android::MediaResourcePolicy
+class __tree__iterator<int, class __tree_node<int, void *> *, long>
+class aaudio::AudioEndpointParcelable
+class android::NativeHandle
+struct android::hardware::hidl_vec<unsigned char>
+class android::DrmConstraints *
+class vector<class android::content::pm::Signature>
+audio_channel_mask_t [32]
+class vector<class android::security::keymaster::KeyAttestationPackageInfo>
+class com::android::server::wifi::wificond::SingleScanSettings
+class android::Vector<class android::MediaResourcePolicy>
+unsigned int
+struct android::MediaCodecInfo
+class android::Parcel *
+class android::sp<class android::IMemoryHeap>
+audio_module_handle_t
+enum aaudio::RingbufferFlags
+struct android::CryptoPlugin::SubSample[numSubSamples]
+struct audio_port_config_session_ext
+enum android::(anonymous at system.core.libutils.include.utils.Errors.h:45:1)
+class android::half
+float
+class android::sp<class android::IAudioFlingerClient>
+struct audio_gain
+class vector<class android::dvr::ParcelableComposerLayer>
+struct camera_metadata *
+android::media::Metadata::Type *
+struct android::MediaCodecInfo::Capabilities
+class vector<string>
+enum android::AVSyncSource
+enum android::(anonymous at frameworks.av.media.libmedia.IMediaSource.cpp:45:1)
+long
+unsigned short
+audio_gain_mode_t
+class vector<struct android::hardware::CameraStatus>
+android::status_t *
+union audio_port_config::(anonymous at system.media.audio.include.system.audio.h:427:5)
+audio_devices_t
+class android::sp<class android::IDrmServiceListener>
+struct android::hardware::hidl_vec<struct android::hardware::keymaster::V4_0::KeyParameter>
+class android::media::VolumeShaper::State
+class android::sp<class android::IMediaExtractor>
+struct native_handle
+class android::sp<class android::IMediaRecorderClient>
+audio_format_t[numSurroundFormats]
+class android::sp<struct android::IDrm>
+enum android::media::VolumeShaper::Configuration::Type
+class com::android::server::wifi::wificond::PnoSettings
+class android::RefBase
+struct audio_patch[numPatches]
+int>
+IntegerLiteral
+struct android::hardware::CameraInfo
+struct android::security::keymaster::KeymasterBlob
+class android::Vector<float>
+class android::os::StatsDimensionsValue
+enum android::binder::(anonymous at frameworks.native.libs.binder.include.private.binder.ParcelValTypes.h:21:1)
+class aaudio::AAudioStreamRequest
+class vector<class android::LayerDebugInfo>
+class android::sp<class android::IEffectClient>
+void *
+enum android::hardware::graphics::composer::V2_1::IComposerClient::PowerMode
+struct sockaddr_in
+class android::hardware::camera2::params::OutputConfiguration
+class android::sp<class android::IDisplayEventConnection>
+class android::sp<class android::os::IThermalEventListener>
+class android::sp<struct android::IStreamSource>
+class android::sp<class android::IShellCallback>
+struct audio_gain_config
+struct audio_attributes_t
+class android::sp<class android::IEffect>
+class android::sp<class android::ISoundTriggerClient>
+uintptr_t
+class vector<unsigned char>
+char
+class vector<struct android::hardware::camera2::CaptureRequest>
+vector<class android::sp<class android::net::wifi::IClientInterface>>
+android::media::Metadata::Type
+class android::sp<class android::IAAudioClient>
+class vector<class android::media::MicrophoneInfo>
+enum audio_mode_t
+class android::IAudioFlinger::CreateTrackInput
+Function
+class android::BufferHubProducer
+class android::Vector<int>
+struct android::BufferingSettings
+class android::net::UidRange
+sound_trigger_module_handle_t
+metadata_vendor_id_t
+enum audio_output_flags_t
+float[implicit_9]
+struct android::layer_state_t::matrix22_t
+enum android::AudioTimestretchFallbackMode
+bool
+enum android::DrmPlugin::HdcpLevel
+class android::sp<class android::IRemoteDisplay>
+enum android::CryptoPlugin::Mode
+class android::sp<class android::IMediaPlayer>
+struct android::security::keymaster::KeymasterArguments
+class android::MetaDataBase
+uint32_t
+class android::sp<class android::hardware::ICamera>
+class android::sp<class android::IMemory>
+class com::android::server::wifi::wificond::RadioChainInfo
+enum android::OMXBuffer::BufferType
+class android::Sensor
+class android::Interpolator
+struct android::hardware::camera2::impl::CaptureResultExtras
+class android::String8
+__be16
+struct audio_port_session_ext
+struct audio_gain [16]
+class android::Parcel
+class android::Vector<class android::MediaResource>
+union audio_port_config_mix_ext::(anonymous at system.media.audio.include.system.audio.h:403:5)
+unsigned char [6]
+struct audio_port_device_ext
+enum android::AudioTimestretchStretchMode
+class android::sp<class android::ISoundTrigger>
+struct audio_port
+class android::sp<class android::IRemoteDisplayClient>
+struct audio_port_config
+union audio_port::(anonymous at system.media.audio.include.system.audio.h:478:5)
+enum android::ISurfaceComposer::VsyncSource

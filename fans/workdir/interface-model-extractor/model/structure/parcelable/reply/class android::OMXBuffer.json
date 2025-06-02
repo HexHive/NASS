@@ -1,0 +1,525 @@
+{
+    "class android::OMXBuffer": {
+        "variable": [
+            {
+                "count": 1,
+                "self_constraint": [
+                    "constraint0",
+                    "constraint2",
+                    "constraint3",
+                    "constraint6"
+                ],
+                "name": "mBufferType",
+                "under_constraint": [],
+                "dependency": [],
+                "relation": [],
+                "signature": "enum android::OMXBuffer::BufferType",
+                "serialization_type": 2,
+                "usedBy": [],
+                "type": "enum android::OMXBuffer::BufferType",
+                "loop": []
+            },
+            {
+                "count": 1,
+                "self_constraint": [],
+                "name": "mRangeOffset",
+                "under_constraint": [
+                    {
+                        "status": true,
+                        "name": "constraint0"
+                    }
+                ],
+                "dependency": [],
+                "relation": [],
+                "signature": "OMX_U32",
+                "serialization_type": 2,
+                "usedBy": [],
+                "type": "OMX_U32",
+                "loop": []
+            },
+            {
+                "count": 1,
+                "self_constraint": [
+                    "constraint1",
+                    "constraint5"
+                ],
+                "name": "err",
+                "under_constraint": [
+                    {
+                        "status": true,
+                        "name": "constraint0"
+                    }
+                ],
+                "dependency": [],
+                "relation": [],
+                "serialization_type": 0,
+                "usedBy": [],
+                "type": "android::status_t",
+                "loop": []
+            },
+            {
+                "count": 1,
+                "self_constraint": [],
+                "name": "mRangeLength",
+                "under_constraint": [
+                    {
+                        "status": true,
+                        "name": "constraint0"
+                    },
+                    {
+                        "status": false,
+                        "name": "constraint1"
+                    }
+                ],
+                "dependency": [],
+                "relation": [],
+                "signature": "OMX_U32",
+                "serialization_type": 2,
+                "usedBy": [],
+                "type": "OMX_U32",
+                "loop": []
+            },
+            {
+                "count": 1,
+                "self_constraint": [],
+                "name": "implicit_4",
+                "under_constraint": [
+                    {
+                        "status": true,
+                        "name": "constraint0"
+                    },
+                    {
+                        "status": false,
+                        "name": "constraint1"
+                    }
+                ],
+                "dependency": [],
+                "relation": [],
+                "serialization_type": 0,
+                "usedBy": [],
+                "type": "android::status_t",
+                "loop": []
+            },
+            {
+                "count": 1,
+                "self_constraint": [],
+                "name": "mMem",
+                "under_constraint": [
+                    {
+                        "status": true,
+                        "name": "constraint0"
+                    },
+                    {
+                        "status": true,
+                        "name": "constraint2"
+                    }
+                ],
+                "dependency": [],
+                "relation": [],
+                "signature": "sp<class android::IMemory>",
+                "serialization_type": 2,
+                "usedBy": [],
+                "type": "class android::sp<class android::IMemory>",
+                "loop": [],
+                "interfaceName": "IMemory"
+            },
+            {
+                "count": 1,
+                "self_constraint": [],
+                "name": "implicit_6",
+                "under_constraint": [
+                    {
+                        "status": true,
+                        "name": "constraint0"
+                    },
+                    {
+                        "status": true,
+                        "name": "constraint2"
+                    }
+                ],
+                "dependency": [],
+                "relation": [],
+                "serialization_type": 0,
+                "usedBy": [],
+                "type": "android::status_t",
+                "loop": []
+            },
+            {
+                "count": 1,
+                "self_constraint": [],
+                "name": "implicit_9",
+                "under_constraint": [
+                    {
+                        "status": true,
+                        "name": "constraint0"
+                    },
+                    {
+                        "status": true,
+                        "name": "constraint3"
+                    },
+                    {
+                        "status": true,
+                        "name": "constraint4"
+                    }
+                ],
+                "value": false,
+                "dependency": [],
+                "relation": [],
+                "serialization_type": 2,
+                "usedBy": [],
+                "type": "_Bool",
+                "loop": []
+            },
+            {
+                "count": 1,
+                "self_constraint": [],
+                "name": "implicit_10",
+                "under_constraint": [
+                    {
+                        "status": true,
+                        "name": "constraint0"
+                    },
+                    {
+                        "status": true,
+                        "name": "constraint3"
+                    },
+                    {
+                        "status": true,
+                        "name": "constraint4"
+                    }
+                ],
+                "dependency": [],
+                "relation": [],
+                "serialization_type": 0,
+                "usedBy": [],
+                "type": "android::status_t",
+                "loop": []
+            },
+            {
+                "count": 1,
+                "self_constraint": [],
+                "name": "notNull",
+                "under_constraint": [
+                    {
+                        "status": true,
+                        "name": "constraint0"
+                    },
+                    {
+                        "status": true,
+                        "name": "constraint3"
+                    },
+                    {
+                        "status": false,
+                        "name": "constraint4"
+                    }
+                ],
+                "value": true,
+                "dependency": [],
+                "relation": [],
+                "serialization_type": 2,
+                "usedBy": [],
+                "type": "_Bool",
+                "loop": []
+            },
+            {
+                "count": 1,
+                "self_constraint": [],
+                "name": "mGraphicBuffer",
+                "under_constraint": [
+                    {
+                        "status": true,
+                        "name": "constraint0"
+                    },
+                    {
+                        "status": true,
+                        "name": "constraint3"
+                    },
+                    {
+                        "status": false,
+                        "name": "constraint4"
+                    },
+                    {
+                        "status": false,
+                        "name": "constraint5"
+                    }
+                ],
+                "dependency": [],
+                "relation": [],
+                "signature": "sp<class android::GraphicBuffer>",
+                "serialization_type": 2,
+                "usedBy": [],
+                "type": "class android::GraphicBuffer",
+                "loop": []
+            },
+            {
+                "count": 1,
+                "self_constraint": [],
+                "name": "implicit_13",
+                "under_constraint": [
+                    {
+                        "status": true,
+                        "name": "constraint0"
+                    },
+                    {
+                        "status": true,
+                        "name": "constraint3"
+                    },
+                    {
+                        "status": false,
+                        "name": "constraint4"
+                    },
+                    {
+                        "status": false,
+                        "name": "constraint5"
+                    }
+                ],
+                "dependency": [],
+                "relation": [],
+                "serialization_type": 0,
+                "usedBy": [],
+                "type": "android::status_t",
+                "loop": []
+            },
+            {
+                "count": 1,
+                "self_constraint": [],
+                "name": "mNativeHandle->handle",
+                "under_constraint": [
+                    {
+                        "status": true,
+                        "name": "constraint0"
+                    },
+                    {
+                        "status": true,
+                        "name": "constraint3"
+                    },
+                    {
+                        "status": false,
+                        "name": "constraint4"
+                    },
+                    {
+                        "status": true,
+                        "name": "constraint6"
+                    }
+                ],
+                "dependency": [],
+                "relation": [],
+                "serialization_type": 2,
+                "usedBy": [],
+                "type": "struct native_handle",
+                "loop": []
+            },
+            {
+                "count": 1,
+                "self_constraint": [],
+                "name": "implicit_15",
+                "under_constraint": [
+                    {
+                        "status": true,
+                        "name": "constraint0"
+                    },
+                    {
+                        "status": true,
+                        "name": "constraint3"
+                    },
+                    {
+                        "status": false,
+                        "name": "constraint4"
+                    },
+                    {
+                        "status": true,
+                        "name": "constraint6"
+                    }
+                ],
+                "dependency": [],
+                "relation": [],
+                "serialization_type": 0,
+                "usedBy": [],
+                "type": "android::status_t",
+                "loop": []
+            },
+            {
+                "count": 1,
+                "self_constraint": [],
+                "name": "android::BAD_VALUE",
+                "under_constraint": [
+                    {
+                        "status": true,
+                        "name": "constraint0"
+                    },
+                    {
+                        "status": true,
+                        "name": "constraint3"
+                    },
+                    {
+                        "status": false,
+                        "name": "constraint4"
+                    }
+                ],
+                "value": -22,
+                "dependency": [],
+                "relation": [],
+                "serialization_type": 0,
+                "usedBy": [],
+                "type": "android::status_t",
+                "loop": []
+            }
+        ],
+        "dependency": [],
+        "loop": [],
+        "possibility": [
+            {
+                "return": "err",
+                "reply": [
+                    "mBufferType",
+                    "mRangeOffset"
+                ],
+                "data": [],
+                "id": 0
+            },
+            {
+                "return": "implicit_10",
+                "reply": [
+                    "mBufferType",
+                    "mRangeOffset",
+                    "mRangeLength",
+                    "mMem",
+                    "implicit_9"
+                ],
+                "data": [],
+                "id": 1
+            },
+            {
+                "return": "err",
+                "reply": [
+                    "mBufferType",
+                    "mRangeOffset",
+                    "mRangeLength",
+                    "mMem",
+                    "notNull"
+                ],
+                "data": [],
+                "id": 2
+            },
+            {
+                "return": "android::BAD_VALUE",
+                "reply": [
+                    "mBufferType",
+                    "mRangeOffset",
+                    "mRangeLength",
+                    "mMem",
+                    "notNull",
+                    "mGraphicBuffer",
+                    "mNativeHandle->handle"
+                ],
+                "data": [],
+                "id": 3
+            }
+        ],
+        "constraint": [
+            {
+                "lhs": {
+                    "type": "enum android::OMXBuffer::BufferType",
+                    "name": "mBufferType",
+                    "signature": "enum android::OMXBuffer::BufferType"
+                },
+                "rhs": {
+                    "type": "IntegerLiteral",
+                    "name": "implicit_2",
+                    "value": 1
+                },
+                "opcode": "==",
+                "name": "constraint0",
+                "probability": 0.9
+            },
+            {
+                "lhs": {
+                    "type": "android::status_t",
+                    "name": "err"
+                },
+                "rhs": {
+                    "type": "enum android::(anonymous at system.core.libutils.include.utils.Errors.h:45:1)",
+                    "name": "android::OK",
+                    "value": 0
+                },
+                "opcode": "!=",
+                "name": "constraint1",
+                "probability": 0.1
+            },
+            {
+                "lhs": {
+                    "type": "enum android::OMXBuffer::BufferType",
+                    "name": "mBufferType",
+                    "signature": "enum android::OMXBuffer::BufferType"
+                },
+                "rhs": {
+                    "type": "IntegerLiteral",
+                    "name": "implicit_5",
+                    "value": 2
+                },
+                "opcode": "==",
+                "name": "constraint2",
+                "probability": 0.9
+            },
+            {
+                "lhs": {
+                    "type": "enum android::OMXBuffer::BufferType",
+                    "name": "mBufferType",
+                    "signature": "enum android::OMXBuffer::BufferType"
+                },
+                "rhs": {
+                    "type": "IntegerLiteral",
+                    "name": "implicit_7",
+                    "value": 3
+                },
+                "opcode": "==",
+                "name": "constraint3",
+                "probability": 0.9
+            },
+            {
+                "lhs": {
+                    "type": "class android::GraphicBuffer",
+                    "name": "mGraphicBuffer",
+                    "signature": "sp<class android::GraphicBuffer>"
+                },
+                "rhs": {
+                    "type": "const class android::GraphicBuffer *",
+                    "name": "implicit_8",
+                    "value": "NULL"
+                },
+                "opcode": "operator==",
+                "name": "constraint4",
+                "probability": 0.1
+            },
+            {
+                "lhs": {
+                    "type": "android::status_t",
+                    "name": "err"
+                },
+                "rhs": {
+                    "type": "enum android::(anonymous at system.core.libutils.include.utils.Errors.h:45:1)",
+                    "name": "android::OK",
+                    "value": 0
+                },
+                "opcode": "!=",
+                "name": "constraint5",
+                "probability": 0.1
+            },
+            {
+                "lhs": {
+                    "type": "enum android::OMXBuffer::BufferType",
+                    "name": "mBufferType",
+                    "signature": "enum android::OMXBuffer::BufferType"
+                },
+                "rhs": {
+                    "type": "IntegerLiteral",
+                    "name": "implicit_14",
+                    "value": 4
+                },
+                "opcode": "==",
+                "name": "constraint6",
+                "probability": 0.9
+            }
+        ]
+    }
+}

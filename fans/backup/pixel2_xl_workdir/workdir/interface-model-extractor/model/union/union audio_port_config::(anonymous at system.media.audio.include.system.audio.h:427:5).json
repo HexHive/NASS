@@ -1,0 +1,57 @@
+{
+    "union audio_port_config::(anonymous at system.media.audio.include.system.audio.h:427:5)":{
+        "dependency":[],
+        "possibility":[
+            {
+                "id":0,
+                "data":[
+                    "audio_port_config::(anonymous union)::device",
+                    "audio_port_config::(anonymous union)::mix",
+                    "audio_port_config::(anonymous union)::session"
+                ],
+                "reply":[],
+                "return":""
+            }
+        ],
+        "variable":[
+            {
+                "name":"audio_port_config::(anonymous union)::device",
+                "type":"struct audio_port_config_device_ext",
+                "serialization_type":1,
+                "self_constraint":[],
+                "under_constraint":[],
+                "relation":[],
+                "loop":[],
+                "usedBy":[],
+                "dependency":[],
+                "count":1
+            },
+            {
+                "name":"audio_port_config::(anonymous union)::mix",
+                "type":"struct audio_port_config_mix_ext",
+                "serialization_type":1,
+                "self_constraint":[],
+                "under_constraint":[],
+                "relation":[],
+                "loop":[],
+                "usedBy":[],
+                "dependency":[],
+                "count":1
+            },
+            {
+                "name":"audio_port_config::(anonymous union)::session",
+                "type":"struct audio_port_config_session_ext",
+                "serialization_type":1,
+                "self_constraint":[],
+                "under_constraint":[],
+                "relation":[],
+                "loop":[],
+                "usedBy":[],
+                "dependency":[],
+                "count":1
+            }
+        ],
+        "constraint":[],
+        "loop":[]
+    }
+}

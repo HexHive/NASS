@@ -1,0 +1,76 @@
+{
+    "class android::CursorWindow": {
+        "dependency": [],
+        "possibility": [
+            {
+                "id": 0,
+                "data": [],
+                "reply": [
+                    "mName",
+                    "mAshmemFd"
+                ],
+                "return": "status"
+            }
+        ],
+        "variable": [
+            {
+                "name": "mName",
+                "type": "class android::String8",
+                "signature": "class android::String8",
+                "serialization_type": 2,
+                "self_constraint": [],
+                "under_constraint": [],
+                "relation": [],
+                "loop": [],
+                "usedBy": [],
+                "dependency": [],
+                "count": 1
+            },
+            {
+                "name": "status",
+                "type": "android::status_t",
+                "serialization_type": 0,
+                "self_constraint": [
+                    "constraint0"
+                ],
+                "under_constraint": [],
+                "relation": [],
+                "loop": [],
+                "usedBy": [],
+                "dependency": [],
+                "count": 1
+            },
+            {
+                "name": "mAshmemFd",
+                "type": "FileDescriptor",
+                "signature": "int",
+                "serialization_type": 2,
+                "takeOwnership": false,
+                "self_constraint": [],
+                "under_constraint": [
+                    {
+                        "name": "constraint0",
+                        "status": true
+                    }
+                ],
+                "relation": [],
+                "loop": [],
+                "usedBy": [],
+                "dependency": [],
+                "count": 1
+            }
+        ],
+        "constraint": [
+            {
+                "name": "constraint0",
+                "opcode": "!",
+                "lhs": {
+                    "name": "status",
+                    "type": "android::status_t"
+                },
+                "probability": 0.5
+            }
+        ],
+        "loop": []
+    }
+}

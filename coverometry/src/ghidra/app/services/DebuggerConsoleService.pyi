@@ -1,0 +1,56 @@
+from typing import List
+import docking
+import docking.action
+import ghidra.dbg
+import java.lang
+import javax.swing
+
+
+class DebuggerConsoleService(ghidra.dbg.DebuggerConsoleLogger, object):
+
+
+
+
+
+
+
+
+    def addResolutionAction(self, __a0: docking.action.DockingActionIf) -> None: ...
+
+    def equals(self, __a0: object) -> bool: ...
+
+    def getActionContexts(self) -> List[object]: ...
+
+    def getClass(self) -> java.lang.Class: ...
+
+    def hashCode(self) -> int: ...
+
+    @overload
+    def log(self, __a0: javax.swing.Icon, __a1: unicode) -> None: ...
+
+    @overload
+    def log(self, __a0: javax.swing.Icon, __a1: unicode, __a2: docking.ActionContext) -> None: ...
+
+    def logContains(self, __a0: docking.ActionContext) -> bool: ...
+
+    def notify(self) -> None: ...
+
+    def notifyAll(self) -> None: ...
+
+    def removeFromLog(self, __a0: docking.ActionContext) -> None: ...
+
+    def removeResolutionAction(self, __a0: docking.action.DockingActionIf) -> None: ...
+
+    def toString(self) -> unicode: ...
+
+    @overload
+    def wait(self) -> None: ...
+
+    @overload
+    def wait(self, __a0: long) -> None: ...
+
+    @overload
+    def wait(self, __a0: long, __a1: int) -> None: ...
+
+    @property
+    def actionContexts(self) -> List[object]: ...

@@ -1,0 +1,286 @@
+from typing import List
+import ghidra.app.plugin.core.debug.service.model.launch
+import ghidra.app.services
+import ghidra.dbg
+import ghidra.dbg.target
+import ghidra.util.task
+import java.lang
+import java.util
+import java.util.concurrent
+import javax.swing
+
+
+class DebuggerProgramLaunchOffer(object):
+
+
+
+
+
+    class LaunchConfigurator(object):
+        NOP: ghidra.app.plugin.core.debug.service.model.launch.DebuggerProgramLaunchOffer.LaunchConfigurator = ghidra.app.plugin.core.debug.service.model.launch.DebuggerProgramLaunchOffer$LaunchConfigurator$1@6af3ba6
+
+
+
+
+
+
+
+        def configureConnector(self, __a0: ghidra.dbg.DebuggerModelFactory) -> None: ...
+
+        def configureLauncher(self, __a0: ghidra.dbg.target.TargetLauncher, __a1: java.util.Map, __a2: ghidra.app.plugin.core.debug.service.model.launch.DebuggerProgramLaunchOffer.RelPrompt) -> java.util.Map: ...
+
+        def equals(self, __a0: object) -> bool: ...
+
+        def getClass(self) -> java.lang.Class: ...
+
+        def hashCode(self) -> int: ...
+
+        def notify(self) -> None: ...
+
+        def notifyAll(self) -> None: ...
+
+        def toString(self) -> unicode: ...
+
+        @overload
+        def wait(self) -> None: ...
+
+        @overload
+        def wait(self, __a0: long) -> None: ...
+
+        @overload
+        def wait(self, __a0: long, __a1: int) -> None: ...
+
+
+
+
+
+
+    class RelPrompt(java.lang.Enum):
+        AFTER: ghidra.app.plugin.core.debug.service.model.launch.DebuggerProgramLaunchOffer.RelPrompt = AFTER
+        BEFORE: ghidra.app.plugin.core.debug.service.model.launch.DebuggerProgramLaunchOffer.RelPrompt = BEFORE
+        NONE: ghidra.app.plugin.core.debug.service.model.launch.DebuggerProgramLaunchOffer.RelPrompt = NONE
+
+
+
+
+
+
+
+        @overload
+        def compareTo(self, __a0: java.lang.Enum) -> int: ...
+
+        @overload
+        def compareTo(self, __a0: object) -> int: ...
+
+        def describeConstable(self) -> java.util.Optional: ...
+
+        def equals(self, __a0: object) -> bool: ...
+
+        def getClass(self) -> java.lang.Class: ...
+
+        def getDeclaringClass(self) -> java.lang.Class: ...
+
+        def hashCode(self) -> int: ...
+
+        def name(self) -> unicode: ...
+
+        def notify(self) -> None: ...
+
+        def notifyAll(self) -> None: ...
+
+        def ordinal(self) -> int: ...
+
+        def toString(self) -> unicode: ...
+
+        @overload
+        @staticmethod
+        def valueOf(__a0: unicode) -> ghidra.app.plugin.core.debug.service.model.launch.DebuggerProgramLaunchOffer.RelPrompt: ...
+
+        @overload
+        @staticmethod
+        def valueOf(__a0: java.lang.Class, __a1: unicode) -> java.lang.Enum: ...
+
+        @staticmethod
+        def values() -> List[ghidra.app.plugin.core.debug.service.model.launch.DebuggerProgramLaunchOffer.RelPrompt]: ...
+
+        @overload
+        def wait(self) -> None: ...
+
+        @overload
+        def wait(self, __a0: long) -> None: ...
+
+        @overload
+        def wait(self, __a0: long, __a1: int) -> None: ...
+
+
+
+
+
+
+    class PromptMode(java.lang.Enum):
+        ALWAYS: ghidra.app.plugin.core.debug.service.model.launch.DebuggerProgramLaunchOffer.PromptMode = ALWAYS
+        NEVER: ghidra.app.plugin.core.debug.service.model.launch.DebuggerProgramLaunchOffer.PromptMode = NEVER
+        ON_ERROR: ghidra.app.plugin.core.debug.service.model.launch.DebuggerProgramLaunchOffer.PromptMode = ON_ERROR
+
+
+
+
+
+
+
+        @overload
+        def compareTo(self, __a0: java.lang.Enum) -> int: ...
+
+        @overload
+        def compareTo(self, __a0: object) -> int: ...
+
+        def describeConstable(self) -> java.util.Optional: ...
+
+        def equals(self, __a0: object) -> bool: ...
+
+        def getClass(self) -> java.lang.Class: ...
+
+        def getDeclaringClass(self) -> java.lang.Class: ...
+
+        def hashCode(self) -> int: ...
+
+        def name(self) -> unicode: ...
+
+        def notify(self) -> None: ...
+
+        def notifyAll(self) -> None: ...
+
+        def ordinal(self) -> int: ...
+
+        def toString(self) -> unicode: ...
+
+        @overload
+        @staticmethod
+        def valueOf(__a0: unicode) -> ghidra.app.plugin.core.debug.service.model.launch.DebuggerProgramLaunchOffer.PromptMode: ...
+
+        @overload
+        @staticmethod
+        def valueOf(__a0: java.lang.Class, __a1: unicode) -> java.lang.Enum: ...
+
+        @staticmethod
+        def values() -> List[ghidra.app.plugin.core.debug.service.model.launch.DebuggerProgramLaunchOffer.PromptMode]: ...
+
+        @overload
+        def wait(self) -> None: ...
+
+        @overload
+        def wait(self, __a0: long) -> None: ...
+
+        @overload
+        def wait(self, __a0: long, __a1: int) -> None: ...
+
+
+
+
+
+
+    class LaunchResult(java.lang.Record):
+
+
+
+
+        def __init__(self, __a0: ghidra.dbg.DebuggerObjectModel, __a1: ghidra.dbg.target.TargetObject, __a2: ghidra.app.services.TraceRecorder, __a3: java.lang.Throwable): ...
+
+
+
+        def equals(self, __a0: object) -> bool: ...
+
+        def exception(self) -> java.lang.Throwable: ...
+
+        def getClass(self) -> java.lang.Class: ...
+
+        def hashCode(self) -> int: ...
+
+        def model(self) -> ghidra.dbg.DebuggerObjectModel: ...
+
+        def notify(self) -> None: ...
+
+        def notifyAll(self) -> None: ...
+
+        def recorder(self) -> ghidra.app.services.TraceRecorder: ...
+
+        def target(self) -> ghidra.dbg.target.TargetObject: ...
+
+        def toString(self) -> unicode: ...
+
+        @staticmethod
+        def totalFailure(__a0: java.lang.Throwable) -> ghidra.app.plugin.core.debug.service.model.launch.DebuggerProgramLaunchOffer.LaunchResult: ...
+
+        @overload
+        def wait(self) -> None: ...
+
+        @overload
+        def wait(self, __a0: long) -> None: ...
+
+        @overload
+        def wait(self, __a0: long, __a1: int) -> None: ...
+
+
+
+
+
+
+
+    def defaultPriority(self) -> int: ...
+
+    def equals(self, __a0: object) -> bool: ...
+
+    def getButtonTitle(self) -> unicode: ...
+
+    def getClass(self) -> java.lang.Class: ...
+
+    def getConfigName(self) -> unicode: ...
+
+    def getIcon(self) -> javax.swing.Icon: ...
+
+    def getMenuParentTitle(self) -> unicode: ...
+
+    def getMenuTitle(self) -> unicode: ...
+
+    def getQuickTitle(self) -> unicode: ...
+
+    def hashCode(self) -> int: ...
+
+    @overload
+    def launchProgram(self, __a0: ghidra.util.task.TaskMonitor, __a1: ghidra.app.plugin.core.debug.service.model.launch.DebuggerProgramLaunchOffer.PromptMode) -> java.util.concurrent.CompletableFuture: ...
+
+    @overload
+    def launchProgram(self, __a0: ghidra.util.task.TaskMonitor, __a1: ghidra.app.plugin.core.debug.service.model.launch.DebuggerProgramLaunchOffer.PromptMode, __a2: ghidra.app.plugin.core.debug.service.model.launch.DebuggerProgramLaunchOffer.LaunchConfigurator) -> java.util.concurrent.CompletableFuture: ...
+
+    def notify(self) -> None: ...
+
+    def notifyAll(self) -> None: ...
+
+    def toString(self) -> unicode: ...
+
+    @overload
+    def wait(self) -> None: ...
+
+    @overload
+    def wait(self, __a0: long) -> None: ...
+
+    @overload
+    def wait(self, __a0: long, __a1: int) -> None: ...
+
+    @property
+    def buttonTitle(self) -> unicode: ...
+
+    @property
+    def configName(self) -> unicode: ...
+
+    @property
+    def icon(self) -> javax.swing.Icon: ...
+
+    @property
+    def menuParentTitle(self) -> unicode: ...
+
+    @property
+    def menuTitle(self) -> unicode: ...
+
+    @property
+    def quickTitle(self) -> unicode: ...

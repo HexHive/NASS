@@ -1,0 +1,53 @@
+{
+    "android::NuPlayer2Driver::setParameter+android::status_t (int, const class android::Parcel &)":{
+        "dependency":[],
+        "possibility":[
+            {
+                "id":0,
+                "data":[],
+                "reply":[],
+                "return":"android::INVALID_OPERATION"
+            }
+        ],
+        "variable":[
+            {
+                "name":"android::INVALID_OPERATION",
+                "type":"android::status_t",
+                "value":-38,
+                "serialization_type":0,
+                "self_constraint":[],
+                "under_constraint":[],
+                "relation":[],
+                "loop":[],
+                "usedBy":[],
+                "dependency":[],
+                "count":1
+            },
+            {
+                "name":"",
+                "type":"int",
+                "serialization_type":0,
+                "self_constraint":[],
+                "under_constraint":[],
+                "relation":[],
+                "loop":[],
+                "usedBy":[],
+                "dependency":[],
+                "count":1
+            }
+        ],
+        "constraint":[],
+        "loop":[],
+        "argv":[
+            {
+                "name":"",
+                "type":"int",
+                "serialization_type":0
+            },
+            {
+                "name":"",
+                "type":"const class android::Parcel &"
+            }
+        ]
+    }
+}

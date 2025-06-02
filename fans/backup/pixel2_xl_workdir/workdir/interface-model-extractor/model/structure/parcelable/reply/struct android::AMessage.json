@@ -1,0 +1,425 @@
+{
+    "struct android::AMessage": {
+        "dependency": [
+            {
+                "filename": "BnMediaCodecList.json",
+                "type": "Transaction",
+                "name": "IMediaCodecList::4-4",
+                "possIdx": 1,
+                "varIdx": 1,
+                "varName": "info",
+                "varType": "struct android::AMessage"
+            }
+        ],
+        "possibility": [
+            {
+                "id": 0,
+                "data": [],
+                "reply": [
+                    "mWhat",
+                    "mNumItems",
+                    "item.mName",
+                    "item.mType",
+                    "item.u.int32Value",
+                    "item.u.int64Value",
+                    "item.u.sizeValue",
+                    "item.u.floatValue",
+                    "item.u.doubleValue",
+                    "item",
+                    "item.u.refValue"
+                ],
+                "return": ""
+            }
+        ],
+        "variable": [
+            {
+                "name": "mWhat",
+                "type": "int",
+                "signature": "uint32_t",
+                "serialization_type": 2,
+                "self_constraint": [],
+                "under_constraint": [],
+                "relation": [],
+                "loop": [],
+                "usedBy": [],
+                "dependency": [],
+                "count": 1
+            },
+            {
+                "name": "mNumItems",
+                "type": "int",
+                "signature": "size_t",
+                "serialization_type": 2,
+                "self_constraint": [
+                    "constraint0"
+                ],
+                "under_constraint": [],
+                "relation": [],
+                "loop": [],
+                "usedBy": [],
+                "dependency": [],
+                "count": 1
+            },
+            {
+                "name": "i",
+                "type": "size_t",
+                "value": 0,
+                "serialization_type": 0,
+                "self_constraint": [
+                    "constraint0"
+                ],
+                "under_constraint": [],
+                "relation": [],
+                "loop": [],
+                "usedBy": [],
+                "dependency": [],
+                "count": 1
+            },
+            {
+                "name": "item.mName",
+                "type": "char *",
+                "signature": "const char *",
+                "serialization_type": 2,
+                "self_constraint": [],
+                "under_constraint": [],
+                "relation": [],
+                "loop": [
+                    "loop0"
+                ],
+                "usedBy": [],
+                "dependency": [],
+                "count": 1,
+                "size": -1
+            },
+            {
+                "name": "item.mName::item",
+                "type": "char",
+                "signature": "const char *",
+                "serialization_type": 2,
+                "self_constraint": [],
+                "under_constraint": [],
+                "relation": [],
+                "loop": [
+                    "loop0"
+                ],
+                "usedBy": [],
+                "dependency": [],
+                "count": 1
+            },
+            {
+                "name": "item.mType",
+                "type": "enum android::AMessage::Type",
+                "signature": "enum android::AMessage::Type",
+                "serialization_type": 2,
+                "self_constraint": [
+                    "constraint1",
+                    "constraint2",
+                    "constraint3",
+                    "constraint4",
+                    "constraint5",
+                    "constraint6",
+                    "constraint7"
+                ],
+                "under_constraint": [],
+                "relation": [],
+                "loop": [
+                    "loop0"
+                ],
+                "usedBy": [],
+                "dependency": [],
+                "count": 1
+            },
+            {
+                "name": "item.u.int32Value",
+                "type": "int",
+                "signature": "int32_t",
+                "serialization_type": 2,
+                "self_constraint": [],
+                "under_constraint": [
+                    {
+                        "name": "constraint1",
+                        "status": true
+                    }
+                ],
+                "relation": [],
+                "loop": [
+                    "loop0"
+                ],
+                "usedBy": [],
+                "dependency": [],
+                "count": 1
+            },
+            {
+                "name": "item.u.int64Value",
+                "type": "long long",
+                "signature": "int64_t",
+                "serialization_type": 2,
+                "self_constraint": [],
+                "under_constraint": [
+                    {
+                        "name": "constraint2",
+                        "status": true
+                    }
+                ],
+                "relation": [],
+                "loop": [
+                    "loop0"
+                ],
+                "usedBy": [],
+                "dependency": [],
+                "count": 1
+            },
+            {
+                "name": "item.u.sizeValue",
+                "type": "int",
+                "signature": "size_t",
+                "serialization_type": 2,
+                "self_constraint": [],
+                "under_constraint": [
+                    {
+                        "name": "constraint3",
+                        "status": true
+                    }
+                ],
+                "relation": [],
+                "loop": [
+                    "loop0"
+                ],
+                "usedBy": [],
+                "dependency": [],
+                "count": 1
+            },
+            {
+                "name": "item.u.floatValue",
+                "type": "float",
+                "signature": "float",
+                "serialization_type": 2,
+                "self_constraint": [],
+                "under_constraint": [
+                    {
+                        "name": "constraint4",
+                        "status": true
+                    }
+                ],
+                "relation": [],
+                "loop": [
+                    "loop0"
+                ],
+                "usedBy": [],
+                "dependency": [],
+                "count": 1
+            },
+            {
+                "name": "item.u.doubleValue",
+                "type": "double",
+                "signature": "double",
+                "serialization_type": 2,
+                "self_constraint": [],
+                "under_constraint": [
+                    {
+                        "name": "constraint5",
+                        "status": true
+                    }
+                ],
+                "relation": [],
+                "loop": [
+                    "loop0"
+                ],
+                "usedBy": [],
+                "dependency": [],
+                "count": 1
+            },
+            {
+                "type": "char *",
+                "name": "item",
+                "serialization_type": 2,
+                "self_constraint": [],
+                "under_constraint": [
+                    {
+                        "name": "constraint6",
+                        "status": true
+                    }
+                ],
+                "relation": [],
+                "loop": [
+                    "loop0"
+                ],
+                "usedBy": [],
+                "dependency": [],
+                "count": 1,
+                "size": -1
+            },
+            {
+                "type": "char",
+                "name": "item::item",
+                "serialization_type": 2,
+                "self_constraint": [],
+                "under_constraint": [],
+                "relation": [],
+                "loop": [
+                    "loop0"
+                ],
+                "usedBy": [],
+                "dependency": [],
+                "count": 1
+            },
+            {
+                "name": "item.u.refValue",
+                "type": "class android::RefBase",
+                "signature": "class android::RefBase *",
+                "serialization_type": 2,
+                "self_constraint": [],
+                "under_constraint": [
+                    {
+                        "name": "constraint7",
+                        "status": true
+                    }
+                ],
+                "relation": [],
+                "loop": [
+                    "loop0"
+                ],
+                "usedBy": [],
+                "dependency": [],
+                "count": 1
+            }
+        ],
+        "constraint": [
+            {
+                "name": "constraint0",
+                "opcode": "<",
+                "lhs": {
+                    "name": "i",
+                    "type": "size_t"
+                },
+                "rhs": {
+                    "name": "mNumItems",
+                    "type": "int",
+                    "signature": "size_t"
+                },
+                "probability": 0.5
+            },
+            {
+                "name": "constraint1",
+                "opcode": "==",
+                "lhs": {
+                    "name": "item.mType",
+                    "type": "enum android::AMessage::Type",
+                    "signature": "enum android::AMessage::Type"
+                },
+                "rhs": {
+                    "name": "implicit_6",
+                    "type": "IntegerLiteral",
+                    "value": 0
+                },
+                "probability": 0.9
+            },
+            {
+                "name": "constraint2",
+                "opcode": "==",
+                "lhs": {
+                    "name": "item.mType",
+                    "type": "enum android::AMessage::Type",
+                    "signature": "enum android::AMessage::Type"
+                },
+                "rhs": {
+                    "name": "implicit_8",
+                    "type": "IntegerLiteral",
+                    "value": 1
+                },
+                "probability": 0.9
+            },
+            {
+                "name": "constraint3",
+                "opcode": "==",
+                "lhs": {
+                    "name": "item.mType",
+                    "type": "enum android::AMessage::Type",
+                    "signature": "enum android::AMessage::Type"
+                },
+                "rhs": {
+                    "name": "implicit_10",
+                    "type": "IntegerLiteral",
+                    "value": 2
+                },
+                "probability": 0.9
+            },
+            {
+                "name": "constraint4",
+                "opcode": "==",
+                "lhs": {
+                    "name": "item.mType",
+                    "type": "enum android::AMessage::Type",
+                    "signature": "enum android::AMessage::Type"
+                },
+                "rhs": {
+                    "name": "implicit_12",
+                    "type": "IntegerLiteral",
+                    "value": 3
+                },
+                "probability": 0.9
+            },
+            {
+                "name": "constraint5",
+                "opcode": "==",
+                "lhs": {
+                    "name": "item.mType",
+                    "type": "enum android::AMessage::Type",
+                    "signature": "enum android::AMessage::Type"
+                },
+                "rhs": {
+                    "name": "implicit_14",
+                    "type": "IntegerLiteral",
+                    "value": 4
+                },
+                "probability": 0.9
+            },
+            {
+                "name": "constraint6",
+                "opcode": "==",
+                "lhs": {
+                    "name": "item.mType",
+                    "type": "enum android::AMessage::Type",
+                    "signature": "enum android::AMessage::Type"
+                },
+                "rhs": {
+                    "name": "implicit_16",
+                    "type": "IntegerLiteral",
+                    "value": 6
+                },
+                "probability": 0.9
+            },
+            {
+                "name": "constraint7",
+                "opcode": "==",
+                "lhs": {
+                    "name": "item.mType",
+                    "type": "enum android::AMessage::Type",
+                    "signature": "enum android::AMessage::Type"
+                },
+                "rhs": {
+                    "name": "implicit_18",
+                    "type": "IntegerLiteral",
+                    "value": 8
+                },
+                "probability": 0.9
+            }
+        ],
+        "loop": [
+            {
+                "name": "loop0",
+                "counter": {
+                    "name": "i",
+                    "type": "size_t",
+                    "value": 0
+                },
+                "constraint": "constraint0",
+                "inc": {
+                    "opcode": "++",
+                    "name": "i",
+                    "type": "size_t"
+                }
+            }
+        ]
+    }
+}

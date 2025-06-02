@@ -1,0 +1,11 @@
+0x0	0x423c	/system/bin/thermalserviced
+0x8	0x42ec	/system/bin/thermalserviced
+0x10	0x40f0	/system/bin/thermalserviced
+0x18	0x40f8	/system/bin/thermalserviced
+0x20	0x3a28	/system/bin/thermalserviced
+0x28	0x3c80	/system/bin/thermalserviced
+0x30	0x3900	/system/bin/thermalserviced
+0x38	0x39dc	/system/bin/thermalserviced
+0x40	0x40fc	/system/bin/thermalserviced
+0x48	0x63d8	/system/lib64/libthermalservice.so
+0x50	0x3ed8	/system/bin/thermalserviced

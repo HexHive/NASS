@@ -1,0 +1,526 @@
+{
+    "class android::os::StatsDimensionsValue": {
+        "variable": [
+            {
+                "count": 1,
+                "self_constraint": [],
+                "name": "mField",
+                "under_constraint": [],
+                "dependency": [],
+                "relation": [],
+                "signature": "int32_t",
+                "serialization_type": 2,
+                "usedBy": [],
+                "type": "int",
+                "loop": []
+            },
+            {
+                "count": 1,
+                "self_constraint": [
+                    "constraint0",
+                    "constraint1",
+                    "constraint8",
+                    "constraint10"
+                ],
+                "name": "err",
+                "under_constraint": [],
+                "value": -2147483648,
+                "dependency": [],
+                "relation": [],
+                "serialization_type": 0,
+                "usedBy": [],
+                "type": "android::status_t",
+                "loop": []
+            },
+            {
+                "count": 1,
+                "self_constraint": [
+                    "constraint2",
+                    "constraint3",
+                    "constraint4",
+                    "constraint5",
+                    "constraint6",
+                    "constraint7"
+                ],
+                "name": "mValueType",
+                "under_constraint": [
+                    {
+                        "status": false,
+                        "name": "constraint0"
+                    }
+                ],
+                "dependency": [],
+                "relation": [],
+                "signature": "int32_t",
+                "serialization_type": 2,
+                "usedBy": [],
+                "type": "int",
+                "loop": []
+            },
+            {
+                "count": 1,
+                "self_constraint": [],
+                "name": "mStrValue",
+                "under_constraint": [
+                    {
+                        "status": false,
+                        "name": "constraint0"
+                    },
+                    {
+                        "status": false,
+                        "name": "constraint1"
+                    },
+                    {
+                        "status": true,
+                        "name": "constraint2"
+                    }
+                ],
+                "dependency": [],
+                "relation": [],
+                "signature": "class android::String16",
+                "serialization_type": 2,
+                "usedBy": [],
+                "type": "class android::String16",
+                "loop": []
+            },
+            {
+                "count": 1,
+                "self_constraint": [],
+                "name": "mIntValue",
+                "under_constraint": [
+                    {
+                        "status": false,
+                        "name": "constraint0"
+                    },
+                    {
+                        "status": false,
+                        "name": "constraint1"
+                    },
+                    {
+                        "status": true,
+                        "name": "constraint3"
+                    }
+                ],
+                "dependency": [],
+                "relation": [],
+                "signature": "int32_t",
+                "serialization_type": 2,
+                "usedBy": [],
+                "type": "int",
+                "loop": []
+            },
+            {
+                "count": 1,
+                "self_constraint": [],
+                "name": "mLongValue",
+                "under_constraint": [
+                    {
+                        "status": false,
+                        "name": "constraint0"
+                    },
+                    {
+                        "status": false,
+                        "name": "constraint1"
+                    },
+                    {
+                        "status": true,
+                        "name": "constraint4"
+                    }
+                ],
+                "dependency": [],
+                "relation": [],
+                "signature": "int64_t",
+                "serialization_type": 2,
+                "usedBy": [],
+                "type": "long long",
+                "loop": []
+            },
+            {
+                "count": 1,
+                "self_constraint": [],
+                "name": "mBoolValue",
+                "under_constraint": [
+                    {
+                        "status": false,
+                        "name": "constraint0"
+                    },
+                    {
+                        "status": false,
+                        "name": "constraint1"
+                    },
+                    {
+                        "status": true,
+                        "name": "constraint5"
+                    }
+                ],
+                "dependency": [],
+                "relation": [],
+                "signature": "_Bool",
+                "serialization_type": 2,
+                "usedBy": [],
+                "type": "_Bool",
+                "loop": []
+            },
+            {
+                "count": 1,
+                "self_constraint": [],
+                "name": "mFloatValue",
+                "under_constraint": [
+                    {
+                        "status": false,
+                        "name": "constraint0"
+                    },
+                    {
+                        "status": false,
+                        "name": "constraint1"
+                    },
+                    {
+                        "status": true,
+                        "name": "constraint6"
+                    }
+                ],
+                "dependency": [],
+                "relation": [],
+                "signature": "float",
+                "serialization_type": 2,
+                "usedBy": [],
+                "type": "float",
+                "loop": []
+            },
+            {
+                "count": 1,
+                "self_constraint": [
+                    "constraint9"
+                ],
+                "name": "sz",
+                "under_constraint": [
+                    {
+                        "status": false,
+                        "name": "constraint0"
+                    },
+                    {
+                        "status": false,
+                        "name": "constraint1"
+                    },
+                    {
+                        "status": true,
+                        "name": "constraint7"
+                    }
+                ],
+                "dependency": [],
+                "relation": [],
+                "serialization_type": 2,
+                "usedBy": [],
+                "type": "int",
+                "loop": []
+            },
+            {
+                "count": 1,
+                "self_constraint": [
+                    "constraint9"
+                ],
+                "name": "i",
+                "under_constraint": [
+                    {
+                        "status": false,
+                        "name": "constraint0"
+                    },
+                    {
+                        "status": false,
+                        "name": "constraint1"
+                    },
+                    {
+                        "status": true,
+                        "name": "constraint7"
+                    },
+                    {
+                        "status": false,
+                        "name": "constraint8"
+                    }
+                ],
+                "value": 0,
+                "dependency": [],
+                "relation": [],
+                "serialization_type": 0,
+                "usedBy": [],
+                "type": "int",
+                "loop": []
+            },
+            {
+                "count": 1,
+                "self_constraint": [],
+                "name": "mTupleValue[i]",
+                "under_constraint": [
+                    {
+                        "status": false,
+                        "name": "constraint0"
+                    },
+                    {
+                        "status": false,
+                        "name": "constraint1"
+                    },
+                    {
+                        "status": true,
+                        "name": "constraint7"
+                    },
+                    {
+                        "status": false,
+                        "name": "constraint8"
+                    }
+                ],
+                "dependency": [],
+                "relation": [],
+                "serialization_type": 2,
+                "usedBy": [],
+                "type": "class android::os::StatsDimensionsValue",
+                "loop": [
+                    "loop0"
+                ]
+            }
+        ],
+        "dependency": [],
+        "loop": [
+            {
+                "counter": {
+                    "type": "int",
+                    "name": "i",
+                    "value": 0
+                },
+                "inc": {
+                    "type": "int",
+                    "opcode": "++",
+                    "name": "i"
+                },
+                "name": "loop0",
+                "constraint": "constraint9"
+            }
+        ],
+        "possibility": [
+            {
+                "return": "err",
+                "reply": [
+                    "mField"
+                ],
+                "data": [],
+                "id": 0
+            },
+            {
+                "return": "err",
+                "reply": [
+                    "mField",
+                    "mValueType"
+                ],
+                "data": [],
+                "id": 1
+            },
+            {
+                "return": "err",
+                "reply": [
+                    "mField",
+                    "mValueType",
+                    "mStrValue",
+                    "mIntValue",
+                    "mLongValue",
+                    "mBoolValue",
+                    "mFloatValue",
+                    "sz"
+                ],
+                "data": [],
+                "id": 2
+            },
+            {
+                "return": "err",
+                "reply": [
+                    "mField",
+                    "mValueType",
+                    "mStrValue",
+                    "mIntValue",
+                    "mLongValue",
+                    "mBoolValue",
+                    "mFloatValue",
+                    "sz",
+                    "mTupleValue[i]"
+                ],
+                "data": [],
+                "id": 3
+            },
+            {
+                "return": "err",
+                "reply": [
+                    "mField",
+                    "mValueType",
+                    "mStrValue",
+                    "mIntValue",
+                    "mLongValue",
+                    "mBoolValue",
+                    "mFloatValue",
+                    "sz",
+                    "mTupleValue[i]"
+                ],
+                "data": [],
+                "id": 4
+            }
+        ],
+        "constraint": [
+            {
+                "lhs": {
+                    "type": "android::status_t",
+                    "name": "err"
+                },
+                "rhs": {
+                    "type": "enum android::(anonymous at system.core.libutils.include.utils.Errors.h:45:1)",
+                    "name": "android::NO_ERROR",
+                    "value": 0
+                },
+                "opcode": "!=",
+                "name": "constraint0",
+                "probability": 0.1
+            },
+            {
+                "lhs": {
+                    "type": "android::status_t",
+                    "name": "err"
+                },
+                "rhs": {
+                    "type": "enum android::(anonymous at system.core.libutils.include.utils.Errors.h:45:1)",
+                    "name": "android::NO_ERROR",
+                    "value": 0
+                },
+                "opcode": "!=",
+                "name": "constraint1",
+                "probability": 0.1
+            },
+            {
+                "lhs": {
+                    "type": "int",
+                    "name": "mValueType",
+                    "signature": "int32_t"
+                },
+                "rhs": {
+                    "type": "IntegerLiteral",
+                    "name": "implicit_3",
+                    "value": 2
+                },
+                "opcode": "==",
+                "name": "constraint2",
+                "probability": 0.9
+            },
+            {
+                "lhs": {
+                    "type": "int",
+                    "name": "mValueType",
+                    "signature": "int32_t"
+                },
+                "rhs": {
+                    "type": "IntegerLiteral",
+                    "name": "implicit_5",
+                    "value": 3
+                },
+                "opcode": "==",
+                "name": "constraint3",
+                "probability": 0.9
+            },
+            {
+                "lhs": {
+                    "type": "int",
+                    "name": "mValueType",
+                    "signature": "int32_t"
+                },
+                "rhs": {
+                    "type": "IntegerLiteral",
+                    "name": "implicit_7",
+                    "value": 4
+                },
+                "opcode": "==",
+                "name": "constraint4",
+                "probability": 0.9
+            },
+            {
+                "lhs": {
+                    "type": "int",
+                    "name": "mValueType",
+                    "signature": "int32_t"
+                },
+                "rhs": {
+                    "type": "IntegerLiteral",
+                    "name": "implicit_9",
+                    "value": 5
+                },
+                "opcode": "==",
+                "name": "constraint5",
+                "probability": 0.9
+            },
+            {
+                "lhs": {
+                    "type": "int",
+                    "name": "mValueType",
+                    "signature": "int32_t"
+                },
+                "rhs": {
+                    "type": "IntegerLiteral",
+                    "name": "implicit_11",
+                    "value": 6
+                },
+                "opcode": "==",
+                "name": "constraint6",
+                "probability": 0.9
+            },
+            {
+                "lhs": {
+                    "type": "int",
+                    "name": "mValueType",
+                    "signature": "int32_t"
+                },
+                "rhs": {
+                    "type": "IntegerLiteral",
+                    "name": "implicit_13",
+                    "value": 7
+                },
+                "opcode": "==",
+                "name": "constraint7",
+                "probability": 0.9
+            },
+            {
+                "lhs": {
+                    "type": "android::status_t",
+                    "name": "err"
+                },
+                "rhs": {
+                    "type": "enum android::(anonymous at system.core.libutils.include.utils.Errors.h:45:1)",
+                    "name": "android::NO_ERROR",
+                    "value": 0
+                },
+                "opcode": "!=",
+                "name": "constraint8",
+                "probability": 0.1
+            },
+            {
+                "lhs": {
+                    "type": "int",
+                    "name": "i"
+                },
+                "rhs": {
+                    "type": "int",
+                    "name": "sz"
+                },
+                "opcode": "<",
+                "name": "constraint9",
+                "probability": 0.5
+            },
+            {
+                "lhs": {
+                    "type": "android::status_t",
+                    "name": "err"
+                },
+                "rhs": {
+                    "type": "enum android::(anonymous at system.core.libutils.include.utils.Errors.h:45:1)",
+                    "name": "android::NO_ERROR",
+                    "value": 0
+                },
+                "opcode": "!=",
+                "name": "constraint10",
+                "probability": 0.1
+            }
+        ]
+    }
+}

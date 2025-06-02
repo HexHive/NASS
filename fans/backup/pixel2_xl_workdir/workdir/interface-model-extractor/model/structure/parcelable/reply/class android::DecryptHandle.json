@@ -1,0 +1,317 @@
+{
+    "class android::DecryptHandle": {
+        "variable": [
+            {
+                "count": 1,
+                "self_constraint": [],
+                "name": "handle.decryptId",
+                "under_constraint": [],
+                "dependency": [],
+                "relation": [],
+                "signature": "int",
+                "serialization_type": 2,
+                "usedBy": [],
+                "type": "int",
+                "loop": []
+            },
+            {
+                "count": 1,
+                "self_constraint": [],
+                "name": "handle.mimeType",
+                "under_constraint": [],
+                "dependency": [],
+                "relation": [],
+                "signature": "class android::String8",
+                "serialization_type": 2,
+                "usedBy": [],
+                "type": "class android::String8",
+                "loop": []
+            },
+            {
+                "count": 1,
+                "self_constraint": [],
+                "name": "handle.decryptApiType",
+                "under_constraint": [],
+                "dependency": [],
+                "relation": [],
+                "signature": "int",
+                "serialization_type": 2,
+                "usedBy": [],
+                "type": "int",
+                "loop": []
+            },
+            {
+                "count": 1,
+                "self_constraint": [],
+                "name": "handle.status",
+                "under_constraint": [],
+                "dependency": [],
+                "relation": [],
+                "signature": "int",
+                "serialization_type": 2,
+                "usedBy": [],
+                "type": "int",
+                "loop": []
+            },
+            {
+                "count": 2,
+                "self_constraint": [
+                    "constraint0"
+                ],
+                "name": "size",
+                "under_constraint": [],
+                "dependency": [],
+                "relation": [],
+                "serialization_type": 2,
+                "usedBy": [],
+                "type": "int",
+                "loop": []
+            },
+            {
+                "count": 1,
+                "self_constraint": [
+                    "constraint0",
+                    "constraint1"
+                ],
+                "name": "i",
+                "under_constraint": [],
+                "value": 0,
+                "dependency": [],
+                "relation": [],
+                "serialization_type": 0,
+                "usedBy": [],
+                "type": "int",
+                "loop": []
+            },
+            {
+                "count": 1,
+                "self_constraint": [],
+                "name": "implicit_7",
+                "under_constraint": [],
+                "dependency": [],
+                "relation": [],
+                "serialization_type": 2,
+                "usedBy": [],
+                "type": "enum android::DrmCopyControl",
+                "loop": [
+                    "loop0"
+                ]
+            },
+            {
+                "count": 1,
+                "self_constraint": [],
+                "name": "implicit_9",
+                "under_constraint": [],
+                "dependency": [],
+                "relation": [],
+                "serialization_type": 2,
+                "usedBy": [],
+                "type": "int",
+                "loop": [
+                    "loop0"
+                ]
+            },
+            {
+                "count": 1,
+                "self_constraint": [
+                    "constraint1"
+                ],
+                "name": "size_1",
+                "under_constraint": [],
+                "dependency": [],
+                "relation": [],
+                "serialization_type": 2,
+                "usedBy": [],
+                "type": "int",
+                "loop": []
+            },
+            {
+                "count": 1,
+                "self_constraint": [],
+                "name": "implicit_13",
+                "under_constraint": [],
+                "dependency": [],
+                "relation": [],
+                "serialization_type": 2,
+                "usedBy": [],
+                "type": "class android::String8",
+                "loop": [
+                    "loop1"
+                ]
+            },
+            {
+                "count": 1,
+                "self_constraint": [],
+                "name": "implicit_15",
+                "under_constraint": [],
+                "dependency": [],
+                "relation": [],
+                "serialization_type": 2,
+                "usedBy": [],
+                "type": "class android::String8",
+                "loop": [
+                    "loop1"
+                ]
+            },
+            {
+                "count": 1,
+                "self_constraint": [],
+                "name": "handle.decryptInfo.decryptBufferLength",
+                "under_constraint": [
+                    {
+                        "status": true,
+                        "name": "constraint2"
+                    }
+                ],
+                "dependency": [],
+                "relation": [],
+                "signature": "int",
+                "serialization_type": 2,
+                "usedBy": [],
+                "type": "int",
+                "loop": []
+            },
+            {
+                "count": 1,
+                "self_constraint": [],
+                "name": "implicit_19",
+                "under_constraint": [
+                    {
+                        "status": false,
+                        "name": "constraint2"
+                    }
+                ],
+                "value": -1,
+                "dependency": [],
+                "relation": [],
+                "serialization_type": 2,
+                "usedBy": [],
+                "type": "IntegerLiteral",
+                "loop": []
+            }
+        ],
+        "dependency": [
+            {
+                "filename": "BnDrmManagerService.json",
+                "type": "Transaction",
+                "name": "IDrmManagerService::25-25",
+                "possIdx": 1,
+                "varIdx": 0,
+                "varName": "handle",
+                "varType": "class android::DecryptHandle"
+            },
+            {
+                "filename": "BnDrmManagerService.json",
+                "type": "Transaction",
+                "name": "IDrmManagerService::26-26",
+                "possIdx": 1,
+                "varIdx": 0,
+                "varName": "handle",
+                "varType": "class android::DecryptHandle"
+            },
+            {
+                "filename": "BnDrmManagerService.json",
+                "type": "Transaction",
+                "name": "IDrmManagerService::27-27",
+                "possIdx": 1,
+                "varIdx": 0,
+                "varName": "handle",
+                "varType": "class android::DecryptHandle"
+            }
+        ],
+        "loop": [
+            {
+                "counter": {
+                    "type": "int",
+                    "name": "i",
+                    "value": 0
+                },
+                "inc": {
+                    "type": "int",
+                    "opcode": "++",
+                    "name": "i"
+                },
+                "name": "loop0",
+                "constraint": "constraint0"
+            },
+            {
+                "counter": {
+                    "type": "int",
+                    "name": "i",
+                    "value": 0
+                },
+                "inc": {
+                    "type": "int",
+                    "opcode": "++",
+                    "name": "i"
+                },
+                "name": "loop1",
+                "constraint": "constraint1"
+            }
+        ],
+        "possibility": [
+            {
+                "return": "",
+                "reply": [
+                    "handle.decryptId",
+                    "handle.mimeType",
+                    "handle.decryptApiType",
+                    "handle.status",
+                    "size",
+                    "implicit_7",
+                    "implicit_9",
+                    "size_1",
+                    "implicit_13",
+                    "implicit_15",
+                    "handle.decryptInfo.decryptBufferLength",
+                    "implicit_19"
+                ],
+                "data": [],
+                "id": 0
+            }
+        ],
+        "constraint": [
+            {
+                "lhs": {
+                    "type": "int",
+                    "name": "i"
+                },
+                "rhs": {
+                    "type": "int",
+                    "name": "size"
+                },
+                "opcode": "<",
+                "name": "constraint0",
+                "probability": 0.5
+            },
+            {
+                "lhs": {
+                    "type": "int",
+                    "name": "i"
+                },
+                "rhs": {
+                    "type": "int",
+                    "name": "size_1"
+                },
+                "opcode": "<",
+                "name": "constraint1",
+                "probability": 0.5
+            },
+            {
+                "lhs": {
+                    "type": "class android::DecryptInfo *",
+                    "name": "implicit_17",
+                    "value": "NULL"
+                },
+                "rhs": {
+                    "type": "class android::DecryptInfo *",
+                    "name": "handle.decryptInfo",
+                    "signature": "class android::DecryptInfo *"
+                },
+                "opcode": "!=",
+                "name": "constraint2",
+                "probability": 0.5
+            }
+        ]
+    }
+}

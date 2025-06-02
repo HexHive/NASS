@@ -1,0 +1,250 @@
+{
+    "class android::os::storaged::UidInfo": {
+        "variable": [
+            {
+                "count": 1,
+                "self_constraint": [],
+                "name": "uid",
+                "under_constraint": [],
+                "dependency": [],
+                "relation": [],
+                "signature": "uint32_t",
+                "serialization_type": 2,
+                "usedBy": [],
+                "type": "int",
+                "loop": []
+            },
+            {
+                "count": 1,
+                "self_constraint": [],
+                "name": "android::os::storaged::UidInfo::name",
+                "under_constraint": [],
+                "dependency": [],
+                "relation": [],
+                "serialization_type": 2,
+                "usedBy": [],
+                "type": "string",
+                "loop": [],
+                "size": -1
+            },
+            {
+                "count": 1,
+                "self_constraint": [],
+                "name": "android::os::storaged::UidInfo::name::item",
+                "under_constraint": [],
+                "dependency": [],
+                "relation": [],
+                "serialization_type": 2,
+                "usedBy": [],
+                "type": "char",
+                "loop": []
+            },
+            {
+                "count": 1,
+                "structSize": 40,
+                "self_constraint": [],
+                "name": "io",
+                "under_constraint": [],
+                "dependency": [],
+                "relation": [],
+                "signature": "struct android::os::storaged::io_stats [2]",
+                "serialization_type": 2,
+                "usedBy": [],
+                "type": "struct android::os::storaged::io_stats",
+                "loop": [],
+                "size": 2
+            },
+            {
+                "count": 1,
+                "self_constraint": [],
+                "name": "implicit_3",
+                "under_constraint": [],
+                "value": 80,
+                "dependency": [],
+                "relation": [],
+                "serialization_type": 0,
+                "sizeof": "struct android::os::storaged::io_stats const[2]",
+                "type": "IntegerLiteral",
+                "usedBy": [],
+                "loop": []
+            },
+            {
+                "count": 1,
+                "self_constraint": [],
+                "name": "android::os::storaged::UidInfo::tasks.size",
+                "under_constraint": [],
+                "dependency": [],
+                "relation": [],
+                "serialization_type": 2,
+                "usedBy": [],
+                "type": "int",
+                "loop": []
+            },
+            {
+                "count": 1,
+                "self_constraint": [
+                    "constraint0"
+                ],
+                "name": "implicit_6",
+                "under_constraint": [],
+                "value": 0,
+                "dependency": [],
+                "relation": [],
+                "serialization_type": 0,
+                "usedBy": [],
+                "type": "unsigned int",
+                "loop": []
+            },
+            {
+                "count": 1,
+                "self_constraint": [],
+                "name": "task_it.first",
+                "under_constraint": [],
+                "dependency": [],
+                "relation": [],
+                "signature": "const unsigned int",
+                "serialization_type": 2,
+                "usedBy": [],
+                "type": "pid_t",
+                "loop": [
+                    "loop0"
+                ]
+            },
+            {
+                "count": 1,
+                "self_constraint": [],
+                "name": "task_it",
+                "under_constraint": [],
+                "dependency": [],
+                "relation": [],
+                "serialization_type": 2,
+                "usedBy": [],
+                "type": "string",
+                "loop": [
+                    "loop0"
+                ],
+                "size": -1
+            },
+            {
+                "count": 1,
+                "self_constraint": [],
+                "name": "task_it::item",
+                "under_constraint": [],
+                "dependency": [],
+                "relation": [],
+                "serialization_type": 2,
+                "usedBy": [],
+                "type": "char",
+                "loop": [
+                    "loop0"
+                ]
+            },
+            {
+                "count": 1,
+                "structSize": 40,
+                "self_constraint": [],
+                "name": "task_it.second.io",
+                "under_constraint": [],
+                "dependency": [],
+                "relation": [],
+                "signature": "struct android::os::storaged::io_stats [2]",
+                "serialization_type": 2,
+                "usedBy": [],
+                "type": "struct android::os::storaged::io_stats",
+                "loop": [
+                    "loop0"
+                ],
+                "size": 2
+            },
+            {
+                "count": 1,
+                "self_constraint": [],
+                "name": "implicit_9",
+                "under_constraint": [],
+                "value": 80,
+                "dependency": [],
+                "relation": [],
+                "serialization_type": 0,
+                "sizeof": "struct android::os::storaged::io_stats const[2]",
+                "type": "IntegerLiteral",
+                "usedBy": [],
+                "loop": [
+                    "loop0"
+                ]
+            },
+            {
+                "count": 1,
+                "self_constraint": [],
+                "name": "android::NO_ERROR",
+                "under_constraint": [],
+                "value": 0,
+                "dependency": [],
+                "relation": [],
+                "serialization_type": 0,
+                "usedBy": [],
+                "type": "android::status_t",
+                "loop": []
+            }
+        ],
+        "dependency": [
+            {
+                "filename": "BnStoragedPrivate.json",
+                "type": "Transaction",
+                "name": "IStoragedPrivate::1-1",
+                "possIdx": 0,
+                "varIdx": 1,
+                "varName": "_aidl_return::item",
+                "varType": "class android::os::storaged::UidInfo"
+            }
+        ],
+        "loop": [
+            {
+                "counter": {
+                    "type": "unsigned int",
+                    "name": "implicit_6",
+                    "value": 0
+                },
+                "inc": {
+                    "type": "unsigned int",
+                    "opcode": "++",
+                    "name": "implicit_6"
+                },
+                "name": "loop0",
+                "constraint": "constraint0"
+            }
+        ],
+        "possibility": [
+            {
+                "return": "android::NO_ERROR",
+                "reply": [
+                    "uid",
+                    "android::os::storaged::UidInfo::name",
+                    "io",
+                    "android::os::storaged::UidInfo::tasks.size",
+                    "task_it.first",
+                    "task_it",
+                    "task_it.second.io"
+                ],
+                "data": [],
+                "id": 0
+            }
+        ],
+        "constraint": [
+            {
+                "lhs": {
+                    "serialization_type": 0,
+                    "type": "unsigned int",
+                    "name": "implicit_6",
+                    "value": 0
+                },
+                "rhs": {
+                    "type": "unsigned int",
+                    "name": null
+                },
+                "opcode": "<",
+                "name": "constraint0",
+                "probability": 0.5
+            }
+        ]
+    }
+}

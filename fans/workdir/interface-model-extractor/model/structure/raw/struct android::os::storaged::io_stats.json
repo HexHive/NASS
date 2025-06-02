@@ -1,0 +1,83 @@
+{
+    "struct android::os::storaged::io_stats":{
+        "dependency":[],
+        "possibility":[
+            {
+                "id":0,
+                "data":[
+                    "android::os::storaged::io_stats::rchar",
+                    "android::os::storaged::io_stats::wchar",
+                    "android::os::storaged::io_stats::read_bytes",
+                    "android::os::storaged::io_stats::write_bytes",
+                    "android::os::storaged::io_stats::fsync"
+                ],
+                "reply":[],
+                "return":""
+            }
+        ],
+        "variable":[
+            {
+                "name":"android::os::storaged::io_stats::rchar",
+                "type":"unsigned long",
+                "serialization_type":1,
+                "self_constraint":[],
+                "under_constraint":[],
+                "relation":[],
+                "loop":[],
+                "usedBy":[],
+                "dependency":[],
+                "count":1
+            },
+            {
+                "name":"android::os::storaged::io_stats::wchar",
+                "type":"unsigned long",
+                "serialization_type":1,
+                "self_constraint":[],
+                "under_constraint":[],
+                "relation":[],
+                "loop":[],
+                "usedBy":[],
+                "dependency":[],
+                "count":1
+            },
+            {
+                "name":"android::os::storaged::io_stats::read_bytes",
+                "type":"unsigned long",
+                "serialization_type":1,
+                "self_constraint":[],
+                "under_constraint":[],
+                "relation":[],
+                "loop":[],
+                "usedBy":[],
+                "dependency":[],
+                "count":1
+            },
+            {
+                "name":"android::os::storaged::io_stats::write_bytes",
+                "type":"unsigned long",
+                "serialization_type":1,
+                "self_constraint":[],
+                "under_constraint":[],
+                "relation":[],
+                "loop":[],
+                "usedBy":[],
+                "dependency":[],
+                "count":1
+            },
+            {
+                "name":"android::os::storaged::io_stats::fsync",
+                "type":"unsigned long",
+                "serialization_type":1,
+                "self_constraint":[],
+                "under_constraint":[],
+                "relation":[],
+                "loop":[],
+                "usedBy":[],
+                "dependency":[],
+                "count":1
+            }
+        ],
+        "constraint":[],
+        "loop":[]
+    }
+}

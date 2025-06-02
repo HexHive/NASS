@@ -1,0 +1,1032 @@
+{
+    "class android::MetaData": {
+        "variable": [
+            {
+                "count": 1,
+                "self_constraint": [
+                    "constraint1"
+                ],
+                "name": "numItems",
+                "under_constraint": [],
+                "dependency": [],
+                "relation": [],
+                "serialization_type": 2,
+                "usedBy": [],
+                "type": "size_t",
+                "loop": []
+            },
+            {
+                "count": 1,
+                "self_constraint": [
+                    "constraint0",
+                    "constraint2",
+                    "constraint3",
+                    "constraint5",
+                    "constraint6",
+                    "constraint7"
+                ],
+                "name": "ret",
+                "under_constraint": [],
+                "dependency": [],
+                "relation": [],
+                "serialization_type": 0,
+                "usedBy": [],
+                "type": "android::status_t",
+                "loop": []
+            },
+            {
+                "count": 1,
+                "self_constraint": [
+                    "constraint1"
+                ],
+                "name": "i",
+                "under_constraint": [
+                    {
+                        "status": false,
+                        "name": "constraint0"
+                    }
+                ],
+                "value": 0,
+                "dependency": [],
+                "relation": [],
+                "serialization_type": 0,
+                "usedBy": [],
+                "type": "size_t",
+                "loop": []
+            },
+            {
+                "count": 1,
+                "self_constraint": [],
+                "name": "key",
+                "under_constraint": [
+                    {
+                        "status": false,
+                        "name": "constraint0"
+                    }
+                ],
+                "dependency": [],
+                "relation": [],
+                "serialization_type": 2,
+                "usedBy": [],
+                "type": "int",
+                "loop": [
+                    "loop0"
+                ]
+            },
+            {
+                "count": 1,
+                "self_constraint": [
+                    "constraint4"
+                ],
+                "name": "type",
+                "under_constraint": [
+                    {
+                        "status": false,
+                        "name": "constraint0"
+                    },
+                    {
+                        "status": false,
+                        "name": "constraint2"
+                    }
+                ],
+                "dependency": [],
+                "relation": [],
+                "serialization_type": 2,
+                "usedBy": [],
+                "type": "unsigned int",
+                "loop": [
+                    "loop0"
+                ]
+            },
+            {
+                "count": 1,
+                "self_constraint": [],
+                "name": "blob",
+                "under_constraint": [
+                    {
+                        "status": false,
+                        "name": "constraint0"
+                    },
+                    {
+                        "status": false,
+                        "name": "constraint2"
+                    },
+                    {
+                        "status": false,
+                        "name": "constraint3"
+                    },
+                    {
+                        "status": true,
+                        "name": "constraint4"
+                    },
+                    {
+                        "status": false,
+                        "name": "constraint5"
+                    }
+                ],
+                "dependency": [],
+                "relation": [],
+                "serialization_type": 2,
+                "usedBy": [],
+                "type": "class android::Parcel::Blob",
+                "loop": [
+                    "loop0"
+                ],
+                "size": "size"
+            },
+            {
+                "count": 1,
+                "self_constraint": [],
+                "name": "size",
+                "under_constraint": [
+                    {
+                        "status": false,
+                        "name": "constraint0"
+                    },
+                    {
+                        "status": false,
+                        "name": "constraint2"
+                    },
+                    {
+                        "status": false,
+                        "name": "constraint3"
+                    },
+                    {
+                        "status": true,
+                        "name": "constraint4"
+                    }
+                ],
+                "dependency": [],
+                "relation": [],
+                "serialization_type": 2,
+                "usedBy": [],
+                "type": "unsigned int",
+                "loop": [
+                    "loop0"
+                ]
+            },
+            {
+                "count": 1,
+                "self_constraint": [],
+                "name": "data",
+                "under_constraint": [
+                    {
+                        "status": false,
+                        "name": "constraint0"
+                    },
+                    {
+                        "status": false,
+                        "name": "constraint2"
+                    },
+                    {
+                        "status": false,
+                        "name": "constraint3"
+                    },
+                    {
+                        "status": false,
+                        "name": "constraint4"
+                    },
+                    {
+                        "status": false,
+                        "name": "constraint5"
+                    },
+                    {
+                        "status": false,
+                        "name": "constraint6"
+                    }
+                ],
+                "dependency": [],
+                "relation": [],
+                "serialization_type": 2,
+                "usedBy": [],
+                "type": "char [size]",
+                "loop": [
+                    "loop0"
+                ],
+                "size": "size"
+            },
+            {
+                "count": 1,
+                "self_constraint": [],
+                "name": "data::item",
+                "under_constraint": [],
+                "dependency": [],
+                "relation": [],
+                "serialization_type": 2,
+                "usedBy": [],
+                "type": "char",
+                "loop": [
+                    "loop0"
+                ],
+                "size": "size"
+            },
+            {
+                "count": 1,
+                "self_constraint": [],
+                "name": "implicit_11",
+                "under_constraint": [
+                    {
+                        "status": false,
+                        "name": "constraint0"
+                    },
+                    {
+                        "status": false,
+                        "name": "constraint2"
+                    },
+                    {
+                        "status": false,
+                        "name": "constraint3"
+                    },
+                    {
+                        "status": true,
+                        "name": "constraint4"
+                    },
+                    {
+                        "status": false,
+                        "name": "constraint5"
+                    },
+                    {
+                        "status": false,
+                        "name": "constraint6"
+                    }
+                ],
+                "dependency": [],
+                "relation": [],
+                "serialization_type": 0,
+                "usedBy": [],
+                "type": "void",
+                "loop": [
+                    "loop0"
+                ]
+            },
+            {
+                "count": 1,
+                "self_constraint": [],
+                "name": "android::OK",
+                "under_constraint": [
+                    {
+                        "status": false,
+                        "name": "constraint0"
+                    },
+                    {
+                        "status": false,
+                        "name": "constraint2"
+                    },
+                    {
+                        "status": false,
+                        "name": "constraint3"
+                    },
+                    {
+                        "status": false,
+                        "name": "constraint4"
+                    },
+                    {
+                        "status": false,
+                        "name": "constraint5"
+                    },
+                    {
+                        "status": false,
+                        "name": "constraint6"
+                    }
+                ],
+                "value": 0,
+                "dependency": [],
+                "relation": [],
+                "serialization_type": 0,
+                "usedBy": [],
+                "type": "android::status_t",
+                "loop": []
+            }
+        ],
+        "dependency": [
+            {
+                "filename": "BnMediaSource.json",
+                "type": "Transaction",
+                "name": "IMediaSource::1-1",
+                "possIdx": 1,
+                "varIdx": 0,
+                "varName": "meta",
+                "varType": "class android::MetaData"
+            },
+            {
+                "filename": "BnMediaSource.json",
+                "type": "Transaction",
+                "name": "IMediaSource::4-4",
+                "possIdx": 1,
+                "varIdx": 0,
+                "varName": "meta",
+                "varType": "class android::MetaData"
+            },
+            {
+                "filename": "BnMediaExtractor.json",
+                "type": "Transaction",
+                "name": "IMediaExtractor::3-3",
+                "possIdx": 2,
+                "varIdx": 0,
+                "varName": "meta",
+                "varType": "class android::MetaData"
+            },
+            {
+                "filename": "BnMediaExtractor.json",
+                "type": "Transaction",
+                "name": "IMediaExtractor::4-4",
+                "possIdx": 1,
+                "varIdx": 0,
+                "varName": "meta",
+                "varType": "class android::MetaData"
+            }
+        ],
+        "loop": [
+            {
+                "counter": {
+                    "type": "size_t",
+                    "name": "i",
+                    "value": 0
+                },
+                "inc": {
+                    "type": "size_t",
+                    "opcode": "++",
+                    "name": "i"
+                },
+                "name": "loop0",
+                "constraint": "constraint1"
+            }
+        ],
+        "possibility": [
+            {
+                "return": "ret",
+                "reply": [
+                    "numItems"
+                ],
+                "data": [],
+                "id": 0
+            },
+            {
+                "return": "ret",
+                "reply": [
+                    "numItems",
+                    "key"
+                ],
+                "data": [],
+                "id": 1
+            },
+            {
+                "return": "ret",
+                "reply": [
+                    "numItems",
+                    "key",
+                    "type"
+                ],
+                "data": [],
+                "id": 2
+            },
+            {
+                "return": "ret",
+                "reply": [
+                    "numItems",
+                    "key",
+                    "type",
+                    "size"
+                ],
+                "data": [],
+                "id": 3
+            },
+            {
+                "return": "ret",
+                "reply": [
+                    "numItems",
+                    "key",
+                    "type",
+                    "size",
+                    "blob"
+                ],
+                "data": [],
+                "id": 4
+            },
+            {
+                "return": "ret",
+                "reply": [
+                    "numItems",
+                    "key",
+                    "type",
+                    "size",
+                    "blob",
+                    "data"
+                ],
+                "data": [],
+                "id": 5
+            },
+            {
+                "return": "android::OK",
+                "reply": [
+                    "numItems",
+                    "key",
+                    "type",
+                    "size",
+                    "blob",
+                    "data"
+                ],
+                "data": [],
+                "id": 6
+            }
+        ],
+        "constraint": [
+            {
+                "lhs": {
+                    "type": "android::status_t",
+                    "name": "ret"
+                },
+                "opcode": "",
+                "name": "constraint0",
+                "probability": 0.1
+            },
+            {
+                "lhs": {
+                    "type": "size_t",
+                    "name": "i"
+                },
+                "rhs": {
+                    "type": "size_t",
+                    "name": "numItems"
+                },
+                "opcode": "<",
+                "name": "constraint1",
+                "probability": 0.5
+            },
+            {
+                "lhs": {
+                    "type": "android::status_t",
+                    "name": "ret"
+                },
+                "opcode": "",
+                "name": "constraint2",
+                "probability": 0.1
+            },
+            {
+                "lhs": {
+                    "type": "android::status_t",
+                    "name": "ret"
+                },
+                "opcode": "",
+                "name": "constraint3",
+                "probability": 0.1
+            },
+            {
+                "lhs": {
+                    "type": "unsigned int",
+                    "name": "type"
+                },
+                "rhs": {
+                    "type": "enum android::MetaDataBase::Type",
+                    "name": "android::MetaDataBase::Type::TYPE_NONE",
+                    "value": 1852796517
+                },
+                "opcode": "==",
+                "name": "constraint4",
+                "probability": 0.5
+            },
+            {
+                "lhs": {
+                    "type": "android::status_t",
+                    "name": "ret"
+                },
+                "opcode": "",
+                "name": "constraint5",
+                "probability": 0.1
+            },
+            {
+                "lhs": {
+                    "type": "android::status_t",
+                    "name": "ret"
+                },
+                "opcode": "",
+                "name": "constraint6",
+                "probability": 0.1
+            },
+            {
+                "lhs": {
+                    "type": "android::status_t",
+                    "name": "ret"
+                },
+                "opcode": "",
+                "name": "constraint7",
+                "probability": 0.1
+            }
+        ]
+    },
+    "class android::MetaDataBase": {
+        "variable": [
+            {
+                "count": 1,
+                "self_constraint": [
+                    "constraint1"
+                ],
+                "name": "numItems",
+                "under_constraint": [],
+                "dependency": [],
+                "relation": [],
+                "serialization_type": 2,
+                "usedBy": [],
+                "type": "size_t",
+                "loop": []
+            },
+            {
+                "count": 1,
+                "self_constraint": [
+                    "constraint0",
+                    "constraint2",
+                    "constraint3",
+                    "constraint5",
+                    "constraint6",
+                    "constraint7"
+                ],
+                "name": "ret",
+                "under_constraint": [],
+                "dependency": [],
+                "relation": [],
+                "serialization_type": 0,
+                "usedBy": [],
+                "type": "android::status_t",
+                "loop": []
+            },
+            {
+                "count": 1,
+                "self_constraint": [
+                    "constraint1"
+                ],
+                "name": "i",
+                "under_constraint": [
+                    {
+                        "status": false,
+                        "name": "constraint0"
+                    }
+                ],
+                "value": 0,
+                "dependency": [],
+                "relation": [],
+                "serialization_type": 0,
+                "usedBy": [],
+                "type": "size_t",
+                "loop": []
+            },
+            {
+                "count": 1,
+                "self_constraint": [],
+                "name": "key",
+                "under_constraint": [
+                    {
+                        "status": false,
+                        "name": "constraint0"
+                    }
+                ],
+                "dependency": [],
+                "relation": [],
+                "serialization_type": 2,
+                "usedBy": [],
+                "type": "int",
+                "loop": [
+                    "loop0"
+                ]
+            },
+            {
+                "count": 1,
+                "self_constraint": [
+                    "constraint4"
+                ],
+                "name": "type",
+                "under_constraint": [
+                    {
+                        "status": false,
+                        "name": "constraint0"
+                    },
+                    {
+                        "status": false,
+                        "name": "constraint2"
+                    }
+                ],
+                "dependency": [],
+                "relation": [],
+                "serialization_type": 2,
+                "usedBy": [],
+                "type": "unsigned int",
+                "loop": [
+                    "loop0"
+                ]
+            },
+            {
+                "count": 1,
+                "self_constraint": [],
+                "name": "blob",
+                "under_constraint": [
+                    {
+                        "status": false,
+                        "name": "constraint0"
+                    },
+                    {
+                        "status": false,
+                        "name": "constraint2"
+                    },
+                    {
+                        "status": false,
+                        "name": "constraint3"
+                    },
+                    {
+                        "status": true,
+                        "name": "constraint4"
+                    },
+                    {
+                        "status": false,
+                        "name": "constraint5"
+                    }
+                ],
+                "dependency": [],
+                "relation": [],
+                "serialization_type": 2,
+                "usedBy": [],
+                "type": "class android::Parcel::Blob",
+                "loop": [
+                    "loop0"
+                ],
+                "size": "size"
+            },
+            {
+                "count": 1,
+                "self_constraint": [],
+                "name": "size",
+                "under_constraint": [
+                    {
+                        "status": false,
+                        "name": "constraint0"
+                    },
+                    {
+                        "status": false,
+                        "name": "constraint2"
+                    },
+                    {
+                        "status": false,
+                        "name": "constraint3"
+                    },
+                    {
+                        "status": true,
+                        "name": "constraint4"
+                    }
+                ],
+                "dependency": [],
+                "relation": [],
+                "serialization_type": 2,
+                "usedBy": [],
+                "type": "unsigned int",
+                "loop": [
+                    "loop0"
+                ]
+            },
+            {
+                "count": 1,
+                "self_constraint": [],
+                "name": "data",
+                "under_constraint": [
+                    {
+                        "status": false,
+                        "name": "constraint0"
+                    },
+                    {
+                        "status": false,
+                        "name": "constraint2"
+                    },
+                    {
+                        "status": false,
+                        "name": "constraint3"
+                    },
+                    {
+                        "status": false,
+                        "name": "constraint4"
+                    },
+                    {
+                        "status": false,
+                        "name": "constraint5"
+                    },
+                    {
+                        "status": false,
+                        "name": "constraint6"
+                    }
+                ],
+                "dependency": [],
+                "relation": [],
+                "serialization_type": 2,
+                "usedBy": [],
+                "type": "char [size]",
+                "loop": [
+                    "loop0"
+                ],
+                "size": "size"
+            },
+            {
+                "count": 1,
+                "self_constraint": [],
+                "name": "data::item",
+                "under_constraint": [],
+                "dependency": [],
+                "relation": [],
+                "serialization_type": 2,
+                "usedBy": [],
+                "type": "char",
+                "loop": [
+                    "loop0"
+                ],
+                "size": "size"
+            },
+            {
+                "count": 1,
+                "self_constraint": [],
+                "name": "implicit_11",
+                "under_constraint": [
+                    {
+                        "status": false,
+                        "name": "constraint0"
+                    },
+                    {
+                        "status": false,
+                        "name": "constraint2"
+                    },
+                    {
+                        "status": false,
+                        "name": "constraint3"
+                    },
+                    {
+                        "status": true,
+                        "name": "constraint4"
+                    },
+                    {
+                        "status": false,
+                        "name": "constraint5"
+                    },
+                    {
+                        "status": false,
+                        "name": "constraint6"
+                    }
+                ],
+                "dependency": [],
+                "relation": [],
+                "serialization_type": 0,
+                "usedBy": [],
+                "type": "void",
+                "loop": [
+                    "loop0"
+                ]
+            },
+            {
+                "count": 1,
+                "self_constraint": [],
+                "name": "android::OK",
+                "under_constraint": [
+                    {
+                        "status": false,
+                        "name": "constraint0"
+                    },
+                    {
+                        "status": false,
+                        "name": "constraint2"
+                    },
+                    {
+                        "status": false,
+                        "name": "constraint3"
+                    },
+                    {
+                        "status": false,
+                        "name": "constraint4"
+                    },
+                    {
+                        "status": false,
+                        "name": "constraint5"
+                    },
+                    {
+                        "status": false,
+                        "name": "constraint6"
+                    }
+                ],
+                "value": 0,
+                "dependency": [],
+                "relation": [],
+                "serialization_type": 0,
+                "usedBy": [],
+                "type": "android::status_t",
+                "loop": []
+            }
+        ],
+        "dependency": [
+            {
+                "filename": "BnMediaSource.json",
+                "type": "Transaction",
+                "name": "IMediaSource::1-1",
+                "possIdx": 1,
+                "varIdx": 0,
+                "varName": "meta",
+                "varType": "class android::MetaData"
+            },
+            {
+                "filename": "BnMediaSource.json",
+                "type": "Transaction",
+                "name": "IMediaSource::4-4",
+                "possIdx": 1,
+                "varIdx": 0,
+                "varName": "meta",
+                "varType": "class android::MetaData"
+            },
+            {
+                "filename": "BnMediaExtractor.json",
+                "type": "Transaction",
+                "name": "IMediaExtractor::3-3",
+                "possIdx": 2,
+                "varIdx": 0,
+                "varName": "meta",
+                "varType": "class android::MetaData"
+            },
+            {
+                "filename": "BnMediaExtractor.json",
+                "type": "Transaction",
+                "name": "IMediaExtractor::4-4",
+                "possIdx": 1,
+                "varIdx": 0,
+                "varName": "meta",
+                "varType": "class android::MetaData"
+            }
+        ],
+        "loop": [
+            {
+                "counter": {
+                    "type": "size_t",
+                    "name": "i",
+                    "value": 0
+                },
+                "inc": {
+                    "type": "size_t",
+                    "opcode": "++",
+                    "name": "i"
+                },
+                "name": "loop0",
+                "constraint": "constraint1"
+            }
+        ],
+        "possibility": [
+            {
+                "return": "ret",
+                "reply": [
+                    "numItems"
+                ],
+                "data": [],
+                "id": 0
+            },
+            {
+                "return": "ret",
+                "reply": [
+                    "numItems",
+                    "key"
+                ],
+                "data": [],
+                "id": 1
+            },
+            {
+                "return": "ret",
+                "reply": [
+                    "numItems",
+                    "key",
+                    "type"
+                ],
+                "data": [],
+                "id": 2
+            },
+            {
+                "return": "ret",
+                "reply": [
+                    "numItems",
+                    "key",
+                    "type",
+                    "size"
+                ],
+                "data": [],
+                "id": 3
+            },
+            {
+                "return": "ret",
+                "reply": [
+                    "numItems",
+                    "key",
+                    "type",
+                    "size",
+                    "blob"
+                ],
+                "data": [],
+                "id": 4
+            },
+            {
+                "return": "ret",
+                "reply": [
+                    "numItems",
+                    "key",
+                    "type",
+                    "size",
+                    "blob",
+                    "data"
+                ],
+                "data": [],
+                "id": 5
+            },
+            {
+                "return": "android::OK",
+                "reply": [
+                    "numItems",
+                    "key",
+                    "type",
+                    "size",
+                    "blob",
+                    "data"
+                ],
+                "data": [],
+                "id": 6
+            }
+        ],
+        "constraint": [
+            {
+                "lhs": {
+                    "type": "android::status_t",
+                    "name": "ret"
+                },
+                "opcode": "",
+                "name": "constraint0",
+                "probability": 0.1
+            },
+            {
+                "lhs": {
+                    "type": "size_t",
+                    "name": "i"
+                },
+                "rhs": {
+                    "type": "size_t",
+                    "name": "numItems"
+                },
+                "opcode": "<",
+                "name": "constraint1",
+                "probability": 0.5
+            },
+            {
+                "lhs": {
+                    "type": "android::status_t",
+                    "name": "ret"
+                },
+                "opcode": "",
+                "name": "constraint2",
+                "probability": 0.1
+            },
+            {
+                "lhs": {
+                    "type": "android::status_t",
+                    "name": "ret"
+                },
+                "opcode": "",
+                "name": "constraint3",
+                "probability": 0.1
+            },
+            {
+                "lhs": {
+                    "type": "unsigned int",
+                    "name": "type"
+                },
+                "rhs": {
+                    "type": "enum android::MetaDataBase::Type",
+                    "name": "android::MetaDataBase::Type::TYPE_NONE",
+                    "value": 1852796517
+                },
+                "opcode": "==",
+                "name": "constraint4",
+                "probability": 0.5
+            },
+            {
+                "lhs": {
+                    "type": "android::status_t",
+                    "name": "ret"
+                },
+                "opcode": "",
+                "name": "constraint5",
+                "probability": 0.1
+            },
+            {
+                "lhs": {
+                    "type": "android::status_t",
+                    "name": "ret"
+                },
+                "opcode": "",
+                "name": "constraint6",
+                "probability": 0.1
+            },
+            {
+                "lhs": {
+                    "type": "android::status_t",
+                    "name": "ret"
+                },
+                "opcode": "",
+                "name": "constraint7",
+                "probability": 0.1
+            }
+        ]
+    }
+}
