@@ -17,7 +17,7 @@ export CAMPAIGN_RUNTIME=3600
 export CAMPAIGN_RUNS=2
 export NASS_ABLATION=1
 export PARALLEL_EMULATORS=8
-export CAMPAIGN_SERVICES=$(pwd)/fans_eval_services_explorable.txt
+export CAMPAIGN_SERVICES="$SCRIPT_DIR/fans_eval_services_explorable.txt"
 
 cd $SCRIPT_DIR
 
@@ -35,6 +35,6 @@ python3 emu-run.py $1 2>error.log
 
 echo "++EVAL++: generating coverage graphs"
 
-python3 graph.py --jsonperc covp.json -j ./run_out/$1.json
+python3 graph.py --jsonperc covp.json -j ./run_out/$1_out.json
 
-echo "++EVAL++ coverage graphs at ./run_out/$1_out.json"
+echo "++EVAL++ coverage graphs at ./run_out/$1_out/"
