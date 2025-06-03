@@ -4,7 +4,7 @@
 
 Enumerate number of services (including native services, HAL etc) on the devices. 
 ```
-python3 native_service_stats.py
+./native-services-stats.sh
 ```
 
 ## Table 6, COTS Service Crashes

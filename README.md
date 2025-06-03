@@ -8,14 +8,26 @@ Use dynamic binary instrumentation to enumerate the binder interface and then fu
 - Android [NDK](https://developer.android.com/ndk/downloads) version r26
 - python3.9+ and requirements
 
+We provide a docker setup to run the host component of NASS. 
+Use `./setup.sh` to build the docker and `./run.sh` to spawn a shell in the docker.
+
 ## Preparation New Device
 
-NASS only works on rooted devices, so step 0 is to root the device.
+NASS only works on rooted devices, so step 0 is to root the device or use an emulator.
+Note that we mainly tested NASS on arm64 systems, but an x86 emulator may work.
 
 NASS works with the adb device id. If you want to fuzz services on a specific device, 
 you need to first add this device to the following Makefiles:
 - `device/Makefile` # download libraries
 - `fuzz/Makefile` # build fuzzer
+
+Check the README in the specific folders for more detailed instructions.
+
+Afterwards build the fuzzer:
+```bash
+cd device && make [device_id]
+cd fuzz && NDK_BASE=[path-to-nkd] make [device_id]
+```
 
 On the device install termux [v0.118.0](https://github.com/termux/termux-app/releases/tag/v0.118.0) and 
 install gdb:
@@ -31,6 +43,8 @@ adb -s [device_id] shell su -c /data/data/com.termux/files/usr/bin/gdb
 
 ## Usage
 
+With the device ready we can finally start fuzzing.
+
 You can obtain a list of services using
 ```bash
 adb -s [device_id] shell 'service list'
@@ -38,7 +52,7 @@ adb -s [device_id] shell 'service list'
 
 Extract the address of the entrypoint function (`onTransact`) from the target service.
 ```bash
-python3 instrument/interface.py -s [target_service] --device [device_id]
+python3 instrument/interface.py -s [target_service] -d [device_id]
 ```
 
 Result should be a new/updated row in the service table.
@@ -78,7 +92,7 @@ python3 fuzz/triage.py -i targets/[device_id]/[target_service]/fuzz_out/nass_[da
 
 If crashes are not reproducing, try running `orchestrate.py` with `--dump` to write all sent ipc requests to disk (will be used during triage to setup the state again).
 
-Setup debugging on the phone:
+Setup debugging on the phone to triage crashes manually:
 ```bash
 python3 fuzz/triage.py -t -s [target_service] -d [device_id]
 ```
@@ -98,7 +112,6 @@ binderlib/       # AOSP header files + example service/client
 coverometry/     # ghidra scripts to estimate max coverage
 data/            # database + python3 scripts to interact with the db 
 device/          # binaries for target devices
-disclosure/      # pocs for disclosed bugs
 emulator/        # code to handle Android emulator
 eval/            # scripts to run various aspects of evaluation
 fans/            # modified FANS to run FANS with coverage
@@ -116,7 +129,7 @@ If there are more than 8 devices connected frida will not show them. To deal wit
 
 Clone Frida (github.com/frida) and run make. Then apply the frida-core.patch to the frida-core subproject then make again and replace the existing frida client library with the built one:
 
-pyconfig error:
+if you get a pyconfig error during building:
 ```
 sudo ln -s /usr/include /usr/lib/include
 ```

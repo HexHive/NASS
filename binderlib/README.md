@@ -15,6 +15,8 @@ Compile an example service and client for a specific device:
 
 ## Add new target
 
+Modify the Makefile like this:
+
 ```
 clean: 
 + rm -rf ../device/[device_id]/example_service

@@ -16,6 +16,6 @@ To run the script make sure to have the fuzzer compiled for the target `aarch64e
 
 To reproduce table 3, run the script:
 ```
-python3 ground_truth.py
+./ground-truth.sh
 ```
 

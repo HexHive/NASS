@@ -9,7 +9,9 @@ Structure:
 ```
 
 Download necessary libraries from the device:
-`make {device_id}`
+```bash
+make [device_id]
+```
 
 ## Add new target
 
