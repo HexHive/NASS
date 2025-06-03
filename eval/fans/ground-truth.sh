@@ -1,5 +1,7 @@
 #!/bin/bash
 
+export META_TARGET=aarch64emu28
+
 SCRIPT_DIR=$( cd -- "$( dirname -- "${BASH_SOURCE[0]}" )" &> /dev/null && pwd )
 
 cd $SCRIPT_DIR
