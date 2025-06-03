@@ -6,8 +6,7 @@
 - sdk-repo-linux-system-images-eng..zip: compiled aosp (in this case for fans) for aarch64, see "Building AOSP"
 
 Both files can be downloaded here:
-
-https://drive.google.com/drive/folders/1GxmB0pevlBxcca1bFdh5lbGyw0TDM8-c?usp=sharing
+https://zenodo.org/records/15582902
 
 ## Run on AARCH64 Host
 
