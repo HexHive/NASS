@@ -283,6 +283,8 @@ def kill_emulator(device_id):
         return
     run_cmd(f'docker exec {container_name} kill -9 {emu_pid}')
             
-
+if __name__=="__main__":
+    device_id = sys.argv[1]
+    start_emulator(device_id)
      
 
