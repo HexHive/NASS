@@ -1,6 +1,8 @@
 #!/bin/bash
 
 export META_TARGET=aarch64emu28
+export PARALLEL_EMULATORS=8
+
 
 SCRIPT_DIR=$( cd -- "$( dirname -- "${BASH_SOURCE[0]}" )" &> /dev/null && pwd )
 
