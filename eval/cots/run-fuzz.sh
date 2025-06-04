@@ -2,7 +2,7 @@
 
 SCRIPT_DIR=$( cd -- "$( dirname -- "${BASH_SOURCE[0]}" )" &> /dev/null && pwd )
 export NDK_BASE=/android-ndk-r27c
-export FUZZ_TIME=60
+export FUZZ_TIME=60*10
 export FUZZ_COV_RATE_MAX_TIME=300
 
 if [ -z "$1" ]; then
