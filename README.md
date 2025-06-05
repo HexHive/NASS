@@ -99,6 +99,8 @@ python3 fuzz/triage.py -t -s [target_service] -d [device_id]
 
 ## Troubleshooting
 
+*onTransact Address in libandroid_runtime.so*: This means the service is a Java service out of scope for NASS.
+
 *Hook not Working*:  This could be due to the service running in self-imposed seccomp sandbox (via libminijail). 
 If minijail is not loaded from `/apex`, check the `fuzz/minijail` for an example of how to use Magisk modules to patch out the libminijail seccomp sandbox.
 
