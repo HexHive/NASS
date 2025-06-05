@@ -13,8 +13,8 @@ Use `./setup.sh` to build the docker and `./run.sh` to spawn a shell in the dock
 
 ## Preparation New Device
 
-NASS only works on rooted devices, so step 0 is to root the device or use an emulator.
-Note that we mainly tested NASS on arm64 systems, but an x86 emulator may work.
+NASS only works on rooted Android phones, so step 0 is to root the device or use an emulator.
+Note that we mainly tested NASS on arm64 phones, but an x86 Android emulator may not work.
 
 NASS works with the adb device id. If you want to fuzz services on a specific device, 
 you need to first add this device to the following Makefiles:
