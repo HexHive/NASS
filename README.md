@@ -141,6 +141,8 @@ Generate the statistics on proprietary native services:
 ./eval/cots/native-service-stats.sh
 ```
 
+(15 compute-minutes)
+
 #### Fuzzing prop. native services
 
 The script `eval/cots/run-fuzz.sh` takes care of fuzzing services on a specific device. By default
@@ -151,6 +153,25 @@ For example fuzz three native services on the Pixel 9:
 ```shell
 ./eval/cots/run-fuzz.sh 47030DLAQ0012N
 ```
+
+(2 compute-hours, 500MB)
+
+#### Compliance of prop. native services
+
+The script to generate the numbers from the manual analysis:
+
+```shell
+python3 ./eval/cots/dgie_cots.py
+```
+
+The data comes from `./eval/cots/dgie_eval.csv`, whose Ab/St columns were populated using manual analysis.
+For easier parsing load the csv into for example google sheets.
+The binaries are stored in `./eval/cots/dgie_cots_eval`. To check a service for compliance, load it into 
+a decompiler (ghidra for example) and navigate to the offset of the entry point function (offset column 
+in the csv). Manually check that only standard deserialization funcitons are used and that no application-specific 
+logic is embedded in the server stub.
+
+(1 compute-minutes)
 
 ### FANS
 
@@ -168,7 +189,7 @@ Extract the interface information from the evaluation services:
 The numbers of exactly extracted RPC functions were done manually.
 This was done by comparing the ground truth json against the extracted interface.
 
-View the ground truth:
+For example to view the ground truth for the `installd` service:
 
 ```shell
 cat eval/fans/ground_truth/aarch64emu28/installd.json | jq
@@ -179,6 +200,10 @@ View the extracted interface:
 ```shell
 cat targets/aarch64emu28/installd/preprocess/interface.json | jq
 ```
+
+For each command id (json key) compare the list of deserializers, these should match.
+
+(1 human-hour, 2 compute-hours, 500MB)
 
 #### FANS fuzzing campaign
 
@@ -195,6 +220,8 @@ The generated coverage pdfs can be found at:
 ```
 /eval/fans/run_out/ae/
 ```
+
+(8 compute-hours, 1GB)
 
 ## Troubleshooting
 
