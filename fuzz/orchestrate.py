@@ -37,7 +37,8 @@ from config import (
     FUZZ_END_TIME,
     FUZZ_COV_RATE_PROP,
     FUZZ_COV_RATE_TIME,
-    FUZZ_COV_RATE_MAX_TIME
+    FUZZ_COV_RATE_MAX_TIME,
+    SKIP_SERVICES
 )
 import service.vanilla as vanilla
 import data.database as database
@@ -1472,6 +1473,11 @@ if __name__ == "__main__":
 
     if device.id in PAIN:
         if args.service_name in PAIN[device.id]:
+            print(f"{RED}NOT FUZZING DEVICE DESTROYING SERVICE!!!{NC}")
+            exit(-1)
+    
+    if device.id in SKIP_SERVICES:
+        if args.service_name in SKIP_SERVICES[device.id]:
             print(f"{RED}NOT FUZZING DEVICE DESTROYING SERVICE!!!{NC}")
             exit(-1)
 
