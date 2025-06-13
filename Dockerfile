@@ -1,6 +1,6 @@
 FROM ubuntu:24.04
 
-RUN apt-get update && apt-get install -y python3 python3-pip wget curl unzip git adb && rm -rf /var/lib/apt/lists/*
+RUN apt-get update && apt-get install -y docker.io python3 python3-pip wget curl unzip git adb jq && rm -rf /var/lib/apt/lists/*
 
 
 RUN --mount=type=bind,source=./requirements.txt,target=/tmp/requirements.txt \
