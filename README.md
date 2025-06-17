@@ -166,11 +166,7 @@ python3 ./eval/cots/dgie_cots.py
 
 The data comes from `./eval/cots/dgie_eval.csv`, whose Ab/St columns were populated using manual analysis.
 For easier parsing load the csv into for example google sheets.
-The binaries are stored in `./eval/cots/dgie_cots_eval`. To check a service for compliance, load it into 
-a decompiler (ghidra for example) and navigate to the offset of the entry point function (offset column 
-in the csv). Manually check that only standard deserialization funcitons are used and that no application-specific 
-logic is embedded in the server stub.
-
+The binaries and offsets of the entry point function are stored in `./eval/cots/dgie_cots_eval`. 
 (1 compute-minutes)
 
 ### FANS
